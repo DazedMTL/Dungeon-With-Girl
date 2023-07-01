@@ -2305,21 +2305,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "おう、おかえり！飯用意してあるぞ！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "あれ？一人かい？"
+                                "【Innkeeper】 Welcome back! I've prepared a meal for you! Huh? Are you\nalone?"
                             ]
                         },
                         {
@@ -2346,14 +2332,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "おう、おかえり！飯用意してあるぞ！"
+                                "【Innkeeper】 Welcome back! I've prepared a meal for you!"
                             ]
                         },
                         {
@@ -2393,14 +2372,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "あまりの疲労のため、会話もそこそこにモニカは休む準備を"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "して自室にもどっていった。"
+                                "Due to extreme fatigue, Monica prepared to rest and returned to her\nroom without much conversation."
                             ]
                         },
                         {
@@ -2417,14 +2389,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "･･･"
+                                "【Innkeeper】 ..."
                             ]
                         },
                         {

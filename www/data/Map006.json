@@ -2240,14 +2240,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "■道具屋ではダンジョンで役立つアイテムの購入、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "　持ち帰ったアイテムの売却ができます。"
+                                "■At the item shop, you can purchase useful items for the dungeon and\nsell the items you bring back."
                             ]
                         },
                         {
@@ -2264,21 +2257,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "■戦闘から逃げることのできないダンジョンを"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "　安全に攻略するために、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "　\\item[24]は常備しておくことをおすすめいたします。"
+                                "■It is recommended to have \\item[24] on hand in order to safely conquer\nthe dungeon, where you cannot escape from battles."
                             ]
                         },
                         {
@@ -2415,14 +2394,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【さなえ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "いらっしゃいませ！"
+                                "【Sanae】 Welcome!"
                             ]
                         },
                         {
@@ -2659,14 +2631,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【サナエ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ありがとうございました！"
+                                "【Sanae】 Thank you very much!"
                             ]
                         },
                         {
@@ -2928,21 +2893,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【さなえ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "あ！モニカさん、ヤマモトさん！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "いらっしゃいませ！"
+                                "【Sanae】 Ah! Monica-san, Yamamoto-san! Welcome!"
                             ]
                         },
                         {
@@ -3213,14 +3164,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "よし、準備おっけー！"
+                                "【Monica】 Alright, preparations are good to go!"
                             ]
                         },
                         {
@@ -3262,14 +3206,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ほら、早くダンジョンいくよ！"
+                                "【Monica】 Come on, let's go to the dungeon quickly!"
                             ]
                         },
                         {
@@ -3361,14 +3298,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【サナエ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "あ、あの！ヤマモトさん！"
+                                "【Sanae】 Ah, um! Mr. Yamamoto!"
                             ]
                         },
                         {
@@ -3435,14 +3365,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【サナエ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "えぇっと、その！"
+                                "【Sanae】 Um, well, um!"
                             ]
                         },
                         {
@@ -3493,14 +3416,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【サナエ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "今晩、またお店にきていただけませんか？"
+                                "【Sanae】 Could you come to the shop again tonight?"
                             ]
                         },
                         {
@@ -3582,14 +3498,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【サナエ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "やった！"
+                                "【Sanae】 Yatta! (We did it!)"
                             ]
                         },
                         {
@@ -3606,14 +3515,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【サナエ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "約束ですよ？"
+                                "【Sanae】 It's a promise, okay?"
                             ]
                         },
                         {

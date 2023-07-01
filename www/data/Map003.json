@@ -2401,21 +2401,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "いらっしゃい!"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "初めて見る顔だね！"
+                                "【Innkeeper】 Welcome! You're a new face I haven't seen before!"
                             ]
                         },
                         {
@@ -2470,21 +2456,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "あいよ！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "あー空き部屋は･･･ん、大丈夫そうだな！"
+                                "【Innkeeper】 Welcome! Ah, there you are! We have... hmm, it looks like\nwe have vacant rooms available!"
                             ]
                         },
                         {
@@ -2539,28 +2511,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "あんた、冒険者の人だろ？"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "冒険者が泊まる時はギルドに賃料をもらえるからね。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "あんたは払わなくても大丈夫だよ！"
+                                "【Innkeeper】 You're an adventurer, right? When adventurers stay here,\nthe guild pays for their accommodation. So you don't have to worry\nabout paying!"
                             ]
                         },
                         {
@@ -2577,48 +2528,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "あ、冒険者登録書の確認とサインだけもらえるかい？"
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 0,
-                            "parameters": [
-                                "",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "･････････"
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 0,
-                            "parameters": [
-                                "",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "･･････"
+                                "【Innkeeper】 Ah, can I just have your adventurer registration form for\nconfirmation and signature?"
                             ]
                         },
                         {
@@ -2652,28 +2562,41 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおやじ】"
+                                "･･･"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
                             ]
                         },
                         {
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "おっけー！"
+                                "･･･"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
                             ]
                         },
                         {
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "部屋は階段を上がって左から3つ目の部屋が空いてるから、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "自由に使って良いよ！"
+                                "【Innkeeper】 Alright! The room is on the third left after going up the\nstairs. Feel free to use it!"
                             ]
                         },
                         {
@@ -2780,7 +2703,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "ギッギッギッ―――"
+                                "Gigigigi---"
                             ]
                         },
                         {
@@ -2816,14 +2739,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "あ、すまん！左から２つめの部屋だった！その部屋は―――"
+                                "【Innkeeper】 Ah, sorry! It was the second room from the left! That room\nis---"
                             ]
                         },
                         {
@@ -2840,7 +2756,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "ガチャ―――"
+                                "Gigigigi---"
                             ]
                         },
                         {
@@ -2940,14 +2856,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ん？"
+                                "【???】 Huh?"
                             ]
                         },
                         {
@@ -2980,14 +2889,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "―――えッ！？"
+                                "【???】 Huh?"
                             ]
                         },
                         {
@@ -3020,14 +2922,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\{きゃあああーーー！"
+                                "【???】 \\{Kyaaa---!"
                             ]
                         },
                         {
@@ -3044,21 +2939,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\{ちょ、ちょっと！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "早くでていきなさいよ！"
+                                "【???】 \\{Hey, hey! Hurry up and get out of here!"
                             ]
                         },
                         {
@@ -3282,21 +3163,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "いやぁ、すまん！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "部屋をまちがえちまった！"
+                                "【Innkeeper】 Oh, sorry! I entered the wrong room!"
                             ]
                         },
                         {
@@ -3313,14 +3180,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ん？"
+                                "【Innkeeper】 Huh?"
                             ]
                         },
                         {
@@ -3361,7 +3221,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "―――ダッダッダ"
+                                "---Dadadada"
                             ]
                         },
                         {
@@ -3434,14 +3294,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\{変態！変態！へんたーい！"
+                                "【???】 Pervert! Pervert! Hentai!"
                             ]
                         },
                         {
@@ -3458,14 +3311,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\{はやくギルドに通ほ―――"
+                                "【???】 Hurry up and go to the guild!"
                             ]
                         },
                         {
@@ -3482,21 +3328,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "って"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\{あーーー！"
+                                "【???】 Ah---!"
                             ]
                         },
                         {
@@ -3513,14 +3345,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "まさか変態だったとは！"
+                                "【???】 I can't believe you're a pervert!"
                             ]
                         },
                         {
@@ -3537,14 +3362,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "さっさと通報して牢屋にぶちこんでやるわ！"
+                                "【???】 I'll report you right away and throw you in jail!"
                             ]
                         },
                         {
@@ -3595,21 +3413,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "おねーちゃん！ちょ、ちょっと落ち着いて！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "これには少しわけがあってだな･･･"
+                                "【Innkeeper】 Hey, miss! C-calm down a bit! There's a bit of a\nmisunderstanding here..."
                             ]
                         },
                         {
@@ -3638,7 +3442,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "・・・"
+                                "..."
                             ]
                         },
                         {
@@ -3655,7 +3459,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "・・"
+                                ".."
                             ]
                         },
                         {
@@ -3672,7 +3476,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "・"
+                                "."
                             ]
                         },
                         {
@@ -3717,21 +3521,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "なるほどね。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "この痴漢が悪いわけじゃないっていうのはわかったわ･･･"
+                                "【???】 I see. So you're saying that it's not entirely the fault of this\npervert, huh..."
                             ]
                         },
                         {
@@ -3748,21 +3538,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "でもわたしの裸をみておいて、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "そのまま見過ごすっていうわけにもいかないよねー！"
+                                "【???】 But you can't just see me naked and let it slide like that,\nright?!"
                             ]
                         },
                         {
@@ -3795,14 +3571,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "そういえば、もしかしてキミも冒険者？"
+                                "【???】 By the way, are you also an adventurer, by any chance?"
                             ]
                         },
                         {
@@ -3873,21 +3642,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "―――っ！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "そうだ、いいこと思いついた！"
+                                "【???】 Ah---! I've got it, I just came up with a great idea!"
                             ]
                         },
                         {
@@ -3904,14 +3659,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\{キミはわたしの荷物持ちにけってーい！"
+                                "【???】 You will be my baggage carrier!"
                             ]
                         },
                         {
@@ -3944,21 +3692,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "他人の裸をタダで見てるんだから拒否することは許さないわ！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "わかったー？！"
+                                "【???】 I won't allow you to refuse when you're freely looking at\nsomeone else's naked body! Got it?!"
                             ]
                         },
                         {
@@ -4029,14 +3763,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【？？？】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "そうこなくっちゃ！"
+                                "【???】 That's how it should be!"
                             ]
                         },
                         {
@@ -4053,21 +3780,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "わたしはモニカ！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ダンジョン\\c[18]30階\\c[0]にあるっていう幸せの化粧箱を探しているわ！"
+                                "【Monica】 I am Monica! I'm searching for the Box of Happiness that is\nsaid to be on the 30th floor of the dungeon!"
                             ]
                         },
                         {
@@ -4100,14 +3813,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "キミ、なまえは？"
+                                "【Monica】 What's your name?"
                             ]
                         },
                         {
@@ -4162,14 +3868,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ヤマモト…。"
+                                "【Monica】 Yamamoto..."
                             ]
                         },
                         {
@@ -4186,14 +3885,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "これからよろしくね！"
+                                "【Monica】 Nice to meet you!"
                             ]
                         },
                         {
@@ -4210,14 +3902,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "モニカが仲間になりました！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "これから仲良くなれるようにがんばりましょう！"
+                                "Monica has become a member! Let's do our best to get along from now\non!"
                             ]
                         },
                         {
@@ -4341,21 +4026,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "はい、これ。わたしの装備！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "早速おねがいね！"
+                                "【Monica】 Here, this is my equipment! Please take care of it right\naway!"
                             ]
                         },
                         {
@@ -4642,21 +4313,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "そういえばさっきお客さんが気になることを言ってたな。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "出かける前に話を聞いてみたらどうだ？"
+                                "【Innkeeper】 By the way, earlier, a customer said something that caught\nmy attention. Why don't you try asking them about it before you go\nout?"
                             ]
                         },
                         {
@@ -4699,14 +4356,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "よう、どうするね？"
+                                "【Innkeeper】 Hey, what are you going to do?"
                             ]
                         },
                         {
@@ -4864,21 +4514,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "気持ちはわかるが、まずは情報収集！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "基本だぞ。"
+                                "【Innkeeper】 I understand how you feel, but first, gather information!\nIt's basic, you know."
                             ]
                         },
                         {
@@ -4912,14 +4548,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ほい、がんばってな！"
+                                "【Innkeeper】 Alright, do your best!"
                             ]
                         },
                         {

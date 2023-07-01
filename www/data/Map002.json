@@ -2462,7 +2462,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "次に進みますか？"
+                                "Will you proceed to the next step?"
                             ]
                         },
                         {
@@ -3551,7 +3551,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "次に進みますか？"
+                                "Will you proceed to the next step?"
                             ]
                         },
                         {
@@ -3840,7 +3840,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "ダイスを振ります"
+                                "I will roll the dice."
                             ]
                         },
                         {
@@ -3963,7 +3963,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\V[51]だ！"
+                                "\\V[51] it is!"
                             ]
                         },
                         {
@@ -4005,7 +4005,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "あ"
+                                "あ - Ah"
                             ]
                         },
                         {
@@ -4191,7 +4191,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "次に進みますか？"
+                                "Will you proceed to the next step?"
                             ]
                         },
                         {

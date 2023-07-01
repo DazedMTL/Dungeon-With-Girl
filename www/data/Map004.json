@@ -2253,14 +2253,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "こんにちは。"
+                                "【Guild Old Man】 Hello."
                             ]
                         },
                         {
@@ -2277,14 +2270,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "どのようなご用件でしょうか。"
+                                "【Guild Old Man】 What can I help you with?"
                             ]
                         },
                         {
@@ -2339,14 +2325,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "かしこまりました。"
+                                "【Guild Old Man】 Understood."
                             ]
                         },
                         {
@@ -2363,14 +2342,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ではこちらの用紙に必要事項の記入をお願いします。"
+                                "【Guild Old Man】 Please fill out the necessary information on this\nform."
                             ]
                         },
                         {
@@ -2466,7 +2438,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "あなたの出自をおしえてください。"
+                                "Please tell me about your background."
                             ]
                         },
                         {
@@ -2683,7 +2655,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "あなたの強みは？"
+                                "What are your strengths?"
                             ]
                         },
                         {
@@ -2900,7 +2872,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "あなたは何を求めて冒険者を志願しましたか？"
+                                "What made you decide to become an adventurer?"
                             ]
                         },
                         {
@@ -3193,14 +3165,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "書き終わりましたか？"
+                                "【Guild Old Man】 Have you finished writing?"
                             ]
                         },
                         {
@@ -3217,7 +3182,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "・・・"
+                                "..."
                             ]
                         },
                         {
@@ -3234,7 +3199,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "・・"
+                                ".."
                             ]
                         },
                         {
@@ -3251,7 +3216,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "・"
+                                "."
                             ]
                         },
                         {
@@ -3360,21 +3325,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "…うーん？あなた、本当にニュービーですか？"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "相当手練れに見えますね。"
+                                "【Guild Old Man】 ...Hmm? Are you really a newbie? You seem quite\nskilled."
                             ]
                         },
                         {
@@ -3391,28 +3342,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ふむ、いいでしょう。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "あなたの力に見合ったワープゲートを"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "いくつか解放しておきましょうか。"
+                                "【Guild Old Man】 Hmmm, very well. Shall I unlock a few warp gates that\nmatch your abilities?"
                             ]
                         },
                         {
@@ -3439,21 +3369,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "問題なさそうですね。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "こちらでお預かりいたします。"
+                                "【Guild Old Man】 It seems fine. We will take care of it here."
                             ]
                         },
                         {
@@ -3470,14 +3386,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "しばらくおまちください。"
+                                "【Guild Old Man】 Please wait a moment."
                             ]
                         },
                         {
@@ -3564,14 +3473,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "はい、こちらが冒険者登ろく証です。"
+                                "【Guild Old Man】 Here is your adventurer registration certificate."
                             ]
                         },
                         {
@@ -3606,28 +3508,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "これをもっていけばダンジョンにも入れますが、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "とても危険な場所なのでくれぐれも注意して"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "探索してください。"
+                                "【Guild Old Man】 With this, you will be able to enter the dungeon, but\nplease be extremely careful as it is a very dangerous place."
                             ]
                         },
                         {
@@ -3644,21 +3525,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "で！登ろくしていただいた方、みなさんにまず最初にお願い"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "している事がございます。"
+                                "【Guild Old Man】 So! For those who have climbed up, there is something\nI would like to ask all of you first."
                             ]
                         },
                         {
@@ -3675,21 +3542,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "お願いしている事とは\\C[10]\\{5日間\\}\\C[0]毎に決まった"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "金額のゴールドをギルドに納めていただきます。"
+                                "【Guild Old Man】 The request is to pay a fixed amount of gold to the\nguild every \\C[10]{5 days}\\C[0]."
                             ]
                         },
                         {
@@ -3706,14 +3559,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "期間は\\C[10]\\{15日間\\}\\C[0]。"
+                                "【Guild Old Man】 The duration is \\C[10]\\{15 days\\}\\C[0]."
                             ]
                         },
                         {
@@ -3768,21 +3614,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "残念ながら町に来訪される冒険者の方はみんながみんな、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "品行方正というわけではありません。"
+                                "【Guild Old Man】 Unfortunately, not all adventurers who visit the town\nare well-behaved individuals."
                             ]
                         },
                         {
@@ -3799,21 +3631,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "むしろその逆。気性が荒く、口よりさきに手が飛んで"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "くるような方が大半でございます。"
+                                "【Guild Old Man】 On the contrary, it's mostly the opposite. Many of\nthem have a rough temperament and are quick to resort to violence\nrather than words."
                             ]
                         },
                         {
@@ -3830,21 +3648,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "そのような方々が暴れないように、町の治安イジ活動の費用"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "として、協力のおねがいをしています。"
+                                "【Guild Old Man】 We are requesting your cooperation as a contribution\ntowards the cost of maintaining the town's public safety activities,\nin order to prevent such individuals from causing trouble."
                             ]
                         },
                         {
@@ -3861,21 +3665,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "また、ヤマモトさんがダンジョン内で倒れてしまわれた場合、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "捜索隊を組んで捜索にいくことになります。"
+                                "【Guild Old Man】 Also, if Yamamoto-san were to collapse inside the\ndungeon, we would form a search party and go search for him."
                             ]
                         },
                         {
@@ -3892,28 +3682,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "捜索隊のメンバーは同じように冒険者の方々から依頼という"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "かたちで募るのですが、その際に出す報酬にあてさせて"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "いただくための費用となります。"
+                                "【Guild Old Man】 The members of the search party are recruited in the\nform of requests from adventurers, and the cost is used to cover the\nrewards given to them."
                             ]
                         },
                         {
@@ -3930,21 +3699,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "お金が集められなかった場合は、すみませんが適正がなかった"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ということで、登ろくを抹消させていただきます。"
+                                "【Guild Old Man】 If we are unable to collect the money, I'm sorry but\nwe will have to cancel your registration."
                             ]
                         },
                         {
@@ -3961,14 +3716,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ご理解のほどよろしくお願いします。"
+                                "【Guild Old Man】 Thank you for your understanding and cooperation."
                             ]
                         },
                         {
@@ -4023,28 +3771,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ありがとうございます。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "それではこれからよろしくお願いします。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "がんばってください！"
+                                "【Guild Old Man】 Thank you very much. Well then, please take care of us\nfrom now on. Good luck!"
                             ]
                         },
                         {
@@ -4061,21 +3788,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "そうそう、登ろくしていただいた方にささやかではありますが"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ギルドからこちらをお贈りしています。"
+                                "【Guild Old Man】 Oh, by the way, as a token of our appreciation for\njoining the guild, we have a small gift for you from the guild."
                             ]
                         },
                         {
@@ -4092,14 +3805,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ダンジョン探索のお役にたてていただければと思います。"
+                                "【Guild Old Man】 We hope you can be of help in exploring the dungeon."
                             ]
                         },
                         {
@@ -4224,28 +3930,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\#■治療キットを手に入れた。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "■眠り玉を手に入れた。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "■ビリビリ玉を手に入れた。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "■3000Gを手に入れた。"
+                                "\\# Obtained Healing Kit. Obtained Sleep Ball. Obtained Shock Ball.\nObtained 3000G."
                             ]
                         },
                         {
@@ -4318,7 +4003,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\#■冒険者装備一式をもらった。"
+                                "\\#■ Received a set of adventurer's equipment."
                             ]
                         },
                         {
@@ -4363,14 +4048,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "気をつけていってらっしゃいませ。"
+                                "【Guild Old Man】 Take care and good luck on your journey."
                             ]
                         },
                         {
@@ -4601,21 +4279,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "こんにちは。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ダンジョンは危険であふれているので、お気をつけて。"
+                                "【Guild Old Man】 Hello. The dungeon is filled with danger, so please be\ncareful."
                             ]
                         },
                         {
@@ -4652,14 +4316,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "依頼はあちらの掲示板に張り出しています。"
+                                "【Guild Old Man】 The requests are posted on that bulletin board over\nthere."
                             ]
                         },
                         {
@@ -4676,21 +4333,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "うけていただけるものがありましたら、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "こちらまで持ってきてください。"
+                                "【Guild Old Man】 If you have something you can take on, please bring it\nhere."
                             ]
                         },
                         {
@@ -4765,14 +4408,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【ギルドのおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "はい、それではお気をつけて。"
+                                "【Guild Old Man】 Alright, then please take care."
                             ]
                         },
                         {

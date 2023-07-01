@@ -1,13 +1,272 @@
 [
-null,
-{"id":1,"battlerName":"Actor1_1","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Actor1","traits":[{"code":62,"dataId":3,"value":1},{"code":22,"dataId":0,"value":1},{"code":14,"dataId":82,"value":1}],"initialLevel":1,"maxLevel":1,"name":"ヤマモト","nickname":"","note":"<stand_picture:shujinkou_menyu>\n","profile":""},
-{"id":2,"battlerName":"Actor1_8","characterIndex":7,"characterName":"Actor1","classId":3,"equips":[0,0,0,0,0],"faceIndex":7,"faceName":"Actor1","traits":[{"code":62,"dataId":3,"value":1},{"code":22,"dataId":0,"value":1}],"initialLevel":1,"maxLevel":1,"name":"モニカ","nickname":"","note":"<stand_picture:monica_menu>\n","profile":""},
-{"id":3,"battlerName":"Actor3_8","characterIndex":7,"characterName":"Actor3","classId":3,"equips":[3,0,2,3,4],"faceIndex":7,"faceName":"Actor3","traits":[{"code":62,"dataId":0,"value":1}],"initialLevel":1,"maxLevel":99,"name":"マーシャ","nickname":"","note":"","profile":""},
-{"id":4,"battlerName":"Actor2_7","characterIndex":6,"characterName":"Actor2","classId":4,"equips":[4,0,2,3,4],"faceIndex":6,"faceName":"Actor2","traits":[{"code":62,"dataId":0,"value":1}],"initialLevel":1,"maxLevel":99,"name":"ルキウス","nickname":"","note":"","profile":""},
-{"id":5,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
-{"id":6,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
-{"id":7,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
-{"id":8,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
-{"id":9,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
-{"id":10,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""}
+    null,
+    {
+        "id": 1,
+        "battlerName": "Actor1_1",
+        "characterIndex": 0,
+        "characterName": "",
+        "classId": 1,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "Actor1",
+        "traits": [
+            {
+                "code": 62,
+                "dataId": 3,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 1
+            },
+            {
+                "code": 14,
+                "dataId": 82,
+                "value": 1
+            }
+        ],
+        "initialLevel": 1,
+        "maxLevel": 1,
+        "name": "ヤマモト",
+        "nickname": "",
+        "note": "<stand_picture:shujinkou_menyu>\n",
+        "profile": ""
+    },
+    {
+        "id": 2,
+        "battlerName": "Actor1_8",
+        "characterIndex": 7,
+        "characterName": "Actor1",
+        "classId": 3,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 7,
+        "faceName": "Actor1",
+        "traits": [
+            {
+                "code": 62,
+                "dataId": 3,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "initialLevel": 1,
+        "maxLevel": 1,
+        "name": "モニカ",
+        "nickname": "",
+        "note": "<stand_picture:monica_menu>\n",
+        "profile": ""
+    },
+    {
+        "id": 3,
+        "battlerName": "Actor3_8",
+        "characterIndex": 7,
+        "characterName": "Actor3",
+        "classId": 3,
+        "equips": [
+            3,
+            0,
+            2,
+            3,
+            4
+        ],
+        "faceIndex": 7,
+        "faceName": "Actor3",
+        "traits": [
+            {
+                "code": 62,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "マーシャ",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 4,
+        "battlerName": "Actor2_7",
+        "characterIndex": 6,
+        "characterName": "Actor2",
+        "classId": 4,
+        "equips": [
+            4,
+            0,
+            2,
+            3,
+            4
+        ],
+        "faceIndex": 6,
+        "faceName": "Actor2",
+        "traits": [
+            {
+                "code": 62,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "ルキウス",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 5,
+        "battlerName": "",
+        "characterIndex": 0,
+        "characterName": "",
+        "classId": 1,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "",
+        "traits": [],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 6,
+        "battlerName": "",
+        "characterIndex": 0,
+        "characterName": "",
+        "classId": 1,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "",
+        "traits": [],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 7,
+        "battlerName": "",
+        "characterIndex": 0,
+        "characterName": "",
+        "classId": 1,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "",
+        "traits": [],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 8,
+        "battlerName": "",
+        "characterIndex": 0,
+        "characterName": "",
+        "classId": 1,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "",
+        "traits": [],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 9,
+        "battlerName": "",
+        "characterIndex": 0,
+        "characterName": "",
+        "classId": 1,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "",
+        "traits": [],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    },
+    {
+        "id": 10,
+        "battlerName": "",
+        "characterIndex": 0,
+        "characterName": "",
+        "classId": 1,
+        "equips": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "faceIndex": 0,
+        "faceName": "",
+        "traits": [],
+        "initialLevel": 1,
+        "maxLevel": 99,
+        "name": "",
+        "nickname": "",
+        "note": "",
+        "profile": ""
+    }
 ]
