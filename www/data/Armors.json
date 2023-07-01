@@ -1,0 +1,5280 @@
+[
+    null,
+    {
+        "id": 1,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "----ベースアイテム----",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 2,
+        "atypeId": 5,
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\n[重さ5W]",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 129,
+        "name": "冒険者の盾",
+        "note": "<weight:5>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            1
+        ],
+        "price": 300
+    },
+    {
+        "id": 3,
+        "atypeId": 1,
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\n[重さ3W]",
+        "etypeId": 3,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 130,
+        "name": "冒険者の帽子",
+        "note": "<weight:3>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            1
+        ],
+        "price": 300
+    },
+    {
+        "id": 4,
+        "atypeId": 1,
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\n[重さ8W]",
+        "etypeId": 4,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 135,
+        "name": "冒険者の服",
+        "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            1
+        ],
+        "price": 300
+    },
+    {
+        "id": 5,
+        "atypeId": 6,
+        "description": "頑丈につくられている鉄製の盾。頑丈である反面、片手で\nもつには重く、攻撃を受けやすくなってしまう。[重さ8W]",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": -0.1
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 128,
+        "name": "鉄の盾",
+        "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
+        "params": [
+            10,
+            0,
+            0,
+            8,
+            0,
+            0,
+            -1,
+            0
+        ],
+        "price": 1000
+    },
+    {
+        "id": 6,
+        "atypeId": 1,
+        "description": "とても頑丈につくられている鉄製のかぶと。[重さ8W]",
+        "etypeId": 3,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 132,
+        "name": "鉄の兜",
+        "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
+        "params": [
+            10,
+            0,
+            0,
+            6,
+            0,
+            0,
+            -1,
+            0
+        ],
+        "price": 1000
+    },
+    {
+        "id": 7,
+        "atypeId": 1,
+        "description": "とても頑丈につくられている鉄製のよろい。[重さ10W]",
+        "etypeId": 4,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": -0.05
+            }
+        ],
+        "iconIndex": 137,
+        "name": "鉄の鎧",
+        "note": "<weight:10>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
+        "params": [
+            20,
+            0,
+            0,
+            8,
+            0,
+            0,
+            -2,
+            0
+        ],
+        "price": 1500
+    },
+    {
+        "id": 8,
+        "atypeId": 5,
+        "description": "金属でできた円形の小盾。防御力は低いが、相手の攻撃を\n受け流すことに特化している。[重さ4W]",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.1
+            }
+        ],
+        "iconIndex": 129,
+        "name": "バックラー",
+        "note": "<weight:4>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
+        "params": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0
+        ],
+        "price": 1000
+    },
+    {
+        "id": 9,
+        "atypeId": 5,
+        "description": "銀でつくられた盾。聖水できよめられており、\nアンデッド系のモンスターの攻撃に耐性がある。[重さ6W]",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.03
+            },
+            {
+                "code": 11,
+                "dataId": 9,
+                "value": 0.8
+            }
+        ],
+        "iconIndex": 129,
+        "name": "シルバーシールド",
+        "note": "<weight:6>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
+        "params": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            3,
+            -1,
+            0
+        ],
+        "price": 2000
+    },
+    {
+        "id": 10,
+        "atypeId": 3,
+        "description": "銀でつくられたカブト。聖水できよめられており、\nアンデッド系のモンスターの攻撃に耐性がある。[重さ5W]",
+        "etypeId": 3,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 11,
+                "dataId": 9,
+                "value": 0.8
+            }
+        ],
+        "iconIndex": 131,
+        "name": "シルバーヘルム",
+        "note": "<weight:5>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
+        "params": [
+            0,
+            0,
+            0,
+            4,
+            0,
+            2,
+            0,
+            0
+        ],
+        "price": 2000
+    },
+    {
+        "id": 11,
+        "atypeId": 3,
+        "description": "銀でつくられた鎧。聖水できよめられており、\nアンデッド系のモンスターの攻撃に耐性がある。[重さ8W]",
+        "etypeId": 4,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 11,
+                "dataId": 9,
+                "value": 0.8
+            }
+        ],
+        "iconIndex": 136,
+        "name": "シルバーアーマー",
+        "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
+        "params": [
+            0,
+            0,
+            0,
+            6,
+            0,
+            2,
+            -1,
+            0
+        ],
+        "price": 2500
+    },
+    {
+        "id": 12,
+        "atypeId": 6,
+        "description": "歴戦の戦士たちが使い込んだ盾。\n刻まれた傷の一つ一つに物語を感じさせる。[重さ8W]",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 128,
+        "name": "古強者の盾",
+        "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 40% 86-90 20%\n</Suffixes>\n\n",
+        "params": [
+            5,
+            0,
+            0,
+            6,
+            0,
+            3,
+            0,
+            0
+        ],
+        "price": 1200
+    },
+    {
+        "id": 13,
+        "atypeId": 1,
+        "description": "歴戦の戦士たちが使い込んだ兜。\n刻まれた傷の一つ一つに物語を感じさせる。[重さ8W]",
+        "etypeId": 3,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 132,
+        "name": "古強者の兜",
+        "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 40% 86-90 20%\n</Suffixes>\n\n",
+        "params": [
+            5,
+            0,
+            0,
+            4,
+            0,
+            3,
+            0,
+            0
+        ],
+        "price": 1200
+    },
+    {
+        "id": 14,
+        "atypeId": 1,
+        "description": "歴戦の戦士たちが使い込んだ鎧。\n刻まれた傷の一つ一つに物語を感じさせる。[重さ10W]",
+        "etypeId": 4,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 137,
+        "name": "古強者の鎧",
+        "note": "<weight:10>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 40% 86-90 20%\n</Suffixes>\n\n",
+        "params": [
+            10,
+            0,
+            0,
+            6,
+            0,
+            3,
+            0,
+            0
+        ],
+        "price": 1700
+    },
+    {
+        "id": 15,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 16,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 17,
+        "atypeId": 1,
+        "description": "不思議な力で風をまとっている盾。\n回避率、魔法反射率が上がる。[重さ3W]",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 5,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 171,
+        "name": "風纏う盾 シルフィー",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<TikanApply3:110>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 防御力+5 回避率+5% 攻撃回数+1\\c[0]>",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            3,
+            3,
+            0
+        ],
+        "price": 10000
+    },
+    {
+        "id": 18,
+        "atypeId": 1,
+        "description": "不思議な力で風をまとっている兜。\n回避率、魔法反射率が上がる。[重さ1W]",
+        "etypeId": 3,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 5,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 173,
+        "name": "風纏う兜 シルフィー",
+        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 防御力+5 回避率+5% 攻撃回数+1\\c[0]>",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            3,
+            3,
+            0
+        ],
+        "price": 10000
+    },
+    {
+        "id": 19,
+        "atypeId": 1,
+        "description": "不思議な力で風をまとっている鎧。\n回避率、魔法反射率が上がる。[重さ5W]",
+        "etypeId": 4,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 5,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 174,
+        "name": "風纏う鎧 シルフィー",
+        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 防御力+5 回避率+5% 攻撃回数+1\\c[0]>",
+        "params": [
+            10,
+            0,
+            0,
+            5,
+            0,
+            3,
+            1,
+            0
+        ],
+        "price": 10000
+    },
+    {
+        "id": 20,
+        "atypeId": 1,
+        "description": "身に着けるだけで存在感をアピールできる帽子。妙にイラつ\nかせるので装備すると狙われる率が上昇する。[重さ3W]",
+        "etypeId": 3,
+        "traits": [
+            {
+                "code": 23,
+                "dataId": 0,
+                "value": 6
+            }
+        ],
+        "iconIndex": 156,
+        "name": "道化の帽子",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>",
+        "params": [
+            10,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0,
+            0
+        ],
+        "price": 10000
+    },
+    {
+        "id": 21,
+        "atypeId": 6,
+        "description": "薔薇をかたどった大きめの盾。\n攻撃してきた相手を傷つける効果をもつ。[重さ8W]",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": -0.1
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 155,
+        "name": "薔薇の盾",
+        "note": "<RandomLoseException>\n<weight:8>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n\n\n",
+        "params": [
+            0,
+            0,
+            2,
+            10,
+            0,
+            3,
+            -2,
+            0
+        ],
+        "price": 20000
+    },
+    {
+        "id": 22,
+        "atypeId": 6,
+        "description": "ガーディアンの装甲を剥がし、そのまま盾としたモノ。\n防御力と状態異常への耐性が大幅に上がる。[重さ30W]",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": -0.3
+            },
+            {
+                "code": 13,
+                "dataId": 4,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 10,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 67,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 63,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 66,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 55,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 53,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 51,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 65,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 8,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 9,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 5,
+                "value": 0.2
+            },
+            {
+                "code": 13,
+                "dataId": 6,
+                "value": 0.2
+            }
+        ],
+        "iconIndex": 155,
+        "name": "ガーディアンの装甲",
+        "note": "<RandomLoseException>\n<weight:30>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<AddInfoWindowP:\\c[4]状態異常抵抗\\c[24]+60%\\c[0]>",
+        "params": [
+            10,
+            0,
+            0,
+            20,
+            0,
+            20,
+            -15,
+            0
+        ],
+        "price": 20000
+    },
+    {
+        "id": 23,
+        "atypeId": 1,
+        "description": "暴虐の王打倒のため立ち上がった勇士の一人は王に寵愛をう\nけた舞踏家だった。回避率、会心率があがる。[重さ1W]",
+        "etypeId": 5,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.02
+            }
+        ],
+        "iconIndex": 175,
+        "name": "暗躍する舞踏家の首飾り",
+        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<AddInfoWindowP:\\c[24]3セット効果 素早さ+10 運+5 回避率+15% 会心率+30%\\c[0]>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+        ],
+        "price": 10000
+    },
+    {
+        "id": 24,
+        "atypeId": 1,
+        "description": "暴虐の王打倒のため立ち上がった勇士の一人は王に寵愛をう\nけた舞踏家だった。回避率、会心率があがる。[重さ3W]",
+        "etypeId": 4,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.03
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 92,
+        "name": "暗躍する舞踏家の羽衣",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<TikanApply3:111>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 運+5 回避率+15% 会心率+30%\\c[0]>",
+        "params": [
+            0,
+            2,
+            0,
+            1,
+            2,
+            5,
+            5,
+            0
+        ],
+        "price": 10000
+    },
+    {
+        "id": 25,
+        "atypeId": 1,
+        "description": "ドラゴンの硬い鱗を加工してつくられた大盾。装備することで\n全ての属性攻撃に高い耐性を得られる。[重さ10W]",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": -0.1
+            },
+            {
+                "code": 11,
+                "dataId": 2,
+                "value": 0.7
+            },
+            {
+                "code": 11,
+                "dataId": 5,
+                "value": 0.7
+            },
+            {
+                "code": 11,
+                "dataId": 4,
+                "value": 0.7
+            },
+            {
+                "code": 11,
+                "dataId": 5,
+                "value": 0.7
+            },
+            {
+                "code": 11,
+                "dataId": 6,
+                "value": 0.7
+            },
+            {
+                "code": 11,
+                "dataId": 7,
+                "value": 0.7
+            },
+            {
+                "code": 11,
+                "dataId": 8,
+                "value": 0.7
+            },
+            {
+                "code": 11,
+                "dataId": 9,
+                "value": 0.7
+            },
+            {
+                "code": 11,
+                "dataId": 10,
+                "value": 0.7
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 0.7
+            }
+        ],
+        "iconIndex": 155,
+        "name": "ドラゴンシールド",
+        "note": "<RandomLoseException>\n<weight:10>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<AddInfoWindowA:\\c[4]全耐性\\c[24]+30%\\c[0]>",
+        "params": [
+            10,
+            0,
+            0,
+            10,
+            0,
+            10,
+            -5,
+            0
+        ],
+        "price": 20000
+    },
+    {
+        "id": 26,
+        "atypeId": 1,
+        "description": "かつて国中を魅了した女は投獄され囚人となった後も、気高さは\n失わなかった。揃えることで相手を魅了する。[重さ5W]",
+        "etypeId": 6,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 175,
+        "name": "囚人アリシアの手枷",
+        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:囚人アリシア効果>\n<TikanApply2:112>\n<AddInfoWindowP:\\c[24]2セット効果 かしこさ+5 Mぼうぎょ+5 魅了付与+90%\\c[0]>",
+        "params": [
+            10,
+            1,
+            0,
+            0,
+            0,
+            5,
+            0,
+            -5
+        ],
+        "price": 10000
+    },
+    {
+        "id": 27,
+        "atypeId": 1,
+        "description": "かつて国中を魅了した女は投獄され囚人となった後も、気高さは\n失わなかった。揃えることで相手を魅了する。[重さ5W]",
+        "etypeId": 7,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 175,
+        "name": "囚人アリシアの足枷",
+        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:囚人アリシア効果>\n<AddInfoWindowP:\\c[24]2セット効果 かしこさ+5 Mぼうぎょ+5 魅了付与+90%\\c[0]>",
+        "params": [
+            10,
+            1,
+            0,
+            0,
+            0,
+            5,
+            0,
+            -5
+        ],
+        "price": 10000
+    },
+    {
+        "id": 28,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 29,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 30,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 31,
+        "atypeId": 1,
+        "description": "ドクロをかたどったまがまがしい指輪。装備すると強い力を\n得られるがダイス判定値が０になる。[重さ1W]",
+        "etypeId": 6,
+        "traits": [
+            {
+                "code": 23,
+                "dataId": 5,
+                "value": 0.2
+            }
+        ],
+        "iconIndex": 159,
+        "name": "呪いの指輪",
+        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>",
+        "params": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ],
+        "price": 20000
+    },
+    {
+        "id": 32,
+        "atypeId": 1,
+        "description": "冒険者愛用の装飾品。[重さ1W]",
+        "etypeId": 6,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 145,
+        "name": "指輪",
+        "note": "<weight:1>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 300
+    },
+    {
+        "id": 33,
+        "atypeId": 1,
+        "description": "豪華な指輪。高値で取引される。[重さ1W]",
+        "etypeId": 6,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 145,
+        "name": "金の指輪",
+        "note": "<weight:1>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+        ],
+        "price": 5000
+    },
+    {
+        "id": 34,
+        "atypeId": 1,
+        "description": "自分を中心に世界が動きだし、事あるごとに幸運が舞い込んでくる指輪。\n装備していると戦闘後に必ず宝箱が出る。[重さ1W]",
+        "etypeId": 6,
+        "traits": [],
+        "iconIndex": 159,
+        "name": "リングオブフォーチュン",
+        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+        ],
+        "price": 30000
+    },
+    {
+        "id": 35,
+        "atypeId": 1,
+        "description": "伝説の闘士にちなんで名づけられた指輪。\n装備すると反撃率が大きく上昇する。[重さ1W]",
+        "etypeId": 6,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.1
+            }
+        ],
+        "iconIndex": 159,
+        "name": "反逆のカリスマ",
+        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 20000
+    },
+    {
+        "id": 36,
+        "atypeId": 1,
+        "description": "信仰の厚い信徒が巡礼中に履いていた靴。\nダンジョンを進むとたまに行動力が1回復する。【重さ1W】",
+        "etypeId": 7,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 159,
+        "name": "巡礼者の靴",
+        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            5,
+            0
+        ],
+        "price": 30000
+    },
+    {
+        "id": 37,
+        "atypeId": 1,
+        "description": "冒険者愛用の装飾品。[重さ1W]",
+        "etypeId": 5,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 145,
+        "name": "首飾り",
+        "note": "<weight:1>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+        ],
+        "price": 300
+    },
+    {
+        "id": 38,
+        "atypeId": 1,
+        "description": "冒険者愛用の装飾品。[重さ1W]",
+        "etypeId": 7,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 145,
+        "name": "靴",
+        "note": "<weight:1>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+        ],
+        "price": 300
+    },
+    {
+        "id": 39,
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 5,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 145,
+        "name": "指輪",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0
+        ],
+        "price": 300
+    },
+    {
+        "id": 40,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 41,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 42,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 43,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 44,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 45,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 46,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 47,
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 3,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 11,
+                "dataId": 2,
+                "value": 0.8
+            }
+        ],
+        "iconIndex": 131,
+        "name": "火耐性テスト兜",
+        "note": "",
+        "params": [
+            500,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 48,
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 11,
+                "dataId": 2,
+                "value": 0.8
+            }
+        ],
+        "iconIndex": 128,
+        "name": "火耐性テスト盾",
+        "note": "",
+        "params": [
+            500,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 49,
+        "atypeId": 1,
+        "description": "",
+        "etypeId": 4,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 11,
+                "dataId": 2,
+                "value": 0.8
+            }
+        ],
+        "iconIndex": 137,
+        "name": "火耐性テスト鎧",
+        "note": "",
+        "params": [
+            500,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 50,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 51,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 52,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 53,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 54,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 55,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 56,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 57,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 58,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 59,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 60,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "----接頭語----",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 61,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "朽ちた",
+        "note": "<prefixSuffixNoNameSpace>",
+        "params": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            -1,
+            -1
+        ],
+        "price": 0
+    },
+    {
+        "id": 62,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "普通の",
+        "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 63,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "名匠の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 64,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 7,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 0,
+        "name": "祝福された",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4
+        ],
+        "price": 0
+    },
+    {
+        "id": 65,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "残忍な",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 66,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 32,
+                "dataId": 5,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "輝く",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            2
+        ],
+        "price": 0
+    },
+    {
+        "id": 67,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "賢者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            1,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 68,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 13,
+                "dataId": 4,
+                "value": 0.3
+            }
+        ],
+        "iconIndex": 0,
+        "name": "耐毒の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 69,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "ユニーク防具",
+        "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>\n<rarity: 3>\n",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 70,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "セット防具",
+        "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>\n<rarity: 4>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 71,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            },
+            {
+                "code": 32,
+                "dataId": 62,
+                "value": 0.02
+            }
+        ],
+        "iconIndex": 0,
+        "name": "乱暴者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 72,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 11,
+                "dataId": 2,
+                "value": 0.8
+            }
+        ],
+        "iconIndex": 0,
+        "name": "耐火の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 73,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 74,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 75,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 76,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 77,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 78,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 79,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 80,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "----接尾語-----",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 81,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<力>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 82,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<守り>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 83,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<素早さ>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 84,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<運>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+        ],
+        "price": 0
+    },
+    {
+        "id": 85,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<生命力>",
+        "note": "",
+        "params": [
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 86,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<剛腕>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 87,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<鉄壁>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 88,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<俊敏>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 89,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<幸運>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+        ],
+        "price": 0
+    },
+    {
+        "id": 90,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<賢さ>",
+        "note": "",
+        "params": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 91,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<<伝説>>",
+        "note": "",
+        "params": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ],
+        "price": 0
+    },
+    {
+        "id": 92,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 93,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 94,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 95,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 96,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 97,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 98,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 99,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 100,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 101,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 102,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 103,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 104,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 105,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 106,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 107,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 108,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 109,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "----セット効果-----",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 110,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "iconIndex": 0,
+        "name": "シルフィーセット効果",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            10,
+            10,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 111,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 4,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.15
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.3
+            }
+        ],
+        "iconIndex": 0,
+        "name": "暗躍する舞踏家効果",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            5
+        ],
+        "price": 0
+    },
+    {
+        "id": 112,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 6,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 32,
+                "dataId": 9,
+                "value": 1
+            }
+        ],
+        "iconIndex": 0,
+        "name": "囚人アリシア効果",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            5,
+            5,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 113,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 114,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 115,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 116,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 117,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 118,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 119,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "----レアリティ１-----",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 120,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [],
+        "iconIndex": 0,
+        "name": "名匠の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 121,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "残忍な",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 122,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 13,
+                "dataId": 4,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 65,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 63,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 67,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 66,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 62,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 56,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 51,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 10,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 2,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 5,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 4,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 5,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 6,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 7,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 8,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 9,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 10,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 0.97
+            }
+        ],
+        "iconIndex": 0,
+        "name": "我慢の",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]全耐性\\c[24]+3%\\c[0]>",
+        "params": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 123,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            },
+            {
+                "code": 32,
+                "dataId": 62,
+                "value": 0.02
+            }
+        ],
+        "iconIndex": 0,
+        "name": "乱暴者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            -1,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 124,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            },
+            {
+                "code": 32,
+                "dataId": 51,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "解体屋の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            -1,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 125,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.04
+            },
+            {
+                "code": 23,
+                "dataId": 5,
+                "value": 0.1
+            }
+        ],
+        "iconIndex": 0,
+        "name": "剣闘士の",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]TPチャージ率\\c[24]+10%\\c[0]>",
+        "params": [
+            0,
+            0,
+            2,
+            -2,
+            0,
+            0,
+            1,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 126,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.03
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 0,
+        "name": "舞踏家の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            1
+        ],
+        "price": 0
+    },
+    {
+        "id": 127,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 7,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 0,
+        "name": "聖職者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 128,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 23,
+                "dataId": 1,
+                "value": 1.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "騎士の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1><AddInfoWindowA:\\c[4]防御効果\\c[24]+5%\\c[0]>",
+        "params": [
+            2,
+            0,
+            0,
+            2,
+            0,
+            1,
+            -1,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 129,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 32,
+                "dataId": 4,
+                "value": 0.03
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": 20
+            }
+        ],
+        "iconIndex": 0,
+        "name": "盗賊の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2,
+            2
+        ],
+        "price": 0
+    },
+    {
+        "id": 130,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 131,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 132,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 133,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "----レアリティ２-----",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 134,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 32,
+                "dataId": 5,
+                "value": 0.05
+            },
+            {
+                "code": 14,
+                "dataId": 5,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 0,
+        "name": "輝く",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            2,
+            2
+        ],
+        "price": 0
+    },
+    {
+        "id": 135,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 5,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "賢者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            2,
+            0,
+            0,
+            5,
+            2,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 136,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 11,
+                "dataId": 2,
+                "value": 0.9
+            },
+            {
+                "code": 11,
+                "dataId": 5,
+                "value": 0.9
+            },
+            {
+                "code": 11,
+                "dataId": 4,
+                "value": 0.9
+            }
+        ],
+        "iconIndex": 0,
+        "name": "玉虫色の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]火耐性\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]水耐性\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]雷耐性\\c[24]+10%\\c[0]>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 137,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 23,
+                "dataId": 1,
+                "value": 1.1
+            },
+            {
+                "code": 22,
+                "dataId": 7,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "神殿騎士の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]防御効果\\c[24]+10%\\c[0]>",
+        "params": [
+            5,
+            0,
+            0,
+            5,
+            0,
+            3,
+            -2,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 138,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.03
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": 15
+            },
+            {
+                "code": 32,
+                "dataId": 81,
+                "value": 0.01
+            }
+        ],
+        "iconIndex": 0,
+        "name": "暗殺者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            0,
+            3,
+            -1,
+            0,
+            0,
+            3,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 139,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": -0.15
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.1
+            },
+            {
+                "code": 22,
+                "dataId": 7,
+                "value": -0.05
+            },
+            {
+                "code": 32,
+                "dataId": 51,
+                "value": 0.1
+            }
+        ],
+        "iconIndex": 0,
+        "name": "狂戦士の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            3,
+            0,
+            7,
+            -3,
+            0,
+            -2,
+            2,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 140,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 141,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 142,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 143,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 144,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 145,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 146,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 147,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 148,
+        "atypeId": 5,
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\nギルドから支給されたもの。[重さ5W]",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 128,
+        "name": "冒険者の盾（支給品）",
+        "note": "<weight:5>\n",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            1
+        ],
+        "price": 10
+    },
+    {
+        "id": 149,
+        "atypeId": 1,
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\nギルドから支給されたもの。[重さ3W]",
+        "etypeId": 3,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 130,
+        "name": "冒険者の帽子（支給品）",
+        "note": "<weight:3>\n",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            1
+        ],
+        "price": 10
+    },
+    {
+        "id": 150,
+        "atypeId": 1,
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\nギルドから支給されたもの。[重さ8W]",
+        "etypeId": 4,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 135,
+        "name": "冒険者の服（支給品）",
+        "note": "<weight:8>\n",
+        "params": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            1,
+            1
+        ],
+        "price": 10
+    },
+    {
+        "id": 151,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 152,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 153,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 154,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 155,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 156,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 157,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 158,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 159,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "---レアリティ3---",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 160,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [],
+        "iconIndex": 0,
+        "name": "英雄の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
+        "params": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+        ],
+        "price": 0
+    },
+    {
+        "id": 161,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 7,
+                "value": 0.03
+            },
+            {
+                "code": 22,
+                "dataId": 8,
+                "value": 0.03
+            },
+            {
+                "code": 22,
+                "dataId": 9,
+                "value": 0.03
+            },
+            {
+                "code": 31,
+                "dataId": 10,
+                "value": 1
+            }
+        ],
+        "iconIndex": 0,
+        "name": "祝福された",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            4
+        ],
+        "price": 0
+    },
+    {
+        "id": 162,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 32,
+                "dataId": 81,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "死神の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
+        "params": [
+            0,
+            0,
+            4,
+            0,
+            2,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 163,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 164,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 165,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 166,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 167,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 168,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 169,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 170,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 171,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 172,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 173,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 174,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 175,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 176,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 177,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 178,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 179,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    },
+    {
+        "id": 180,
+        "atypeId": 0,
+        "description": "",
+        "etypeId": 2,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0
+    }
+]

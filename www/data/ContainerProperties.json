@@ -1,0 +1,60 @@
+{
+    "Scene_Title": {
+        "Scene_Title": {
+            "0,Sprite": {
+                "x": 512,
+                "y": 384
+            }
+        }
+    },
+    "Scene_Shop": {
+        "WindowLayer": {
+            "6,Window_ShopBuy": {
+                "x": 0,
+                "y": 180,
+                "width": 456,
+                "height": 588,
+                "opacity": 255,
+                "hidden": false,
+                "_customFontSize": "20",
+                "_customPadding": 18,
+                "_customLineHeight": 36,
+                "_customBackOpacity": 192,
+                "_customBackFileName": "",
+                "_customFontFace": ""
+            }
+        }
+    },
+    "Scene_Battle": {
+        "WindowLayer": {
+            "0,Window_BattleStatus": {
+                "x": 192,
+                "y": 588,
+                "width": 832,
+                "height": 180,
+                "opacity": 255,
+                "hidden": false,
+                "_customFontSize": "20",
+                "_customPadding": 18,
+                "_customLineHeight": 36,
+                "_customBackOpacity": 192,
+                "_customBackFileName": "",
+                "_customFontFace": ""
+            },
+            "19,Window_Message": {
+                "x": 0,
+                "y": 588,
+                "width": 1024,
+                "height": 180,
+                "opacity": 255,
+                "hidden": false,
+                "_customFontSize": 28,
+                "_customPadding": 18,
+                "_customLineHeight": 36,
+                "_customBackOpacity": 192,
+                "_customBackFileName": "",
+                "_customFontFace": ""
+            }
+        }
+    }
+}

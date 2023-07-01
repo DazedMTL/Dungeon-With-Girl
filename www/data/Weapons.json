@@ -1,0 +1,6922 @@
+[
+    null,
+    {
+        "id": 1,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\MD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 97,
+        "name": "----ベースアイテム----",
+        "note": "<weight:40>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 300,
+        "wtypeId": 2
+    },
+    {
+        "id": 2,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器。\n[重さ5W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ショートソード",
+        "note": "<weight:5>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 40%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 300,
+        "wtypeId": 2
+    },
+    {
+        "id": 3,
+        "animationId": 6,
+        "description": "熟練の冒険者や兵士が好んで使う武器。[重さ8W]\n",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ロングソード",
+        "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 30%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            6,
+            1,
+            0,
+            0,
+            -2,
+            0
+        ],
+        "price": 300,
+        "wtypeId": 2
+    },
+    {
+        "id": 4,
+        "animationId": 1,
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器。\nまれに相手を気絶させる。[重さ10W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": -20
+            },
+            {
+                "code": 32,
+                "dataId": 62,
+                "value": 0.12
+            }
+        ],
+        "iconIndex": 108,
+        "name": "メイス",
+        "note": "<weight:10>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 40%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            -5,
+            0
+        ],
+        "price": 300,
+        "wtypeId": 3
+    },
+    {
+        "id": 5,
+        "animationId": 6,
+        "description": "軽いため女性にも扱いやすい武器。\nまれに相手を出血させる。[重さ3W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            },
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.15
+            },
+            {
+                "code": 54,
+                "dataId": 2,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 96,
+        "name": "ダガー",
+        "note": "<weight:3>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-66 20%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            5,
+            2
+        ],
+        "price": 300,
+        "wtypeId": 1
+    },
+    {
+        "id": 6,
+        "animationId": 6,
+        "description": "折れてしまった剣。素手よりはマシ。[重さ5W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            }
+        ],
+        "iconIndex": 97,
+        "name": "折れた剣",
+        "note": "<weight:5>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 40%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 20,
+        "wtypeId": 2
+    },
+    {
+        "id": 7,
+        "animationId": 6,
+        "description": "古の戦士たちが使っていたと思われる剣。\n状態によっては近年つくられた武器よりも鋭い。[重さ8W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            }
+        ],
+        "iconIndex": 97,
+        "name": "古代の剣",
+        "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 30%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            8,
+            1,
+            0,
+            0,
+            -2,
+            0
+        ],
+        "price": 600,
+        "wtypeId": 2
+    },
+    {
+        "id": 8,
+        "animationId": 6,
+        "description": "武器というよりは美術品としての側面が強い。\n運が上昇する。[重さ5W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            }
+        ],
+        "iconIndex": 97,
+        "name": "金の剣",
+        "note": "<weight:5>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 40%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            5
+        ],
+        "price": 5000,
+        "wtypeId": 2
+    },
+    {
+        "id": 9,
+        "animationId": 8,
+        "description": "火を司る神が愛用していたという逸話のある剣。\n攻撃時に相手を燃焼状態にする。[重さ15W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 5,
+                "value": 0.2
+            },
+            {
+                "code": 32,
+                "dataId": 63,
+                "value": 1
+            },
+            {
+                "code": 31,
+                "dataId": 2,
+                "value": 1
+            },
+            {
+                "code": 32,
+                "dataId": 67,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            }
+        ],
+        "iconIndex": 125,
+        "name": "魔剣グレンカイナ",
+        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]炎属性\\c[0]>",
+        "params": [
+            0,
+            0,
+            12,
+            12,
+            10,
+            10,
+            -3,
+            0
+        ],
+        "price": 20000,
+        "wtypeId": 2
+    },
+    {
+        "id": 10,
+        "animationId": 7,
+        "description": "呪いの力によって絶大な攻撃力をひきだされた剣。\n攻撃力と引き換えに、光と行動の自由を失う。[重さ25W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.35
+            },
+            {
+                "code": 62,
+                "dataId": 0,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.25
+            }
+        ],
+        "iconIndex": 125,
+        "name": "魔神剣オコトヌシ",
+        "note": "<RandomLoseException>\n<weight:25>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]闇属性\\c[0]>",
+        "params": [
+            0,
+            0,
+            25,
+            8,
+            0,
+            0,
+            5,
+            -10
+        ],
+        "price": 20000,
+        "wtypeId": 2
+    },
+    {
+        "id": 11,
+        "animationId": 6,
+        "description": "さまざまな悪い効果を相手にもたらす短剣。[重さ3W]\n",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            },
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.3
+            },
+            {
+                "code": 32,
+                "dataId": 4,
+                "value": 0.1
+            },
+            {
+                "code": 32,
+                "dataId": 5,
+                "value": 0.1
+            },
+            {
+                "code": 32,
+                "dataId": 6,
+                "value": 0.1
+            },
+            {
+                "code": 32,
+                "dataId": 8,
+                "value": 0.1
+            },
+            {
+                "code": 32,
+                "dataId": 63,
+                "value": 0.1
+            },
+            {
+                "code": 32,
+                "dataId": 66,
+                "value": 0.1
+            },
+            {
+                "code": 54,
+                "dataId": 2,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 124,
+        "name": "プレイグメアリー",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            5,
+            2
+        ],
+        "price": 20000,
+        "wtypeId": 1
+    },
+    {
+        "id": 12,
+        "animationId": 6,
+        "description": "とても希少な金属で造られた剣。\n歴史に名を残すような偉人たちも愛用していた。[重さ8W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ミスリルソード",
+        "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 20%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            10,
+            1,
+            0,
+            0,
+            -2,
+            2
+        ],
+        "price": 1000,
+        "wtypeId": 2
+    },
+    {
+        "id": 13,
+        "animationId": 1,
+        "description": "先端のおもりにさらにスパイクをつけた凶悪な武器。\n気絶に加え、出血によるダメージも狙える。[重さ15W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": -20
+            },
+            {
+                "code": 32,
+                "dataId": 62,
+                "value": 0.12
+            },
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 108,
+        "name": "モーニングスター",
+        "note": "<weight:15>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 20%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            -5,
+            0
+        ],
+        "price": 1000,
+        "wtypeId": 3
+    },
+    {
+        "id": 14,
+        "animationId": 6,
+        "description": "軽さと強度を併せ持つ鋭く磨かれたタガー。\nまれに相手を出血させる。[重さ3W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            },
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.15
+            },
+            {
+                "code": 54,
+                "dataId": 2,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 96,
+        "name": "シャープエッジ",
+        "note": "<weight:3>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-66 20%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            6,
+            2
+        ],
+        "price": 2000,
+        "wtypeId": 1
+    },
+    {
+        "id": 15,
+        "animationId": 1,
+        "description": "木を削ってつくられた安価な武器。[重さ5W]\n",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": -20
+            },
+            {
+                "code": 32,
+                "dataId": 62,
+                "value": 0.12
+            }
+        ],
+        "iconIndex": 108,
+        "name": "木のこん棒",
+        "note": "<weight:5>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 40%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            -3,
+            0
+        ],
+        "price": 100,
+        "wtypeId": 3
+    },
+    {
+        "id": 16,
+        "animationId": 11,
+        "description": "血で赤く染まった骨製のこん棒。高い威力を誇るが、\n毎ターン体力が減少する呪いの武器。[重さ15W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": -20
+            },
+            {
+                "code": 32,
+                "dataId": 62,
+                "value": 0.12
+            },
+            {
+                "code": 22,
+                "dataId": 7,
+                "value": -0.08
+            },
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.4
+            }
+        ],
+        "iconIndex": 126,
+        "name": "血の渇望",
+        "note": "<weight:15>\n\n<Prefixes>\n43 100%\n</Prefixes>\n\n<Suffixes>\n67 5%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            18,
+            -2,
+            2,
+            0,
+            -5,
+            0
+        ],
+        "price": 10000,
+        "wtypeId": 3
+    },
+    {
+        "id": 17,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器。\nギルドから支給されたもの。[重さ5W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ショートソード(支給品)",
+        "note": "<weight:5>\n\n\n",
+        "params": [
+            0,
+            0,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 10,
+        "wtypeId": 2
+    },
+    {
+        "id": 18,
+        "animationId": 6,
+        "description": "アンデッド系の敵に大きなダメージをあたえることができる\n武器。[重さ8W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 10,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            },
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 1
+            }
+        ],
+        "iconIndex": 97,
+        "name": "銀の剣",
+        "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 30%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]聖属性\\c[0]>",
+        "params": [
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 3000,
+        "wtypeId": 2
+    },
+    {
+        "id": 19,
+        "animationId": 6,
+        "description": "刀身に不思議な文様が刻まれている剣。文様はかすかに\n光を放ち、チリチリと音をだしている。[重さ10W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ウォーソード",
+        "note": "<weight:10>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 30% 60-65 40%\n</Suffixes>",
+        "params": [
+            0,
+            2,
+            11,
+            2,
+            0,
+            0,
+            -3,
+            0
+        ],
+        "price": 2500,
+        "wtypeId": 2
+    },
+    {
+        "id": 20,
+        "animationId": 0,
+        "description": "歩兵が補助用に持ち歩く大きめ短剣。\n短剣には珍しく防御力も少しあがる。[重さ3W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            },
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.15
+            },
+            {
+                "code": 54,
+                "dataId": 2,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 96,
+        "name": "クシポス",
+        "note": "<weight:3>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 30% 60-66 10%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            5,
+            0
+        ],
+        "price": 1500,
+        "wtypeId": 1
+    },
+    {
+        "id": 21,
+        "animationId": 10,
+        "description": "太古の王が携えていたとされる伝説の宝剣。蒼く光る刀身\nから放たれる一撃は複数の相手に裁きを下す。[重さ8W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 64,
+                "dataId": 3,
+                "value": 1
+            },
+            {
+                "code": 31,
+                "dataId": 4,
+                "value": 1
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": 10
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            }
+        ],
+        "iconIndex": 125,
+        "name": "宝剣エルダード",
+        "note": "<RandomLoseException>\n<weight:8>\n<skill_id:27>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]雷属性\\c[0]>",
+        "params": [
+            0,
+            0,
+            13,
+            5,
+            3,
+            0,
+            2,
+            5
+        ],
+        "price": 50000,
+        "wtypeId": 2
+    },
+    {
+        "id": 22,
+        "animationId": 1,
+        "description": "攻防一体となった武器。攻撃力こそ低いが、反撃率が高く\n複数の相手との戦いにおいて真価を発揮する。[重さ3W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            },
+            {
+                "code": 32,
+                "dataId": 66,
+                "value": 0.1
+            },
+            {
+                "code": 54,
+                "dataId": 2,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.3
+            }
+        ],
+        "iconIndex": 124,
+        "name": "十手",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            5,
+            2
+        ],
+        "price": 20000,
+        "wtypeId": 1
+    },
+    {
+        "id": 23,
+        "animationId": 97,
+        "description": "ガーディアンの頭部をそのまま武器としたモノ。\n動力源は失ったものの眼は微かに輝き続けている。[重さ15W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 8,
+                "value": 0
+            },
+            {
+                "code": 32,
+                "dataId": 5,
+                "value": 1
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": -20
+            },
+            {
+                "code": 32,
+                "dataId": 63,
+                "value": 0.8
+            }
+        ],
+        "iconIndex": 126,
+        "name": "ガーディアンの頭部",
+        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]光属性\\c[0]>",
+        "params": [
+            0,
+            0,
+            9,
+            0,
+            5,
+            0,
+            -5,
+            0
+        ],
+        "price": 20000,
+        "wtypeId": 3
+    },
+    {
+        "id": 24,
+        "animationId": 12,
+        "description": "暴虐の王打倒のため立ち上がった勇士の一人は王に寵愛をう\nけた舞踏家だった。回避率、会心率があがる。[重さ3W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            },
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.15
+            },
+            {
+                "code": 54,
+                "dataId": 2,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.05
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 162,
+        "name": "暗躍する舞踏家のダガー",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n44 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 運+5 回避率+15% 会心率+30%\\c[0]>",
+        "params": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            3,
+            4
+        ],
+        "price": 10000,
+        "wtypeId": 1
+    },
+    {
+        "id": 25,
+        "animationId": 2,
+        "description": "倒れた敵の防具はひしゃげて使えなくなるため、このような\n異名をつけられた。相手の物理耐性を下げる。[重さ15W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": -20
+            },
+            {
+                "code": 32,
+                "dataId": 62,
+                "value": 0.2
+            },
+            {
+                "code": 32,
+                "dataId": 51,
+                "value": 1
+            }
+        ],
+        "iconIndex": 126,
+        "name": "ガラクタ集め",
+        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>",
+        "params": [
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            -5,
+            0
+        ],
+        "price": 10000,
+        "wtypeId": 3
+    },
+    {
+        "id": 26,
+        "animationId": 7,
+        "description": "オークが持っていた大剣。相手をまとめて薙ぎ払えるが\n分厚くとても重いので両手でないと持てない。[重さ30W]",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 54,
+                "dataId": 2,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.08
+            },
+            {
+                "code": 32,
+                "dataId": 51,
+                "value": 0.5
+            },
+            {
+                "code": 32,
+                "dataId": 50,
+                "value": 0.2
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": -30
+            }
+        ],
+        "iconIndex": 125,
+        "name": "血塗られたオークソード",
+        "note": "<RandomLoseException>\n<weight:30>\n<skill_id:49>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n",
+        "params": [
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            -10,
+            0
+        ],
+        "price": 20000,
+        "wtypeId": 2
+    },
+    {
+        "id": 27,
+        "animationId": 116,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "光線銃",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 9
+    },
+    {
+        "id": 28,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 29,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 30,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 31,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 32,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 33,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 34,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "----接頭語----",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 35,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "朽ちた",
+        "note": "<prefixSuffixNoNameSpace>\n",
+        "params": [
+            0,
+            0,
+            -2,
+            -1,
+            0,
+            0,
+            -1,
+            -1
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 36,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "普通の",
+        "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 37,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "名匠の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>\n",
+        "params": [
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 38,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 7,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "祝福された",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 39,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 9,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            },
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "残忍な",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            3,
+            -5,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 40,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 8,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            },
+            {
+                "code": 32,
+                "dataId": 5,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "輝く",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            3,
+            3
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 41,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "賢者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            1,
+            0,
+            0,
+            5,
+            1,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 42,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            },
+            {
+                "code": 32,
+                "dataId": 4,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "毒の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 43,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "ユニーク武器",
+        "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>\n<rarity: 3>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 44,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "セット装備",
+        "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>\n<rarity: 4>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 45,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            },
+            {
+                "code": 32,
+                "dataId": 62,
+                "value": 0.02
+            }
+        ],
+        "iconIndex": 0,
+        "name": "乱暴者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            -1,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 46,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 47,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 48,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 49,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 50,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 51,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 52,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 53,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 54,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 55,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "----接尾語----",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 56,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<力>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 57,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<守り>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 58,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<素早さ>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 59,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<運>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 60,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<生命力>",
+        "note": "",
+        "params": [
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 61,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<剛腕>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 62,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<鉄壁>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 63,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<俊敏>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 64,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<幸運>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 65,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<賢さ>",
+        "note": "",
+        "params": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            0,
+            0,
+            5
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 66,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            },
+            {
+                "code": 32,
+                "dataId": 4,
+                "value": 0.2
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<毒>",
+        "note": "",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 67,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "<<伝説>>",
+        "note": "",
+        "params": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 68,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 69,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 70,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 71,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 72,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 73,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 74,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\MD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ショートソード<力>",
+        "note": "<weight:40>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            5,
+            1,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 350,
+        "wtypeId": 2
+    },
+    {
+        "id": 75,
+        "animationId": 6,
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\MD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ロングソード<力>",
+        "note": "<weight:50>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            7,
+            1,
+            0,
+            0,
+            -2,
+            0
+        ],
+        "price": 350,
+        "wtypeId": 2
+    },
+    {
+        "id": 76,
+        "animationId": 1,
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\MD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.03
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 1.03
+            }
+        ],
+        "iconIndex": 108,
+        "name": "メイス<力>",
+        "note": "<weight:60>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            -5,
+            0
+        ],
+        "price": 350,
+        "wtypeId": 3
+    },
+    {
+        "id": 77,
+        "animationId": 6,
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "iconIndex": 96,
+        "name": "ダガー<力>",
+        "note": "<weight:20>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            5,
+            2
+        ],
+        "price": 350,
+        "wtypeId": 1
+    },
+    {
+        "id": 78,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ショートソード<守り>",
+        "note": "<weight:40>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 350,
+        "wtypeId": 2
+    },
+    {
+        "id": 79,
+        "animationId": 6,
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ロングソード<守り>",
+        "note": "<weight:50>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            5,
+            3,
+            0,
+            0,
+            -2,
+            0
+        ],
+        "price": 350,
+        "wtypeId": 2
+    },
+    {
+        "id": 80,
+        "animationId": 1,
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.03
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 1.03
+            }
+        ],
+        "iconIndex": 108,
+        "name": "メイス<守り>",
+        "note": "<weight:60>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            8,
+            2,
+            0,
+            0,
+            -5,
+            0
+        ],
+        "price": 350,
+        "wtypeId": 3
+    },
+    {
+        "id": 81,
+        "animationId": 6,
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "iconIndex": 96,
+        "name": "ダガー<守り>",
+        "note": "<weight:20>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            5,
+            2
+        ],
+        "price": 350,
+        "wtypeId": 1
+    },
+    {
+        "id": 82,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ショートソード<素早さ>",
+        "note": "<weight:40>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            2,
+            0
+        ],
+        "price": 350,
+        "wtypeId": 2
+    },
+    {
+        "id": 83,
+        "animationId": 6,
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ロングソード<素早さ>",
+        "note": "<weight:50>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            5,
+            1,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 350,
+        "wtypeId": 2
+    },
+    {
+        "id": 84,
+        "animationId": 1,
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.03
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 1.03
+            }
+        ],
+        "iconIndex": 108,
+        "name": "メイス<素早さ>",
+        "note": "<weight:60>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            -3,
+            0
+        ],
+        "price": 350,
+        "wtypeId": 3
+    },
+    {
+        "id": 85,
+        "animationId": 6,
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "iconIndex": 96,
+        "name": "ダガー<素早さ>",
+        "note": "<weight:20>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            7,
+            2
+        ],
+        "price": 350,
+        "wtypeId": 1
+    },
+    {
+        "id": 86,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ショートソード<運>",
+        "note": "<weight:40>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            0,
+            2
+        ],
+        "price": 350,
+        "wtypeId": 2
+    },
+    {
+        "id": 87,
+        "animationId": 6,
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ロングソード<運>",
+        "note": "<weight:50>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            5,
+            1,
+            0,
+            0,
+            -2,
+            2
+        ],
+        "price": 350,
+        "wtypeId": 2
+    },
+    {
+        "id": 88,
+        "animationId": 1,
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.03
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 1.03
+            }
+        ],
+        "iconIndex": 108,
+        "name": "メイス<運>",
+        "note": "<weight:60>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            -5,
+            2
+        ],
+        "price": 350,
+        "wtypeId": 3
+    },
+    {
+        "id": 89,
+        "animationId": 6,
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "iconIndex": 96,
+        "name": "ダガー<運>",
+        "note": "<weight:20>\n<rarity: 1>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            5,
+            4
+        ],
+        "price": 350,
+        "wtypeId": 1
+    },
+    {
+        "id": 90,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ショートソード<剛力>",
+        "note": "<weight:40>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            8,
+            1,
+            0,
+            0,
+            -3,
+            0
+        ],
+        "price": 450,
+        "wtypeId": 2
+    },
+    {
+        "id": 91,
+        "animationId": 6,
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ロングソード<剛力>",
+        "note": "<weight:50>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            10,
+            1,
+            0,
+            0,
+            -5,
+            0
+        ],
+        "price": 450,
+        "wtypeId": 2
+    },
+    {
+        "id": 92,
+        "animationId": 1,
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.03
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 1.03
+            }
+        ],
+        "iconIndex": 108,
+        "name": "メイス<剛力>",
+        "note": "<weight:60>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            15,
+            0,
+            0,
+            0,
+            -8,
+            0
+        ],
+        "price": 450,
+        "wtypeId": 3
+    },
+    {
+        "id": 93,
+        "animationId": 6,
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "iconIndex": 96,
+        "name": "ダガー<剛力>",
+        "note": "<weight:20>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            2,
+            2
+        ],
+        "price": 450,
+        "wtypeId": 1
+    },
+    {
+        "id": 94,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ショートソード<鉄壁>",
+        "note": "<weight:40>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            3,
+            6,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 450,
+        "wtypeId": 2
+    },
+    {
+        "id": 95,
+        "animationId": 6,
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ロングソード<鉄壁>",
+        "note": "<weight:50>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            5,
+            6,
+            0,
+            0,
+            -2,
+            0
+        ],
+        "price": 450,
+        "wtypeId": 2
+    },
+    {
+        "id": 96,
+        "animationId": 1,
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.03
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 1.03
+            }
+        ],
+        "iconIndex": 108,
+        "name": "メイス<鉄壁>",
+        "note": "<weight:60>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            8,
+            5,
+            0,
+            0,
+            -5,
+            0
+        ],
+        "price": 450,
+        "wtypeId": 3
+    },
+    {
+        "id": 97,
+        "animationId": 6,
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "iconIndex": 96,
+        "name": "ダガー<鉄壁>",
+        "note": "<weight:20>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            1,
+            5,
+            0,
+            0,
+            5,
+            2
+        ],
+        "price": 450,
+        "wtypeId": 1
+    },
+    {
+        "id": 98,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ショートソード<迅速>",
+        "note": "<weight:40>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            5,
+            0
+        ],
+        "price": 450,
+        "wtypeId": 2
+    },
+    {
+        "id": 99,
+        "animationId": 6,
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ロングソード<迅速>",
+        "note": "<weight:50>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            5,
+            1,
+            0,
+            0,
+            3,
+            0
+        ],
+        "price": 450,
+        "wtypeId": 2
+    },
+    {
+        "id": 100,
+        "animationId": 1,
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.03
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 1.03
+            }
+        ],
+        "iconIndex": 108,
+        "name": "メイス<迅速>",
+        "note": "<weight:60>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            2,
+            0
+        ],
+        "price": 450,
+        "wtypeId": 3
+    },
+    {
+        "id": 101,
+        "animationId": 6,
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "iconIndex": 96,
+        "name": "ダガー<迅速>",
+        "note": "<weight:20>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            10,
+            2
+        ],
+        "price": 450,
+        "wtypeId": 1
+    },
+    {
+        "id": 102,
+        "animationId": 6,
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ショートソード<幸運>",
+        "note": "<weight:40>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            0,
+            5
+        ],
+        "price": 450,
+        "wtypeId": 2
+    },
+    {
+        "id": 103,
+        "animationId": 6,
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            }
+        ],
+        "iconIndex": 97,
+        "name": "ロングソード<幸運>",
+        "note": "<weight:50>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            5,
+            1,
+            0,
+            0,
+            -2,
+            5
+        ],
+        "price": 450,
+        "wtypeId": 2
+    },
+    {
+        "id": 104,
+        "animationId": 1,
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.03
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 1.03
+            }
+        ],
+        "iconIndex": 108,
+        "name": "メイス<幸運>",
+        "note": "<weight:60>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            -5,
+            5
+        ],
+        "price": 450,
+        "wtypeId": 3
+    },
+    {
+        "id": 105,
+        "animationId": 6,
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.05
+            },
+            {
+                "code": 34,
+                "dataId": 0,
+                "value": 1
+            }
+        ],
+        "iconIndex": 96,
+        "name": "ダガー<幸運>",
+        "note": "<weight:20>\n<rarity: 2>\n<Durability: 100>",
+        "params": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            5,
+            7
+        ],
+        "price": 450,
+        "wtypeId": 1
+    },
+    {
+        "id": 106,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 107,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 108,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 109,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 110,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 111,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 112,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 113,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 114,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 115,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 116,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 117,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 118,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 119,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "-----レアリティ１--------",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 120,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "名匠の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>\n",
+        "params": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 121,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 32,
+                "dataId": 65,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "残忍な",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            3,
+            -3,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 122,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 13,
+                "dataId": 4,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 65,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 63,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 67,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 66,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 62,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 56,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 51,
+                "value": 0.97
+            },
+            {
+                "code": 13,
+                "dataId": 10,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 2,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 5,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 4,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 5,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 6,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 7,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 8,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 9,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 10,
+                "value": 0.97
+            },
+            {
+                "code": 11,
+                "dataId": 1,
+                "value": 0.97
+            }
+        ],
+        "iconIndex": 0,
+        "name": "我慢の",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]全耐性\\c[24]+3%\\c[0]>",
+        "params": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 123,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            },
+            {
+                "code": 32,
+                "dataId": 62,
+                "value": 0.02
+            }
+        ],
+        "iconIndex": 0,
+        "name": "乱暴者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            -1,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 124,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": -0.01
+            },
+            {
+                "code": 32,
+                "dataId": 51,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "解体屋の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            -1,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 125,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 6,
+                "value": 0.04
+            },
+            {
+                "code": 23,
+                "dataId": 5,
+                "value": 1.1
+            }
+        ],
+        "iconIndex": 0,
+        "name": "剣闘士の",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]TPチャージ率\\c[24]+10%\\c[0]>",
+        "params": [
+            0,
+            0,
+            2,
+            -2,
+            0,
+            0,
+            1,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 126,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.03
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 0,
+        "name": "舞踏家の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            1
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 127,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 7,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 0,
+        "name": "聖職者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            2,
+            -1,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 128,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 23,
+                "dataId": 1,
+                "value": 1.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "騎士の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>\n<AddInfoWindowA:\\c[4]防御効果\\c[24]+5%\\c[0]>",
+        "params": [
+            2,
+            0,
+            0,
+            2,
+            0,
+            1,
+            -1,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 129,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 32,
+                "dataId": 4,
+                "value": 0.03
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": 20
+            }
+        ],
+        "iconIndex": 0,
+        "name": "盗賊の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
+        "params": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            2,
+            2
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 130,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 131,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 132,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 133,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "-----レアリティ２-----",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 134,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 32,
+                "dataId": 5,
+                "value": 0.05
+            },
+            {
+                "code": 14,
+                "dataId": 5,
+                "value": 1
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0.03
+            }
+        ],
+        "iconIndex": 0,
+        "name": "輝く",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            2,
+            2
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 135,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 5,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "賢者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            2,
+            0,
+            0,
+            5,
+            2,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 136,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 2,
+                "value": 1
+            },
+            {
+                "code": 31,
+                "dataId": 5,
+                "value": 1
+            },
+            {
+                "code": 31,
+                "dataId": 4,
+                "value": 1
+            }
+        ],
+        "iconIndex": 0,
+        "name": "玉虫色の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            0,
+            3,
+            0,
+            3,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 137,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 23,
+                "dataId": 1,
+                "value": 1.1
+            },
+            {
+                "code": 22,
+                "dataId": 7,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "神殿騎士の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]防御効果\\c[24]+10%\\c[0]>",
+        "params": [
+            5,
+            0,
+            0,
+            5,
+            0,
+            3,
+            -2,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 138,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.03
+            },
+            {
+                "code": 33,
+                "dataId": 0,
+                "value": 15
+            },
+            {
+                "code": 32,
+                "dataId": 81,
+                "value": 0.01
+            }
+        ],
+        "iconIndex": 0,
+        "name": "暗殺者の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            0,
+            0,
+            3,
+            -1,
+            0,
+            0,
+            3,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 139,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": -0.15
+            },
+            {
+                "code": 22,
+                "dataId": 2,
+                "value": 0.1
+            },
+            {
+                "code": 22,
+                "dataId": 7,
+                "value": -0.05
+            },
+            {
+                "code": 32,
+                "dataId": 51,
+                "value": 0.1
+            }
+        ],
+        "iconIndex": 0,
+        "name": "狂戦士の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
+        "params": [
+            3,
+            0,
+            7,
+            -3,
+            0,
+            -2,
+            2,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 140,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 141,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 142,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 143,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 144,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 145,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 146,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 147,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 148,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 149,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 150,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "---レアリティ3---",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 151,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [],
+        "iconIndex": 0,
+        "name": "英雄の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>",
+        "params": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 152,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 10,
+                "value": 1
+            }
+        ],
+        "iconIndex": 0,
+        "name": "祝福された",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
+        "params": [
+            0,
+            0,
+            2,
+            0,
+            2,
+            2,
+            0,
+            5
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 153,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 32,
+                "dataId": 81,
+                "value": 0.05
+            }
+        ],
+        "iconIndex": 0,
+        "name": "死神の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
+        "params": [
+            0,
+            0,
+            4,
+            0,
+            2,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 154,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 155,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 156,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 157,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 158,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 159,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 160,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 161,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 162,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 163,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 164,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 165,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 166,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 167,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 168,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 169,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 170,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 171,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 172,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 173,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 174,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 175,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 176,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 177,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 178,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 179,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 180,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 181,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 182,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 183,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 184,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 185,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 186,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 187,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 188,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 189,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 190,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 191,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 192,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 193,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 194,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 195,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 196,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 197,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 198,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 199,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    },
+    {
+        "id": 200,
+        "animationId": 0,
+        "description": "",
+        "etypeId": 1,
+        "traits": [
+            {
+                "code": 31,
+                "dataId": 1,
+                "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 0,
+                "value": 0
+            }
+        ],
+        "iconIndex": 0,
+        "name": "",
+        "note": "",
+        "params": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "price": 0,
+        "wtypeId": 0
+    }
+]

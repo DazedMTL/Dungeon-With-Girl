@@ -1,0 +1,2961 @@
+[
+    null,
+    {
+        "id": 1,
+        "animationId": -1,
+        "damage": {
+            "critical": true,
+            "elementId": -1,
+            "formula": "Math.max((a.atk*2 - b.def/4),a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 0,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "の攻撃！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "攻撃",
+        "note": "スキル１番は［攻撃］コマンドを\n選択したときに使用されます。",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 0,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 10
+    },
+    {
+        "id": 2,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 2,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 13,
+                "dataId": 0,
+                "value1": 30,
+                "value2": 0
+            },
+            {
+                "code": 31,
+                "dataId": 2,
+                "value1": 2,
+                "value2": 0
+            },
+            {
+                "code": 21,
+                "dataId": 52,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 81,
+        "message1": "は身を守っている。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "防御",
+        "note": "スキル２番は［防御］コマンドを\n選択したときに使用されます。",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 2000,
+        "stypeId": 0,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 10
+    },
+    {
+        "id": 3,
+        "animationId": -1,
+        "damage": {
+            "critical": true,
+            "elementId": -1,
+            "formula": "a.atk * 4 - b.def * 2",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 0,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "の攻撃！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "連続攻撃",
+        "note": "",
+        "occasion": 1,
+        "repeats": 2,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 0,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 5
+    },
+    {
+        "id": 4,
+        "animationId": -1,
+        "damage": {
+            "critical": true,
+            "elementId": -1,
+            "formula": "a.atk * 4 - b.def * 2",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 0,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "の攻撃！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "２回攻撃",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 4,
+        "speed": 0,
+        "stypeId": 0,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 5
+    },
+    {
+        "id": 5,
+        "animationId": -1,
+        "damage": {
+            "critical": true,
+            "elementId": -1,
+            "formula": "Math.max(a.atk * 4 - b.def * 2 - b.luk/2, a.luk)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "流れるような素早い動作で3回斬りつける。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 0,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "剣の舞",
+        "note": "<CP:4>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 5,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 30,
+        "tpGain": 0
+    },
+    {
+        "id": 6,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "戦闘から高確率で逃げることができる。",
+        "effects": [
+            {
+                "code": 41,
+                "dataId": 0,
+                "value1": 0,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 82,
+        "message1": "は逃げてしまった。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "逃げる",
+        "note": "<CP:3>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 80,
+        "tpCost": 30,
+        "tpGain": 0
+    },
+    {
+        "id": 7,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 81,
+        "message1": "は様子を見ている。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "様子を見る",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 0,
+        "speed": 0,
+        "stypeId": 0,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 10
+    },
+    {
+        "id": 8,
+        "animationId": 41,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "30 + a.mat",
+            "type": 3,
+            "variance": 20
+        },
+        "description": "傷ついた仲間を治療することができる\n安定した探索を行うには必須スキル",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 72,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 1,
+        "name": "ヒール",
+        "note": "<CP:1>",
+        "occasion": 0,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 7,
+        "speed": -10,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 10
+    },
+    {
+        "id": 9,
+        "animationId": 66,
+        "damage": {
+            "critical": true,
+            "elementId": 2,
+            "formula": "60 + a.mat * 2 - (b.mdf * 2 + b.def/5)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "相手に炎ダメージを与える。\nたまに相手を火傷、燃焼状態にする。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 63,
+                "value1": 0.3,
+                "value2": 0
+            },
+            {
+                "code": 21,
+                "dataId": 67,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 64,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 1,
+        "name": "フレア",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": -10,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 10,
+        "animationId": 78,
+        "damage": {
+            "critical": true,
+            "elementId": 4,
+            "formula": "40 + a.mat * 2 - (b.mdf * 2 + b.def/5)",
+            "type": 1,
+            "variance": 50
+        },
+        "description": "敵全体に雷ダメージを与える\nたまに相手を麻痺状態にする",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 66,
+                "value1": 0.4,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 66,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 2,
+        "name": "スパーク",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": -10,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 11,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "味方の前に立ち、攻撃を引き受ける。\n\\N[1]が使う場合、好感度が+1される。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 61,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 44,
+                "dataId": 105,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 81,
+        "message1": "は味方を守る構えをとった！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "かばう",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 900,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 20,
+        "tpGain": 0
+    },
+    {
+        "id": 12,
+        "animationId": 0,
+        "damage": {
+            "critical": true,
+            "elementId": 1,
+            "formula": "Math.max(a.atk * 4 - b.def * 2 - b.agi/2, a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "相手の頭を殴りつけ、たまに昏倒させる。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 66,
+                "value1": 0.3,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 78,
+        "message1": "の激しい一撃！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ノックアウト",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 10,
+        "stypeId": 1,
+        "successRate": 95,
+        "tpCost": 15,
+        "tpGain": 0
+    },
+    {
+        "id": 13,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "相手を詠唱をさえぎる魔法",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 6,
+                "value1": 0.4,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 19,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 2,
+        "name": "ノイズ",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": -10,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 14,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 1,
+            "formula": "Math.max(a.atk * 6 - b.def * 2 - b.agi/2, a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "渾身の力をこめて相手を切りつけると同時に、\n相手の物理耐性をさげる。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 51,
+                "value1": 0.6,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 78,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "全力斬り",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 30,
+        "tpGain": 5
+    },
+    {
+        "id": 15,
+        "animationId": 10,
+        "damage": {
+            "critical": true,
+            "elementId": 4,
+            "formula": "Math.max(a.atk * 3 - b.def * 2 - b.agi/2, a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "目にもとまらぬ速さで斬りつけるスキル。\nごくまれに相手を気絶させる。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 66,
+                "value1": 0.4,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "いなずま斬り",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 150,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 30,
+        "tpGain": 5
+    },
+    {
+        "id": 16,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "攻撃力が一時的にあがる。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 64,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 73,
+        "message1": "は気合をためている！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "気合ため",
+        "note": "<CP:1>\n",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 10,
+        "tpGain": 0
+    },
+    {
+        "id": 17,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "意識を集中させTPを得る。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 70,
+        "message1": "は意識を集中させはじめた。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "集中",
+        "note": "<CP:1>\n",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 25
+    },
+    {
+        "id": 18,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 1,
+            "formula": "Math.max(a.atk * 5 - b.def * 2 - b.agi/2, a.agi)",
+            "type": 5,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 1,
+        "iconIndex": 0,
+        "message1": "の吸血攻撃！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "吸血",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 19,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "敵全体を眠りに誘う霧をつくる。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 10,
+                "value1": 0.4,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 24,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 2,
+        "name": "スリープミスト",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 20,
+        "animationId": 0,
+        "damage": {
+            "critical": true,
+            "elementId": 1,
+            "formula": "Math.max(a.atk * 4 - b.def * 2 - b.agi/2, a.agi)",
+            "type": 1,
+            "variance": 50
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "は持っている武器をふりまわした！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ぶんまわし",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 21,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 70,
+        "message1": "は勢いあまって転んでしまった。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "転ぶ",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 22,
+        "animationId": 0,
+        "damage": {
+            "critical": true,
+            "elementId": 1,
+            "formula": "Math.max(a.atk * 2 - b.def * 2 - b.luk/2, a.luk)",
+            "type": 1,
+            "variance": 40
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 71,
+        "message1": "はカラに閉じこもり突撃してきた。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "転がる",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 23,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 300,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 27,
+        "message1": "声をあげてとびかかってきた！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "拘束行動",
+        "note": "<NoStartAction>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 24,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "1",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 68,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 44,
+                "dataId": 299,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "message1": "声をあげてとびかかってきた！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "拘束攻撃",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 25,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 301,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 76,
+        "message1": "",
+        "message2": "",
+        "mpCost": 0,
+        "name": "攻撃（判定コモンあり）",
+        "note": "",
+        "occasion": 0,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 26,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "身体中をめぐる毒を消し去るスキル\n安定した探索を行うには必須スキル",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 72,
+        "message1": "は%1を使った！",
+        "message2": "",
+        "mpCost": 1,
+        "name": "キュアポイズン",
+        "note": "<CP:1>",
+        "occasion": 0,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 7,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 27,
+        "animationId": 10,
+        "damage": {
+            "critical": true,
+            "elementId": 4,
+            "formula": "10 + a.atk * 1.5 + a.mat - (b.def * 2 - b.luk)",
+            "type": 1,
+            "variance": 50
+        },
+        "description": "敵全体に雷ダメージを与える\nたまに相手を麻痺状態にする",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 66,
+                "value1": 0.1,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 66,
+        "message1": "",
+        "message2": "",
+        "mpCost": 0,
+        "name": "通常攻撃（スパーク）",
+        "note": "<CP:3>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 0,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 28,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "細胞の活性化を促し、再生力を高めるスキル。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 74,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 72,
+        "message1": "の傷が驚異的な速度でふさがり始めた。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "再生",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 30,
+        "tpGain": 0
+    },
+    {
+        "id": 29,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "特殊な歩行術で豹のような身のこなしになるスキル。\n使用することで少しの間、回避率と会心率が大幅にあがる。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 75,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 82,
+        "message1": "は%1の構えをとった。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "豹歩",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 30,
+        "tpGain": 0
+    },
+    {
+        "id": 30,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "敵の攻撃から仲間の守るスキル。\n",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 61,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 81,
+        "message1": "は%1態勢に入った。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "かばう",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 900,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 31,
+        "animationId": -1,
+        "damage": {
+            "critical": true,
+            "elementId": -1,
+            "formula": "a.addState(58);Math.max((a.atk*2 - b.def/4 - b.agi/2),a.agi/3)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 49,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 44,
+                "dataId": 381,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "の攻撃！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "攻撃（モンスター）",
+        "note": "スキル１番は［攻撃］コマンドを\n選択したときに使用されます。",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 0,
+        "successRate": 100,
+        "tpCost": 8,
+        "tpGain": 5
+    },
+    {
+        "id": 32,
+        "animationId": 98,
+        "damage": {
+            "critical": true,
+            "elementId": 8,
+            "formula": "30 + a.mat * 4 - (b.mdf * 2 + b.def/5)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 63,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 70,
+        "message1": "の眼が光り、",
+        "message2": "同時に轟音とともにあたりが炎に包まれる！",
+        "mpCost": 0,
+        "name": "全てを焼き尽くす閃光",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 33,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "相手の攻撃魔法を跳ね返す光の鎧を味方にまとわせるスキル。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 77,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 81,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 3,
+        "name": "リフレクトアーマー",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 8,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 34,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "装備している武器に水属性を付与する。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 78,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 72,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 2,
+        "name": "エンチャントブルー",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 8,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 35,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "装備している武器に火属性を付与する。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 79,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 72,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 2,
+        "name": "エンチャントレッド",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 8,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 36,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "装備している武器に雷属性を付与する。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 80,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 72,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 2,
+        "name": "エンチャントパープル",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 8,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 37,
+        "animationId": 1,
+        "damage": {
+            "critical": false,
+            "elementId": 1,
+            "formula": "10",
+            "type": 0,
+            "variance": 0
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 54,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "message1": "",
+        "message2": "",
+        "mpCost": 0,
+        "name": "挑発",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 38,
+        "animationId": 7,
+        "damage": {
+            "critical": true,
+            "elementId": 10,
+            "formula": "Math.max((a.atk*3 - b.def/4),a.mat)",
+            "type": 5,
+            "variance": 20
+        },
+        "description": "相手にダメージを与えつつ、自身の傷を癒す奇跡の剣技。",
+        "effects": [],
+        "hitType": 2,
+        "iconIndex": 70,
+        "message1": "から放たれる神秘の力！光の粒子に包まれ傷がふさがっていく！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "セイクリッドソード",
+        "note": "<CP:3>\n<DE_HP吸収率:40>\n<DE_攻撃メッセージ>\n<DE_上限突破>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 35,
+        "tpGain": 0
+    },
+    {
+        "id": 39,
+        "animationId": 41,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "20 + a.mat",
+            "type": 3,
+            "variance": 20
+        },
+        "description": "傷ついた仲間を治療することができる\n安定した探索を行うには必須スキル",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 72,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 1,
+        "name": "ヒール（自分）",
+        "note": "<CP:1>",
+        "occasion": 0,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": -10,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 10
+    },
+    {
+        "id": 40,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "オイルを広範囲に散布し、\n相手をオイルまみれ状態にするスキル",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 53,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 18,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "オイルショック",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 30,
+        "tpGain": 0
+    },
+    {
+        "id": 41,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 2,
+            "formula": "30 + a.mat * 2 - (b.mdf * 2 + b.def/5 + b.agi/3)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "あたりを火の海に変える驚異の全体攻撃。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 63,
+                "value1": 0.3,
+                "value2": 0
+            },
+            {
+                "code": 21,
+                "dataId": 67,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 64,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ファイアブレス",
+        "note": "モンスター様に消費TPMPは0",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 42,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 1,
+            "formula": "a.addState(58);Math.max(a.atk * 4 - b.def * 2 - b.agi/2, a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 49,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 44,
+                "dataId": 381,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "は持っている武器をふりまわした！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ぶんまわし（モンスター）",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 43,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 1,
+            "formula": "a.addState(58);Math.max(a.atk * 4 - b.def * 2 - b.agi/2, a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "相手の頭を殴りつけ、たまに昏倒させる。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 66,
+                "value1": 0.4,
+                "value2": 0
+            },
+            {
+                "code": 21,
+                "dataId": 49,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 44,
+                "dataId": 381,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 78,
+        "message1": "の激しい一撃！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ノックアウト(モンスター)",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": -10,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 10
+    },
+    {
+        "id": 44,
+        "animationId": 0,
+        "damage": {
+            "critical": true,
+            "elementId": 2,
+            "formula": "55 + a.mat * 2 - (b.mdf * 2 + b.def/5)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "あたりを火の海に変える驚異の全体攻撃。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 63,
+                "value1": 0.3,
+                "value2": 0
+            },
+            {
+                "code": 21,
+                "dataId": 67,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 64,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ファイアブレス",
+        "note": "<CP:4>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 50,
+        "tpGain": 0
+    },
+    {
+        "id": 45,
+        "animationId": 11,
+        "damage": {
+            "critical": false,
+            "elementId": 1,
+            "formula": "20 + a.mat / 10",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 27,
+        "message1": "が持つ薔薇の盾の効果が発動！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ソーン",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 46,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "相手を混乱させる奇妙なダンス。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 8,
+                "value1": 0.35,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 6,
+        "message1": "は奇声をあげ、その場で踊りだした！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "キテレツダンス",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 30,
+        "tpGain": 0
+    },
+    {
+        "id": 47,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "妖しく光る瞳で相手を睨みつけ、\n混乱させるスキル。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 8,
+                "value1": 0.65,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 3,
+        "message1": "の瞳が妖しく光った。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "妖しい瞳",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 20,
+        "tpGain": 0
+    },
+    {
+        "id": 48,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "妖しく光る瞳で相手を睨みつけ、\n混乱させるスキル。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 8,
+                "value1": 0.65,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 3,
+        "message1": "の瞳が妖しく光った。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "妖しい瞳",
+        "note": "モンスター様に消費TPMPは0",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 49,
+        "animationId": 121,
+        "damage": {
+            "critical": true,
+            "elementId": 1,
+            "formula": "Math.max((a.atk*2 - b.def/4),a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "の攻撃！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ぶんまわし（通常攻撃）",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 5
+    },
+    {
+        "id": 50,
+        "animationId": -1,
+        "damage": {
+            "critical": true,
+            "elementId": -1,
+            "formula": "Math.max(a.atk * 4.5 - b.def * 2 - b.luk/2, a.luk)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 0,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "の攻撃！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "強攻撃",
+        "note": "スキル１番は［攻撃］コマンドを\n選択したときに使用されます。",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 0,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 5
+    },
+    {
+        "id": 51,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "Math.max(a.atk * 1 - b.def * 2 - b.luk/2, a.luk)",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 298,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 77,
+        "message1": "はもがいた！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "もがく",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 52,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "妖しく光る瞳で相手を睨みつけ、\n魅了するスキル。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 9,
+                "value1": 0.65,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 3,
+        "message1": "の瞳が妖しく光った。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "惑わす瞳",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 20,
+        "tpGain": 0
+    },
+    {
+        "id": 53,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "妖しく光る瞳で相手を睨みつけ、\n魅了するスキル。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 9,
+                "value1": 0.65,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 3,
+        "message1": "の瞳が妖しく光った。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "惑わす瞳",
+        "note": "モンスター用に消費TPMPは0",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 54,
+        "animationId": 66,
+        "damage": {
+            "critical": false,
+            "elementId": 2,
+            "formula": "50 + a.mat * 2 - (b.mdf * 2 + b.def/5)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "相手に炎ダメージを与える。\nたまに相手を火傷、燃焼状態にする。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 63,
+                "value1": 0.3,
+                "value2": 0
+            },
+            {
+                "code": 21,
+                "dataId": 67,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 64,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "フレア",
+        "note": "モンスター様に消費TPMPは0",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": -10,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 55,
+        "animationId": 0,
+        "damage": {
+            "critical": true,
+            "elementId": 1,
+            "formula": "Math.max((a.atk*2 - b.def/4),a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "腰をおとし地面スレスレを回転しながら相手の足を蹴り払う\n全体攻撃。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 50,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 78,
+        "message1": "は水面蹴りを放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "水面蹴り",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 45,
+        "tpGain": 0
+    },
+    {
+        "id": 56,
+        "animationId": 0,
+        "damage": {
+            "critical": true,
+            "elementId": 1,
+            "formula": "a.addState(58);Math.max((a.atk*2 - b.def/4),a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 50,
+                "value1": 0.4,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 78,
+        "message1": "は水面蹴りを放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "水面蹴り",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 57,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "味方の肩をたたくことで、混乱、魅了、麻痺、睡眠状態を\n解除するスキル。",
+        "effects": [
+            {
+                "code": 22,
+                "dataId": 8,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 9,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 10,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 22,
+                "dataId": 66,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 70,
+        "message1": "は仲間の肩を叩いた！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "肩を叩く",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 7,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 15,
+        "tpGain": 0
+    },
+    {
+        "id": 58,
+        "animationId": 0,
+        "damage": {
+            "critical": true,
+            "elementId": 1,
+            "formula": "Math.max((a.atk*2 - b.def/4),a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "地割れを起こして敵全体にダメージを与えるスキル。相手を\n転倒させることもある。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 50,
+                "value1": 0.3,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 78,
+        "message1": "は激しく地面を揺らし、地割れを起こした！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "地割れ",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 30,
+        "tpGain": 0
+    },
+    {
+        "id": 59,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 1,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 4,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 2,
+        "message1": "は%1を使った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "お薬注射＜毒＞",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 10,
+        "tpGain": 10
+    },
+    {
+        "id": 60,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 10,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 8,
+        "message1": "は%1を使った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "お薬注射＜睡眠薬＞",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 10,
+        "tpGain": 10
+    },
+    {
+        "id": 61,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 8,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 6,
+        "message1": "は%1を使った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "お薬注射＜幻覚剤＞",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 10,
+        "tpGain": 10
+    },
+    {
+        "id": 62,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 81,
+        "message1": "はヘラヘラと笑っている。",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ヘラヘラ笑う",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 0,
+        "speed": 0,
+        "stypeId": 0,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 10
+    },
+    {
+        "id": 63,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "敵全体を眠りに誘う霧をつくる。（モンスター用）",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 10,
+                "value1": 0.4,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 24,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "スリープミスト",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 64,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 82,
+                "value1": 0.6,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 7,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "催淫ガス",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 65,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "極東にある島国のアサシンたちの戦闘技術。\n使用したターンの攻撃を一度回避することができる。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 83,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 71,
+        "message1": "は%1を使った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "空蝉の術",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 1000,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 10,
+        "tpGain": 0
+    },
+    {
+        "id": 66,
+        "animationId": 78,
+        "damage": {
+            "critical": true,
+            "elementId": 4,
+            "formula": "20 + a.mat * 2 - (b.mdf * 2 + b.def/5)",
+            "type": 1,
+            "variance": 50
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 66,
+                "value1": 0.4,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 66,
+        "message1": "は%1を唱えた！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "スパーク",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": -10,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 67,
+        "animationId": 10,
+        "damage": {
+            "critical": true,
+            "elementId": 4,
+            "formula": "a.addState(58);Math.max(a.atk * 3 - b.def * 2 - b.agi/2, a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 66,
+                "value1": 0.4,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "いなずま斬り",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": 150,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 5
+    },
+    {
+        "id": 68,
+        "animationId": 121,
+        "damage": {
+            "critical": true,
+            "elementId": 1,
+            "formula": "a.addState(58);Math.max((a.atk*2 - b.def/4),a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [],
+        "hitType": 1,
+        "iconIndex": 76,
+        "message1": "の攻撃！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ぶんまわし（通常攻撃）",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 5
+    },
+    {
+        "id": 69,
+        "animationId": 76,
+        "damage": {
+            "critical": false,
+            "elementId": 4,
+            "formula": "10 + a.mat * 2 - (b.mdf * 2 + b.def/5)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 66,
+                "value1": 0.2,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 66,
+        "message1": "は%1を使った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "光線銃",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 1,
+        "speed": -20,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 10,
+        "tpGain": 0
+    },
+    {
+        "id": 70,
+        "animationId": 123,
+        "damage": {
+            "critical": false,
+            "elementId": 5,
+            "formula": "Math.max(a.atk * 3 - b.def * 2 - b.agi/2, a.mat)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "荒れ狂う濁流が如く、全てを飲み込み押しつぶす水を纏った\n槍の弾幕。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 57,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 67,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 1,
+        "name": "激流槍",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 20,
+        "tpGain": 0
+    },
+    {
+        "id": 71,
+        "animationId": 123,
+        "damage": {
+            "critical": false,
+            "elementId": 5,
+            "formula": "Math.max(a.atk * 3 - b.def * 2 - b.agi/2, a.mat)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 57,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 67,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "激流槍",
+        "note": "",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 72,
+        "animationId": 0,
+        "damage": {
+            "critical": true,
+            "elementId": 1,
+            "formula": "Math.max((a.atk*2 - b.def/5),a.agi)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 50,
+                "value1": 0.3,
+                "value2": 0
+            }
+        ],
+        "hitType": 1,
+        "iconIndex": 78,
+        "message1": "は激しく地面を揺らし、地割れを起こした！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "地割れ",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 73,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "身体の動きを最適化し、戦況に応じた構えをとるスキル。\n攻撃力、防御力、反撃率、会心率があがる。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 84,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 73,
+        "message1": "は%1を使った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "システマ",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 20,
+        "tpGain": 0
+    },
+    {
+        "id": 74,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 84,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 73,
+        "message1": "は%1を使った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "システマ",
+        "note": "<CP:2>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 11,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 75,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "25 + a.mat*0.8",
+            "type": 3,
+            "variance": 20
+        },
+        "description": "身体を癒す不思議な歌。\n味方全体の体力とTPを少し回復する。",
+        "effects": [
+            {
+                "code": 13,
+                "dataId": 0,
+                "value1": 15,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 72,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 1,
+        "name": "癒しの歌",
+        "note": "<CP:2>",
+        "occasion": 0,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 8,
+        "speed": -20,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 30,
+        "tpGain": 0
+    },
+    {
+        "id": 76,
+        "animationId": 36,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "25 + a.mat*0.8",
+            "type": 3,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 13,
+                "dataId": 0,
+                "value1": 15,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 72,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "癒しの歌",
+        "note": "<CP:2>",
+        "occasion": 0,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 8,
+        "speed": -20,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 77,
+        "animationId": 59,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "毒ガスをまき散らし、相手全体を毒状態にするスキル。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 4,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 2,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ポイズンブレス",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 30,
+        "tpGain": 0
+    },
+    {
+        "id": 78,
+        "animationId": 59,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 4,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 2,
+        "iconIndex": 2,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "ポイズンブレス",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    },
+    {
+        "id": 79,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "強烈な光を放ち、\n相手の命中率を下げる暗闇状態にするスキル。",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 5,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 70,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 1,
+        "name": "まばゆい光",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 10,
+        "tpGain": 0
+    },
+    {
+        "id": 80,
+        "animationId": 0,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "モンスター用",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 5,
+                "value1": 0.5,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 70,
+        "message1": "は%1を放った！",
+        "message2": "",
+        "mpCost": 0,
+        "name": "まばゆい光",
+        "note": "<CP:1>",
+        "occasion": 1,
+        "repeats": 1,
+        "requiredWtypeId1": 0,
+        "requiredWtypeId2": 0,
+        "scope": 2,
+        "speed": 0,
+        "stypeId": 1,
+        "successRate": 100,
+        "tpCost": 0,
+        "tpGain": 0
+    }
+]

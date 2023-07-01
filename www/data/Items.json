@@ -1,0 +1,5846 @@
+[
+    null,
+    {
+        "id": 1,
+        "animationId": 41,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "冒険の必需品。味方と自分のHPを30%回復。[重さ10W]",
+        "effects": [
+            {
+                "code": 11,
+                "dataId": 0,
+                "value1": 0.3,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "治療キット",
+        "note": "<weight:10>\n",
+        "occasion": 0,
+        "price": 500,
+        "repeats": 1,
+        "scope": 8,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 2,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "行動力が全回復するエナジードリンク。[重さ5W]",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 100,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "がんばるドリンク",
+        "note": "<weight:5>\n",
+        "occasion": 2,
+        "price": 6000,
+        "repeats": 1,
+        "scope": 8,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 3,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "戦闘不能になった味方を起き上がらせる。[重さ10W]",
+        "effects": [
+            {
+                "code": 22,
+                "dataId": 1,
+                "value1": 1,
+                "value2": 0
+            },
+            {
+                "code": 11,
+                "dataId": 0,
+                "value1": 0.3,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "蘇生キット",
+        "note": "<weight:10>",
+        "occasion": 0,
+        "price": 2500,
+        "repeats": 1,
+        "scope": 9,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 4,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "ダンジョン内の隠し部屋に入るために必要な道具。\n[重さ40W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 216,
+        "itypeId": 1,
+        "name": "つるはし",
+        "note": "<weight:40>\n",
+        "occasion": 3,
+        "price": 400,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 5,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "ダンジョン内の地面を掘るために必要な道具。[重さ40W]\n",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 217,
+        "itypeId": 1,
+        "name": "シャベル",
+        "note": "<weight:40>\n",
+        "occasion": 3,
+        "price": 400,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 6,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "ダンジョンから脱出するためのゲートを開く。使い切り。\nこれがないと戻るのもひと苦労。[重さ10W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 71,
+        "itypeId": 1,
+        "name": "小型ワープゲート装置",
+        "note": "<weight:10>\n",
+        "occasion": 3,
+        "price": 1000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 7,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "換金用アイテム。[重さ30W]\n",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 247,
+        "itypeId": 1,
+        "name": "完璧なきれいな装飾のツボ",
+        "note": "<weight:30>\n<rarity: 3>",
+        "occasion": 3,
+        "price": 40000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 8,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "換金用アイテム。[重さ30W]\n",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 247,
+        "itypeId": 1,
+        "name": "完璧な女神像",
+        "note": "<weight:30>\n<rarity: 3>",
+        "occasion": 3,
+        "price": 20000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 9,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "換金用アイテム。[重さ5W]\n",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 247,
+        "itypeId": 1,
+        "name": "完璧な宝石",
+        "note": "<weight:5>\n<rarity: 3>",
+        "occasion": 3,
+        "price": 16000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 10,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "換金用アイテム。[重さ20W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 247,
+        "itypeId": 1,
+        "name": "完璧な金塊",
+        "note": "<weight:20>\n<rarity: 3>",
+        "occasion": 3,
+        "price": 24000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 11,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "換金用アイテム。[重さ30W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 210,
+        "itypeId": 1,
+        "name": "よごれたきれいな装飾のツボ",
+        "note": "<weight:30>\n<rarity: 2>",
+        "occasion": 3,
+        "price": 8000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 12,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "換金用アイテム。[重さ30W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 210,
+        "itypeId": 1,
+        "name": "よごれた女神像",
+        "note": "<weight:30>\n<rarity: 2>",
+        "occasion": 3,
+        "price": 6000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 13,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "換金用アイテム。[重さ5W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 210,
+        "itypeId": 1,
+        "name": "よごれた宝石",
+        "note": "<weight:5>\n<rarity: 2>",
+        "occasion": 3,
+        "price": 10000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 14,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "換金用アイテム。[重さ20W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 210,
+        "itypeId": 1,
+        "name": "よごれた金塊",
+        "note": "<weight:20>\n<rarity: 2>",
+        "occasion": 3,
+        "price": 12000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 15,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": true,
+            "elementId": 1,
+            "formula": "Math.max((a.atk - b.def/4),a.luk)",
+            "type": 1,
+            "variance": 20
+        },
+        "description": "換金用アイテム。バトル中に使用すると敵全体にダメージを\n与えることもできる。[重さ8W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 210,
+        "itypeId": 1,
+        "name": "ガラクタ",
+        "note": "<weight:8>",
+        "occasion": 1,
+        "price": 1000,
+        "repeats": 1,
+        "scope": 2,
+        "speed": -10,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 16,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "ダンジョン内で見つけることができるコケ。\n使うと少しだけ体力が回復する。[重さ5W]",
+        "effects": [
+            {
+                "code": 11,
+                "dataId": 0,
+                "value1": 0,
+                "value2": 50
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "癒しコケ",
+        "note": "<weight:5>\n",
+        "occasion": 0,
+        "price": 100,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 17,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "戦闘中使用すると高確率で相手を眠らせることができる。\n[重さ5W]",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 10,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "眠り玉",
+        "note": "<weight:5>\n",
+        "occasion": 1,
+        "price": 500,
+        "repeats": 1,
+        "scope": 2,
+        "speed": 100,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 18,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "戦闘中に使うと高確率で相手を麻痺させることができる。\n[重さ5W]",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 66,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "ビリビリ玉",
+        "note": "<weight:5>\n",
+        "occasion": 1,
+        "price": 250,
+        "repeats": 1,
+        "scope": 2,
+        "speed": 100,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 19,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 1,
+            "formula": "500*1",
+            "type": 1,
+            "variance": 0
+        },
+        "description": "戦闘時にこれを鳴らすと\nギルドのみなさんが駆けつけて助けてくれるぞ。[重さ5W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 203,
+        "itypeId": 1,
+        "name": "金のハンドベル",
+        "note": "<weight:5>\n<rarity: 3>",
+        "occasion": 1,
+        "price": 20000,
+        "repeats": 1,
+        "scope": 2,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 20,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "さまざまものを調合して作られたアイテム。\n使うと激しい光を放ち、相手の視覚を奪う。[重さ5W]",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 5,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "ヒカリ玉",
+        "note": "<weight:5>",
+        "occasion": 1,
+        "price": 250,
+        "repeats": 1,
+        "scope": 2,
+        "speed": 100,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 21,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使うと所持金が増える不思議なチケット。",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 147,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 314,
+        "itypeId": 1,
+        "name": "金券5000G",
+        "note": "",
+        "occasion": 2,
+        "price": 0,
+        "repeats": 1,
+        "scope": 11,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 22,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使うと所持金が増える不思議なチケット。",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 146,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 314,
+        "itypeId": 1,
+        "name": "金券10000G",
+        "note": "",
+        "occasion": 2,
+        "price": 0,
+        "repeats": 1,
+        "scope": 11,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 23,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "アイテムを落とさないように持っておくと安心。[重さ10W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 216,
+        "itypeId": 1,
+        "name": "安全杖",
+        "note": "<weight:10>",
+        "occasion": 3,
+        "price": 1000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 24,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "戦闘から離脱できる。[重さ5W]",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 199,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "けむり玉",
+        "note": "<weight:5>\n",
+        "occasion": 1,
+        "price": 300,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 100,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 25,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "ダンジョン内で見つけることができる草。バトル中に\n使用すると敵を一体眠らせることができる。[重さ5W]",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 10,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "ネムリ草",
+        "note": "<weight:5>",
+        "occasion": 1,
+        "price": 200,
+        "repeats": 1,
+        "scope": 1,
+        "speed": 100,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 26,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "ダンジョン内で見つけることができる草。バトル中に\n使用すると敵を一体麻痺させることができる。[重さ5W]",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 66,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "シビレ草",
+        "note": "<weight:5>",
+        "occasion": 1,
+        "price": 200,
+        "repeats": 1,
+        "scope": 1,
+        "speed": 100,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 27,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "ダンジョン内で見つけることができる草。バトル中に\n使用すると敵を一体毒状態にさせることができる。[重さ5W]",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 4,
+                "value1": 0.8,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "毒草",
+        "note": "<weight:5>",
+        "occasion": 1,
+        "price": 200,
+        "repeats": 1,
+        "scope": 1,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 28,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 3,
+            "variance": 20
+        },
+        "description": "ダンジョン内で見つけることができる草。\n使うと行動力が２回復する。[重さ5W]",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 92,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "ギンギン草",
+        "note": "<weight:5>\n<VCIVarNumber:4>\n<VCIAddValue:2>",
+        "occasion": 2,
+        "price": 1000,
+        "repeats": 1,
+        "scope": 11,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 29,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "20 + a.def",
+            "type": 3,
+            "variance": 0
+        },
+        "description": "キンキン！シュワシュワ！世界中で愛されてる炭酸飲料。\n飲むと行動力と体力が回復する。[重さ5W]",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 92,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "コーラ",
+        "note": "<weight:5>\n<VCIVarNumber:4>\n<VCIAddValue:1>",
+        "occasion": 0,
+        "price": 100,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 30,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "味方と自分の体内に回っている毒を中和する薬。[重さ5W]",
+        "effects": [
+            {
+                "code": 22,
+                "dataId": 4,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "解毒キット",
+        "note": "<weight:5>",
+        "occasion": 0,
+        "price": 300,
+        "repeats": 1,
+        "scope": 8,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 31,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "何かが埋められた場所を記した紙切れ。[重さ2W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 190,
+        "itypeId": 1,
+        "name": "しるしの付いた紙切れ",
+        "note": "<weight:2>\n<rarity:1>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 32,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "食べるだけ力があふれてくる不思議な実。\n行動力の最大値を１増やす。[重さ3W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 262,
+        "itypeId": 1,
+        "name": "活力の実",
+        "note": "<weight:3>\n<rarity:3>\n<VCIVarNumber:5>\n<VCIAddValue:1>",
+        "occasion": 2,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 33,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "とれたての母乳。\n飲むと行動力が１回復し体力が全快する。[重さ2W]",
+        "effects": [
+            {
+                "code": 11,
+                "dataId": 0,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 228,
+        "itypeId": 1,
+        "name": "母乳",
+        "note": "<weight:2>\n<VCIVarNumber:4>\n<VCIAddValue:1>",
+        "occasion": 2,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 34,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "古代人の叡智。一時的に乳腺を発達させ、母乳を分泌させる\nアイテム。[重さ10W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 84,
+        "itypeId": 1,
+        "name": "ママメイカー",
+        "note": "<weight:10>",
+        "occasion": 3,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 35,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "侵入者を防ぐアイテム。\n作りがあまく、壊れやすい。[重さ3W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 195,
+        "itypeId": 1,
+        "name": "錠前",
+        "note": "<weight:3>",
+        "occasion": 3,
+        "price": 800,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 36,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "大切なお金をまもるアイテム。\n持っているとお金を盗まれない。[重さ60W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 210,
+        "itypeId": 1,
+        "name": "金庫",
+        "note": "<weight:60>",
+        "occasion": 3,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 37,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "味方の一人を眠らせる薬。[重さ5W]",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 10,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "ネムリ薬",
+        "note": "<weight:5>",
+        "occasion": 0,
+        "price": 500,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 38,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "持てるアイテムの総重量が+200される。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 209,
+        "itypeId": 2,
+        "name": "サイドバッグ",
+        "note": "<kms_shop_stock: 1, 0>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 39,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "持てるアイテムの総重量が+500される。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 209,
+        "itypeId": 2,
+        "name": "大きめのバッグ",
+        "note": "<kms_shop_stock: 1, 0>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 40,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "持てるアイテムの総重量が+1000される",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 209,
+        "itypeId": 2,
+        "name": "大容量バッグ",
+        "note": "<kms_shop_stock: 1, 0>",
+        "occasion": 3,
+        "price": 100000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 41,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 1,
+            "formula": "10",
+            "type": 1,
+            "variance": 0
+        },
+        "description": "どこでも拾えるただの石ころ。[重さ1W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "石ころ",
+        "note": "<追加効果:S37,100%>\n敵ターン条件:1以上\n</追加効果>\n<weight:1>",
+        "occasion": 1,
+        "price": 0,
+        "repeats": 1,
+        "scope": 1,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 42,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "淡い光を放つオーブ。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 302,
+        "itypeId": 2,
+        "name": "ブルーオーブ",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 43,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "淡い光を放つオーブ。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 302,
+        "itypeId": 2,
+        "name": "レッドオーブ",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 44,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "淡い光を放つオーブ。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 302,
+        "itypeId": 2,
+        "name": "グリーンオーブ",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 45,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "淡い光を放つオーブ。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 302,
+        "itypeId": 2,
+        "name": "イエローオーブ",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 46,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "不思議な技術できれいなまま保存された花を束ねたモノ。\n女性への贈り物として好まれる。好感度+5【重さ5W】",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 382,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 183,
+        "itypeId": 1,
+        "name": "花束",
+        "note": "<weight:5>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 8,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 47,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "2",
+            "type": 4,
+            "variance": 0
+        },
+        "description": "微力な魔力を帯びている結晶。\n使用するとMPが2回復する。[重さ2W]",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "魔力結晶",
+        "note": "<weight:5>",
+        "occasion": 0,
+        "price": 2000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 48,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "大きくて頑丈なバッグ。より多くの荷物を持てるようになる。\n持てる重量が＋300Wされる。効果は重複しない。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 209,
+        "itypeId": 2,
+        "name": "頑丈なバッグ",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 30000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 49,
+        "animationId": 37,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "味方全体を鼓舞する力のこもった音を出す角笛。\n使用してもなくならない。[重さ5W]",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 64,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 248,
+        "itypeId": 1,
+        "name": "ドラゴンの角笛",
+        "note": "<weight:5>\n<rarity: 3>\n<RandomLoseException>",
+        "occasion": 1,
+        "price": 20000,
+        "repeats": 1,
+        "scope": 8,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 50,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "攻撃を代わりに受けてくれる不思議な人形。\nこのアイテムを使用したターンの攻撃を回避する。[重さ3W]",
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 83,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 1,
+        "name": "身代わり人形",
+        "note": "<weight:3>",
+        "occasion": 1,
+        "price": 200,
+        "repeats": 1,
+        "scope": 11,
+        "speed": 1000,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 51,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "身体の時間を少し戻す薬。モニカのステータスが全体的に\n低下するが精液量を０に戻す。[重さ5W]",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 108,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 177,
+        "itypeId": 1,
+        "name": "若返りの薬",
+        "note": "<weight:5>",
+        "occasion": 2,
+        "price": 50000,
+        "repeats": 1,
+        "scope": 8,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 52,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "持っていると自室でのエッチでおまんこを選択した際、\n【バイブ】が追加される。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 84,
+        "itypeId": 2,
+        "name": "エッチな玩具V",
+        "note": "<RandomLoseException>\n<weight:0>",
+        "occasion": 3,
+        "price": 20000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 53,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "持っていると自室でのエッチでアナルを選択した際、\n【玩具A】が追加される。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 84,
+        "itypeId": 2,
+        "name": "エッチな玩具A",
+        "note": "<RandomLoseException>\n<weight:0>",
+        "occasion": 3,
+        "price": 30000,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 54,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "持っていると自室でのエッチでおまんこを選択した際、\n【触手】が追加される。",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 84,
+        "itypeId": 2,
+        "name": "エッチな玩具V2",
+        "note": "<RandomLoseException>\n<weight:0>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 55,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 56,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 57,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 58,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 59,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 176,
+        "itypeId": 3,
+        "name": "回想用頑張るドリンク",
+        "note": "<weight:0>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 60,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "スライムゼリー",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 61,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "ワームステーキ",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 62,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "カエル肉のソテー",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 63,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 64,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 65,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 66,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 67,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 68,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 69,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 70,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 71,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 72,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 73,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 74,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 75,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 76,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 77,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 78,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 79,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 80,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "---サブクエのカウント用アイテム----",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 81,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "スライムを討伐した証",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 2,
+        "name": "スライム討伐の証",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 82,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "人さらいを討伐した証",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 2,
+        "name": "人さらい討伐の証",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 83,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "ダンジョンワームを討伐した証",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 2,
+        "name": "ダンジョンワーム討伐の証",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 84,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "オークを討伐した証",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 2,
+        "name": "オーク討伐の証",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 85,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "触手の主を討伐した証",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 2,
+        "name": "触手の主討伐の証",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 86,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "ガーディアンを討伐した証",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 2,
+        "name": "ガーディアン討伐の証",
+        "note": "<weight:0>\n<RandomLoseException>",
+        "occasion": 3,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 87,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 88,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 89,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 90,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 91,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 92,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 93,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 94,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 95,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 96,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 97,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 98,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 99,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 100,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 101,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 102,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 103,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 104,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 105,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 106,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 107,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 108,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 109,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 110,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 186,
+        "itypeId": 1,
+        "name": "―――スキルブック―――",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 111,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで傷ついた仲間を治療することができる\n【ヒール】を習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 8,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 1,
+        "name": "【ヒール】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 112,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで相手に炎ダメージを与えるスキル【フレア】\nを習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 9,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 1,
+        "name": "【フレア】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 113,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで敵全体に雷ダメージを与えるスキル\n【スパーク】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 10,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 1,
+        "name": "【スパーク】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 114,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで目にもとまらぬ速さで斬りつける\n【いなずま斬り】を習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 15,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 1,
+        "name": "【いなずま斬り】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 115,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで毒におかされた仲間を治療することができる\n【キュアポイズン】を習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 26,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 1,
+        "name": "【C・ポイズン】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 116,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで細胞の活性化を促し、再生力を高めるスキル\n【再生】を習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 28,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 1,
+        "name": "【再生】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 117,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで回避率、会心率をしばらく上げるスキル\n【豹歩】を習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 29,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 1,
+        "name": "【豹歩】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 118,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで仲間をまもるスキル【かばう】を\n習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 30,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 1,
+        "name": "【かばう】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 119,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで相手の眠気を誘う霧を生み出すスキル\n【スリープミスト】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 19,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【スリープミスト】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 120,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用すると相手の攻撃魔法を跳ね返す光の鎧を味方に付与する\nスキル【リフレクトアーマー】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 33,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【R・アーマー】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 121,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで装備している武器に水属性を付与するスキル\n【エンチャント・ブルー】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 34,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【エンチャント・B】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 122,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで装備している武器に火属性を付与するスキル\n【エンチャント・レッド】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 35,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【エンチャント・R】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 123,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで装備している武器に雷属性を付与するスキル\n【エンチャント・パーブル】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 36,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【エンチャント・P】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 124,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "相手にダメージを与えつつ、自身の傷を癒す奇跡の剣技\n【セイクリッドソード】を習得できる。[CP3]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 38,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 87,
+        "itypeId": 1,
+        "name": "【S・ソード】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 10000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 125,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "オイルを広範囲に散布し、相手をオイルまみれ状態にする\nスキル【オイルショック】を習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 40,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 1,
+        "name": "【オイルショック】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 126,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することであたりを火の海に変えるスキル\n【ファイアブレス】を習得できる。[CP3]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 44,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 87,
+        "itypeId": 1,
+        "name": "【ファイアブレス】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 10000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 127,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用すること相手を混乱させるスキル【キテレツダンス】を\n習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 46,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【キテレツダンス】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 128,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで、妖しく光る瞳で相手を睨みつけ\n混乱させるスキル【妖しい瞳】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 47,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【妖しい瞳】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 129,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで腰をおとし地面スレスレを回転しながら\n相手の足を蹴り払うスキル【水面蹴り】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 55,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【水面蹴り】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 130,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで味方の肩をたたくことで、混乱、魅了、麻痺、\n睡眠状態を解除するスキル【肩を叩く】を習得する。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 57,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 89,
+        "itypeId": 1,
+        "name": "【肩を叩く】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 3000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 131,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで地面を揺らし敵全体にダメージを与えるスキ\nル【地割れ】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 58,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【地割れ】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 132,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用すること使用したターンの攻撃を一度回避することが\nできるスキル【空蝉の術】を習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 65,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 87,
+        "itypeId": 1,
+        "name": "【空蝉の術】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 10000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 133,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "荒れ狂う濁流が如く、全てを飲み込み押しつぶす水を纏った\n槍の弾幕をはるスキル【激流槍】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 70,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【激流槍】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 134,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで自身の動きを最適化し、戦況に応じた構えを\nとるスキル【システマ】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 73,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【システマ】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 135,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することで不思議な歌で味方全体の体力とTPを\n少し回復するスキル【癒しの歌】を習得できる。[CP2]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 75,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【癒しの歌】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 136,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用することでガスをまき散らし、敵全体を毒状態にする\nスキル【ポイズンブレス】を習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 77,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 88,
+        "itypeId": 1,
+        "name": "【ポイズンブレス】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 5000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 137,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "使用すること敵全体を暗闇状態にするスキル\n【まばゆい光】を習得できる。[CP1]",
+        "effects": [
+            {
+                "code": 43,
+                "dataId": 79,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 87,
+        "itypeId": 1,
+        "name": "【まばゆい光】の心得",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 10000,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 138,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 139,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 140,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 141,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 142,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 143,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 144,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 145,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 146,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 147,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 148,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 149,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 150,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "ー回想用アイテムー",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 151,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 901,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想1",
+        "note": "<SG説明:ギルドに向かう道中で…>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_korobu_hiru>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 152,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 902,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想2",
+        "note": "<SG説明:通された部屋で…>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_deai_01>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 153,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 903,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想3",
+        "note": "<SG説明:ケガレに侵されて…>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou3_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 154,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 904,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想4",
+        "note": "<SG説明:石につまづいて…>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou4_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 155,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 905,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想5",
+        "note": "<SG説明:子どもに見える冒険者が…>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou5_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 156,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 906,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想6",
+        "note": "<SG説明:子どもに見える冒険者と>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou6_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 157,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 907,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想7",
+        "note": "<SG説明:助ける方法は知っている…>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou7_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 158,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 908,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想8",
+        "note": "<SG説明:助けたお礼にモブ冒険者(通常)と>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou8_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 159,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 909,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想9",
+        "note": "<SG説明:主体性の弱そうな冒険者と>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou9_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 160,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 910,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想10",
+        "note": "<SG説明:古代の戦士ちゃんと>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou10_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 161,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 911,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想11",
+        "note": "<SG説明:岩陰でおしっこ>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:DH_osikko_02>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 162,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 912,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想12",
+        "note": "<SG説明:エロ僧侶 弱みにつけこんで…>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_shinkan_oyaji_02>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 163,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 913,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想13",
+        "note": "<SG説明:スライムに捕まったモニカ…>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_srymetrap_02>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 164,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 914,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想14",
+        "note": "<SG説明:触手に捕まったモニカ…>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:DH_shokushu5>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 165,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 915,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想15",
+        "note": "<SG説明:亡者の手に捕まったモニカ…>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_teman_1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 166,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 916,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想16",
+        "note": "<SG説明:催淫ガスで発情状態>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_saiin>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 167,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 917,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想17",
+        "note": "<SG説明:トラップ回避好感度アップからのえっち>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EV_koukando_kiss2>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 168,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 918,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想18",
+        "note": "<SG説明:休憩中に搾乳>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou18_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 169,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 919,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想19",
+        "note": "<SG説明:休憩中にもエッチ>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_fera_love03>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 170,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 920,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想20",
+        "note": "<SG説明:壁尻イベント>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_ketsusiri08>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 171,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 921,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想21",
+        "note": "<SG説明:幸せの化粧箱を手に入れた>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EV_keshoubako-Event>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 172,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 922,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想22",
+        "note": "<SG説明:宿屋のおやじ 夜這い1>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_suiminkan_02>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 173,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 923,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想23",
+        "note": "<SG説明:宿屋のおやじ 夜這い2>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_suiminkan_teiten_03>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 174,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 924,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想24",
+        "note": "<SG説明:妊娠発覚>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:jisitu_yoru_noui>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 175,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 925,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想25",
+        "note": "<SG説明:モニカのオナニー>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_monica_ona1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 176,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 926,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想26",
+        "note": "<SG説明:子どもの頃の思い出>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:monica_kaisou>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 177,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 927,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想27",
+        "note": "<SG説明:ギルドへの支払い1回目失敗>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_guildshokuin_oyaji_ferashaseigo_01>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 178,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 928,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想28",
+        "note": "<SG説明:ギルドへの支払い2回目失敗>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_guildshokuin_oyaji4>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 179,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 929,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想29",
+        "note": "<SG説明:ギルド支払い嘆願>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_teiten_guild04>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 180,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 930,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想30",
+        "note": "<SG説明:おでかけ>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:deto>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 181,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 931,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想31",
+        "note": "<SG説明:夜の自室エッチ ドリンク使用無制限>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:mhcg_taiki_1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 182,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 932,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想32",
+        "note": "<SG説明:BE1 人さらい>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:BE1_hitosarai04>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 183,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 933,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想33",
+        "note": "<SG説明:BE2 オーク>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:BE2_goblinkingA_1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 184,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 934,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想34",
+        "note": "<SG説明:BE3 触手の主>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:BE3_shokushuboss03>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 185,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 935,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想35",
+        "note": "<SG説明:BE4 宿屋のおやじ>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:BE4_yadoya_A_1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 186,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 936,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想36",
+        "note": "<SG説明:BE5 ギルドのおっさん>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:BE5_guild_A_1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 187,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 937,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想37",
+        "note": "<SG説明:BE6 モニカ故郷にかえる>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:mainmap_noUI>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 188,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 938,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想38",
+        "note": "<SG説明:BE7 目的未達>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:mainmap_noUI>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 189,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 939,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想39",
+        "note": "<SG説明:BE8 魅せられたモノたち>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou39_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 190,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 940,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想40",
+        "note": "<SG説明:ノーマルエンド>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:end1_normal>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 191,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 941,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想41",
+        "note": "<SG説明:トゥルーエンド>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:end2_good_asa_fera2>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 192,
+        "animationId": 0,
+        "consumable": false,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 942,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 3,
+        "name": "回想42",
+        "note": "<SG説明:ハッピー？エンド>\n<SGカテゴリ:kaisou>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:end3_happy_1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n\n",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 0,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 193,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 194,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 195,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 196,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 197,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 198,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 199,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    },
+    {
+        "id": 200,
+        "animationId": 0,
+        "consumable": true,
+        "damage": {
+            "critical": false,
+            "elementId": 0,
+            "formula": "0",
+            "type": 0,
+            "variance": 20
+        },
+        "description": "",
+        "effects": [],
+        "hitType": 0,
+        "iconIndex": 0,
+        "itypeId": 1,
+        "name": "",
+        "note": "",
+        "occasion": 0,
+        "price": 0,
+        "repeats": 1,
+        "scope": 7,
+        "speed": 0,
+        "successRate": 100,
+        "tpGain": 0
+    }
+]
