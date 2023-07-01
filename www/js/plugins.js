@@ -59,7 +59,7 @@ var $plugins =
         { "name": "sava_chararemove", "status": true, "description": "", "parameters": {} },
         { "name": "PicturePriorityCustomize", "status": true, "description": "ピクチャの表示優先度調整プラグイン", "parameters": { "上層ピクチャ番号": "101", "下層ピクチャ番号": "40", "下層ピクチャZ座標": "1", "戦闘下層ピクチャZ座標": "0" } },
         { "name": "PictureVariableSetting", "status": true, "description": "ピクチャ関連のイベント機能拡張プラグイン", "parameters": { "初期値": "OFF", "ピクチャ表示最大数": "" } },
-        { "name": "ChangeOperationToFPSStyle", "status": true, "description": "キーの設定をFPS寄りの設定に変更します。", "parameters": { "項目名称": "キー操作タイプ", "設定名称（通常キー）": "両手操作", "設定名称（FPSキー）": "片手操作" } },
+        { "name": "ChangeOperationToFPSStyle", "status": true, "description": "キーの設定をFPS寄りの設定に変更します。", "parameters": { "項目名称": "Key Operation", "設定名称（通常キー）": "Two Handed", "設定名称（FPSキー）": "One Handed" } },
         { "name": "ConditionallyCore", "status": true, "description": "ver1.07/条件付き○○のプラグインを使用するのに、必要となる条件をまとめたベースプラグインです。", "parameters": {} },
         { "name": "ConditionallyAddEffect", "status": true, "description": "ver1.04/条件を満たすと発動する追加効果を設定できるようになります。", "parameters": { "Display Add Effect Text": "null" } },
         { "name": "PictureAnimation", "status": true, "description": "ピクチャのアニメーションプラグイン", "parameters": { "最初のセルに戻る": "true" } },
