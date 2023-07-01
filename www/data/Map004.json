@@ -2285,7 +2285,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "冒険者の登録をしたいのですが"
+                                    "I would like to register as an adventurer"
                                 ],
                                 0,
                                 0,
@@ -2453,10 +2453,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "両親も冒険者",
-                                    "農村で育った",
-                                    "狼に育てられた",
-                                    "豪商の息子"
+                                    "Both of my parents are adventurers",
+                                    "I grew up in a rural area",
+                                    "Raised by wolves",
+                                    "Son of a wealthy merchant"
                                 ],
                                 -1,
                                 0,
@@ -2682,10 +2682,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "力には自信あり",
-                                    "足の速さなら負けない",
-                                    "勉学に勤めた",
-                                    "運ならいいかも"
+                                    "I am confident in my strengths",
+                                    "If it's about speed, I won't lose",
+                                    "I have been diligent in my studies",
+                                    "If luck is considered a strength, then maybe that"
                                 ],
                                 -1,
                                 0,
@@ -2887,10 +2887,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "富",
-                                    "名声",
-                                    "冒険",
-                                    "なんとなく"
+                                    "Wealth",
+                                    "Fame",
+                                    "Adventure",
+                                    "Just felt like it"
                                 ],
                                 -1,
                                 0,
@@ -3574,7 +3574,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "お金をとるんですか？"
+                                    "Do you take money?"
                                 ],
                                 0,
                                 0,
@@ -3731,7 +3731,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "はい"
+                                    "Yes"
                                 ],
                                 0,
                                 0,
@@ -4018,7 +4018,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "ギルドホールを去る"
+                                    "Leave the guild hall"
                                 ],
                                 0,
                                 0,

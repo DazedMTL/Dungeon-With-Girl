@@ -2459,9 +2459,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "自室へ",
-                                    "客に話を聞く",
-                                    "宿屋を去る"
+                                    "To my room",
+                                    "Listen to the customer",
+                                    "Leave the inn"
                                 ],
                                 0,
                                 0,
@@ -2577,7 +2577,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "(今日はもう休みたい)"
+                                    "(I want to rest for the day)"
                                 ],
                                 -1,
                                 0,

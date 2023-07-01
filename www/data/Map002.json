@@ -2470,9 +2470,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "メニューを開く",
-                                    "いいえ"
+                                    "Yes",
+                                    "Open the menu",
+                                    "No"
                                 ],
                                 1,
                                 0,
@@ -3559,9 +3559,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "メニューを開く",
-                                    "いいえ"
+                                    "Yes",
+                                    "Open the menu",
+                                    "No"
                                 ],
                                 1,
                                 0,
@@ -4005,7 +4005,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "あ - Ah"
+                                "Ah"
                             ]
                         },
                         {
@@ -4199,9 +4199,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "メニューを開く",
-                                    "いいえ"
+                                    "Yes",
+                                    "Open the menu",
+                                    "No"
                                 ],
                                 1,
                                 0,

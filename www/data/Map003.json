@@ -2416,7 +2416,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "部屋を借りたいのですが"
+                                    "I would like to rent a room"
                                 ],
                                 0,
                                 0,
@@ -2471,7 +2471,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "いくらで借りられますか？"
+                                    "How much does it cost to rent?"
                                 ],
                                 0,
                                 0,
@@ -2611,7 +2611,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "ありがとう"
+                                    "Thank you"
                                 ],
                                 0,
                                 0,
@@ -2954,7 +2954,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "失礼しましたーーーッ"
+                                    "I'm sorry!"
                                 ],
                                 0,
                                 0,
@@ -3586,7 +3586,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "はい"
+                                    "Yes"
                                 ],
                                 0,
                                 0,
@@ -3707,7 +3707,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "はい"
+                                    "Yes"
                                 ],
                                 0,
                                 0,
@@ -3828,7 +3828,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "ヤマモトです"
+                                    "I am Yamamoto"
                                 ],
                                 0,
                                 0,
@@ -4041,7 +4041,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "うぐぐ、はい…。"
+                                    "Ugh, fine"
                                 ],
                                 0,
                                 0,
@@ -4371,9 +4371,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "自室へ",
-                                    "客に話を聞く",
-                                    "宿屋を去る"
+                                    "Go to my room",
+                                    "Ask the customer for their opinion",
+                                    "Leave the inn"
                                 ],
                                 2,
                                 0,

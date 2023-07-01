@@ -2328,7 +2328,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "The maximum value of CP is 5. Taking Lightning Slash as an example,\nit requires 3 CP. So, if you set Lightning Slash, you will have 2\nremaining CP available for use."
+                                "The maximum value of CP is 5. Taking Lightning Slash as an example, it\nrequires 3 CP. So, if you set Lightning Slash, you will have 2\nremaining CP available for use."
                             ]
                         },
                         {
@@ -2562,8 +2562,8 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "いいえ"
+                                    "Yes",
+                                    "No"
                                 ],
                                 1,
                                 0,
