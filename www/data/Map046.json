@@ -2389,7 +2389,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "…はぁはぁ、限界だ…"
+                                "...*Haa haa, I've reached my limit...*"
                             ]
                         },
                         {
@@ -2443,21 +2443,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "も、もうだめ～。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "休ませてぇ…"
+                                "【Monica】 I-I can't take it anymore... Let me rest..."
                             ]
                         },
                         {
@@ -3198,12 +3184,12 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "動いてもらう",
-                                    "アナルをいじる",
-                                    "en(v[171]>=1)声をかける",
-                                    "en(s[527])射精する",
-                                    "やめる",
-                                    "もどる"
+                                    "Please keep moving",
+                                    "Play with my anus",
+                                    "en(v[171]>=1)Are you okay?",
+                                    "en(s[527])I'm going to ejaculate",
+                                    "I'll stop",
+                                    "Go back"
                                 ],
                                 -1,
                                 0,
@@ -6281,9 +6267,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "観察する",
-                                    "指をいれる",
-                                    "もどる"
+                                    "Observe",
+                                    "Insert your finger",
+                                    "Go back"
                                 ],
                                 -1,
                                 0,
@@ -6439,8 +6425,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "手を添えて手伝う",
-                                    "もどる"
+                                    "Support her and help her",
+                                    "Go back"
                                 ],
                                 -1,
                                 0,

@@ -2219,7 +2219,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "路地裏に入るとポツンと老婆が道の傍らに座っている。"
+                                "When I entered the back alley, there was an old woman sitting by the\nside of the road all alone."
                             ]
                         },
                         {
@@ -2270,14 +2270,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "………。"
+                                "【Mysterious Old Woman】 .........."
                             ]
                         },
                         {
@@ -2294,7 +2287,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "寡黙な老婆は何かを売っているようだ。"
+                                "【Mysterious Old Woman】 It seems like the taciturn old woman is selling\nsomething."
                             ]
                         },
                         {
@@ -2309,9 +2302,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "会話をする",
-                                    "商品をみたい",
-                                    "立ち去る"
+                                    "Engage in conversation",
+                                    "I want to see the merchandise",
+                                    "Leave"
                                 ],
                                 2,
                                 0,
@@ -2364,14 +2357,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "高いか安いかは、お客様のお考え次第でございます。"
+                                "【Mysterious Old Woman】 Whether it's expensive or cheap, it depends on\nthe customer's thoughts."
                             ]
                         },
                         {
@@ -2409,14 +2395,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "商品をどう使うかはお客様のお考え次第でございます。"
+                                "【Mysterious Old Woman】 How you use the product depends on the\ncustomer's thoughts."
                             ]
                         },
                         {
@@ -2454,14 +2433,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "………。"
+                                "【Mysterious Old Woman】 .........."
                             ]
                         },
                         {
@@ -2743,7 +2715,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "なんとなく買っちゃったけど、これは？"
+                                    "I bought it on a whim, but what is this?"
                                 ],
                                 0,
                                 0,
@@ -2790,14 +2762,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "………。"
+                                "【Mysterious Old Woman】 .........."
                             ]
                         },
                         {
@@ -2814,14 +2779,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "お連れ様の目的を果たすために必要なアイテムでございます。"
+                                "【Mysterious Old Woman】 This is the item necessary to fulfill your\ncompanion's objective."
                             ]
                         },
                         {
@@ -2907,14 +2865,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "わたしの目的？幸せの化粧箱…？"
+                                "【Monica】 My objective? The makeup box of happiness...?"
                             ]
                         },
                         {
@@ -2931,14 +2882,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "その時がくればわかることでございます。"
+                                "【Mysterious Old Woman】 You will understand when the time comes."
                             ]
                         },
                         {
@@ -2980,7 +2924,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■イエローオーブを手に入れた。"
+                                "■I obtained the yellow orb."
                             ]
                         },
                         {
@@ -3060,14 +3004,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "お買い上げありがとうございます。"
+                                "【Mysterious Old Woman】 Thank you for your purchase."
                             ]
                         },
                         {
@@ -3245,7 +3182,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "路地裏に入るとポツンと老婆が道の傍らに座っている。"
+                                "When I entered the back alley, there was an old woman sitting by the\nside of the road all alone."
                             ]
                         },
                         {
@@ -3296,14 +3233,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "………。"
+                                "【Mysterious Old Woman】 .........."
                             ]
                         },
                         {
@@ -3320,7 +3250,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "寡黙な老婆は何かを売っているようだ。"
+                                "【Mysterious Old Woman】 It seems like the taciturn old woman is selling\nsomething."
                             ]
                         },
                         {
@@ -3335,9 +3265,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "会話をする",
-                                    "商品をみたい",
-                                    "立ち去る"
+                                    "Engage in conversation",
+                                    "I want to see the merchandise",
+                                    "Leave"
                                 ],
                                 2,
                                 0,
@@ -3390,14 +3320,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "高いか安いかは、お客様のお考え次第でございます。"
+                                "【Mysterious Old Woman】 Whether it's expensive or cheap, it depends on\nthe customer's thoughts."
                             ]
                         },
                         {
@@ -3435,14 +3358,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "商品をどう使うかはお客様のお考え次第でございます。"
+                                "【Mysterious Old Woman】 How you use the product depends on the\ncustomer's thoughts."
                             ]
                         },
                         {
@@ -3480,14 +3396,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "………。"
+                                "【Mysterious Old Woman】 .........."
                             ]
                         },
                         {
@@ -3615,14 +3524,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【謎の老婆】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "お買い上げありがとうございます。"
+                                "【Mysterious Old Woman】 Thank you for your purchase."
                             ]
                         },
                         {

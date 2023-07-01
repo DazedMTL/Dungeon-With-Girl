@@ -2682,7 +2682,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "ダンジョン探索の前に宿で部屋を借りましょう！"
+                                "Before exploring the dungeon, let's rent a room at the inn!"
                             ]
                         },
                         {
@@ -2697,12 +2697,12 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "宿屋",
-                                    "ギルドホール",
-                                    "道具屋",
-                                    "ダンジョン",
-                                    "ダンジョン2",
-                                    "メニュー"
+                                    "Inn",
+                                    "Guild Hall",
+                                    "Item Shop",
+                                    "Dungeon",
+                                    "Dungeon2",
+                                    "Menu"
                                 ],
                                 1,
                                 0,
@@ -2785,7 +2785,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "宿屋にいってみよう"
+                                "Let's go to the inn."
                             ]
                         },
                         {
@@ -2815,7 +2815,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "宿屋にいってみよう"
+                                "Let's go to the inn."
                             ]
                         },
                         {
@@ -2845,7 +2845,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "宿屋にいってみよう"
+                                "Let's go to the inn."
                             ]
                         },
                         {
@@ -2875,7 +2875,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "宿屋にいってみよう"
+                                "Let's go to the inn."
                             ]
                         },
                         {
@@ -3261,21 +3261,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "つかれた～～･･･。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "もう動けないよ。早く宿に戻って休もう。"
+                                "【Monica】 I'm tired~~... I can't move anymore. Let's quickly go back to\nthe inn and rest."
                             ]
                         },
                         {
@@ -3347,7 +3333,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "どこにいこう？"
+                                "Where should we go?"
                             ]
                         },
                         {

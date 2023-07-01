@@ -6484,7 +6484,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "次に進みますか？"
+                                "Would you like to proceed to the next step?"
                             ]
                         },
                         {

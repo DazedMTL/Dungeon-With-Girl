@@ -2390,7 +2390,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\#■黄金の間について"
+                                "\\# About the Golden Room"
                             ]
                         },
                         {
@@ -2407,7 +2407,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "黄金の間では金色以上の宝箱を大量に見つけることができます。"
+                                "In the Golden Room, you can find a large number of treasure chests\nthat are more than just golden in color."
                             ]
                         },
                         {
@@ -2424,14 +2424,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "しかし、黄金の間には財宝を狙う冒険者排除のため、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ガーディアンが巡回しています。"
+                                "However, in order to eliminate adventurers who are after the treasures\nin the Golden Room, guardians are patrolling."
                             ]
                         },
                         {
@@ -2448,14 +2441,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "画面右下にガーディアンとの遭遇率が記してあります。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "これは進行するたびに20%ずつ増えていきます。"
+                                "The encounter rate with guardians is displayed in the bottom right\ncorner of the screen. It increases by 20% each time you progress."
                             ]
                         },
                         {
@@ -2472,14 +2458,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "ガーディアンはかなりの強敵な上、けむり玉でも逃げること"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "はできません。遭遇を避けるように探索をしましょう。"
+                                "The guardians are formidable enemies and cannot be escaped even with\nsmoke balls. Let's explore while avoiding encounters."
                             ]
                         },
                         {
@@ -2749,14 +2728,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "ここで終わりみたい！"
+                                "【Monica】 It looks like this is the end!"
                             ]
                         },
                         {
@@ -2773,14 +2745,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "また見つけたら入ってみよー！"
+                                "【Monica】 Let's try going in if we find it again!"
                             ]
                         },
                         {
@@ -2933,14 +2898,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "ここで終わりみたい！"
+                                "【Monica】 It looks like this is the end here!"
                             ]
                         },
                         {
@@ -2957,14 +2915,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "また見つけたら入ってみよー！"
+                                "【Monica】 Let's try going in if we find it again!"
                             ]
                         },
                         {
@@ -3559,7 +3510,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "次に進みますか？"
+                                "Would you like to proceed to the next step?"
                             ]
                         },
                         {
@@ -3841,7 +3792,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "そろそろ戻ろう"
+                                    "Let's go back soon"
                                 ],
                                 0,
                                 0,
@@ -3888,14 +3839,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "ひと通り周辺の探索を終え、そろそろ引き返そうと思い、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "顔をあげたとき正面に淡く光る何かを見つけた。"
+                                "After finishing exploring the surroundings, I looked up and found\nsomething faintly shining in front of me, so I thought it was time to\nturn back."
                             ]
                         },
                         {
@@ -3937,7 +3881,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "これはなんだろう"
+                                    "What could this be?"
                                 ],
                                 0,
                                 0,
@@ -3984,7 +3928,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "緑のオーブを手に取り、少し考えてみる―――"
+                                "Taking the green orb in hand, I pondered for a moment---"
                             ]
                         },
                         {
@@ -4001,28 +3945,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "―――っは！？"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "もしやこれを取ると天井がおちてくる？！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "咄嗟にそのようなことが頭をよぎり、あたりの様子を"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "キョロキョロと伺う。"
+                                "---Huh!? Could it be that if I take this, the ceiling will come crashing\ndown?! In an instant, such thoughts crossed my mind, and I looked\naround nervously."
                             ]
                         },
                         {
@@ -4039,21 +3962,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "しかし、特に変化があるようには見えない。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "これは一体なんだろうか、とりあえずヤマモトはオーブを"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "持ち帰ることにした。"
+                                "However, there doesn't seem to be any noticeable change. What could\nthis possibly be? For now, Yamamoto decided to take the orb back home."
                             ]
                         },
                         {
@@ -4092,7 +4001,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■グリーンオーブを手に入れた。"
+                                "■I obtained the Green Orb."
                             ]
                         },
                         {

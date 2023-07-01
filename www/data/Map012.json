@@ -2391,14 +2391,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ふわぁ～…　ん～～～～！"
+                                "【Monica】 Fuwaa~... Mmm~~~!"
                             ]
                         },
                         {
@@ -2467,14 +2460,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "っつ！頭いた…うぅぅ"
+                                "【Monica】 Ouch! My head... Ooohhhh..."
                             ]
                         },
                         {
@@ -2491,21 +2477,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "（頭痛いし、な～んかめっちゃ気持ち悪い夢を"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "みたような気がするな～…）"
+                                "【Monica】 (My head hurts and I feel like I had a really nauseating\ndream...)"
                             ]
                         },
                         {
@@ -2577,10 +2549,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "やすむ",
-                                    "アイテムの整理",
-                                    "手帳を見る",
-                                    "スキルをみなおす"
+                                    "Rest",
+                                    "Organizing items",
+                                    "Check the notebook",
+                                    "Rethink my skills"
                                 ],
                                 -2,
                                 0,
@@ -2668,7 +2640,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#今日はお金の支払日！ギルドに向かおう！"
+                                "\\# Today is payday! Let's head to the guild!"
                             ]
                         },
                         {
@@ -2736,7 +2708,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#しっかり休んだので大丈夫！"
+                                "\\# I rested well, so I'm fine!"
                             ]
                         },
                         {
@@ -2763,7 +2735,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "なにもせず1日経ってしまいます。休みますか？"
+                                "【Monica】 If we just let the day pass without doing anything, it will\nbe wasted. Should we take a break?"
                             ]
                         },
                         {
@@ -2771,8 +2743,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "いいえ"
+                                    "Yes",
+                                    "No"
                                 ],
                                 1,
                                 0,
@@ -3153,9 +3125,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "ヤマモト",
-                                    "モニカ",
-                                    "キャンセル"
+                                    "Yamamoto",
+                                    "Monica",
+                                    "Cancel"
                                 ],
                                 2,
                                 0,
@@ -3256,9 +3228,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "メニューを開く",
-                                    "セーブをする",
-                                    "部屋を出る"
+                                    "Open the menu",
+                                    "Let's save",
+                                    "Leave the room"
                                 ],
                                 2,
                                 -1,
@@ -3616,14 +3588,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ふわぁ～…　ん～～～～！"
+                                "【Monica】 Fuwaa~... Mmm~~~!"
                             ]
                         },
                         {
@@ -3692,14 +3657,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "っつ！頭いた…うぅぅ"
+                                "【Monica】 Ouch! My head... Ooohhhh..."
                             ]
                         },
                         {
@@ -3716,21 +3674,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "（頭痛いし、な～んかめっちゃ気持ち悪い夢を"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "みたような気がするな～…）"
+                                "【Monica】 (My head hurts and I feel like I had a really nauseating\ndream...)"
                             ]
                         },
                         {
@@ -3802,10 +3746,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "やすむ",
-                                    "アイテムの整理",
-                                    "手帳を見る",
-                                    "スキルをみなおす"
+                                    "Rest",
+                                    "Organizing items",
+                                    "Check the notebook",
+                                    "Rethink my skills"
                                 ],
                                 -2,
                                 0,
@@ -3893,7 +3837,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#今日はお金の支払日！ギルドに向かおう！"
+                                "\\# Today is payday! Let's head to the guild!"
                             ]
                         },
                         {
@@ -3961,7 +3905,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#しっかり休んだので大丈夫！"
+                                "\\# I rested well, so I'm fine!"
                             ]
                         },
                         {
@@ -3988,7 +3932,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "なにもせず1日経ってしまいます。休みますか？"
+                                "【Monica】 If we just let the day pass without doing anything, it will\nbe wasted. Should we take a break?"
                             ]
                         },
                         {
@@ -3996,8 +3940,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "いいえ"
+                                    "Yes",
+                                    "No"
                                 ],
                                 1,
                                 0,
@@ -4373,9 +4317,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "ヤマモト",
-                                    "モニカ",
-                                    "キャンセル"
+                                    "Yamamoto",
+                                    "Monica",
+                                    "Cancel"
                                 ],
                                 2,
                                 0,
@@ -4476,7 +4420,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "回想を見る"
+                                    "Let's watch a flashback"
                                 ],
                                 -1,
                                 0,
@@ -4519,9 +4463,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "メニューを開く",
-                                    "セーブをする",
-                                    "部屋を出る"
+                                    "Open the menu",
+                                    "Let's save",
+                                    "Leave the room"
                                 ],
                                 2,
                                 -1,

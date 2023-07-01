@@ -2448,14 +2448,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "おう！気がついたか！"
+                                "[Innkeeper] Hey! Did you notice?"
                             ]
                         },
                         {
@@ -2472,21 +2465,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "心配したぜ！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "気をつけてくれよな！"
+                                "[Innkeeper] I was worried! Take care, okay?"
                             ]
                         },
                         {

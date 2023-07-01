@@ -2878,7 +2878,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "…はぁはぁ、限界だ…"
+                                "...*Haa haa, I've reached my limit...*"
                             ]
                         },
                         {
@@ -2953,21 +2953,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "も、もうだめ～。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "休ませてぇ…"
+                                "【Monica】 I-I can't take it anymore... Let me rest..."
                             ]
                         },
                         {
@@ -3001,12 +2987,12 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "擦ってもらう",
-                                    "en(s[407])なめてもらう",
-                                    "en(v[171]>=1)声をかける",
-                                    "en(s[254])射精する",
-                                    "やめる",
-                                    "もどる"
+                                    "I want you to rub me",
+                                    "en(s[407])Let me give you a lick",
+                                    "en(v[171]>=1)Are you okay?",
+                                    "en(s[254])I'm going to ejaculate",
+                                    "I'll stop",
+                                    "Go back"
                                 ],
                                 -1,
                                 0,

@@ -2225,14 +2225,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【職員のおっさん】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "はい、たしかに受け取りました。"
+                                "【Staff Old Man】 Yes, I definitely received it."
                             ]
                         },
                         {
@@ -2428,14 +2421,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\{おめでとうーーッ！！"
+                                "【Monica】 Congratulations!!"
                             ]
                         },
                         {
@@ -2486,14 +2472,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "これでヤマモトも一人前の冒険者だね！"
+                                "【Monica】 With this, Yamamoto is now a full-fledged adventurer!"
                             ]
                         },
                         {
@@ -2528,21 +2507,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "そうだ！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "宿にもどってお祝いしなきゃね！"
+                                "【Monica】 That's right! We have to go back to the inn and celebrate!"
                             ]
                         },
                         {
@@ -2593,14 +2558,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "今日もダンジョンに行くって？"
+                                "【Monica】 Are we going to the dungeon again today?"
                             ]
                         },
                         {
@@ -2635,21 +2593,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "今日くらい休もうよ！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "ほら、いこいこっ！"
+                                "【Monica】 Let's take a break today! Come on, let's go!"
                             ]
                         },
                         {
@@ -2720,21 +2664,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                ""
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\{ \\C[21]                ノーマルエンド"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\}\\C[7]    　　　　　　          一人前の冒険者"
+                                " 【Monica】 \\C[21] Normal Ending \\C[7] A Full-Fledged Adventurer"
                             ]
                         },
                         {
@@ -2751,14 +2681,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                ""
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "\\{            　　　　おしまい。"
+                                " 【Monica】 The end."
                             ]
                         },
                         {
