@@ -2382,8 +2382,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "パンツを脱がす",
-                                    "そのまま"
+                                    "Take off pants",
+                                    "As it is"
                                 ],
                                 -1,
                                 0,
@@ -2506,8 +2506,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "パンツを脱がす",
-                                    "そのまま"
+                                    "Take off pants",
+                                    "As it is"
                                 ],
                                 -1,
                                 0,
@@ -2619,8 +2619,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "パンツを脱がす",
-                                    "そのまま"
+                                    "Take off pants",
+                                    "As it is"
                                 ],
                                 -1,
                                 0,
@@ -3008,21 +3008,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "も、もうだめ～。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "休ませてぇ…"
+                                "【Monica】 I-I can't anymore~ I need a break..."
                             ]
                         },
                         {
@@ -3056,12 +3042,12 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "パンツを脱がす",
-                                    "陰核を擦る",
-                                    "膣内を擦る",
-                                    "en(v[171]>=1)声をかける",
-                                    "やめる",
-                                    "もどる"
+                                    "Take off your pants",
+                                    "Rub the clitoris",
+                                    "Rub inside the vagina",
+                                    "en(v[171]>=1)Call out",
+                                    "Quit",
+                                    "Return"
                                 ],
                                 -1,
                                 0,
@@ -3662,9 +3648,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "指で",
-                                    "en(s[403])バイブで",
-                                    "en(s[404])触手で"
+                                    "With fingers",
+                                    "en(s[403])With a vibrator",
+                                    "en(s[404])With tentacles"
                                 ],
                                 -1,
                                 0,

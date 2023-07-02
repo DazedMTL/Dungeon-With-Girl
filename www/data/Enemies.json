@@ -61,7 +61,7 @@
             }
         ],
         "gold": 0,
-        "name": "こうもり",
+        "name": "Bat",
         "note": "",
         "params": [
             20,
@@ -148,7 +148,7 @@
             }
         ],
         "gold": 0,
-        "name": "スライム",
+        "name": "Slime",
         "note": "",
         "params": [
             20,
@@ -264,7 +264,7 @@
             }
         ],
         "gold": 0,
-        "name": "ゴブリン戦士",
+        "name": "Goblin Warrior",
         "note": "",
         "params": [
             25,
@@ -370,7 +370,7 @@
             }
         ],
         "gold": 0,
-        "name": "ゴブリン下級シャーマン",
+        "name": "Goblin Junior Shaman",
         "note": "",
         "params": [
             25,
@@ -469,7 +469,7 @@
             }
         ],
         "gold": 0,
-        "name": "古代の戦士",
+        "name": "Ancient Warrior",
         "note": "",
         "params": [
             60,
@@ -615,7 +615,7 @@
             }
         ],
         "gold": 0,
-        "name": "マタンゴ",
+        "name": "Matango",
         "note": "",
         "params": [
             30,
@@ -733,7 +733,7 @@
             }
         ],
         "gold": 3000,
-        "name": "あくらつ",
+        "name": "Darkstrike",
         "note": "雷に弱い\n",
         "params": [
             50,
@@ -800,7 +800,7 @@
             }
         ],
         "gold": 0,
-        "name": "ミミック",
+        "name": "Mimic",
         "note": "火に弱い",
         "params": [
             80,
@@ -894,7 +894,7 @@
             }
         ],
         "gold": 0,
-        "name": "ダンジョンワーム",
+        "name": "Dungeon Worm",
         "note": "火に弱い",
         "params": [
             90,
@@ -998,7 +998,7 @@
             }
         ],
         "gold": 0,
-        "name": "ゴブリン",
+        "name": "Goblin",
         "note": "",
         "params": [
             20,
@@ -1356,7 +1356,7 @@
             }
         ],
         "gold": 0,
-        "name": "人さらい",
+        "name": "Kidnapper",
         "note": "雷に弱い",
         "params": [
             120,
@@ -1723,7 +1723,7 @@
             }
         ],
         "gold": 0,
-        "name": "火吹きこうもり",
+        "name": "Fire-breathing bat",
         "note": "水に弱い",
         "params": [
             50,
@@ -1870,7 +1870,7 @@
             }
         ],
         "gold": 0,
-        "name": "ガーディアン",
+        "name": "Guardian",
         "note": "",
         "params": [
             600,
@@ -1957,7 +1957,7 @@
             }
         ],
         "gold": 0,
-        "name": "ミイラ男",
+        "name": "Mummy Man",
         "note": "",
         "params": [
             100,
@@ -2024,7 +2024,7 @@
             }
         ],
         "gold": 0,
-        "name": "ミミック（金）",
+        "name": "Mimic (Gold)",
         "note": "雷に弱い",
         "params": [
             120,
@@ -2086,7 +2086,7 @@
             }
         ],
         "gold": 0,
-        "name": "ミミック（虹）",
+        "name": "Mimic (Rainbow)",
         "note": "",
         "params": [
             140,
@@ -2207,7 +2207,7 @@
             }
         ],
         "gold": 0,
-        "name": "ゴブリンヒーロー",
+        "name": "Goblin Hero",
         "note": "",
         "params": [
             52,
@@ -2334,7 +2334,7 @@
             }
         ],
         "gold": 0,
-        "name": "ゴブリン上級シャーマン",
+        "name": "Goblin Advanced Shaman",
         "note": "",
         "params": [
             30,
@@ -2406,7 +2406,7 @@
             }
         ],
         "gold": 0,
-        "name": "ケガレ:胎動",
+        "name": "Kegare: Fetal Movement",
         "note": "",
         "params": [
             30000,
@@ -2512,7 +2512,7 @@
             }
         ],
         "gold": 0,
-        "name": "ゴブリンシャーマンエリート",
+        "name": "Goblin Shaman Elite",
         "note": "",
         "params": [
             45,
@@ -2661,7 +2661,7 @@
             }
         ],
         "gold": 0,
-        "name": "あやしい男",
+        "name": "Suspicious Man",
         "note": "雷に弱い",
         "params": [
             350,
@@ -2755,7 +2755,7 @@
             }
         ],
         "gold": 0,
-        "name": "タールスライム",
+        "name": "Tar Slime",
         "note": "火に弱い",
         "params": [
             40,
@@ -2865,7 +2865,7 @@
             }
         ],
         "gold": 0,
-        "name": "暗黒騎士",
+        "name": "Dark Knight",
         "note": "",
         "params": [
             250,
@@ -3023,7 +3023,7 @@
             }
         ],
         "gold": 0,
-        "name": "あくま",
+        "name": "Demon",
         "note": "",
         "params": [
             666,
@@ -3122,7 +3122,7 @@
             }
         ],
         "gold": 0,
-        "name": "地底人",
+        "name": "Underground Person",
         "note": "",
         "params": [
             150,
@@ -3264,7 +3264,7 @@
             }
         ],
         "gold": 0,
-        "name": "ドラゴン",
+        "name": "Dragon",
         "note": "",
         "params": [
             350,
@@ -3393,7 +3393,7 @@
             }
         ],
         "gold": 0,
-        "name": "ゲイズ",
+        "name": "Gaze",
         "note": "火に弱い",
         "params": [
             35,
@@ -3486,7 +3486,7 @@
             }
         ],
         "gold": 0,
-        "name": "サハギン",
+        "name": "Sahagin",
         "note": "雷に弱い",
         "params": [
             80,
@@ -3605,7 +3605,7 @@
             }
         ],
         "gold": 0,
-        "name": "ポルターガイスト",
+        "name": "Poltergeist",
         "note": "",
         "params": [
             53,
@@ -3705,7 +3705,7 @@
             }
         ],
         "gold": 0,
-        "name": "グラボイズ",
+        "name": "Guraboizu",
         "note": "火に弱い",
         "params": [
             230,
@@ -3846,7 +3846,7 @@
             }
         ],
         "gold": 0,
-        "name": "ゾンビ",
+        "name": "Zombie",
         "note": "",
         "params": [
             90,
@@ -3987,7 +3987,7 @@
             }
         ],
         "gold": 0,
-        "name": "ゾンビ兵",
+        "name": "Zombie Soldier",
         "note": "",
         "params": [
             100,
@@ -4068,7 +4068,7 @@
             }
         ],
         "gold": 0,
-        "name": "お化けきのこ",
+        "name": "Mushroom Ghost",
         "note": "",
         "params": [
             80,
@@ -4209,7 +4209,7 @@
             }
         ],
         "gold": 0,
-        "name": "ただれた男",
+        "name": "Tadareta Otoko (Ragged Man)",
         "note": "",
         "params": [
             150,
@@ -4329,7 +4329,7 @@
             }
         ],
         "gold": 0,
-        "name": "ゴーレム",
+        "name": "Golem",
         "note": "攻撃力がたかい\n水に弱い",
         "params": [
             120,
@@ -4437,7 +4437,7 @@
             }
         ],
         "gold": 0,
-        "name": "ヒールゴーレム",
+        "name": "Heal Golem",
         "note": "全体回復もち\n火に弱い",
         "params": [
             80,
@@ -4545,7 +4545,7 @@
             }
         ],
         "gold": 0,
-        "name": "クリスタルゴーレム",
+        "name": "Crystal Golem",
         "note": "攻撃力防御力が高い\n防具破壊ステートつきやすい",
         "params": [
             200,
@@ -4703,7 +4703,7 @@
             }
         ],
         "gold": 0,
-        "name": "オーク",
+        "name": "Orc",
         "note": "",
         "params": [
             800,
@@ -4813,7 +4813,7 @@
             }
         ],
         "gold": 0,
-        "name": "ポイズンドラゴン",
+        "name": "Poison Dragon",
         "note": "",
         "params": [
             180,
@@ -4960,7 +4960,7 @@
             }
         ],
         "gold": 0,
-        "name": "ドラゴン",
+        "name": "Dragon",
         "note": "",
         "params": [
             350,
@@ -5101,7 +5101,7 @@
             }
         ],
         "gold": 0,
-        "name": "触手の主",
+        "name": "Master of Tentacles",
         "note": "",
         "params": [
             1000,

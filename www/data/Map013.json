@@ -2327,10 +2327,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "やすむ",
-                                    "アイテムの整理",
-                                    "手帳を見る",
-                                    "スキルをみなおす"
+                                    "Rest",
+                                    "Organize items",
+                                    "View notebook",
+                                    "Review skills"
                                 ],
                                 4,
                                 0,
@@ -2418,7 +2418,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#今日はお金の支払日！協会に向かおう！"
+                                "\\# Today is payday! Let's head to the association!"
                             ]
                         },
                         {
@@ -2486,7 +2486,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#しっかり休んだので大丈夫！"
+                                "\\# I rested well, so I'm fine!"
                             ]
                         },
                         {
@@ -2513,7 +2513,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "なにもせず1日経ってしまいます。休みますか？"
+                                "I will spend the day doing nothing and it will pass. Will you take a\nbreak?"
                             ]
                         },
                         {
@@ -2521,8 +2521,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "いいえ"
+                                    "Yes",
+                                    "No"
                                 ],
                                 1,
                                 0,
@@ -2905,9 +2905,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "ヤマモト",
-                                    "モニカ",
-                                    "キャンセル"
+                                    "Yamamoto",
+                                    "Monica",
+                                    "Cancel"
                                 ],
                                 2,
                                 0,
@@ -2995,9 +2995,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "メニューを開く",
-                                    "セーブをする",
-                                    "部屋をでる"
+                                    "Open menu",
+                                    "Save",
+                                    "Leave the room"
                                 ],
                                 -1,
                                 -1,
@@ -3291,10 +3291,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "やすむ",
-                                    "アイテムの整理",
-                                    "手帳を見る",
-                                    "スキルをみなおす"
+                                    "Rest",
+                                    "Organize items",
+                                    "View notebook",
+                                    "Review skills"
                                 ],
                                 4,
                                 0,
@@ -3382,7 +3382,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#今日はお金の支払日！協会に向かおう！"
+                                "\\# Today is payday! Let's head to the association!"
                             ]
                         },
                         {
@@ -3450,7 +3450,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#しっかり休んだので大丈夫！"
+                                "\\# I rested well, so I'm fine!"
                             ]
                         },
                         {
@@ -3477,7 +3477,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "なにもせず1日経ってしまいます。休みますか？"
+                                "I will spend the day doing nothing and it will pass. Will you take a\nbreak?"
                             ]
                         },
                         {
@@ -3485,8 +3485,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "いいえ"
+                                    "Yes",
+                                    "No"
                                 ],
                                 1,
                                 0,
@@ -3869,9 +3869,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "ヤマモト",
-                                    "モニカ",
-                                    "キャンセル"
+                                    "Yamamoto",
+                                    "Monica",
+                                    "Cancel"
                                 ],
                                 2,
                                 0,
@@ -3959,7 +3959,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "回想を見る"
+                                    "View flashback"
                                 ],
                                 -1,
                                 0,
@@ -4002,9 +4002,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "メニューを開く",
-                                    "セーブをする",
-                                    "部屋をでる"
+                                    "Open menu",
+                                    "Save",
+                                    "Leave the room"
                                 ],
                                 2,
                                 -1,

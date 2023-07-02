@@ -2507,11 +2507,11 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "やすむ",
-                                    "アイテムの整理",
-                                    "手帳を見る",
-                                    "スキルをみなおす",
-                                    "モニカとえっちする"
+                                    "Rest",
+                                    "Organize items",
+                                    "View notebook",
+                                    "Review skills",
+                                    "Engage in sexual activity with Monica"
                                 ],
                                 5,
                                 0,
@@ -3134,7 +3134,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\#■今日はお金の支払日！協会に向かおう！"
+                                "\\#■Today is payday! Let's head to the association!"
                             ]
                         },
                         {
@@ -3193,7 +3193,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\#■しっかり休んだので大丈夫！"
+                                "\\#■I rested well, so I'm fine!"
                             ]
                         },
                         {
@@ -3622,9 +3622,9 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "ヤマモト",
-                                    "モニカ",
-                                    "キャンセル"
+                                    "Yamamoto",
+                                    "Monica",
+                                    "Cancel"
                                 ],
                                 2,
                                 0,
@@ -3724,7 +3724,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "遅いな…。まだ部屋にはいないみたいだ。"
+                                    "You're slow Looks like you're still not in the room"
                                 ],
                                 0,
                                 0,
@@ -3781,7 +3781,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "無理させるのはやめよう。"
+                                    "Let's not push ourselves too hard"
                                 ],
                                 0,
                                 0,
@@ -3838,7 +3838,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "疲れてそうだったし、無理させるのはやめよう。"
+                                    "I could tell you were tired, so let's not push ourselves too hard"
                                 ],
                                 0,
                                 0,
@@ -3897,7 +3897,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "今日はさすがに疲れたな…"
+                                    "I'm really tired today…"
                                 ],
                                 0,
                                 0,
@@ -4074,14 +4074,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "ん？ヤマモト、どした？"
+                                "[Monica] Huh? Yamamoto, what's wrong?"
                             ]
                         },
                         {
@@ -4114,14 +4107,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "あ…っ。"
+                                "[Monica] Ah..."
                             ]
                         },
                         {
@@ -4162,14 +4148,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "…うん。"
+                                "[Monica] ...Yeah."
                             ]
                         },
                         {
@@ -4206,9 +4185,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "メニューを開く",
-                                    "セーブをする",
-                                    "部屋を出る"
+                                    "Open menu",
+                                    "Save",
+                                    "Leave the room"
                                 ],
                                 -2,
                                 -1,
@@ -4274,7 +4253,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "今日はもう休もう。"
+                                    "Let's rest for today"
                                 ],
                                 0,
                                 0,
@@ -4374,10 +4353,10 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "やすむ",
-                                    "アイテムの整理",
-                                    "手帳を見る",
-                                    "スキルをみなおす"
+                                    "Rest",
+                                    "Organize items",
+                                    "View notebook",
+                                    "Review skills"
                                 ],
                                 4,
                                 0,
@@ -4792,7 +4771,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#■今日はお金の支払日！協会に向かおう！"
+                                "\\#■Today is payday! Let's head to the association!"
                             ]
                         },
                         {
@@ -4841,7 +4820,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\#■しっかり休んだので大丈夫！"
+                                "\\#■I rested well, so I'm fine!"
                             ]
                         },
                         {
@@ -5332,9 +5311,9 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "ヤマモト",
-                                    "モニカ",
-                                    "キャンセル"
+                                    "Yamamoto",
+                                    "Monica",
+                                    "Cancel"
                                 ],
                                 2,
                                 0,
@@ -5422,9 +5401,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "メニューを開く",
-                                    "セーブをする",
-                                    "部屋をでる"
+                                    "Open menu",
+                                    "Save",
+                                    "Leave the room"
                                 ],
                                 -2,
                                 -1,
@@ -5488,7 +5467,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "（今日はもう休もう）"
+                                    "I'll rest for today"
                                 ],
                                 0,
                                 0,
@@ -5928,11 +5907,11 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "やすむ",
-                                    "アイテムの整理",
-                                    "手帳を見る",
-                                    "スキルをみなおす",
-                                    "モニカとえっちする"
+                                    "Rest",
+                                    "Organize items",
+                                    "View notebook",
+                                    "Review skills",
+                                    "Engage in sexual activity with Monica"
                                 ],
                                 5,
                                 0,
@@ -6555,7 +6534,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\#■今日はお金の支払日！協会に向かおう！"
+                                "\\#■Today is payday! Let's head to the association!"
                             ]
                         },
                         {
@@ -6614,7 +6593,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\#■しっかり休んだので大丈夫！"
+                                "\\# I rested well, so I'm fine!"
                             ]
                         },
                         {
@@ -7043,9 +7022,9 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "ヤマモト",
-                                    "モニカ",
-                                    "キャンセル"
+                                    "Yamamoto",
+                                    "Monica",
+                                    "Cancel"
                                 ],
                                 2,
                                 0,
@@ -7145,7 +7124,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "遅いな…。まだ部屋にはいないみたいだ。"
+                                    "You're slow Looks like you're still not in the room"
                                 ],
                                 0,
                                 0,
@@ -7202,7 +7181,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "無理させるのはやめよう。"
+                                    "Let's not push ourselves too hard"
                                 ],
                                 0,
                                 0,
@@ -7259,7 +7238,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "疲れてそうだったし、無理させるのはやめよう。"
+                                    "Let's not push you too hard since you seemed tired"
                                 ],
                                 0,
                                 0,
@@ -7318,7 +7297,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "今日はさすがに疲れたな…"
+                                    "I'm really tired today…"
                                 ],
                                 0,
                                 0,
@@ -7495,14 +7474,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "ん？ヤマモト、どした？"
+                                "[Monica] Huh? Yamamoto, what's wrong?"
                             ]
                         },
                         {
@@ -7535,14 +7507,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "あ…っ。"
+                                "[Monica] Ah..."
                             ]
                         },
                         {
@@ -7583,14 +7548,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "…うん。"
+                                "[Monica] ...Yeah."
                             ]
                         },
                         {
@@ -7632,7 +7590,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "回想を見る"
+                                    "View flashback"
                                 ],
                                 -1,
                                 0,
@@ -7677,9 +7635,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "メニューを開く",
-                                    "セーブをする",
-                                    "部屋を出る"
+                                    "Open menu",
+                                    "Save",
+                                    "Leave the room"
                                 ],
                                 -2,
                                 -1,
@@ -7745,7 +7703,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "今日はもう休もう。"
+                                    "Let's rest for today"
                                 ],
                                 0,
                                 0,
@@ -7845,10 +7803,10 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "やすむ",
-                                    "アイテムの整理",
-                                    "手帳を見る",
-                                    "スキルをみなおす"
+                                    "Rest",
+                                    "Organize items",
+                                    "View notebook",
+                                    "Review skills"
                                 ],
                                 4,
                                 0,
@@ -8263,7 +8221,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#■今日はお金の支払日！協会に向かおう！"
+                                "\\#■Today is payday! Let's head to the association!"
                             ]
                         },
                         {
@@ -8312,7 +8270,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\#■しっかり休んだので大丈夫！"
+                                "\\# I rested well, so I'm fine!"
                             ]
                         },
                         {
@@ -8803,9 +8761,9 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "ヤマモト",
-                                    "モニカ",
-                                    "キャンセル"
+                                    "Yamamoto",
+                                    "Monica",
+                                    "Cancel"
                                 ],
                                 2,
                                 0,
@@ -8893,7 +8851,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "回想を見る"
+                                    "View flashback"
                                 ],
                                 -1,
                                 0,
@@ -8936,9 +8894,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "メニューを開く",
-                                    "セーブをする",
-                                    "部屋をでる"
+                                    "Open menu",
+                                    "Save",
+                                    "Leave the room"
                                 ],
                                 -2,
                                 -1,
@@ -9002,7 +8960,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "（今日はもう休もう）"
+                                    "Let's rest for today"
                                 ],
                                 0,
                                 0,

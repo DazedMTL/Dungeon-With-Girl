@@ -1288,7 +1288,7 @@
                         "code": 401,
                         "indent": 0,
                         "parameters": [
-                            "ピガ、ガガガッガガガガガ…ガガ"
+                            "Piga, gagagagagaga...gaga"
                         ]
                     },
                     {
@@ -1305,14 +1305,7 @@
                         "code": 401,
                         "indent": 0,
                         "parameters": [
-                            "先ほどの自ら放った攻撃でガーディアンの内部が損傷したようだ！"
-                        ]
-                    },
-                    {
-                        "code": 401,
-                        "indent": 0,
-                        "parameters": [
-                            "逃げるなら今しかないかもしれない…！"
+                            "The attack you just unleashed seems to have damaged the inside of the\nGuardian! If we're going to escape, now might be our only chance...!"
                         ]
                     },
                     {
@@ -1320,8 +1313,8 @@
                         "indent": 0,
                         "parameters": [
                             [
-                                "逃げる",
-                                "このまま叩く"
+                                "Escape",
+                                "Keep hitting it like this"
                             ],
                             -1,
                             0,

@@ -4247,9 +4247,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "会話する",
-                                    "依頼を請ける",
-                                    "ギルドを去る"
+                                    "Talk or Have a conversation",
+                                    "Take the request",
+                                    "Leave the guild"
                                 ],
                                 2,
                                 0,

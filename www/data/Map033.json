@@ -2655,11 +2655,11 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "やさしく",
-                                    "激しく",
-                                    "en(s[401])パイ揉みキス",
-                                    "やめる",
-                                    "もどる"
+                                    "Gently",
+                                    "Intensely",
+                                    "en(s[401])Pie Kneading Kiss",
+                                    "Quit",
+                                    "Go back/Return"
                                 ],
                                 -1,
                                 0,
@@ -4475,7 +4475,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "…はぁはぁ、限界だ…"
+                                "...Haa haa, I've reached my limit..."
                             ]
                         },
                         {
@@ -4572,7 +4572,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "…はぁはぁ、限界だ…"
+                                "...Haa haa, I've reached my limit..."
                             ]
                         },
                         {
@@ -5163,11 +5163,11 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "やさしく",
-                                    "激しく",
-                                    "en(s[401])パイ揉みキス",
-                                    "やめる",
-                                    "もどる"
+                                    "Gently",
+                                    "Intensely",
+                                    "en(s[401])Pie Kneading Kiss",
+                                    "Quit",
+                                    "Go back/Return"
                                 ],
                                 -1,
                                 0,
@@ -7013,7 +7013,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "…はぁはぁ、限界だ…"
+                                "...Haa haa, I've reached my limit..."
                             ]
                         },
                         {
@@ -7110,7 +7110,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "…はぁはぁ、限界だ…"
+                                "...Haa haa, I've reached my limit..."
                             ]
                         },
                         {
@@ -7654,11 +7654,11 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "やさしく",
-                                    "激しく",
-                                    "en(s[401])パイ揉みキス",
-                                    "やめる",
-                                    "もどる"
+                                    "Gently",
+                                    "Intensely",
+                                    "en(s[401])Pie Kneading Kiss",
+                                    "Quit",
+                                    "Go back/Return"
                                 ],
                                 -1,
                                 0,
@@ -9425,7 +9425,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "…はぁはぁ、限界だ…"
+                                "...Haa haa, I've reached my limit..."
                             ]
                         },
                         {
@@ -9522,7 +9522,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "…はぁはぁ、限界だ…"
+                                "...Haa haa, I've reached my limit..."
                             ]
                         },
                         {

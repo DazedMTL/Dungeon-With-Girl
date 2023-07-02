@@ -2215,9 +2215,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "商人っぽい客",
-                                    "異様な雰囲気の客",
-                                    "フロントにもどる"
+                                    "Customer who looks like a merchant",
+                                    "Customers with a strange atmosphere",
+                                    "Return to the front desk"
                                 ],
                                 2,
                                 0,
@@ -2281,14 +2281,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "なにか買っていくにゃ？"
+                                "【Merchant】 What would you like to buy, meow?"
                             ]
                         },
                         {
@@ -2303,9 +2296,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "会話をする",
-                                    "取引をする",
-                                    "はなれる"
+                                    "Have a conversation",
+                                    "Make a transaction",
+                                    "Leave"
                                 ],
                                 2,
                                 0,
@@ -2358,14 +2351,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "夜はいつもここで商いをさせてもらってるにゃんね～。"
+                                "【Merchant】 I always do business here at night, meow~."
                             ]
                         },
                         {
@@ -2410,14 +2396,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "いらないものがあったら売ってくれると嬉しいにゃん！"
+                                "【Merchant】 If you have anything you don't need, I would be happy if\nyou sold it to me, meow!"
                             ]
                         },
                         {
@@ -2462,14 +2441,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "ここのおやじさんはいつもカリカリをくれるにゃんね。"
+                                "【Merchant】 The old man here always gives me treats, meow."
                             ]
                         },
                         {
@@ -2514,21 +2486,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "おやじさんに「ネムリ薬はないか？」ってよく聞かれるけど、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "にゃんでだろう？眠れないのかにゃ？"
+                                "【Merchant】 The old man often asks me, Do you have any sleeping\nmedicine? I wonder why, meow? Can't he sleep?"
                             ]
                         },
                         {
@@ -2882,21 +2840,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "こんなに高いものを買ってくれるなんて感激だにゃん！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "ありがとうございますだにゃん！"
+                                "【Merchant】 I'm so grateful that you're buying such expensive things!\nThank you very much!"
                             ]
                         },
                         {
@@ -3186,9 +3130,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "商人っぽい客",
-                                    "異様な雰囲気の客",
-                                    "フロントにもどる"
+                                    "Customer who looks like a merchant",
+                                    "Customers with a strange atmosphere",
+                                    "Return to the front desk"
                                 ],
                                 2,
                                 0,
@@ -3252,14 +3196,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "なにか買っていくにゃ？"
+                                "【Merchant】 What would you like to buy, meow?"
                             ]
                         },
                         {
@@ -3274,9 +3211,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "会話をする",
-                                    "取引をする",
-                                    "はなれる"
+                                    "Have a conversation",
+                                    "Make a transaction",
+                                    "Leave"
                                 ],
                                 2,
                                 0,
@@ -3329,14 +3266,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "夜はいつもここで商いをさせてもらってるにゃんね～。"
+                                "【Merchant】 I always do business here at night, meow~."
                             ]
                         },
                         {
@@ -3381,14 +3311,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "いらないものがあったら売ってくれると嬉しいにゃん！"
+                                "【Merchant】 If you have anything you don't need, I would be happy if\nyou sold it to me, meow!"
                             ]
                         },
                         {
@@ -3433,14 +3356,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "ここのおやじさんはいつもカリカリをくれるにゃんね。"
+                                "【Merchant】 The old man here always gives me treats, meow."
                             ]
                         },
                         {
@@ -3485,21 +3401,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【商人】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "おやじさんに「ネムリ薬はないか？」ってよく聞かれるけど、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "にゃんでだろう？眠れないのかにゃ？"
+                                "【Merchant】 The old man often asks me, Do you have any sleeping\nmedicine? I wonder why, meow? Can't he sleep?"
                             ]
                         },
                         {

@@ -2428,12 +2428,12 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "いっぱしの冒険者",
-                                    "元冒険者",
-                                    "熟練冒険者",
-                                    "困っている女冒険者",
-                                    "なにか知ってそうな客",
-                                    "フロントに戻る"
+                                    "Experienced Adventurer",
+                                    "Former Adventurer",
+                                    "Experienced Adventurer",
+                                    "Troubled Female Adventurer",
+                                    "A customer who seems to know something",
+                                    "Return to the front desk"
                                 ],
                                 5,
                                 0,
@@ -3294,7 +3294,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "ええ"
+                                    "Yes"
                                 ],
                                 0,
                                 0,
@@ -3451,7 +3451,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "悪魔？"
+                                    "Demons?"
                                 ],
                                 0,
                                 0,
