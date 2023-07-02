@@ -3962,7 +3962,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "However, there doesn't seem to be any noticeable change. What could\nthis possibly be? For now, Yamamoto decided to take the orb back home."
+                                "However, there doesn't seem to be any noticeable change. What could\nthis possibly be? For now, \\N[1] decided to take the orb back home."
                             ]
                         },
                         {
@@ -4773,14 +4773,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
+                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT 支払い金額: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
                             ]
                         },
                         {
@@ -4831,14 +4831,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
+                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT 支払い金額\\C[18]50000\\C[0]G 20"
+                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
                             ]
                         },
                         {
@@ -4899,14 +4899,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
+                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT 支払い金額\\C[18]70000\\C[0]G 20"
+                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
                             ]
                         },
                         {
@@ -5250,7 +5250,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT \\v[16]日目 50"
+                                "D_TEXT Day\\v[16] 50"
                             ]
                         },
                         {
@@ -5283,7 +5283,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT \\v[16]日目 50"
+                                "D_TEXT Day\\v[16] 50"
                             ]
                         },
                         {

@@ -390,7 +390,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Stand in front of allies and take on attacks. If used by Yamamoto, favorability\nwill increase by +1",
+        "description": "Stand in front of allies and take on attacks. If used by \\N[1], favorability\nwill increase by +1",
         "effects": [
             {
                 "code": 21,

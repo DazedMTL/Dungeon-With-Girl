@@ -136,7 +136,7 @@
         "pitch": 100,
         "volume": 90
     },
-    "locale": "ja_JP",
+    "locale": "en_US",
     "magicSkills": [
         1
     ],
@@ -1424,7 +1424,7 @@
         "Variable of Subquery9",
         "Variable of \"subqueue10",
         "number_of_times_helped_child_adventurers",
-        "TreasureBoxAdditionDiscovery[Luck]Yamamoto",
+        "TreasureBoxAdditionDiscovery[Luck]\\N[1]",
         "TreasureBoxAdditionDiscovery[Luck]Monica",
         "Rose Shield Thorn Skill",
         "Sleeping beauty",
