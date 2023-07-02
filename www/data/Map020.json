@@ -1,1 +1,3997 @@
-{"autoplayBgm": false, "autoplayBgs": false, "battleback1Name": "", "battleback2Name": "", "bgm": {"name": "", "pan": 0, "pitch": 100, "volume": 90}, "bgs": {"name": "", "pan": 0, "pitch": 100, "volume": 90}, "disableDashing": false, "displayName": "", "encounterList": [], "encounterStep": 30, "height": 16, "note": "", "parallaxLoopX": false, "parallaxLoopY": false, "parallaxName": "", "parallaxShow": true, "parallaxSx": 0, "parallaxSy": 0, "scrollType": 0, "specifyBattleback": false, "tilesetId": 1, "width": 22, "data": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "events": [null, {"id": 1, "name": "EV001", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 200, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 111, "indent": 0, "parameters": [0, 217, 0]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 411, "indent": 0, "parameters": []}, {"code": 235, "indent": 1, "parameters": [50]}, {"code": 235, "indent": 1, "parameters": [51]}, {"code": 235, "indent": 1, "parameters": [52]}, {"code": 235, "indent": 1, "parameters": [53]}, {"code": 235, "indent": 1, "parameters": [54]}, {"code": 235, "indent": 1, "parameters": [55]}, {"code": 235, "indent": 1, "parameters": [56]}, {"code": 235, "indent": 1, "parameters": [57]}, {"code": 235, "indent": 1, "parameters": [58]}, {"code": 235, "indent": 1, "parameters": [59]}, {"code": 235, "indent": 1, "parameters": [60]}, {"code": 235, "indent": 1, "parameters": [63]}, {"code": 235, "indent": 1, "parameters": [64]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 356, "indent": 0, "parameters": ["GDM_UNLOCK_CHOICE_WINDOW"]}, {"code": 235, "indent": 0, "parameters": [45]}, {"code": 111, "indent": 0, "parameters": [0, 216, 0]}, {"code": 232, "indent": 1, "parameters": [63, 0, 0, 0, 0, 0, 100, 100, 0, 0, 15, true]}, {"code": 231, "indent": 1, "parameters": [50, "mhcg_sonyu_v_seijoui_1iki", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 117, "indent": 1, "parameters": [178]}, {"code": 230, "indent": 1, "parameters": [30]}, {"code": 231, "indent": 1, "parameters": [51, "mhcg_sonyu_v_seijoui_2iki", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 230, "indent": 1, "parameters": [30]}, {"code": 231, "indent": 1, "parameters": [52, "mhcg_sonyu_v_seijoui_3iki", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 230, "indent": 1, "parameters": [30]}, {"code": 231, "indent": 1, "parameters": [53, "mhcg_sonyu_v_seijoui_6", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 411, "indent": 0, "parameters": []}, {"code": 232, "indent": 1, "parameters": [63, 0, 0, 0, 0, 0, 100, 100, 0, 0, 15, true]}, {"code": 231, "indent": 1, "parameters": [50, "mhcg_sonyu_v_seijoui_1", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 117, "indent": 1, "parameters": [178]}, {"code": 230, "indent": 1, "parameters": [30]}, {"code": 231, "indent": 1, "parameters": [51, "mhcg_sonyu_v_seijoui_2", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 230, "indent": 1, "parameters": [30]}, {"code": 231, "indent": 1, "parameters": [52, "mhcg_sonyu_v_seijoui_3", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 230, "indent": 1, "parameters": [30]}, {"code": 231, "indent": 1, "parameters": [53, "mhcg_sonyu_v_seijoui_4", 0, 0, 0, 0, 100, 100, 255, 0]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 121, "indent": 0, "parameters": [217, 217, 0]}, {"code": 118, "indent": 0, "parameters": ["挿入選択肢"]}, {"code": 111, "indent": 0, "parameters": [1, 109, 0, 40, 1]}, {"code": 121, "indent": 1, "parameters": [508, 508, 0]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 111, "indent": 0, "parameters": [0, 204, 0]}, {"code": 121, "indent": 1, "parameters": [364, 364, 0]}, {"code": 119, "indent": 1, "parameters": ["強制終了"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 111, "indent": 0, "parameters": [1, 29, 0, 0, 2]}, {"code": 101, "indent": 1, "parameters": ["", 0, 0, 2]}, {"code": 401, "indent": 1, "parameters": ["【Monica】 I-I can't take it anymore~. Let me rest..."]}, {"code": 121, "indent": 1, "parameters": [364, 364, 0]}, {"code": 119, "indent": 1, "parameters": ["強制終了"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 102, "indent": 0, "parameters": [["Keep going", "en(v[171]>=1)Are you okay?", "en(s[520])I'm going to cum", "Stop", "Go back"], -1, 0, 2, 0]}, {"code": 402, "indent": 0, "parameters": [0, "動く"]}, {"code": 356, "indent": 1, "parameters": ["showLogWindow"]}, {"code": 235, "indent": 1, "parameters": [55]}, {"code": 235, "indent": 1, "parameters": [56]}, {"code": 235, "indent": 1, "parameters": [57]}, {"code": 235, "indent": 1, "parameters": [58]}, {"code": 235, "indent": 1, "parameters": [59]}, {"code": 235, "indent": 1, "parameters": [63]}, {"code": 235, "indent": 1, "parameters": [64]}, {"code": 121, "indent": 1, "parameters": [208, 208, 0]}, {"code": 121, "indent": 1, "parameters": [501, 501, 0]}, {"code": 111, "indent": 1, "parameters": [1, 116, 0, 1, 1]}, {"code": 119, "indent": 2, "parameters": ["絶頂してる"]}, {"code": 0, "indent": 2, "parameters": []}, {"code": 412, "indent": 1, "parameters": []}, {"code": 119, "indent": 1, "parameters": ["挿入選択肢"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 402, "indent": 0, "parameters": [1, "en(v[171]>=1)声をかける"]}, {"code": 356, "indent": 1, "parameters": ["GDM_UNLOCK_CHOICE_WINDOW"]}, {"code": 117, "indent": 1, "parameters": [838]}, {"code": 119, "indent": 1, "parameters": ["挿入選択肢"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 402, "indent": 0, "parameters": [2, "en(s[520])射精する"]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 56"]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 57"]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 58"]}, {"code": 235, "indent": 1, "parameters": [56]}, {"code": 235, "indent": 1, "parameters": [57]}, {"code": 235, "indent": 1, "parameters": [58]}, {"code": 117, "indent": 1, "parameters": [750]}, {"code": 119, "indent": 1, "parameters": ["挿入選択肢"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 402, "indent": 0, "parameters": [3, "やめる"]}, {"code": 356, "indent": 1, "parameters": ["showLogWindow"]}, {"code": 356, "indent": 1, "parameters": ["PB_BGS_ALL_STOP"]}, {"code": 235, "indent": 1, "parameters": [55]}, {"code": 235, "indent": 1, "parameters": [56]}, {"code": 235, "indent": 1, "parameters": [57]}, {"code": 235, "indent": 1, "parameters": [58]}, {"code": 235, "indent": 1, "parameters": [59]}, {"code": 235, "indent": 1, "parameters": [80]}, {"code": 121, "indent": 1, "parameters": [501, 501, 1]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 54"]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 56"]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 57"]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 58"]}, {"code": 245, "indent": 1, "parameters": [{"name": "monika_toikisho", "volume": 90, "pitch": 100, "pan": 0}]}, {"code": 119, "indent": 1, "parameters": ["挿入選択肢"]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 402, "indent": 0, "parameters": [4, "もどる"]}, {"code": 118, "indent": 1, "parameters": ["強制終了"]}, {"code": 356, "indent": 1, "parameters": ["hideLogWindow"]}, {"code": 121, "indent": 1, "parameters": [508, 508, 1]}, {"code": 121, "indent": 1, "parameters": [501, 501, 1]}, {"code": 121, "indent": 1, "parameters": [217, 217, 1]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 54"]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 56"]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 57"]}, {"code": 356, "indent": 1, "parameters": ["PA_STOP 58"]}, {"code": 235, "indent": 1, "parameters": [56]}, {"code": 235, "indent": 1, "parameters": [57]}, {"code": 235, "indent": 1, "parameters": [58]}, {"code": 235, "indent": 1, "parameters": [80]}, {"code": 230, "indent": 1, "parameters": [1]}, {"code": 117, "indent": 1, "parameters": [385]}, {"code": 230, "indent": 1, "parameters": [1]}, {"code": 111, "indent": 1, "parameters": [0, 364, 0]}, {"code": 235, "indent": 2, "parameters": [50]}, {"code": 235, "indent": 2, "parameters": [51]}, {"code": 235, "indent": 2, "parameters": [52]}, {"code": 235, "indent": 2, "parameters": [53]}, {"code": 235, "indent": 2, "parameters": [54]}, {"code": 235, "indent": 2, "parameters": [55]}, {"code": 235, "indent": 2, "parameters": [56]}, {"code": 235, "indent": 2, "parameters": [57]}, {"code": 235, "indent": 2, "parameters": [58]}, {"code": 235, "indent": 2, "parameters": [59]}, {"code": 235, "indent": 2, "parameters": [60]}, {"code": 235, "indent": 2, "parameters": [63]}, {"code": 235, "indent": 2, "parameters": [64]}, {"code": 235, "indent": 2, "parameters": [70]}, {"code": 121, "indent": 2, "parameters": [507, 507, 1]}, {"code": 121, "indent": 2, "parameters": [364, 364, 1]}, {"code": 0, "indent": 2, "parameters": []}, {"code": 412, "indent": 1, "parameters": []}, {"code": 111, "indent": 1, "parameters": [0, 209, 0]}, {"code": 235, "indent": 2, "parameters": [50]}, {"code": 235, "indent": 2, "parameters": [51]}, {"code": 235, "indent": 2, "parameters": [52]}, {"code": 235, "indent": 2, "parameters": [53]}, {"code": 235, "indent": 2, "parameters": [54]}, {"code": 235, "indent": 2, "parameters": [55]}, {"code": 235, "indent": 2, "parameters": [56]}, {"code": 235, "indent": 2, "parameters": [57]}, {"code": 235, "indent": 2, "parameters": [58]}, {"code": 235, "indent": 2, "parameters": [59]}, {"code": 235, "indent": 2, "parameters": [60]}, {"code": 235, "indent": 2, "parameters": [63]}, {"code": 235, "indent": 2, "parameters": [64]}, {"code": 235, "indent": 2, "parameters": [70]}, {"code": 121, "indent": 2, "parameters": [507, 507, 1]}, {"code": 121, "indent": 2, "parameters": [209, 209, 1]}, {"code": 0, "indent": 2, "parameters": []}, {"code": 412, "indent": 1, "parameters": []}, {"code": 356, "indent": 1, "parameters": ["PB_BGS_ALL_STOP"]}, {"code": 117, "indent": 1, "parameters": [177]}, {"code": 201, "indent": 1, "parameters": [0, 18, 2, 0, 0, 2]}, {"code": 115, "indent": 1, "parameters": []}, {"code": 0, "indent": 1, "parameters": []}, {"code": 404, "indent": 0, "parameters": []}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 3, "walkAnime": true}, {"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 109, "variableValid": true, "variableValue": 100}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 356, "indent": 0, "parameters": ["PA_STOP 54"]}, {"code": 356, "indent": 0, "parameters": ["PA_STOP 56"]}, {"code": 356, "indent": 0, "parameters": ["PA_STOP 57"]}, {"code": 356, "indent": 0, "parameters": ["PA_STOP 58"]}, {"code": 235, "indent": 0, "parameters": [56]}, {"code": 235, "indent": 0, "parameters": [57]}, {"code": 117, "indent": 0, "parameters": [749]}, {"code": 111, "indent": 0, "parameters": [1, 111, 0, 100, 1]}, {"code": 117, "indent": 1, "parameters": [750]}, {"code": 117, "indent": 1, "parameters": [690]}, {"code": 0, "indent": 1, "parameters": []}, {"code": 412, "indent": 0, "parameters": []}, {"code": 101, "indent": 0, "parameters": ["", 0, 2, 2]}, {"code": 401, "indent": 0, "parameters": [""]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 3, "walkAnime": true}], "x": 1, "y": 0}, {"id": 2, "name": "EV002", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 200, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 122, "indent": 0, "parameters": [29, 29, 0, 3, 3, 2, 2]}, {"code": 123, "indent": 0, "parameters": ["A", 0]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 4, "walkAnime": true}, {"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": true, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 122, "indent": 0, "parameters": [226, 226, 0, 1, 4]}, {"code": 356, "indent": 0, "parameters": ["D_TEXT  \\v[29]  16"]}, {"code": 231, "indent": 0, "parameters": [91, "", 0, 0, 80, 75, 100, 100, 255, 0]}, {"code": 356, "indent": 0, "parameters": ["D_TEXT                              \\v[226]  16"]}, {"code": 231, "indent": 0, "parameters": [92, "", 0, 0, 75, 75, 100, 100, 255, 0]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 4, "walkAnime": true}, {"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 84, "switch1Valid": true, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 0, "walkAnime": true}], "x": 2, "y": 0}, {"id": 3, "name": "EV003", "note": "", "pages": [{"conditions": {"actorId": 1, "actorValid": false, "itemId": 1, "itemValid": false, "selfSwitchCh": "A", "selfSwitchValid": false, "switch1Id": 1, "switch1Valid": false, "switch2Id": 1, "switch2Valid": false, "variableId": 1, "variableValid": false, "variableValue": 0}, "directionFix": false, "image": {"characterIndex": 0, "characterName": "", "direction": 2, "pattern": 0, "tileId": 0}, "list": [{"code": 122, "indent": 0, "parameters": [226, 226, 0, 1, 4]}, {"code": 0, "indent": 0, "parameters": []}], "moveFrequency": 3, "moveRoute": {"list": [{"code": 0, "parameters": []}], "repeat": true, "skippable": false, "wait": false}, "moveSpeed": 3, "moveType": 0, "priorityType": 0, "stepAnime": false, "through": false, "trigger": 4, "walkAnime": true}], "x": 3, "y": 0}, null]}
+{
+    "autoplayBgm": false,
+    "autoplayBgs": false,
+    "battleback1Name": "",
+    "battleback2Name": "",
+    "bgm": {
+        "name": "",
+        "pan": 0,
+        "pitch": 100,
+        "volume": 90
+    },
+    "bgs": {
+        "name": "",
+        "pan": 0,
+        "pitch": 100,
+        "volume": 90
+    },
+    "disableDashing": false,
+    "displayName": "",
+    "encounterList": [],
+    "encounterStep": 30,
+    "height": 16,
+    "note": "",
+    "parallaxLoopX": false,
+    "parallaxLoopY": false,
+    "parallaxName": "",
+    "parallaxShow": true,
+    "parallaxSx": 0,
+    "parallaxSy": 0,
+    "scrollType": 0,
+    "specifyBattleback": false,
+    "tilesetId": 1,
+    "width": 22,
+    "data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "events": [
+        null,
+        {
+            "id": 1,
+            "name": "EV001",
+            "note": "",
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 200,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 111,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                217,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 411,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                50
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                51
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                52
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                53
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                54
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                55
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                56
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                57
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                58
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                59
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                63
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                64
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "GDM_UNLOCK_CHOICE_WINDOW"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 0,
+                            "parameters": [
+                                45
+                            ]
+                        },
+                        {
+                            "code": 111,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                216,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 232,
+                            "indent": 1,
+                            "parameters": [
+                                63,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                0,
+                                0,
+                                15,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 1,
+                            "parameters": [
+                                50,
+                                "mhcg_sonyu_v_seijoui_1iki",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 1,
+                            "parameters": [
+                                178
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                30
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 1,
+                            "parameters": [
+                                51,
+                                "mhcg_sonyu_v_seijoui_2iki",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                30
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 1,
+                            "parameters": [
+                                52,
+                                "mhcg_sonyu_v_seijoui_3iki",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                30
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 1,
+                            "parameters": [
+                                53,
+                                "mhcg_sonyu_v_seijoui_6",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 411,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 232,
+                            "indent": 1,
+                            "parameters": [
+                                63,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                0,
+                                0,
+                                15,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 1,
+                            "parameters": [
+                                50,
+                                "mhcg_sonyu_v_seijoui_1",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 1,
+                            "parameters": [
+                                178
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                30
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 1,
+                            "parameters": [
+                                51,
+                                "mhcg_sonyu_v_seijoui_2",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                30
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 1,
+                            "parameters": [
+                                52,
+                                "mhcg_sonyu_v_seijoui_3",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                30
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 1,
+                            "parameters": [
+                                53,
+                                "mhcg_sonyu_v_seijoui_4",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 121,
+                            "indent": 0,
+                            "parameters": [
+                                217,
+                                217,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 118,
+                            "indent": 0,
+                            "parameters": [
+                                "挿入選択肢"
+                            ]
+                        },
+                        {
+                            "code": 111,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                109,
+                                0,
+                                40,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
+                                508,
+                                508,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 111,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                204,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
+                                364,
+                                364,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 119,
+                            "indent": 1,
+                            "parameters": [
+                                "強制終了"
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 111,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                29,
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 1,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "【Monica】 I-I can't take it anymore~. Let me rest..."
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
+                                364,
+                                364,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 119,
+                            "indent": 1,
+                            "parameters": [
+                                "強制終了"
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 102,
+                            "indent": 0,
+                            "parameters": [
+                                [
+                                    "Keep going",
+                                    "en(v[171]>=1)Are you okay?",
+                                    "en(s[520])I'm going to cum",
+                                    "Stop",
+                                    "Go back"
+                                ],
+                                -1,
+                                0,
+                                2,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 402,
+                            "indent": 0,
+                            "parameters": [
+                                0,
+                                "動く"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "showLogWindow"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                55
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                56
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                57
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                58
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                59
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                63
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                64
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
+                                208,
+                                208,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
+                                501,
+                                501,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 111,
+                            "indent": 1,
+                            "parameters": [
+                                1,
+                                116,
+                                0,
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 119,
+                            "indent": 2,
+                            "parameters": [
+                                "絶頂してる"
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 2,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 119,
+                            "indent": 1,
+                            "parameters": [
+                                "挿入選択肢"
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 402,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                "en(v[171]>=1)声をかける"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "GDM_UNLOCK_CHOICE_WINDOW"
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 1,
+                            "parameters": [
+                                838
+                            ]
+                        },
+                        {
+                            "code": 119,
+                            "indent": 1,
+                            "parameters": [
+                                "挿入選択肢"
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 402,
+                            "indent": 0,
+                            "parameters": [
+                                2,
+                                "en(s[520])射精する"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 56"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 57"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 58"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                56
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                57
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                58
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 1,
+                            "parameters": [
+                                750
+                            ]
+                        },
+                        {
+                            "code": 119,
+                            "indent": 1,
+                            "parameters": [
+                                "挿入選択肢"
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 402,
+                            "indent": 0,
+                            "parameters": [
+                                3,
+                                "やめる"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "showLogWindow"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PB_BGS_ALL_STOP"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                55
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                56
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                57
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                58
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                59
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                80
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
+                                501,
+                                501,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 54"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 56"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 57"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 58"
+                            ]
+                        },
+                        {
+                            "code": 245,
+                            "indent": 1,
+                            "parameters": [
+                                {
+                                    "name": "monika_toikisho",
+                                    "volume": 90,
+                                    "pitch": 100,
+                                    "pan": 0
+                                }
+                            ]
+                        },
+                        {
+                            "code": 119,
+                            "indent": 1,
+                            "parameters": [
+                                "挿入選択肢"
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 402,
+                            "indent": 0,
+                            "parameters": [
+                                4,
+                                "もどる"
+                            ]
+                        },
+                        {
+                            "code": 118,
+                            "indent": 1,
+                            "parameters": [
+                                "強制終了"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "hideLogWindow"
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
+                                508,
+                                508,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
+                                501,
+                                501,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
+                                217,
+                                217,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 54"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 56"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 57"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PA_STOP 58"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                56
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                57
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                58
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                80
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                1
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 1,
+                            "parameters": [
+                                385
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 1,
+                            "parameters": [
+                                1
+                            ]
+                        },
+                        {
+                            "code": 111,
+                            "indent": 1,
+                            "parameters": [
+                                0,
+                                364,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                50
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                51
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                52
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                53
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                54
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                55
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                56
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                57
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                58
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                59
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                63
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                64
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                70
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 2,
+                            "parameters": [
+                                507,
+                                507,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 2,
+                            "parameters": [
+                                364,
+                                364,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 2,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 111,
+                            "indent": 1,
+                            "parameters": [
+                                0,
+                                209,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                50
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                51
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                52
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                53
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                54
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                55
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                56
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                57
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                58
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                59
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                63
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                64
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                70
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 2,
+                            "parameters": [
+                                507,
+                                507,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 2,
+                            "parameters": [
+                                209,
+                                209,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 2,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 356,
+                            "indent": 1,
+                            "parameters": [
+                                "PB_BGS_ALL_STOP"
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 1,
+                            "parameters": [
+                                177
+                            ]
+                        },
+                        {
+                            "code": 201,
+                            "indent": 1,
+                            "parameters": [
+                                0,
+                                18,
+                                2,
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 404,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 3,
+                    "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 109,
+                        "variableValid": true,
+                        "variableValue": 100
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "PA_STOP 54"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "PA_STOP 56"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "PA_STOP 57"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "PA_STOP 58"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 0,
+                            "parameters": [
+                                56
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 0,
+                            "parameters": [
+                                57
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 0,
+                            "parameters": [
+                                749
+                            ]
+                        },
+                        {
+                            "code": 111,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                111,
+                                0,
+                                100,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 1,
+                            "parameters": [
+                                750
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 1,
+                            "parameters": [
+                                690
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
+                            "code": 101,
+                            "indent": 0,
+                            "parameters": [
+                                "",
+                                0,
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 3,
+                    "walkAnime": true
+                }
+            ],
+            "x": 1,
+            "y": 0
+        },
+        {
+            "id": 2,
+            "name": "EV002",
+            "note": "",
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 200,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 122,
+                            "indent": 0,
+                            "parameters": [
+                                29,
+                                29,
+                                0,
+                                3,
+                                3,
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 123,
+                            "indent": 0,
+                            "parameters": [
+                                "A",
+                                0
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 4,
+                    "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": true,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 122,
+                            "indent": 0,
+                            "parameters": [
+                                226,
+                                226,
+                                0,
+                                1,
+                                4
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "D_TEXT  \\v[29]  16"
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 0,
+                            "parameters": [
+                                91,
+                                "",
+                                0,
+                                0,
+                                80,
+                                75,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "D_TEXT                              \\v[226]  16"
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 0,
+                            "parameters": [
+                                92,
+                                "",
+                                0,
+                                0,
+                                75,
+                                75,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 4,
+                    "walkAnime": true
+                },
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 84,
+                        "switch1Valid": true,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 0,
+                    "walkAnime": true
+                }
+            ],
+            "x": 2,
+            "y": 0
+        },
+        {
+            "id": 3,
+            "name": "EV003",
+            "note": "",
+            "pages": [
+                {
+                    "conditions": {
+                        "actorId": 1,
+                        "actorValid": false,
+                        "itemId": 1,
+                        "itemValid": false,
+                        "selfSwitchCh": "A",
+                        "selfSwitchValid": false,
+                        "switch1Id": 1,
+                        "switch1Valid": false,
+                        "switch2Id": 1,
+                        "switch2Valid": false,
+                        "variableId": 1,
+                        "variableValid": false,
+                        "variableValue": 0
+                    },
+                    "directionFix": false,
+                    "image": {
+                        "characterIndex": 0,
+                        "characterName": "",
+                        "direction": 2,
+                        "pattern": 0,
+                        "tileId": 0
+                    },
+                    "list": [
+                        {
+                            "code": 122,
+                            "indent": 0,
+                            "parameters": [
+                                226,
+                                226,
+                                0,
+                                1,
+                                4
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 0,
+                            "parameters": []
+                        }
+                    ],
+                    "moveFrequency": 3,
+                    "moveRoute": {
+                        "list": [
+                            {
+                                "code": 0,
+                                "parameters": []
+                            }
+                        ],
+                        "repeat": true,
+                        "skippable": false,
+                        "wait": false
+                    },
+                    "moveSpeed": 3,
+                    "moveType": 0,
+                    "priorityType": 0,
+                    "stepAnime": false,
+                    "through": false,
+                    "trigger": 4,
+                    "walkAnime": true
+                }
+            ],
+            "x": 3,
+            "y": 0
+        },
+        null
+    ]
+}
