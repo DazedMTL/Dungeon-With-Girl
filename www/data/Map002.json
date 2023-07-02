@@ -2462,7 +2462,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Will you proceed to the next step?"
+                                "Will you proceed?"
                             ]
                         },
                         {
@@ -3551,7 +3551,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Will you proceed to the next step?"
+                                "Will you proceed?"
                             ]
                         },
                         {
@@ -4191,7 +4191,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Will you proceed to the next step?"
+                                "Will you proceed?"
                             ]
                         },
                         {

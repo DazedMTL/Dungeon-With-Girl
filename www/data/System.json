@@ -1225,7 +1225,7 @@
             "obtainGold": "I got %1\\G money!",
             "obtainItem": "I got %1!",
             "obtainSkill": "I learned %1!",
-            "partyName": "%1 people",
+            "partyName": "%1",
             "possession": "The number I have",
             "preemptive": "Player 1 took the first move!",
             "saveMessage": "Which file do you want to save?",
