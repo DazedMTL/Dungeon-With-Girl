@@ -2817,14 +2817,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse create <アイテムBOX:60>"
+                                "PHWarehouse create <Item BOX:60>"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse show <アイテムBOX>"
+                                "PHWarehouse show <Item BOX>"
                             ]
                         },
                         {
@@ -2920,7 +2920,7 @@
                             "indent": 1,
                             "parameters": [
                                 0,
-                                "ヤマモト"
+                                "\\N[1]"
                             ]
                         },
                         {
@@ -3781,14 +3781,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse create <アイテムBOX:60>"
+                                "PHWarehouse create <Item BOX:60>"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse show <アイテムBOX>"
+                                "PHWarehouse show <Item BOX>"
                             ]
                         },
                         {
@@ -3884,7 +3884,7 @@
                             "indent": 1,
                             "parameters": [
                                 0,
-                                "ヤマモト"
+                                "\\N[1]"
                             ]
                         },
                         {

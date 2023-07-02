@@ -2232,63 +2232,35 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]ヤマモトに対する好感度　\\V[101]/100 24"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]\\N[1]　Favorability　\\V[101]/100 24"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]セックスした回数　　　　\\V[102]回 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Sex　　　　\\V[102]x 18"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]フェラチオした回数　　　\\V[103]回 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Blowjob　　　\\V[103]x 18"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]アナルセックスした回数　\\V[104]回 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Anal　Sex　\\V[104]x 18"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]オナニーした回数　　　　\\V[105]回 18"
-                            ]
-                        },
-                        {
-                            "code": 356,
-                            "indent": 0,
-                            "parameters": [
-                                "D_TEXT   18"
-                            ]
-                        },
-                        {
-                            "code": 356,
-                            "indent": 0,
-                            "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]出されたところ 18"
-                            ]
-                        },
-                        {
-                            "code": 356,
-                            "indent": 0,
-                            "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]おまんこ　\\V[243]　からだ　\\V[244]　くち　\\V[247] 18"
-                            ]
-                        },
-                        {
-                            "code": 356,
-                            "indent": 0,
-                            "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]かお　\\V[246]　おしり　\\V[245] 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Masturbation　　　　\\V[105]x 18"
                             ]
                         },
                         {
@@ -2302,28 +2274,56 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]膣内に出された精液量 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Serviced 18"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]ヤマモト　　　\\V[106]ml/100ml 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Pussy　\\V[243]　Body　\\V[244]　Mouth　\\V[247] 18"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]宿のおやじ　　\\V[107]ml/100ml 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Facial　\\V[246]　Ass　\\V[245] 18"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]ギルド職員　　\\V[223]ml/100ml 18"
+                                "D_TEXT   18"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Semen 18"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]\\N[1]　　　\\V[106]ml/100ml 18"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Innkeeper　　\\V[107]ml/100ml 18"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 0,
+                            "parameters": [
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Guild　Leader　\\V[223]ml/100ml 18"
                             ]
                         },
                         {
@@ -2344,35 +2344,35 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]開発値 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Development 18"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]おまんこ　\\V[117] 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Pussy　\\V[117] 18"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]奉仕　　　\\V[120] 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Mouth　　　\\V[120] 18"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]アナル　　\\V[119] 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Ass　　\\V[119] 18"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]おっぱい　\\V[118] 18"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Tits　\\V[118] 18"
                             ]
                         },
                         {

@@ -318,7 +318,7 @@
         ],
         "iconIndex": 125,
         "name": "Magic Sword Glenkaina",
-        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]炎属性\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:Attribute:\\c[6]Fire\\c[0]>",
         "params": [
             0,
             0,
@@ -361,7 +361,7 @@
         ],
         "iconIndex": 125,
         "name": "Demon God Sword Okotunushi",
-        "note": "<RandomLoseException>\n<weight:25>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]闇属性\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:25>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:Attribute:\\c[6]Dark\\c[0]>",
         "params": [
             0,
             0,
@@ -725,7 +725,7 @@
         ],
         "iconIndex": 97,
         "name": "Silver Sword",
-        "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 30%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]聖属性\\c[0]>",
+        "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 30%\n</Suffixes>\n<AddInfoWindowP:Attribute:\\c[6]Holy\\c[0]>",
         "params": [
             0,
             0,
@@ -849,7 +849,7 @@
         ],
         "iconIndex": 125,
         "name": "Treasured Sword Eldard",
-        "note": "<RandomLoseException>\n<weight:8>\n<skill_id:27>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]雷属性\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:8>\n<skill_id:27>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:Attribute:\\c[6]Lightning\\c[0]>",
         "params": [
             0,
             0,
@@ -945,7 +945,7 @@
         ],
         "iconIndex": 126,
         "name": "Guardian's Head",
-        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]光属性\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:Attribute:\\c[6]Light\\c[0]>",
         "params": [
             0,
             0,
