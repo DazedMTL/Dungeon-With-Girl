@@ -5794,7 +5794,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Yes",
+                                    "\\N[1]",
                                     "Monica",
                                     "Cancel"
                                 ],
@@ -6816,8 +6816,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "Yes",
+                                    "\\N[1]",
+                                    "Monica",
                                     "Cancel"
                                 ],
                                 2,
