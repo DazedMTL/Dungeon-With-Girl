@@ -285,7 +285,7 @@
             case 'D_TEXT':
                 if (isNaN(args[args.length - 1]) || args.length === 1) args.push($gameScreen.dTextSize || 28);
                 var fontSize = getArgNumber(args.pop());
-                $gameScreen.setDTextPicture(connectArgs(args), fontSize);
+                $gameScreen.setDTextPicture(connectArgs(args), fontSize-4);
                 break;
             case 'D_TEXT_SETTING':
                 switch (getCommandName(args[0])) {

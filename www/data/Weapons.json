@@ -998,7 +998,7 @@
         ],
         "iconIndex": 162,
         "name": "Dagger of the Stealthy Dancer",
-        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n44 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 運+5 回避率+15% 会心率+30%\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n44 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<AddInfoWindowP:\\c[24]3 set effect: Agility +10, Luck +5, Evasion rate +15%, Critical rate +30%.\\c[0]>",
         "params": [
             0,
             0,
@@ -4342,7 +4342,7 @@
         ],
         "iconIndex": 0,
         "name": "Patience",
-        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]全耐性\\c[24]+3%\\c[0]>",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]Resistance\\c[24]+3%\\c[0]>",
         "params": [
             0,
             0,
@@ -4441,7 +4441,7 @@
         ],
         "iconIndex": 0,
         "name": "Gladiator's sword",
-        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]TPチャージ率\\c[24]+10%\\c[0]>",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]TPCharge\\c[24]+10%\\c[0]>",
         "params": [
             0,
             0,
@@ -4530,7 +4530,7 @@
         ],
         "iconIndex": 0,
         "name": "Knight's",
-        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>\n<AddInfoWindowA:\\c[4]防御効果\\c[24]+5%\\c[0]>",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>\n<AddInfoWindowA:\\c[4]Protection\\c[24]+5%\\c[0]>",
         "params": [
             2,
             0,
@@ -4832,7 +4832,7 @@
         ],
         "iconIndex": 0,
         "name": "Temple Knight",
-        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]防御効果\\c[24]+10%\\c[0]>",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]Protection\\c[24]+10%\\c[0]>",
         "params": [
             5,
             0,

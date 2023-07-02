@@ -496,7 +496,7 @@
         ],
         "iconIndex": 171,
         "name": "Wind-Enveloped Shield Silphy",
-        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<TikanApply3:110>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 防御力+5 回避率+5% 攻撃回数+1\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<TikanApply3:110>\n<AddInfoWindowP:\\c[24]3 sets effect: Agility +10, Defense +5, Evasion rate +5%, Number of attacks +1.\\c[0]>",
         "params": [
             0,
             0,
@@ -528,7 +528,7 @@
         ],
         "iconIndex": 173,
         "name": "Wind-Enveloping Helmet Silphy",
-        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 防御力+5 回避率+5% 攻撃回数+1\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<AddInfoWindowP:\\c[24]3 sets effect: Agility +10, Defense +5, Evasion rate +5%, Number of attacks +1.\\c[0]>",
         "params": [
             0,
             0,
@@ -560,7 +560,7 @@
         ],
         "iconIndex": 174,
         "name": "Wind-Enveloped Armor Silphy",
-        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 防御力+5 回避率+5% 攻撃回数+1\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<AddInfoWindowP:\\c[24]3 sets effect: Agility +10, Defense +5, Evasion rate +5%, Attack count +1.\\c[0]>",
         "params": [
             10,
             0,
@@ -711,7 +711,7 @@
         ],
         "iconIndex": 155,
         "name": "Guardian Armor",
-        "note": "<RandomLoseException>\n<weight:30>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<AddInfoWindowP:\\c[4]状態異常抵抗\\c[24]+60%\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:30>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<AddInfoWindowP:\\c[4]Abnormal status resistance +60%.\\c[0]>",
         "params": [
             10,
             0,
@@ -743,7 +743,7 @@
         ],
         "iconIndex": 175,
         "name": "Necklace of the Stealthy Dancer",
-        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<AddInfoWindowP:\\c[24]3セット効果 素早さ+10 運+5 回避率+15% 会心率+30%\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<AddInfoWindowP:\\c[24]3 sets effect: Agility +10, Luck +5, Evasion rate +15%, Critical rate +30%.\\c[0]>",
         "params": [
             0,
             0,
@@ -775,7 +775,7 @@
         ],
         "iconIndex": 92,
         "name": "Cloak of the Stealthy Dancer",
-        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<TikanApply3:111>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 運+5 回避率+15% 会心率+30%\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<TikanApply3:111>\n<AddInfoWindowP:\\c[24]3 sets effect: Agility +10, Luck +5, Evasion rate +15%, Critical rate +30%.\\c[0]>",
         "params": [
             0,
             2,
@@ -852,7 +852,7 @@
         ],
         "iconIndex": 155,
         "name": "Dragon Shield",
-        "note": "<RandomLoseException>\n<weight:10>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<AddInfoWindowA:\\c[4]全耐性\\c[24]+30%\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:10>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<AddInfoWindowA:\\c[4]Resistance\\c[24]+30%\\c[0]>",
         "params": [
             10,
             0,
@@ -879,7 +879,7 @@
         ],
         "iconIndex": 175,
         "name": "Prisoner Alicia's handcuffs",
-        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:囚人アリシア効果>\n<TikanApply2:112>\n<AddInfoWindowP:\\c[24]2セット効果 かしこさ+5 Mぼうぎょ+5 魅了付与+90%\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:囚人アリシア効果>\n<TikanApply2:112>\n<AddInfoWindowP:\\c[24]2 set effect: Intelligence +5, Magic Defense +5, Charm Bonus +90%.\\c[0]>",
         "params": [
             10,
             1,
@@ -906,7 +906,7 @@
         ],
         "iconIndex": 175,
         "name": "Prisoner Alicia's Leg Shackles",
-        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:囚人アリシア効果>\n<AddInfoWindowP:\\c[24]2セット効果 かしこさ+5 Mぼうぎょ+5 魅了付与+90%\\c[0]>",
+        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:囚人アリシア効果>\n<AddInfoWindowP:\\c[24]2 sets effect: Intelligence +5, Defense +5, Charm bonus +90%.\\c[0]>",
         "params": [
             10,
             1,
@@ -3614,7 +3614,7 @@
         ],
         "iconIndex": 0,
         "name": "Endurance",
-        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]全耐性\\c[24]+3%\\c[0]>",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]Resistance\\c[24]+3%\\c[0]>",
         "params": [
             0,
             0,
@@ -3710,7 +3710,7 @@
         ],
         "iconIndex": 0,
         "name": "Gladiator's",
-        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]TPチャージ率\\c[24]+10%\\c[0]>",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]TPCharge\\c[24]+10%\\c[0]>",
         "params": [
             0,
             0,
@@ -3796,7 +3796,7 @@
         ],
         "iconIndex": 0,
         "name": "Knight's",
-        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1><AddInfoWindowA:\\c[4]防御効果\\c[24]+5%\\c[0]>",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1><AddInfoWindowA:\\c[4]Protection\\c[24]+5%\\c[0]>",
         "params": [
             2,
             0,
@@ -4037,7 +4037,7 @@
         ],
         "iconIndex": 0,
         "name": "Tamamushi-iro (Jewel Beetle Color)",
-        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]火耐性\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]水耐性\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]雷耐性\\c[24]+10%\\c[0]>",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]Fire Resistance\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]水耐性\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]Lightning Resistance\\c[24]+10%\\c[0]>",
         "params": [
             0,
             0,
@@ -4069,7 +4069,7 @@
         ],
         "iconIndex": 0,
         "name": "Temple Knight",
-        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]防御効果\\c[24]+10%\\c[0]>",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]Protection\\c[24]+10%\\c[0]>",
         "params": [
             5,
             0,
