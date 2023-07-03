@@ -22,8 +22,7 @@ Things that are needed:
 
 1. Fork the repo using the fork button at the top. Click Code > HTTPS > Copy URL.
 2. Open the terminal in your game folder by shift + right clicking and clicking Terminal.
-3. Enter `git init` and then `git remote add origin [PASTEURL]`
-4. Enter `git pull origin main`
+3. Enter `git clone [PASTEURL]` and then copy the contents of the new folder into the game folder.
 
 Now you are all setup, all you need to do is play the game and look for any changes that need to be made. Stuff like spelling errors, wrong names, inconsistencies, spacing issues, etc.
 
