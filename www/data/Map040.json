@@ -2628,7 +2628,7 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {
@@ -2918,14 +2918,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT 支払い金額: \\C[18]30000\\C[0]G 20"
                             ]
                         },
                         {
@@ -2976,14 +2976,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]50000\\C[0]G 20"
                             ]
                         },
                         {
@@ -3044,14 +3044,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]70000\\C[0]G 20"
                             ]
                         },
                         {
@@ -3382,7 +3382,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] ...Ugh, damn it..."
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "…ぐっ、くそぉ…"
                             ]
                         },
                         {
@@ -3399,7 +3406,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# Prevented entry into the room!"
+                                "\\#部屋への侵入を阻止した！"
                             ]
                         },
                         {
@@ -3619,7 +3626,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] I did it, I succeeded...!"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "やったぜ、成功だ…！"
                             ]
                         },
                         {
@@ -3643,7 +3657,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\# I allowed the intrusion into the room..."
+                                "\\#部屋への侵入をゆるしてしまった…"
                             ]
                         },
                         {
@@ -3954,7 +3968,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] ...Ugh, damn it..."
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "…ぐっ、くそぉ…"
                             ]
                         },
                         {
@@ -3971,7 +3992,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# Prevented entry into the room!"
+                                "\\#部屋への侵入を阻止した！"
                             ]
                         },
                         {
@@ -4336,7 +4357,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] ...Ugh, damn it..."
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "…ぐっ、くそぉ…"
                             ]
                         },
                         {
@@ -4353,7 +4381,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# Prevented entry into the room!"
+                                "\\#部屋への侵入を阻止した！"
                             ]
                         },
                         {
@@ -4667,7 +4695,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Innkeeper】...Ugh, damn it..."
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "…ぐっ、くそぉ…"
                             ]
                         },
                         {
@@ -4684,7 +4719,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# Prevented entry into the room!"
+                                "\\#部屋への侵入を阻止した！"
                             ]
                         },
                         {
@@ -4998,7 +5033,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] ...Ugh, damn it..."
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "…ぐっ、くそぉ…"
                             ]
                         },
                         {
@@ -5015,7 +5057,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# Prevented entry into the room!"
+                                "\\#部屋への侵入を阻止した！"
                             ]
                         },
                         {
@@ -5370,7 +5412,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] ...Ugh, damn it..."
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "…ぐっ、くそぉ…"
                             ]
                         },
                         {
@@ -5387,7 +5436,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# Prevented entry into the room!"
+                                "\\#部屋への侵入を阻止した！"
                             ]
                         },
                         {
@@ -6429,7 +6478,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (It's about time...)"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "（そろそろ頃合いだろ…）"
                             ]
                         },
                         {
@@ -6446,7 +6502,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "---Gacha...! Gachagacha...!"
+                                "―――ガチャ…！ガチャガチャ…！"
                             ]
                         },
                         {
@@ -6463,7 +6519,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (Tch! It's locked...!)"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "（チッ！鍵かかってやがる…！）"
                             ]
                         },
                         {
@@ -6480,7 +6543,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (But---!)"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "（―――だがッ！）"
                             ]
                         },
                         {
@@ -6543,7 +6613,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (With just a little trick, this kind of lock is a piece of\ncake...!)"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "(こんくらいの鍵はコツさえ知ってれば余裕なンだわ…!）"
                             ]
                         },
                         {
@@ -6880,7 +6957,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "By combining six locks together, you can definitely prevent it once."
+                                "錠前を6個合体させることで確実に1度防ぐことができます。"
                             ]
                         },
                         {
@@ -6897,7 +6974,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "Do you want to combine them?"
+                                "合体させますか？"
                             ]
                         },
                         {
@@ -6905,8 +6982,8 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 0,
                                 0,
@@ -6936,7 +7013,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Wha... What?! The locks...!? The locks are rapidly combining together!"
+                                "な…なんと　錠前たちが……！？"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "錠前たちが　どんどん　合体していく！"
                             ]
                         },
                         {
@@ -7139,7 +7223,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "It has become a huge lock!"
+                                "なんと　大きな錠前に　なった！"
                             ]
                         },
                         {
@@ -7203,7 +7287,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] Let's go!"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "いくぞッ！"
                             ]
                         },
                         {
@@ -8029,10 +8120,11 @@
                             "parameters": []
                         },
                         {
-                            "code": 123,
+                            "code": 121,
                             "indent": 0,
                             "parameters": [
-                                "A",
+                                307,
+                                307,
                                 0
                             ]
                         },
@@ -8069,9 +8161,9 @@
                         "itemId": 1,
                         "itemValid": false,
                         "selfSwitchCh": "A",
-                        "selfSwitchValid": true,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
+                        "selfSwitchValid": false,
+                        "switch1Id": 307,
+                        "switch1Valid": true,
                         "switch2Id": 1,
                         "switch2Valid": false,
                         "variableId": 1,
@@ -8140,7 +8232,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Innkeeper】 Grrr...! But I won't lose...!"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ぐぬぬぬ…！だが負けねぇ…！"
                             ]
                         },
                         {
@@ -8686,7 +8785,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "---Gacha, Gachagacha!"
+                                "―――ガチャ、ガチャガチャ！"
                             ]
                         },
                         {
@@ -8703,7 +8802,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (Damn it, it won't open...!)"
+                                "【宿屋のおっさん】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "（クソ、開かねぇ…！）"
                             ]
                         },
                         {
@@ -8720,7 +8826,21 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Other Room Guest] Excuse me... Huh? The old man isn't here. Where did\nhe go?"
+                                "【他の部屋の客】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "すいませーん、ってあれ。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "おやじさんいねぇな。どこいったんだ。"
                             ]
                         },
                         {
@@ -8737,7 +8857,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Other Room Guest] Excuse me... Sir?"
+                                "【他の部屋の客】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "すいませーん、おやじさーん？"
                             ]
                         },
                         {
@@ -8754,7 +8881,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (Ahh? Damn it! What do you want at this hour!)"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "（ああぁ？ちっ！こんな時間に何の用だよ！）"
                             ]
                         },
                         {
@@ -8771,7 +8905,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (He's even shouting... These youngsters these days have no\nsense of morals!)"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "（大声までだしやがって…最近のやつはモラルってもんがねぇ！）"
                             ]
                         },
                         {
@@ -8788,7 +8929,21 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (If he keeps shouting like this, it's going to be a hassle.\nI guess I have no choice but to leave for today... damn it)"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "（このまま大声出され続けるのも、めんどくせーし"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "今日は退散するしかないか…くそ）"
                             ]
                         },
                         {
@@ -8805,7 +8960,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] Yes, yes, I'll be right there!"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "はいはーい、すぐいきますよー！"
                             ]
                         },
                         {
@@ -9149,14 +9311,6 @@
                             "parameters": [
                                 130,
                                 130,
-                                1
-                            ]
-                        },
-                        {
-                            "code": 123,
-                            "indent": 0,
-                            "parameters": [
-                                "A",
                                 1
                             ]
                         },

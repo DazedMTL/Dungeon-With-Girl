@@ -13,7 +13,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "----Base Item----",
+        "name": "----ベースアイテム----",
         "note": "",
         "params": [
             0,
@@ -30,7 +30,7 @@
     {
         "id": 2,
         "atypeId": 5,
-        "description": "If a beginner adventurer has this, there's no doubt about it. [Weight 5W]",
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\n[重さ5W]",
         "etypeId": 2,
         "traits": [
             {
@@ -45,7 +45,7 @@
             }
         ],
         "iconIndex": 129,
-        "name": "Adventurer's Shield",
+        "name": "冒険者の盾",
         "note": "<weight:5>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
         "params": [
             0,
@@ -62,7 +62,7 @@
     {
         "id": 3,
         "atypeId": 1,
-        "description": "If a beginner adventurer has this, there's no doubt about it. [Weight 3W]",
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\n[重さ3W]",
         "etypeId": 3,
         "traits": [
             {
@@ -72,7 +72,7 @@
             }
         ],
         "iconIndex": 130,
-        "name": "Adventurer's Hat",
+        "name": "冒険者の帽子",
         "note": "<weight:3>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
         "params": [
             0,
@@ -89,7 +89,7 @@
     {
         "id": 4,
         "atypeId": 1,
-        "description": "If a beginner adventurer has this, there's no doubt about it. [Weight 8W]",
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\n[重さ8W]",
         "etypeId": 4,
         "traits": [
             {
@@ -99,7 +99,7 @@
             }
         ],
         "iconIndex": 135,
-        "name": "Adventurer's clothing",
+        "name": "冒険者の服",
         "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
         "params": [
             0,
@@ -116,7 +116,7 @@
     {
         "id": 5,
         "atypeId": 6,
-        "description": "A sturdy iron shield. While it is sturdy, it is heavy to hold with one hand and\nbecomes vulnerable to attacks. [Weight 8W]",
+        "description": "頑丈につくられている鉄製の盾。頑丈である反面、片手で\nもつには重く、攻撃を受けやすくなってしまう。[重さ8W]",
         "etypeId": 2,
         "traits": [
             {
@@ -131,7 +131,7 @@
             }
         ],
         "iconIndex": 128,
-        "name": "Iron Shield",
+        "name": "鉄の盾",
         "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
         "params": [
             10,
@@ -148,7 +148,7 @@
     {
         "id": 6,
         "atypeId": 1,
-        "description": "A very sturdy iron helmet [Weight 8W]",
+        "description": "とても頑丈につくられている鉄製のかぶと。[重さ8W]",
         "etypeId": 3,
         "traits": [
             {
@@ -158,7 +158,7 @@
             }
         ],
         "iconIndex": 132,
-        "name": "Iron helmet",
+        "name": "鉄の兜",
         "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
         "params": [
             10,
@@ -175,7 +175,7 @@
     {
         "id": 7,
         "atypeId": 1,
-        "description": "A very sturdy iron armor, made to be very durable. [Weight 10W]",
+        "description": "とても頑丈につくられている鉄製のよろい。[重さ10W]",
         "etypeId": 4,
         "traits": [
             {
@@ -185,7 +185,7 @@
             }
         ],
         "iconIndex": 137,
-        "name": "Iron Armor",
+        "name": "鉄の鎧",
         "note": "<weight:10>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
         "params": [
             20,
@@ -202,7 +202,7 @@
     {
         "id": 8,
         "atypeId": 5,
-        "description": "A small circular shield made of metal. It has low defense power, but specializes\nin deflecting the opponent's attacks. [Weight 4W]",
+        "description": "金属でできた円形の小盾。防御力は低いが、相手の攻撃を\n受け流すことに特化している。[重さ4W]",
         "etypeId": 2,
         "traits": [
             {
@@ -217,7 +217,7 @@
             }
         ],
         "iconIndex": 129,
-        "name": "Buckler",
+        "name": "バックラー",
         "note": "<weight:4>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
         "params": [
             0,
@@ -234,7 +234,7 @@
     {
         "id": 9,
         "atypeId": 5,
-        "description": "A shield made of silver. It has been purified with holy water and has resistance\nagainst attacks from undead monsters. [Weight 6W]",
+        "description": "銀でつくられた盾。聖水できよめられており、\nアンデッド系のモンスターの攻撃に耐性がある。[重さ6W]",
         "etypeId": 2,
         "traits": [
             {
@@ -254,7 +254,7 @@
             }
         ],
         "iconIndex": 129,
-        "name": "Silver Shield",
+        "name": "シルバーシールド",
         "note": "<weight:6>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
         "params": [
             0,
@@ -271,7 +271,7 @@
     {
         "id": 10,
         "atypeId": 3,
-        "description": "A helmet made of silver. It has been purified with holy water and has resistance\nto attacks from undead monsters. [Weight 5W]",
+        "description": "銀でつくられたカブト。聖水できよめられており、\nアンデッド系のモンスターの攻撃に耐性がある。[重さ5W]",
         "etypeId": 3,
         "traits": [
             {
@@ -286,7 +286,7 @@
             }
         ],
         "iconIndex": 131,
-        "name": "Silver Helm",
+        "name": "シルバーヘルム",
         "note": "<weight:5>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
         "params": [
             0,
@@ -303,7 +303,7 @@
     {
         "id": 11,
         "atypeId": 3,
-        "description": "Armor made of silver. It has been purified with holy water and has resistance to\nattacks from undead monsters. [Weight 8W]",
+        "description": "銀でつくられた鎧。聖水できよめられており、\nアンデッド系のモンスターの攻撃に耐性がある。[重さ8W]",
         "etypeId": 4,
         "traits": [
             {
@@ -318,7 +318,7 @@
             }
         ],
         "iconIndex": 136,
-        "name": "Silver Armor",
+        "name": "シルバーアーマー",
         "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n\n",
         "params": [
             0,
@@ -335,7 +335,7 @@
     {
         "id": 12,
         "atypeId": 6,
-        "description": "A shield worn by seasoned warriors. Each scar engraved on it tells a story.\n[Weight 8W]",
+        "description": "歴戦の戦士たちが使い込んだ盾。\n刻まれた傷の一つ一つに物語を感じさせる。[重さ8W]",
         "etypeId": 2,
         "traits": [
             {
@@ -350,7 +350,7 @@
             }
         ],
         "iconIndex": 128,
-        "name": "Ancient Strongman's Shield",
+        "name": "古強者の盾",
         "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 40% 86-90 20%\n</Suffixes>\n\n",
         "params": [
             5,
@@ -367,7 +367,7 @@
     {
         "id": 13,
         "atypeId": 1,
-        "description": "A helmet worn by seasoned warriors. Each scar engraved on it tells a story.\n[Weight 8W]",
+        "description": "歴戦の戦士たちが使い込んだ兜。\n刻まれた傷の一つ一つに物語を感じさせる。[重さ8W]",
         "etypeId": 3,
         "traits": [
             {
@@ -377,7 +377,7 @@
             }
         ],
         "iconIndex": 132,
-        "name": "Helmet of the Ancient Strong",
+        "name": "古強者の兜",
         "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 40% 86-90 20%\n</Suffixes>\n\n",
         "params": [
             5,
@@ -394,7 +394,7 @@
     {
         "id": 14,
         "atypeId": 1,
-        "description": "Armor worn by seasoned warriors. Each scar engraved on it tells a story. [Weight\n10W]",
+        "description": "歴戦の戦士たちが使い込んだ鎧。\n刻まれた傷の一つ一つに物語を感じさせる。[重さ10W]",
         "etypeId": 4,
         "traits": [
             {
@@ -404,7 +404,7 @@
             }
         ],
         "iconIndex": 137,
-        "name": "Ancient Strongman's Armor",
+        "name": "古強者の鎧",
         "note": "<weight:10>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 40% 86-90 20%\n</Suffixes>\n\n",
         "params": [
             10,
@@ -475,7 +475,7 @@
     {
         "id": 17,
         "atypeId": 1,
-        "description": "A shield that is wrapped in a mysterious power of wind. Evasion rate and magic\nreflection rate increase. [Weight 3W]",
+        "description": "不思議な力で風をまとっている盾。\n回避率、魔法反射率が上がる。[重さ3W]",
         "etypeId": 2,
         "traits": [
             {
@@ -495,8 +495,8 @@
             }
         ],
         "iconIndex": 171,
-        "name": "Wind-Enveloped Shield Silphy",
-        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<TikanApply3:110>\n<AddInfoWindowP:\\c[24]3 sets effect: Agility +10, Defense +5, Evasion rate +5%, Number of attacks +1.\\c[0]>",
+        "name": "風纏う盾 シルフィー",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<TikanApply3:110>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 防御力+5 回避率+5% 攻撃回数+1\\c[0]>",
         "params": [
             0,
             0,
@@ -512,7 +512,7 @@
     {
         "id": 18,
         "atypeId": 1,
-        "description": "A helmet that is wrapped in a mysterious power of wind. Evasion rate and magic\nreflection rate increase. [Weight 1W]",
+        "description": "不思議な力で風をまとっている兜。\n回避率、魔法反射率が上がる。[重さ1W]",
         "etypeId": 3,
         "traits": [
             {
@@ -527,8 +527,8 @@
             }
         ],
         "iconIndex": 173,
-        "name": "Wind-Enveloping Helmet Silphy",
-        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<AddInfoWindowP:\\c[24]3 sets effect: Agility +10, Defense +5, Evasion rate +5%, Number of attacks +1.\\c[0]>",
+        "name": "風纏う兜 シルフィー",
+        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 防御力+5 回避率+5% 攻撃回数+1\\c[0]>",
         "params": [
             0,
             0,
@@ -544,7 +544,7 @@
     {
         "id": 19,
         "atypeId": 1,
-        "description": "Armor that is wrapped in a mysterious power of wind. Evasion rate and magic\nreflection rate increase. [Weight 5W]",
+        "description": "不思議な力で風をまとっている鎧。\n回避率、魔法反射率が上がる。[重さ5W]",
         "etypeId": 4,
         "traits": [
             {
@@ -559,8 +559,8 @@
             }
         ],
         "iconIndex": 174,
-        "name": "Wind-Enveloped Armor Silphy",
-        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<AddInfoWindowP:\\c[24]3 sets effect: Agility +10, Defense +5, Evasion rate +5%, Attack count +1.\\c[0]>",
+        "name": "風纏う鎧 シルフィー",
+        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:シルフィーセット効果>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 防御力+5 回避率+5% 攻撃回数+1\\c[0]>",
         "params": [
             10,
             0,
@@ -576,7 +576,7 @@
     {
         "id": 20,
         "atypeId": 1,
-        "description": "A hat that can make a statement just by wearing it. It strangely irritates\nothers, so equipping it increases the chances of being targeted. [Weight 3W]",
+        "description": "身に着けるだけで存在感をアピールできる帽子。妙にイラつ\nかせるので装備すると狙われる率が上昇する。[重さ3W]",
         "etypeId": 3,
         "traits": [
             {
@@ -586,7 +586,7 @@
             }
         ],
         "iconIndex": 156,
-        "name": "Jester's Hat",
+        "name": "道化の帽子",
         "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>",
         "params": [
             10,
@@ -603,7 +603,7 @@
     {
         "id": 21,
         "atypeId": 6,
-        "description": "A large shield shaped like a rose. It has the ability to damage the opponent who\nattacks. [Weight 8W]",
+        "description": "薔薇をかたどった大きめの盾。\n攻撃してきた相手を傷つける効果をもつ。[重さ8W]",
         "etypeId": 2,
         "traits": [
             {
@@ -618,7 +618,7 @@
             }
         ],
         "iconIndex": 155,
-        "name": "Rose Shield",
+        "name": "薔薇の盾",
         "note": "<RandomLoseException>\n<weight:8>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n\n\n",
         "params": [
             0,
@@ -635,7 +635,7 @@
     {
         "id": 22,
         "atypeId": 6,
-        "description": "Stripping off the armor of the Guardian and using it as a shield. Significantly\nincreases defense and resistance to status ailments. [Weight 30W]",
+        "description": "ガーディアンの装甲を剥がし、そのまま盾としたモノ。\n防御力と状態異常への耐性が大幅に上がる。[重さ30W]",
         "etypeId": 2,
         "traits": [
             {
@@ -710,8 +710,8 @@
             }
         ],
         "iconIndex": 155,
-        "name": "Guardian Armor",
-        "note": "<RandomLoseException>\n<weight:30>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<AddInfoWindowP:\\c[4]Abnormal status resistance +60%.\\c[0]>",
+        "name": "ガーディアンの装甲",
+        "note": "<RandomLoseException>\n<weight:30>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<AddInfoWindowP:\\c[4]状態異常抵抗\\c[24]+60%\\c[0]>",
         "params": [
             10,
             0,
@@ -727,7 +727,7 @@
     {
         "id": 23,
         "atypeId": 1,
-        "description": "One of the brave warriors who stood up to overthrow the tyrannical king was a\ndancer who received the king's favor. Evasion rate and critical hit rate\nincrease. [Weight 1W]",
+        "description": "暴虐の王打倒のため立ち上がった勇士の一人は王に寵愛をう\nけた舞踏家だった。回避率、会心率があがる。[重さ1W]",
         "etypeId": 5,
         "traits": [
             {
@@ -742,8 +742,8 @@
             }
         ],
         "iconIndex": 175,
-        "name": "Necklace of the Stealthy Dancer",
-        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<AddInfoWindowP:\\c[24]3 sets effect: Agility +10, Luck +5, Evasion rate +15%, Critical rate +30%.\\c[0]>",
+        "name": "暗躍する舞踏家の首飾り",
+        "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<AddInfoWindowP:\\c[24]3セット効果 素早さ+10 運+5 回避率+15% 会心率+30%\\c[0]>",
         "params": [
             0,
             0,
@@ -759,7 +759,7 @@
     {
         "id": 24,
         "atypeId": 1,
-        "description": "One of the brave warriors who stood up to overthrow the tyrannical king was a\ndancer who received favor from the king. Evasion rate and critical hit rate\nincrease. [Weight 3W]",
+        "description": "暴虐の王打倒のため立ち上がった勇士の一人は王に寵愛をう\nけた舞踏家だった。回避率、会心率があがる。[重さ3W]",
         "etypeId": 4,
         "traits": [
             {
@@ -774,8 +774,8 @@
             }
         ],
         "iconIndex": 92,
-        "name": "Cloak of the Stealthy Dancer",
-        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<TikanApply3:111>\n<AddInfoWindowP:\\c[24]3 sets effect: Agility +10, Luck +5, Evasion rate +15%, Critical rate +30%.\\c[0]>",
+        "name": "暗躍する舞踏家の羽衣",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<TikanApply3:111>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 運+5 回避率+15% 会心率+30%\\c[0]>",
         "params": [
             0,
             2,
@@ -791,7 +791,7 @@
     {
         "id": 25,
         "atypeId": 1,
-        "description": "A large shield made by processing the tough scales of a dragon. Equipping it\ngrants high resistance to all elemental attacks. [Weight 10W]",
+        "description": "ドラゴンの硬い鱗を加工してつくられた大盾。装備することで\n全ての属性攻撃に高い耐性を得られる。[重さ10W]",
         "etypeId": 2,
         "traits": [
             {
@@ -851,8 +851,8 @@
             }
         ],
         "iconIndex": 155,
-        "name": "Dragon Shield",
-        "note": "<RandomLoseException>\n<weight:10>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<AddInfoWindowA:\\c[4]Resistance\\c[24]+30%\\c[0]>",
+        "name": "ドラゴンシールド",
+        "note": "<RandomLoseException>\n<weight:10>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<AddInfoWindowA:\\c[4]全耐性\\c[24]+30%\\c[0]>",
         "params": [
             10,
             0,
@@ -868,7 +868,7 @@
     {
         "id": 26,
         "atypeId": 1,
-        "description": "The woman who once captivated the entire country remained noble even after being\nimprisoned and becoming a prisoner. She continues to captivate others by being\nin sync with them. [Weight 5W]",
+        "description": "かつて国中を魅了した女は投獄され囚人となった後も、気高さは\n失わなかった。揃えることで相手を魅了する。[重さ5W]",
         "etypeId": 6,
         "traits": [
             {
@@ -878,8 +878,8 @@
             }
         ],
         "iconIndex": 175,
-        "name": "Prisoner Alicia's handcuffs",
-        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:囚人アリシア効果>\n<TikanApply2:112>\n<AddInfoWindowP:\\c[24]2 set effect: Intelligence +5, Magic Defense +5, Charm Bonus +90%.\\c[0]>",
+        "name": "囚人アリシアの手枷",
+        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:囚人アリシア効果>\n<TikanApply2:112>\n<AddInfoWindowP:\\c[24]2セット効果 かしこさ+5 Mぼうぎょ+5 魅了付与+90%\\c[0]>",
         "params": [
             10,
             1,
@@ -895,7 +895,7 @@
     {
         "id": 27,
         "atypeId": 1,
-        "description": "The woman who once captivated the entire country remained noble even after being\nimprisoned and becoming a prisoner. She continues to captivate others by being\nwell put together. [Weight 5W]",
+        "description": "かつて国中を魅了した女は投獄され囚人となった後も、気高さは\n失わなかった。揃えることで相手を魅了する。[重さ5W]",
         "etypeId": 7,
         "traits": [
             {
@@ -905,8 +905,8 @@
             }
         ],
         "iconIndex": 175,
-        "name": "Prisoner Alicia's Leg Shackles",
-        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:囚人アリシア効果>\n<AddInfoWindowP:\\c[24]2 sets effect: Intelligence +5, Defense +5, Charm bonus +90%.\\c[0]>",
+        "name": "囚人アリシアの足枷",
+        "note": "<RandomLoseException>\n<weight:5>\n<Prefixes>\n70 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>\n<Tikan:囚人アリシア効果>\n<AddInfoWindowP:\\c[24]2セット効果 かしこさ+5 Mぼうぎょ+5 魅了付与+90%\\c[0]>",
         "params": [
             10,
             1,
@@ -1003,7 +1003,7 @@
     {
         "id": 31,
         "atypeId": 1,
-        "description": "A sinister ring shaped like a skull. Equipping it grants strong power, but the\ndice roll value becomes 0. [Weight 1W]",
+        "description": "ドクロをかたどったまがまがしい指輪。装備すると強い力を\n得られるがダイス判定値が０になる。[重さ1W]",
         "etypeId": 6,
         "traits": [
             {
@@ -1013,7 +1013,7 @@
             }
         ],
         "iconIndex": 159,
-        "name": "Cursed Ring",
+        "name": "呪いの指輪",
         "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>",
         "params": [
             3,
@@ -1030,7 +1030,7 @@
     {
         "id": 32,
         "atypeId": 1,
-        "description": "Adventurer's favorite accessory. [Weight 1W]",
+        "description": "冒険者愛用の装飾品。[重さ1W]",
         "etypeId": 6,
         "traits": [
             {
@@ -1040,7 +1040,7 @@
             }
         ],
         "iconIndex": 145,
-        "name": "Ring",
+        "name": "指輪",
         "note": "<weight:1>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
         "params": [
             0,
@@ -1057,7 +1057,7 @@
     {
         "id": 33,
         "atypeId": 1,
-        "description": "Luxurious ring. Traded at a high price. [Weight 1W]",
+        "description": "豪華な指輪。高値で取引される。[重さ1W]",
         "etypeId": 6,
         "traits": [
             {
@@ -1067,7 +1067,7 @@
             }
         ],
         "iconIndex": 145,
-        "name": "Gold Ring",
+        "name": "金の指輪",
         "note": "<weight:1>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
         "params": [
             0,
@@ -1084,11 +1084,11 @@
     {
         "id": 34,
         "atypeId": 1,
-        "description": "A ring that causes the world to revolve around oneself and brings good luck at\nevery opportunity. When equipped, a treasure chest always appears after battle.\n[Weight: 1W]",
+        "description": "自分を中心に世界が動きだし、事あるごとに幸運が舞い込んでくる指輪。\n装備していると戦闘後に必ず宝箱が出る。[重さ1W]",
         "etypeId": 6,
         "traits": [],
         "iconIndex": 159,
-        "name": "Ring of Fortune",
+        "name": "リングオブフォーチュン",
         "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>",
         "params": [
             0,
@@ -1105,7 +1105,7 @@
     {
         "id": 35,
         "atypeId": 1,
-        "description": "A ring named after a legendary warrior. Equipping it greatly increases\ncounterattack rate. [Weight 1W]",
+        "description": "伝説の闘士にちなんで名づけられた指輪。\n装備すると反撃率が大きく上昇する。[重さ1W]",
         "etypeId": 6,
         "traits": [
             {
@@ -1115,7 +1115,7 @@
             }
         ],
         "iconIndex": 159,
-        "name": "Charisma of Rebellion",
+        "name": "反逆のカリスマ",
         "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>",
         "params": [
             0,
@@ -1132,7 +1132,7 @@
     {
         "id": 36,
         "atypeId": 1,
-        "description": "The shoes that a devout believer wore during their pilgrimage. When advancing\nthrough the dungeon, occasionally restores 1 action point. [Weight: 1W]",
+        "description": "信仰の厚い信徒が巡礼中に履いていた靴。\nダンジョンを進むとたまに行動力が1回復する。【重さ1W】",
         "etypeId": 7,
         "traits": [
             {
@@ -1142,7 +1142,7 @@
             }
         ],
         "iconIndex": 159,
-        "name": "Pilgrim's Shoes",
+        "name": "巡礼者の靴",
         "note": "<RandomLoseException>\n<weight:1>\n<Prefixes>\n69 100%\n</Prefixes>\n<Suffixes>\n91 5%\n</Suffixes>",
         "params": [
             0,
@@ -1159,7 +1159,7 @@
     {
         "id": 37,
         "atypeId": 1,
-        "description": "Adventurer's favorite accessory. [Weight 1W]",
+        "description": "冒険者愛用の装飾品。[重さ1W]",
         "etypeId": 5,
         "traits": [
             {
@@ -1169,7 +1169,7 @@
             }
         ],
         "iconIndex": 145,
-        "name": "Necklace",
+        "name": "首飾り",
         "note": "<weight:1>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
         "params": [
             0,
@@ -1186,7 +1186,7 @@
     {
         "id": 38,
         "atypeId": 1,
-        "description": "Adventurer's favorite accessory. [Weight 1W]",
+        "description": "冒険者愛用の装飾品。[重さ1W]",
         "etypeId": 7,
         "traits": [
             {
@@ -1196,7 +1196,7 @@
             }
         ],
         "iconIndex": 145,
-        "name": "Shoes",
+        "name": "靴",
         "note": "<weight:1>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
         "params": [
             0,
@@ -1223,7 +1223,7 @@
             }
         ],
         "iconIndex": 145,
-        "name": "Ring",
+        "name": "指輪",
         "note": "",
         "params": [
             0,
@@ -1444,7 +1444,7 @@
             }
         ],
         "iconIndex": 131,
-        "name": "Fire Resistance Test Helmet",
+        "name": "火耐性テスト兜",
         "note": "",
         "params": [
             500,
@@ -1476,7 +1476,7 @@
             }
         ],
         "iconIndex": 128,
-        "name": "Fire Resistance Test Shield",
+        "name": "火耐性テスト盾",
         "note": "",
         "params": [
             500,
@@ -1508,7 +1508,7 @@
             }
         ],
         "iconIndex": 137,
-        "name": "Fire Resistance Test Armor",
+        "name": "火耐性テスト鎧",
         "note": "",
         "params": [
             500,
@@ -1805,7 +1805,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "----Prefix----",
+        "name": "----接頭語----",
         "note": "",
         "params": [
             0,
@@ -1832,7 +1832,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Decayed",
+        "name": "朽ちた",
         "note": "<prefixSuffixNoNameSpace>",
         "params": [
             0,
@@ -1859,7 +1859,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Normal",
+        "name": "普通の",
         "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>",
         "params": [
             0,
@@ -1886,7 +1886,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Master Craftsman's",
+        "name": "名匠の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -1918,7 +1918,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Blessed",
+        "name": "祝福された",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -1950,7 +1950,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Cruel",
+        "name": "残忍な",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -1982,7 +1982,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Shining",
+        "name": "輝く",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -2009,7 +2009,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Sage's",
+        "name": "賢者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -2041,7 +2041,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Poison-resistant",
+        "name": "耐毒の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -2068,7 +2068,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Unique Armor",
+        "name": "ユニーク防具",
         "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>\n<rarity: 3>\n",
         "params": [
             0,
@@ -2095,7 +2095,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Set Armor",
+        "name": "セット防具",
         "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>\n<rarity: 4>",
         "params": [
             0,
@@ -2132,7 +2132,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Roughneck's",
+        "name": "乱暴者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -2164,7 +2164,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Fire-resistant",
+        "name": "耐火の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -2380,7 +2380,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "----Suffix-----",
+        "name": "----接尾語-----",
         "note": "",
         "params": [
             0,
@@ -2407,7 +2407,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Power>",
+        "name": "<力>",
         "note": "",
         "params": [
             0,
@@ -2434,7 +2434,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Protection>",
+        "name": "<守り>",
         "note": "",
         "params": [
             0,
@@ -2461,7 +2461,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Agility>",
+        "name": "<素早さ>",
         "note": "",
         "params": [
             0,
@@ -2488,7 +2488,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Luck>",
+        "name": "<運>",
         "note": "",
         "params": [
             0,
@@ -2515,7 +2515,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Vitality>",
+        "name": "<生命力>",
         "note": "",
         "params": [
             10,
@@ -2542,7 +2542,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Strong Arm>",
+        "name": "<剛腕>",
         "note": "",
         "params": [
             0,
@@ -2569,7 +2569,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Iron Wall>",
+        "name": "<鉄壁>",
         "note": "",
         "params": [
             0,
@@ -2596,7 +2596,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Agile>",
+        "name": "<俊敏>",
         "note": "",
         "params": [
             0,
@@ -2623,7 +2623,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Luck>",
+        "name": "<幸運>",
         "note": "",
         "params": [
             0,
@@ -2650,7 +2650,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Wisdom>",
+        "name": "<賢さ>",
         "note": "",
         "params": [
             0,
@@ -2677,7 +2677,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<<Legend>>",
+        "name": "<<伝説>>",
         "note": "",
         "params": [
             5,
@@ -3163,7 +3163,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "----Set Effect-----",
+        "name": "----セット効果-----",
         "note": "",
         "params": [
             0,
@@ -3195,7 +3195,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Sylphie Set Effect",
+        "name": "シルフィーセット効果",
         "note": "",
         "params": [
             0,
@@ -3227,7 +3227,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Effect of the Stealthy Dancer",
+        "name": "暗躍する舞踏家効果",
         "note": "",
         "params": [
             0,
@@ -3259,7 +3259,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Prisoner Alicia Effect",
+        "name": "囚人アリシア効果",
         "note": "",
         "params": [
             0,
@@ -3448,7 +3448,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "----Rarity 1-----",
+        "name": "----レアリティ１-----",
         "note": "",
         "params": [
             0,
@@ -3469,7 +3469,7 @@
         "etypeId": 2,
         "traits": [],
         "iconIndex": 0,
-        "name": "Master Craftsman's",
+        "name": "名匠の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -3496,7 +3496,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Cruel",
+        "name": "残忍な",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -3613,8 +3613,8 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Endurance",
-        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]Resistance\\c[24]+3%\\c[0]>",
+        "name": "我慢の",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]全耐性\\c[24]+3%\\c[0]>",
         "params": [
             0,
             0,
@@ -3645,7 +3645,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Roughneck's",
+        "name": "乱暴者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -3677,7 +3677,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Dismantler's",
+        "name": "解体屋の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -3709,8 +3709,8 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Gladiator's",
-        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]TPCharge\\c[24]+10%\\c[0]>",
+        "name": "剣闘士の",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]TPチャージ率\\c[24]+10%\\c[0]>",
         "params": [
             0,
             0,
@@ -3741,7 +3741,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Dancer's",
+        "name": "舞踏家の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -3768,7 +3768,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Holy Vestments",
+        "name": "聖職者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -3795,8 +3795,8 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Knight's",
-        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1><AddInfoWindowA:\\c[4]Protection\\c[24]+5%\\c[0]>",
+        "name": "騎士の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1><AddInfoWindowA:\\c[4]防御効果\\c[24]+5%\\c[0]>",
         "params": [
             2,
             0,
@@ -3827,7 +3827,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Thief's",
+        "name": "盗賊の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -3935,7 +3935,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "----Rarity 2-----",
+        "name": "----レアリティ２-----",
         "note": "",
         "params": [
             0,
@@ -3972,7 +3972,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Shining",
+        "name": "輝く",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -3999,7 +3999,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Sage's",
+        "name": "賢者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -4036,8 +4036,8 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Tamamushi-iro (Jewel Beetle Color)",
-        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]Fire Resistance\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]水耐性\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]Lightning Resistance\\c[24]+10%\\c[0]>",
+        "name": "玉虫色の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]火耐性\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]水耐性\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]雷耐性\\c[24]+10%\\c[0]>",
         "params": [
             0,
             0,
@@ -4068,8 +4068,8 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Temple Knight",
-        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]Protection\\c[24]+10%\\c[0]>",
+        "name": "神殿騎士の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]防御効果\\c[24]+10%\\c[0]>",
         "params": [
             5,
             0,
@@ -4105,7 +4105,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Assassin's",
+        "name": "暗殺者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -4147,7 +4147,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Berserker's",
+        "name": "狂戦士の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             3,
@@ -4380,7 +4380,7 @@
     {
         "id": 148,
         "atypeId": 5,
-        "description": "If a beginner adventurer has this, there's no doubt about it. It's provided by\nthe guild. [Weight 5W]",
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\nギルドから支給されたもの。[重さ5W]",
         "etypeId": 2,
         "traits": [
             {
@@ -4390,7 +4390,7 @@
             }
         ],
         "iconIndex": 128,
-        "name": "Adventurer's Shield (Provision)",
+        "name": "冒険者の盾（支給品）",
         "note": "<weight:5>\n",
         "params": [
             0,
@@ -4407,7 +4407,7 @@
     {
         "id": 149,
         "atypeId": 1,
-        "description": "If a novice adventurer has this, there's no doubt about it. It's provided by the\nguild. [Weight 3W]",
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\nギルドから支給されたもの。[重さ3W]",
         "etypeId": 3,
         "traits": [
             {
@@ -4417,7 +4417,7 @@
             }
         ],
         "iconIndex": 130,
-        "name": "Adventurer's Hat (Provision)",
+        "name": "冒険者の帽子（支給品）",
         "note": "<weight:3>\n",
         "params": [
             0,
@@ -4434,7 +4434,7 @@
     {
         "id": 150,
         "atypeId": 1,
-        "description": "If a beginner adventurer has this, there's no doubt about it. It's provided by\nthe guild. [Weight 8W]",
+        "description": "かけだし冒険者はまずこれを持っておけば間違いなし。\nギルドから支給されたもの。[重さ8W]",
         "etypeId": 4,
         "traits": [
             {
@@ -4444,7 +4444,7 @@
             }
         ],
         "iconIndex": 135,
-        "name": "Adventurer's Clothing (Provision)",
+        "name": "冒険者の服（支給品）",
         "note": "<weight:8>\n",
         "params": [
             0,
@@ -4687,7 +4687,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "---Rarity 3---",
+        "name": "---レアリティ3---",
         "note": "",
         "params": [
             0,
@@ -4708,7 +4708,7 @@
         "etypeId": 2,
         "traits": [],
         "iconIndex": 0,
-        "name": "Hero's",
+        "name": "英雄の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
         "params": [
             2,
@@ -4750,7 +4750,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Blessed",
+        "name": "祝福された",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
         "params": [
             0,
@@ -4777,7 +4777,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Shinigami's",
+        "name": "死神の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
         "params": [
             0,

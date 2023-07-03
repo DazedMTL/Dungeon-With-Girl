@@ -2243,7 +2243,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\# Dungeon---"
+                                "\\#ダンジョン―――"
                             ]
                         },
                         {
@@ -2260,7 +2260,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\# It is a mysterious labyrinth that has existed all over the world\nsince ancient times, long before humans began recording history."
+                                "\\#それは人が歴史を刻むよりはるか昔から世界各地に"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\#点在する謎の迷宮。"
                             ]
                         },
                         {
@@ -2277,7 +2284,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\# Many humans were attracted to it, which was filled with numerous\ntreasures and monsters."
+                                "\\#多くの財宝と魔物で満ち溢れたそれに、多くの人間が"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\#むらがった。"
                             ]
                         },
                         {
@@ -2294,7 +2308,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\# Some sought fame, while others sought wealth, and day and night\nwithout rest, they explored the dungeon. And many people lost their\nlives."
+                                "\\#ある者は名声を求め、またある者は富を求めて日夜問わず"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\#ダンジョンを探検し、そして多くの人が亡くなっていった。"
                             ]
                         },
                         {
@@ -2311,7 +2332,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\# Nevertheless, people who were captivated continued to gather in the\ndungeon, \\# and eventually a town centered around the dungeon was\nestablished."
+                                "\\#それでも魅入られた人々は続々とダンジョンに集まり、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\#やがてダンジョンを中心とした町ができた。"
                             ]
                         },
                         {
@@ -2328,7 +2356,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\# And so, many long years passed."
+                                "\\#それから長い月日がながれた。"
                             ]
                         },
                         {
@@ -2345,7 +2373,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\# And once again, a young man captivated by the unknown visited the\ntown alone."
+                                "\\#そしてまた未知に魅了された青年が独り、町を訪れた。"
                             ]
                         },
                         {

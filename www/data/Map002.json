@@ -2462,7 +2462,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Will you proceed?"
+                                "次に進みますか？"
                             ]
                         },
                         {
@@ -2470,9 +2470,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "Open the menu",
-                                    "No"
+                                    "はい",
+                                    "メニューを開く",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -3551,7 +3551,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Will you proceed?"
+                                "次に進みますか？"
                             ]
                         },
                         {
@@ -3559,9 +3559,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "Open the menu",
-                                    "No"
+                                    "はい",
+                                    "メニューを開く",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -3840,7 +3840,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "I will roll the dice."
+                                "ダイスを振ります"
                             ]
                         },
                         {
@@ -3963,7 +3963,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\V[51] it is!"
+                                "\\V[51]だ！"
                             ]
                         },
                         {
@@ -4005,7 +4005,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "Ah"
+                                "あ"
                             ]
                         },
                         {
@@ -4191,7 +4191,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Will you proceed?"
+                                "次に進みますか？"
                             ]
                         },
                         {
@@ -4199,9 +4199,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "Open the menu",
-                                    "No"
+                                    "はい",
+                                    "メニューを開く",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,

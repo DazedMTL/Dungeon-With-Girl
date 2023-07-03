@@ -2240,7 +2240,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "■At the item shop, you can purchase useful items for the dungeon and\nsell the items you bring back."
+                                "■道具屋ではダンジョンで役立つアイテムの購入、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "　持ち帰ったアイテムの売却ができます。"
                             ]
                         },
                         {
@@ -2257,7 +2264,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "■It is recommended to have \\item[24] on hand in order to safely conquer\nthe dungeon, where you cannot escape from battles."
+                                "■戦闘から逃げることのできないダンジョンを"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "　安全に攻略するために、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "　\\item[24]は常備しておくことをおすすめいたします。"
                             ]
                         },
                         {
@@ -2394,7 +2415,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【Sanae】 Welcome!"
+                                "【さなえ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "いらっしゃいませ！"
                             ]
                         },
                         {
@@ -2409,8 +2437,8 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "I would like to see the products",
-                                    "Leaving the store"
+                                    "商品をみたい",
+                                    "店から出る"
                                 ],
                                 1,
                                 0,
@@ -2631,7 +2659,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Sanae】 Thank you very much!"
+                                "【サナエ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ありがとうございました！"
                             ]
                         },
                         {
@@ -2893,7 +2928,21 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【Sanae】 Ah! Monica-san, \\N[1]-san! Welcome!"
+                                "【さなえ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "あ！モニカさん、\\n[1]さん！"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "いらっしゃいませ！"
                             ]
                         },
                         {
@@ -2908,8 +2957,8 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "I want to see the products",
-                                    "Leaving the store"
+                                    "商品をみたい",
+                                    "店から出る"
                                 ],
                                 1,
                                 0,
@@ -3164,7 +3213,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Alright, preparations are good to go!"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "よし、準備おっけー！"
                             ]
                         },
                         {
@@ -3206,7 +3262,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Come on, let's go to the dungeon quickly!"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ほら、早くダンジョンいくよ！"
                             ]
                         },
                         {
@@ -3258,7 +3321,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "You're so impatient Wait a moment, let's―――"
+                                    "気がはやいなぁ…ちょっと、まっ―――"
                                 ],
                                 -1,
                                 0,
@@ -3298,7 +3361,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Sanae】 Ah, um! Mr. \\N[1]!"
+                                "【サナエ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "あ、あの！\\n[1]さん！"
                             ]
                         },
                         {
@@ -3365,7 +3435,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Sanae】 Um, well, um!"
+                                "【サナエ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "えぇっと、その！"
                             ]
                         },
                         {
@@ -3416,7 +3493,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Sanae】 Could you come to the shop again tonight?"
+                                "【サナエ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "今晩、またお店にきていただけませんか？"
                             ]
                         },
                         {
@@ -3449,8 +3533,8 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -3498,7 +3582,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Sanae】 Yatta! (We did it!)"
+                                "【サナエ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "やった！"
                             ]
                         },
                         {
@@ -3515,7 +3606,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Sanae】 It's a promise, okay?"
+                                "【サナエ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "約束ですよ？"
                             ]
                         },
                         {
@@ -4122,14 +4220,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT 支払い金額: \\C[18]30000\\C[0]G 20"
                             ]
                         },
                         {
@@ -4180,14 +4278,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]50000\\C[0]G 20"
                             ]
                         },
                         {
@@ -4248,14 +4346,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]70000\\C[0]G 20"
                             ]
                         },
                         {
@@ -4698,7 +4796,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {
@@ -4731,7 +4829,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {

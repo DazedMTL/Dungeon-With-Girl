@@ -2696,7 +2696,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "...*Haa haa, I've reached my limit...*"
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {
@@ -2750,7 +2750,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 I-I can't take it anymore... Let me rest..."
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "も、もうだめ～。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "休ませてぇ…"
                             ]
                         },
                         {
@@ -2784,11 +2798,11 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "I'll keep going",
-                                    "en(v[171]>=1)Are you okay?",
-                                    "en(s[528])I'm going to ejaculate",
-                                    "I'll stop",
-                                    "Go back"
+                                    "動く",
+                                    "en(v[171]>=1)声をかける",
+                                    "en(s[528])射精する",
+                                    "やめる",
+                                    "もどる"
                                 ],
                                 -1,
                                 0,

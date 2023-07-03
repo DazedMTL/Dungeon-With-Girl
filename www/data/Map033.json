@@ -2655,11 +2655,11 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Gently",
-                                    "Intensely",
-                                    "en(s[401])Pie Kneading Kiss",
-                                    "Quit",
-                                    "Go back/Return"
+                                    "やさしく",
+                                    "激しく",
+                                    "en(s[401])パイ揉みキス",
+                                    "やめる",
+                                    "もどる"
                                 ],
                                 -1,
                                 0,
@@ -3842,10 +3842,17 @@
                             ]
                         },
                         {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
                             "code": 231,
                             "indent": 1,
                             "parameters": [
-                                60,
+                                50,
                                 "mhcg_kiss_ittaatokao",
                                 0,
                                 0,
@@ -3861,7 +3868,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "addLog \\c[27]「はぁ…はぁ…♥\\N[1]…♥」\\c[0]"
+                                "addLog \\c[27]「はぁ…はぁ…♥\\n[1]…♥」\\c[0]"
                             ]
                         },
                         {
@@ -4475,7 +4482,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "...Haa haa, I've reached my limit..."
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {
@@ -4572,7 +4579,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "...Haa haa, I've reached my limit..."
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {
@@ -5163,11 +5170,11 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Gently",
-                                    "Intensely",
-                                    "en(s[401])Pie Kneading Kiss",
-                                    "Quit",
-                                    "Go back/Return"
+                                    "やさしく",
+                                    "激しく",
+                                    "en(s[401])パイ揉みキス",
+                                    "やめる",
+                                    "もどる"
                                 ],
                                 -1,
                                 0,
@@ -6380,10 +6387,17 @@
                             ]
                         },
                         {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
                             "code": 231,
                             "indent": 1,
                             "parameters": [
-                                60,
+                                50,
                                 "mhcg_kiss_ittaatokao",
                                 0,
                                 0,
@@ -6399,7 +6413,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "addLog \\c[27]「はぁ…はぁ…♥\\N[1]…♥」\\c[0]"
+                                "addLog \\c[27]「はぁ…はぁ…♥\\n[1]…♥」\\c[0]"
                             ]
                         },
                         {
@@ -7013,7 +7027,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "...Haa haa, I've reached my limit..."
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {
@@ -7110,7 +7124,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "...Haa haa, I've reached my limit..."
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {
@@ -7654,11 +7668,11 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Gently",
-                                    "Intensely",
-                                    "en(s[401])Pie Kneading Kiss",
-                                    "Quit",
-                                    "Go back/Return"
+                                    "やさしく",
+                                    "激しく",
+                                    "en(s[401])パイ揉みキス",
+                                    "やめる",
+                                    "もどる"
                                 ],
                                 -1,
                                 0,
@@ -8792,10 +8806,17 @@
                             ]
                         },
                         {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
                             "code": 231,
                             "indent": 1,
                             "parameters": [
-                                60,
+                                50,
                                 "mhcg_kiss_ittaatokao",
                                 0,
                                 0,
@@ -8811,7 +8832,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "addLog \\c[27]「はぁ…はぁ…♥\\N[1]…♥」\\c[0]"
+                                "addLog \\c[27]「はぁ…はぁ…♥\\n[1]…♥」\\c[0]"
                             ]
                         },
                         {
@@ -9425,7 +9446,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "...Haa haa, I've reached my limit..."
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {
@@ -9522,7 +9543,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "...Haa haa, I've reached my limit..."
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {

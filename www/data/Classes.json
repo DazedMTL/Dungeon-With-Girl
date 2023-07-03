@@ -197,7 +197,7 @@
                 "skillId": 58
             }
         ],
-        "name": "Adventurer",
+        "name": "冒険者",
         "note": "",
         "params": [
             [
@@ -1089,7 +1089,7 @@
             }
         ],
         "learnings": [],
-        "name": "Adventurer",
+        "name": "冒険者",
         "note": "",
         "params": [
             [
@@ -2107,7 +2107,7 @@
                 "skillId": 58
             }
         ],
-        "name": "Adventurer Monica",
+        "name": "冒険者モニカ",
         "note": "",
         "params": [
             [
@@ -2985,7 +2985,7 @@
                 "skillId": 8
             }
         ],
-        "name": "Monk",
+        "name": "僧侶",
         "note": "",
         "params": [
             [

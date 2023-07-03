@@ -5034,6 +5034,15 @@
                             ]
                         },
                         {
+                            "code": 121,
+                            "indent": 5,
+                            "parameters": [
+                                121,
+                                121,
+                                1
+                            ]
+                        },
+                        {
                             "code": 115,
                             "indent": 5,
                             "parameters": []
@@ -5170,6 +5179,15 @@
                             ]
                         },
                         {
+                            "code": 121,
+                            "indent": 5,
+                            "parameters": [
+                                121,
+                                121,
+                                1
+                            ]
+                        },
+                        {
                             "code": 115,
                             "indent": 5,
                             "parameters": []
@@ -5303,6 +5321,15 @@
                                 0,
                                 121,
                                 0
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 5,
+                            "parameters": [
+                                121,
+                                121,
+                                1
                             ]
                         },
                         {
@@ -5493,6 +5520,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 1,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 1,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 1,
                             "parameters": [
@@ -5590,7 +5639,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Will you proceed?"
+                                "次に進みますか？"
                             ]
                         },
                         {
@@ -6418,14 +6467,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT 支払い金額: \\C[18]30000\\C[0]G 20"
                             ]
                         },
                         {
@@ -6476,14 +6525,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]50000\\C[0]G 20"
                             ]
                         },
                         {
@@ -6544,14 +6593,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]70000\\C[0]G 20"
                             ]
                         },
                         {
@@ -6709,7 +6758,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {
@@ -6742,7 +6791,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {

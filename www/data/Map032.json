@@ -2988,7 +2988,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "...*Haa haa, I've reached my limit...*"
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {
@@ -3072,7 +3072,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "...*Haa haa, I've reached my limit...*"
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {
@@ -3198,7 +3198,21 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【Monica】 I-I can't go on anymore... I need a break..."
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "も、もうだめ～。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "休ませてぇ…"
                             ]
                         },
                         {
@@ -3306,7 +3320,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "en(v[171]>=1)Are you okay?"
+                                    "en(v[171]>=1)声をかける"
                                 ],
                                 -1,
                                 0,
@@ -3358,12 +3372,12 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Massage",
-                                    "Rub with both hands",
-                                    "en(s[402])Play with my nipples",
-                                    "en(s[401])Kiss her",
-                                    "I quit",
-                                    "Go back"
+                                    "揉む",
+                                    "両手で揉む",
+                                    "en(s[402])乳首をいじる",
+                                    "en(s[401])キスする",
+                                    "やめる",
+                                    "もどる"
                                 ],
                                 -1,
                                 0,

@@ -2262,7 +2262,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 You can understand the difficulty of requests by\nthe number of stars."
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "依頼のムズかしさは星の数でわかるようになってるよ。"
                             ]
                         },
                         {
@@ -2279,7 +2286,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 It might be good to steadily handle what seems doable without\npushing yourself too hard."
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "無理せず、出来そうなものを"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "コツコツこなしていくのがいいかもね。"
                             ]
                         },
                         {
@@ -2296,7 +2317,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Ah, also, be careful because you can only accept one\nsubjugation request and one collection request each!"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "あーあと、討伐依頼、採集依頼は"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "それぞれ一つずつしかうけられないから注意ね！"
                             ]
                         },
                         {
@@ -2332,7 +2367,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【Monica】 Which one will you choose?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "どれにする？"
                             ]
                         },
                         {
@@ -2451,7 +2493,14 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【Monica】 That request is already finished, isn't it?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -2494,7 +2543,21 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Request Details: Defeat 5 Slimes and collect their proof. Reward:\n9000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "スライム５体の討伐し証をあつめる"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "報奨金：9000G"
                             ]
                         },
                         {
@@ -2518,7 +2581,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "Will you accept it?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -2526,8 +2589,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -2629,7 +2692,21 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Request Details: Defeat 5 Slimes and collect their proof. Reward:\n9000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "スライム５体の討伐し証をあつめる"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "報奨金：9000G"
                             ]
                         },
                         {
@@ -2644,7 +2721,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -2723,7 +2800,14 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【Monica】 That request is already finished, isn't it?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -2766,7 +2850,21 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Request Details: Subjugate the party of kidnappers based in 5F and\ncollect their proof. Reward: 15000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "5Fを根城にしている人さらいのパーティを討伐し証をあつめる"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "報奨金：15000G"
                             ]
                         },
                         {
@@ -2790,7 +2888,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "Will you accept it?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -2798,8 +2896,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -2901,7 +2999,21 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Request Details: Subjugate the party of kidnappers based on 5F and\ncollect their proof. Reward: 15000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "5Fを根城にしている人さらいのパーティを討伐し証をあつめる"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "報奨金：15000G"
                             ]
                         },
                         {
@@ -2916,7 +3028,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -2995,7 +3107,14 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【Monica】 That request is already finished, isn't it?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -3038,7 +3157,21 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Request Details: Collect 5 Healing Mosses growing inside the dungeon.\nReward: 8000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "ダンジョン内に生えている癒しコケを5つあつめる"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "報奨金：8000G"
                             ]
                         },
                         {
@@ -3062,7 +3195,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "Will you accept it?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -3070,8 +3203,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -3173,7 +3306,21 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Request Details: Collect 5 Healing Mosses growing inside the dungeon.\nReward: 8000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "ダンジョン内に生えている癒しコケを5つあつめる"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "報奨金：8000G"
                             ]
                         },
                         {
@@ -3188,7 +3335,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -3267,7 +3414,14 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【Monica】 That request is already finished, isn't it?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -3310,7 +3464,21 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Request Details: Collect 6 pieces of junk. Reward: 8000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "ガラクタを6個あつめる"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "報奨金：8000G"
                             ]
                         },
                         {
@@ -3334,7 +3502,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "Will you accept it?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -3342,8 +3510,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -3445,7 +3613,21 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Request Details: Collect 6 pieces of junk. Reward: 8000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "ガラクタを6個あつめる"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "報奨金：8000G"
                             ]
                         },
                         {
@@ -3460,7 +3642,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "…You need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -3858,7 +4040,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【Monica】 Which one should I choose?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "どれにする？"
                             ]
                         },
                         {
@@ -3966,7 +4155,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 That request is already finished, right?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -4009,7 +4205,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Defeat one Dungeon Worm. Reward: 12,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "ダンジョンワーム1体の討伐"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：12000G"
                             ]
                         },
                         {
@@ -4033,7 +4243,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Do you accept?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -4041,8 +4251,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -4144,7 +4354,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Defeat one Dungeon Worm. Reward: 12,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "ダンジョンワーム1体の討伐"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：12000G"
                             ]
                         },
                         {
@@ -4159,7 +4383,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -4238,7 +4462,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 That request is already finished, right?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -4281,7 +4512,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Defeat the Orcs who have made the 15th floor their\nstronghold. Reward: 25,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "15Fを根城にしているオークを討伐する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：25000G"
                             ]
                         },
                         {
@@ -4305,7 +4550,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Do you accept?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -4313,8 +4558,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -4416,7 +4661,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Defeat the Orcs who have made the 15th floor their\nstronghold. Reward: 25,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "15Fを根城にしているオークを討伐する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：25000G"
                             ]
                         },
                         {
@@ -4431,7 +4690,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -4510,7 +4769,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 That request is already finished, right?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -4553,7 +4819,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Obtain a flawless gemstone. Reward: 32,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "完璧な宝石を入手する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：32000G"
                             ]
                         },
                         {
@@ -4577,7 +4857,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Do you accept?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -4585,8 +4865,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -4688,7 +4968,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Obtain a flawless gemstone. Reward: 32,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "完璧な宝石を入手する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：32000G"
                             ]
                         },
                         {
@@ -4703,7 +4997,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -4782,7 +5076,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 That request is already finished, right?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -4825,7 +5126,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Collect two bottles of breast milk. Reward: 20,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "母乳を2つあつめる"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：20000G"
                             ]
                         },
                         {
@@ -4849,7 +5164,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Do you accept?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -4857,8 +5172,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -4960,7 +5275,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Collect two bottles of breast milk. Reward: 20,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "母乳を2つあつめる"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：20000G"
                             ]
                         },
                         {
@@ -4975,7 +5304,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -5427,7 +5756,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【Monica】 Which one should I choose?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "どれにする？"
                             ]
                         },
                         {
@@ -5535,7 +5871,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 That request is already finished, right?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -5578,7 +5921,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Defeat the Guardian that appears in the Golden\nChamber. Reward: 35,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "黄金の間に現れるガーディアンを討伐する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：35000G"
                             ]
                         },
                         {
@@ -5602,7 +5959,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Will you accept it?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -5610,8 +5967,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -5713,7 +6070,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Defeat the Guardian that appears in the Golden\nChamber. Reward: 35,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "黄金の間に現れるガーディアンを討伐する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：35000G"
                             ]
                         },
                         {
@@ -5728,7 +6099,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -5807,7 +6178,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 That request is already finished, right?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -5850,7 +6228,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Defeat the main tentacle residing on the 25th floor.\nReward: 40,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "25Fに巣くっている触手の主を討伐する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：40000G"
                             ]
                         },
                         {
@@ -5874,7 +6266,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Will you accept it?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -5882,8 +6274,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -5985,7 +6377,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Defeat the main tentacle residing on the 25th floor.\nReward: 40,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "25Fに巣くっている触手の主を討伐する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：40000G"
                             ]
                         },
                         {
@@ -6000,7 +6406,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -6079,7 +6485,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 That request is already finished, right?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -6122,7 +6535,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Obtain the Treasure Sword Eldorado. Reward: 40,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "宝剣エルダードを入手する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：40000G"
                             ]
                         },
                         {
@@ -6146,7 +6573,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Will you accept it?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -6154,8 +6581,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -6257,7 +6684,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Obtain the Treasure Sword Eldorado. Reward: 40,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "宝剣エルダードを入手する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：40000G"
                             ]
                         },
                         {
@@ -6272,7 +6713,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,
@@ -6351,7 +6792,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 That request is already finished, right?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "その依頼はもうおわってるね。"
                             ]
                         },
                         {
@@ -6394,7 +6842,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Obtain the Perfect Goddess Statue. Reward: 40,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "完璧な女神像を入手する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：40000G"
                             ]
                         },
                         {
@@ -6418,7 +6880,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Will you accept it?"
+                                "引き受けますか？"
                             ]
                         },
                         {
@@ -6426,8 +6888,8 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -6529,7 +6991,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■Request Details: Obtain the Perfect Goddess Statue. Reward: 40,000G."
+                                "■依頼内容"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "完璧な女神像を入手する"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "報奨金：40000G"
                             ]
                         },
                         {
@@ -6544,7 +7020,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…さきに受けている依頼をこなさないと。"
                                 ],
                                 0,
                                 0,

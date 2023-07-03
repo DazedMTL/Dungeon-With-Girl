@@ -2231,7 +2231,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {
@@ -2264,7 +2264,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {
@@ -2656,7 +2656,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Um, I think it's to the guild――"
+                                    "えっと、たしかギルドに――"
                                 ],
                                 0,
                                 0,
@@ -2725,7 +2725,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\#■ About the Controls"
+                                "\\#■操作について"
                             ]
                         },
                         {
@@ -2742,7 +2742,21 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\#[W] [A] [S] [D] ... Move the cursor [F] [Enter] ... Confirm [C] [V]\n... Cancel"
+                                "\\#[W] [A] [S] [D]　 …カーソルの移動"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "[F] [Enter]       　…決定"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "[C] [V]        　 　…キャンセル"
                             ]
                         },
                         {
@@ -2759,7 +2773,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\# You can also operate using the mouse in addition to the keyboard."
+                                "\\#またキーボードの他にマウスでの操作もできます。"
                             ]
                         },
                         {
@@ -2776,7 +2790,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\#■ To enter the dungeon, first you need to register as an adventurer."
+                                "\\#■ダンジョンに入るためにはまず冒険者の登録が必要です。"
                             ]
                         },
                         {
@@ -2793,7 +2807,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\#■ Let's complete the registration at the guild."
+                                "\\#■ギルドで登録をすませましょう。"
                             ]
                         },
                         {
@@ -2857,7 +2871,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# First, let's register as an adventurer at the guild."
+                                "\\#まずはギルドで冒険者の登録をしてこよう。"
                             ]
                         },
                         {
@@ -2932,7 +2946,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "Tattattatta---"
+                                "タッタッタッタ―――"
                             ]
                         },
                         {
@@ -3037,7 +3051,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Whoa!"
+                                    "どわ！"
                                 ],
                                 0,
                                 0,
@@ -3124,7 +3138,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【???】 Itsutsutsu..."
+                                "【？？？】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "いつつつッ…"
                             ]
                         },
                         {
@@ -3141,7 +3162,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【???】 Ah..."
+                                "【？？？】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "あっ…"
                             ]
                         },
                         {
@@ -3199,7 +3227,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【???】 I'm sorry...!"
+                                "【？？？】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ごめーん…ッ！"
                             ]
                         },
                         {
@@ -3257,7 +3292,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【???】 Are you okay?"
+                                "【？？？】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "大丈夫ー？"
                             ]
                         },
                         {
@@ -3272,7 +3314,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Yes"
+                                    "はい"
                                 ],
                                 0,
                                 0,
@@ -3353,7 +3395,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【???】 I'm glad you're okay!"
+                                "【？？？】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "よかったー！"
                             ]
                         },
                         {
@@ -3411,7 +3460,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【???】 Jii...."
+                                "【？？？】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "じっ…。"
                             ]
                         },
                         {
@@ -3426,7 +3482,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Huh?"
+                                    "ん？"
                                 ],
                                 0,
                                 0,
@@ -3482,7 +3538,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【???】 Yeah, it's nothing!"
+                                "【？？？】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "うんん、なんでもない！"
                             ]
                         },
                         {
@@ -3508,7 +3571,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【???】 I feel like something like this has happened before!"
+                                "【？？？】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "前にもこんなことがあった気がするなって！"
                             ]
                         },
                         {
@@ -3549,7 +3619,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【???】 Well then, I'm in a bit of a hurry! See you later!"
+                                "【？？？】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "それじゃー、ちょっと急いでるから！"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "またね！"
                             ]
                         },
                         {
@@ -3598,7 +3682,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "She left, what a noisy person"
+                                    "いってしまった。騒がしい人だな。"
                                 ],
                                 0,
                                 0,
@@ -3701,7 +3785,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# First, let's register as adventurers at the guild."
+                                "\\#まずはギルドで冒険者の登録をしてこよう。"
                             ]
                         },
                         {
@@ -3731,7 +3815,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# First, let's register as adventurers at the guild."
+                                "\\#まずはギルドで冒険者の登録をしてこよう。"
                             ]
                         },
                         {
@@ -3761,7 +3845,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# First, let's register as adventurers at the guild."
+                                "\\#まずはギルドで冒険者の登録をしてこよう。"
                             ]
                         },
                         {
@@ -3914,7 +3998,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\#■Before exploring the dungeon, let's rent a room at the inn!"
+                                "\\#■ダンジョン探索の前に宿で部屋を借りましょう！"
                             ]
                         },
                         {
@@ -4020,7 +4104,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【\\N[1]】 \\# Let's go to the inn."
+                                "【\\N[1]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "\\#宿屋にいってみよう。"
                             ]
                         },
                         {
@@ -4050,7 +4141,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【\\N[1]】 \\# Let's go to the inn."
+                                "【\\N[1]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "\\#宿屋にいってみよう。"
                             ]
                         },
                         {
@@ -4080,7 +4178,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【\\N[1]】 \\# Let's go to the inn."
+                                "【\\N[1]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "\\#宿屋にいってみよう。"
                             ]
                         },
                         {
@@ -4110,7 +4215,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【\\N[1]】 \\# Let's go to the inn."
+                                "【\\N[1]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "\\#宿屋にいってみよう。"
                             ]
                         },
                         {
@@ -4215,6 +4327,15 @@
                             "code": 222,
                             "indent": 0,
                             "parameters": []
+                        },
+                        {
+                            "code": 121,
+                            "indent": 0,
+                            "parameters": [
+                                121,
+                                121,
+                                1
+                            ]
                         },
                         {
                             "code": 117,
@@ -4643,7 +4764,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 I really want to go to the dungeon right away, but as your\nsenior, let me explain a little bit!"
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "早速ダンジョンにいきたいところだけど、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "先輩として少し説明しておくわ！"
                             ]
                         },
                         {
@@ -4667,7 +4802,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 The things you need for an adventure can be found at the\n\\c[18] item shop, so let's stop by there first."
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "冒険で必要なものは\\c[18]道具屋\\c[0]で揃うから"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "まずは寄ってみることね。"
                             ]
                         },
                         {
@@ -4684,7 +4833,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Well, it's not exactly free, but at the training facility,\nyou can learn skills that will help you progress in your adventure."
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "タダ、というわけではないんだけど、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "訓練所では冒険を有利に進められるスキルを教えてもらえるわ。"
                             ]
                         },
                         {
@@ -4701,7 +4864,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 I think the guild explained about paying money, but besides\nthat, at the guild, you can also take on \\c[18] requests \\c[0]."
+                                "【\\n[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "お金を納めることはギルドから説明があったと思うけど、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "それ以外にもギルドでは\\c[18]依頼\\c[0]を請けられるから"
                             ]
                         },
                         {
@@ -4718,7 +4895,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 It might be a good idea to stop by before going on an\nadventure. The requests change periodically, so let's check it out\nfrom time to time."
+                                "【\\n[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "冒険前に寄ってみるといいかもね。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "依頼内容は定期的に変わるから、ちょくちょく覗いてみよう。"
                             ]
                         },
                         {
@@ -4735,7 +4926,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Oh, and also, in your room at the inn, there is a box \\C[0]\nwhere you can store \\C[18] items."
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "あとそうね、宿の自室では\\C[18]アイテムを預けておける箱\\C[0]が"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "用意されているわ。"
                             ]
                         },
                         {
@@ -4752,7 +4957,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 It's essential to organize your items before heading to the\ndungeon! Don't forget, okay?"
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ダンジョンに出かける前にアイテムの整理は基本よ！"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "忘れずにね！"
                             ]
                         },
                         {
@@ -4785,7 +5004,28 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Oh, right! Just having weapons and armor isn't enough! You\nneed to equip them, or else they won't have any effect, you know? Have\nyou double-checked?"
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "あ、そうそう！武器や防具は持ってるだけじゃダメ！"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "装備しないと効果がないからね？"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ちゃんと確認した？"
                             ]
                         },
                         {
@@ -4802,7 +5042,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Well, I guess that's about it."
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "まぁこんなとこかな。"
                             ]
                         },
                         {
@@ -4819,7 +5066,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Do you want to hear it again?"
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "もう一度聞きたい？"
                             ]
                         },
                         {
@@ -4834,8 +5088,8 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -4865,7 +5119,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 Okay. Then, I'll explain it again!"
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "おっけー。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "じゃあもう一度説明するね！"
                             ]
                         },
                         {
@@ -4914,7 +5182,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "\\# About the Save"
+                                "\\#セーブについて"
                             ]
                         },
                         {
@@ -4947,7 +5215,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "# About the Save The save can be done in your room at the inn or by\nfinding the Goddess Statue inside the dungeon."
+                                "冒険のセーブは宿の自室もしくは、ダンジョン内で「女神像」"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "を見つけることで行うことができます。"
                             ]
                         },
                         {
@@ -4964,7 +5239,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Also, when the progress of each floor of the dungeon reaches 40%, it\nwill be automatically saved in Save Slot 1."
+                                "また、ダンジョンの各階層の進行度40%時に自動で"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "セーブスロット１にセーブされます。"
                             ]
                         },
                         {
@@ -5005,7 +5287,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 Alright. Then, let's first try accepting a request at the\nguild!"
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "おっけー。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "それじゃ、まずギルドで依頼うけてみよっか！"
                             ]
                         },
                         {
@@ -5244,7 +5540,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Where should we go?"
+                                "どこにいこう？"
                             ]
                         },
                         {
@@ -5363,7 +5659,14 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【Monica】 First, let's try accepting a request at the guild!"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "まずはギルドで依頼請けてみようよ！"
                             ]
                         },
                         {
@@ -5548,7 +5851,14 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "The gate from the previous return seems to still be intact. Would you\nlike to use it? (You will start from the floor where you last\nreturned)"
+                                "前回帰還時のゲートが残っているようだ。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 4,
+                            "parameters": [
+                                "使用しますか？（前回帰還時の階層から始まります）"
                             ]
                         },
                         {
@@ -5556,8 +5866,8 @@
                             "indent": 4,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -5794,9 +6104,9 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "\\N[1]",
-                                    "Monica",
-                                    "Cancel"
+                                    "\\n[1]",
+                                    "モニカ",
+                                    "キャンセル"
                                 ],
                                 2,
                                 0,
@@ -5809,7 +6119,7 @@
                             "indent": 2,
                             "parameters": [
                                 0,
-                                "\\N[1]"
+                                "\\n[1]"
                             ]
                         },
                         {
@@ -6073,7 +6383,14 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【Monica】 Wouldn't it be better to go to the dungeon while we're still\nin the mood?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "いまのノッた気分のままダンジョン行った方が良くない？"
                             ]
                         },
                         {
@@ -6106,7 +6423,14 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【Monica】 Ah, it's not like I hate it or anything, okay?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "あ、ぜんぜん嫌とかじゃないよ？"
                             ]
                         },
                         {
@@ -6212,7 +6536,14 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\# ■ Required Conditions: Affection Level 20 or higher, Possessing\n5000G or more."
+                                "\\#■必要条件　好感度20以上"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 4,
+                            "parameters": [
+                                "　　　　　　所持金5000G以上"
                             ]
                         },
                         {
@@ -6261,7 +6592,14 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#■ Required Conditions: Affection Level 20 or higher, Possessing\n5000G or more."
+                                "\\#■必要条件　好感度20以上"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "　　　　　　所持金5000G以上"
                             ]
                         },
                         {
@@ -6385,7 +6723,14 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【Monica】 First, let's try accepting a request at the guild!"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "まずはギルドで依頼請けてみようよ！"
                             ]
                         },
                         {
@@ -6570,7 +6915,14 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "The gate from the previous return seems to still be intact. Would you\nlike to use it? (You will start from the floor where you last\nreturned)"
+                                "前回帰還時のゲートが残っているようだ。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 4,
+                            "parameters": [
+                                "使用しますか？（前回帰還時の階層から始まります）"
                             ]
                         },
                         {
@@ -6578,8 +6930,8 @@
                             "indent": 4,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -6816,9 +7168,9 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "\\N[1]",
-                                    "Monica",
-                                    "Cancel"
+                                    "\\n[1]",
+                                    "モニカ",
+                                    "キャンセル"
                                 ],
                                 2,
                                 0,
@@ -6831,7 +7183,7 @@
                             "indent": 2,
                             "parameters": [
                                 0,
-                                "\\N[1]"
+                                "\\n[1]"
                             ]
                         },
                         {
@@ -7664,14 +8016,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT 支払い金額: \\C[18]30000\\C[0]G 20"
                             ]
                         },
                         {
@@ -7722,14 +8074,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]50000\\C[0]G 20"
                             ]
                         },
                         {
@@ -7790,14 +8142,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]70000\\C[0]G 20"
                             ]
                         },
                         {

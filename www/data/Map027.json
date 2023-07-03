@@ -2878,7 +2878,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "...*Haa haa, I've reached my limit...*"
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {
@@ -2953,7 +2953,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 I-I can't take it anymore... Let me rest..."
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "も、もうだめ～。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "休ませてぇ…"
                             ]
                         },
                         {
@@ -2987,12 +3001,12 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "I want you to rub me",
-                                    "en(s[407])Let me give you a lick",
-                                    "en(v[171]>=1)Are you okay?",
-                                    "en(s[254])I'm going to ejaculate",
-                                    "I'll stop",
-                                    "Go back"
+                                    "擦ってもらう",
+                                    "en(s[407])なめてもらう",
+                                    "en(v[171]>=1)声をかける",
+                                    "en(s[254])射精する",
+                                    "やめる",
+                                    "もどる"
                                 ],
                                 -1,
                                 0,

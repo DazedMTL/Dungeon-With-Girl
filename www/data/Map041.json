@@ -2336,7 +2336,7 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT 　　   \\N[1] 30"
+                                "D_TEXT 　　   \\n[1] 30"
                             ]
                         },
                         {
@@ -2359,7 +2359,7 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]Manliness　\\v[89] 30"
+                                "D_TEXT \\f[b]\\C[15]\\oc[0]\\ow[1]男気　\\v[89] 30"
                             ]
                         },
                         {

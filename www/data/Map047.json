@@ -2536,7 +2536,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "...*Haa haa, I've reached my limit...*"
+                                "…はぁはぁ、限界だ…"
                             ]
                         },
                         {
@@ -2643,7 +2643,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 I-I can't take it anymore... Let me rest..."
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "も、もうだめ～。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "休ませてぇ…"
                             ]
                         },
                         {
@@ -2677,12 +2691,12 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "I want you to rub me",
-                                    "Suck on her nipples",
-                                    "en(v[171]>=1)Are you okay?",
-                                    "en(s[349])I'm going to ejaculate",
-                                    "I'll stop",
-                                    "Go back"
+                                    "擦ってもらう",
+                                    "乳首を吸う",
+                                    "en(v[171]>=1)声をかける",
+                                    "en(s[349])射精する",
+                                    "やめる",
+                                    "もどる"
                                 ],
                                 -1,
                                 0,
@@ -2717,6 +2731,13 @@
                             "indent": 2,
                             "parameters": [
                                 "PA_STOP 65"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 66"
                             ]
                         },
                         {
@@ -2787,6 +2808,13 @@
                             "indent": 2,
                             "parameters": [
                                 65
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                66
                             ]
                         },
                         {
@@ -2933,6 +2961,13 @@
                             ]
                         },
                         {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 66"
+                            ]
+                        },
+                        {
                             "code": 235,
                             "indent": 2,
                             "parameters": [
@@ -2958,6 +2993,13 @@
                             "indent": 2,
                             "parameters": [
                                 65
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                66
                             ]
                         },
                         {
@@ -3331,6 +3373,34 @@
                             ]
                         },
                         {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 65"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 66"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                65
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                66
+                            ]
+                        },
+                        {
                             "code": 235,
                             "indent": 2,
                             "parameters": [
@@ -3469,6 +3539,13 @@
                             "code": 235,
                             "indent": 3,
                             "parameters": [
+                                66
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 3,
+                            "parameters": [
                                 70
                             ]
                         },
@@ -3596,6 +3673,13 @@
                             "indent": 3,
                             "parameters": [
                                 65
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 3,
+                            "parameters": [
+                                66
                             ]
                         },
                         {

@@ -3,7 +3,7 @@
     {
         "id": 1,
         "animationId": 6,
-        "description": "Weapon widely used from beginners to veterans Durability [\\D] / [\\MD]",
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\MD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -18,7 +18,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "----Base Item----",
+        "name": "----ベースアイテム----",
         "note": "<weight:40>\n<Durability: 100>",
         "params": [
             0,
@@ -36,7 +36,7 @@
     {
         "id": 2,
         "animationId": 6,
-        "description": "A weapon widely used from beginners to veterans. [Weight 5W]",
+        "description": "かけ出しからベテランまで広く使われている武器。\n[重さ5W]",
         "etypeId": 1,
         "traits": [
             {
@@ -51,7 +51,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Short Sword",
+        "name": "ショートソード",
         "note": "<weight:5>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 40%\n</Suffixes>",
         "params": [
             0,
@@ -69,7 +69,7 @@
     {
         "id": 3,
         "animationId": 6,
-        "description": "A weapon preferred by skilled adventurers and soldiers. [Weight 8W]",
+        "description": "熟練の冒険者や兵士が好んで使う武器。[重さ8W]\n",
         "etypeId": 1,
         "traits": [
             {
@@ -84,7 +84,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Longsword",
+        "name": "ロングソード",
         "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 30%\n</Suffixes>",
         "params": [
             0,
@@ -102,7 +102,7 @@
     {
         "id": 4,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nOccasionally causes the opponent to faint. [Weight 10W]",
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器。\nまれに相手を気絶させる。[重さ10W]",
         "etypeId": 1,
         "traits": [
             {
@@ -122,7 +122,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Mace",
+        "name": "メイス",
         "note": "<weight:10>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 40%\n</Suffixes>",
         "params": [
             0,
@@ -140,7 +140,7 @@
     {
         "id": 5,
         "animationId": 6,
-        "description": "Lightweight weapon that is easy to handle even for women. Rarely causes the\nopponent to bleed. [Weight 3W]",
+        "description": "軽いため女性にも扱いやすい武器。\nまれに相手を出血させる。[重さ3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -170,7 +170,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Dagger",
+        "name": "ダガー",
         "note": "<weight:3>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-66 20%\n</Suffixes>",
         "params": [
             0,
@@ -188,7 +188,7 @@
     {
         "id": 6,
         "animationId": 6,
-        "description": "A broken sword. Better than bare hands. [Weight 5W]",
+        "description": "折れてしまった剣。素手よりはマシ。[重さ5W]",
         "etypeId": 1,
         "traits": [
             {
@@ -203,7 +203,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Broken Sword",
+        "name": "折れた剣",
         "note": "<weight:5>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 40%\n</Suffixes>",
         "params": [
             0,
@@ -221,7 +221,7 @@
     {
         "id": 7,
         "animationId": 6,
-        "description": "A sword believed to have been used by ancient warriors. Depending on its\ncondition, it may be sharper than weapons made in recent years. [Weight 8W]",
+        "description": "古の戦士たちが使っていたと思われる剣。\n状態によっては近年つくられた武器よりも鋭い。[重さ8W]",
         "etypeId": 1,
         "traits": [
             {
@@ -236,7 +236,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Ancient Sword",
+        "name": "古代の剣",
         "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 30%\n</Suffixes>",
         "params": [
             0,
@@ -254,7 +254,7 @@
     {
         "id": 8,
         "animationId": 6,
-        "description": "It has more of an aspect of being an art piece rather than a weapon. Luck\nincreases. [Weight 5W]",
+        "description": "武器というよりは美術品としての側面が強い。\n運が上昇する。[重さ5W]",
         "etypeId": 1,
         "traits": [
             {
@@ -269,7 +269,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Golden Sword",
+        "name": "金の剣",
         "note": "<weight:5>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 40%\n</Suffixes>",
         "params": [
             0,
@@ -287,7 +287,7 @@
     {
         "id": 9,
         "animationId": 8,
-        "description": "A sword with a legend that the god who controls fire used to wield. It sets the\nopponent on fire when attacking. [Weight 15W]",
+        "description": "火を司る神が愛用していたという逸話のある剣。\n攻撃時に相手を燃焼状態にする。[重さ15W]",
         "etypeId": 1,
         "traits": [
             {
@@ -317,8 +317,8 @@
             }
         ],
         "iconIndex": 125,
-        "name": "Magic Sword Glenkaina",
-        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:Attribute:\\c[6]Fire\\c[0]>",
+        "name": "魔剣グレンカイナ",
+        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]炎属性\\c[0]>",
         "params": [
             0,
             0,
@@ -335,7 +335,7 @@
     {
         "id": 10,
         "animationId": 7,
-        "description": "A sword that unleashes immense attacking power through the power of a curse. In\nexchange for its attacking power, it loses the ability to emit light and move\nfreely. [Weight 25W]",
+        "description": "呪いの力によって絶大な攻撃力をひきだされた剣。\n攻撃力と引き換えに、光と行動の自由を失う。[重さ25W]",
         "etypeId": 1,
         "traits": [
             {
@@ -360,8 +360,8 @@
             }
         ],
         "iconIndex": 125,
-        "name": "Demon God Sword Okotunushi",
-        "note": "<RandomLoseException>\n<weight:25>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:Attribute:\\c[6]Dark\\c[0]>",
+        "name": "魔神剣オコトヌシ",
+        "note": "<RandomLoseException>\n<weight:25>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]闇属性\\c[0]>",
         "params": [
             0,
             0,
@@ -378,7 +378,7 @@
     {
         "id": 11,
         "animationId": 6,
-        "description": "A short sword that brings various negative effects to the opponent. [Weight 3W]",
+        "description": "さまざまな悪い効果を相手にもたらす短剣。[重さ3W]\n",
         "etypeId": 1,
         "traits": [
             {
@@ -443,7 +443,7 @@
             }
         ],
         "iconIndex": 124,
-        "name": "Plague Mary",
+        "name": "プレイグメアリー",
         "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>",
         "params": [
             0,
@@ -461,7 +461,7 @@
     {
         "id": 12,
         "animationId": 6,
-        "description": "A sword made of a very rare metal. Even great people who left their names in\nhistory used to love it. [Weight 8W]",
+        "description": "とても希少な金属で造られた剣。\n歴史に名を残すような偉人たちも愛用していた。[重さ8W]",
         "etypeId": 1,
         "traits": [
             {
@@ -476,7 +476,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Mithril Sword",
+        "name": "ミスリルソード",
         "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 20%\n</Suffixes>",
         "params": [
             0,
@@ -494,7 +494,7 @@
     {
         "id": 13,
         "animationId": 1,
-        "description": "A deadly weapon with spikes added to the tip for extra lethality. It can cause\nboth unconsciousness and damage from bleeding. [Weight 15W]",
+        "description": "先端のおもりにさらにスパイクをつけた凶悪な武器。\n気絶に加え、出血によるダメージも狙える。[重さ15W]",
         "etypeId": 1,
         "traits": [
             {
@@ -519,7 +519,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Morning Star",
+        "name": "モーニングスター",
         "note": "<weight:15>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 20%\n</Suffixes>",
         "params": [
             0,
@@ -537,7 +537,7 @@
     {
         "id": 14,
         "animationId": 6,
-        "description": "A sharp and polished dagger that combines lightness and strength. Rarely causes\nthe opponent to bleed. [Weight 3W]",
+        "description": "軽さと強度を併せ持つ鋭く磨かれたタガー。\nまれに相手を出血させる。[重さ3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -567,7 +567,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Sharp Edge",
+        "name": "シャープエッジ",
         "note": "<weight:3>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-66 20%\n</Suffixes>",
         "params": [
             0,
@@ -585,7 +585,7 @@
     {
         "id": 15,
         "animationId": 1,
-        "description": "An inexpensive weapon made by carving wood. [Weight 5W]",
+        "description": "木を削ってつくられた安価な武器。[重さ5W]\n",
         "etypeId": 1,
         "traits": [
             {
@@ -605,7 +605,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Wooden club",
+        "name": "木のこん棒",
         "note": "<weight:5>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 40%\n</Suffixes>",
         "params": [
             0,
@@ -623,7 +623,7 @@
     {
         "id": 16,
         "animationId": 11,
-        "description": "A bone-made club stained red with blood. It boasts high power, but is cursed\nwith the ability to decrease health every turn. [Weight 15W]",
+        "description": "血で赤く染まった骨製のこん棒。高い威力を誇るが、\n毎ターン体力が減少する呪いの武器。[重さ15W]",
         "etypeId": 1,
         "traits": [
             {
@@ -653,7 +653,7 @@
             }
         ],
         "iconIndex": 126,
-        "name": "Thirst for Blood",
+        "name": "血の渇望",
         "note": "<weight:15>\n\n<Prefixes>\n43 100%\n</Prefixes>\n\n<Suffixes>\n67 5%\n</Suffixes>",
         "params": [
             0,
@@ -671,7 +671,7 @@
     {
         "id": 17,
         "animationId": 6,
-        "description": "A weapon widely used from beginners to veterans. Supplied by the guild. [Weight\n5W]",
+        "description": "かけ出しからベテランまで広く使われている武器。\nギルドから支給されたもの。[重さ5W]",
         "etypeId": 1,
         "traits": [
             {
@@ -686,7 +686,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Short Sword (Provision)",
+        "name": "ショートソード(支給品)",
         "note": "<weight:5>\n\n\n",
         "params": [
             0,
@@ -704,7 +704,7 @@
     {
         "id": 18,
         "animationId": 6,
-        "description": "A weapon that can deal significant damage to undead enemies. [Weight 8W]",
+        "description": "アンデッド系の敵に大きなダメージをあたえることができる\n武器。[重さ8W]",
         "etypeId": 1,
         "traits": [
             {
@@ -724,8 +724,8 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Silver Sword",
-        "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 30%\n</Suffixes>\n<AddInfoWindowP:Attribute:\\c[6]Holy\\c[0]>",
+        "name": "銀の剣",
+        "note": "<weight:8>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 40% 60-65 30%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]聖属性\\c[0]>",
         "params": [
             0,
             0,
@@ -742,7 +742,7 @@
     {
         "id": 19,
         "animationId": 6,
-        "description": "A sword with a mysterious pattern engraved on the blade. The pattern faintly\nemits light and makes a crackling sound. [Weight 10W]",
+        "description": "刀身に不思議な文様が刻まれている剣。文様はかすかに\n光を放ち、チリチリと音をだしている。[重さ10W]",
         "etypeId": 1,
         "traits": [
             {
@@ -757,7 +757,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "War Sword",
+        "name": "ウォーソード",
         "note": "<weight:10>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 30% 60-65 40%\n</Suffixes>",
         "params": [
             0,
@@ -775,7 +775,7 @@
     {
         "id": 20,
         "animationId": 0,
-        "description": "Infantry carry a large dagger for auxiliary use. Unusually, the dagger also\nprovides a slight increase in defense. [Weight 3W]",
+        "description": "歩兵が補助用に持ち歩く大きめ短剣。\n短剣には珍しく防御力も少しあがる。[重さ3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -805,7 +805,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Kushipos",
+        "name": "クシポス",
         "note": "<weight:3>\n\n<Prefixes>\n35 36 52% 120-129 48% 134-139 7% 151-153 3%\n</Prefixes>\n\n<Suffixes>\n56-59 30% 60-66 10%\n</Suffixes>",
         "params": [
             0,
@@ -823,7 +823,7 @@
     {
         "id": 21,
         "animationId": 10,
-        "description": "The legendary sword said to have been carried by an ancient king. A single\nstrike released from the blue shining blade delivers judgment to multiple\nopponents. [Weight 8W]",
+        "description": "太古の王が携えていたとされる伝説の宝剣。蒼く光る刀身\nから放たれる一撃は複数の相手に裁きを下す。[重さ8W]",
         "etypeId": 1,
         "traits": [
             {
@@ -848,8 +848,8 @@
             }
         ],
         "iconIndex": 125,
-        "name": "Treasured Sword Eldard",
-        "note": "<RandomLoseException>\n<weight:8>\n<skill_id:27>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:Attribute:\\c[6]Lightning\\c[0]>",
+        "name": "宝剣エルダード",
+        "note": "<RandomLoseException>\n<weight:8>\n<skill_id:27>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]雷属性\\c[0]>",
         "params": [
             0,
             0,
@@ -866,7 +866,7 @@
     {
         "id": 22,
         "animationId": 1,
-        "description": "A weapon that combines offense and defense. Although its attack power is low,\nits counterattack rate is high, making it truly effective in battles against\nmultiple opponents. [Weight 3W]",
+        "description": "攻防一体となった武器。攻撃力こそ低いが、反撃率が高く\n複数の相手との戦いにおいて真価を発揮する。[重さ3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -901,7 +901,7 @@
             }
         ],
         "iconIndex": 124,
-        "name": "Jutte",
+        "name": "十手",
         "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>",
         "params": [
             0,
@@ -919,7 +919,7 @@
     {
         "id": 23,
         "animationId": 97,
-        "description": "A weapon made from the head of a Guardian. Although it has lost its power\nsource, its eyes continue to faintly glow. [Weight: 15W]",
+        "description": "ガーディアンの頭部をそのまま武器としたモノ。\n動力源は失ったものの眼は微かに輝き続けている。[重さ15W]",
         "etypeId": 1,
         "traits": [
             {
@@ -944,8 +944,8 @@
             }
         ],
         "iconIndex": 126,
-        "name": "Guardian's Head",
-        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:Attribute:\\c[6]Light\\c[0]>",
+        "name": "ガーディアンの頭部",
+        "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<AddInfoWindowP:攻撃時属性:\\c[6]光属性\\c[0]>",
         "params": [
             0,
             0,
@@ -962,7 +962,7 @@
     {
         "id": 24,
         "animationId": 12,
-        "description": "One of the brave warriors who stood up to overthrow the tyrannical king was a\ndancer who received favor from the king. Evasion rate and critical hit rate\nincrease. [Weight 3W]",
+        "description": "暴虐の王打倒のため立ち上がった勇士の一人は王に寵愛をう\nけた舞踏家だった。回避率、会心率があがる。[重さ3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -997,8 +997,8 @@
             }
         ],
         "iconIndex": 162,
-        "name": "Dagger of the Stealthy Dancer",
-        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n44 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<AddInfoWindowP:\\c[24]3 set effect: Agility +10, Luck +5, Evasion rate +15%, Critical rate +30%.\\c[0]>",
+        "name": "暗躍する舞踏家のダガー",
+        "note": "<RandomLoseException>\n<weight:3>\n<Prefixes>\n44 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n<Tikan:暗躍する舞踏家効果>\n<AddInfoWindowP:\\c[24]3セット効果 敏捷性+10 運+5 回避率+15% 会心率+30%\\c[0]>",
         "params": [
             0,
             0,
@@ -1015,7 +1015,7 @@
     {
         "id": 25,
         "animationId": 2,
-        "description": "The fallen enemy's armor becomes distorted and unusable, hence earning this\nnickname. It reduces the opponent's physical resistance. [Weight 15W]",
+        "description": "倒れた敵の防具はひしゃげて使えなくなるため、このような\n異名をつけられた。相手の物理耐性を下げる。[重さ15W]",
         "etypeId": 1,
         "traits": [
             {
@@ -1040,7 +1040,7 @@
             }
         ],
         "iconIndex": 126,
-        "name": "Garbage Collector",
+        "name": "ガラクタ集め",
         "note": "<RandomLoseException>\n<weight:15>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>",
         "params": [
             0,
@@ -1058,7 +1058,7 @@
     {
         "id": 26,
         "animationId": 7,
-        "description": "The great sword that the orc had. It can mow down multiple opponents at once,\nbut it is thick and very heavy, so it can only be wielded with both hands.\n[Weight 30W]",
+        "description": "オークが持っていた大剣。相手をまとめて薙ぎ払えるが\n分厚くとても重いので両手でないと持てない。[重さ30W]",
         "etypeId": 1,
         "traits": [
             {
@@ -1093,7 +1093,7 @@
             }
         ],
         "iconIndex": 125,
-        "name": "Bloodstained Oak Sword",
+        "name": "血塗られたオークソード",
         "note": "<RandomLoseException>\n<weight:30>\n<skill_id:49>\n<Prefixes>\n43 100%\n</Prefixes>\n<Suffixes>\n67 5%\n</Suffixes>\n",
         "params": [
             0,
@@ -1126,7 +1126,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Laser Gun",
+        "name": "光線銃",
         "note": "",
         "params": [
             0,
@@ -1357,7 +1357,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "----Prefix----",
+        "name": "----接頭語----",
         "note": "",
         "params": [
             0,
@@ -1385,7 +1385,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Rusted",
+        "name": "朽ちた",
         "note": "<prefixSuffixNoNameSpace>\n",
         "params": [
             0,
@@ -1413,7 +1413,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Normal",
+        "name": "普通の",
         "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>",
         "params": [
             0,
@@ -1441,7 +1441,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Master Craftsman's",
+        "name": "名匠の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>\n",
         "params": [
             0,
@@ -1474,7 +1474,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Blessed",
+        "name": "祝福された",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -1512,7 +1512,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Cruel",
+        "name": "残忍な",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -1550,7 +1550,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Shining",
+        "name": "輝く",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -1578,7 +1578,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Sage's",
+        "name": "賢者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -1611,7 +1611,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Poison",
+        "name": "毒の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -1639,7 +1639,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Unique Weapon",
+        "name": "ユニーク武器",
         "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>\n<rarity: 3>",
         "params": [
             0,
@@ -1667,7 +1667,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Set Equipment",
+        "name": "セット装備",
         "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>\n<rarity: 4>",
         "params": [
             0,
@@ -1700,7 +1700,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Roughrider",
+        "name": "乱暴者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -2030,7 +2030,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "----Suffix----",
+        "name": "----接尾語----",
         "note": "",
         "params": [
             0,
@@ -2058,7 +2058,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Power>",
+        "name": "<力>",
         "note": "",
         "params": [
             0,
@@ -2086,7 +2086,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Defense>",
+        "name": "<守り>",
         "note": "",
         "params": [
             0,
@@ -2114,7 +2114,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Agility>",
+        "name": "<素早さ>",
         "note": "",
         "params": [
             0,
@@ -2142,7 +2142,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Luck>",
+        "name": "<運>",
         "note": "",
         "params": [
             0,
@@ -2170,7 +2170,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Vitality>",
+        "name": "<生命力>",
         "note": "",
         "params": [
             10,
@@ -2198,7 +2198,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Strong Arm>",
+        "name": "<剛腕>",
         "note": "",
         "params": [
             0,
@@ -2226,7 +2226,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Iron Wall>",
+        "name": "<鉄壁>",
         "note": "",
         "params": [
             0,
@@ -2254,7 +2254,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Swift",
+        "name": "<俊敏>",
         "note": "",
         "params": [
             0,
@@ -2282,7 +2282,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Luck>",
+        "name": "<幸運>",
         "note": "",
         "params": [
             0,
@@ -2310,7 +2310,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Wisdom>",
+        "name": "<賢さ>",
         "note": "",
         "params": [
             0,
@@ -2343,7 +2343,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Poison>",
+        "name": "<毒>",
         "note": "",
         "params": [
             0,
@@ -2371,7 +2371,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<<Legend>>",
+        "name": "<<伝説>>",
         "note": "",
         "params": [
             5,
@@ -2587,7 +2587,7 @@
     {
         "id": 74,
         "animationId": 6,
-        "description": "Weapon widely used from beginners to veterans Durability [\\D] / [\\MD]",
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\MD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2602,7 +2602,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Short Sword <Power>",
+        "name": "ショートソード<力>",
         "note": "<weight:40>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2620,7 +2620,7 @@
     {
         "id": 75,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\MD].",
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\MD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2635,7 +2635,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Longsword <Power>",
+        "name": "ロングソード<力>",
         "note": "<weight:50>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2653,7 +2653,7 @@
     {
         "id": 76,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\MD]",
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\MD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2673,7 +2673,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Mace <Power>",
+        "name": "メイス<力>",
         "note": "<weight:60>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2691,7 +2691,7 @@
     {
         "id": 77,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2711,7 +2711,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Dagger <Power>",
+        "name": "ダガー<力>",
         "note": "<weight:20>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2729,7 +2729,7 @@
     {
         "id": 78,
         "animationId": 6,
-        "description": "Weapon widely used from beginners to veterans Durability [\\D] / [\\WD]",
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2744,7 +2744,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Short Sword <Defense>",
+        "name": "ショートソード<守り>",
         "note": "<weight:40>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2762,7 +2762,7 @@
     {
         "id": 79,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2777,7 +2777,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Longsword <Guard>",
+        "name": "ロングソード<守り>",
         "note": "<weight:50>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2795,7 +2795,7 @@
     {
         "id": 80,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2815,7 +2815,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Mace <Defense>",
+        "name": "メイス<守り>",
         "note": "<weight:60>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2833,7 +2833,7 @@
     {
         "id": 81,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2853,7 +2853,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Dagger <Guard>",
+        "name": "ダガー<守り>",
         "note": "<weight:20>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2871,7 +2871,7 @@
     {
         "id": 82,
         "animationId": 6,
-        "description": "Weapon widely used from beginners to veterans Durability [\\D] / [\\WD]",
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2886,7 +2886,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Shortsword <Agility>",
+        "name": "ショートソード<素早さ>",
         "note": "<weight:40>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2904,7 +2904,7 @@
     {
         "id": 83,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2919,7 +2919,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Longsword <Agility>",
+        "name": "ロングソード<素早さ>",
         "note": "<weight:50>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2937,7 +2937,7 @@
     {
         "id": 84,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2957,7 +2957,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Mace <Agility>",
+        "name": "メイス<素早さ>",
         "note": "<weight:60>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -2975,7 +2975,7 @@
     {
         "id": 85,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -2995,7 +2995,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Dagger <Agility>",
+        "name": "ダガー<素早さ>",
         "note": "<weight:20>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -3013,7 +3013,7 @@
     {
         "id": 86,
         "animationId": 6,
-        "description": "Weapon widely used from beginners to veterans Durability [\\D] / [\\WD]",
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3028,7 +3028,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Short Sword <Luck>",
+        "name": "ショートソード<運>",
         "note": "<weight:40>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -3046,7 +3046,7 @@
     {
         "id": 87,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3061,7 +3061,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Longsword <Luck>",
+        "name": "ロングソード<運>",
         "note": "<weight:50>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -3079,7 +3079,7 @@
     {
         "id": 88,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3099,7 +3099,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Mace of Luck",
+        "name": "メイス<運>",
         "note": "<weight:60>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -3117,7 +3117,7 @@
     {
         "id": 89,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3137,7 +3137,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Dagger <Luck>",
+        "name": "ダガー<運>",
         "note": "<weight:20>\n<rarity: 1>\n<Durability: 100>",
         "params": [
             0,
@@ -3155,7 +3155,7 @@
     {
         "id": 90,
         "animationId": 6,
-        "description": "Weapon widely used from beginners to veterans Durability [\\D] / [\\WD]",
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3170,7 +3170,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Short Sword <Power>",
+        "name": "ショートソード<剛力>",
         "note": "<weight:40>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3188,7 +3188,7 @@
     {
         "id": 91,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3203,7 +3203,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Longsword <Power>",
+        "name": "ロングソード<剛力>",
         "note": "<weight:50>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3221,7 +3221,7 @@
     {
         "id": 92,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3241,7 +3241,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Mace <Mighty Strength>",
+        "name": "メイス<剛力>",
         "note": "<weight:60>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3259,7 +3259,7 @@
     {
         "id": 93,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3279,7 +3279,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Dagger <Powerful>",
+        "name": "ダガー<剛力>",
         "note": "<weight:20>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3297,7 +3297,7 @@
     {
         "id": 94,
         "animationId": 6,
-        "description": "Weapon widely used from beginners to veterans Durability [\\D] / [\\WD]",
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3312,7 +3312,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Short Sword <Iron Wall>",
+        "name": "ショートソード<鉄壁>",
         "note": "<weight:40>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3330,7 +3330,7 @@
     {
         "id": 95,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3345,7 +3345,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Longsword <Iron Wall>",
+        "name": "ロングソード<鉄壁>",
         "note": "<weight:50>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3363,7 +3363,7 @@
     {
         "id": 96,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3383,7 +3383,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Mace <Iron Wall>",
+        "name": "メイス<鉄壁>",
         "note": "<weight:60>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3401,7 +3401,7 @@
     {
         "id": 97,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3421,7 +3421,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Dagger <Iron Wall>",
+        "name": "ダガー<鉄壁>",
         "note": "<weight:20>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3439,7 +3439,7 @@
     {
         "id": 98,
         "animationId": 6,
-        "description": "Weapon widely used from beginners to veterans Durability [\\D] / [\\WD]",
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3454,7 +3454,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Short Sword <Swift>",
+        "name": "ショートソード<迅速>",
         "note": "<weight:40>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3472,7 +3472,7 @@
     {
         "id": 99,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3487,7 +3487,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Longsword <Swift>",
+        "name": "ロングソード<迅速>",
         "note": "<weight:50>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3505,7 +3505,7 @@
     {
         "id": 100,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3525,7 +3525,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Mace <Swift>",
+        "name": "メイス<迅速>",
         "note": "<weight:60>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3543,7 +3543,7 @@
     {
         "id": 101,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3563,7 +3563,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Dagger <Swift>",
+        "name": "ダガー<迅速>",
         "note": "<weight:20>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3581,7 +3581,7 @@
     {
         "id": 102,
         "animationId": 6,
-        "description": "Weapon widely used from beginners to veterans Durability [\\D] / [\\WD]",
+        "description": "かけ出しからベテランまで広く使われている武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3596,7 +3596,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Short Sword <Fortune>",
+        "name": "ショートソード<幸運>",
         "note": "<weight:40>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3614,7 +3614,7 @@
     {
         "id": 103,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "熟練の冒険者や王国の兵士が好んで使う武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3629,7 +3629,7 @@
             }
         ],
         "iconIndex": 97,
-        "name": "Longsword <Fortune>",
+        "name": "ロングソード<幸運>",
         "note": "<weight:50>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3647,7 +3647,7 @@
     {
         "id": 104,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "先端につけた鉄のかたまりの重さで攻撃する武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3667,7 +3667,7 @@
             }
         ],
         "iconIndex": 108,
-        "name": "Mace <Fortune>",
+        "name": "メイス<幸運>",
         "note": "<weight:60>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -3685,7 +3685,7 @@
     {
         "id": 105,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "軽いため女性にも扱いやすい武器\n耐久値 [\\D] / [\\WD]　",
         "etypeId": 1,
         "traits": [
             {
@@ -3705,7 +3705,7 @@
             }
         ],
         "iconIndex": 96,
-        "name": "Dagger <Fortune>",
+        "name": "ダガー<幸運>",
         "note": "<weight:20>\n<rarity: 2>\n<Durability: 100>",
         "params": [
             0,
@@ -4167,7 +4167,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "-----Rarity 1-----",
+        "name": "-----レアリティ１--------",
         "note": "",
         "params": [
             0,
@@ -4195,7 +4195,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Master Craftsman's",
+        "name": "名匠の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>\n",
         "params": [
             0,
@@ -4223,7 +4223,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Cruel",
+        "name": "残忍な",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -4341,8 +4341,8 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Patience",
-        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]Resistance\\c[24]+3%\\c[0]>",
+        "name": "我慢の",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]全耐性\\c[24]+3%\\c[0]>",
         "params": [
             0,
             0,
@@ -4374,7 +4374,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Roughrider",
+        "name": "乱暴者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -4407,7 +4407,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Dismantler",
+        "name": "解体屋の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -4440,8 +4440,8 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Gladiator's sword",
-        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]TPCharge\\c[24]+10%\\c[0]>",
+        "name": "剣闘士の",
+        "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]TPチャージ率\\c[24]+10%\\c[0]>",
         "params": [
             0,
             0,
@@ -4473,7 +4473,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Dancer's",
+        "name": "舞踏家の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -4501,7 +4501,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Holy Cleric",
+        "name": "聖職者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -4529,8 +4529,8 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Knight's",
-        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>\n<AddInfoWindowA:\\c[4]Protection\\c[24]+5%\\c[0]>",
+        "name": "騎士の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>\n<AddInfoWindowA:\\c[4]防御効果\\c[24]+5%\\c[0]>",
         "params": [
             2,
             0,
@@ -4562,7 +4562,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Thief's",
+        "name": "盗賊の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -4694,7 +4694,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "-----Rarity 2-----",
+        "name": "-----レアリティ２-----",
         "note": "",
         "params": [
             0,
@@ -4732,7 +4732,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Shining",
+        "name": "輝く",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -4760,7 +4760,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Sage's",
+        "name": "賢者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -4798,7 +4798,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Jewel Beetle Color",
+        "name": "玉虫色の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -4831,8 +4831,8 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Temple Knight",
-        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]Protection\\c[24]+10%\\c[0]>",
+        "name": "神殿騎士の",
+        "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]防御効果\\c[24]+10%\\c[0]>",
         "params": [
             5,
             0,
@@ -4869,7 +4869,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Assassin's",
+        "name": "暗殺者の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             0,
@@ -4912,7 +4912,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Berserker's",
+        "name": "狂戦士の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>",
         "params": [
             3,
@@ -5275,7 +5275,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "---Rarity 3---",
+        "name": "---レアリティ3---",
         "note": "",
         "params": [
             0,
@@ -5297,7 +5297,7 @@
         "etypeId": 1,
         "traits": [],
         "iconIndex": 0,
-        "name": "Hero's",
+        "name": "英雄の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>",
         "params": [
             3,
@@ -5325,7 +5325,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Blessed",
+        "name": "祝福された",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
         "params": [
             0,
@@ -5353,7 +5353,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Shinigami's",
+        "name": "死神の",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
         "params": [
             0,

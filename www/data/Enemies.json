@@ -61,7 +61,7 @@
             }
         ],
         "gold": 0,
-        "name": "Bat",
+        "name": "こうもり",
         "note": "",
         "params": [
             20,
@@ -112,6 +112,11 @@
                 "value": 1
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 31,
                 "dataId": 1,
                 "value": 0
@@ -148,7 +153,7 @@
             }
         ],
         "gold": 0,
-        "name": "Slime",
+        "name": "スライム",
         "note": "",
         "params": [
             20,
@@ -218,6 +223,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 2,
                 "value": 1.2
@@ -264,7 +274,7 @@
             }
         ],
         "gold": 0,
-        "name": "Goblin Warrior",
+        "name": "ゴブリン戦士",
         "note": "",
         "params": [
             25,
@@ -334,6 +344,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 1.2
@@ -370,7 +385,7 @@
             }
         ],
         "gold": 0,
-        "name": "Goblin Junior Shaman",
+        "name": "ゴブリン下級シャーマン",
         "note": "",
         "params": [
             25,
@@ -469,7 +484,7 @@
             }
         ],
         "gold": 0,
-        "name": "Ancient Warrior",
+        "name": "古代の戦士",
         "note": "",
         "params": [
             60,
@@ -594,6 +609,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 32,
                 "dataId": 4,
                 "value": 0.3
@@ -615,7 +635,7 @@
             }
         ],
         "gold": 0,
-        "name": "Matango",
+        "name": "マタンゴ",
         "note": "",
         "params": [
             30,
@@ -692,6 +712,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 4,
                 "value": 1.2
@@ -733,7 +758,7 @@
             }
         ],
         "gold": 3000,
-        "name": "Darkstrike",
+        "name": "あくらつ",
         "note": "雷に弱い\n",
         "params": [
             50,
@@ -789,6 +814,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 3
@@ -800,7 +830,7 @@
             }
         ],
         "gold": 0,
-        "name": "Mimic",
+        "name": "ミミック",
         "note": "火に弱い",
         "params": [
             80,
@@ -863,6 +893,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 63,
                 "value": 0.8
@@ -894,7 +929,7 @@
             }
         ],
         "gold": 0,
-        "name": "Dungeon Worm",
+        "name": "ダンジョンワーム",
         "note": "火に弱い",
         "params": [
             90,
@@ -957,6 +992,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 1.2
@@ -998,7 +1038,7 @@
             }
         ],
         "gold": 0,
-        "name": "Goblin",
+        "name": "ゴブリン",
         "note": "",
         "params": [
             20,
@@ -1310,6 +1350,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 0.6
@@ -1356,7 +1401,7 @@
             }
         ],
         "gold": 0,
-        "name": "Kidnapper",
+        "name": "人さらい",
         "note": "雷に弱い",
         "params": [
             120,
@@ -1723,7 +1768,7 @@
             }
         ],
         "gold": 0,
-        "name": "Fire-breathing bat",
+        "name": "火吹きこうもり",
         "note": "水に弱い",
         "params": [
             50,
@@ -1743,7 +1788,7 @@
                 "conditionParam1": 0,
                 "conditionParam2": 0,
                 "conditionType": 1,
-                "rating": 9,
+                "rating": 5,
                 "skillId": 7
             },
             {
@@ -1780,6 +1825,13 @@
                 "conditionType": 1,
                 "rating": 9,
                 "skillId": 32
+            },
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 4,
+                "skillId": 31
             }
         ],
         "battlerHue": 0,
@@ -1812,6 +1864,11 @@
                 "code": 31,
                 "dataId": 1,
                 "value": 0
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
             },
             {
                 "code": 11,
@@ -1870,7 +1927,7 @@
             }
         ],
         "gold": 0,
-        "name": "Guardian",
+        "name": "ガーディアン",
         "note": "",
         "params": [
             600,
@@ -1957,7 +2014,7 @@
             }
         ],
         "gold": 0,
-        "name": "Mummy Man",
+        "name": "ミイラ男",
         "note": "",
         "params": [
             100,
@@ -2013,6 +2070,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 3
@@ -2024,7 +2086,7 @@
             }
         ],
         "gold": 0,
-        "name": "Mimic (Gold)",
+        "name": "ミミック（金）",
         "note": "雷に弱い",
         "params": [
             120,
@@ -2080,13 +2142,18 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 3
             }
         ],
         "gold": 0,
-        "name": "Mimic (Rainbow)",
+        "name": "ミミック（虹）",
         "note": "",
         "params": [
             140,
@@ -2161,6 +2228,11 @@
                 "value": 1
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 1.2
@@ -2207,7 +2279,7 @@
             }
         ],
         "gold": 0,
-        "name": "Goblin Hero",
+        "name": "ゴブリンヒーロー",
         "note": "",
         "params": [
             52,
@@ -2298,6 +2370,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 1.2
@@ -2334,7 +2411,7 @@
             }
         ],
         "gold": 0,
-        "name": "Goblin Advanced Shaman",
+        "name": "ゴブリン上級シャーマン",
         "note": "",
         "params": [
             30,
@@ -2385,6 +2462,11 @@
                 "value": 0.95
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 31,
                 "dataId": 1,
                 "value": 0
@@ -2406,7 +2488,7 @@
             }
         ],
         "gold": 0,
-        "name": "Kegare: Fetal Movement",
+        "name": "ケガレ:胎動",
         "note": "",
         "params": [
             30000,
@@ -2476,6 +2558,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 1.2
@@ -2512,7 +2599,7 @@
             }
         ],
         "gold": 0,
-        "name": "Goblin Shaman Elite",
+        "name": "ゴブリンシャーマンエリート",
         "note": "",
         "params": [
             45,
@@ -2610,6 +2697,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 4,
                 "value": 0.8
@@ -2661,7 +2753,7 @@
             }
         ],
         "gold": 0,
-        "name": "Suspicious Man",
+        "name": "あやしい男",
         "note": "雷に弱い",
         "params": [
             350,
@@ -2719,6 +2811,11 @@
                 "value": 1
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 31,
                 "dataId": 1,
                 "value": 0
@@ -2755,7 +2852,7 @@
             }
         ],
         "gold": 0,
-        "name": "Tar Slime",
+        "name": "タールスライム",
         "note": "火に弱い",
         "params": [
             40,
@@ -2839,6 +2936,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 10,
                 "value": 1.2
@@ -2865,7 +2967,7 @@
             }
         ],
         "gold": 0,
-        "name": "Dark Knight",
+        "name": "暗黒騎士",
         "note": "",
         "params": [
             250,
@@ -2982,6 +3084,11 @@
                 "value": 1
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 0.6
@@ -3023,7 +3130,7 @@
             }
         ],
         "gold": 0,
-        "name": "Demon",
+        "name": "あくま",
         "note": "",
         "params": [
             666,
@@ -3086,6 +3193,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 2,
                 "value": 1.2
@@ -3122,7 +3234,7 @@
             }
         ],
         "gold": 0,
-        "name": "Underground Person",
+        "name": "地底人",
         "note": "",
         "params": [
             150,
@@ -3218,6 +3330,11 @@
                 "value": 0.6
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 0.6
@@ -3264,7 +3381,7 @@
             }
         ],
         "gold": 0,
-        "name": "Dragon",
+        "name": "ドラゴン",
         "note": "",
         "params": [
             350,
@@ -3362,6 +3479,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 5,
                 "value": 1.2
@@ -3393,7 +3515,7 @@
             }
         ],
         "gold": 0,
-        "name": "Gaze",
+        "name": "ゲイズ",
         "note": "火に弱い",
         "params": [
             35,
@@ -3465,6 +3587,11 @@
                 "value": 0.95
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 31,
                 "dataId": 1,
                 "value": 0
@@ -3486,7 +3613,7 @@
             }
         ],
         "gold": 0,
-        "name": "Sahagin",
+        "name": "サハギン",
         "note": "雷に弱い",
         "params": [
             80,
@@ -3584,6 +3711,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 10,
                 "value": 3
@@ -3605,7 +3737,7 @@
             }
         ],
         "gold": 0,
-        "name": "Poltergeist",
+        "name": "ポルターガイスト",
         "note": "",
         "params": [
             53,
@@ -3689,6 +3821,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 2,
                 "value": 1.2
@@ -3705,7 +3842,7 @@
             }
         ],
         "gold": 0,
-        "name": "Guraboizu",
+        "name": "グラボイズ",
         "note": "火に弱い",
         "params": [
             230,
@@ -3810,6 +3947,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 2,
                 "value": 1.2
@@ -3846,7 +3988,7 @@
             }
         ],
         "gold": 0,
-        "name": "Zombie",
+        "name": "ゾンビ",
         "note": "",
         "params": [
             90,
@@ -3951,6 +4093,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 10,
                 "value": 3
@@ -3987,7 +4134,7 @@
             }
         ],
         "gold": 0,
-        "name": "Zombie Soldier",
+        "name": "ゾンビ兵",
         "note": "",
         "params": [
             100,
@@ -4057,6 +4204,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 2,
                 "value": 1.2
@@ -4068,7 +4220,7 @@
             }
         ],
         "gold": 0,
-        "name": "Mushroom Ghost",
+        "name": "お化けきのこ",
         "note": "",
         "params": [
             80,
@@ -4168,6 +4320,11 @@
                 "value": 0.95
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 2,
                 "value": 1.2
@@ -4209,7 +4366,7 @@
             }
         ],
         "gold": 0,
-        "name": "Tadareta Otoko (Ragged Man)",
+        "name": "ただれた男",
         "note": "",
         "params": [
             150,
@@ -4293,6 +4450,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 5,
                 "value": 1.2
@@ -4329,7 +4491,7 @@
             }
         ],
         "gold": 0,
-        "name": "Golem",
+        "name": "ゴーレム",
         "note": "攻撃力がたかい\n水に弱い",
         "params": [
             120,
@@ -4406,6 +4568,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 2,
                 "value": 1.2
@@ -4437,7 +4604,7 @@
             }
         ],
         "gold": 0,
-        "name": "Heal Golem",
+        "name": "ヒールゴーレム",
         "note": "全体回復もち\n火に弱い",
         "params": [
             80,
@@ -4509,6 +4676,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 13,
                 "dataId": 50,
                 "value": 0.3
@@ -4545,7 +4717,7 @@
             }
         ],
         "gold": 0,
-        "name": "Crystal Golem",
+        "name": "クリスタルゴーレム",
         "note": "攻撃力防御力が高い\n防具破壊ステートつきやすい",
         "params": [
             200,
@@ -4657,6 +4829,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 4,
                 "value": 1.2
@@ -4703,7 +4880,7 @@
             }
         ],
         "gold": 0,
-        "name": "Orc",
+        "name": "オーク",
         "note": "",
         "params": [
             800,
@@ -4787,6 +4964,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 32,
                 "dataId": 4,
                 "value": 0.6
@@ -4813,7 +4995,7 @@
             }
         ],
         "gold": 0,
-        "name": "Poison Dragon",
+        "name": "ポイズンドラゴン",
         "note": "",
         "params": [
             180,
@@ -4904,6 +5086,11 @@
                 "value": 0
             },
             {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
+            },
+            {
                 "code": 11,
                 "dataId": 2,
                 "value": 0.6
@@ -4960,7 +5147,7 @@
             }
         ],
         "gold": 0,
-        "name": "Dragon",
+        "name": "ドラゴン",
         "note": "",
         "params": [
             350,
@@ -5031,6 +5218,13 @@
                 "conditionType": 1,
                 "rating": 5,
                 "skillId": 7
+            },
+            {
+                "conditionParam1": 0,
+                "conditionParam2": 0,
+                "conditionType": 0,
+                "rating": 4,
+                "skillId": 31
             }
         ],
         "battlerHue": 0,
@@ -5058,6 +5252,11 @@
                 "code": 22,
                 "dataId": 0,
                 "value": 0.95
+            },
+            {
+                "code": 22,
+                "dataId": 1,
+                "value": 0.02
             },
             {
                 "code": 31,
@@ -5101,7 +5300,7 @@
             }
         ],
         "gold": 0,
-        "name": "Master of Tentacles",
+        "name": "触手の主",
         "note": "",
         "params": [
             1000,

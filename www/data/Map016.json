@@ -2390,7 +2390,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# About the Golden Room"
+                                "\\#■黄金の間について"
                             ]
                         },
                         {
@@ -2407,7 +2407,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "In the Golden Room, you can find a large number of treasure chests\nthat are more than just golden in color."
+                                "黄金の間では金色以上の宝箱を大量に見つけることができます。"
                             ]
                         },
                         {
@@ -2424,7 +2424,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "However, in order to eliminate adventurers who are after the treasures\nin the Golden Room, guardians are patrolling."
+                                "しかし、黄金の間には財宝を狙う冒険者排除のため、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ガーディアンが巡回しています。"
                             ]
                         },
                         {
@@ -2441,7 +2448,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "The encounter rate with guardians is displayed in the bottom right\ncorner of the screen. It increases by 20% each time you progress."
+                                "画面右下にガーディアンとの遭遇率が記してあります。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "これは進行するたびに20%ずつ増えていきます。"
                             ]
                         },
                         {
@@ -2458,7 +2472,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "The guardians are formidable enemies and cannot be escaped even with\nsmoke balls. Let's explore while avoiding encounters."
+                                "ガーディアンはかなりの強敵な上、けむり玉でも逃げること"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "はできません。遭遇を避けるように探索をしましょう。"
                             ]
                         },
                         {
@@ -2623,7 +2644,7 @@
                                 0,
                                 2,
                                 0,
-                                2
+                                1
                             ]
                         },
                         {
@@ -2728,7 +2749,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 It looks like this is the end!"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "ここで終わりみたい！"
                             ]
                         },
                         {
@@ -2745,7 +2773,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Monica】 Let's try going in if we find it again!"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "また見つけたら入ってみよー！"
                             ]
                         },
                         {
@@ -2806,147 +2841,295 @@
                             ]
                         },
                         {
-                            "code": 117,
-                            "indent": 2,
-                            "parameters": [
-                                177
-                            ]
-                        },
-                        {
-                            "code": 201,
+                            "code": 111,
                             "indent": 2,
                             "parameters": [
                                 0,
-                                5,
-                                12,
+                                238,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 3,
+                            "parameters": [
+                                1
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
                                 0,
                                 0,
                                 2
                             ]
                         },
                         {
-                            "code": 115,
-                            "indent": 2,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 2,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 111,
-                            "indent": 1,
+                            "code": 401,
+                            "indent": 3,
                             "parameters": [
-                                1,
-                                17,
-                                0,
-                                2,
-                                0
+                                "ひと通り周辺の探索を終え、そろそろ引き返そうと思い、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "顔をあげたとき正面に淡く光る何かを見つけた。"
                             ]
                         },
                         {
                             "code": 231,
-                            "indent": 2,
+                            "indent": 3,
                             "parameters": [
-                                12,
-                                "chara_1_1",
+                                80,
+                                "orb-midori",
                                 0,
                                 0,
-                                500,
-                                80,
-                                80,
-                                80,
+                                1500,
+                                158,
+                                100,
+                                100,
                                 0,
                                 0
                             ]
                         },
                         {
                             "code": 232,
-                            "indent": 2,
+                            "indent": 3,
                             "parameters": [
-                                12,
+                                80,
                                 0,
                                 0,
                                 0,
-                                500,
-                                80,
-                                80,
-                                80,
+                                250,
+                                158,
+                                100,
+                                100,
                                 255,
                                 0,
-                                60,
+                                30,
                                 true
                             ]
                         },
                         {
-                            "code": 101,
-                            "indent": 2,
+                            "code": 102,
+                            "indent": 3,
                             "parameters": [
-                                "",
+                                [
+                                    "これはなんだろう"
+                                ],
                                 0,
                                 0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "【Monica】 It looks like this is the end here!"
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 2,
-                            "parameters": [
-                                "",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "【Monica】 Let's try going in if we find it again!"
-                            ]
-                        },
-                        {
-                            "code": 122,
-                            "indent": 2,
-                            "parameters": [
-                                92,
-                                92,
-                                0,
-                                0,
+                                1,
                                 0
                             ]
                         },
                         {
-                            "code": 122,
-                            "indent": 2,
+                            "code": 402,
+                            "indent": 3,
                             "parameters": [
-                                91,
-                                91,
                                 0,
-                                0,
-                                0
+                                "これはなんだろう"
                             ]
                         },
                         {
-                            "code": 123,
-                            "indent": 2,
+                            "code": 0,
+                            "indent": 4,
+                            "parameters": []
+                        },
+                        {
+                            "code": 404,
+                            "indent": 3,
+                            "parameters": []
+                        },
+                        {
+                            "code": 230,
+                            "indent": 3,
                             "parameters": [
-                                "B",
                                 1
                             ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "緑のオーブを手に取り、少し考えてみる―――"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "―――っは！？"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "もしやこれを取ると天井がおちてくる？！"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "咄嗟にそのようなことが頭をよぎり、あたりの様子を"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "キョロキョロと伺う。"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "しかし、特に変化があるようには見えない。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "これは一体なんだろうか、とりあえず\\n[1]はオーブを"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "持ち帰ることにした。"
+                            ]
+                        },
+                        {
+                            "code": 250,
+                            "indent": 3,
+                            "parameters": [
+                                {
+                                    "name": "Item1",
+                                    "volume": 90,
+                                    "pitch": 100,
+                                    "pan": 0
+                                }
+                            ]
+                        },
+                        {
+                            "code": 126,
+                            "indent": 3,
+                            "parameters": [
+                                44,
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "■グリーンオーブを手に入れた。"
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 3,
+                            "parameters": [
+                                238,
+                                238,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
+                                0,
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 232,
+                            "indent": 3,
+                            "parameters": [
+                                80,
+                                0,
+                                0,
+                                0,
+                                -1000,
+                                158,
+                                100,
+                                100,
+                                0,
+                                0,
+                                30,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 3,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 2,
+                            "parameters": []
                         },
                         {
                             "code": 111,
@@ -2994,6 +3177,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 3,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 3,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 3,
                             "parameters": [
@@ -3004,6 +3209,11 @@
                                 0,
                                 2
                             ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 3,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -3072,6 +3282,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 5,
                             "parameters": [
@@ -3084,13 +3316,8 @@
                             ]
                         },
                         {
-                            "code": 0,
+                            "code": 115,
                             "indent": 5,
-                            "parameters": []
-                        },
-                        {
-                            "code": 411,
-                            "indent": 4,
                             "parameters": []
                         },
                         {
@@ -3170,6 +3397,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 5,
                             "parameters": [
@@ -3182,13 +3431,8 @@
                             ]
                         },
                         {
-                            "code": 0,
+                            "code": 115,
                             "indent": 5,
-                            "parameters": []
-                        },
-                        {
-                            "code": 411,
-                            "indent": 4,
                             "parameters": []
                         },
                         {
@@ -3268,6 +3512,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 5,
                             "parameters": [
@@ -3280,47 +3546,37 @@
                             ]
                         },
                         {
-                            "code": 0,
-                            "indent": 5,
-                            "parameters": []
-                        },
-                        {
-                            "code": 411,
-                            "indent": 4,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 5,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 4,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 4,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 3,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 3,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 2,
-                            "parameters": []
-                        },
-                        {
                             "code": 115,
+                            "indent": 5,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 5,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 4,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 4,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 3,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 3,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
                             "indent": 2,
                             "parameters": []
                         },
@@ -3391,6 +3647,28 @@
                             "indent": 1,
                             "parameters": [
                                 177
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 1,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 1,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
                             ]
                         },
                         {
@@ -3510,7 +3788,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Would you like to proceed to the next step?"
+                                "次に進みますか？"
                             ]
                         },
                         {
@@ -3792,7 +4070,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Let's go back soon"
+                                    "そろそろ戻ろう"
                                 ],
                                 0,
                                 0,
@@ -3839,7 +4117,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "After finishing exploring the surroundings, I looked up and found\nsomething faintly shining in front of me, so I thought it was time to\nturn back."
+                                "ひと通り周辺の探索を終え、そろそろ引き返そうと思い、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "顔をあげたとき正面に淡く光る何かを見つけた。"
                             ]
                         },
                         {
@@ -3881,7 +4166,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "What could this be?"
+                                    "これはなんだろう"
                                 ],
                                 0,
                                 0,
@@ -3928,7 +4213,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "Taking the green orb in hand, I pondered for a moment---"
+                                "緑のオーブを手に取り、少し考えてみる―――"
                             ]
                         },
                         {
@@ -3945,7 +4230,28 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "---Huh!? Could it be that if I take this, the ceiling will come crashing\ndown?! In an instant, such thoughts crossed my mind, and I looked\naround nervously."
+                                "―――っは！？"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "もしやこれを取ると天井がおちてくる？！"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "咄嗟にそのようなことが頭をよぎり、あたりの様子を"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "キョロキョロと伺う。"
                             ]
                         },
                         {
@@ -3962,7 +4268,21 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "However, there doesn't seem to be any noticeable change. What could\nthis possibly be? For now, \\N[1] decided to take the orb back home."
+                                "しかし、特に変化があるようには見えない。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "これは一体なんだろうか、とりあえず\\n[1]はオーブを"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "持ち帰ることにした。"
                             ]
                         },
                         {
@@ -4001,7 +4321,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■I obtained the Green Orb."
+                                "■グリーンオーブを手に入れた。"
                             ]
                         },
                         {
@@ -4104,6 +4424,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 2,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 2,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 2,
                             "parameters": [
@@ -4114,6 +4456,11 @@
                                 0,
                                 2
                             ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 2,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -4182,6 +4529,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 4,
                             "parameters": [
@@ -4192,6 +4561,11 @@
                                 0,
                                 2
                             ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 4,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -4280,6 +4654,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 4,
                             "parameters": [
@@ -4290,6 +4686,11 @@
                                 0,
                                 2
                             ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 4,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -4369,6 +4770,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 4,
                             "parameters": [
@@ -4379,6 +4802,11 @@
                                 0,
                                 2
                             ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 4,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -4773,14 +5201,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT 支払い金額: \\C[18]30000\\C[0]G 20"
                             ]
                         },
                         {
@@ -4831,14 +5259,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]50000\\C[0]G 20"
                             ]
                         },
                         {
@@ -4899,14 +5327,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]70000\\C[0]G 20"
                             ]
                         },
                         {
@@ -5250,7 +5678,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {
@@ -5283,7 +5711,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {
@@ -5513,66 +5941,7 @@
             "x": 11,
             "y": 0
         },
-        {
-            "id": 9,
-            "name": "EV009_エフェクト出すところ",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 0,
-                        "characterName": "",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
-                        {
-                            "code": 0,
-                            "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 0,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 0,
-                    "walkAnime": true
-                }
-            ],
-            "x": 16,
-            "y": 6
-        },
+        null,
         null,
         {
             "id": 11,
@@ -5810,14 +6179,14 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT Defeat　5　Slimes 20"
+                                "D_TEXT スライム5体討伐 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT \\v[201]/5Body 20"
+                                "D_TEXT \\v[201]/5体  20"
                             ]
                         },
                         {
@@ -5866,65 +6235,6 @@
             "x": 0,
             "y": 2
         },
-        {
-            "id": 15,
-            "name": "EV015_エフェクトをだすところ",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 0,
-                        "characterName": "",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
-                        {
-                            "code": 0,
-                            "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 0,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 0,
-                    "walkAnime": true
-                }
-            ],
-            "x": 7,
-            "y": 5
-        }
+        null
     ]
 }

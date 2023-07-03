@@ -3281,7 +3281,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "Will you proceed?"
+                                "次に進みますか？"
                             ]
                         },
                         {
@@ -3857,7 +3857,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\N[1], who was saved by chance by a passing adventurer party, was\ncarried all the way to the town."
+                                "たまたま通りがかった冒険者のパーティに助けられた"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "\\N[1]はそのまま町まで運んでもらい、"
                             ]
                         },
                         {
@@ -3874,7 +3881,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "I slept for a whole day as if I had fainted."
+                                "気絶したように一日眠り込んだ。"
                             ]
                         },
                         {
@@ -4031,7 +4038,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] Have you noticed?"
+                                "【宿屋のおっさん】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "お気づきになられましたか。"
                             ]
                         },
                         {
@@ -4048,7 +4062,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] Good, please be careful."
+                                "【宿屋のおっさん】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "よかった、気をつけてくださいね。"
                             ]
                         },
                         {
@@ -4216,7 +4237,21 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【Innkeeper】 Welcome back! I've prepared a meal for you!"
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "おう、おかえり！"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "飯用意してあるぞ！"
                             ]
                         },
                         {
@@ -4278,7 +4313,28 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Thank you~ Hmm, even though I'm hungry, I just want to lie\ndown. Maybe I should endure it."
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ありがとう～。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "んー、おなかも減ってるけど、もう横になりたいし、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "我慢しようかな。"
                             ]
                         },
                         {
@@ -4295,7 +4351,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 I'm really tired, as expected."
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "さすがに疲れたわ。"
                             ]
                         },
                         {
@@ -4312,7 +4375,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Ah, just give me some water, please."
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "あ、お水だけちょうだい。"
                             ]
                         },
                         {
@@ -4329,7 +4399,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Innkeeper】 Hold on a sec."
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "おう、ちょっと待ってな。"
                             ]
                         },
                         {
@@ -4399,7 +4476,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Innkeeper】 Here you go, sorry for the wait."
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "はいよ、おまたせ。"
                             ]
                         },
                         {
@@ -4416,7 +4500,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 Thank you."
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ありがとう。"
                             ]
                         },
                         {
@@ -4433,7 +4524,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 *Gulp gulp gulp* ... *sigh*"
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ゴクゴクゴク..."
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "･･･フゥ。"
                             ]
                         },
                         {
@@ -4450,7 +4555,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Monica】 I suddenly feel sleepy. Well then, goodnight~."
+                                "【\\N[2]】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "なんか急に眠くなってきた。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "それじゃあおやすみ～。"
                             ]
                         },
                         {
@@ -4519,7 +4638,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Innkeeper】 Here you go, please take your time."
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "ほいよ、ごゆっくり。"
                             ]
                         },
                         {
@@ -4536,7 +4662,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Innkeeper】 ..."
+                                "【宿屋のおやじ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "･･･"
                             ]
                         },
                         {
@@ -4570,9 +4703,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Go to my room",
-                                    "Ask the customer for their story",
-                                    "Leave the inn"
+                                    "自室へ",
+                                    "客に話を聞く",
+                                    "宿屋を去る"
                                 ],
                                 1,
                                 0,
@@ -4669,7 +4802,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "Thank you very much."
+                                "ありがとうございました。"
                             ]
                         },
                         {

@@ -2346,6 +2346,15 @@
                             "code": 121,
                             "indent": 1,
                             "parameters": [
+                                307,
+                                307,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
                                 129,
                                 129,
                                 1
@@ -2507,11 +2516,11 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Rest",
-                                    "Organize items",
-                                    "View notebook",
-                                    "Review skills",
-                                    "Engage in sexual activity with Monica"
+                                    "やすむ",
+                                    "アイテムの整理",
+                                    "手帳を見る",
+                                    "スキルをみなおす",
+                                    "モニカとえっちする"
                                 ],
                                 5,
                                 0,
@@ -2837,6 +2846,15 @@
                             "code": 121,
                             "indent": 4,
                             "parameters": [
+                                307,
+                                307,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 4,
+                            "parameters": [
                                 129,
                                 129,
                                 1
@@ -3134,7 +3152,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\#■Today is payday! Let's head to the association!"
+                                "\\#■今日はお金の支払日！協会に向かおう！"
                             ]
                         },
                         {
@@ -3193,7 +3211,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\#■I rested well, so I'm fine!"
+                                "\\#■しっかり休んだので大丈夫！"
                             ]
                         },
                         {
@@ -3345,6 +3363,15 @@
                             "code": 412,
                             "indent": 4,
                             "parameters": []
+                        },
+                        {
+                            "code": 121,
+                            "indent": 4,
+                            "parameters": [
+                                121,
+                                121,
+                                1
+                            ]
                         },
                         {
                             "code": 122,
@@ -3534,14 +3561,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:60>"
+                                "PHWarehouse create <アイテムBOX:60>"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse show <Item BOX>"
+                                "PHWarehouse show <アイテムBOX>"
                             ]
                         },
                         {
@@ -3622,9 +3649,9 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "\\N[1]",
-                                    "Monica",
-                                    "Cancel"
+                                    "\\n[1]",
+                                    "モニカ",
+                                    "キャンセル"
                                 ],
                                 2,
                                 0,
@@ -3637,7 +3664,7 @@
                             "indent": 2,
                             "parameters": [
                                 0,
-                                "\\N[1]"
+                                "\\n[1]"
                             ]
                         },
                         {
@@ -3724,7 +3751,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "You're slow Looks like you're still not in the room"
+                                    "遅いな…。まだ部屋にはいないみたいだ。"
                                 ],
                                 0,
                                 0,
@@ -3781,7 +3808,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Let's not push ourselves too hard"
+                                    "無理させるのはやめよう。"
                                 ],
                                 0,
                                 0,
@@ -3838,7 +3865,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "I could tell you were tired, so let's not push ourselves too hard"
+                                    "疲れてそうだったし、無理させるのはやめよう。"
                                 ],
                                 0,
                                 0,
@@ -3897,7 +3924,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "I'm really tired today…"
+                                    "今日はさすがに疲れたな…"
                                 ],
                                 0,
                                 0,
@@ -4074,7 +4101,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "[Monica] Huh? \\N[1], what's wrong?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "ん？\\n[1]、どした？"
                             ]
                         },
                         {
@@ -4107,7 +4141,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "[Monica] Ah..."
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "あ…っ。"
                             ]
                         },
                         {
@@ -4148,7 +4189,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "[Monica] ...Yeah."
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "…うん。"
                             ]
                         },
                         {
@@ -4185,9 +4233,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Open menu",
-                                    "Save",
-                                    "Leave the room"
+                                    "メニューを開く",
+                                    "セーブをする",
+                                    "部屋を出る"
                                 ],
                                 -2,
                                 -1,
@@ -4253,7 +4301,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Let's rest for today"
+                                    "今日はもう休もう。"
                                 ],
                                 0,
                                 0,
@@ -4353,10 +4401,10 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Rest",
-                                    "Organize items",
-                                    "View notebook",
-                                    "Review skills"
+                                    "やすむ",
+                                    "アイテムの整理",
+                                    "手帳を見る",
+                                    "スキルをみなおす"
                                 ],
                                 4,
                                 0,
@@ -4771,7 +4819,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#■Today is payday! Let's head to the association!"
+                                "\\#■今日はお金の支払日！協会に向かおう！"
                             ]
                         },
                         {
@@ -4820,7 +4868,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\#■I rested well, so I'm fine!"
+                                "\\#■しっかり休んだので大丈夫！"
                             ]
                         },
                         {
@@ -4941,6 +4989,15 @@
                             "code": 412,
                             "indent": 4,
                             "parameters": []
+                        },
+                        {
+                            "code": 121,
+                            "indent": 4,
+                            "parameters": [
+                                121,
+                                121,
+                                1
+                            ]
                         },
                         {
                             "code": 122,
@@ -5110,14 +5167,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:60>"
+                                "PHWarehouse create <アイテムBOX:60>"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse show <Item BOX>"
+                                "PHWarehouse show <アイテムBOX>"
                             ]
                         },
                         {
@@ -5311,9 +5368,9 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "\\N[1]",
-                                    "Monica",
-                                    "Cancel"
+                                    "\\n[1]",
+                                    "モニカ",
+                                    "キャンセル"
                                 ],
                                 2,
                                 0,
@@ -5326,7 +5383,7 @@
                             "indent": 2,
                             "parameters": [
                                 0,
-                                "\\N[1]"
+                                "\\n[1]"
                             ]
                         },
                         {
@@ -5401,9 +5458,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Open menu",
-                                    "Save",
-                                    "Leave the room"
+                                    "メニューを開く",
+                                    "セーブをする",
+                                    "部屋をでる"
                                 ],
                                 -2,
                                 -1,
@@ -5467,7 +5524,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "I'll rest for today"
+                                    "（今日はもう休もう）"
                                 ],
                                 0,
                                 0,
@@ -5746,6 +5803,15 @@
                             "code": 121,
                             "indent": 1,
                             "parameters": [
+                                307,
+                                307,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 1,
+                            "parameters": [
                                 129,
                                 129,
                                 1
@@ -5907,11 +5973,11 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Rest",
-                                    "Organize items",
-                                    "View notebook",
-                                    "Review skills",
-                                    "Engage in sexual activity with Monica"
+                                    "やすむ",
+                                    "アイテムの整理",
+                                    "手帳を見る",
+                                    "スキルをみなおす",
+                                    "モニカとえっちする"
                                 ],
                                 5,
                                 0,
@@ -6237,6 +6303,15 @@
                             "code": 121,
                             "indent": 4,
                             "parameters": [
+                                307,
+                                307,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 4,
+                            "parameters": [
                                 129,
                                 129,
                                 1
@@ -6534,7 +6609,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\#■Today is payday! Let's head to the association!"
+                                "\\#■今日はお金の支払日！協会に向かおう！"
                             ]
                         },
                         {
@@ -6593,7 +6668,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\# I rested well, so I'm fine!"
+                                "\\#■しっかり休んだので大丈夫！"
                             ]
                         },
                         {
@@ -6745,6 +6820,15 @@
                             "code": 412,
                             "indent": 4,
                             "parameters": []
+                        },
+                        {
+                            "code": 121,
+                            "indent": 4,
+                            "parameters": [
+                                121,
+                                121,
+                                1
+                            ]
                         },
                         {
                             "code": 122,
@@ -6934,14 +7018,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:60>"
+                                "PHWarehouse create <アイテムBOX:60>"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse show <Item BOX>"
+                                "PHWarehouse show <アイテムBOX>"
                             ]
                         },
                         {
@@ -7022,9 +7106,9 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "\\N[1]",
-                                    "Monica",
-                                    "Cancel"
+                                    "\\n[1]",
+                                    "モニカ",
+                                    "キャンセル"
                                 ],
                                 2,
                                 0,
@@ -7037,7 +7121,7 @@
                             "indent": 2,
                             "parameters": [
                                 0,
-                                "\\N[1]"
+                                "\\n[1]"
                             ]
                         },
                         {
@@ -7124,7 +7208,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "You're slow Looks like you're still not in the room"
+                                    "遅いな…。まだ部屋にはいないみたいだ。"
                                 ],
                                 0,
                                 0,
@@ -7181,7 +7265,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Let's not push ourselves too hard"
+                                    "無理させるのはやめよう。"
                                 ],
                                 0,
                                 0,
@@ -7238,7 +7322,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Let's not push you too hard since you seemed tired"
+                                    "疲れてそうだったし、無理させるのはやめよう。"
                                 ],
                                 0,
                                 0,
@@ -7297,7 +7381,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "I'm really tired today…"
+                                    "今日はさすがに疲れたな…"
                                 ],
                                 0,
                                 0,
@@ -7474,7 +7558,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "[Monica] Huh? \\N[1], what's wrong?"
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "ん？\\n[1]、どした？"
                             ]
                         },
                         {
@@ -7507,7 +7598,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "[Monica] Ah..."
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "あ…っ。"
                             ]
                         },
                         {
@@ -7548,7 +7646,14 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "[Monica] ...Yeah."
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "…うん。"
                             ]
                         },
                         {
@@ -7590,7 +7695,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "View flashback"
+                                    "回想を見る"
                                 ],
                                 -1,
                                 0,
@@ -7635,9 +7740,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Open menu",
-                                    "Save",
-                                    "Leave the room"
+                                    "メニューを開く",
+                                    "セーブをする",
+                                    "部屋を出る"
                                 ],
                                 -2,
                                 -1,
@@ -7703,7 +7808,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Let's rest for today"
+                                    "今日はもう休もう。"
                                 ],
                                 0,
                                 0,
@@ -7803,10 +7908,10 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Rest",
-                                    "Organize items",
-                                    "View notebook",
-                                    "Review skills"
+                                    "やすむ",
+                                    "アイテムの整理",
+                                    "手帳を見る",
+                                    "スキルをみなおす"
                                 ],
                                 4,
                                 0,
@@ -8221,7 +8326,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\#■Today is payday! Let's head to the association!"
+                                "\\#■今日はお金の支払日！協会に向かおう！"
                             ]
                         },
                         {
@@ -8270,7 +8375,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\# I rested well, so I'm fine!"
+                                "\\#■しっかり休んだので大丈夫！"
                             ]
                         },
                         {
@@ -8391,6 +8496,15 @@
                             "code": 412,
                             "indent": 4,
                             "parameters": []
+                        },
+                        {
+                            "code": 121,
+                            "indent": 4,
+                            "parameters": [
+                                121,
+                                121,
+                                1
+                            ]
                         },
                         {
                             "code": 122,
@@ -8560,14 +8674,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:60>"
+                                "PHWarehouse create <アイテムBOX:60>"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse show <Item BOX>"
+                                "PHWarehouse show <アイテムBOX>"
                             ]
                         },
                         {
@@ -8761,9 +8875,9 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "\\N[1]",
-                                    "Monica",
-                                    "Cancel"
+                                    "\\n[1]",
+                                    "モニカ",
+                                    "キャンセル"
                                 ],
                                 2,
                                 0,
@@ -8776,7 +8890,7 @@
                             "indent": 2,
                             "parameters": [
                                 0,
-                                "\\N[1]"
+                                "\\n[1]"
                             ]
                         },
                         {
@@ -8851,7 +8965,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "View flashback"
+                                    "回想を見る"
                                 ],
                                 -1,
                                 0,
@@ -8894,9 +9008,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Open menu",
-                                    "Save",
-                                    "Leave the room"
+                                    "メニューを開く",
+                                    "セーブをする",
+                                    "部屋をでる"
                                 ],
                                 -2,
                                 -1,
@@ -8960,7 +9074,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "Let's rest for today"
+                                    "（今日はもう休もう）"
                                 ],
                                 0,
                                 0,
@@ -9505,14 +9619,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT 支払い金額: \\C[18]30000\\C[0]G 20"
                             ]
                         },
                         {
@@ -9563,14 +9677,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]50000\\C[0]G 20"
                             ]
                         },
                         {
@@ -9631,14 +9745,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]70000\\C[0]G 20"
                             ]
                         },
                         {
@@ -10193,7 +10307,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {
@@ -10226,7 +10340,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {

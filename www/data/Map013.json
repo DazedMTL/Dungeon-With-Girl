@@ -2327,10 +2327,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Rest",
-                                    "Organize items",
-                                    "View notebook",
-                                    "Review skills"
+                                    "やすむ",
+                                    "アイテムの整理",
+                                    "手帳を見る",
+                                    "スキルをみなおす"
                                 ],
                                 4,
                                 0,
@@ -2418,7 +2418,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\# Today is payday! Let's head to the association!"
+                                "\\#今日はお金の支払日！協会に向かおう！"
                             ]
                         },
                         {
@@ -2486,7 +2486,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\# I rested well, so I'm fine!"
+                                "\\#しっかり休んだので大丈夫！"
                             ]
                         },
                         {
@@ -2513,7 +2513,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "I will spend the day doing nothing and it will pass. Will you take a\nbreak?"
+                                "なにもせず1日経ってしまいます。休みますか？"
                             ]
                         },
                         {
@@ -2521,8 +2521,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -2817,14 +2817,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:60>"
+                                "PHWarehouse create <アイテムBOX:60>"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse show <Item BOX>"
+                                "PHWarehouse show <アイテムBOX>"
                             ]
                         },
                         {
@@ -2905,9 +2905,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "\\N[1]",
-                                    "Monica",
-                                    "Cancel"
+                                    "\\n[1]",
+                                    "モニカ",
+                                    "キャンセル"
                                 ],
                                 2,
                                 0,
@@ -2920,7 +2920,7 @@
                             "indent": 1,
                             "parameters": [
                                 0,
-                                "\\N[1]"
+                                "\\n[1]"
                             ]
                         },
                         {
@@ -2995,9 +2995,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Open menu",
-                                    "Save",
-                                    "Leave the room"
+                                    "メニューを開く",
+                                    "セーブをする",
+                                    "部屋をでる"
                                 ],
                                 -1,
                                 -1,
@@ -3291,10 +3291,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Rest",
-                                    "Organize items",
-                                    "View notebook",
-                                    "Review skills"
+                                    "やすむ",
+                                    "アイテムの整理",
+                                    "手帳を見る",
+                                    "スキルをみなおす"
                                 ],
                                 4,
                                 0,
@@ -3382,7 +3382,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\# Today is payday! Let's head to the association!"
+                                "\\#今日はお金の支払日！協会に向かおう！"
                             ]
                         },
                         {
@@ -3450,7 +3450,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "\\# I rested well, so I'm fine!"
+                                "\\#しっかり休んだので大丈夫！"
                             ]
                         },
                         {
@@ -3477,7 +3477,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "I will spend the day doing nothing and it will pass. Will you take a\nbreak?"
+                                "なにもせず1日経ってしまいます。休みますか？"
                             ]
                         },
                         {
@@ -3485,8 +3485,8 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -3781,14 +3781,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:60>"
+                                "PHWarehouse create <アイテムBOX:60>"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse show <Item BOX>"
+                                "PHWarehouse show <アイテムBOX>"
                             ]
                         },
                         {
@@ -3869,9 +3869,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "\\N[1]",
-                                    "Monica",
-                                    "Cancel"
+                                    "\\n[1]",
+                                    "モニカ",
+                                    "キャンセル"
                                 ],
                                 2,
                                 0,
@@ -3884,7 +3884,7 @@
                             "indent": 1,
                             "parameters": [
                                 0,
-                                "\\N[1]"
+                                "\\n[1]"
                             ]
                         },
                         {
@@ -3959,7 +3959,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "View flashback"
+                                    "回想を見る"
                                 ],
                                 -1,
                                 0,
@@ -4002,9 +4002,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Open menu",
-                                    "Save",
-                                    "Leave the room"
+                                    "メニューを開く",
+                                    "セーブをする",
+                                    "部屋をでる"
                                 ],
                                 2,
                                 -1,
@@ -4211,7 +4211,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {
@@ -4244,7 +4244,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 50"
+                                "D_TEXT \\v[16]日目 50"
                             ]
                         },
                         {
@@ -4670,14 +4670,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT 支払い金額: \\C[18]30000\\C[0]G 20"
                             ]
                         },
                         {
@@ -4728,14 +4728,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]50000\\C[0]G 20"
                             ]
                         },
                         {
@@ -4796,14 +4796,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]70000\\C[0]G 20"
                             ]
                         },
                         {

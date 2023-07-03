@@ -2245,7 +2245,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\#■ In the training grounds, you can purchase skills that are useful\nin dungeons. The skills you purchase can be acquired by using them."
+                                "\\#■訓練場ではダンジョンで役立つスキルを購入することが出来ます。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "購入したスキルは使用することで習得ができます。"
                             ]
                         },
                         {
@@ -2278,7 +2285,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "However, there is a limit to the skills that can be taken into the\ndungeon, and you can equip or unequip learned skills from your\n\\c[18]room in the inn\\c[0] or the \\c[18]skill icon\\c[0] on the main\nscreen."
+                                "ただし、ダンジョン内に持っていけるスキルには限りがあり、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "覚えたスキルの着脱は\\c[18]宿の自室\\c[0]またはメイン画面の\\c[18]スキルアイコン\\c[0]から"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "行うことができます。"
                             ]
                         },
                         {
@@ -2311,7 +2332,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "The number of skill sets is limited to a maximum of three. Skills have\na set amount of required points (CP)."
+                                "スキルのセット数は最大で３つまで。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "スキルには必要ポイント（CP）が設定されています。"
                             ]
                         },
                         {
@@ -2328,7 +2356,21 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "The maximum value of CP is 5. Taking Lightning Slash as an example, it\nrequires 3 CP. So, if you set Lightning Slash, you will have 2\nremaining CP available for use."
+                                "CPの最大値は５です。「いなずま斬り」を例にすると、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "「いなずま斬り」のCPは３必要なのでこれをセットする場合、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "使用できる残りCPは２ということになります。"
                             ]
                         },
                         {
@@ -2405,7 +2447,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【Instructor】 Welcome! You're an interesting one who has come!"
+                                "【教官】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "よく来たな！見どころのあるやつだ！"
                             ]
                         },
                         {
@@ -2429,7 +2478,21 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【Instructor】 If even pigs like you can survive my training, each of\nyou will become a weapon!"
+                                "【教官】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "お前らのような豚でもおれの訓練に生き残れたら、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "各人が兵器となる！"
                             ]
                         },
                         {
@@ -2547,7 +2610,14 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【Instructor】 You can still keep going right?!"
+                                "【教官】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 0,
+                            "parameters": [
+                                "まだまだ鍛えたりないんじゃないか？！"
                             ]
                         },
                         {
@@ -2562,8 +2632,8 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Yes",
-                                    "No"
+                                    "はい",
+                                    "いいえ"
                                 ],
                                 1,
                                 0,
@@ -2613,7 +2683,14 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Instructor】 Don't neglect your daily training!!"
+                                "【教官】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 1,
+                            "parameters": [
+                                "日々の鍛錬を怠るんじゃあないぞ！！"
                             ]
                         },
                         {
@@ -2864,14 +2941,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT 支払い金額: \\C[18]30000\\C[0]G 20"
                             ]
                         },
                         {
@@ -2922,14 +2999,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]50000\\C[0]G 20"
                             ]
                         },
                         {
@@ -2990,14 +3067,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT 次の支払いまで\\C[18]\\v[97]\\C[0]日 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT 支払い金額\\C[18]70000\\C[0]G 20"
                             ]
                         },
                         {
@@ -3144,7 +3221,7 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT Day\\v[16] 32"
+                                "D_TEXT \\v[16]日目 32"
                             ]
                         },
                         {
