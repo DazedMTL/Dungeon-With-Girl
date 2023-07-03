@@ -3933,21 +3933,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【\\N[2]】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "つかれた～～･･･。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "もう動けないよ。早く宿に戻って休もう。"
+                                "\\N[2] I'm tired~... I can't move anymore. Let's quickly go back to the\ninn and rest."
                             ]
                         },
                         {
@@ -4019,7 +4005,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "どこにいこう？"
+                                "Where should we go?"
                             ]
                         },
                         {

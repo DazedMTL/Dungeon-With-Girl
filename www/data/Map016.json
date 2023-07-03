@@ -2835,14 +2835,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "ひと通り周辺の探索を終え、そろそろ引き返そうと思い、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "顔をあげたとき正面に淡く光る何かを見つけた。"
+                                "After finishing exploring the surroundings, I looked up and found\nsomething faintly shining in front of me, so I thought it was time to\nturn back."
                             ]
                         },
                         {
@@ -2884,7 +2877,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "これはなんだろう"
+                                    "What could this be?"
                                 ],
                                 0,
                                 0,
@@ -2931,7 +2924,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "緑のオーブを手に取り、少し考えてみる―――"
+                                "Taking the green orb in hand, I pondered for a moment---"
                             ]
                         },
                         {
@@ -2948,28 +2941,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "―――っは！？"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "もしやこれを取ると天井がおちてくる？！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "咄嗟にそのようなことが頭をよぎり、あたりの様子を"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "キョロキョロと伺う。"
+                                "---Huh?! Could it be that if I take this, the ceiling will come crashing\ndown?! In an instant, such thoughts crossed my mind, and I looked\naround nervously."
                             ]
                         },
                         {
@@ -2986,21 +2958,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "しかし、特に変化があるようには見えない。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "これは一体なんだろうか、とりあえず\\n[1]はオーブを"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "持ち帰ることにした。"
+                                "However, there doesn't seem to be any particular change. What could\nthis possibly be? For now, I decided to take the orb \\n[1] back with\nme."
                             ]
                         },
                         {
@@ -3039,7 +2997,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■グリーンオーブを手に入れた。"
+                                "■I obtained the green orb."
                             ]
                         },
                         {

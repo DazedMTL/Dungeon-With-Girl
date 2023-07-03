@@ -4104,12 +4104,12 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "いっぱしの冒険者",
-                                    "元冒険者",
-                                    "熟練冒険者",
-                                    "困っている女冒険者",
-                                    "なにか知ってそうな客",
-                                    "フロントに戻る"
+                                    "Experienced Adventurer",
+                                    "Former Adventurer",
+                                    "Experienced Adventurer",
+                                    "Troubled Female Adventurer",
+                                    "A customer who seems to know something",
+                                    "Return to the front desk"
                                 ],
                                 5,
                                 0,
@@ -4173,21 +4173,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【いっぱしの冒険者A】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "魔法ってしってるだろ？"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ダンジョン攻略においてまぁ重要だよな。"
+                                "【Impressive Adventurer A】 You know about magic, right? Well, it's\npretty important for dungeon exploration."
                             ]
                         },
                         {
@@ -4204,21 +4190,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【いっぱしの冒険者A】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "あれは才能なんだよな。魔法を使うためのエネルギー、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "MPは生まれつき総量が決まってるらしいぜ。"
+                                "【Impressive Adventurer A】 That's talent, you know. The energy, MP,\nneeded to use magic seems to be determined by the total amount you're\nborn with."
                             ]
                         },
                         {
@@ -4235,21 +4207,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【いっぱしの冒険者A】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "つまり、MPがないやつに魔法は使えないし、一生使うことも"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "できないんだとよ。"
+                                "【Impressive Adventurer A】 In other words, those who don't have MP\ncan't use magic and can never use it in their lifetime."
                             ]
                         },
                         {
@@ -4266,28 +4224,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【いっぱしの冒険者A】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "何か外的な要因でMPを得られることもあるらしいが…"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "俺にはその才能も運もなかったらしい。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "酷な話だぜ。"
+                                "【Impressive Adventurer A】 It seems that there are some external\nfactors that can grant MP, but... I apparently don't have that talent\nor luck. It's a harsh story."
                             ]
                         },
                         {
@@ -4383,28 +4320,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【元冒険者の客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "よう、冒険者なんだってな。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "俺も昔は冒険者だったんが引退したんだよ。別に護る”モノ”"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ができちまってな。へへ"
+                                "【Former Adventurer Customer】 Hey, I heard you're an adventurer. I used\nto be one too, but I retired. I found something else to protect, you\nknow. Hehe."
                             ]
                         },
                         {
@@ -4421,21 +4337,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【元冒険者の客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "死ぬわけにはいかなくなった俺からアドバイスをひとつ。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ダンジョン内では基本魔物から逃げられない。"
+                                "【Former Adventurer Customer】 I can't afford to die anymore, so here's\na piece of advice. You can't escape from basic monsters inside the\ndungeon."
                             ]
                         },
                         {
@@ -4452,21 +4354,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【元冒険者の客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "そら、内部は見通しも悪けりゃ構造も複雑だからな。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "闇雲に走り回ったところで、先回りされるのがオチってわけ。"
+                                "【Former Adventurer Customer】 Well, the interior is not only difficult\nto see through but also has a complex structure. Even if you run\naround blindly, you'll just end up being outmaneuvered."
                             ]
                         },
                         {
@@ -4483,28 +4371,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【元冒険者の客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ただ\\c[18]ケムリ玉\\c[0]があれば話は別だ。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "煙のおかげで相手もこちらを見失うからな。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "その隙に逃げられる。"
+                                "【Former Adventurer Customer】 It's a different story if you have\n\\c[18]Smoke Balls\\c[0]. Thanks to the smoke, the opponent also loses\nsight of you. In that gap, you can escape."
                             ]
                         },
                         {
@@ -4521,14 +4388,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【元冒険者の客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ダンジョンに入るときは必ずもっておけよ？"
+                                "【Former Adventurer Customer】 Make sure to always have it when entering\nthe dungeon, okay?"
                             ]
                         },
                         {
@@ -4624,14 +4484,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【熟練冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "武器には特徴があってな、使いやすいものを使うといいぞ。"
+                                "【Experienced Adventurer】 Weapons have their own characteristics, you\nknow. It's best to use something that is easy to use."
                             ]
                         },
                         {
@@ -4648,21 +4501,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【熟練冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "まずは剣。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "剣の特徴は、\\C[18]受け流してそのまま反撃\\C[0]できることだな。"
+                                "【Experienced Adventurer】 First, let's talk about swords. The\ncharacteristic of a sword is that you can \\C[18]parry and\ncounterattack\\C[0] directly."
                             ]
                         },
                         {
@@ -4679,14 +4518,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【熟練冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "相手が複数だったりすると、これが地味に活きてくるんだわ。"
+                                "【Experienced Adventurer】 This becomes quietly effective when there are\nmultiple opponents."
                             ]
                         },
                         {
@@ -4703,21 +4535,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【熟練冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "次に、メイス。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "メイスの特徴は、\\C[18]相手をたまに気絶させる\\C[0]ことだな。"
+                                "【Experienced Adventurer】 Next, let's talk about maces. The\ncharacteristic of a mace is that it occasionally \\C[18]stuns\\C[0] the\nopponent."
                             ]
                         },
                         {
@@ -4734,28 +4552,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【熟練冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "気絶させた相手なら、どんなに強敵でもたこ殴りにできるぞ。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ただ、気絶しないモンスターもいるから注意だぞ。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "スライムなんかはその筆頭だな。"
+                                "【Experienced Adventurer】 If you stun the opponent, you can beat even\nthe strongest enemy with ease. However, be careful because there are\nmonsters that don't get stunned. Slimes are a prime example."
                             ]
                         },
                         {
@@ -4772,28 +4569,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【熟練冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "最後にダガー。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ダガーの特徴は\\C[18]出血によるダメージを相手に与える"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\C[0]ことだな。"
+                                "【Experienced Adventurer】 Lastly, let's talk about daggers. The\ncharacteristic of a dagger is \\C[18]inflicting damage on the opponent\nthrough bleeding \\C[0]."
                             ]
                         },
                         {
@@ -4810,28 +4586,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【熟練冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ダガー自体の攻撃力は低いんだが、毒や燃焼効果がのるダガー"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "なんかもたまに見つかるから、見つけたら試しにつかって"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "みてくれ。"
+                                "【Experienced Adventurer】 The attack power of a dagger itself is low,\nbut sometimes you can find daggers that have poison or burning\neffects. So if you find one, try using it."
                             ]
                         },
                         {
@@ -4848,21 +4603,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【熟練冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "見た目以上の威力があるはずだぞ。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ただ、盾が装備できなくなるから、みのまもりには注意してな。"
+                                "【Experienced Adventurer】 It should have more power than it looks.\nHowever, be careful about defense because you won't be able to equip a\nshield."
                             ]
                         },
                         {
@@ -4879,28 +4620,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【熟練冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "そんなところかな。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "まぁ武器の特徴を理解して、適切な武器を選ぶことが"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ダンジョン攻略の鍵だな。頑張ってな！"
+                                "【Experienced Adventurer】 That's about it. Well, understanding the\ncharacteristics of weapons and choosing the right one is the key to\nconquering dungeons. Good luck!"
                             ]
                         },
                         {
@@ -4996,14 +4716,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【女冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "最近よく下着がなくなるのよね。"
+                                "【Female Adventurer】 Lately, my underwear keeps disappearing."
                             ]
                         },
                         {
@@ -5020,14 +4733,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【女冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "誰か、部屋に入ってるのかしら…"
+                                "【Female Adventurer】 I wonder if someone is entering my room..."
                             ]
                         },
                         {
@@ -5044,14 +4750,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【女冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "あなた達も気を付けたほうが良いわ"
+                                "【Female Adventurer】 You should also be careful."
                             ]
                         },
                         {
@@ -5068,14 +4767,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【女冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "\\c[18]疲れているとき\\c[0]なんかは特にね"
+                                "【Female Adventurer】 \\c[18]When you're tired, \\c[0]it's especially\nnoticeable."
                             ]
                         },
                         {
@@ -5101,14 +4793,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【女冒険者】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "この間いくつか買ったものがあまっているから、これあげる"
+                                "【Female Adventurer】 I have some things left over from the other day,\nso I'll give you this."
                             ]
                         },
                         {
@@ -5147,7 +4832,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "■\\item[35]を6つ手に入れた"
+                                "■I obtained 6 \\item[35]."
                             ]
                         },
                         {
@@ -5164,14 +4849,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "ありがとう！"
+                                "【Monica】 Thank you!"
                             ]
                         },
                         {
@@ -5277,14 +4955,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "おや、あんたら駆け出しだね？"
+                                "【Customer who seems to know something】 Oh, you guys are beginners,\nhuh?"
                             ]
                         },
                         {
@@ -5299,7 +4970,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "ええ"
+                                    "Yes"
                                 ],
                                 0,
                                 0,
@@ -5339,14 +5010,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "それじゃ一つ忠告をしておこうかね。"
+                                "【Customer who seems to know something】 Well then, let me give you one\npiece of advice."
                             ]
                         },
                         {
@@ -5363,14 +5027,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "…\\c[18]ケガレ\\c[0]には気をつけなさい。"
+                                "【Customer who seems to know something】 ...\\c[18]Be careful of\n\\c[0]impurities."
                             ]
                         },
                         {
@@ -5387,21 +5044,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "ダンジョンを進むと\\c[18]ケガレ\\c[0]が身体を蝕んでいくのさ。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "あー、ケガレといっても汚れるわけじゃないよ。"
+                                "【Customer who seems to know something】 As you progress through the\ndungeon, \\c[18]impurities\\c[0] will corrode your body. Ah, when I say\nimpurities, it doesn't mean getting dirty."
                             ]
                         },
                         {
@@ -5418,21 +5061,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "\\c[18]ケガレ\\c[0]とはダンジョン内を漂う残留思念。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "何せ欲望にまみれたところだからね。"
+                                "【Customer who seems to know something】 \\c[18]Impurities\\c[0] are\nresidual thoughts that drift within the dungeon. After all, it's a\nplace tainted by desires."
                             ]
                         },
                         {
@@ -5449,21 +5078,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "目的を果たせず散っていった冒険者の想いが"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "遠いはるか昔から今にいたるまで漂っているのさ。"
+                                "【Customer who seems to know something】 The feelings of adventurers who\ncouldn't fulfill their goals have been drifting from a distant past to\nthe present."
                             ]
                         },
                         {
@@ -5480,28 +5095,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "やっかいなのはここからさね。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "そうした残留思念は冒険者の欲望にまとわりつき、"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "欲望を肥大化させていく。"
+                                "【Customer who seems to know something】 The troublesome thing is from\nhere on. Such residual thoughts cling to the desires of adventurers\nand amplify those desires."
                             ]
                         },
                         {
@@ -5518,21 +5112,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "そうして肥大化した欲望はダンジョンの悪魔を呼び寄せて"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "しまうのさ。"
+                                "【Customer who seems to know something】 And those amplified desires\nattract demons to the dungeon."
                             ]
                         },
                         {
@@ -5547,7 +5127,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "悪魔？"
+                                    "Demons?"
                                 ],
                                 0,
                                 0,
@@ -5587,21 +5167,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "そう、悪魔。悪魔の正体はケガレが集まり具現化したモノ"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "なんて言われていたりするが、詳しいところはわかっていない。"
+                                "【Customer who seems to know something】 Yes, demons. It is said that\ndemons are manifestations of impurities that have gathered, but the\ndetails are not well understood."
                             ]
                         },
                         {
@@ -5618,14 +5184,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "出会った人間が再び姿をみせることはまぁほぼないからね。"
+                                "【Customer who seems to know something】 It's pretty rare for someone\nyou've met to show up again."
                             ]
                         },
                         {
@@ -5642,21 +5201,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "命からがら助かったものは、みんな廃人のようになっちまって"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "うわ言のように「ダンジョンの悪魔」とつぶやくのさ。"
+                                "【Customer who seems to know something】 Those who barely survived are\nall like invalids, muttering dungeon demons like gibberish."
                             ]
                         },
                         {
@@ -5709,14 +5254,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "おや、あんた…”廻って”きたね？"
+                                "【Customer who seems to know something】 Oh, you... You've come around,\nhuh?"
                             ]
                         },
                         {
@@ -5733,21 +5271,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "驚いた顔をしているね…"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "なんでって？目をみればわかるさ…"
+                                "【Customer who seems to know something】 You have a surprised look...\nWhy? If you look into my eyes, you'll understand..."
                             ]
                         },
                         {
@@ -5764,21 +5288,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "”廻って”いる人間の目には星がはいり、人々を魅了する。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "でも良いことばかりじゃないぞ。"
+                                "【Customer who seems to know something】 Stars enter the eyes of those\nwho are spinning around and enchant people. But it's not all good."
                             ]
                         },
                         {
@@ -5795,21 +5305,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "何が現実なのかわからなくなり、記憶は欠落していく。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "とうとう自分さえも見失い、そして最後は廃人さね。"
+                                "【Customer who seems to know something】 I don't know what is real\nanymore, my memories are fading away. Finally, even I lose sight of\nmyself, and in the end, become a mere invalid."
                             ]
                         },
                         {
@@ -5826,14 +5322,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "？？？"
+                                "【Monica】 ???"
                             ]
                         },
                         {
@@ -5850,14 +5339,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "どうする？欠落した記憶を取り戻すかい？"
+                                "【Customer who seems to know something】 What will you do? Do you want\nto recover your lost memories?"
                             ]
                         },
                         {
@@ -5886,7 +5368,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "回想の全開放をしますか？"
+                                "Do you want to fully unlock your memories of the past?"
                             ]
                         },
                         {
@@ -5901,8 +5383,8 @@
                             "indent": 4,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "いいえ"
+                                    "Yes",
+                                    "No"
                                 ],
                                 1,
                                 0,
@@ -5932,14 +5414,7 @@
                             "code": 401,
                             "indent": 5,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 5,
-                            "parameters": [
-                                "それじゃ目を瞑りな。"
+                                "【Customer who seems to know something】 Then close your eyes."
                             ]
                         },
                         {
@@ -5982,14 +5457,7 @@
                             "code": 401,
                             "indent": 5,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 5,
-                            "parameters": [
-                                "ほれ、これで大丈夫だろう。"
+                                "【Customer who seems to know something】 Here, this should be enough."
                             ]
                         },
                         {
@@ -6039,7 +5507,7 @@
                             "code": 401,
                             "indent": 5,
                             "parameters": [
-                                "回想が全て見れるようになりました！"
+                                "I can now see all the flashbacks!"
                             ]
                         },
                         {
@@ -6056,14 +5524,7 @@
                             "code": 401,
                             "indent": 5,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 5,
-                            "parameters": [
-                                "気をつけてな。"
+                                "【Customer who seems to know something】 Be careful."
                             ]
                         },
                         {
@@ -6121,14 +5582,7 @@
                             "code": 401,
                             "indent": 5,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 5,
-                            "parameters": [
-                                "そうかい？まぁいつでもきな。"
+                                "【Customer who seems to know something】 Is that so? Well, come anytime."
                             ]
                         },
                         {
@@ -6212,7 +5666,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "\\n[1]たちはこれまでのことを話した。"
+                                "We talked about what happened before."
                             ]
                         },
                         {
@@ -6262,21 +5716,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "ん～、昔それについて聞いたことがあるような…"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "気もするんだがねぇ…"
+                                "【Customer who seems to know something】 Hmm, I feel like I've heard\nabout that before... but I'm not sure..."
                             ]
                         },
                         {
@@ -6293,14 +5733,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "悪いけど思い出せないね。"
+                                "【Customer who seems to know something】 Sorry, but I can't remember."
                             ]
                         },
                         {
@@ -6317,28 +5750,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "…あー、ダンジョン内でいくつかある石碑をみたことあるかい？"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "あの石碑のまわりで\\c[18]太古の戦士\\c[0]の幽霊をみたという話が"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "絶えないよ。"
+                                "【Customer who seems to know something】 ...Ah, have you ever seen some\nof the monuments inside the dungeon? There's a story that \\c[18]around\nthose monuments, the ghosts of ancient warriors \\c[0]can be seen."
                             ]
                         },
                         {
@@ -6355,21 +5767,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "呼び出すことができたら、もしかしたら何か聞けるかもしれないねぇ。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "あたしにわかるのはそれくらいだよ。"
+                                "【Customer who seems to know something】 If you can summon me, maybe I\ncan tell you something. That's all I know."
                             ]
                         },
                         {
@@ -6386,28 +5784,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "石碑、太古の戦士の幽霊…かぁ。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "石碑は、たしか\\c[18]１６階層\\c[0]と\\c[18]２６階層\\c[0]で見たね！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "\\c[18]花\\c[0]を持って行ってみよっか。"
+                                "【Monica】Monuments, ghosts of ancient warriors...hmm. I remember seeing\nthe monuments on the 16th and 26th floors! Shall we try taking some\nflowers with us?"
                             ]
                         },
                         {
@@ -6440,14 +5817,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "おばさん、ありがとう！"
+                                "【Monica】 Thank you, Auntie!"
                             ]
                         },
                         {
@@ -6497,14 +5867,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "おや、あんたら。"
+                                "【Customer who seems to know something】 Oh, you guys."
                             ]
                         },
                         {
@@ -6521,14 +5884,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 4,
-                            "parameters": [
-                                "仲良くやってるかい？"
+                                "【Customer who seems to know something】 Are you getting along well?"
                             ]
                         },
                         {
@@ -6572,14 +5928,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "おや、あんたら。"
+                                "【Customer who seems to know something】 Oh, you guys."
                             ]
                         },
                         {
@@ -6596,14 +5945,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "【何か知ってそうな客】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 3,
-                            "parameters": [
-                                "仲良くやってるかい？"
+                                "【Customer who seems to know something】 Are you getting along well?"
                             ]
                         },
                         {
