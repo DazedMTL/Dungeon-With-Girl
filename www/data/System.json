@@ -105,7 +105,7 @@
         "pitch": 100,
         "volume": 60
     },
-    "editMapId": 11,
+    "editMapId": 16,
     "elements": [
         "",
         "物理",
@@ -129,7 +129,7 @@
         "装飾品[指輪]",
         "装飾品[靴]"
     ],
-    "gameTitle": "ダンジョンウィズガール",
+    "gameTitle": "ダンジョンウィズガール ver.1.0.2",
     "gameoverMe": {
         "name": "Gameover1",
         "pan": 0,
@@ -504,7 +504,7 @@
         "ダンジョンクリア（化粧箱入手後）",
         "ギルドのおっさんとセックス2回目",
         "いいえを押した",
-        "",
+        "全開放",
         "",
         "",
         "回想から来た",
@@ -634,7 +634,7 @@
         "HP残量10-0",
         "表示消す",
         "ノーマルエンド",
-        "",
+        "夜這い演出走り始め",
         "",
         "",
         "",
@@ -1554,7 +1554,7 @@
         "\\n[1]のかしこさ",
         "モニカのかしこさ"
     ],
-    "versionId": 45985290,
+    "versionId": 1525925,
     "victoryMe": {
         "name": "jingle2",
         "pan": 0,
@@ -1584,5 +1584,5 @@
     ],
     "hasEncryptedImages": true,
     "hasEncryptedAudio": true,
-    "encryptionKey": "dc55b821e770d4ed1abdb7f40313e520"
+    "encryptionKey": "d0a6292e70afadc704f8d41ebd798209"
 }

@@ -2299,7 +2299,7 @@
         "note": "",
         "overlay": 0,
         "priority": 50,
-        "removeAtBattleEnd": false,
+        "removeAtBattleEnd": true,
         "removeByDamage": false,
         "removeByRestriction": false,
         "removeByWalking": false,
