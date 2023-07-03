@@ -4923,7 +4923,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "\\# About the Save"
+                                "\\# About Saving"
                             ]
                         },
                         {
@@ -4956,7 +4956,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "# About the Save The save can be done in your room at the inn or by\nfinding the Goddess Statue inside the dungeon."
+                                "# The save can be done in your room at the inn or by\nfinding the Goddess Statue inside the dungeon."
                             ]
                         },
                         {

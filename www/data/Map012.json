@@ -2550,9 +2550,9 @@
                             "parameters": [
                                 [
                                     "Rest",
-                                    "Organizing items",
-                                    "Check the notebook",
-                                    "Rethink my skills"
+                                    "Organize items",
+                                    "View Notebook",
+                                    "Review Skills"
                                 ],
                                 -2,
                                 0,
@@ -3228,9 +3228,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Open the menu",
-                                    "Let's save",
-                                    "Leave the room"
+                                    "Open Menu",
+                                    "Save",
+                                    "Leave Room"
                                 ],
                                 2,
                                 -1,
@@ -3747,9 +3747,9 @@
                             "parameters": [
                                 [
                                     "Rest",
-                                    "Organizing items",
-                                    "Check the notebook",
-                                    "Rethink my skills"
+                                    "Organize items",
+                                    "View Notebook",
+                                    "Review Skills"
                                 ],
                                 -2,
                                 0,
@@ -4420,7 +4420,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Let's watch a flashback"
+                                    "View Memories"
                                 ],
                                 -1,
                                 0,
@@ -4463,9 +4463,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Open the menu",
-                                    "Let's save",
-                                    "Leave the room"
+                                    "Open Menu",
+                                    "Save",
+                                    "Leave Room"
                                 ],
                                 2,
                                 -1,
