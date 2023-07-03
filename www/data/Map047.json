@@ -2723,6 +2723,13 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
+                                "PA_STOP 66"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
                                 "showLogWindow"
                             ]
                         },
@@ -2787,6 +2794,13 @@
                             "indent": 2,
                             "parameters": [
                                 65
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                66
                             ]
                         },
                         {
@@ -2933,6 +2947,13 @@
                             ]
                         },
                         {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 66"
+                            ]
+                        },
+                        {
                             "code": 235,
                             "indent": 2,
                             "parameters": [
@@ -2958,6 +2979,13 @@
                             "indent": 2,
                             "parameters": [
                                 65
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                66
                             ]
                         },
                         {
@@ -3331,6 +3359,34 @@
                             ]
                         },
                         {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 65"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 66"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                65
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                66
+                            ]
+                        },
+                        {
                             "code": 235,
                             "indent": 2,
                             "parameters": [
@@ -3469,6 +3525,13 @@
                             "code": 235,
                             "indent": 3,
                             "parameters": [
+                                66
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 3,
+                            "parameters": [
                                 70
                             ]
                         },
@@ -3596,6 +3659,13 @@
                             "indent": 3,
                             "parameters": [
                                 65
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 3,
+                            "parameters": [
+                                66
                             ]
                         },
                         {

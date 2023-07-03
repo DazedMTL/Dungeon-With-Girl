@@ -3842,10 +3842,17 @@
                             ]
                         },
                         {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
                             "code": 231,
                             "indent": 1,
                             "parameters": [
-                                60,
+                                50,
                                 "mhcg_kiss_ittaatokao",
                                 0,
                                 0,
@@ -6380,10 +6387,17 @@
                             ]
                         },
                         {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
                             "code": 231,
                             "indent": 1,
                             "parameters": [
-                                60,
+                                50,
                                 "mhcg_kiss_ittaatokao",
                                 0,
                                 0,
@@ -8792,10 +8806,17 @@
                             ]
                         },
                         {
+                            "code": 235,
+                            "indent": 1,
+                            "parameters": [
+                                60
+                            ]
+                        },
+                        {
                             "code": 231,
                             "indent": 1,
                             "parameters": [
-                                60,
+                                50,
                                 "mhcg_kiss_ittaatokao",
                                 0,
                                 0,

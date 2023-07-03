@@ -2623,7 +2623,7 @@
                                 0,
                                 2,
                                 0,
-                                2
+                                1
                             ]
                         },
                         {
@@ -2806,147 +2806,295 @@
                             ]
                         },
                         {
-                            "code": 117,
-                            "indent": 2,
-                            "parameters": [
-                                177
-                            ]
-                        },
-                        {
-                            "code": 201,
+                            "code": 111,
                             "indent": 2,
                             "parameters": [
                                 0,
-                                5,
-                                12,
+                                238,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 230,
+                            "indent": 3,
+                            "parameters": [
+                                1
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
                                 0,
                                 0,
                                 2
                             ]
                         },
                         {
-                            "code": 115,
-                            "indent": 2,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 2,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 1,
-                            "parameters": []
-                        },
-                        {
-                            "code": 111,
-                            "indent": 1,
+                            "code": 401,
+                            "indent": 3,
                             "parameters": [
-                                1,
-                                17,
-                                0,
-                                2,
-                                0
+                                "ひと通り周辺の探索を終え、そろそろ引き返そうと思い、"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "顔をあげたとき正面に淡く光る何かを見つけた。"
                             ]
                         },
                         {
                             "code": 231,
-                            "indent": 2,
+                            "indent": 3,
                             "parameters": [
-                                12,
-                                "chara_1_1",
+                                80,
+                                "orb-midori",
                                 0,
                                 0,
-                                500,
-                                80,
-                                80,
-                                80,
+                                1500,
+                                158,
+                                100,
+                                100,
                                 0,
                                 0
                             ]
                         },
                         {
                             "code": 232,
-                            "indent": 2,
+                            "indent": 3,
                             "parameters": [
-                                12,
+                                80,
                                 0,
                                 0,
                                 0,
-                                500,
-                                80,
-                                80,
-                                80,
+                                250,
+                                158,
+                                100,
+                                100,
                                 255,
                                 0,
-                                60,
+                                30,
                                 true
                             ]
                         },
                         {
-                            "code": 101,
-                            "indent": 2,
+                            "code": 102,
+                            "indent": 3,
                             "parameters": [
-                                "",
+                                [
+                                    "これはなんだろう"
+                                ],
                                 0,
                                 0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "【Monica】 It looks like this is the end here!"
-                            ]
-                        },
-                        {
-                            "code": 101,
-                            "indent": 2,
-                            "parameters": [
-                                "",
-                                0,
-                                0,
-                                2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "【Monica】 Let's try going in if we find it again!"
-                            ]
-                        },
-                        {
-                            "code": 122,
-                            "indent": 2,
-                            "parameters": [
-                                92,
-                                92,
-                                0,
-                                0,
+                                1,
                                 0
                             ]
                         },
                         {
-                            "code": 122,
-                            "indent": 2,
+                            "code": 402,
+                            "indent": 3,
                             "parameters": [
-                                91,
-                                91,
                                 0,
-                                0,
-                                0
+                                "これはなんだろう"
                             ]
                         },
                         {
-                            "code": 123,
-                            "indent": 2,
+                            "code": 0,
+                            "indent": 4,
+                            "parameters": []
+                        },
+                        {
+                            "code": 404,
+                            "indent": 3,
+                            "parameters": []
+                        },
+                        {
+                            "code": 230,
+                            "indent": 3,
                             "parameters": [
-                                "B",
                                 1
                             ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "緑のオーブを手に取り、少し考えてみる―――"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "―――っは！？"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "もしやこれを取ると天井がおちてくる？！"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "咄嗟にそのようなことが頭をよぎり、あたりの様子を"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "キョロキョロと伺う。"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "しかし、特に変化があるようには見えない。"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "これは一体なんだろうか、とりあえず\\n[1]はオーブを"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "持ち帰ることにした。"
+                            ]
+                        },
+                        {
+                            "code": 250,
+                            "indent": 3,
+                            "parameters": [
+                                {
+                                    "name": "Item1",
+                                    "volume": 90,
+                                    "pitch": 100,
+                                    "pan": 0
+                                }
+                            ]
+                        },
+                        {
+                            "code": 126,
+                            "indent": 3,
+                            "parameters": [
+                                44,
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                "■グリーンオーブを手に入れた。"
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 3,
+                            "parameters": [
+                                238,
+                                238,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 3,
+                            "parameters": [
+                                "",
+                                0,
+                                2,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 3,
+                            "parameters": [
+                                ""
+                            ]
+                        },
+                        {
+                            "code": 232,
+                            "indent": 3,
+                            "parameters": [
+                                80,
+                                0,
+                                0,
+                                0,
+                                -1000,
+                                158,
+                                100,
+                                100,
+                                0,
+                                0,
+                                30,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 3,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 2,
+                            "parameters": []
                         },
                         {
                             "code": 111,
@@ -2994,6 +3142,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 3,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 3,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 3,
                             "parameters": [
@@ -3004,6 +3174,11 @@
                                 0,
                                 2
                             ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 3,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -3072,6 +3247,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 5,
                             "parameters": [
@@ -3084,13 +3281,8 @@
                             ]
                         },
                         {
-                            "code": 0,
+                            "code": 115,
                             "indent": 5,
-                            "parameters": []
-                        },
-                        {
-                            "code": 411,
-                            "indent": 4,
                             "parameters": []
                         },
                         {
@@ -3170,6 +3362,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 5,
                             "parameters": [
@@ -3182,13 +3396,8 @@
                             ]
                         },
                         {
-                            "code": 0,
+                            "code": 115,
                             "indent": 5,
-                            "parameters": []
-                        },
-                        {
-                            "code": 411,
-                            "indent": 4,
                             "parameters": []
                         },
                         {
@@ -3268,6 +3477,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 5,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 5,
                             "parameters": [
@@ -3280,47 +3511,37 @@
                             ]
                         },
                         {
-                            "code": 0,
-                            "indent": 5,
-                            "parameters": []
-                        },
-                        {
-                            "code": 411,
-                            "indent": 4,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 5,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 4,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 4,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 3,
-                            "parameters": []
-                        },
-                        {
-                            "code": 0,
-                            "indent": 3,
-                            "parameters": []
-                        },
-                        {
-                            "code": 412,
-                            "indent": 2,
-                            "parameters": []
-                        },
-                        {
                             "code": 115,
+                            "indent": 5,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 5,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 4,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 4,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 3,
+                            "parameters": []
+                        },
+                        {
+                            "code": 0,
+                            "indent": 3,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
                             "indent": 2,
                             "parameters": []
                         },
@@ -3391,6 +3612,28 @@
                             "indent": 1,
                             "parameters": [
                                 177
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 1,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 1,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
                             ]
                         },
                         {
@@ -4104,6 +4347,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 2,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 2,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 2,
                             "parameters": [
@@ -4114,6 +4379,11 @@
                                 0,
                                 2
                             ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 2,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -4182,6 +4452,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 4,
                             "parameters": [
@@ -4192,6 +4484,11 @@
                                 0,
                                 2
                             ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 4,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -4280,6 +4577,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 4,
                             "parameters": [
@@ -4290,6 +4609,11 @@
                                 0,
                                 2
                             ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 4,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -4369,6 +4693,28 @@
                             ]
                         },
                         {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                92,
+                                92,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 4,
+                            "parameters": [
+                                91,
+                                91,
+                                0,
+                                0,
+                                0
+                            ]
+                        },
+                        {
                             "code": 201,
                             "indent": 4,
                             "parameters": [
@@ -4379,6 +4725,11 @@
                                 0,
                                 2
                             ]
+                        },
+                        {
+                            "code": 115,
+                            "indent": 4,
+                            "parameters": []
                         },
                         {
                             "code": 0,
@@ -5513,66 +5864,7 @@
             "x": 11,
             "y": 0
         },
-        {
-            "id": 9,
-            "name": "EV009_エフェクト出すところ",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 0,
-                        "characterName": "",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
-                        {
-                            "code": 0,
-                            "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 0,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 0,
-                    "walkAnime": true
-                }
-            ],
-            "x": 16,
-            "y": 6
-        },
+        null,
         null,
         {
             "id": 11,
@@ -5866,65 +6158,6 @@
             "x": 0,
             "y": 2
         },
-        {
-            "id": 15,
-            "name": "EV015_エフェクトをだすところ",
-            "note": "",
-            "pages": [
-                {
-                    "conditions": {
-                        "actorId": 1,
-                        "actorValid": false,
-                        "itemId": 1,
-                        "itemValid": false,
-                        "selfSwitchCh": "A",
-                        "selfSwitchValid": false,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
-                        "switch2Id": 1,
-                        "switch2Valid": false,
-                        "variableId": 1,
-                        "variableValid": false,
-                        "variableValue": 0
-                    },
-                    "directionFix": false,
-                    "image": {
-                        "characterIndex": 0,
-                        "characterName": "",
-                        "direction": 2,
-                        "pattern": 0,
-                        "tileId": 0
-                    },
-                    "list": [
-                        {
-                            "code": 0,
-                            "indent": 0,
-                            "parameters": []
-                        }
-                    ],
-                    "moveFrequency": 3,
-                    "moveRoute": {
-                        "list": [
-                            {
-                                "code": 0,
-                                "parameters": []
-                            }
-                        ],
-                        "repeat": true,
-                        "skippable": false,
-                        "wait": false
-                    },
-                    "moveSpeed": 3,
-                    "moveType": 0,
-                    "priorityType": 0,
-                    "stepAnime": false,
-                    "through": false,
-                    "trigger": 0,
-                    "walkAnime": true
-                }
-            ],
-            "x": 7,
-            "y": 5
-        }
+        null
     ]
 }

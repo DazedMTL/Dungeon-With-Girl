@@ -8029,10 +8029,11 @@
                             "parameters": []
                         },
                         {
-                            "code": 123,
+                            "code": 121,
                             "indent": 0,
                             "parameters": [
-                                "A",
+                                307,
+                                307,
                                 0
                             ]
                         },
@@ -8069,9 +8070,9 @@
                         "itemId": 1,
                         "itemValid": false,
                         "selfSwitchCh": "A",
-                        "selfSwitchValid": true,
-                        "switch1Id": 1,
-                        "switch1Valid": false,
+                        "selfSwitchValid": false,
+                        "switch1Id": 307,
+                        "switch1Valid": true,
                         "switch2Id": 1,
                         "switch2Valid": false,
                         "variableId": 1,
@@ -9149,14 +9150,6 @@
                             "parameters": [
                                 130,
                                 130,
-                                1
-                            ]
-                        },
-                        {
-                            "code": 123,
-                            "indent": 0,
-                            "parameters": [
-                                "A",
                                 1
                             ]
                         },
