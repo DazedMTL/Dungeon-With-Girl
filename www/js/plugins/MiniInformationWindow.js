@@ -492,7 +492,7 @@ Imported['MiniInformationWindow'] = 1.031;
                     case 34:
                         if (vocab[3][3] && value !== 0) {
                             var ud = value > 0 ? g : r;
-                            text = s + vocab[3][3] + ud + sym + value + '回';
+                            text = s + vocab[3][3] + ud + sym + value + 'x';
                         }
                         break;
                     case 41:
