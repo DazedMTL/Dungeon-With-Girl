@@ -15,7 +15,7 @@ If everything looks good and doesn't break things I'll merge it in.
 Longer Version:
 
 Things that are needed:
-* [VSCode](https://code.visualstudio.com/)) Make sure you check all the boxes for context menus. ![image](https://github.com/DazedMTL/Dungeon-With-Girl/assets/96628874/7a84b624-32fe-4845-a0f6-2b9f39795070)
+* [VSCode](https://code.visualstudio.com/) Make sure you check all the boxes for context menus. ![image](https://github.com/DazedMTL/Dungeon-With-Girl/assets/96628874/7a84b624-32fe-4845-a0f6-2b9f39795070)
 * The Game
 * [Git](https://git-scm.com/downloads) (Use the default for everything. Just keep clicking Next)
 * Motivation to learn
