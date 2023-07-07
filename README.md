@@ -27,8 +27,9 @@ Installation:
 
 ![image](https://github.com/DazedMTL/Dungeon-With-Girl/assets/96628874/61e818e6-11f9-450d-9d7d-263d109dbf56)
 
-4. Back to your fork, click on the green Code button and click Download ZIP. Extract the contents into the game folder and Replace All.
-5. Your source folder should be good to go and look like this.
+4. At the top click on Terminal > New Terminal. Enter the following: `git clone [URL_YOU_COPIED_ABOVE]`.
+5. Copy the contents of the new folder created with git clone into the game folder and replace all.
+6. Your source control menu should be good to go and look like this.
 
 ![image](https://github.com/DazedMTL/Dungeon-With-Girl/assets/96628874/c19787a0-172d-4a08-a37a-e3b56e70e86a)
 
