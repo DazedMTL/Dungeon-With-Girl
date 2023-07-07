@@ -15,20 +15,34 @@ If everything looks good and doesn't break things I'll merge it in.
 Longer Version:
 
 Things that are needed:
-* An editor of some kind. (I recommend [VSCode](https://code.visualstudio.com/))
+* [VSCode](https://code.visualstudio.com/)) Make sure you check all the boxes for context menus. ![image](https://github.com/DazedMTL/Dungeon-With-Girl/assets/96628874/7a84b624-32fe-4845-a0f6-2b9f39795070)
 * The Game
-* [Git (Duh)](https://git-scm.com/downloads)
+* [Git](https://git-scm.com/downloads) (Use the default for everything. Just keep clicking Next)
 * Motivation to learn
 
+Installation:
 1. Fork the repo using the fork button at the top. Click Code > HTTPS > Copy URL.
-2. Open the terminal in your game folder by shift + right clicking and clicking Terminal.
-3. Enter `git clone [PASTEURL]` and then copy the contents of the new folder into the game folder.
+2. Right click on the game folder and click 'Open with VSCode' (Shift+Right_Click if you are on Windows 11)
+3. Click on the Source Control Button and click initialize repository.
+
+![image](https://github.com/DazedMTL/Dungeon-With-Girl/assets/96628874/61e818e6-11f9-450d-9d7d-263d109dbf56)
+
+4. Back to your fork, click on the green Code button and click Download ZIP. Extract the contents into the game folder and Replace All.
+5. Your source folder should be good to go and look like this.
+
+![image](https://github.com/DazedMTL/Dungeon-With-Girl/assets/96628874/c19787a0-172d-4a08-a37a-e3b56e70e86a)
 
 Now you are all setup, all you need to do is play the game and look for any changes that need to be made. Stuff like spelling errors, wrong names, inconsistencies, spacing issues, etc.
 
-6. When you do find a change that needs to be made, do the following to make things easy. Right click on the `data` folder and click `open with VScode`. If you dont see that option see [this](https://dev.to/matheusgomes062/how-to-open-your-files-with-vs-code-from-the-context-menu-on-windows-5fi9) or you can just open vscode and drag it in.
-7. Use the FIND functionality to search for what you are trying to fix. For example if a character's name is wrong, type that into the search menu and start looking, then make the change. Try not to mess with any scripts or variables you might see. If you can't find it in `data` try `js` folder instead.
-8. After you are satisfied with your changes it's time to put in a PR. Use `git add -A` to add changes then Use `git commit -m 'MESSAGE HERE'` to save your changes. then do `git push` to push them to your fork. If everything works your fork should update with the changes.
+7. Use the FIND functionality to search for what you are trying to fix. For example if a character's name is wrong, type that into the search menu and start looking, then make the change. Try not to mess with any scripts or variables you might see.
+
+![image](https://github.com/DazedMTL/Dungeon-With-Girl/assets/96628874/589eccaf-7f86-43f7-a917-7e6e477b381a)
+
+8. After you are satisfied with your changes it's time to put in a PR. Go to source control to see all your changes. Add a message and click the `Commit` button to save them all.
+
+![image](https://github.com/DazedMTL/Dungeon-With-Girl/assets/96628874/a9a8973b-bc01-4184-bea9-63a925d961a2)
+
+8. Click Sync to push your changes to your fork. Now all that's left is to put in a pull request.
 9. Go to Pull Requests > New Pull Requests. Look at the arrow, your fork should be pointing to the original repo (mine). Add in details on what you fixed and Submit. If everything looks good I'll merge it in and you would have successfully contributed.
 
 Got questions? Just shoot me a message, more than happy to walk you through any of the tools.
