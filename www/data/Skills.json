@@ -923,7 +923,14 @@
             "variance": 20
         },
         "description": "身体中をめぐる毒を消し去るスキル\n安定した探索を行うには必須スキル",
-        "effects": [],
+        "effects": [
+            {
+                "code": 22,
+                "dataId": 4,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
         "hitType": 0,
         "iconIndex": 72,
         "message1": "は%1を使った！",

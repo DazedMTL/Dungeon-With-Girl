@@ -105,8 +105,8 @@
         "name": "自室",
         "order": 10,
         "parentId": 3,
-        "scrollX": 832,
-        "scrollY": 640
+        "scrollX": 819,
+        "scrollY": 461
     },
     {
         "id": 13,
@@ -141,8 +141,8 @@
         "name": "黄金の間",
         "order": 47,
         "parentId": 0,
-        "scrollX": 832,
-        "scrollY": 640
+        "scrollX": 819,
+        "scrollY": 461
     },
     {
         "id": 17,
