@@ -105,7 +105,7 @@
         "pitch": 100,
         "volume": 60
     },
-    "editMapId": 16,
+    "editMapId": 15,
     "elements": [
         "",
         "Physical",
@@ -129,7 +129,7 @@
         "Accessory [Ring]",
         "Accessory [Shoes]"
     ],
-    "gameTitle": "Dungeon with Girl v1.0.2",
+    "gameTitle": "Dungeon with Girl ver.1.0.3",
     "gameoverMe": {
         "name": "Gameover1",
         "pan": 0,
@@ -505,7 +505,7 @@
         "ギルドのおっさんとセックス2回目",
         "いいえを押した",
         "全開放",
-        "",
+        "30階に到達後帰還",
         "",
         "回想から来た",
         "初めてギルドにいくイベント",
@@ -1554,7 +1554,7 @@
         "Intelligence of \\N[1]",
         "Monica's intelligence"
     ],
-    "versionId": 1525925,
+    "versionId": 45487838,
     "victoryMe": {
         "name": "jingle2",
         "pan": 0,
@@ -1584,5 +1584,5 @@
     ],
     "hasEncryptedImages": true,
     "hasEncryptedAudio": true,
-    "encryptionKey": "d0a6292e70afadc704f8d41ebd798209"
+    "encryptionKey": "45e1f0702a08c50e2e41caf698b6bf9d"
 }

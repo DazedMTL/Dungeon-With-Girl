@@ -2253,6 +2253,13 @@
                             ]
                         },
                         {
+                            "code": 117,
+                            "indent": 0,
+                            "parameters": [
+                                586
+                            ]
+                        },
+                        {
                             "code": 251,
                             "indent": 0,
                             "parameters": []
@@ -3447,6 +3454,13 @@
                             "indent": 0,
                             "parameters": [
                                 "自室選択肢"
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 0,
+                            "parameters": [
+                                586
                             ]
                         },
                         {

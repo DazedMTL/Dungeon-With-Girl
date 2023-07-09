@@ -105,8 +105,8 @@
         "name": "Own room",
         "order": 10,
         "parentId": 3,
-        "scrollX": 832,
-        "scrollY": 640
+        "scrollX": 819,
+        "scrollY": 461
     },
     {
         "id": 13,
@@ -141,8 +141,8 @@
         "name": "Golden Room",
         "order": 47,
         "parentId": 0,
-        "scrollX": 832,
-        "scrollY": 640
+        "scrollX": 819,
+        "scrollY": 461
     },
     {
         "id": 17,

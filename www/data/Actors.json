@@ -22,11 +22,6 @@
                 "value": 1
             },
             {
-                "code": 22,
-                "dataId": 0,
-                "value": 1
-            },
-            {
                 "code": 14,
                 "dataId": 82,
                 "value": 1
@@ -58,11 +53,6 @@
             {
                 "code": 62,
                 "dataId": 3,
-                "value": 1
-            },
-            {
-                "code": 22,
-                "dataId": 0,
                 "value": 1
             }
         ],
