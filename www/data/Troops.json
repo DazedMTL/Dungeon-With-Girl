@@ -1771,8 +1771,15 @@
     },
     {
         "id": 40,
-        "members": [],
-        "name": "",
+        "members": [
+            {
+                "enemyId": 50,
+                "x": 261,
+                "y": 439,
+                "hidden": false
+            }
+        ],
+        "name": "テスト君",
         "pages": [
             {
                 "conditions": {

@@ -5321,11 +5321,11 @@
                 "conditionParam2": 0,
                 "conditionType": 0,
                 "rating": 5,
-                "skillId": 1
+                "skillId": 7
             }
         ],
         "battlerHue": 0,
-        "battlerName": "",
+        "battlerName": "enemy1_hitosarai",
         "dropItems": [
             {
                 "dataId": 1,
@@ -5362,10 +5362,10 @@
             }
         ],
         "gold": 0,
-        "name": "",
+        "name": "テスト君",
         "note": "",
         "params": [
-            100,
+            50000,
             0,
             10,
             10,

@@ -3072,7 +3072,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse create <アイテムBOX:60>"
+                                "PHWarehouse create <アイテムBOX:120>"
                             ]
                         },
                         {
@@ -4299,7 +4299,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse create <アイテムBOX:60>"
+                                "PHWarehouse create <アイテムBOX:120>"
                             ]
                         },
                         {
