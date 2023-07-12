@@ -105,8 +105,8 @@
         "name": "Own room",
         "order": 10,
         "parentId": 3,
-        "scrollX": 819,
-        "scrollY": 461
+        "scrollX": 528,
+        "scrollY": 455.5
     },
     {
         "id": 13,
@@ -132,8 +132,8 @@
         "name": "Night in my room",
         "order": 12,
         "parentId": 12,
-        "scrollX": 819,
-        "scrollY": 461
+        "scrollX": 528,
+        "scrollY": 455.5
     },
     {
         "id": 16,
@@ -357,8 +357,8 @@
         "name": "Night crawling performance",
         "order": 9,
         "parentId": 9,
-        "scrollX": 819,
-        "scrollY": 461
+        "scrollX": 528,
+        "scrollY": 455.5
     },
     {
         "id": 41,

@@ -105,7 +105,7 @@
         "pitch": 100,
         "volume": 60
     },
-    "editMapId": 15,
+    "editMapId": 18,
     "elements": [
         "",
         "Physical",
@@ -129,7 +129,7 @@
         "Accessory [Ring]",
         "Accessory [Shoes]"
     ],
-    "gameTitle": "Dungeon with Girl ver.1.0.3",
+    "gameTitle": "Dungeon with Girl ver.1.0.5",
     "gameoverMe": {
         "name": "Gameover1",
         "pan": 0,
@@ -1240,11 +1240,13 @@
         {
             "actorId": 1,
             "equips": [
-                190,
+                21,
                 0,
                 6,
                 7,
-                0
+                0,
+                26,
+                27
             ],
             "level": 99
         },
@@ -1282,7 +1284,7 @@
             "level": 1
         }
     ],
-    "testTroopId": 99,
+    "testTroopId": 40,
     "title1Name": "taitorugamen",
     "title2Name": "",
     "titleBgm": {
@@ -1554,7 +1556,7 @@
         "Intelligence of \\N[1]",
         "Monica's intelligence"
     ],
-    "versionId": 45487838,
+    "versionId": 14822840,
     "victoryMe": {
         "name": "jingle2",
         "pan": 0,
@@ -1584,5 +1586,5 @@
     ],
     "hasEncryptedImages": true,
     "hasEncryptedAudio": true,
-    "encryptionKey": "45e1f0702a08c50e2e41caf698b6bf9d"
+    "encryptionKey": "6071f73bd484ac0d5e349c51a4c07651"
 }

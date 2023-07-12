@@ -959,6 +959,12 @@
                 "dataId": 66,
                 "value1": 0.1,
                 "value2": 0
+            },
+            {
+                "code": 44,
+                "dataId": 383,
+                "value1": 1,
+                "value2": 0
             }
         ],
         "hitType": 2,
@@ -967,7 +973,7 @@
         "message2": "",
         "mpCost": 0,
         "name": "Normal Attack (Spark)",
-        "note": "<CP:3>",
+        "note": "",
         "occasion": 1,
         "repeats": 1,
         "requiredWtypeId1": 0,
@@ -993,7 +999,7 @@
         "effects": [
             {
                 "code": 21,
-                "dataId": 74,
+                "dataId": 85,
                 "value1": 1,
                 "value2": 0
             }
@@ -1782,7 +1788,20 @@
             "variance": 20
         },
         "description": "",
-        "effects": [],
+        "effects": [
+            {
+                "code": 21,
+                "dataId": 50,
+                "value1": 0.2,
+                "value2": 0
+            },
+            {
+                "code": 44,
+                "dataId": 383,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
         "hitType": 1,
         "iconIndex": 76,
         "message1": " attack!",

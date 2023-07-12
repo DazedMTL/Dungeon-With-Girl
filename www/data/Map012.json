@@ -3044,7 +3044,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:60>"
+                                "PHWarehouse create <Item BOX:120>"
                             ]
                         },
                         {
@@ -4243,7 +4243,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:60>"
+                                "PHWarehouse create <Item BOX:120>"
                             ]
                         },
                         {
