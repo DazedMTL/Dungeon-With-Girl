@@ -2792,14 +2792,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT Time:　\\C[18]\\v[97]\\C[0]_days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT Debt:　\\C[18]30000\\C[0]_G 20"
                             ]
                         },
                         {
@@ -2850,14 +2850,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT Time:　\\C[18]\\v[97]\\C[0]_days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT Debt:　\\C[18]50000\\C[0]_G 20"
                             ]
                         },
                         {
@@ -2918,14 +2918,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT Time:　\\C[18]\\v[97]\\C[0]_days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT Debt:　\\C[18]70000\\C[0]_G 20"
                             ]
                         },
                         {
@@ -3256,7 +3256,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] ...Ugh, damn it..."
+                                "【Innkeeper】 Ugh, fuck this shit..."
                             ]
                         },
                         {
@@ -3273,7 +3273,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\# Prevented entry into the room!"
+                                "\\#Entry into the room was prevented!"
                             ]
                         },
                         {
@@ -3500,7 +3500,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] I did it, I succeeded...!"
+                                "【Innkeeper】 I did it, I succeeded...!"
                             ]
                         },
                         {
@@ -3524,7 +3524,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "\\# I allowed the intrusion into the room..."
+                                "\\#There happened intrusion into the room..."
                             ]
                         },
                         {
@@ -3835,7 +3835,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] ...Ugh, damn it..."
+                                "【Innkeeper】 Urgh, fuck this shit..."
                             ]
                         },
                         {
@@ -4224,7 +4224,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] ...Ugh, damn it..."
+                                "【Innkeeper】 Ugh, fuck this shit..."
                             ]
                         },
                         {
@@ -4562,7 +4562,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Innkeeper】...Ugh, damn it..."
+                                "【Innkeeper】Ugh, fuck this shit..."
                             ]
                         },
                         {
@@ -4900,7 +4900,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] ...Ugh, damn it..."
+                                "【Innkeeper】 Ugh, fuck this shit..."
                             ]
                         },
                         {
@@ -5279,7 +5279,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] ...Ugh, damn it..."
+                                "【Innkeeper】 Ugh, fuck this shit..."
                             ]
                         },
                         {
@@ -6345,7 +6345,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (It's about time...)"
+                                "【Innkeeper】 (It's about time...)"
                             ]
                         },
                         {
@@ -6362,7 +6362,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "---Gacha...! Gachagacha...!"
+                                "... *Click...! Click-click...!*"
                             ]
                         },
                         {
@@ -6379,7 +6379,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (Tch! It's locked...!)"
+                                "【Innkeeper】 Tch! It's locked...!"
                             ]
                         },
                         {
@@ -6396,7 +6396,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (But---!)"
+                                "【Innkeeper】 (But---!)"
                             ]
                         },
                         {
@@ -6459,7 +6459,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (With just a little trick, this kind of lock is a piece of\ncake...!)"
+                                "【Innkeeper】 (With just a little trick, this kind of lock is a piece of cake!)"
                             ]
                         },
                         {
@@ -7119,7 +7119,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "[Innkeeper] Let's go!"
+                                "【Innkeeper】 Let's go!"
                             ]
                         },
                         {
@@ -8603,7 +8603,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "---Gacha, Gachagacha!"
+                                "... *Click. Pull, rotate, click.*"
                             ]
                         },
                         {
@@ -8620,7 +8620,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (Damn it, it won't open...!)"
+                                "【Innkeeper】 Fuck, it won't budge...!"
                             ]
                         },
                         {
@@ -8637,7 +8637,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Other Room Guest] Excuse me... Huh? The old man isn't here. Where did\nhe go?"
+                                "【Other Room Guest】 Excuse me... huh?\nThe old man isn't here?!\nWhere did he go?"
                             ]
                         },
                         {
@@ -8654,7 +8654,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Other Room Guest] Excuse me... Sir?"
+                                "【Other Room Guest】 Where are yooou?"
                             ]
                         },
                         {
@@ -8671,7 +8671,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (Ahh? Damn it! What do you want at this hour!)"
+                                "【Innkeeper】 Argh? Damn!\nWhat does he want at this hour?!"
                             ]
                         },
                         {
@@ -8688,7 +8688,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (He's even shouting... These youngsters these days have no\nsense of morals!)"
+                                "【Innkeeper】 (He's shouting for me...\nThese youngsters these days have no\nsense of propriety!)"
                             ]
                         },
                         {
@@ -8705,7 +8705,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] (If he keeps shouting like this, it's going to be a hassle.\nI guess I have no choice but to leave for today... damn it)"
+                                "【Innkeeper】 (If he keeps being so loud, it's going to be a hassle.\nI have no choice but to leave for today... fuck.)"
                             ]
                         },
                         {
@@ -8722,7 +8722,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "[Innkeeper] Yes, yes, I'll be right there!"
+                                "【Innkeeper】 Yes, yes! I'm coming!"
                             ]
                         },
                         {
@@ -9746,7 +9746,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT \\v[16]日目 50"
+                                "D_TEXT \\v[16]day 50"
                             ]
                         },
                         {
@@ -9779,7 +9779,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT \\v[16]日目 50"
+                                "D_TEXT Day\\v[16] 50"
                             ]
                         },
                         {

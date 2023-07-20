@@ -2824,7 +2824,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:120>"
+                                "PHWarehouse create <Item BOX:60>"
                             ]
                         },
                         {
@@ -3795,7 +3795,7 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:120>"
+                                "PHWarehouse create <Item BOX:60>"
                             ]
                         },
                         {
@@ -4684,14 +4684,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT Time:　\\C[18]\\v[97]\\C[0]_days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT Debt:　\\C[18]30000\\C[0]_G 20"
                             ]
                         },
                         {
@@ -4742,14 +4742,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT Time:　\\C[18]\\v[97]\\C[0]_days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT Debt:　\\C[18]50000\\C[0]_G 20"
                             ]
                         },
                         {
@@ -4810,14 +4810,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT Time:　\\C[18]\\v[97]\\C[0]_days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT Debt:　\\C[18]70000\\C[0]_G 20"
                             ]
                         },
                         {

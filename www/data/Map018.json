@@ -4155,7 +4155,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "The pink gauge icon represents Monica's pleasure. When this gauge\nfills up, Monica will reach climax."
+                                "The pink gauge icon represents Monica's pleasure.\nWhen this gauge fills up, she will reach climax."
                             ]
                         },
                         {
@@ -6237,7 +6237,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "■ Maximum HP has increased by \\c[10]\\v[185]\\c[0]. Maximum MP has\nincreased by \\c[10]\\v[186]\\c[0]. Attack power has increased by\n\\c[10]\\v[181]\\c[0]. Defense power has increased by\n\\c[10]\\v[182]\\c[0]."
+                                "■ Maximum HP has increased by \\c[10]\\v[185]\\c[0].\n Maximum MP has increased by \\c[10]\\v[186]\\c[0].\n Attack power has increased by \\c[10]\\v[181]\\c[0].\n Defense has increased by \\c[10]\\v[182]\\c[0]."
                             ]
                         },
                         {
@@ -6254,7 +6254,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "■Intelligence has increased by \\c[10]\\v[184]\\c[0]. Agility has\nincreased by \\c[10]\\v[183]\\c[0]. Luck has increased by\n\\c[10]\\v[187]\\c[0]."
+                                "■Intelligence has increased by \\c[10]\\v[184]\\c[0].\n Agility has increased by \\c[10]\\v[183]\\c[0].\n Luck has increased by \\c[10]\\v[187]\\c[0]."
                             ]
                         },
                         {
@@ -7074,7 +7074,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Maximum HP has increased by \\c[10]\\v[185]\\c[0]. Maximum MP has\nincreased by \\c[10]\\v[186]\\c[0]. Attack power has increased by\n\\c[10]\\v[181]\\c[0]. Defense power has increased by \\c[10]\\v[182]\\c[0]."
+                                "■Maximum HP has increased by \\c[10]\\v[185]\\c[0].\n Maximum MP has increased by \\c[10]\\v[186]\\c[0].\n Attack power has increased by \\c[10]\\v[181]\\c[0].\n Defense has increased by \\c[10]\\v[182]\\c[0]."
                             ]
                         },
                         {
@@ -7091,7 +7091,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Intelligence has increased by \\c[10]\\v[184]\\c[0]. Agility has\nincreased by \\c[10]\\v[183]\\c[0]. Luck has increased by\n\\c[10]\\v[187]\\c[0]."
+                                "■Intelligence has increased by \\c[10]\\v[184]\\c[0].\n Agility has\nincreased by \\c[10]\\v[183]\\c[0].\n Luck has increased by \\c[10]\\v[187]\\c[0]."
                             ]
                         },
                         {
@@ -9477,7 +9477,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "The pink gauge icon represents Monica's pleasure. When this gauge\nfills up, Monica will reach climax."
+                                "The pink gauge icon represents Monica's pleasure.\nWhen this gauge fills up, she will reach climax."
                             ]
                         },
                         {
@@ -11536,7 +11536,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "■ Maximum HP has increased by \\c[10]\\v[185]\\c[0].  Maximum MP has\nincreased by \\c[10]\\v[186]\\c[0].  Attack power has increased by\n\\c[10]\\v[181]\\c[0].  Defense power has increased by\n\\c[10]\\v[182]\\c[0]."
+                                "■ Maximum HP has increased by \\c[10]\\v[185]\\c[0].\n Maximum MP has increased by \\c[10]\\v[186]\\c[0].\n Attack power has increased by \\c[10]\\v[181]\\c[0].\n Defense has increased by \\c[10]\\v[182]\\c[0]."
                             ]
                         },
                         {
@@ -11553,7 +11553,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "■Intelligence has increased by \\c[10]\\v[184]\\c[0]. Agility has\nincreased by \\c[10]\\v[183]\\c[0]. Luck has increased by\n\\c[10]\\v[187]\\c[0]."
+                                "■Intelligence has increased by \\c[10]\\v[184]\\c[0].\n Agility has increased by \\c[10]\\v[183]\\c[0].\n Luck has increased by \\c[10]\\v[187]\\c[0]."
                             ]
                         },
                         {
@@ -12289,7 +12289,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■ Maximum HP has increased by \\c[10]\\v[185]\\c[0]. Maximum MP has\nincreased by \\c[10]\\v[186]\\c[0]. Attack power has increased by\n\\c[10]\\v[181]\\c[0]. Defense power has increased by \\c[10]\\v[182]\\c[0]."
+                                "■ Maximum HP has increased by \\c[10]\\v[185]\\c[0].\n Maximum MP has increased by \\c[10]\\v[186]\\c[0].\n Attack power has increased by \\c[10]\\v[181]\\c[0].\n Defense has increased by \\c[10]\\v[182]\\c[0]."
                             ]
                         },
                         {
@@ -12306,7 +12306,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "■Intelligence has increased by \\c[10]\\v[184]\\c[0]. Agility has\nincreased by \\c[10]\\v[183]\\c[0]. Luck has increased by\n\\c[10]\\v[187]\\c[0]."
+                                "■Intelligence has increased by \\c[10]\\v[184]\\c[0].\n Agility has increased by \\c[10]\\v[183]\\c[0].\n Luck has increased by \\c[10]\\v[187]\\c[0]."
                             ]
                         },
                         {
@@ -12983,7 +12983,7 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT Development 25"
+                                "D_TEXT Status 25"
                             ]
                         },
                         {
@@ -13011,14 +13011,14 @@
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT Service　\\v[120] 25"
+                                "D_TEXT Services_\\v[120] 25"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 0,
                             "parameters": [
-                                "D_TEXT Climax　#\\v[116]x 25"
+                                "D_TEXT Climaxes_\\v[116] 25"
                             ]
                         },
                         {

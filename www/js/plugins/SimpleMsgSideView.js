@@ -66,7 +66,7 @@
     if ($gameSystem.isSideView()) {
       if (displayAttack ||
         !(DataManager.isSkill(item) && item.id == subject.attackSkillId())) {
-        this.push('addItemNameText', item.name);  // display item/skill name
+        this.push('addItemNameText', item.name.replace(/_/g, ' '));  // display item/skill name
       } else {
         this.push('wait');
       }

@@ -2428,11 +2428,11 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Experienced Adventurer",
-                                    "Former Adventurer",
-                                    "Experienced Adventurer",
-                                    "Troubled Female Adventurer",
-                                    "A customer who seems to know something",
+                                    "Experienced adventurer A",
+                                    "Former adventurer",
+                                    "Experienced adventurer B",
+                                    "Troubled female adventurer",
+                                    "Well-informed guest",
                                     "Return to the front desk"
                                 ],
                                 5,
@@ -2808,7 +2808,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 Weapons have their own characteristics, you\nknow. It's best to use something that's easy to use."
+                                "【Experienced Adventurer B】 Weapons have their own characteristics.\nIt's best to take something that's easy for you to use."
                             ]
                         },
                         {
@@ -2825,7 +2825,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 First, let's talk about swords. The\ncharacteristic of a sword is that you can \\C[18] parry and\ncounterattack \\C[0] immediately."
+                                "【Experienced Adventurer B】 First, let's talk about swords...\nThe characteristic of a sword is that you can \\C[18]parry\\C[0] and \\C[18]counterattack\\C[0]."
                             ]
                         },
                         {
@@ -2842,7 +2842,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 When there are multiple opponents, this\nbecomes quietly effective."
+                                "【Experienced Adventurer B】 When there are multiple opponents,\nthis becomes quiet effective."
                             ]
                         },
                         {
@@ -2859,7 +2859,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 Next, let's talk about maces. The\ncharacteristic of a mace is that it occasionally \\C[18]stuns\\C[0] the\nopponent."
+                                "【Experienced Adventurer B】 Next, let's talk about maces...\nThe characteristic of a mace's that it occasionally \\C[18]stuns\\C[0] the opponent."
                             ]
                         },
                         {
@@ -2876,7 +2876,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 If you manage to stun your opponent, you can\nbeat even the strongest enemies with ease. However, be careful as\nthere are monsters that cannot be stunned. Slimes are a prime example\nof that."
+                                "【Experienced Adventurer B】 If you manage to stun your opponent,\nyou can beat even the strongest enemies with ease.\nHowever, be careful as there are unstunnable monsters.\nSlimes are a prime example of that."
                             ]
                         },
                         {
@@ -2893,7 +2893,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 Lastly, let's talk about daggers. The\ncharacteristic of a dagger is \\C[18] inflicting damage on the opponent\nthrough bleeding \\C[0]."
+                                "【Experienced Adventurer B】 Lastly, let's talk about daggers...\nThe characteristic of a dagger is inflicting \\C[18]bleeding\\C[0]\ndamage to the opponent."
                             ]
                         },
                         {
@@ -2910,7 +2910,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 The attack power of daggers itself is low,\nbut sometimes you can find daggers that have poison or burning\neffects. So, if you find one, try using it."
+                                "【Experienced Adventurer B】 The attack power of a dagger itself is low,\nbut you can find daggers that have poison or burning effects.\nSo, if you find one, try it."
                             ]
                         },
                         {
@@ -2927,7 +2927,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 It should have more power than it looks.\nHowever, be careful as you won't be able to equip a shield for\ndefense."
+                                "【Experienced Adventurer B】 It has more power than it looks.\nHowever, be careful as you won't be able to equip\na shield for defense."
                             ]
                         },
                         {
@@ -2944,7 +2944,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 That's about it. Well, understanding the\ncharacteristics of weapons and choosing the right one is the key to\nconquering dungeons. Good luck!"
+                                "【Experienced Adventurer B】 That's about it.\nUnderstanding the characteristics of weapons and choosing\nthe right one is the key to conquering dungeons.\nGood luck!"
                             ]
                         },
                         {
@@ -4104,11 +4104,11 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "Experienced Adventurer",
-                                    "Former Adventurer",
-                                    "Experienced Adventurer",
-                                    "Troubled Female Adventurer",
-                                    "A customer who seems to know something",
+                                    "Experienced adventurer A",
+                                    "Former adventurer",
+                                    "Experienced adventurer B",
+                                    "Troubled female adventurer",
+                                    "Well-informed guest",
                                     "Return to the front desk"
                                 ],
                                 5,
@@ -4484,7 +4484,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 Weapons have their own characteristics, you\nknow. It's best to use something that is easy to use."
+                                "【Experienced Adventurer B】 Weapons have special characteristics.\nIt's best to use something that's proved good."
                             ]
                         },
                         {
@@ -4501,7 +4501,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 First, let's talk about swords. The\ncharacteristic of a sword is that you can \\C[18]parry and\ncounterattack\\C[0] directly."
+                                "【Experienced Adventurer B】 First, let's talk about swords.\nThe characteristic of a sword is that you can \\C[18]parry\\C[0] and \\C[18]counterattack\\C[0]."
                             ]
                         },
                         {
@@ -4518,7 +4518,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 This becomes quietly effective when there are\nmultiple opponents."
+                                "【Experienced Adventurer B】 This becomes quiet effective when there are\nmultiple enemies."
                             ]
                         },
                         {
@@ -4535,7 +4535,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 Next, let's talk about maces. The\ncharacteristic of a mace is that it occasionally \\C[18]stuns\\C[0] the\nopponent."
+                                "【Experienced Adventurer B】 Next, let's talk about maces...\nThe characteristic of a mace's that it occasionally \\C[18]stuns\\C[0] the opponent."
                             ]
                         },
                         {
@@ -4552,7 +4552,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 If you stun the opponent, you can beat even\nthe strongest enemy with ease. However, be careful because there are\nmonsters that don't get stunned. Slimes are a prime example."
+                                "【Experienced Adventurer B】 If you manage to stun your opponent,\nyou can beat even the strongest enemies with ease.\nHowever, be careful as there are unstunnable monsters.\nSlimes are a prime example of that."
                             ]
                         },
                         {
@@ -4569,7 +4569,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 Lastly, let's talk about daggers. The\ncharacteristic of a dagger is \\C[18]inflicting damage on the opponent\nthrough bleeding \\C[0]."
+                                "【Experienced Adventurer B】 Lastly, let's talk about daggers. The\ncharacteristic of a dagger is \\C[18]inflicting damage on the opponent\nthrough bleeding \\C[0]."
                             ]
                         },
                         {
@@ -4586,7 +4586,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 The attack power of a dagger itself is low,\nbut sometimes you can find daggers that have poison or burning\neffects. So if you find one, try using it."
+                                "【Experienced Adventurer B】 The attack power of a dagger itself is low,\nbut sometimes you can find daggers that have poison or burning\neffects. So if you find one, try using it."
                             ]
                         },
                         {
@@ -4603,7 +4603,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 It should have more power than it looks.\nHowever, be careful about defense because you won't be able to equip a\nshield."
+                                "【Experienced Adventurer B】 It has more power than it looks.\nHowever, be careful as you won't be able to equip\na shield for defense."
                             ]
                         },
                         {
@@ -4620,7 +4620,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【Experienced Adventurer】 That's about it. Well, understanding the\ncharacteristics of weapons and choosing the right one is the key to\nconquering dungeons. Good luck!"
+                                "【Experienced Adventurer B】 That's about it. Well, understanding the\ncharacteristics of weapons and choosing the right one is the key to\nconquering dungeons. Good luck!"
                             ]
                         },
                         {
@@ -5044,7 +5044,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【Customer who seems to know something】 As you progress through the\ndungeon, \\c[18]impurities\\c[0] will corrode your body. Ah, when I say\nimpurities, it doesn't mean getting dirty."
+                                "【Customer who seems to know something】\nAs you progress through the dungeon, \\c[18]impurities\\c[0] will stain you.\nAh, when I say impurities, it doesn't mean getting dirty."
                             ]
                         },
                         {

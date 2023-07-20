@@ -3588,7 +3588,7 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:120>"
+                                "PHWarehouse create <Item BOX:60>"
                             ]
                         },
                         {
@@ -3835,7 +3835,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "Let's not push ourselves too hard"
+                                    "Let's not push myself too hard"
                                 ],
                                 0,
                                 0,
@@ -3892,7 +3892,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "I could tell you were tired, so let's not push ourselves too hard"
+                                    "She is tired, I can tell. So let's not..."
                                 ],
                                 0,
                                 0,
@@ -5193,7 +5193,7 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:120>"
+                                "PHWarehouse create <Item BOX:60>"
                             ]
                         },
                         {
@@ -7071,7 +7071,7 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:120>"
+                                "PHWarehouse create <Item BOX:60>"
                             ]
                         },
                         {
@@ -8726,7 +8726,7 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "PHWarehouse create <Item BOX:120>"
+                                "PHWarehouse create <Item BOX:60>"
                             ]
                         },
                         {

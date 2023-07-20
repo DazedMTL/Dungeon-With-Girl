@@ -30,7 +30,7 @@
     {
         "id": 2,
         "atypeId": 5,
-        "description": "If a beginner adventurer has this, there's no doubt about it. [Weight 5W]",
+        "description": "Every beginner adventurer use this. [Weight 5W]",
         "etypeId": 2,
         "traits": [
             {
@@ -45,7 +45,7 @@
             }
         ],
         "iconIndex": 129,
-        "name": "Adventurer's Shield",
+        "name": "Adventurer Shield",
         "note": "<weight:5>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
         "params": [
             0,
@@ -62,7 +62,7 @@
     {
         "id": 3,
         "atypeId": 1,
-        "description": "If a beginner adventurer has this, there's no doubt about it. [Weight 3W]",
+        "description": "Every beginner adventurer use this. [Weight 3W]",
         "etypeId": 3,
         "traits": [
             {
@@ -72,7 +72,7 @@
             }
         ],
         "iconIndex": 130,
-        "name": "Adventurer's Hat",
+        "name": "Adventurer Hat",
         "note": "<weight:3>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
         "params": [
             0,
@@ -89,7 +89,7 @@
     {
         "id": 4,
         "atypeId": 1,
-        "description": "If a beginner adventurer has this, there's no doubt about it. [Weight 8W]",
+        "description": "If an adventurer has it, there's no doubt they're a newb. [Weight 8W]",
         "etypeId": 4,
         "traits": [
             {
@@ -99,7 +99,7 @@
             }
         ],
         "iconIndex": 135,
-        "name": "Adventurer's clothing",
+        "name": "Adventurer Armor",
         "note": "<weight:8>\n<Prefixes>\n61 62 57% 120-126 35% 134-139 5% 160-162 3%\n</Prefixes>\n<Suffixes>\n81-85 30% 86-90 10%\n</Suffixes>\n",
         "params": [
             0,
@@ -367,7 +367,7 @@
     {
         "id": 13,
         "atypeId": 1,
-        "description": "A helmet worn by seasoned warriors. Each scar engraved on it tells a story.\n[Weight 8W]",
+        "description": "A helmet worn by seasoned warriors.\nEach scar engraved on it tells a story. [Weight 8W]",
         "etypeId": 3,
         "traits": [
             {
@@ -544,7 +544,7 @@
     {
         "id": 19,
         "atypeId": 1,
-        "description": "Armor that is wrapped in a mysterious power of wind. Evasion rate and magic\nreflection rate increase. [Weight 5W]",
+        "description": "Armor that is wrapped in a mysterious power of wind.\nEvasion rate and magic reflection rate are increased. [Weight 5W]",
         "etypeId": 4,
         "traits": [
             {
@@ -576,7 +576,7 @@
     {
         "id": 20,
         "atypeId": 1,
-        "description": "A hat that can make a statement just by wearing it. It strangely irritates\nothers, so equipping it increases the chances of being targeted. [Weight 3W]",
+        "description": "A hat that can make a statement just by wearing it.\nIt strangely irritates others, so equipping it increases the chances\nof being targeted. [Weight 3W]",
         "etypeId": 3,
         "traits": [
             {
@@ -603,7 +603,7 @@
     {
         "id": 21,
         "atypeId": 6,
-        "description": "A large shield shaped like a rose. It has the ability to damage the opponent who\nattacks. [Weight 8W]",
+        "description": "A large shield shaped like a rose.\nIt has the ability to damage the opponent who attacks. [Weight 8W]",
         "etypeId": 2,
         "traits": [
             {
@@ -635,7 +635,7 @@
     {
         "id": 22,
         "atypeId": 6,
-        "description": "Stripping off the armor of the Guardian and using it as a shield. Significantly\nincreases defense and resistance to status ailments. [Weight 30W]",
+        "description": "Stripping off the armor of the Guardian and using it as a shield.\nSignificantly increases defense and resistance to status ailments. [Weight 30W]",
         "etypeId": 2,
         "traits": [
             {
@@ -727,7 +727,7 @@
     {
         "id": 23,
         "atypeId": 1,
-        "description": "One of the brave warriors who stood up to overthrow the tyrannical king was a\ndancer who received the king's favor. Evasion rate and critical hit rate\nincrease. [Weight 1W]",
+        "description": "One of the brave warriors who stood up to overthrow the tyrannical\nking was a dancer who received the king's favor.\nEvasion rate and critical hit rate increase. [Weight 1W]",
         "etypeId": 5,
         "traits": [
             {
@@ -759,7 +759,7 @@
     {
         "id": 24,
         "atypeId": 1,
-        "description": "One of the brave warriors who stood up to overthrow the tyrannical king was a\ndancer who received favor from the king. Evasion rate and critical hit rate\nincrease. [Weight 3W]",
+        "description": "One of the brave warriors who stood up to overthrow the tyrannical\nking was a dancer who received favor from the king.\nEvasion rate and critical hit rate increase. [Weight 3W]",
         "etypeId": 4,
         "traits": [
             {
@@ -791,7 +791,7 @@
     {
         "id": 25,
         "atypeId": 1,
-        "description": "A large shield made by processing the tough scales of a dragon. Equipping it\ngrants high resistance to all elemental attacks. [Weight 10W]",
+        "description": "A large shield made by processing the tough dragon scales.\nEquipping it grants high resistance to all elemental attacks.\n[Weight 10W]",
         "etypeId": 2,
         "traits": [
             {
@@ -868,7 +868,7 @@
     {
         "id": 26,
         "atypeId": 1,
-        "description": "The woman who once captivated the entire country remained noble even after being\nimprisoned and becoming a prisoner. She continues to captivate others by being\nin sync with them. [Weight 5W]",
+        "description": "The woman who once captivated the entire country remained noble\neven after becoming a prisoner. [Weight 5W]",
         "etypeId": 6,
         "traits": [
             {
@@ -895,7 +895,7 @@
     {
         "id": 27,
         "atypeId": 1,
-        "description": "The woman who once captivated the entire country remained noble even after being\nimprisoned and becoming a prisoner. She continues to captivate others by being\nwell put together. [Weight 5W]",
+        "description": "The woman who once captivated the entire country remained\nnoble even after becoming a prisoner. [Weight 5W]",
         "etypeId": 7,
         "traits": [
             {
@@ -1003,7 +1003,7 @@
     {
         "id": 31,
         "atypeId": 1,
-        "description": "A sinister ring shaped like a skull. Equipping it grants strong power, but the\ndice roll value becomes 0. [Weight 1W]",
+        "description": "A sinister ring shaped like a skull. Equipping it grants you power,\nbut the dice roll values become 0. [Weight 1W]",
         "etypeId": 6,
         "traits": [
             {
@@ -1084,7 +1084,7 @@
     {
         "id": 34,
         "atypeId": 1,
-        "description": "A ring that causes the world to revolve around oneself and brings good luck at\nevery opportunity. When equipped, a treasure chest always appears after battle.\n[Weight: 1W]",
+        "description": "A ring that causes the world to revolve around oneself and brings good\nluck, like when treasure chests always appear after battle [Weight: 1W]",
         "etypeId": 6,
         "traits": [],
         "iconIndex": 159,
@@ -1105,7 +1105,7 @@
     {
         "id": 35,
         "atypeId": 1,
-        "description": "A ring named after a legendary warrior. Equipping it greatly increases\ncounterattack rate. [Weight 1W]",
+        "description": "A ring named after a legendary warrior.\nEquipping it greatly increases counterattack rate. [Weight 1W]",
         "etypeId": 6,
         "traits": [
             {
@@ -1132,7 +1132,7 @@
     {
         "id": 36,
         "atypeId": 1,
-        "description": "The shoes that a devout believer wore during their pilgrimage. When advancing\nthrough the dungeon, occasionally restores 1 action point. [Weight: 1W]",
+        "description": "The shoes that a devout believer wore during their pilgrimage.\nWhen going down the dungeon, occasionally restores 1AP. [Weight: 1W]",
         "etypeId": 7,
         "traits": [
             {
@@ -1832,7 +1832,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Decayed",
+        "name": "Old",
         "note": "<prefixSuffixNoNameSpace>",
         "params": [
             0,
@@ -1886,7 +1886,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Master Craftsman's",
+        "name": "Quality",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -1950,7 +1950,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Cruel",
+        "name": "Rough",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -2068,7 +2068,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Unique Armor",
+        "name": "Unique",
         "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>\n<rarity: 3>\n",
         "params": [
             0,
@@ -2095,7 +2095,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Set Armor",
+        "name": "Part of Set",
         "note": "<prefixSuffixDontAddName>\n<prefixSuffixNoNameSpace>\n<rarity: 4>",
         "params": [
             0,
@@ -2596,7 +2596,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<Agile>",
+        "name": "<Agility>",
         "note": "",
         "params": [
             0,
@@ -2677,7 +2677,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "<<Legend>>",
+        "name": "<Legend>",
         "note": "",
         "params": [
             5,
@@ -3469,7 +3469,7 @@
         "etypeId": 2,
         "traits": [],
         "iconIndex": 0,
-        "name": "Master Craftsman's",
+        "name": "Quality",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -3496,7 +3496,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Cruel",
+        "name": "Rough",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -3613,7 +3613,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Endurance",
+        "name": "Durable",
         "note": "<prefixSuffixNoNameSpace>\n<Prefixes>\n<rarity: 1>\n</Prefixes>\n<Suffixes>\n</Suffixes>\n<AddInfoWindowA:\\c[4]Resistance\\c[24]+3%\\c[0]>",
         "params": [
             0,
@@ -3768,7 +3768,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Holy Vestments",
+        "name": "Holy Vestment",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 1>",
         "params": [
             0,
@@ -4036,7 +4036,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Tamamushi-iro (Jewel Beetle Color)",
+        "name": "Jewel Beetle's",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]Fire Resistance\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]水耐性\\c[24]+10%\\c[0]>\n<AddInfoWindowA:\\c[4]Lightning Resistance\\c[24]+10%\\c[0]>",
         "params": [
             0,
@@ -4068,7 +4068,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Temple Knight",
+        "name": "Templar's",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 2>\n<AddInfoWindowA:\\c[4]Protection\\c[24]+10%\\c[0]>",
         "params": [
             5,
@@ -4380,7 +4380,7 @@
     {
         "id": 148,
         "atypeId": 5,
-        "description": "If a beginner adventurer has this, there's no doubt about it. It's provided by\nthe guild. [Weight 5W]",
+        "description": "If a novice adventurer has this, there's no doubt\nit's provided by the guild. [Weight 5W]",
         "etypeId": 2,
         "traits": [
             {
@@ -4390,7 +4390,7 @@
             }
         ],
         "iconIndex": 128,
-        "name": "Adventurer's Shield (Provision)",
+        "name": "Adventurer Shield (Provision)",
         "note": "<weight:5>\n",
         "params": [
             0,
@@ -4407,7 +4407,7 @@
     {
         "id": 149,
         "atypeId": 1,
-        "description": "If a novice adventurer has this, there's no doubt about it. It's provided by the\nguild. [Weight 3W]",
+        "description": "If a novice adventurer has this, there's no doubt\nit's provided by the guild. [Weight 3W]",
         "etypeId": 3,
         "traits": [
             {
@@ -4417,7 +4417,7 @@
             }
         ],
         "iconIndex": 130,
-        "name": "Adventurer's Hat (Provision)",
+        "name": "Adventurer Hat (Provision)",
         "note": "<weight:3>\n",
         "params": [
             0,
@@ -4434,7 +4434,7 @@
     {
         "id": 150,
         "atypeId": 1,
-        "description": "If a beginner adventurer has this, there's no doubt about it. It's provided by\nthe guild. [Weight 8W]",
+        "description": "If a beginner adventurer has this, there's no doubt\nit's provided by the guild. [Weight 8W]",
         "etypeId": 4,
         "traits": [
             {
@@ -4444,7 +4444,7 @@
             }
         ],
         "iconIndex": 135,
-        "name": "Adventurer's Clothing (Provision)",
+        "name": "Adventurer Armor (Provision)",
         "note": "<weight:8>\n",
         "params": [
             0,
@@ -4777,7 +4777,7 @@
             }
         ],
         "iconIndex": 0,
-        "name": "Shinigami's",
+        "name": "Deathgods'",
         "note": "<prefixSuffixNoNameSpace>\n<rarity: 5>\n",
         "params": [
             0,

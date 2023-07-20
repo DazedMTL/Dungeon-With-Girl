@@ -2656,7 +2656,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Um, I think it's to the guild――"
+                                    "Um, I think it's to the guild..."
                                 ],
                                 0,
                                 0,
@@ -3411,7 +3411,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【???】 Jii...."
+                                "【???】 *Staaare...*"
                             ]
                         },
                         {
@@ -5557,7 +5557,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "The gate from the previous return seems to still be intact. Would you\nlike to use it? (You will start from the floor where you last\nreturned)"
+                                "The return gate from the last time seems to be intact.\nWould you like to use it?\n(Start from the floor where you last returned from.)"
                             ]
                         },
                         {
@@ -6579,7 +6579,7 @@
                             "code": 401,
                             "indent": 4,
                             "parameters": [
-                                "The gate from the previous return seems to still be intact. Would you\nlike to use it? (You will start from the floor where you last\nreturned)"
+                                "The return gate from the last time seems to be intact.\nWould you like to use it?\n(Start from the floor where you last returned from.)"
                             ]
                         },
                         {
@@ -7673,14 +7673,14 @@
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT Time:　\\C[18]\\v[97]\\C[0]_days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 1,
                             "parameters": [
-                                "D_TEXT Amount: \\C[18]30000\\C[0]G 20"
+                                "D_TEXT Debt:　\\C[18]30000\\C[0]_G 20"
                             ]
                         },
                         {
@@ -7731,14 +7731,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT Time:　\\C[18]\\v[97]\\C[0]_days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]50000\\C[0]G 20"
+                                "D_TEXT Debt:　\\C[18]50000\\C[0]_G 20"
                             ]
                         },
                         {
@@ -7799,14 +7799,14 @@
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Payment　\\C[18]\\v[97]\\C[0]　Days 20"
+                                "D_TEXT Time:　\\C[18]\\v[97]\\C[0]_days 20"
                             ]
                         },
                         {
                             "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "D_TEXT Amount\\C[18]70000\\C[0]G 20"
+                                "D_TEXT Debt:　\\C[18]70000\\C[0]_G 20"
                             ]
                         },
                         {

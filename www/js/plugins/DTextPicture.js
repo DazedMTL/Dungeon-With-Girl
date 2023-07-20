@@ -284,8 +284,8 @@
         switch (getCommandName(command)) {
             case 'D_TEXT':
                 if (isNaN(args[args.length - 1]) || args.length === 1) args.push($gameScreen.dTextSize || 28);
-                var fontSize = getArgNumber(args.pop());
-                $gameScreen.setDTextPicture(connectArgs(args), fontSize-4);
+                var fontSize = getArgNumber(args.pop()) - 4;
+                $gameScreen.setDTextPicture(connectArgs(args), fontSize);
                 break;
             case 'D_TEXT_SETTING':
                 switch (getCommandName(args[0])) {
@@ -381,14 +381,10 @@
     };
 
     Game_Screen.prototype.setDTextPicture = function (value, size) {
-        if (typeof TranslationManager !== 'undefined') {
-            TranslationManager.translateIfNeed(value, function (translatedText) {
-                value = translatedText;
-            });
-        }
+        var spacer = size > 24 ? '' : ' ';
         this.dUsingVariables = (this.dUsingVariables || []).concat(getUsingVariables(value));
-        this.dTextValue = (this.dTextValue || '') + getArgString(value, false) + '\n';
-        this.dTextOriginal = (this.dTextOriginal || '') + value + '\n';
+        this.dTextValue = (this.dTextValue || '') + spacer + getArgString(value, false).replace(/_/g, ' ') + spacer + '\n';
+        this.dTextOriginal = (this.dTextOriginal || '') + spacer + value.replace(/_/g, ' ') + spacer + '\n';
         this.dTextSize = size;
     };
 

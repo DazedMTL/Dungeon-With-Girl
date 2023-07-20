@@ -241,6 +241,7 @@ Imported.TMLogWindow = true;
 
 	Game_System.prototype.addLog = function (text) {
 		text = $gameTemp.dummyWindow().convertEscapeCharacters(text);
+		text = text.replace(/_/gi, ' ');
 		this._actionLog.push(text);
 		if (this._actionLog.length > logWindowMaxLogs) {
 			this._actionLog.shift();

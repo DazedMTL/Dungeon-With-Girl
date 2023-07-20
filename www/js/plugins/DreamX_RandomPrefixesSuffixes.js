@@ -1223,12 +1223,12 @@ DreamX.RandomPrefixSuffix = DreamX.RandomPrefixSuffix || {};
 
         if (!prefixSuffixItem.meta.prefixSuffixDontAddName) {
             if (itemType === "prefix") {
-                if (prefixSuffixItem.meta.prefixSuffixNoNameSpace) {
+                if (0 && !prefixSuffixItem.meta.prefixSuffixNoNameSpace) {
                     newNameAdd += " ";
                 }
                 newItem.name = newNameAdd + newItem.name;
             } else if (itemType === "suffix") {
-                if (prefixSuffixItem.meta.prefixSuffixNoNameSpace) {
+                if (0 && !prefixSuffixItem.meta.prefixSuffixNoNameSpace) {
                     newNameAdd = " " + newNameAdd;
                 }
                 newItem.name += newNameAdd;
