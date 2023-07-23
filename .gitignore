@@ -7,4 +7,5 @@
 !*.zip
 !*.7z
 !.gitignore
+!.md
 package.json
