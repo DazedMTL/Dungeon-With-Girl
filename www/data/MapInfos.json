@@ -42,8 +42,8 @@
         "name": "Dungeon 01F~05F",
         "order": 17,
         "parentId": 0,
-        "scrollX": 569.5,
-        "scrollY": 461
+        "scrollX": 528,
+        "scrollY": 455.5
     },
     {
         "id": 6,
@@ -159,8 +159,8 @@
         "name": "Main H",
         "order": 28,
         "parentId": 0,
-        "scrollX": 819,
-        "scrollY": 461
+        "scrollX": 528,
+        "scrollY": 455.5
     },
     {
         "id": 19,

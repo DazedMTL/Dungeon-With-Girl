@@ -1355,7 +1355,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A bundle of flowers that have been preserved in a beautiful state using\nmysterious technology. It is favored as a gift for women. Likability +5 [Weight\n5W].",
+        "description": "A bundle of flowers that have been preserved in a beautiful state using\nmysterious technology. It is favored as a gift for women. Likability +5 [Weight 5W].",
         "effects": [
             {
                 "code": 44,
@@ -1617,17 +1617,24 @@
             "type": 0,
             "variance": 20
         },
-        "description": "",
-        "effects": [],
+        "description": "使用することでセーブすることできる不思議なしおり。\n[重さ0W]",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 1,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
         "hitType": 0,
-        "iconIndex": 0,
+        "iconIndex": 187,
         "itypeId": 1,
-        "name": "",
-        "note": "",
-        "occasion": 0,
-        "price": 0,
+        "name": "記憶のしおり",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 100,
         "repeats": 1,
-        "scope": 7,
+        "scope": 11,
         "speed": 0,
         "successRate": 100,
         "tpGain": 0

@@ -173,7 +173,7 @@
                 "conditionParam1": 0,
                 "conditionParam2": 0,
                 "conditionType": 0,
-                "rating": 5,
+                "rating": 8,
                 "skillId": 31
             },
             {
@@ -187,7 +187,7 @@
                 "conditionParam1": 0,
                 "conditionParam2": 0.2,
                 "conditionType": 2,
-                "rating": 5,
+                "rating": 3,
                 "skillId": 2
             }
         ],
@@ -949,14 +949,14 @@
                 "conditionParam1": 0,
                 "conditionParam2": 0,
                 "conditionType": 0,
-                "rating": 6,
+                "rating": 8,
                 "skillId": 31
             },
             {
                 "conditionParam1": 0,
                 "conditionParam2": 0,
                 "conditionType": 0,
-                "rating": 5,
+                "rating": 1,
                 "skillId": 21
             }
         ],
