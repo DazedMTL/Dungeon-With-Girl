@@ -319,79 +319,83 @@ Imported['MiniInformationWindow'] = 1.031;
         var preInfos = DataManager.preInfoItem(item);
         var afterInfos = DataManager.afterInfoItem(item);
         if (preInfos) this._data = this._data.concat(preInfos);
+        var separator = ': ';
+        var percent = '% ';
+        var plus = ' +';
+        var multiply = ' x';
         if (item.effects) {
             for (var i = 0, max = item.effects.length; i < max; i++) {
                 var e = item.effects[i];
                 text = '';
                 switch (e.code) {
                     case 11:
-                        if (e.value1 > 0 && effectNames[0]) text = s + effectNames[0] + ':' + g + Math.floor(e.value1 * 100) + '%';
-                        if (e.value1 < 0 && effectNames[1]) text = s + effectNames[1] + ':' + r + Math.floor(Math.abs(e.value1 * 100)) + '%';
-                        if (e.value2 > 0 && effectNames[0]) text = s + effectNames[0] + ':' + g + e.value2;
-                        if (e.value2 < 0 && effectNames[1]) text = s + effectNames[1] + ':' + r + Math.abs(e.value2);
+                        if (e.value1 > 0 && effectNames[0]) text = s + effectNames[0] + separator + g + Math.floor(e.value1 * 100) + percent;
+                        if (e.value1 < 0 && effectNames[1]) text = s + effectNames[1] + separator + r + Math.floor(Math.abs(e.value1 * 100)) + percent;
+                        if (e.value2 > 0 && effectNames[0]) text = s + effectNames[0] + separator + g + e.value2;
+                        if (e.value2 < 0 && effectNames[1]) text = s + effectNames[1] + separator + r + Math.abs(e.value2);
                         break;
                     case 12:
-                        if (e.value1 > 0 && effectNames[2]) text = s + effectNames[2] + ':' + g + Math.floor(e.value1 * 100) + '%';
-                        if (e.value1 < 0 && effectNames[3]) text = s + effectNames[3] + ':' + r + Math.floor(Math.abs(e.value1 * 100)) + '%';
-                        if (e.value2 > 0 && effectNames[2]) text = s + effectNames[2] + ':' + g + e.value2;
-                        if (e.value2 < 0 && effectNames[3]) text = s + effectNames[3] + ':' + r + Math.abs(e.value2);
+                        if (e.value1 > 0 && effectNames[2]) text = s + effectNames[2] + separator + g + Math.floor(e.value1 * 100) + percent;
+                        if (e.value1 < 0 && effectNames[3]) text = s + effectNames[3] + separator + r + Math.floor(Math.abs(e.value1 * 100)) + percent;
+                        if (e.value2 > 0 && effectNames[2]) text = s + effectNames[2] + separator + g + e.value2;
+                        if (e.value2 < 0 && effectNames[3]) text = s + effectNames[3] + separator + r + Math.abs(e.value2);
                         break;
                     case 13:
-                        if (e.value1 > 0 && effectNames[4]) text = s + effectNames[4] + g + '+' + e.value1;
+                        if (e.value1 > 0 && effectNames[4]) text = s + effectNames[4] + g + plus + e.value1;
                         break;
                     case 21:
                         var state = $dataStates[e.dataId];
                         if (state) {
                             var name = state.name;
-                            if (e.value1 > 0 && effectNames[5]) text = s + effectNames[5] + ':' + c + name + ' ' + Math.floor(Math.abs(e.value1 * 100)) + '%';
+                            if (e.value1 > 0 && effectNames[5]) text = s + effectNames[5] + separator + c + name + ' ' + Math.floor(Math.abs(e.value1 * 100)) + percent;
                         }
                         break;
                     case 22:
                         var state = $dataStates[e.dataId];
                         if (state) {
                             var name = state.name;
-                            if (e.value1 > 0 && effectNames[6]) text = s + effectNames[6] + ':' + c + name + ' ' + Math.floor(Math.abs(e.value1 * 100)) + '%';
+                            if (e.value1 > 0 && effectNames[6]) text = s + effectNames[6] + separator + c + name + ' ' + Math.floor(Math.abs(e.value1 * 100)) + percent;
                         }
                         break;
                     case 31:
                         var name = TextManager.param(e.dataId);
-                        if (e.value1 > 0 && effectNames[7]) text = s + effectNames[7] + ':' + c + name + ' ' + e.value1 + turnText;
+                        if (e.value1 > 0 && effectNames[7]) text = s + effectNames[7] + separator + c + name + ' ' + e.value1 + turnText;
                         break;
                     case 32:
                         var name = TextManager.param(e.dataId);
-                        if (e.value1 > 0 && effectNames[8]) text = s + effectNames[8] + ':' + c + name + ' ' + e.value1 + turnText;
+                        if (e.value1 > 0 && effectNames[8]) text = s + effectNames[8] + separator + c + name + ' ' + e.value1 + turnText;
                         break;
                     case 33:
                         if (effectNames[9]) {
                             var name = TextManager.param(e.dataId);
-                            text = s + effectNames[9] + ':' + c + name;
+                            text = s + effectNames[9] + separator + c + name;
                         }
                         break;
                     case 34:
                         if (effectNames[10]) {
                             var name = TextManager.param(e.dataId);
-                            text = s + effectNames[10] + ':' + c + name;
+                            text = s + effectNames[10] + separator + c + name;
                         }
                         break;
                     case 41:
-                        if (effectNames[11]) text = s + effectNames[11] + ':' + c + escapeText;
+                        if (effectNames[11]) text = s + effectNames[11] + separator + c + escapeText;
                         break;
                     case 42:
                         if (effectNames[12]) {
                             var name = TextManager.param(e.dataId);
-                            text = s + effectNames[12] + ':' + c + name + '+' + e.value1;
+                            text = s + effectNames[12] + separator + c + name + plus + e.value1;
                         }
                         break;
                     case 43:
                         if (effectNames[13]) {
                             var name = $dataSkills[e.dataId].name;
-                            if (name) text = s + effectNames[13] + ':' + c + name;
+                            if (name) text = s + effectNames[13] + separator + c + name;
                         }
                         break;
                     case 44:
                         if (effectNames[14]) {
                             var name = $dataCommonEvents[e.dataId].name;
-                            if (name) text = s + effectNames[14] + ':' + c + name;
+                            if (name) text = s + effectNames[14] + separator + c + name;
                         }
                         break;
                 }
@@ -403,7 +407,7 @@ Imported['MiniInformationWindow'] = 1.031;
                 var value = item.params[i];
                 if (value !== 0) {
                     var ud = value > 0 ? g : r;
-                    var sym = value > 0 ? '+' : '';
+                    var sym = value > 0 ? plus : '';
                     this._data.push(s + TextManager.param(i) + ud + sym + value);
                 }
             }
@@ -416,25 +420,25 @@ Imported['MiniInformationWindow'] = 1.031;
                 var value = trait.value;
                 var ud = value > 1.0 ? g : r;
                 var du = value < 1.0 ? g : r;
-                var sym = value > 0 ? '+' : '';
+                var sym = value > 0 ? plus : '';
                 text = '';
                 switch (trait.code) {
                     case 11:
                         if (vocab[0][0] && value !== 1.0) {
                             var ele = $dataSystem.elements[dataId];
-                            text = c + ele + s + vocab[0][0] + du + 'x' + Math.floor(value * 100) + '%';
+                            text = c + ele + s + vocab[0][0] + du + multiply + Math.floor(value * 100) + percent;
                         }
                         break;
                     case 12:
                         if (vocab[0][1] && value !== 1.0) {
                             var param = TextManager.param(dataId);
-                            text = c + param + s + vocab[0][1] + du + 'x' + Math.floor(value * 100) + '%';
+                            text = c + param + s + vocab[0][1] + du + multiply + Math.floor(value * 100) + percent;
                         }
                         break;
                     case 13:
                         if (vocab[0][0] && value !== 1.0) {
                             var state = $dataStates[dataId].name;
-                            text = c + state + s + vocab[0][0] + du + 'x' + Math.floor(value * 100) + '%';
+                            text = c + state + s + vocab[0][0] + du + multiply + Math.floor(value * 100) + percent;
                         }
                         break;
                     case 14:
@@ -446,7 +450,7 @@ Imported['MiniInformationWindow'] = 1.031;
                     case 21:
                         if (value !== 1.0) {
                             var param = TextManager.param(dataId);
-                            text = s + param + ud + 'x' + Math.floor(value * 100) + '%';
+                            text = s + param + ud + multiply + Math.floor(value * 100) + percent;
                         }
                         break;
                     case 22:
@@ -461,7 +465,7 @@ Imported['MiniInformationWindow'] = 1.031;
                             /**
                              * \C[x]命中率\C[y]-1%
                              */
-                            text = s + xparam + color + sym + Math.floor(value * 100) + '%';
+                            text = s + xparam + color + sym + Math.floor(value * 100) + percent;
                         }
                         break;
                     case 23:
@@ -471,7 +475,7 @@ Imported['MiniInformationWindow'] = 1.031;
                             if (dataId === 4) { sparam = TextManager.mpA + sparam; ud = du; }
                             if (dataId === 5) TextManager.tpA + sparam;
                             if (dataId === 6 || dataId === 7 || dataId === 8) ud = du;
-                            text = s + sparam + ud + 'x' + Math.floor(value * 100) + '%';
+                            text = s + sparam + ud + multiply + Math.floor(value * 100) + percent;
                         }
                         break;
                     case 31:
@@ -483,7 +487,7 @@ Imported['MiniInformationWindow'] = 1.031;
                     case 32:
                         if (vocab[3][1] && value > 0) {
                             var state = $dataStates[dataId].name;
-                            text = s + vocab[3][1] + c + state + ' ' + Math.floor(value * 100) + '%';
+                            text = s + vocab[3][1] + c + state + ' ' + Math.floor(value * 100) + percent;
                         }
                         break;
                     case 33:
@@ -492,7 +496,7 @@ Imported['MiniInformationWindow'] = 1.031;
                     case 34:
                         if (vocab[3][3] && value !== 0) {
                             var ud = value > 0 ? g : r;
-                            text = s + vocab[3][3] + ud + sym + value + 'x';
+                            text = s + vocab[3][3] + ud + sym + value + multiply;
                         }
                         break;
                     case 41:
@@ -523,7 +527,7 @@ Imported['MiniInformationWindow'] = 1.031;
                         if (vocab[5][4]) text = s + vocab[5][4];
                         break;
                     case 61:
-                        if (vocab[6][0] && value > 0) text = s + vocab[6][0] + du + sym + (value * 100) + '%';
+                        if (vocab[6][0] && value > 0) text = s + vocab[6][0] + du + sym + (value * 100) + percent;
                         break;
                     case 62:
                         if (vocab[6][1 + dataId]) {
@@ -540,21 +544,21 @@ Imported['MiniInformationWindow'] = 1.031;
                         if (vocab[0][0] && value !== 0) {
                             var ele = $dataSystem.elements[dataId];
                             du = value < 0 ? g : r;
-                            text = c + ele + s + vocab[0][0] + du + sym + Math.floor(value * 100) + '%';
+                            text = c + ele + s + vocab[0][0] + du + sym + Math.floor(value * 100) + percent;
                         }
                         break;
                     case 112:
                         if (vocab[0][1] && value !== 0) {
                             var param = TextManager.param(dataId);
                             du = value < 0 ? g : r;
-                            text = c + param + s + vocab[0][1] + du + sym + Math.floor(value * 100) + '%';
+                            text = c + param + s + vocab[0][1] + du + sym + Math.floor(value * 100) + percent;
                         }
                         break;
                     case 113:
                         if (vocab[0][0] && value !== 0) {
                             var state = $dataStates[dataId].name;
                             du = value < 0 ? g : r;
-                            text = c + state + s + vocab[0][0] + du + sym + Math.floor(value * 100) + '%';
+                            text = c + state + s + vocab[0][0] + du + sym + Math.floor(value * 100) + percent;
                         }
                         break;
                     case 121:
@@ -572,7 +576,7 @@ Imported['MiniInformationWindow'] = 1.031;
                             if (dataId === 4) { sparam = TextManager.mpA + sparam; ud = du; }
                             if (dataId === 5) TextManager.tpA + sparam;
                             if (dataId === 6 || dataId === 7 || dataId === 8) ud = du;
-                            text = s + sparam + ud + sym + Math.floor(value * 100) + '%';
+                            text = s + sparam + ud + sym + Math.floor(value * 100) + percent;
                         }
                         break;
                 }
