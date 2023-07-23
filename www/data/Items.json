@@ -1355,7 +1355,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "不思議な技術できれいなまま保存された花を束ねたモノ。\n女性への贈り物として好まれる。好感度+5【重さ5W】",
+        "description": "不思議な技術できれいなまま保存された花を束ねたモノ。\n女性への贈り物として好まれる。好感度+5[重さ5W]",
         "effects": [
             {
                 "code": 44,
@@ -1617,17 +1617,24 @@
             "type": 0,
             "variance": 20
         },
-        "description": "",
-        "effects": [],
+        "description": "使用することでセーブすることできる不思議なしおり。\n[重さ0W]",
+        "effects": [
+            {
+                "code": 44,
+                "dataId": 1,
+                "value1": 1,
+                "value2": 0
+            }
+        ],
         "hitType": 0,
-        "iconIndex": 0,
+        "iconIndex": 187,
         "itypeId": 1,
-        "name": "",
-        "note": "",
-        "occasion": 0,
-        "price": 0,
+        "name": "記憶のしおり",
+        "note": "<weight:0>",
+        "occasion": 2,
+        "price": 100,
         "repeats": 1,
-        "scope": 7,
+        "scope": 11,
         "speed": 0,
         "successRate": 100,
         "tpGain": 0

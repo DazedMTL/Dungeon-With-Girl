@@ -105,7 +105,7 @@
         "pitch": 100,
         "volume": 60
     },
-    "editMapId": 18,
+    "editMapId": 37,
     "elements": [
         "",
         "物理",
@@ -129,7 +129,7 @@
         "装飾品[指輪]",
         "装飾品[靴]"
     ],
-    "gameTitle": "ダンジョンウィズガール ver.1.0.5",
+    "gameTitle": "ダンジョンウィズガール ver.1.0.6",
     "gameoverMe": {
         "name": "Gameover1",
         "pan": 0,
@@ -1556,7 +1556,7 @@
         "\\n[1]のかしこさ",
         "モニカのかしこさ"
     ],
-    "versionId": 14822840,
+    "versionId": 64046143,
     "victoryMe": {
         "name": "jingle2",
         "pan": 0,
@@ -1586,5 +1586,5 @@
     ],
     "hasEncryptedImages": true,
     "hasEncryptedAudio": true,
-    "encryptionKey": "6071f73bd484ac0d5e349c51a4c07651"
+    "encryptionKey": "17df5594ceada999dc765c41efe6fb07"
 }

@@ -2348,6 +2348,38 @@
                             ]
                         },
                         {
+                            "code": 111,
+                            "indent": 0,
+                            "parameters": [
+                                1,
+                                4,
+                                1,
+                                5,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 122,
+                            "indent": 1,
+                            "parameters": [
+                                4,
+                                4,
+                                0,
+                                1,
+                                5
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 0,
+                            "parameters": []
+                        },
+                        {
                             "code": 117,
                             "indent": 0,
                             "parameters": [
@@ -4651,6 +4683,7 @@
                             "indent": 0,
                             "parameters": [
                                 [
+                                    "セーブする",
                                     "en(s[360])ドリンクで回復"
                                 ],
                                 -1,
@@ -4664,6 +4697,31 @@
                             "indent": 0,
                             "parameters": [
                                 0,
+                                "セーブする"
+                            ]
+                        },
+                        {
+                            "code": 352,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 119,
+                            "indent": 1,
+                            "parameters": [
+                                "選択肢"
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
+                            "code": 402,
+                            "indent": 0,
+                            "parameters": [
+                                1,
                                 "en(s[360])ドリンクで回復"
                             ]
                         },
