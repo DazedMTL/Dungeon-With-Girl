@@ -5,6 +5,6 @@
 !*.json
 !*.js
 !*.zip
-!*.rpgmvp
+!*.7z
 !.gitignore
 package.json
