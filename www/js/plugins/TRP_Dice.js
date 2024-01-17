@@ -243,7 +243,7 @@ function Dice() {
     var errorPrefix = "TRP_SkitConfig:";
     try {
       /* setup SkitActorSettings
-			===================================*/
+		===================================*/
       var typeSettingArray = parameters.typeSettings;
       var dataTypes = {};
       parameters.typeSettings = dataTypes;
@@ -409,7 +409,7 @@ function Dice() {
   };
 
   /* interpret command
-	===================================*/
+===================================*/
   Game_Dice.prototype.processCommand = function (args) {
     var i, length;
 
@@ -543,7 +543,7 @@ function Dice() {
   };
 
   /* update
-	===================================*/
+===================================*/
   Game_Dice.prototype.update = function () {
     if (this.seCount >= Game_Dice.SE_COUNT_STARTED) {
       this.seCount += 1;
@@ -560,7 +560,7 @@ function Dice() {
   };
 
   /* se
-	===================================*/
+===================================*/
   Game_Dice.prototype.didPlaySe = function () {
     this.seCount = Game_Dice.SE_COUNT_STARTED;
   };
@@ -571,7 +571,7 @@ function Dice() {
   };
 
   /* layer
-	===================================*/
+===================================*/
   Game_Dice.prototype.commandChangeLayer = function (args) {
     var layerArg = args[0].toLowerCase();
     var LAYER = Game_Dice.LAYER;
@@ -601,7 +601,7 @@ function Dice() {
   };
 
   /* show & hide
-	===================================*/
+===================================*/
   Game_Dice.prototype.commandShow = function (args) {
     var id = supplementDefNum(1, args[0]);
     var x = args[1];
@@ -649,7 +649,7 @@ function Dice() {
   };
 
   /* set params
-	===================================*/
+===================================*/
   var MAX_PARAMS = ["最大値", "最大", "max", "maximum"];
   var CLEAR_PARAMS = ["clear", "reset", "クリア", "クリアー", "リセット"];
   Game_Dice.prototype.commandSetValue = function (args) {
@@ -719,7 +719,7 @@ function Dice() {
   };
 
   /* variable
-	===================================*/
+===================================*/
   Game_Dice.prototype.commandSetVariableId = function (args) {
     var id = supplementDefNum(1, args[0]);
     var variableId;
@@ -734,7 +734,7 @@ function Dice() {
   };
 
   /* rand && roll
-	===================================*/
+===================================*/
   Game_Dice.prototype.commandRandom = function (args) {
     var id = supplementDefNum(1, args[0]);
 
@@ -777,7 +777,7 @@ function Dice() {
   };
 
   /* move
-	===================================*/
+===================================*/
   Game_Dice.prototype.commandMove = function (args) {
     var id = supplementDefNum(1, args[0]);
     var x = supplementDefNum(Graphics.boxWidth / 2, args[1]);
@@ -798,7 +798,7 @@ function Dice() {
   };
 
   /* scale
-	===================================*/
+===================================*/
   Game_Dice.prototype.commandScale = function (args) {
     var id = supplementDefNum(1, args[0]);
     var scale;
@@ -813,7 +813,7 @@ function Dice() {
   };
 
   /* animation
-	===================================*/
+===================================*/
   var STATIC_PARAMS = ["static", "静止"];
   Game_Dice.prototype.commandAnimation = function (args) {
     var id = supplementDefNum(1, args[0]);
@@ -832,7 +832,7 @@ function Dice() {
   };
 
   /* checker
-	===================================*/
+===================================*/
   Game_Dice.prototype.commandChecker = function (args) {
     var command = args.shift().toLowerCase();
 
@@ -1091,7 +1091,7 @@ function Dice() {
   };
 
   /* preload
-	===================================*/
+===================================*/
   Game_Dice.prototype.commandPreloadId = function (args) {
     var id = supplementDefNum(1, args[0]);
     var dice = this.dice(id);
@@ -1099,7 +1099,7 @@ function Dice() {
   };
 
   /* helper
-	===================================*/
+===================================*/
   Game_Dice.prototype.dice = function (id) {
     return this._dices[id - 1];
   };
@@ -1158,7 +1158,7 @@ function Dice() {
   };
 
   /* type
-	===================================*/
+===================================*/
   Object.defineProperty(Dice.prototype, "type", {
     get: function () {
       return this._type;
@@ -1211,7 +1211,7 @@ function Dice() {
   };
 
   /* update
-	===================================*/
+===================================*/
   Dice.prototype.update = function () {
     if (!this.showing) return;
 
@@ -1254,7 +1254,7 @@ function Dice() {
   };
 
   /* show & hide
-	===================================*/
+===================================*/
   Dice.prototype.show = function (x, y, duration) {
     x = supplementDefNum(this.x, x);
     y = supplementDefNum(this.y, y);
@@ -1315,7 +1315,7 @@ function Dice() {
   };
 
   /* variable & value
-	===================================*/
+===================================*/
   Object.defineProperty(Dice.prototype, "value", {
     get: function () {
       return $gameVariables.value(this.variableId());
@@ -1346,7 +1346,7 @@ function Dice() {
   };
 
   /* change display value
-	===================================*/
+===================================*/
   Dice.prototype.startChange = function (interval) {
     this._changeInterval = interval;
     if (interval >= 0) {
@@ -1375,7 +1375,7 @@ function Dice() {
   };
 
   /* roll
-	===================================*/
+===================================*/
   Dice.END_VY = 1;
 
   Dice.BOUNCE_RESIST_ROTATION = 0.7;
@@ -1560,7 +1560,7 @@ function Dice() {
   };
 
   /* move
-	===================================*/
+===================================*/
   Dice.prototype.move = function (x, y, duration, relative) {
     if (relative) {
       if (this._moving) {
@@ -1601,7 +1601,7 @@ function Dice() {
   };
 
   /* scale
-	===================================*/
+===================================*/
   Dice.prototype.changeScale = function (scale, duration) {
     if (duration > 0) {
       this._scaling = {
@@ -1629,7 +1629,7 @@ function Dice() {
   };
 
   /* animation
-	===================================*/
+===================================*/
   Dice.prototype.requestAnimation = function (
     animationId,
     mirror,
@@ -1648,7 +1648,7 @@ function Dice() {
   };
 
   /* preload
-	===================================*/
+===================================*/
   Dice.prototype.preloadImages = function () {
     var imageName = this.imageName;
     var planeNum = this.planeNum;
@@ -1699,7 +1699,7 @@ function Dice() {
   };
 
   /* Scene_Map
-	===================================*/
+===================================*/
   Scene_Map.prototype.canUseTrpDice = function () {
     return true;
   };
@@ -1755,7 +1755,7 @@ function Dice() {
   };
 
   /* Scene_Battle
-	===================================*/
+===================================*/
   Scene_Battle.prototype.canUseTrpDice = function () {
     return true;
   };
@@ -1905,7 +1905,7 @@ function Dice() {
   };
 
   /* animation
-	===================================*/
+===================================*/
   var _dummyShow = function () {};
   var _dummySetBlendColor = function () {};
   Sprite_Dice.prototype.startAnimation = function (requestData) {
@@ -1950,7 +1950,7 @@ function Dice() {
   };
 
   /* test command
-	===================================*/
+===================================*/
   Game_Interpreter.prototype.trpDiceTest = function () {
     var eventId = this.isOnCurrentMap() ? this._eventId : 0;
     var list = [

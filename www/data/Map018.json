@@ -5081,10 +5081,10 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Handjob",
-                                    "Kiss handjob",
-                                    "en(s[407])Fellatio",
-                                    "en(s[408])Titjob"
+                                    "手こき",
+                                    "en(s[406])乳首なめ手こき",
+                                    "en(s[407])フェラ",
+                                    "en(s[408])パイズリ"
                                 ],
                                 -1,
                                 0,
@@ -5164,31 +5164,61 @@
                             "indent": 1,
                             "parameters": [
                                 1,
-                                "キス手こき"
+                                "en(s[406])乳首なめ手こき"
                             ]
                         },
                         {
-                            "code": 101,
+                            "code": 235,
                             "indent": 2,
                             "parameters": [
-                                "",
+                                45
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 80"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 81"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                80
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                81
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 2,
+                            "parameters": [
+                                177
+                            ]
+                        },
+                        {
+                            "code": 201,
+                            "indent": 2,
+                            "parameters": [
+                                0,
+                                53,
+                                3,
                                 0,
                                 0,
                                 2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "It is planned to be added in future updates."
-                            ]
-                        },
-                        {
-                            "code": 119,
-                            "indent": 2,
-                            "parameters": [
-                                "選択肢"
                             ]
                         },
                         {
@@ -5340,9 +5370,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Ass-licking",
-                                    "en(s[410])Breastfeeding handjob",
-                                    "Return"
+                                    "en(s[409])ケツなめ",
+                                    "en(s[410])授乳手こき",
+                                    "もどる"
                                 ],
                                 -1,
                                 -1,
@@ -5355,31 +5385,61 @@
                             "indent": 1,
                             "parameters": [
                                 0,
-                                "ケツなめ"
+                                "en(s[409])ケツなめ"
                             ]
                         },
                         {
-                            "code": 101,
+                            "code": 235,
                             "indent": 2,
                             "parameters": [
-                                "",
+                                45
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 80"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 81"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                80
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                81
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 2,
+                            "parameters": [
+                                177
+                            ]
+                        },
+                        {
+                            "code": 201,
+                            "indent": 2,
+                            "parameters": [
+                                0,
+                                28,
+                                3,
                                 0,
                                 0,
                                 2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "It is planned to be added in future updates."
-                            ]
-                        },
-                        {
-                            "code": 119,
-                            "indent": 2,
-                            "parameters": [
-                                "選択肢"
                             ]
                         },
                         {
@@ -5500,16 +5560,205 @@
                             ]
                         },
                         {
+                            "code": 111,
+                            "indent": 1,
+                            "parameters": [
+                                1,
+                                101,
+                                0,
+                                20,
+                                4
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 2,
+                            "parameters": [
+                                82,
+                                "mhcg_sounyuu_mae_cutin00",
+                                0,
+                                0,
+                                300,
+                                0,
+                                100,
+                                100,
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 232,
+                            "indent": 2,
+                            "parameters": [
+                                82,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0,
+                                30,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 2,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "い、挿れたいのっ？！"
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 2,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "ま、まぁそうなるよね…"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "でもそのぉ…も、もうちょっと段階を踏んでからというか…！"
+                            ]
+                        },
+                        {
+                            "code": 231,
+                            "indent": 2,
+                            "parameters": [
+                                82,
+                                "mhcg_sounyuu_mae_cutin01",
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                255,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 101,
+                            "indent": 2,
+                            "parameters": [
+                                "",
+                                0,
+                                0,
+                                2
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "【モニカ】"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "あ、ごめっ…！"
+                            ]
+                        },
+                        {
+                            "code": 401,
+                            "indent": 2,
+                            "parameters": [
+                                "その、嫌とかじゃないんだよ？"
+                            ]
+                        },
+                        {
+                            "code": 232,
+                            "indent": 2,
+                            "parameters": [
+                                82,
+                                0,
+                                0,
+                                0,
+                                0,
+                                0,
+                                100,
+                                100,
+                                0,
+                                0,
+                                30,
+                                true
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                82
+                            ]
+                        },
+                        {
+                            "code": 119,
+                            "indent": 2,
+                            "parameters": [
+                                "選択肢"
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 2,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 1,
+                            "parameters": []
+                        },
+                        {
                             "code": 102,
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Missionary Position",
-                                    "en(s[411])Mating Press",
-                                    "en(s[412])Doggy Style",
-                                    "en(s[413])Cowgirl position",
-                                    "en(s[414])Reverse Cowgirl",
-                                    "en(s[415])Anal"
+                                    "en(s[416])正常位",
+                                    "en(s[411])種付けプレス",
+                                    "en(s[412])後背位",
+                                    "en(s[413])騎乗位",
+                                    "en(s[414])背面騎乗位",
+                                    "en(s[415])アナル"
                                 ],
                                 -1,
                                 0,
@@ -5522,7 +5771,7 @@
                             "indent": 1,
                             "parameters": [
                                 0,
-                                "正常位"
+                                "en(s[416])正常位"
                             ]
                         },
                         {
@@ -6151,6 +6400,15 @@
                             "parameters": [
                                 334,
                                 334,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 2,
+                            "parameters": [
+                                385,
+                                385,
                                 1
                             ]
                         },
@@ -7020,6 +7278,24 @@
                             "parameters": [
                                 340,
                                 340,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 3,
+                            "parameters": [
+                                377,
+                                377,
+                                1
+                            ]
+                        },
+                        {
+                            "code": 121,
+                            "indent": 3,
+                            "parameters": [
+                                378,
+                                378,
                                 1
                             ]
                         },
@@ -10389,10 +10665,10 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Handjob",
-                                    "Kiss handjob",
-                                    "Fellatio",
-                                    "Titjob"
+                                    "手こき",
+                                    "乳首なめ手こき",
+                                    "フェラ",
+                                    "パイズリ"
                                 ],
                                 -1,
                                 0,
@@ -10472,7 +10748,7 @@
                             "indent": 1,
                             "parameters": [
                                 1,
-                                "キス手こき"
+                                "乳首なめ手こき"
                             ]
                         },
                         {
@@ -10483,27 +10759,50 @@
                             ]
                         },
                         {
-                            "code": 101,
+                            "code": 356,
                             "indent": 2,
                             "parameters": [
-                                "",
+                                "PA_STOP 80"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 81"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                80
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                81
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 2,
+                            "parameters": [
+                                177
+                            ]
+                        },
+                        {
+                            "code": 201,
+                            "indent": 2,
+                            "parameters": [
+                                0,
+                                53,
+                                3,
                                 0,
                                 0,
                                 2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "This is planned to be added in future updates."
-                            ]
-                        },
-                        {
-                            "code": 119,
-                            "indent": 2,
-                            "parameters": [
-                                "選択肢"
                             ]
                         },
                         {
@@ -10674,27 +10973,57 @@
                             ]
                         },
                         {
-                            "code": 101,
+                            "code": 235,
                             "indent": 2,
                             "parameters": [
-                                "",
+                                45
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 80"
+                            ]
+                        },
+                        {
+                            "code": 356,
+                            "indent": 2,
+                            "parameters": [
+                                "PA_STOP 81"
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                80
+                            ]
+                        },
+                        {
+                            "code": 235,
+                            "indent": 2,
+                            "parameters": [
+                                81
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 2,
+                            "parameters": [
+                                177
+                            ]
+                        },
+                        {
+                            "code": 201,
+                            "indent": 2,
+                            "parameters": [
+                                0,
+                                28,
+                                3,
                                 0,
                                 0,
                                 2
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "Planned to be added in future updates."
-                            ]
-                        },
-                        {
-                            "code": 119,
-                            "indent": 2,
-                            "parameters": [
-                                "選択肢"
                             ]
                         },
                         {

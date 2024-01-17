@@ -1363,10 +1363,7 @@ DreamX.RandomPrefixSuffix = DreamX.RandomPrefixSuffix || {};
         continue;
       }
 
-      validChoices.push({
-        chance: lineChoice.chance,
-        numbers: validNumbers,
-      });
+      validChoices.push({ chance: lineChoice.chance, numbers: validNumbers });
     }
 
     validChoices.sort(function (a, b) {

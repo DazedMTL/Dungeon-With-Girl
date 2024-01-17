@@ -23315,9 +23315,9 @@
                   this.frameBuffer.texture.enableLinearScaling();
                 }
                 /*
-                            A frame buffer needs a target to render to..
-                            create a texture and bind it attach it to the framebuffer..
-                         */
+          A frame buffer needs a target to render to..
+          create a texture and bind it attach it to the framebuffer..
+       */
 
                 // this is used by the base texture
                 this.texture = this.frameBuffer.texture;
@@ -39079,15 +39079,15 @@
               var sqrt = Math.sqrt;
 
               /* a good approximation for hue rotation
-                     This matrix is far better than the versions with magic luminance constants
-                     formerly used here, but also used in the starling framework (flash) and known from this
-                     old part of the internet: quasimondo.com/archives/000565.php
-                      This new matrix is based on rgb cube rotation in space. Look here for a more descriptive
-                     implementation as a shader not a general matrix:
-                     https://github.com/evanw/glfx.js/blob/58841c23919bd59787effc0333a4897b43835412/src/filters/adjust/huesaturation.js
-                      This is the source for the code:
-                     see http://stackoverflow.com/questions/8507885/shift-hue-of-an-rgb-color/8510751#8510751
-                     */
+         This matrix is far better than the versions with magic luminance constants
+         formerly used here, but also used in the starling framework (flash) and known from this
+         old part of the internet: quasimondo.com/archives/000565.php
+          This new matrix is based on rgb cube rotation in space. Look here for a more descriptive
+         implementation as a shader not a general matrix:
+         https://github.com/evanw/glfx.js/blob/58841c23919bd59787effc0333a4897b43835412/src/filters/adjust/huesaturation.js
+          This is the source for the code:
+         see http://stackoverflow.com/questions/8507885/shift-hue-of-an-rgb-color/8510751#8510751
+         */
 
               var w = 1 / 3;
               var sqrW = sqrt(w); // weight is
@@ -44433,36 +44433,36 @@
           var DEFAULT_BORDER_SIZE = 10;
 
           /**
-             * The NineSlicePlane allows you to stretch a texture using 9-slice scaling. The corners will remain unscaled (useful
-             * for buttons with rounded corners for example) and the other areas will be scaled horizontally and or vertically
-             *
-             *```js
-             * let Plane9 = new PIXI.NineSlicePlane(PIXI.Texture.fromImage('BoxWithRoundedCorners.png'), 15, 15, 15, 15);
-             *  ```
-             * <pre>
-             *      A                          B
-             *    +---+----------------------+---+
-             *  C | 1 |          2           | 3 |
-             *    +---+----------------------+---+
-             *    |   |                      |   |
-             *    | 4 |          5           | 6 |
-             *    |   |                      |   |
-             *    +---+----------------------+---+
-             *  D | 7 |          8           | 9 |
-             *    +---+----------------------+---+
-            
-             *  When changing this objects width and/or height:
-             *     areas 1 3 7 and 9 will remain unscaled.
-             *     areas 2 and 8 will be stretched horizontally
-             *     areas 4 and 6 will be stretched vertically
-             *     area 5 will be stretched both horizontally and vertically
-             * </pre>
-             *
-             * @class
-             * @extends PIXI.mesh.Plane
-             * @memberof PIXI.mesh
-             *
-             */
+ * The NineSlicePlane allows you to stretch a texture using 9-slice scaling. The corners will remain unscaled (useful
+ * for buttons with rounded corners for example) and the other areas will be scaled horizontally and or vertically
+ *
+ *```js
+ * let Plane9 = new PIXI.NineSlicePlane(PIXI.Texture.fromImage('BoxWithRoundedCorners.png'), 15, 15, 15, 15);
+ *  ```
+ * <pre>
+ *      A                          B
+ *    +---+----------------------+---+
+ *  C | 1 |          2           | 3 |
+ *    +---+----------------------+---+
+ *    |   |                      |   |
+ *    | 4 |          5           | 6 |
+ *    |   |                      |   |
+ *    +---+----------------------+---+
+ *  D | 7 |          8           | 9 |
+ *    +---+----------------------+---+
+
+ *  When changing this objects width and/or height:
+ *     areas 1 3 7 and 9 will remain unscaled.
+ *     areas 2 and 8 will be stretched horizontally
+ *     areas 4 and 6 will be stretched vertically
+ *     area 5 will be stretched both horizontally and vertically
+ * </pre>
+ *
+ * @class
+ * @extends PIXI.mesh.Plane
+ * @memberof PIXI.mesh
+ *
+ */
 
           var NineSlicePlane = (function (_Plane) {
             _inherits(NineSlicePlane, _Plane);
