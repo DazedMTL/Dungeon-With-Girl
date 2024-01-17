@@ -4585,7 +4585,7 @@
                     "conditions": {
                         "actorId": 1,
                         "actorValid": false,
-                        "itemId": 181,
+                        "itemId": 182,
                         "itemValid": true,
                         "selfSwitchCh": "A",
                         "selfSwitchValid": false,
@@ -6251,6 +6251,32 @@
                             "parameters": [
                                 0,
                                 177,
+                                0
+                            ]
+                        },
+                        {
+                            "code": 117,
+                            "indent": 3,
+                            "parameters": [
+                                998
+                            ]
+                        },
+                        {
+                            "code": 0,
+                            "indent": 3,
+                            "parameters": []
+                        },
+                        {
+                            "code": 412,
+                            "indent": 2,
+                            "parameters": []
+                        },
+                        {
+                            "code": 111,
+                            "indent": 2,
+                            "parameters": [
+                                0,
+                                177,
                                 1
                             ]
                         },
@@ -6259,7 +6285,7 @@
                             "indent": 3,
                             "parameters": [
                                 8,
-                                181
+                                182
                             ]
                         },
                         {
@@ -6593,6 +6619,15 @@
                             ]
                         },
                         {
+                            "code": 121,
+                            "indent": 5,
+                            "parameters": [
+                                177,
+                                177,
+                                0
+                            ]
+                        },
+                        {
                             "code": 101,
                             "indent": 5,
                             "parameters": [
@@ -6643,15 +6678,6 @@
                                     "pitch": 100,
                                     "pan": 0
                                 }
-                            ]
-                        },
-                        {
-                            "code": 121,
-                            "indent": 5,
-                            "parameters": [
-                                177,
-                                177,
-                                0
                             ]
                         },
                         {

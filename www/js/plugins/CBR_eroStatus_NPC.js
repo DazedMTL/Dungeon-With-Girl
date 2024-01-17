@@ -575,21 +575,21 @@ Window_EroStaNPC.prototype.update = function () {
         var ud = ary[i]["原点"].charAt(1);
 
         /*
-				デフォは原点左中、やりたいのはデフォ左上
-				アイコンは左上
-				
-				上上の場合→y + (max / 2) - (max - size)/2
-				上中の場合→y + (max / 2)
-				上下の場合→y + (max / 2) + (max - size)/2
-				
-				中上の場合→y - (max - size)/2
-				中中の場合→y
-				中下の場合→y + (max - size)/2
-				
-				下上の場合→y - (max / 2) - (max - size)/2
-				下中の場合→y - (max / 2)
-				下下の場合→y - (max / 2) + (max - size)/2
-				*/
+デフォは原点左中、やりたいのはデフォ左上
+アイコンは左上
+
+上上の場合→y + (max / 2) - (max - size)/2
+上中の場合→y + (max / 2)
+上下の場合→y + (max / 2) + (max - size)/2
+
+中上の場合→y - (max - size)/2
+中中の場合→y
+中下の場合→y + (max - size)/2
+
+下上の場合→y - (max / 2) - (max - size)/2
+下中の場合→y - (max / 2)
+下下の場合→y - (max / 2) + (max - size)/2
+*/
 
         //原点の左右
         if (lr == "中") {

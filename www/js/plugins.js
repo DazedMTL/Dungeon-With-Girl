@@ -24,12 +24,12 @@ var $plugins = [
       "Quantity Text Size": "20",
       "---ステータス---": "",
       "Max Level": "1",
-      "Actor MaxHP": "400",
-      "Actor MaxMP": "255",
-      "Actor Parameter": "75",
+      "Actor MaxHP": "999",
+      "Actor MaxMP": "999",
+      "Actor Parameter": "999",
       "Enemy MaxHP": "9999",
       "Enemy MaxMP": "2000",
-      "Enemy Parameter": "50",
+      "Enemy Parameter": "255",
       "---バトル---": "",
       "Animation Rate": "4",
       "Flash Target": "false",
@@ -1111,7 +1111,7 @@ var $plugins = [
     description: "マップシーンにログウィンドウを表示します。",
     parameters: {
       logWindowX: "20",
-      logWindowY: "260",
+      logWindowY: "200",
       logWindowWidth: "330",
       lines: "6",
       lineHeight: "24",
@@ -1156,7 +1156,7 @@ var $plugins = [
     description: "ゲーム内用語辞典プラグイン",
     parameters: {
       GlossaryInfo:
-        '["{\\"GlossaryType\\":\\"1\\",\\"CommandName\\":\\"\\",\\"UseCategory\\":\\"false\\",\\"CommandSwitchId\\":\\"0\\",\\"BackPicture\\":\\"\\",\\"SelectAction\\":\\"1\\",\\"SelectSwitchId\\":\\"0\\",\\"SelectVariableId\\":\\"0\\",\\"ConfirmMessage\\":\\"false\\",\\"ConfirmUse\\":\\"使う\\",\\"ConfirmNoUse\\":\\"やめる\\",\\"ConfirmX\\":\\"0\\",\\"ConfirmY\\":\\"0\\",\\"GlossaryHelp\\":\\"\\",\\"CategoryHelp\\":\\"カテゴリを選択してください。\\",\\"ConfirmHelp\\":\\"\\",\\"UsingHelp\\":\\"\\",\\"CompleteView\\":\\"true\\",\\"CompleteMessage\\":\\"収集率 \\\\\\\\c[2]%1\\\\\\\\c[0] ％\\",\\"ShowingItemNumber\\":\\"false\\",\\"UsableDefault\\":\\"true\\",\\"UseItemHistory\\":\\"false\\",\\"GlossaryListWidth\\":\\"240\\",\\"VisibleItemNotYet\\":\\"\\",\\"HideIcon\\":\\"false\\"}"]',
+        '["{\\"GlossaryType\\":\\"1\\",\\"CommandName\\":\\"\\",\\"UseCategory\\":\\"true\\",\\"CommandSwitchId\\":\\"0\\",\\"BackPicture\\":\\"\\",\\"SelectAction\\":\\"1\\",\\"SelectSwitchId\\":\\"0\\",\\"SelectVariableId\\":\\"0\\",\\"ConfirmMessage\\":\\"false\\",\\"ConfirmUse\\":\\"使う\\",\\"ConfirmNoUse\\":\\"やめる\\",\\"ConfirmX\\":\\"0\\",\\"ConfirmY\\":\\"0\\",\\"GlossaryHelp\\":\\"\\",\\"CategoryHelp\\":\\"カテゴリを選択してください。\\",\\"ConfirmHelp\\":\\"\\",\\"UsingHelp\\":\\"\\",\\"CompleteView\\":\\"true\\",\\"CompleteMessage\\":\\"収集率 \\\\\\\\c[2]%1\\\\\\\\c[0] ％\\",\\"ShowingItemNumber\\":\\"false\\",\\"UsableDefault\\":\\"true\\",\\"UseItemHistory\\":\\"false\\",\\"GlossaryListWidth\\":\\"240\\",\\"VisibleItemNotYet\\":\\"\\",\\"HideIcon\\":\\"false\\"}"]',
       Layout: "",
       FontSize: "22",
       AutoResizePicture: "true",
@@ -1176,5 +1176,11 @@ var $plugins = [
       CategoryUnusable: "",
       ShowPageNumber: "true",
     },
+  },
+  {
+    name: "GraphicsRenderFix",
+    status: true,
+    description: "放置していると画面がフリーズするのを修正",
+    parameters: {},
   },
 ];

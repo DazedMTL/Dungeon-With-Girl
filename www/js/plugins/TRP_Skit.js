@@ -55,7 +55,7 @@ function Skit() {
   var names = {};
 
   /* setupParameters
-	===================================*/
+===================================*/
   var _Scene_Boot_start = Scene_Boot.prototype.start;
   Scene_Boot.prototype.start = function () {
     TRP_CORE.setupTRPSkitConfigParametersIfNeeded();
@@ -105,7 +105,7 @@ function Skit() {
     var errorPrefix = "TRP_SkitConfig:";
     try {
       /* setup SkitActorSettings
-			===================================*/
+		===================================*/
       var characterSettingArray = parameters.SkitActorSettings;
       var dataActors = {};
       parameters.dataActors = dataActors;
@@ -132,7 +132,7 @@ function Skit() {
     }
 
     /* setup xPosition
-		===================================*/
+	===================================*/
     try {
       var xPositionArray = parameters.xPosition;
       var xPosition = {};
@@ -146,7 +146,7 @@ function Skit() {
     }
 
     /* setup speed list
-		===================================*/
+	===================================*/
     try {
       var speedArray = parameters.speed;
       var speed = {};
@@ -159,7 +159,7 @@ function Skit() {
       SceneManager.catchException(e);
     }
     /* setup animationList
-		===================================*/
+	===================================*/
     try {
       var listArray = parameters.animation.list;
       var list = {};
@@ -177,7 +177,7 @@ function Skit() {
     }
 
     /* setup macro
-		===================================*/
+	===================================*/
     try {
       var macroArray = parameters.macro
         .concat(parameters.macro2)
@@ -197,7 +197,7 @@ function Skit() {
     }
 
     /* setup toneParameter
-		===================================*/
+	===================================*/
     var toneError =
       "のトーン設定が不正です。スペース区切りで使用可能な数の範囲を確認してください。また、正の数に+はつけないでください。";
     try {
@@ -287,7 +287,7 @@ function Skit() {
   };
 
   /* tween
-	===================================*/
+===================================*/
   TRP_CORE.EASING = {
     linear: 0,
     easeInQuad: 1,
@@ -425,7 +425,7 @@ function Skit() {
   };
 
   /* functions for Skit
-	===================================*/
+===================================*/
   TRP_CORE.isTRPSkitPluginCommand = function (command) {
     return command === "SKIT" || command === "skit" || command === "スキット";
   };
@@ -928,25 +928,25 @@ function Skit() {
   };
 
   /* start
-	===================================*/
+===================================*/
   Skit.prototype.startSkit = function (args, macroPos) {
     this.start();
   };
 
   /* end
-	 *	[1] : noAnimation
-	===================================*/
+ *	[1] : noAnimation
+===================================*/
   Skit.prototype.endSkit = function (args, macroPos) {
     var noAnimation = args[1] === "t" || args[1] === "true";
     this.end(noAnimation);
   };
 
   /* preload image
-	 *  [1] : charaName
-	 *  [2] : wait(dummy)
-	 *  [3] : pose
-	 *  [4] : expression
-	===================================*/
+ *  [1] : charaName
+ *  [2] : wait(dummy)
+ *  [3] : pose
+ *  [4] : expression
+===================================*/
   Skit.prototype.preloadImage = function (args, macroPos) {
     var charaName = args[1];
     var folderName = this.actorFolderName(charaName);
@@ -967,19 +967,19 @@ function Skit() {
   };
 
   /* clearActors
-	 *  [1] : wait
-	===================================*/
+ *  [1] : wait
+===================================*/
   Skit.prototype.clearActors = function (args) {
     var wait = TRP_CORE.supplementSkitWait(false, args[1]);
     this.processClearActors(wait);
   };
 
   /* show
-	 * 	[1] : name
-	 * 	[2] : wait		(dummy)
-	 *  [3] : position
-	 * 	[4] : opacity 		(255)
-	===================================*/
+ * 	[1] : name
+ * 	[2] : wait		(dummy)
+ *  [3] : position
+ * 	[4] : opacity 		(255)
+===================================*/
   Skit.prototype.showSkitActor = function (args, macroPos) {
     if (!this._isSkitOn) {
       this.start();
@@ -999,8 +999,8 @@ function Skit() {
   };
 
   /* hide
-	 * 	[1] : name
-	===================================*/
+ * 	[1] : name
+===================================*/
   Skit.prototype.hideSkitActor = function (args, macroPos) {
     var name = args[1];
     var actors = this.actorsForHideCommands(name);
@@ -1013,14 +1013,14 @@ function Skit() {
   };
 
   /* fadeIn
-	 * 	[1] : name
-	 * 	[2] : wait (true)
-	 * 	[3] : position
-	 * 	[4] : duration
-	 *  [5] : opacity(255)
-	 *  [6] : easeType
-	 *  [7] : pushIn
-	===================================*/
+ * 	[1] : name
+ * 	[2] : wait (true)
+ * 	[3] : position
+ * 	[4] : duration
+ *  [5] : opacity(255)
+ *  [6] : easeType
+ *  [7] : pushIn
+===================================*/
   Skit.prototype.fadeInSkitActor = function (args, macroPos) {
     if (!this._isSkitOn) {
       this.start();
@@ -1047,11 +1047,11 @@ function Skit() {
   };
 
   /* fadeOut
-	 *  [1] : name
-	 *  [2] : waitFlag     (false)
-	 *  [3] : duration
-	 *  [4] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : waitFlag     (false)
+ *  [3] : duration
+ *  [4] : easeType
+===================================*/
   Skit.prototype.fadeOutSkitActor = function (args, macroPos) {
     var name = args[1];
     var actors = this.actorsForHideCommands(name);
@@ -1068,15 +1068,15 @@ function Skit() {
   };
 
   /* slidein
-	 *  [1] : name
-	 *  [2] : waitFlag
-	 *  [3] : position     (left:2)
-	 *  [4] : slideLength   (0.5)
-	 *  [5] : speed        (20)
-	 *  [6] : direction(auto)
-	 *  [7] : easeType
-	 *  [8] : pushIn(true)
-	===================================*/
+ *  [1] : name
+ *  [2] : waitFlag
+ *  [3] : position     (left:2)
+ *  [4] : slideLength   (0.5)
+ *  [5] : speed        (20)
+ *  [6] : direction(auto)
+ *  [7] : easeType
+ *  [8] : pushIn(true)
+===================================*/
   Skit.prototype.slideInSkitActor = function (args, macroPos) {
     if (!this._isSkitOn) {
       this.start();
@@ -1104,13 +1104,13 @@ function Skit() {
   };
 
   /* slideout
-	 *  [1] : name
-	 *  [2] : waitFlag
-	 *  [3] : slideLength   (0.5)
-	 *  [4] : speed        (20)
-	 *  [5] : direction(auto)
-	 *  [6] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : waitFlag
+ *  [3] : slideLength   (0.5)
+ *  [4] : speed        (20)
+ *  [5] : direction(auto)
+ *  [6] : easeType
+===================================*/
   Skit.prototype.slideOutSkitActor = function (args, macroPos) {
     var name = args[1];
     var actors = this.actorsForHideCommands(name);
@@ -1129,14 +1129,14 @@ function Skit() {
   };
 
   /* moveIn
-	 *  [1] : name
-	 *  [2] : waitFlag
-	 *  [3] : position
-	 *  [4] : speed
-	 *  [5] : direction(auto)
-	 *  [6] : easeType
-	 *  [7] : pushIn
-	===================================*/
+ *  [1] : name
+ *  [2] : waitFlag
+ *  [3] : position
+ *  [4] : speed
+ *  [5] : direction(auto)
+ *  [6] : easeType
+ *  [7] : pushIn
+===================================*/
   Skit.prototype.moveInSkitActor = function (args, macroPos) {
     if (!this._isSkitOn) {
       this.start();
@@ -1163,12 +1163,12 @@ function Skit() {
   };
 
   /* moveOut
-	 *  [1] : name
-	 *  [2] : waitFlag
-	 *  [3] : speed
-	 *  [4] : direction(auto)
-	 *  [5] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : waitFlag
+ *  [3] : speed
+ *  [4] : direction(auto)
+ *  [5] : easeType
+===================================*/
   Skit.prototype.moveOutSkitActor = function (args, macroPos) {
     var name = args[1];
     var actors = this.actorsForHideCommands(name);
@@ -1186,13 +1186,13 @@ function Skit() {
   };
 
   /* move
-	 *  [1] : name
-	 *  [2] : wait
-	 *  [3] : position
-	 *  [4] : speed
-	 *  [5] : relative(false)
-	 *  [6] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : wait
+ *  [3] : position
+ *  [4] : speed
+ *  [5] : relative(false)
+ *  [6] : easeType
+===================================*/
   Skit.prototype.moveSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1210,13 +1210,13 @@ function Skit() {
   };
 
   /* move y
-	 *  [1] : name
-	 *  [2] : wait
-	 *  [3] : position
-	 *  [4] : duration
-	 *  [5] : relative(false)
-	 *  [6] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : wait
+ *  [3] : position
+ *  [4] : duration
+ *  [5] : relative(false)
+ *  [6] : easeType
+===================================*/
   Skit.prototype.moveYSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1234,14 +1234,14 @@ function Skit() {
   };
 
   /* jump
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : height
-	 *  [4] : gravity
-	 *  [5] : angle
-	 *  <preset>
-	 *  double,pop,sank,hop
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : height
+ *  [4] : gravity
+ *  [5] : angle
+ *  <preset>
+ *  double,pop,sank,hop
+===================================*/
   Skit.prototype.jumpSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1259,15 +1259,15 @@ function Skit() {
   };
 
   /* step
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : position
-	 *  [4] : speed
-	 *  [5] : height
-	 *  [6] : gravity
-	 *  [7] : relative
-	 *  [8] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : position
+ *  [4] : speed
+ *  [5] : height
+ *  [6] : gravity
+ *  [7] : relative
+ *  [8] : easeType
+===================================*/
   Skit.prototype.stepSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1287,14 +1287,14 @@ function Skit() {
   };
 
   /* shake
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : strength
-	 *  [4] : count
-	 *  [5] : speedDur
-	 *  [6] : reverse (逆方向からスタート)
-	 *  [7] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : strength
+ *  [4] : count
+ *  [5] : speedDur
+ *  [6] : reverse (逆方向からスタート)
+ *  [7] : easeType
+===================================*/
   Skit.prototype.shakeSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1313,12 +1313,12 @@ function Skit() {
   };
 
   /* flip
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : num
-	 *  [4] : durationPerCount
-	 *  [5] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : num
+ *  [4] : durationPerCount
+ *  [5] : easeType
+===================================*/
   Skit.prototype.flipSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1335,13 +1335,13 @@ function Skit() {
   };
 
   /* angle
-	 *  [1] : name
-	 *  [2] : wait
-	 *  [3] : angle
-	 *  [4] : duration
-	 *  [5] : relative
-	 *  [6] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : wait
+ *  [3] : angle
+ *  [4] : duration
+ *  [5] : relative
+ *  [6] : easeType
+===================================*/
   Skit.prototype.changeAngleSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1359,11 +1359,11 @@ function Skit() {
   };
 
   /* changeExpression
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : expression
-	 *  [4] : duration
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : expression
+ *  [4] : duration
+===================================*/
   Skit.prototype.changeSkitActorExpression = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1379,14 +1379,14 @@ function Skit() {
   };
 
   /* changePose
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : pose
-	 *  [4] : expression
-	 *  [5] : style (flip)
-	 *  [6] : duration
-	 *  [7] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : pose
+ *  [4] : expression
+ *  [5] : style (flip)
+ *  [6] : duration
+ *  [7] : easeType
+===================================*/
   Skit.prototype.changeSkitActorPose = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1405,14 +1405,14 @@ function Skit() {
   };
 
   /* changeScale
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : scaleX
-	 *  [4] : scaleY
-	 *  [5] : duration
-	 *  [6] : relative(false)
-	 *  [7] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : scaleX
+ *  [4] : scaleY
+ *  [5] : duration
+ *  [6] : relative(false)
+ *  [7] : easeType
+===================================*/
   Skit.prototype.changeScaleSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1431,13 +1431,13 @@ function Skit() {
   };
 
   /* changeOpacity
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : opacity
-	 *  [4] : duration
-	 *  [5] : relative(false)
-	 *  [6] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : opacity
+ *  [4] : duration
+ *  [5] : relative(false)
+ *  [6] : easeType
+===================================*/
   Skit.prototype.changeOpacitySkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1455,14 +1455,14 @@ function Skit() {
   };
 
   /* changeTint
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : r
-	 *  [4] : g
-	 *  [5] : b
-	 *  [6] : gray
-	 *  [7] : duration
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : r
+ *  [4] : g
+ *  [5] : b
+ *  [6] : gray
+ *  [7] : duration
+===================================*/
   Skit.prototype.changeTintSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1495,18 +1495,18 @@ function Skit() {
   };
 
   /* setAutoFocus
-	 * [1] : autoFocusFlag(true)
-	===================================*/
+ * [1] : autoFocusFlag(true)
+===================================*/
   Skit.prototype.setAutoFocus = function (args, macroPos) {
     var autoFocus = args[1];
     this._autoFocus = TRP_CORE.supplementDefBool(true, autoFocus);
   };
 
   /* focus
-	 *  [1] : name　　　('reset' => 全てfocus)
-	 *  [2] : wait (false)
-	 *  [3] : onlyFlag (true) 
-	===================================*/
+ *  [1] : name　　　('reset' => 全てfocus)
+ *  [2] : wait (false)
+ *  [3] : onlyFlag (true) 
+===================================*/
   Skit.prototype.focusSkitActor = function (args, macroPos) {
     var target = TRP_CORE.supplementDef("reset", args[1]);
 
@@ -1517,9 +1517,9 @@ function Skit() {
   };
 
   /* unFocus
-	 *  [1] : name
-	 *  [2] : wait (false)
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+===================================*/
   Skit.prototype.unFocusSkitActor = function (args, macroPos) {
     var name = args[1];
     var wait = args[2];
@@ -1532,12 +1532,12 @@ function Skit() {
   };
 
   /* animation
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : animeName
-	 *  [4] : mirror
-	 *  [5] : focus
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : animeName
+ *  [4] : mirror
+ *  [5] : focus
+===================================*/
   Skit.prototype.playAnimationSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1561,19 +1561,19 @@ function Skit() {
   };
 
   /* emphasize
-	 *  [1] : name
-	 *  [2] : wait (false)
-	 *  [3] : duration
-	 *  [4] : scaleX
-	 *  [5] : scaleY
-	 *  [6] : num
-	 *  [7] : interval
-	 *  [8] : r
-	 *  [9] : g
-	 *  [10] : b
-	 *  [11] : a
-	 *  [12] : easeType
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (false)
+ *  [3] : duration
+ *  [4] : scaleX
+ *  [5] : scaleY
+ *  [6] : num
+ *  [7] : interval
+ *  [8] : r
+ *  [9] : g
+ *  [10] : b
+ *  [11] : a
+ *  [12] : easeType
+===================================*/
   Skit.prototype.emphasizeSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1610,8 +1610,8 @@ function Skit() {
   };
 
   /* bringToFront
-	 *  [1] : name
-	===================================*/
+ *  [1] : name
+===================================*/
   Skit.prototype.bringSkitActorToFront = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1623,9 +1623,9 @@ function Skit() {
   };
 
   /* wait
-	 *  [1] : name
-	 *  [2] : frame
-	===================================*/
+ *  [1] : name
+ *  [2] : frame
+===================================*/
   Skit.prototype.waitSkitActor = function (args, macroPos) {
     if (isNaN(args[1])) {
       var name = args[1];
@@ -1642,11 +1642,11 @@ function Skit() {
   };
 
   /* playSequence
-	 *  [1] : name
-	 *  [2] : wait
-	 *  [3] : position
-	 *  [4]~: macroNames
-	===================================*/
+ *  [1] : name
+ *  [2] : wait
+ *  [3] : position
+ *  [4]~: macroNames
+===================================*/
   Skit.prototype.playSequence = function (args, macroPos) {
     args = args.concat();
 
@@ -1663,11 +1663,11 @@ function Skit() {
   };
 
   /* playLoop
-	 *  [1] : name
-	 *  [2] : wait (dummy)
-	 *  [3] : position
-	 *  [4]~: macroNames
-	===================================*/
+ *  [1] : name
+ *  [2] : wait (dummy)
+ *  [3] : position
+ *  [4]~: macroNames
+===================================*/
   var CLEAR_LOOP_ARGS = ["stop", "clear", "ストップ", "クリアー", "クリア"];
   Skit.prototype.playLoop = function (args, macroPos) {
     args = args.concat();
@@ -1690,18 +1690,18 @@ function Skit() {
   };
 
   /* registerMobName
-	 *  [1] : name
-	===================================*/
+ *  [1] : name
+===================================*/
   Skit.prototype.registerSkitMobName = function (args, macroPos) {
     var name = args[1];
     this.registerMobName(name);
   };
 
   /* setDisplayNameWithSkitActor
-	 *  [1] : charaName
-	 *  [2] : wait(dummy)
-	 *  [3] : dispName
-	===================================*/
+ *  [1] : charaName
+ *  [2] : wait(dummy)
+ *  [3] : dispName
+===================================*/
   Skit.prototype.setDisplayNameWithSkitActor = function (args, macroPos) {
     var name = args[1];
     var actor = this.actor(name);
@@ -1781,7 +1781,7 @@ function Skit() {
   };
 
   /* clearActors
-	===================================*/
+===================================*/
   Skit.prototype.processClearActors = function (wait) {
     var actors = this.actors();
     var disappearCommand = parameters.defaultDisappear || 0;
@@ -1797,7 +1797,7 @@ function Skit() {
   };
 
   /* pushOut
-	===================================*/
+===================================*/
   Skit.prototype.pushOutActorsAroundActor = function (target) {
     var margin = parameters.pushInMargin || 2;
     var position = target._position;
@@ -1834,7 +1834,7 @@ function Skit() {
   };
 
   /* focus
-	===================================*/
+===================================*/
   Skit.prototype.processFocusSkitActor = function (wait, target, onlyFlag) {
     onlyFlag = TRP_CORE.supplementDefBool(true, onlyFlag);
 
@@ -1883,7 +1883,7 @@ function Skit() {
   };
 
   /* swap order
-	===================================*/
+===================================*/
   Skit.prototype.processBringActorToFront = function (target) {
     var targetId = target._pictureId;
     var actors = this.actors();
@@ -1912,7 +1912,7 @@ function Skit() {
   };
 
   /* wait
-	===================================*/
+===================================*/
   Skit.prototype.isBusy = function () {
     if (this._waitCount) {
       return true;
@@ -1937,7 +1937,7 @@ function Skit() {
   };
 
   /* mob
-	===================================*/
+===================================*/
   Skit.prototype.registerMobName = function (name) {
     this._mobNames.push(name);
   };
@@ -1946,7 +1946,7 @@ function Skit() {
   };
 
   /* helper
-	===================================*/
+===================================*/
   Skit.prototype.isSkitOn = function () {
     return this._isSkitOn;
   };
@@ -2143,7 +2143,7 @@ function Skit() {
   };
 
   /* update
-	===================================*/
+===================================*/
   SkitActor.prototype.update = function () {
     // if(this._isMob)return;
     if (this._waitCount > 0) {
@@ -2157,7 +2157,7 @@ function Skit() {
   };
 
   /* show & hide
-	===================================*/
+===================================*/
   SkitActor.prototype.show = function (position, opacity) {
     position = TRP_CORE.interpretPositionArg(position);
 
@@ -2222,7 +2222,7 @@ function Skit() {
   };
 
   /* fade in && out
-	===================================*/
+===================================*/
   SkitActor.prototype.fadeIn = function (
     wait,
     easeType,
@@ -2260,7 +2260,7 @@ function Skit() {
   };
 
   /* slideIn & slideOut
-	===================================*/
+===================================*/
   SkitActor.prototype.slideIn = function (
     wait,
     easeType,
@@ -2343,7 +2343,7 @@ function Skit() {
   };
 
   /* moveIn & moveOut
-	===================================*/
+===================================*/
   SkitActor.prototype.moveIn = function (
     wait,
     easeType,
@@ -2397,7 +2397,7 @@ function Skit() {
   };
 
   /* jump
-	===================================*/
+===================================*/
   SkitActor.prototype.jump = function (wait, height, gravity, angle) {
     height = TRP_CORE.supplementDefNum(parameters.jump.height, height);
     gravity = TRP_CORE.supplementDefNum(parameters.jump.gravity, gravity);
@@ -2419,7 +2419,7 @@ function Skit() {
   };
 
   /* step
-	===================================*/
+===================================*/
   SkitActor.prototype.stepMove = function (
     wait,
     easeType,
@@ -2470,7 +2470,7 @@ function Skit() {
   };
 
   /* shake
-	===================================*/
+===================================*/
   SkitActor.prototype.shake = function (
     wait,
     easeType,
@@ -2548,7 +2548,7 @@ function Skit() {
   };
 
   /* expression & pose
-	===================================*/
+===================================*/
   SkitActor.prototype.changeExpression = function (wait, expression, duration) {
     wait = TRP_CORE.supplementSkitWait(parameters.expression.wait, wait);
     expression = TRP_CORE.supplementDef(this.defaultExpression(), expression);
@@ -2755,7 +2755,7 @@ function Skit() {
   };
 
   /* change Opacity
-	===================================*/
+===================================*/
   SkitActor.prototype.changeOpacity = function (
     wait,
     easeType,
@@ -2788,7 +2788,7 @@ function Skit() {
   };
 
   /* focus & unFocus
-	===================================*/
+===================================*/
   SkitActor.prototype.focus = function (wait) {
     wait = TRP_CORE.supplementSkitWait(parameters.focus.wait, wait);
     var duration = parameters.focus.duration;
@@ -2822,7 +2822,7 @@ function Skit() {
   };
 
   /* changeTone
-	===================================*/
+===================================*/
   SkitActor.prototype.changeTone = function (wait, tone, duration) {
     this._tone = tone;
     tone = tone || [0, 0, 0, 0];
@@ -2845,7 +2845,7 @@ function Skit() {
   };
 
   /* emphasizeEffect
-	===================================*/
+===================================*/
   SkitActor.prototype.emphasize = function (
     wait,
     easeType,
@@ -2897,7 +2897,7 @@ function Skit() {
   };
 
   /* scale
-	===================================*/
+===================================*/
   SkitActor.prototype.changeScale = function (
     wait,
     easeType,
@@ -2950,7 +2950,7 @@ function Skit() {
   };
 
   /* move position
-	===================================*/
+===================================*/
   SkitActor.prototype.movePosition = function (
     wait,
     easeType,
@@ -3034,7 +3034,7 @@ function Skit() {
   };
 
   /* move y position
-	===================================*/
+===================================*/
   SkitActor.prototype.moveYPosition = function (
     wait,
     easeType,
@@ -3063,7 +3063,7 @@ function Skit() {
   };
 
   /* flip
-	===================================*/
+===================================*/
   SkitActor.prototype.flip = function (wait, easeType, num, durationPerCount) {
     wait = TRP_CORE.supplementSkitWait(parameters.flip.wait, wait);
     easeType = TRP_CORE.supplementEasingArg(parameters.flip.easeType, easeType);
@@ -3111,7 +3111,7 @@ function Skit() {
   TRP_CORE.NO_EASE = TRP_CORE.EASING.linear;
 
   /* changeAngle
-	===================================*/
+===================================*/
   SkitActor.prototype.setAngle = function (angle, relative) {
     this.changeAngle(TRP_CORE.NO_WAIT, TRP_CORE.NO_EASE, angle, 0, relative);
   };
@@ -3146,7 +3146,7 @@ function Skit() {
   };
 
   /* animation
-	===================================*/
+===================================*/
   SkitActor.prototype.playAnimation = function (wait, animeName, mirror) {
     mirror = TRP_CORE.supplementDefBool(false, mirror);
     wait = TRP_CORE.supplementSkitWait(parameters.animation.wait, wait);
@@ -3181,7 +3181,7 @@ function Skit() {
   };
 
   /* zOrder
-	===================================*/
+===================================*/
   SkitActor.MAX_Z_ORDER = 10;
 
   SkitActor.prototype.isMaxZOrder = function () {
@@ -3207,7 +3207,7 @@ function Skit() {
   };
 
   /* apply
-	===================================*/
+===================================*/
   SkitActor.prototype.apply = function () {
     var picture = this.picture();
 
@@ -3231,7 +3231,7 @@ function Skit() {
   };
 
   /* wait
-	===================================*/
+===================================*/
   SkitActor.prototype.wait = function (wait) {
     if (this._playingSequences[0]) {
       this._playingSequences[0]._waitCount = Math.max(
@@ -3247,7 +3247,7 @@ function Skit() {
   };
 
   /* timerCommand
-	===================================*/
+===================================*/
   SkitActor.prototype.pushTimerCommand = function (duration, command, args) {
     //一旦newに入れておいて、次回updateループからtimerCommandsに移される
     this._newTimerCommands.push({
@@ -3284,7 +3284,7 @@ function Skit() {
   };
 
   /* sequence
-	===================================*/
+===================================*/
   const LOOP_ARG = "__LOOP";
   SkitActor.prototype.playSequence = function (
     wait,
@@ -3389,7 +3389,7 @@ function Skit() {
   };
 
   /* helper
-	===================================*/
+===================================*/
   SkitActor.prototype.data = function () {
     return parameters.dataActors[this._name];
   };
@@ -3553,7 +3553,7 @@ function Skit() {
   };
 
   /* opacity
-	===================================*/
+===================================*/
   Game_Picture.prototype.initOpacityChange = function () {
     this.clearOpacityChange();
   };
@@ -3617,7 +3617,7 @@ function Skit() {
   //     break;
 
   /* scale
-	===================================*/
+===================================*/
   Game_Picture.prototype.initScaleChange = function () {
     this.clearScaleChange();
   };
@@ -3677,14 +3677,14 @@ function Skit() {
   };
 
   /* overlay
-	===================================*/
+===================================*/
   Game_Picture.prototype.changeOverlay = function (imageName, duration) {
     this._overlayName = imageName;
     this._overlayDuration = duration;
   };
 
   /* changeImage
-	===================================*/
+===================================*/
   Game_Picture.prototype.changeImage = function (imageName) {
     this._nextImageName = imageName;
   };
@@ -3695,7 +3695,7 @@ function Skit() {
   };
 
   /* movement
-	===================================*/
+===================================*/
   Game_Picture.prototype.initMovement = function () {
     this.clearMovement();
   };
@@ -3740,7 +3740,7 @@ function Skit() {
   };
 
   /* angle
-	===================================*/
+===================================*/
   Game_Picture.prototype.initAngleChange = function () {
     this.clearAngleChange();
   };
@@ -3788,7 +3788,7 @@ function Skit() {
   };
 
   /* yRotate
-	===================================*/
+===================================*/
   Game_Picture.prototype.initYAngleChange = function () {
     this._yAngle = 0;
     this.clearYAngleChange();
@@ -3838,7 +3838,7 @@ function Skit() {
   };
 
   /* emphasisEffect
-	===================================*/
+===================================*/
   Game_Picture.prototype.emphasize = function (
     duration,
     scaleX,
@@ -3866,7 +3866,7 @@ function Skit() {
   };
 
   /* jump
-	===================================*/
+===================================*/
   Game_Picture.prototype.initJump = function () {
     this._jumpPeak = 0;
     this._jumpCount = 0;
@@ -3910,7 +3910,7 @@ function Skit() {
   };
 
   /* animation
-	===================================*/
+===================================*/
   Game_Picture.prototype.initAnimation = function () {
     this._animation = null;
     this._animationOffset = { x: 0, y: 0 };
@@ -3929,7 +3929,7 @@ function Skit() {
   };
 
   /* zOrder
-	===================================*/
+===================================*/
   Game_Picture.prototype.setBustPictureZ = function (z) {
     this._bustPictureZ = z;
   };
@@ -3939,7 +3939,7 @@ function Skit() {
   };
 
   /* animation offset
-	===================================*/
+===================================*/
   Game_Picture.prototype.setAnimationOffset = function (x, y) {
     this._animationOffset = { x: x, y: y };
   };
@@ -3948,7 +3948,7 @@ function Skit() {
   };
 
   /* helper
-	===================================*/
+===================================*/
   Game_Picture.prototype.skitActorName = function () {
     return this._skitActorName;
   };
@@ -4031,7 +4031,7 @@ function Skit() {
   };
 
   /* update
-	===================================*/
+===================================*/
   var _Sprite_Picture_update = Sprite_Picture.prototype.update;
   Sprite_Picture.prototype.update = function () {
     _Sprite_Picture_update.call(this);
@@ -4085,7 +4085,7 @@ function Skit() {
   };
 
   /* updateBustPicture
-	===================================*/
+===================================*/
   Sprite_Picture.prototype.updateBustPicture = function (picture) {
     picture = picture || this.picture();
 
@@ -4121,7 +4121,7 @@ function Skit() {
   };
 
   /* overlay
-	===================================*/
+===================================*/
   Sprite_Picture.DEFAULT_TONE = [0, 0, 0, 0];
   Sprite_Picture.prototype.updateOverlay = function () {
     //overlay
@@ -4271,7 +4271,7 @@ function Skit() {
   };
 
   /* animation
-	===================================*/
+===================================*/
   Sprite_Picture.prototype.initAnimation = function () {
     this._animationSprites = [];
     this._effectTarget = this;
@@ -4345,7 +4345,7 @@ function Skit() {
   };
 
   /* emphasize
-	===================================*/
+===================================*/
   Sprite_Picture.prototype.updateEmphasis = function (emphasis) {
     emphasis.count -= 1;
     if (emphasis.count > 0) {
@@ -4565,7 +4565,7 @@ function Skit() {
   };
 
   /* helper
-	===================================*/
+===================================*/
   Spriteset_Base.prototype._compareChildOrder = function (a, b) {
     if (a.z !== b.z) {
       return (a.z || 0) - (b.z || 0);
