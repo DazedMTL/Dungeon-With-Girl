@@ -12,658 +12,665 @@ Yanfly.IDur.version = 1.04;
 
 //=============================================================================
 /*:
-* @plugindesc v1.04 (Requires YEP_ItemCore.js) Independent equipment
-* now have durability, which when runs out, will break.
-* @author Yanfly Engine Plugins
-*
-* @param ---Defaults---
-* @default
-*
-* @param Default Durability
-* @parent ---Defaults---
-* @desc This is the default durability value for independent
-* equipment when made. Set to -1 to bypass durability.
-* @default 100
-*
-* @param Durability Variance
-* @parent ---Defaults---
-* @type number
-* @min 0
-* @desc The random variance value for durability.
-* @default 5
-*
-* @param Durability Maximum
-* @parent ---Defaults---
-* @type number
-* @min 1
-* @desc Default maximum value for durability.
-* @default 200
-*
-* @param ---Durability Drop---
-* @default
-*
-* @param Physical Action
-* @parent ---Durability Drop---
-* @desc When performing physical actions, drop all equipped
-* weapons durability by this much.
-* @default -1
-*
-* @param Magical Action
-* @parent ---Durability Drop---
-* @desc When performing magical actions, drop all equipped
-* weapons durability by this much.
-* @default 0
-*
-* @param Certain Action
-* @parent ---Durability Drop---
-* @desc When performing certain hit actions, drop all equipped
-* weapons durability by this much.
-* @default 0
-*
-* @param Damage All Armor
-* @parent ---Durability Drop---
-* @type boolean
-* @on Damage All
-* @off Damage Random
-* @desc When receiving damage, damage all armors or 1 random?
-* RANDOM - false     ALL - true
-* @default false
-*
-* @param Physical Damage
-* @parent ---Durability Drop---
-* @desc When performing physical actions, drop all equipped weapons
-* durability by this much.
-* @default -2
-*
-* @param Magical Damage
-* @parent ---Durability Drop---
-* @desc When performing magical actions, drop all equipped weapons
-* durability by this much.
-* @default -1
-*
-* @param Certain Damage
-* @parent ---Durability Drop---
-* @desc When performing certain hit actions, drop all equipped weapons
-* durability by this much.
-* @default -1
-*
-* @param ---Breaking---
-* @default
-*
-* @param Broken Text
-* @parent ---Breaking---
-* @desc The text shown when an item breaks mid-battle.
-* %1 - User's name     %2 - Item Name     %3 - Item Icon
-* @default %1's %3%2 broke!
-*
-* @param Broken Wait
-* @parent ---Breaking---
-* @desc If using the Battle Engine Core, this is how many frames
-* the message will wait.
-* @default 60
-*
-* @param Break Sound
-* @parent ---Breaking---
-* @type file
-* @dir audio/se/
-* @require 1
-* @desc This is the default break sound filename.
-* This is case-sensitive. Do not include file extension.
-* @default Crash
-*
-* @param Break Volume
-* @parent ---Breaking---
-* @desc This is the default break sound volume.
-* @default 100
-*
-* @param Break Pitch
-* @parent ---Breaking---
-* @desc This is the default break sound pitch.
-* @default 150
-*
-* @param Break Pan
-* @parent ---Breaking---
-* @desc This is the default break sound pan.
-* @default 0
-*
-* @param ---Repair---
-* @default
-*
-* @param Show Repair
-* @parent ---Repair---
-* @type boolean
-* @on Show
-* @off Hide
-* @desc Show the repair equipment option when selecting equips?
-* NO - false     YES - true
-* @default true
-*
-* @param Enable Repair
-* @parent ---Repair---
-* @type boolean
-* @on Enable
-* @off Disable
-* @desc Enable the repair equipment option when selecting equips?
-* NO - false     YES - true
-* @default true
-*
-* @param Repair Command
-* @parent ---Repair---
-* @desc Command text for repairing eslected equipment.
-* %1 - Equipment Name
-* @default Repair %1
-*
-* @param Repair Sound
-* @parent ---Repair---
-* @type file
-* @dir audio/se/
-* @require 1
-* @desc This is the default repair sound filename.
-* This is case-sensitive. Do not include file extension.
-* @default Skill2
-*
-* @param Repair Volume
-* @parent ---Repair---
-* @desc This is the default repair sound volume.
-* @default 100
-*
-* @param Repair Pitch
-* @parent ---Repair---
-* @desc This is the default repair sound pitch.
-* @default 150
-*
-* @param Repair Pan
-* @parent ---Repair---
-* @desc This is the default repair sound pan.
-* @default 0
-*
-* @param ---Window Info---
-* @default
-*
-* @param Show Durability
-* @parent ---Window Info---
-* @desc Show durability values for equipment?
-* NO - false     YES - true
-* @default true
-*
-* @param Durability Text
-* @parent ---Window Info---
-* @desc Text used to display durability:
-* @default Durability
-*
-* @param Durability Format
-* @parent ---Window Info---
-* @desc The format in displaying the durability value.
-* %1 - Current Durability     %2 - Maximum Durability
-* @default %1
-*
-* @param Show Unbreakable
-* @parent ---Window Info---
-* @type boolean
-* @on Show
-* @off Hide
-* @desc Show the durability value if item is unbreakable?
-* NO - false     YES - true
-* @default true
-*
-* @param Unbreakable Text
-* @parent ---Window Info---
-* @desc The text used to indicate an item is unbreakable.
-* @default Unbreakable
-*
-* @param ---Durability Color---
-* @default
-*
-* @param Unbreakable
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color used for unbreakable items.
-* @default 23
-*
-* @param Max Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is equal to its max.
-* @default 29
-*
-* @param 190% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 190% default.
-* @default 29
-*
-* @param 175% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 175% default.
-* @default 24
-*
-* @param 150% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 150% default.
-* @default 24
-*
-* @param 120% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 120% default.
-* @default 4
-*
-* @param 110% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 110% default.
-* @default 0
-*
-* @param 100% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 100% default.
-* @default 0
-*
-* @param 80% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 80% default.
-* @default 0
-*
-* @param 50% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 80% default.
-* @default 6
-*
-* @param 25% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 25% default.
-* @default 17
-*
-* @param 10% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 10% default.
-* @default 2
-*
-* @param 1% Durability
-* @parent ---Durability Color---
-* @type number
-* @min 0
-* @max 31
-* @desc Text color when durability is above 1% default.
-* @default 18
-*
-* @help
-* ============================================================================
-* Introduction
-* ============================================================================
-*
-* This plugin requires YEP_ItemCore.
-* Make sure this plugin is located under YEP_ItemCore in the plugin list.
-*
-* Independent Weapons and Armors will now have a Durability value. Over the
-* course of battle, equipment durability will drop based on actions performed,
-* damage taken, and the like. When a piece of equipment's durability value
-* reaches 0, the piece of equipment will break. Durability can be repaired by
-* items and increased by skills, too.
-*
-* ============================================================================
-* Notetags
-* ============================================================================
-*
-* The following notetags can be used to adjust item durability for equipment.
-*
-* Weapon and Armor Notetags:
-* 
-*   <Durability: x>
-*   This sets the item's default durability value to x. This is the starting
-*   durability value for the item. If this notetag isn't used, the independent
-*   equipment will refer to the value in the plugin parameters.
-*
-*   <Durability Variance: x>
-*   This alters the starting durability value with a variance of x. This means
-*   there can be a variance of -x to +x for the durability starting value.
-*
-*   <Durability Maximum: x>
-*   This is the maximum durability value the independent equipment can have.
-*   When repairing durability, the item's durability value cannot exceed this
-*   amount. This amount is dependent on the base item's durability value.
-*
-*   <Bypass Durability>
-*   <Unbreakable>
-*   This sets the item to not have bypass the durability system and making the
-*   independent item unbreakable.
-*
-*   <Break Sound Name: filename>
-*   <Break Sound Volume: x>
-*   <Break Sound Pitch: x>
-*   <Break Sound Pan: +x>
-*   <Break Sound Pan: -x>
-*   This changes the sound effect played when using this piece of equipment is
-*   broken in battle. Filenames are case sensitive and do not include the file
-*   extension into the filename.
-*
-* Item, Weapon, Armor Notetags:
-*
-*   <Repair Durability: x>
-*   This will repair any weapon or armor's durability by x. The repair effect
-*   is accessed from the weapon or armor's action menu.
-*
-*   <Repair Weapon: x>
-*   <Repair Armor: x>
-*   This will specifically repair only weapons or armors by x amount. The
-*   repair effect is accessed from the weapon or armor's action menu.
-*
-*   <Repair WType x: y>
-*   <Repair AType x: y>
-*   This will specifically repair only weapon-type x or armor-type x by y
-*   amount. The repair is accessed from the weapon or armor's action menu.
-*
-*   <Repair Sound Name: filename>
-*   <Repair Sound Volume: x>
-*   <Repair Sound Pitch: x>
-*   <Repair Sound Pan: +x>
-*   <Repair Sound Pan: -x>
-*   This changes the sound effect played when using this item to repair the
-*   durability of another item.
-*
-*   <Unbreakable Durability>
-*   Removes the equipment's durability and makes it unbreakable.
-*
-*   <Unbreakable Weapon>
-*   <Unbreakable Armor>
-*   Removes the weapon or armor's durability and makes it unbreakable.
-*
-*   <Unbreakable WType x>
-*   <Unbreakable AType x>
-*   Removes durability for specifically weapon-type x or armor-type x and
-*   makes it unbreakable. Filenames are case sensitive and do not include the
-*   file extension into the filename.
-*
-* Skill and Item Notetags:
-*
-*   <User Weapon Durability: +x>
-*   <User Weapon Durability: -x>
-*   Each hit of this skill/item will cause all of the user's weapon(s)
-*   durability to be altered by +x or -x. If it reaches 0 or lower, the weapon
-*   will break.
-*
-*   <User All Weapon Durability: +x>
-*   <User All Weapon Durability: -x>
-*   Each hit of this skill/item will cause all of the user's weapon(s)
-*   durability to be altered by +x or -x. If it reaches 0 or lower, the weapon
-*   will break.
-*
-*   <User Random Weapon Durability: +x>
-*   <User Random Weapon Durability: -x>
-*   Each hit of this skill/item will cause a random weapon equipped by the
-*   user to have its durability altered by +x or -x. If it reaches 0 or lower,
-*   the weapon will break.
-*
-*   <User Armor Durability: +x>
-*   <User Armor Durability: -x>
-*   Each hit of this skill/item will cause the user's armor(s) durability to
-*   be altered by +x or -x. Depending on the 'Damage All' plugin parameter,
-*   this will affect either all armors or affect a random armor piece. If the
-*   item reaches 0 or lower, the armor will break.
-*
-*   <User All Armor Durability: +x>
-*   <User All Armor Durability: -x>
-*   Each hit of this skill/item will cause all of the user's armor(s)
-*   durability to be altered by +x or -x. If it reaches 0 or lower, the armor
-*   will break.
-*
-*   <User Random Armor Durability: +x>
-*   <User Random Armor Durability: -x>
-*   Each hit of this skill/item will cause a random armor equipped by the
-*   user to have its durability altered by +x or -x. If it reaches 0 or lower,
-*   the armor will break.
-*
-*   <Target Weapon Durability: +x>
-*   <Target Weapon Durability: -x>
-*   Each hit of this skill/item will cause all of the target's weapon(s)
-*   durability to be altered by +x or -x. If it reaches 0 or lower, the weapon
-*   will break.
-*
-*   <Target All Weapon Durability: +x>
-*   <Target All Weapon Durability: -x>
-*   Each hit of this skill/item will cause all of the target's weapon(s)
-*   durability to be altered by +x or -x. If it reaches 0 or lower, the weapon
-*   will break.
-*
-*   <Target Random Weapon Durability: +x>
-*   <Target Random Weapon Durability: -x>
-*   Each hit of this skill/item will cause a random weapon equipped by the
-*   target to have its durability altered by +x or -x. If it reaches 0 or
-*   lower, the weapon will break.
-*
-*   <Target Armor Durability: +x>
-*   <Target Armor Durability: -x>
-*   Each hit of this skill/item will cause the target's armor(s) durability to
-*   be altered by +x or -x. Depending on the 'Damage All' plugin parameter,
-*   this will affect either all armors or affect a random armor piece. If the
-*   item reaches 0 or lower, the armor will break.
-*
-*   <Target All Armor Durability: +x>
-*   <Target All Armor Durability: -x>
-*   Each hit of this skill/item will cause all of the target's armor(s)
-*   durability to be altered by +x or -x. If it reaches 0 or lower, the armor
-*   will break.
-*
-*   <Target Random Armor Durability: +x>
-*   <Target Random Armor Durability: -x>
-*   Each hit of this skill/item will cause a random armor equipped by the
-*   target to have its durability altered by +x or -x. If it reaches 0 or
-*   lower, the armor will break.
-*
-* ============================================================================
-* Lunatic Mode - Custom Break Effect
-* ============================================================================
-*
-* For those with JavaScript proficiency, you can use this notetag to have your
-* weapons and/or armors produce special effects when they break.
-*
-* Weapon and Armor Notetags:
-*
-*   <Custom Break Effect>
-*    var newItem = $dataitems[1];
-*    $gameParty.gainItem(newItem, 1);
-*   </Custom Break Effect>
-*   This effect will only occur if the item breaks as a result of durability
-*   reaching 0 or lower from an action.
-*
-* ============================================================================
-* Lunatic Mode - Custom Repair Effect
-* ============================================================================
-*
-* For those with JavaScript proficiency, you can use this notetag to have your
-* repair item perform a custom effect when it is used to repair a piece of
-* equipment.
-*
-* Item, Weapon, and Armor Notetags:
-*
-*   <Custom Repair Effect>
-*    item.price += 200;
-*   </Custom Repair Effect>
-*   The 'item' variable refers to the item being repaired. Any changes made to
-*   it will be saved for the independent item.
-*
-* ============================================================================
-* Lunatic Mode - Custom Weapon/Armor Durability Modifiers
-* ============================================================================
-*
-* For those with JavaScript proficiency, you can use these notetags to have
-* your skill and item actions alter the target's equipment durability.
-*
-* Skill and Item Notetags:
-*
-*   ---
-*
-*   <Custom User All Weapon Durability>
-*    value -= user.atk;
-*   </Custom User All Weapon Durability>
-*
-*   <Custom User Random Weapon Durability>
-*    value -= user.atk;
-*   </Custom User Random Weapon Durability>
-*
-*   <Custom User All Armor Durability>
-*    value -= user.atk;
-*   </Custom User All Armor Durability>
-*
-*   <Custom User Random Armor Durability>
-*    value -= user.atk;
-*   </Custom User Random Armor Durability>
-*   The 'value' variable determines how to affect the user's weapon/armor. If
-*   'value' is negative, durability will drop. If 'value' is positive, then
-*   durability will increase. If the user's equipment reaches 0 or lower,
-*   the equipment will break.
-*
-*   ---
-*
-*   <Custom Target All Weapon Durability>
-*    value -= user.atk;
-*   </Custom Target All Weapon Durability>
-*
-*   <Custom Target Random Weapon Durability>
-*    value -= user.atk;
-*   </Custom Target Random Weapon Durability>
-*
-*   <Custom Target All Armor Durability>
-*    value -= user.atk;
-*   </Custom Target All Armor Durability>
-*
-*   <Custom Target Random Armor Durability>
-*    value -= user.atk;
-*   </Custom Target Random Armor Durability>
-*   The 'value' variable determines how to affect the target's weapon/armor.
-*   If 'value' is negative, durability will drop. If 'value' is positive, then
-*   durability will increase. If the target's equipment reaches 0 or lower,
-*   the equipment will break.
-*
-* ============================================================================
-* Plugin Commands
-* ============================================================================
-*
-* There are a few plugin commands you can utilize to show/hide the Repair
-* option in the Item Action Window and/or enable/disable it.
-*
-* Plugin Commands
-*
-*   ShowRepairDurability
-*   HideRepairDurability
-*   - This will show/hide the Repair command in the Item Action Window.
-*
-*   EnableRepairDurability
-*   DisableRepairDurability
-*   - This will enable/disable the Repair command in the Item Action Window.
-*
-* ============================================================================
-* Changelog
-* ============================================================================
-* 
-* Version 1.04:
-* - Bypass the isDevToolsOpen() error when bad code is inserted into a script
-* call or custom Lunatic Mode code segment due to updating to MV 1.6.1.
-*
-* Version 1.03:
-* - Updated for RPG Maker MV version 1.5.0.
-*
-* Version 1.02:
-* - Lunatic Mode fail safes added.
-*
-* Version 1.01a:
-* - Updated for RPG Maker MV version 1.1.0.
-* - Optimization update.
-*
-* Version 1.00:
-* - Finished Plugin!
-*/
+ * @plugindesc v1.04 (Requires YEP_ItemCore.js) Independent equipment
+ * now have durability, which when runs out, will break.
+ * @author Yanfly Engine Plugins
+ *
+ * @param ---Defaults---
+ * @default
+ *
+ * @param Default Durability
+ * @parent ---Defaults---
+ * @desc This is the default durability value for independent
+ * equipment when made. Set to -1 to bypass durability.
+ * @default 100
+ *
+ * @param Durability Variance
+ * @parent ---Defaults---
+ * @type number
+ * @min 0
+ * @desc The random variance value for durability.
+ * @default 5
+ *
+ * @param Durability Maximum
+ * @parent ---Defaults---
+ * @type number
+ * @min 1
+ * @desc Default maximum value for durability.
+ * @default 200
+ *
+ * @param ---Durability Drop---
+ * @default
+ *
+ * @param Physical Action
+ * @parent ---Durability Drop---
+ * @desc When performing physical actions, drop all equipped
+ * weapons durability by this much.
+ * @default -1
+ *
+ * @param Magical Action
+ * @parent ---Durability Drop---
+ * @desc When performing magical actions, drop all equipped
+ * weapons durability by this much.
+ * @default 0
+ *
+ * @param Certain Action
+ * @parent ---Durability Drop---
+ * @desc When performing certain hit actions, drop all equipped
+ * weapons durability by this much.
+ * @default 0
+ *
+ * @param Damage All Armor
+ * @parent ---Durability Drop---
+ * @type boolean
+ * @on Damage All
+ * @off Damage Random
+ * @desc When receiving damage, damage all armors or 1 random?
+ * RANDOM - false     ALL - true
+ * @default false
+ *
+ * @param Physical Damage
+ * @parent ---Durability Drop---
+ * @desc When performing physical actions, drop all equipped weapons
+ * durability by this much.
+ * @default -2
+ *
+ * @param Magical Damage
+ * @parent ---Durability Drop---
+ * @desc When performing magical actions, drop all equipped weapons
+ * durability by this much.
+ * @default -1
+ *
+ * @param Certain Damage
+ * @parent ---Durability Drop---
+ * @desc When performing certain hit actions, drop all equipped weapons
+ * durability by this much.
+ * @default -1
+ *
+ * @param ---Breaking---
+ * @default
+ *
+ * @param Broken Text
+ * @parent ---Breaking---
+ * @desc The text shown when an item breaks mid-battle.
+ * %1 - User's name     %2 - Item Name     %3 - Item Icon
+ * @default %1's %3%2 broke!
+ *
+ * @param Broken Wait
+ * @parent ---Breaking---
+ * @desc If using the Battle Engine Core, this is how many frames
+ * the message will wait.
+ * @default 60
+ *
+ * @param Break Sound
+ * @parent ---Breaking---
+ * @type file
+ * @dir audio/se/
+ * @require 1
+ * @desc This is the default break sound filename.
+ * This is case-sensitive. Do not include file extension.
+ * @default Crash
+ *
+ * @param Break Volume
+ * @parent ---Breaking---
+ * @desc This is the default break sound volume.
+ * @default 100
+ *
+ * @param Break Pitch
+ * @parent ---Breaking---
+ * @desc This is the default break sound pitch.
+ * @default 150
+ *
+ * @param Break Pan
+ * @parent ---Breaking---
+ * @desc This is the default break sound pan.
+ * @default 0
+ *
+ * @param ---Repair---
+ * @default
+ *
+ * @param Show Repair
+ * @parent ---Repair---
+ * @type boolean
+ * @on Show
+ * @off Hide
+ * @desc Show the repair equipment option when selecting equips?
+ * NO - false     YES - true
+ * @default true
+ *
+ * @param Enable Repair
+ * @parent ---Repair---
+ * @type boolean
+ * @on Enable
+ * @off Disable
+ * @desc Enable the repair equipment option when selecting equips?
+ * NO - false     YES - true
+ * @default true
+ *
+ * @param Repair Command
+ * @parent ---Repair---
+ * @desc Command text for repairing eslected equipment.
+ * %1 - Equipment Name
+ * @default Repair %1
+ *
+ * @param Repair Sound
+ * @parent ---Repair---
+ * @type file
+ * @dir audio/se/
+ * @require 1
+ * @desc This is the default repair sound filename.
+ * This is case-sensitive. Do not include file extension.
+ * @default Skill2
+ *
+ * @param Repair Volume
+ * @parent ---Repair---
+ * @desc This is the default repair sound volume.
+ * @default 100
+ *
+ * @param Repair Pitch
+ * @parent ---Repair---
+ * @desc This is the default repair sound pitch.
+ * @default 150
+ *
+ * @param Repair Pan
+ * @parent ---Repair---
+ * @desc This is the default repair sound pan.
+ * @default 0
+ *
+ * @param ---Window Info---
+ * @default
+ *
+ * @param Show Durability
+ * @parent ---Window Info---
+ * @desc Show durability values for equipment?
+ * NO - false     YES - true
+ * @default true
+ *
+ * @param Durability Text
+ * @parent ---Window Info---
+ * @desc Text used to display durability:
+ * @default Durability
+ *
+ * @param Durability Format
+ * @parent ---Window Info---
+ * @desc The format in displaying the durability value.
+ * %1 - Current Durability     %2 - Maximum Durability
+ * @default %1
+ *
+ * @param Show Unbreakable
+ * @parent ---Window Info---
+ * @type boolean
+ * @on Show
+ * @off Hide
+ * @desc Show the durability value if item is unbreakable?
+ * NO - false     YES - true
+ * @default true
+ *
+ * @param Unbreakable Text
+ * @parent ---Window Info---
+ * @desc The text used to indicate an item is unbreakable.
+ * @default Unbreakable
+ *
+ * @param ---Durability Color---
+ * @default
+ *
+ * @param Unbreakable
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color used for unbreakable items.
+ * @default 23
+ *
+ * @param Max Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is equal to its max.
+ * @default 29
+ *
+ * @param 190% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 190% default.
+ * @default 29
+ *
+ * @param 175% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 175% default.
+ * @default 24
+ *
+ * @param 150% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 150% default.
+ * @default 24
+ *
+ * @param 120% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 120% default.
+ * @default 4
+ *
+ * @param 110% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 110% default.
+ * @default 0
+ *
+ * @param 100% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 100% default.
+ * @default 0
+ *
+ * @param 80% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 80% default.
+ * @default 0
+ *
+ * @param 50% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 80% default.
+ * @default 6
+ *
+ * @param 25% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 25% default.
+ * @default 17
+ *
+ * @param 10% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 10% default.
+ * @default 2
+ *
+ * @param 1% Durability
+ * @parent ---Durability Color---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc Text color when durability is above 1% default.
+ * @default 18
+ *
+ * @help
+ * ============================================================================
+ * Introduction
+ * ============================================================================
+ *
+ * This plugin requires YEP_ItemCore.
+ * Make sure this plugin is located under YEP_ItemCore in the plugin list.
+ *
+ * Independent Weapons and Armors will now have a Durability value. Over the
+ * course of battle, equipment durability will drop based on actions performed,
+ * damage taken, and the like. When a piece of equipment's durability value
+ * reaches 0, the piece of equipment will break. Durability can be repaired by
+ * items and increased by skills, too.
+ *
+ * ============================================================================
+ * Notetags
+ * ============================================================================
+ *
+ * The following notetags can be used to adjust item durability for equipment.
+ *
+ * Weapon and Armor Notetags:
+ *
+ *   <Durability: x>
+ *   This sets the item's default durability value to x. This is the starting
+ *   durability value for the item. If this notetag isn't used, the independent
+ *   equipment will refer to the value in the plugin parameters.
+ *
+ *   <Durability Variance: x>
+ *   This alters the starting durability value with a variance of x. This means
+ *   there can be a variance of -x to +x for the durability starting value.
+ *
+ *   <Durability Maximum: x>
+ *   This is the maximum durability value the independent equipment can have.
+ *   When repairing durability, the item's durability value cannot exceed this
+ *   amount. This amount is dependent on the base item's durability value.
+ *
+ *   <Bypass Durability>
+ *   <Unbreakable>
+ *   This sets the item to not have bypass the durability system and making the
+ *   independent item unbreakable.
+ *
+ *   <Break Sound Name: filename>
+ *   <Break Sound Volume: x>
+ *   <Break Sound Pitch: x>
+ *   <Break Sound Pan: +x>
+ *   <Break Sound Pan: -x>
+ *   This changes the sound effect played when using this piece of equipment is
+ *   broken in battle. Filenames are case sensitive and do not include the file
+ *   extension into the filename.
+ *
+ * Item, Weapon, Armor Notetags:
+ *
+ *   <Repair Durability: x>
+ *   This will repair any weapon or armor's durability by x. The repair effect
+ *   is accessed from the weapon or armor's action menu.
+ *
+ *   <Repair Weapon: x>
+ *   <Repair Armor: x>
+ *   This will specifically repair only weapons or armors by x amount. The
+ *   repair effect is accessed from the weapon or armor's action menu.
+ *
+ *   <Repair WType x: y>
+ *   <Repair AType x: y>
+ *   This will specifically repair only weapon-type x or armor-type x by y
+ *   amount. The repair is accessed from the weapon or armor's action menu.
+ *
+ *   <Repair Sound Name: filename>
+ *   <Repair Sound Volume: x>
+ *   <Repair Sound Pitch: x>
+ *   <Repair Sound Pan: +x>
+ *   <Repair Sound Pan: -x>
+ *   This changes the sound effect played when using this item to repair the
+ *   durability of another item.
+ *
+ *   <Unbreakable Durability>
+ *   Removes the equipment's durability and makes it unbreakable.
+ *
+ *   <Unbreakable Weapon>
+ *   <Unbreakable Armor>
+ *   Removes the weapon or armor's durability and makes it unbreakable.
+ *
+ *   <Unbreakable WType x>
+ *   <Unbreakable AType x>
+ *   Removes durability for specifically weapon-type x or armor-type x and
+ *   makes it unbreakable. Filenames are case sensitive and do not include the
+ *   file extension into the filename.
+ *
+ * Skill and Item Notetags:
+ *
+ *   <User Weapon Durability: +x>
+ *   <User Weapon Durability: -x>
+ *   Each hit of this skill/item will cause all of the user's weapon(s)
+ *   durability to be altered by +x or -x. If it reaches 0 or lower, the weapon
+ *   will break.
+ *
+ *   <User All Weapon Durability: +x>
+ *   <User All Weapon Durability: -x>
+ *   Each hit of this skill/item will cause all of the user's weapon(s)
+ *   durability to be altered by +x or -x. If it reaches 0 or lower, the weapon
+ *   will break.
+ *
+ *   <User Random Weapon Durability: +x>
+ *   <User Random Weapon Durability: -x>
+ *   Each hit of this skill/item will cause a random weapon equipped by the
+ *   user to have its durability altered by +x or -x. If it reaches 0 or lower,
+ *   the weapon will break.
+ *
+ *   <User Armor Durability: +x>
+ *   <User Armor Durability: -x>
+ *   Each hit of this skill/item will cause the user's armor(s) durability to
+ *   be altered by +x or -x. Depending on the 'Damage All' plugin parameter,
+ *   this will affect either all armors or affect a random armor piece. If the
+ *   item reaches 0 or lower, the armor will break.
+ *
+ *   <User All Armor Durability: +x>
+ *   <User All Armor Durability: -x>
+ *   Each hit of this skill/item will cause all of the user's armor(s)
+ *   durability to be altered by +x or -x. If it reaches 0 or lower, the armor
+ *   will break.
+ *
+ *   <User Random Armor Durability: +x>
+ *   <User Random Armor Durability: -x>
+ *   Each hit of this skill/item will cause a random armor equipped by the
+ *   user to have its durability altered by +x or -x. If it reaches 0 or lower,
+ *   the armor will break.
+ *
+ *   <Target Weapon Durability: +x>
+ *   <Target Weapon Durability: -x>
+ *   Each hit of this skill/item will cause all of the target's weapon(s)
+ *   durability to be altered by +x or -x. If it reaches 0 or lower, the weapon
+ *   will break.
+ *
+ *   <Target All Weapon Durability: +x>
+ *   <Target All Weapon Durability: -x>
+ *   Each hit of this skill/item will cause all of the target's weapon(s)
+ *   durability to be altered by +x or -x. If it reaches 0 or lower, the weapon
+ *   will break.
+ *
+ *   <Target Random Weapon Durability: +x>
+ *   <Target Random Weapon Durability: -x>
+ *   Each hit of this skill/item will cause a random weapon equipped by the
+ *   target to have its durability altered by +x or -x. If it reaches 0 or
+ *   lower, the weapon will break.
+ *
+ *   <Target Armor Durability: +x>
+ *   <Target Armor Durability: -x>
+ *   Each hit of this skill/item will cause the target's armor(s) durability to
+ *   be altered by +x or -x. Depending on the 'Damage All' plugin parameter,
+ *   this will affect either all armors or affect a random armor piece. If the
+ *   item reaches 0 or lower, the armor will break.
+ *
+ *   <Target All Armor Durability: +x>
+ *   <Target All Armor Durability: -x>
+ *   Each hit of this skill/item will cause all of the target's armor(s)
+ *   durability to be altered by +x or -x. If it reaches 0 or lower, the armor
+ *   will break.
+ *
+ *   <Target Random Armor Durability: +x>
+ *   <Target Random Armor Durability: -x>
+ *   Each hit of this skill/item will cause a random armor equipped by the
+ *   target to have its durability altered by +x or -x. If it reaches 0 or
+ *   lower, the armor will break.
+ *
+ * ============================================================================
+ * Lunatic Mode - Custom Break Effect
+ * ============================================================================
+ *
+ * For those with JavaScript proficiency, you can use this notetag to have your
+ * weapons and/or armors produce special effects when they break.
+ *
+ * Weapon and Armor Notetags:
+ *
+ *   <Custom Break Effect>
+ *    var newItem = $dataitems[1];
+ *    $gameParty.gainItem(newItem, 1);
+ *   </Custom Break Effect>
+ *   This effect will only occur if the item breaks as a result of durability
+ *   reaching 0 or lower from an action.
+ *
+ * ============================================================================
+ * Lunatic Mode - Custom Repair Effect
+ * ============================================================================
+ *
+ * For those with JavaScript proficiency, you can use this notetag to have your
+ * repair item perform a custom effect when it is used to repair a piece of
+ * equipment.
+ *
+ * Item, Weapon, and Armor Notetags:
+ *
+ *   <Custom Repair Effect>
+ *    item.price += 200;
+ *   </Custom Repair Effect>
+ *   The 'item' variable refers to the item being repaired. Any changes made to
+ *   it will be saved for the independent item.
+ *
+ * ============================================================================
+ * Lunatic Mode - Custom Weapon/Armor Durability Modifiers
+ * ============================================================================
+ *
+ * For those with JavaScript proficiency, you can use these notetags to have
+ * your skill and item actions alter the target's equipment durability.
+ *
+ * Skill and Item Notetags:
+ *
+ *   ---
+ *
+ *   <Custom User All Weapon Durability>
+ *    value -= user.atk;
+ *   </Custom User All Weapon Durability>
+ *
+ *   <Custom User Random Weapon Durability>
+ *    value -= user.atk;
+ *   </Custom User Random Weapon Durability>
+ *
+ *   <Custom User All Armor Durability>
+ *    value -= user.atk;
+ *   </Custom User All Armor Durability>
+ *
+ *   <Custom User Random Armor Durability>
+ *    value -= user.atk;
+ *   </Custom User Random Armor Durability>
+ *   The 'value' variable determines how to affect the user's weapon/armor. If
+ *   'value' is negative, durability will drop. If 'value' is positive, then
+ *   durability will increase. If the user's equipment reaches 0 or lower,
+ *   the equipment will break.
+ *
+ *   ---
+ *
+ *   <Custom Target All Weapon Durability>
+ *    value -= user.atk;
+ *   </Custom Target All Weapon Durability>
+ *
+ *   <Custom Target Random Weapon Durability>
+ *    value -= user.atk;
+ *   </Custom Target Random Weapon Durability>
+ *
+ *   <Custom Target All Armor Durability>
+ *    value -= user.atk;
+ *   </Custom Target All Armor Durability>
+ *
+ *   <Custom Target Random Armor Durability>
+ *    value -= user.atk;
+ *   </Custom Target Random Armor Durability>
+ *   The 'value' variable determines how to affect the target's weapon/armor.
+ *   If 'value' is negative, durability will drop. If 'value' is positive, then
+ *   durability will increase. If the target's equipment reaches 0 or lower,
+ *   the equipment will break.
+ *
+ * ============================================================================
+ * Plugin Commands
+ * ============================================================================
+ *
+ * There are a few plugin commands you can utilize to show/hide the Repair
+ * option in the Item Action Window and/or enable/disable it.
+ *
+ * Plugin Commands
+ *
+ *   ShowRepairDurability
+ *   HideRepairDurability
+ *   - This will show/hide the Repair command in the Item Action Window.
+ *
+ *   EnableRepairDurability
+ *   DisableRepairDurability
+ *   - This will enable/disable the Repair command in the Item Action Window.
+ *
+ * ============================================================================
+ * Changelog
+ * ============================================================================
+ *
+ * Version 1.04:
+ * - Bypass the isDevToolsOpen() error when bad code is inserted into a script
+ * call or custom Lunatic Mode code segment due to updating to MV 1.6.1.
+ *
+ * Version 1.03:
+ * - Updated for RPG Maker MV version 1.5.0.
+ *
+ * Version 1.02:
+ * - Lunatic Mode fail safes added.
+ *
+ * Version 1.01a:
+ * - Updated for RPG Maker MV version 1.1.0.
+ * - Optimization update.
+ *
+ * Version 1.00:
+ * - Finished Plugin!
+ */
 //=============================================================================
 
 if (Imported.YEP_ItemCore) {
-
   //=============================================================================
   // Parameter Variables
   //=============================================================================
 
-  Yanfly.Parameters = PluginManager.parameters('YEP_X_ItemDurability');
+  Yanfly.Parameters = PluginManager.parameters("YEP_X_ItemDurability");
   Yanfly.Param = Yanfly.Param || {};
 
-  Yanfly.Param.IDurDefaultDur = Number(Yanfly.Parameters['Default Durability']);
-  Yanfly.Param.IDurDefaultVar = Number(Yanfly.Parameters['Durability Variance']);
-  Yanfly.Param.IDurDefaultMax = Number(Yanfly.Parameters['Durability Maximum']);
+  Yanfly.Param.IDurDefaultDur = Number(Yanfly.Parameters["Default Durability"]);
+  Yanfly.Param.IDurDefaultVar = Number(
+    Yanfly.Parameters["Durability Variance"]
+  );
+  Yanfly.Param.IDurDefaultMax = Number(Yanfly.Parameters["Durability Maximum"]);
   Yanfly.Param.IDurDefaultMax = Math.max(1, Yanfly.Param.IDurDefaultMax);
 
-  Yanfly.Param.IDurPhysicalAction = Number(Yanfly.Parameters['Physical Action']);
-  Yanfly.Param.IDurMagicalAction = Number(Yanfly.Parameters['Magical Action']);
-  Yanfly.Param.IDurCertainAction = Number(Yanfly.Parameters['Certain Action']);
-  Yanfly.Param.IDurDamageAllArmor = String(Yanfly.Parameters['Damage All Armor']);
+  Yanfly.Param.IDurPhysicalAction = Number(
+    Yanfly.Parameters["Physical Action"]
+  );
+  Yanfly.Param.IDurMagicalAction = Number(Yanfly.Parameters["Magical Action"]);
+  Yanfly.Param.IDurCertainAction = Number(Yanfly.Parameters["Certain Action"]);
+  Yanfly.Param.IDurDamageAllArmor = String(
+    Yanfly.Parameters["Damage All Armor"]
+  );
   Yanfly.Param.IDurDamageAllArmor = eval(Yanfly.Param.IDurDamageAllArmor);
-  Yanfly.Param.IDurPhysicalDmg = Number(Yanfly.Parameters['Physical Damage']);
-  Yanfly.Param.IDurMagicalDmg = Number(Yanfly.Parameters['Magical Damage']);
-  Yanfly.Param.IDurCertainDmg = Number(Yanfly.Parameters['Certain Damage']);
+  Yanfly.Param.IDurPhysicalDmg = Number(Yanfly.Parameters["Physical Damage"]);
+  Yanfly.Param.IDurMagicalDmg = Number(Yanfly.Parameters["Magical Damage"]);
+  Yanfly.Param.IDurCertainDmg = Number(Yanfly.Parameters["Certain Damage"]);
 
-  Yanfly.Param.IDurBrokenText = String(Yanfly.Parameters['Broken Text']);
-  Yanfly.Param.IDurBrokenWait = Number(Yanfly.Parameters['Broken Wait']);
-  Yanfly.Param.IDurBreakName = String(Yanfly.Parameters['Break Sound']);
-  Yanfly.Param.IDurBreakVol = Number(Yanfly.Parameters['Break Volume']);
-  Yanfly.Param.IDurBreakPitch = Number(Yanfly.Parameters['Break Pitch']);
-  Yanfly.Param.IDurBreakPan = Number(Yanfly.Parameters['Break Pan']);
+  Yanfly.Param.IDurBrokenText = String(Yanfly.Parameters["Broken Text"]);
+  Yanfly.Param.IDurBrokenWait = Number(Yanfly.Parameters["Broken Wait"]);
+  Yanfly.Param.IDurBreakName = String(Yanfly.Parameters["Break Sound"]);
+  Yanfly.Param.IDurBreakVol = Number(Yanfly.Parameters["Break Volume"]);
+  Yanfly.Param.IDurBreakPitch = Number(Yanfly.Parameters["Break Pitch"]);
+  Yanfly.Param.IDurBreakPan = Number(Yanfly.Parameters["Break Pan"]);
 
-  Yanfly.Param.IDurShowRepair = eval(String(Yanfly.Parameters['Show Repair']));
-  Yanfly.Param.IDurEnRepair = eval(String(Yanfly.Parameters['Enable Repair']));
-  Yanfly.Param.IDurCmdRepair = String(Yanfly.Parameters['Repair Command']);
-  Yanfly.Param.IDurRepairName = String(Yanfly.Parameters['Repair Sound']);
-  Yanfly.Param.IDurRepairVol = Number(Yanfly.Parameters['Repair Volume']);
-  Yanfly.Param.IDurRepairPitch = Number(Yanfly.Parameters['Repair Pitch']);
-  Yanfly.Param.IDurRepairPan = Number(Yanfly.Parameters['Repair Pan']);
+  Yanfly.Param.IDurShowRepair = eval(String(Yanfly.Parameters["Show Repair"]));
+  Yanfly.Param.IDurEnRepair = eval(String(Yanfly.Parameters["Enable Repair"]));
+  Yanfly.Param.IDurCmdRepair = String(Yanfly.Parameters["Repair Command"]);
+  Yanfly.Param.IDurRepairName = String(Yanfly.Parameters["Repair Sound"]);
+  Yanfly.Param.IDurRepairVol = Number(Yanfly.Parameters["Repair Volume"]);
+  Yanfly.Param.IDurRepairPitch = Number(Yanfly.Parameters["Repair Pitch"]);
+  Yanfly.Param.IDurRepairPan = Number(Yanfly.Parameters["Repair Pan"]);
 
-  Yanfly.Param.IDurShowDur = eval(String(Yanfly.Parameters['Show Durability']));
-  Yanfly.Param.IDurText = String(Yanfly.Parameters['Durability Text']);
-  Yanfly.Param.IDurFmt = String(Yanfly.Parameters['Durability Format']);
-  Yanfly.Param.IDurShowUnbr = eval(String(Yanfly.Parameters['Show Unbreakable']));
-  Yanfly.Param.IDurUnbreakable = String(Yanfly.Parameters['Unbreakable Text']);
+  Yanfly.Param.IDurShowDur = eval(String(Yanfly.Parameters["Show Durability"]));
+  Yanfly.Param.IDurText = String(Yanfly.Parameters["Durability Text"]);
+  Yanfly.Param.IDurFmt = String(Yanfly.Parameters["Durability Format"]);
+  Yanfly.Param.IDurShowUnbr = eval(
+    String(Yanfly.Parameters["Show Unbreakable"])
+  );
+  Yanfly.Param.IDurUnbreakable = String(Yanfly.Parameters["Unbreakable Text"]);
 
   Yanfly.Param.IDurColor = {
-    unbreak: Number(Yanfly.Parameters['Unbreakable']),
-    max: Number(Yanfly.Parameters['Max Durability']),
-    rate190: Number(Yanfly.Parameters['190% Durability']),
-    rate175: Number(Yanfly.Parameters['175% Durability']),
-    rate150: Number(Yanfly.Parameters['150% Durability']),
-    rate120: Number(Yanfly.Parameters['120% Durability']),
-    rate110: Number(Yanfly.Parameters['110% Durability']),
-    rate100: Number(Yanfly.Parameters['100% Durability']),
-    rate80: Number(Yanfly.Parameters['80% Durability']),
-    rate50: Number(Yanfly.Parameters['50% Durability']),
-    rate25: Number(Yanfly.Parameters['25% Durability']),
-    rate10: Number(Yanfly.Parameters['10% Durability']),
-    rate1: Number(Yanfly.Parameters['1% Durability']),
+    unbreak: Number(Yanfly.Parameters["Unbreakable"]),
+    max: Number(Yanfly.Parameters["Max Durability"]),
+    rate190: Number(Yanfly.Parameters["190% Durability"]),
+    rate175: Number(Yanfly.Parameters["175% Durability"]),
+    rate150: Number(Yanfly.Parameters["150% Durability"]),
+    rate120: Number(Yanfly.Parameters["120% Durability"]),
+    rate110: Number(Yanfly.Parameters["110% Durability"]),
+    rate100: Number(Yanfly.Parameters["100% Durability"]),
+    rate80: Number(Yanfly.Parameters["80% Durability"]),
+    rate50: Number(Yanfly.Parameters["50% Durability"]),
+    rate25: Number(Yanfly.Parameters["25% Durability"]),
+    rate10: Number(Yanfly.Parameters["10% Durability"]),
+    rate1: Number(Yanfly.Parameters["1% Durability"]),
   };
 
   //=============================================================================
@@ -698,10 +705,10 @@ if (Imported.YEP_ItemCore) {
         name: Yanfly.Param.IDurBreakName,
         volume: Yanfly.Param.IDurBreakVol,
         pitch: Yanfly.Param.IDurBreakPitch,
-        pan: Yanfly.Param.IDurBreakPan
+        pan: Yanfly.Param.IDurBreakPan,
       };
-      var evalMode = 'none';
-      obj.breakEval = '';
+      var evalMode = "none";
+      obj.breakEval = "";
 
       for (var i = 0; i < notedata.length; i++) {
         var line = notedata[i];
@@ -714,19 +721,19 @@ if (Imported.YEP_ItemCore) {
         } else if (line.match(/<(?:UNBREAKABLE|BYPASS DURABILITY)>/i)) {
           obj.durability = -1;
         } else if (line.match(/<BREAK SOUND NAME:[ ](.*)>/i)) {
-          obj.breakSound['name'] = String(RegExp.$1);
+          obj.breakSound["name"] = String(RegExp.$1);
         } else if (line.match(/<BREAK SOUND VOLUME:[ ](\d+)>/i)) {
-          obj.breakSound['volume'] = parseInt(RegExp.$1);
+          obj.breakSound["volume"] = parseInt(RegExp.$1);
         } else if (line.match(/<BREAK SOUND PITCH:[ ](\d+)>/i)) {
-          obj.breakSound['pitch'] = parseInt(RegExp.$1);
+          obj.breakSound["pitch"] = parseInt(RegExp.$1);
         } else if (line.match(/<BREAK SOUND PAN:[ ]([\+\-]\d+)>/i)) {
-          obj.breakSound['pan'] = parseInt(RegExp.$1);
+          obj.breakSound["pan"] = parseInt(RegExp.$1);
         } else if (line.match(/<CUSTOM BREAK EFFECT>/i)) {
-          evalMode = 'custom break effect';
+          evalMode = "custom break effect";
         } else if (line.match(/<\/CUSTOM BREAK EFFECT>/i)) {
-          evalMode = 'none';
-        } else if (evalMode === 'custom break effect') {
-          obj.breakEval = obj.breakEval + line + '\n';
+          evalMode = "none";
+        } else if (evalMode === "custom break effect") {
+          obj.breakEval = obj.breakEval + line + "\n";
         }
       }
     }
@@ -743,12 +750,12 @@ if (Imported.YEP_ItemCore) {
         name: Yanfly.Param.IDurRepairName,
         volume: Yanfly.Param.IDurRepairVol,
         pitch: Yanfly.Param.IDurRepairPitch,
-        pan: Yanfly.Param.IDurRepairPan
+        pan: Yanfly.Param.IDurRepairPan,
       };
       obj.repairWeaponUnbreakable = [false];
       obj.repairArmorUnbreakable = [false];
-      var evalMode = 'none';
-      obj.repairDurabilityEval = ''
+      var evalMode = "none";
+      obj.repairDurabilityEval = "";
 
       for (var i = 0; i < notedata.length; i++) {
         var line = notedata[i];
@@ -776,19 +783,19 @@ if (Imported.YEP_ItemCore) {
         } else if (line.match(/<UNBREAKABLE ATYPE[ ](\d+)>/i)) {
           obj.repairArmorUnbreakable[parseInt(RegExp.$1)] = true;
         } else if (line.match(/<REPAIR SOUND NAME:[ ](.*)>/i)) {
-          obj.repairSound['name'] = String(RegExp.$1);
+          obj.repairSound["name"] = String(RegExp.$1);
         } else if (line.match(/<REPAIR SOUND VOLUME:[ ](\d+)>/i)) {
-          obj.repairSound['volume'] = parseInt(RegExp.$1);
+          obj.repairSound["volume"] = parseInt(RegExp.$1);
         } else if (line.match(/<REPAIR SOUND PITCH:[ ](\d+)>/i)) {
-          obj.repairSound['pitch'] = parseInt(RegExp.$1);
+          obj.repairSound["pitch"] = parseInt(RegExp.$1);
         } else if (line.match(/<REPAIR SOUND PAN:[ ]([\+\-]\d+)>/i)) {
-          obj.repairSound['pan'] = parseInt(RegExp.$1);
+          obj.repairSound["pan"] = parseInt(RegExp.$1);
         } else if (line.match(/<CUSTOM REPAIR EFFECT>/i)) {
-          evalMode = 'custom repair eval';
+          evalMode = "custom repair eval";
         } else if (line.match(/<\/CUSTOM REPAIR EFFECT>/i)) {
-          evalMode = 'none';
-        } else if (evalMode === 'custom repair eval') {
-          obj.repairDurabilityEval = obj.repairDurabilityEval + line + '\n';
+          evalMode = "none";
+        } else if (evalMode === "custom repair eval") {
+          obj.repairDurabilityEval = obj.repairDurabilityEval + line + "\n";
         }
       }
     }
@@ -843,8 +850,8 @@ if (Imported.YEP_ItemCore) {
           }
         }
       }
-      var evalMode = 'none';
-      var evalKey = '';
+      var evalMode = "none";
+      var evalKey = "";
       obj.durabilityEval = {};
 
       for (var i = 0; i < notedata.length; i++) {
@@ -885,17 +892,20 @@ if (Imported.YEP_ItemCore) {
           var target = String(RegExp.$1).toLowerCase();
           var type = String(RegExp.$2).toLowerCase();
           var equip = String(RegExp.$3).toLowerCase();
-          if (!['user', 'target'].contains(target)) continue;
-          if (!['all', 'random'].contains(type)) continue;
-          if (!['weapon', 'armor'].contains(equip)) continue;
-          evalMode = 'custom durability';
+          if (!["user", "target"].contains(target)) continue;
+          if (!["all", "random"].contains(type)) continue;
+          if (!["weapon", "armor"].contains(equip)) continue;
+          evalMode = "custom durability";
           evalKey = target + type + equip;
-          obj.durabilityEval[evalKey] = '';
-        } else if (line.match(/<\/CUSTOM[ ](.*)[ ](.*)[ ](.*)[ ]DURABILITY>/i)) {
-          evalMode = 'none';
-          evalKey = '';
-        } else if (evalMode === 'custom durability') {
-          obj.durabilityEval[evalKey] = obj.durabilityEval[evalKey] + line + '\n';
+          obj.durabilityEval[evalKey] = "";
+        } else if (
+          line.match(/<\/CUSTOM[ ](.*)[ ](.*)[ ](.*)[ ]DURABILITY>/i)
+        ) {
+          evalMode = "none";
+          evalKey = "";
+        } else if (evalMode === "custom durability") {
+          obj.durabilityEval[evalKey] =
+            obj.durabilityEval[evalKey] + line + "\n";
         }
       }
     }
@@ -1038,22 +1048,22 @@ if (Imported.YEP_ItemCore) {
     var win = scene._logWindow;
     if (!win) return;
     var fmt = Yanfly.Param.IDurBrokenText;
-    var text = fmt.format(this.name(), obj.name, '\\i[' + obj.iconIndex + ']');
-    if (Imported.YEP_BattleEngineCore) text = '<CENTER>' + text;
+    var text = fmt.format(this.name(), obj.name, "\\i[" + obj.iconIndex + "]");
+    if (Imported.YEP_BattleEngineCore) text = "<CENTER>" + text;
     win._lines.push(text);
     win.refresh();
     if (!Imported.YEP_BattleEngineCore) return;
     if (this._waitEnabled) return;
     this._waitEnabled = true;
     var frames = Yanfly.Param.IDurBrokenWait;
-    if (frames > 0) BattleManager._actionList.push(['WAIT', [frames]]);
+    if (frames > 0) BattleManager._actionList.push(["WAIT", [frames]]);
   };
 
   Game_Actor.prototype.customDurabilityBreakEval = function (item) {
     var baseItem = DataManager.getBaseItem(item);
     var effect = item.breakEval || baseItem.breakEval;
     if (!effect) return;
-    if (effect === '') return;
+    if (effect === "") return;
     var a = this;
     var user = this;
     var subject = this;
@@ -1064,7 +1074,7 @@ if (Imported.YEP_ItemCore) {
     try {
       eval(effect);
     } catch (e) {
-      Yanfly.Util.displayError(e, effect, 'DURABILITY BREAK SCRIPT ERROR');
+      Yanfly.Util.displayError(e, effect, "DURABILITY BREAK SCRIPT ERROR");
     }
   };
 
@@ -1075,8 +1085,8 @@ if (Imported.YEP_ItemCore) {
         name: Yanfly.Param.IDurBreakName,
         volume: Yanfly.Param.IDurBreakVol,
         pitch: Yanfly.Param.IDurBreakPitch,
-        pan: Yanfly.Param.IDurBreakPan
-      }
+        pan: Yanfly.Param.IDurBreakPan,
+      };
     }
     AudioManager.playSe(sound);
   };
@@ -1125,7 +1135,7 @@ if (Imported.YEP_ItemCore) {
       if (!obj) continue;
       if (!obj.baseItemId) continue;
       if (obj.durability < 0) continue;
-      valid.push(obj)
+      valid.push(obj);
     }
     var item = valid[Math.floor(Math.random() * valid.length)];
     if (!item) return;
@@ -1151,31 +1161,31 @@ if (Imported.YEP_ItemCore) {
   Game_Action.prototype.applyDurabilityEffects = function (target) {
     if (this.subject().isActor()) {
       var value = this.item().userAllWeaponDurability;
-      value = this.durabilityEval('userallweapon', target, value);
+      value = this.durabilityEval("userallweapon", target, value);
       this.subject().damageAllWeaponDurability(value);
       var value = this.item().userRandomWeaponDurability;
-      value = this.durabilityEval('userrandomweapon', target, value);
+      value = this.durabilityEval("userrandomweapon", target, value);
       this.subject().damageRandomWeaponDurability(value);
       var value = this.item().userAllArmorDurability;
-      value = this.durabilityEval('userallarmor', target, value);
+      value = this.durabilityEval("userallarmor", target, value);
       this.subject().damageAllArmorDurability(value);
       var value = this.item().userRandomArmorDurability;
-      value = this.durabilityEval('userrandomarmor', target, value);
+      value = this.durabilityEval("userrandomarmor", target, value);
       this.subject().damageRandomArmorDurability(value);
       this.subject()._waitEnabled = false;
     }
     if (target && target.isActor()) {
       var value = this.item().targetAllWeaponDurability;
-      value = this.durabilityEval('targetallweapon', target, value);
+      value = this.durabilityEval("targetallweapon", target, value);
       target.damageAllWeaponDurability(value);
       var value = this.item().targetRandomWeaponDurability;
-      value = this.durabilityEval('targetrandomweapon', target, value);
+      value = this.durabilityEval("targetrandomweapon", target, value);
       target.damageRandomWeaponDurability(value);
       var value = this.item().targetAllArmorDurability;
-      value = this.durabilityEval('targetallarmor', target, value);
+      value = this.durabilityEval("targetallarmor", target, value);
       target.damageAllArmorDurability(value);
       var value = this.item().targetRandomArmorDurability;
-      value = this.durabilityEval('targetrandomarmor', target, value);
+      value = this.durabilityEval("targetrandomarmor", target, value);
       target.damageRandomArmorDurability(value);
       target._waitEnabled = false;
     }
@@ -1184,7 +1194,7 @@ if (Imported.YEP_ItemCore) {
   Game_Action.prototype.durabilityEval = function (type, target, value) {
     var formula = this.item().durabilityEval[type];
     if (!formula) return value;
-    if (formula === '') return value;
+    if (formula === "") return value;
     var a = this.subject();
     var user = this.subject();
     var subject = this.subject();
@@ -1196,7 +1206,7 @@ if (Imported.YEP_ItemCore) {
     try {
       eval(formula);
     } catch (e) {
-      Yanfly.Util.displayError(e, formula, 'DURABILITY FORMULA ERROR');
+      Yanfly.Util.displayError(e, formula, "DURABILITY FORMULA ERROR");
     }
     return value;
   };
@@ -1209,13 +1219,13 @@ if (Imported.YEP_ItemCore) {
     Game_Interpreter.prototype.pluginCommand;
   Game_Interpreter.prototype.pluginCommand = function (command, args) {
     Yanfly.IDur.Game_Interpreter_pluginCommand.call(this, command, args);
-    if (command === 'ShowRepairDurability') {
+    if (command === "ShowRepairDurability") {
       $gameSystem.setShowRepairDurability(true);
-    } else if (command === 'HideRepairDurability') {
+    } else if (command === "HideRepairDurability") {
       $gameSystem.setShowRepairDurability(false);
-    } else if (command === 'EnableRepairDurability') {
+    } else if (command === "EnableRepairDurability") {
       $gameSystem.setEnableRepairDurability(true);
-    } else if (command === 'DisableRepairDurability') {
+    } else if (command === "DisableRepairDurability") {
       $gameSystem.setEnableRepairDurability(false);
     }
   };
@@ -1252,12 +1262,12 @@ if (Imported.YEP_ItemCore) {
     var max = DataManager.getMaxDurability(this._item);
     if (cur > 0) {
       this.changeTextColor(this.textColor(this.durabilityColor(cur, max)));
-      text = fmt.format(cur, max)
+      text = fmt.format(cur, max);
     } else {
-      this.changeTextColor(this.textColor(Yanfly.Param.IDurColor['unbreak']));
+      this.changeTextColor(this.textColor(Yanfly.Param.IDurColor["unbreak"]));
       text = Yanfly.Param.IDurUnbreakable;
     }
-    this.drawText(text, dx, dy, dw, 'right');
+    this.drawText(text, dx, dy, dw, "right");
     this.resetFontSettings();
     dy += this.lineHeight();
     return dy;
@@ -1266,29 +1276,29 @@ if (Imported.YEP_ItemCore) {
   Window_ItemInfo.prototype.durabilityColor = function (cur, max) {
     var value = DataManager.getBaseItem(this._item).durability;
     if (cur === max) {
-      return Yanfly.Param.IDurColor['max'];
-    } else if (cur >= 1.90 * value) {
-      return Yanfly.Param.IDurColor['rate190'];
+      return Yanfly.Param.IDurColor["max"];
+    } else if (cur >= 1.9 * value) {
+      return Yanfly.Param.IDurColor["rate190"];
     } else if (cur >= 1.75 * value) {
-      return Yanfly.Param.IDurColor['rate175'];
-    } else if (cur >= 1.50 * value) {
-      return Yanfly.Param.IDurColor['rate150'];
-    } else if (cur >= 1.20 * value) {
-      return Yanfly.Param.IDurColor['rate120'];
-    } else if (cur >= 1.10 * value) {
-      return Yanfly.Param.IDurColor['rate110'];
-    } else if (cur >= 1.00 * value) {
-      return Yanfly.Param.IDurColor['rate100'];
-    } else if (cur >= 0.80 * value) {
-      return Yanfly.Param.IDurColor['rate80'];
-    } else if (cur >= 0.50 * value) {
-      return Yanfly.Param.IDurColor['rate50'];
+      return Yanfly.Param.IDurColor["rate175"];
+    } else if (cur >= 1.5 * value) {
+      return Yanfly.Param.IDurColor["rate150"];
+    } else if (cur >= 1.2 * value) {
+      return Yanfly.Param.IDurColor["rate120"];
+    } else if (cur >= 1.1 * value) {
+      return Yanfly.Param.IDurColor["rate110"];
+    } else if (cur >= 1.0 * value) {
+      return Yanfly.Param.IDurColor["rate100"];
+    } else if (cur >= 0.8 * value) {
+      return Yanfly.Param.IDurColor["rate80"];
+    } else if (cur >= 0.5 * value) {
+      return Yanfly.Param.IDurColor["rate50"];
     } else if (cur >= 0.25 * value) {
-      return Yanfly.Param.IDurColor['rate25'];
-    } else if (cur >= 0.10 * value) {
-      return Yanfly.Param.IDurColor['rate10'];
+      return Yanfly.Param.IDurColor["rate25"];
+    } else if (cur >= 0.1 * value) {
+      return Yanfly.Param.IDurColor["rate10"];
     } else {
-      return Yanfly.Param.IDurColor['rate1'];
+      return Yanfly.Param.IDurColor["rate1"];
     }
   };
 
@@ -1304,19 +1314,19 @@ if (Imported.YEP_ItemCore) {
   };
 
   Window_ItemActionCommand.prototype.addRepairCommand = function () {
-    if (Yanfly.Param.IDurCmdRepair === '') return;
+    if (Yanfly.Param.IDurCmdRepair === "") return;
     if (!$gameSystem.isShowRepairDurability()) return;
     var enabled = DataManager.isIndependent(this._item);
     if (!enabled) return;
     enabled = this.isRepairDurabilityEnabled();
     var fmt = Yanfly.Param.IDurCmdRepair;
-    text = '\\i[' + this._item.iconIndex + ']';
+    text = "\\i[" + this._item.iconIndex + "]";
     if (this._item.textColor !== undefined) {
-      text += '\\c[' + this._item.textColor + ']';
+      text += "\\c[" + this._item.textColor + "]";
     }
     text += this._item.name;
     text = fmt.format(text);
-    this.addCommand(text, 'repair', enabled);
+    this.addCommand(text, "repair", enabled);
   };
 
   Window_ItemActionCommand.prototype.isRepairDurabilityEnabled = function () {
@@ -1356,7 +1366,7 @@ if (Imported.YEP_ItemCore) {
   };
 
   Window_RepairItemList.prototype.containsType = function (item) {
-    if (item.repairDurabilityEval !== '') return true;
+    if (item.repairDurabilityEval !== "") return true;
     if (DataManager.isWeapon(this._item)) {
       var type = this._item.wtypeId;
       var array1 = item.repairWeaponType;
@@ -1381,7 +1391,7 @@ if (Imported.YEP_ItemCore) {
 
   Window_RepairItemList.prototype.isEnabled = function (item) {
     if (!item) return false;
-    if (item.repairDurabilityEval !== '') return true;
+    if (item.repairDurabilityEval !== "") return true;
     if (DataManager.isWeapon(this._item)) {
       var arr = item.repairWeaponUnbreakable;
       var type = this._item.wtypeId;
@@ -1399,8 +1409,7 @@ if (Imported.YEP_ItemCore) {
     return cur < max;
   };
 
-  Window_RepairItemList.prototype.selectLast = function () {
-  };
+  Window_RepairItemList.prototype.selectLast = function () {};
 
   Window_RepairItemList.prototype.playOkSound = function () {
     if (!this.item()) return;
@@ -1410,8 +1419,8 @@ if (Imported.YEP_ItemCore) {
         name: Yanfly.Param.IDurRepairName,
         volume: Yanfly.Param.IDurRepairVol,
         pitch: Yanfly.Param.IDurRepairPitch,
-        pan: Yanfly.Param.IDurRepairPan
-      }
+        pan: Yanfly.Param.IDurRepairPan,
+      };
     }
     AudioManager.playSe(sound);
   };
@@ -1427,7 +1436,8 @@ if (Imported.YEP_ItemCore) {
   // Scene_Item
   //=============================================================================
 
-  Yanfly.IDur.Scene_Item_createItemWindow = Scene_Item.prototype.createItemWindow;
+  Yanfly.IDur.Scene_Item_createItemWindow =
+    Scene_Item.prototype.createItemWindow;
   Scene_Item.prototype.createItemWindow = function () {
     Yanfly.IDur.Scene_Item_createItemWindow.call(this);
     this.createRepairListWindow();
@@ -1437,7 +1447,7 @@ if (Imported.YEP_ItemCore) {
     Scene_Item.prototype.createActionWindow;
   Scene_Item.prototype.createActionWindow = function () {
     Yanfly.IDur.Scene_Item_createActionWindow.call(this);
-    this._itemActionWindow.setHandler('repair', this.onActionRepair.bind(this));
+    this._itemActionWindow.setHandler("repair", this.onActionRepair.bind(this));
   };
 
   Scene_Item.prototype.createRepairListWindow = function () {
@@ -1446,9 +1456,11 @@ if (Imported.YEP_ItemCore) {
     var wh = this._itemWindow.height;
     this._repairListWindow = new Window_RepairItemList(0, wy, ww, wh);
     this._repairListWindow.setHelpWindow(this._helpWindow);
-    this._repairListWindow.setHandler('ok', this.onRepairListOk.bind(this));
-    this._repairListWindow.setHandler('cancel',
-      this.onRepairListCancel.bind(this));
+    this._repairListWindow.setHandler("ok", this.onRepairListOk.bind(this));
+    this._repairListWindow.setHandler(
+      "cancel",
+      this.onRepairListCancel.bind(this)
+    );
     this.addWindow(this._repairListWindow);
   };
 
@@ -1489,13 +1501,13 @@ if (Imported.YEP_ItemCore) {
   Scene_Item.prototype.onRepairEval = function (effectItem) {
     var effect = effectItem.repairDurabilityEval;
     if (!effect) return;
-    if (effect === '') return;
+    if (effect === "") return;
     var item = this.item();
     var code = effectItem.repairDurabilityEval;
     try {
       eval(code);
     } catch (e) {
-      Yanfly.Util.displayError(e, code, 'REPAIR CUSTOM EFFECT ERROR');
+      Yanfly.Util.displayError(e, code, "REPAIR CUSTOM EFFECT ERROR");
     }
   };
 
@@ -1507,11 +1519,11 @@ if (Imported.YEP_ItemCore) {
 
   Yanfly.Util.displayError = function (e, code, message) {
     console.log(message);
-    console.log(code || 'NON-EXISTENT');
+    console.log(code || "NON-EXISTENT");
     console.error(e);
-    if (Utils.isNwjs() && Utils.isOptionValid('test')) {
-      if (!require('nw.gui').Window.get().isDevToolsOpen()) {
-        require('nw.gui').Window.get().showDevTools();
+    if (Utils.isNwjs() && Utils.isOptionValid("test")) {
+      if (!require("nw.gui").Window.get().isDevToolsOpen()) {
+        require("nw.gui").Window.get().showDevTools();
       }
     }
   };
@@ -1519,4 +1531,4 @@ if (Imported.YEP_ItemCore) {
   //=============================================================================
   // End of File
   //=============================================================================
-};
+}

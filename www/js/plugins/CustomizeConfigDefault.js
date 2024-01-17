@@ -142,93 +142,104 @@
  *  このプラグインはもうあなたのものです。
  */
 (function () {
-    'use strict';
-    var pluginName = 'CustomizeConfigDefault';
+  "use strict";
+  var pluginName = "CustomizeConfigDefault";
 
-    var getParamNumber = function (paramNames, min, max) {
-        var value = getParamOther(paramNames);
-        if (arguments.length < 2) min = -Infinity;
-        if (arguments.length < 3) max = Infinity;
-        return (parseInt(value, 10) || 0).clamp(min, max);
-    };
+  var getParamNumber = function (paramNames, min, max) {
+    var value = getParamOther(paramNames);
+    if (arguments.length < 2) min = -Infinity;
+    if (arguments.length < 3) max = Infinity;
+    return (parseInt(value, 10) || 0).clamp(min, max);
+  };
 
-    var getParamBoolean = function (paramNames) {
-        var value = getParamOther(paramNames);
-        return (value || '').toUpperCase() === 'ON';
-    };
+  var getParamBoolean = function (paramNames) {
+    var value = getParamOther(paramNames);
+    return (value || "").toUpperCase() === "ON";
+  };
 
-    var getParamOther = function (paramNames) {
-        if (!Array.isArray(paramNames)) paramNames = [paramNames];
-        for (var i = 0; i < paramNames.length; i++) {
-            var name = PluginManager.parameters(pluginName)[paramNames[i]];
-            if (name) return name;
-        }
-        return null;
-    };
+  var getParamOther = function (paramNames) {
+    if (!Array.isArray(paramNames)) paramNames = [paramNames];
+    for (var i = 0; i < paramNames.length; i++) {
+      var name = PluginManager.parameters(pluginName)[paramNames[i]];
+      if (name) return name;
+    }
+    return null;
+  };
 
-    //=============================================================================
-    // パラメータの取得と整形
-    //=============================================================================
-    var paramAlwaysDash = getParamBoolean(['AlwaysDash', '常時ダッシュ']);
-    var paramCommandRemember = getParamBoolean(['CommandRemember', 'コマンド記憶']);
-    var paramBgmVolume = getParamNumber(['BgmVolume', 'BGM音量'], 0, 100);
-    var paramBgsVolume = getParamNumber(['BgsVolume', 'BGS音量'], 0, 100);
-    var paramMeVolume = getParamNumber(['MeVolume', 'ME音量'], 0, 100);
-    var paramSeVolume = getParamNumber(['SeVolume', 'SE音量'], 0, 100);
-    var paramEraseAlwaysDash = getParamBoolean(['EraseAlwaysDash', '常時ダッシュ消去']);
-    var paramEraseCommandRemember = getParamBoolean(['EraseCommandRemember', 'コマンド記憶消去']);
-    var paramEraseBgmVolume = getParamBoolean(['EraseBgmVolume', 'BGM音量消去']);
-    var paramEraseBgsVolume = getParamBoolean(['EraseBgsVolume', 'BGS音量消去']);
-    var paramEraseMeVolume = getParamBoolean(['EraseMeVolume', 'ME音量消去']);
-    var paramEraseSeVolume = getParamBoolean(['EraseSeVolume', 'SE音量消去']);
+  //=============================================================================
+  // パラメータの取得と整形
+  //=============================================================================
+  var paramAlwaysDash = getParamBoolean(["AlwaysDash", "常時ダッシュ"]);
+  var paramCommandRemember = getParamBoolean([
+    "CommandRemember",
+    "コマンド記憶",
+  ]);
+  var paramBgmVolume = getParamNumber(["BgmVolume", "BGM音量"], 0, 100);
+  var paramBgsVolume = getParamNumber(["BgsVolume", "BGS音量"], 0, 100);
+  var paramMeVolume = getParamNumber(["MeVolume", "ME音量"], 0, 100);
+  var paramSeVolume = getParamNumber(["SeVolume", "SE音量"], 0, 100);
+  var paramEraseAlwaysDash = getParamBoolean([
+    "EraseAlwaysDash",
+    "常時ダッシュ消去",
+  ]);
+  var paramEraseCommandRemember = getParamBoolean([
+    "EraseCommandRemember",
+    "コマンド記憶消去",
+  ]);
+  var paramEraseBgmVolume = getParamBoolean(["EraseBgmVolume", "BGM音量消去"]);
+  var paramEraseBgsVolume = getParamBoolean(["EraseBgsVolume", "BGS音量消去"]);
+  var paramEraseMeVolume = getParamBoolean(["EraseMeVolume", "ME音量消去"]);
+  var paramEraseSeVolume = getParamBoolean(["EraseSeVolume", "SE音量消去"]);
 
-    //=============================================================================
-    // ConfigManager
-    //  それぞれの項目に初期値を与えます。
-    //=============================================================================
-    var _ConfigManagerApplyData = ConfigManager.applyData;
-    ConfigManager.applyData = function (config) {
-        _ConfigManagerApplyData.apply(this, arguments);
-        if (config.alwaysDash == null) this.alwaysDash = paramAlwaysDash;
-        if (config.commandRemember == null) this.commandRemember = paramCommandRemember;
-        if (config.bgmVolume == null) this.bgmVolume = paramBgmVolume;
-        if (config.bgsVolume == null) this.bgsVolume = paramBgsVolume;
-        if (config.meVolume == null) this.meVolume = paramMeVolume;
-        if (config.seVolume == null) this.seVolume = paramSeVolume;
-    };
+  //=============================================================================
+  // ConfigManager
+  //  それぞれの項目に初期値を与えます。
+  //=============================================================================
+  var _ConfigManagerApplyData = ConfigManager.applyData;
+  ConfigManager.applyData = function (config) {
+    _ConfigManagerApplyData.apply(this, arguments);
+    if (config.alwaysDash == null) this.alwaysDash = paramAlwaysDash;
+    if (config.commandRemember == null)
+      this.commandRemember = paramCommandRemember;
+    if (config.bgmVolume == null) this.bgmVolume = paramBgmVolume;
+    if (config.bgsVolume == null) this.bgsVolume = paramBgsVolume;
+    if (config.meVolume == null) this.meVolume = paramMeVolume;
+    if (config.seVolume == null) this.seVolume = paramSeVolume;
+  };
 
-    //=============================================================================
-    // Window_Options
-    //  パラメータを空白にした項目を除去します。
-    //=============================================================================
-    var _Window_Options_makeCommandList = Window_Options.prototype.makeCommandList;
-    Window_Options.prototype.makeCommandList = function () {
-        _Window_Options_makeCommandList.apply(this, arguments);
-        if (paramEraseAlwaysDash) this.eraseOption('alwaysDash');
-        if (paramEraseCommandRemember) this.eraseOption('commandRemember');
-        if (paramEraseBgmVolume) this.eraseOption('bgmVolume');
-        if (paramEraseBgsVolume) this.eraseOption('bgsVolume');
-        if (paramEraseMeVolume) this.eraseOption('meVolume');
-        if (paramEraseSeVolume) this.eraseOption('seVolume');
-    };
+  //=============================================================================
+  // Window_Options
+  //  パラメータを空白にした項目を除去します。
+  //=============================================================================
+  var _Window_Options_makeCommandList =
+    Window_Options.prototype.makeCommandList;
+  Window_Options.prototype.makeCommandList = function () {
+    _Window_Options_makeCommandList.apply(this, arguments);
+    if (paramEraseAlwaysDash) this.eraseOption("alwaysDash");
+    if (paramEraseCommandRemember) this.eraseOption("commandRemember");
+    if (paramEraseBgmVolume) this.eraseOption("bgmVolume");
+    if (paramEraseBgsVolume) this.eraseOption("bgsVolume");
+    if (paramEraseMeVolume) this.eraseOption("meVolume");
+    if (paramEraseSeVolume) this.eraseOption("seVolume");
+  };
 
-    Window_Options.prototype.eraseOption = function (symbol) {
-        for (var i = 0; i < this._list.length; i++) {
-            if (this._list[i].symbol === symbol) {
-                this._list.splice(i, 1);
-                // for Mano_InputConfig.js
-                this.adjustIndexManoInputConfig(i);
-                break;
-            }
-        }
-    };
+  Window_Options.prototype.eraseOption = function (symbol) {
+    for (var i = 0; i < this._list.length; i++) {
+      if (this._list[i].symbol === symbol) {
+        this._list.splice(i, 1);
+        // for Mano_InputConfig.js
+        this.adjustIndexManoInputConfig(i);
+        break;
+      }
+    }
+  };
 
-    Window_Options.prototype.adjustIndexManoInputConfig = function (index) {
-        if (this._gamepadOptionIndex > index) {
-            this._gamepadOptionIndex -= 1;
-        }
-        if (this._keyboardConfigIndex > index) {
-            this._keyboardConfigIndex -= 1;
-        }
-    };
+  Window_Options.prototype.adjustIndexManoInputConfig = function (index) {
+    if (this._gamepadOptionIndex > index) {
+      this._gamepadOptionIndex -= 1;
+    }
+    if (this._keyboardConfigIndex > index) {
+      this._keyboardConfigIndex -= 1;
+    }
+  };
 })();

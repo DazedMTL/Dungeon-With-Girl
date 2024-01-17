@@ -175,7 +175,7 @@
  * パラメータに拡張子付きのファイル名を直接入力してください。
  * 同一ファイル名のpngファイルが別途必要です。(中身は空の画像でOK)
  * また、GIFはツクールMVの暗号化機能の対象外となります。
- *　
+ *
  * このプラグインにはプラグインコマンドはありません。
  *
  * 利用規約：
@@ -586,510 +586,530 @@
  */
 
 (function () {
-    'use strict';
+  "use strict";
 
-    var getClassName = function (object) {
-        return object.constructor.toString().replace(/function\s+(.*)\s*\([\s\S]*/m, '$1');
+  var getClassName = function (object) {
+    return object.constructor
+      .toString()
+      .replace(/function\s+(.*)\s*\([\s\S]*/m, "$1");
+  };
+
+  /**
+   * Create plugin parameter. param[paramName] ex. param.commandPrefix
+   * @param script currentScript
+   * @returns {Object} Created parameter
+   */
+  var createPluginParameter = function (script) {
+    var pluginName = script.src.replace(/^.*\/(.*).js$/, function () {
+      return arguments[1];
+    });
+    var paramReplacer = function (key, value) {
+      if (value === "null") {
+        return value;
+      }
+      if (value[0] === '"' && value[value.length - 1] === '"') {
+        return value;
+      }
+      try {
+        return JSON.parse(value);
+      } catch (e) {
+        return value;
+      }
     };
+    var parameter = JSON.parse(
+      JSON.stringify(PluginManager.parameters(pluginName), paramReplacer)
+    );
+    PluginManager.setParameters(pluginName, parameter);
+    return parameter;
+  };
 
-    /**
-     * Create plugin parameter. param[paramName] ex. param.commandPrefix
-     * @param script currentScript
-     * @returns {Object} Created parameter
-     */
-    var createPluginParameter = function (script) {
-        var pluginName = script.src.replace(/^.*\/(.*).js$/, function () {
-            return arguments[1];
-        });
-        var paramReplacer = function (key, value) {
-            if (value === 'null') {
-                return value;
-            }
-            if (value[0] === '"' && value[value.length - 1] === '"') {
-                return value;
-            }
-            try {
-                return JSON.parse(value);
-            } catch (e) {
-                return value;
-            }
-        };
-        var parameter = JSON.parse(JSON.stringify(PluginManager.parameters(pluginName), paramReplacer));
-        PluginManager.setParameters(pluginName, parameter);
-        return parameter;
-    };
+  var param = createPluginParameter(document.currentScript);
 
-    var param = createPluginParameter(document.currentScript);
-
-    /**
-     * ApngLoader
-     * APNGもしくはGIF画像を読み込んで保持します。
-     */
-    class ApngLoader {
-        constructor(folder, paramList) {
-            this._folder = folder;
-            this._fileHash = {};
-            this._cachePolicy = {};
-            this._options = {};
-            this._paramList = paramList;
-            if (this._paramList && this._paramList.length > 0) {
-                this.addAllImage();
-            }
-            this._spriteCache = {};
-        }
-
-        addAllImage() {
-            var option = this.getLoadOption();
-            this._paramList.forEach(function (item) {
-                this.addImage(item, option);
-            }, this);
-            PIXI.loader.onComplete.add(this.cacheStartup.bind(this));
-            ApngLoader.startLoading();
-        }
-
-        addImage(item, option) {
-            var name = String(item.FileName) || '';
-            var ext = Decrypter.hasEncryptedImages ? 'rpgmvp' : 'png';
-            name = name.replace(/\.gif$/gi, function () {
-                ext = 'gif';
-                return '';
-            });
-            var path = name.match(/http:/) ? name : `img/${this._folder}/${name}.${ext}`;
-            if (!this._fileHash.hasOwnProperty(name)) {
-                this._fileHash[name] = ApngLoader.convertDecryptExt(path);
-                this._cachePolicy[name] = item.CachePolicy;
-                this._options[name] = item;
-                PIXI.loader.add(path, option);
-            }
-        }
-
-        getLoadOption() {
-            return {
-                loadType: PIXI.loaders.Resource.LOAD_TYPE.XHR,
-                xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.BUFFER,
-                crossOrigin: ''
-            }
-        }
-
-        createSprite(name) {
-            if (!this.isApng(name)) {
-                return null;
-            }
-            if (this._isNeedCache(name)) {
-                if (this._spriteCache[name]) {
-                    return this._spriteCache[name];
-                }
-                var sprite = this._createPixiApngAndGif(name);
-                this._spriteCache[name] = sprite;
-                return sprite;
-            } else {
-                return this._createPixiApngAndGif(name);
-            }
-        }
-
-        _createPixiApngAndGif(name) {
-            var pixiApng = new PixiApngAndGif(this._fileHash[name], ApngLoader._resource);
-            var loopCount = this._options[name].LoopTimes || param.DefaultLoopTimes;
-            if (loopCount > 0) {
-                pixiApng.play(loopCount);
-            }
-            var sprite = pixiApng.sprite;
-            sprite.pixiApng = pixiApng;
-            sprite.pixiApngOption = this._options[name]
-            return sprite;
-        }
-
-        _isNeedCache(name) {
-            return this._cachePolicy[name] > 0;
-        }
-
-        isApng(name) {
-            return !!this._fileHash[name];
-        }
-
-        cacheStartup() {
-            Object.keys(this._cachePolicy).forEach(function (name) {
-                if (this._cachePolicy[name] === 2) {
-                    this.createSprite(name)
-                }
-            }, this);
-        }
-
-        static startLoading() {
-            this._loading = true;
-        };
-
-        static onLoadResource(progress, resource) {
-            this._resource = resource;
-            Object.keys(this._resource).forEach(function (key) {
-                if (this._resource[key].extension === 'rpgmvp') {
-                    ApngLoader.decryptResource(key);
-                }
-            }, this);
-        }
-
-        static decryptResource(key) {
-            var resource = this._resource[key];
-            resource.data = Decrypter.decryptArrayBuffer(resource.data);
-            var newKey = ApngLoader.convertDecryptExt(key);
-            resource.name = newKey;
-            resource.url = newKey;
-            resource.extension = 'png';
-            this._resource[newKey] = resource;
-            delete this._resource[key];
-        };
-
-        static isReady() {
-            return !!this._resource || !this._loading;
-        }
-
-        static convertDecryptExt(key) {
-            return key.replace(/\.rpgmvp$/, '.png');
-        }
+  /**
+   * ApngLoader
+   * APNGもしくはGIF画像を読み込んで保持します。
+   */
+  class ApngLoader {
+    constructor(folder, paramList) {
+      this._folder = folder;
+      this._fileHash = {};
+      this._cachePolicy = {};
+      this._options = {};
+      this._paramList = paramList;
+      if (this._paramList && this._paramList.length > 0) {
+        this.addAllImage();
+      }
+      this._spriteCache = {};
     }
-    ApngLoader._resource = null;
 
-    var _Scene_Boot_isReady = Scene_Boot.prototype.isReady;
-    Scene_Boot.prototype.isReady = function () {
-        var result = _Scene_Boot_isReady.apply(this, arguments);
-        if (result) {
-            SceneManager.setupApngLoaderIfNeed();
-        }
-        return result && ApngLoader.isReady();
-    };
+    addAllImage() {
+      var option = this.getLoadOption();
+      this._paramList.forEach(function (item) {
+        this.addImage(item, option);
+      }, this);
+      PIXI.loader.onComplete.add(this.cacheStartup.bind(this));
+      ApngLoader.startLoading();
+    }
 
-    var _Scene_Base_create = Scene_Base.prototype.create;
-    Scene_Base.prototype.create = function () {
-        _Scene_Base_create.apply(this, arguments);
-        this.createSceneApng();
-    };
+    addImage(item, option) {
+      var name = String(item.FileName) || "";
+      var ext = Decrypter.hasEncryptedImages ? "rpgmvp" : "png";
+      name = name.replace(/\.gif$/gi, function () {
+        ext = "gif";
+        return "";
+      });
+      var path = name.match(/http:/)
+        ? name
+        : `img/${this._folder}/${name}.${ext}`;
+      if (!this._fileHash.hasOwnProperty(name)) {
+        this._fileHash[name] = ApngLoader.convertDecryptExt(path);
+        this._cachePolicy[name] = item.CachePolicy;
+        this._options[name] = item;
+        PIXI.loader.add(path, option);
+      }
+    }
 
-    Scene_Base.prototype.createSceneApng = function () {
-        this._apngList = this.findSceneApngList().map(function (item) {
-            return new SpriteSceneApng(item);
-        }, this);
-    };
+    getLoadOption() {
+      return {
+        loadType: PIXI.loaders.Resource.LOAD_TYPE.XHR,
+        xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.BUFFER,
+        crossOrigin: "",
+      };
+    }
 
-    var _Scene_Base_terminate = Scene_Base.prototype.terminate;
-    Scene_Base.prototype.terminate = function () {
-        _Scene_Base_terminate.apply(this, arguments);
-        this.destroySceneApng();
-        if (this._spriteset) {
-            this._spriteset.destroyApngPicture();
-        }
-    };
-
-    Scene_Base.prototype.destroySceneApng = function () {
-        this._apngList.forEach(function (sprite) {
-            sprite.destroyApngIfNeed();
-        })
-    };
-
-    var _Scene_Base_start = Scene_Base.prototype.start;
-    Scene_Base.prototype.start = function () {
-        _Scene_Base_start.apply(this, arguments);
-        this.setApngPriority();
-    };
-
-    Scene_Base.prototype.setApngPriority = function () {
-        var windowLayerIndex = this._windowLayer ? this.getChildIndex(this._windowLayer) : 0;
-        this._apngList.forEach(function (sprite) {
-            switch (sprite.getPriority()) {
-                case 0:
-                    this.addChild(sprite);
-                    break;
-                case 1:
-                    this.addChildAt(sprite, windowLayerIndex);
-                    windowLayerIndex++;
-                    break;
-                default:
-                    this.addChildAt(sprite, 0);
-            }
-        }, this);
-    };
-
-    Scene_Base.prototype.findSceneApngList = function () {
-        var currentSceneName = getClassName(this);
-        return (param.SceneApngList || []).filter(function (data) {
-            return data.SceneName === currentSceneName;
-        }, this);
-    };
-
-    Spriteset_Base.prototype.destroyApngPicture = function () {
-        this.destroyApngPictureContainer(this._pictureContainer);
-        // for PicturePriorityCustomize.js
-        this.destroyApngPictureContainer(this._pictureContainerLower);
-        this.destroyApngPictureContainer(this._pictureContainerMiddle);
-        this.destroyApngPictureContainer(this._pictureContainerUpper);
-    };
-
-    Spriteset_Base.prototype.destroyApngPictureContainer = function (container) {
-        if (!container) {
-            return;
-        }
-        container.children.forEach(function (sprite) {
-            if (sprite.destroyApngIfNeed) {
-                sprite.destroyApngIfNeed();
-            }
-        });
-    };
-
-    Spriteset_Battle.prototype.destroyApngPicture = function () {
-        Spriteset_Base.prototype.destroyApngPicture.call(this);
-        this._enemySprites.forEach(function (sprite) {
-            sprite.destroyApngIfNeed();
-        });
-    };
-
-    /**
-     * SceneManager
-     * APNGのローダを管理します。
-     */
-    SceneManager.setupApngLoaderIfNeed = function () {
-        if (this._apngLoaderPicture) {
-            return;
-        }
-        PIXI.loader.onComplete.add(ApngLoader.onLoadResource.bind(ApngLoader));
-        this._apngLoaderPicture = new ApngLoader('pictures', param.PictureList);
-        this._apngLoaderEnemy = new ApngLoader('enemies', param.EnemyList);
-        this._apngLoaderSideEnemy = new ApngLoader('sv_enemies', param.SideEnemyList);
-        this._apngLoaderSystem = new ApngLoader('system', param.SceneApngList);
-        PIXI.loader.load();
-    };
-
-    SceneManager.tryLoadApngPicture = function (name) {
-        return this._apngLoaderPicture.createSprite(name);
-    };
-
-    SceneManager.tryLoadApngEnemy = function (name) {
-        return this._apngLoaderEnemy.createSprite(name);
-    };
-
-    SceneManager.tryLoadApngSideEnemy = function (name) {
-        return this._apngLoaderSideEnemy.createSprite(name);
-    };
-
-    SceneManager.tryLoadApngSystem = function (name) {
-        return this._apngLoaderSystem.createSprite(name);
-    };
-
-    /**
-     * Sprite
-     * APNGの読み込み処理を追加します。
-     */
-    Sprite.prototype.addApngChild = function (name) {
-        this.destroyApngIfNeed();
-        this._apngSprite = this.loadApngSprite(name);
-        if (this._apngSprite) {
-            if (this.isApngCache()) {
-                this._apngSprite.pixiApng.jumpToFrame(0);
-                this._apngSprite.pixiApng.play();
-            }
-            this.addChild(this._apngSprite);
-            const original = ImageManager.loadPicture(name);
-            original.addLoadListener(function () {
-                this.bitmap = new Bitmap(original.width, original.height);
-            }.bind(this));
-            this.updateApngAnchor();
-            this.updateApngBlendMode();
-        }
-        this._apngLoopCount = 1;
-        this._apngLoopFrame = 0;
-    };
-
-    Sprite.prototype.destroyApngIfNeed = function () {
-        if (this._apngSprite) {
-            if (!this.isApngCache()) {
-                this.destroyApng();
-            } else {
-                this.removeApng();
-            }
-        }
-    };
-
-    Sprite.prototype.destroyApng = function () {
-        var pixiApng = this._apngSprite.pixiApng;
-        if (pixiApng) {
-            pixiApng.textures.forEach(function (texture) {
-                texture.baseTexture.destroy();
-                texture.destroy();
-            });
-            pixiApng.stop();
-        }
-        this.removeApng();
-    };
-
-    Sprite.prototype.removeApng = function () {
-        this.removeChild(this._apngSprite);
-        this._apngSprite = null;
-    };
-
-    Sprite.prototype.isApngCache = function () {
-        return this._apngSprite.pixiApngOption.CachePolicy !== 0;
-    };
-
-    Sprite.prototype.loadApngSprite = function () {
+    createSprite(name) {
+      if (!this.isApng(name)) {
         return null;
-    };
-
-    Sprite.prototype.updateApngAnchor = function () {
-        if (this._apngSprite) {
-            this._apngSprite.anchor.x = this.anchor.x;
-            this._apngSprite.anchor.y = this.anchor.y;
+      }
+      if (this._isNeedCache(name)) {
+        if (this._spriteCache[name]) {
+          return this._spriteCache[name];
         }
-    };
-
-    Sprite.prototype.updateApngBlendMode = function () {
-        if (this._apngSprite) {
-            this._apngSprite.blendMode = this.blendMode;
-        }
-    };
-
-    var _Sprite_update = Sprite.prototype.update;
-    Sprite.prototype.update = function () {
-        _Sprite_update.apply(this, arguments);
-        if (this._apngSprite) {
-            if (param.FrameCount > 0) {
-                this.updateApngFrame();
-            }
-            this.updateApngSwitchStop();
-            this.updateApngFrameStop();
-        }
-    };
-
-    Sprite.prototype.updateApngFrame = function () {
-        var frameLength = this._apngSprite.pixiApng.getFramesLength();
-        var frame = Math.floor(Graphics.frameCount / param.FrameCount) % frameLength;
-        this._apngSprite.pixiApng.jumpToFrame(frame);
-    };
-
-    Sprite.prototype.updateApngFrameStop = function () {
-        if (!param.StopLastFrame) {
-            return;
-        }
-        var frame = this._apngSprite.pixiApng.__status.frame;
-        if (frame < this._apngLoopFrame) {
-            this._apngLoopCount++;
-        }
-        this._apngLoopFrame = frame;
-        var loopLimit = this.getLoopTimes();
-        if (loopLimit <= 0) {
-            return;
-        }
-        var frameLength = this._apngSprite.pixiApng.getFramesLength();
-        if (loopLimit <= this._apngLoopCount && frameLength <= frame + 1) {
-            this._apngSprite.pixiApng.stop();
-        }
-    };
-
-    Sprite.prototype.updateApngSwitchStop = function () {
-        if ($gameSwitches.value(this.getStopSwitch()) || $gameSwitches.value(param.AllStopSwitch)) {
-            this._apngSprite.pixiApng.stop();
-            this._apngSpritePause = true;
-        } else if (this._apngSpritePause) {
-            this._apngSprite.pixiApng.play();
-            this._apngSpritePause = false;
-        }
-    };
-
-    Sprite.prototype.getLoopTimes = function () {
-        return this._apngSprite.pixiApngOption.LoopTimes || param.DefaultLoopTimes;
-    };
-
-    Sprite.prototype.getStopSwitch = function () {
-        return this._apngSprite.pixiApngOption.StopSwitch;
-    };
-
-    /**
-     * Sprite_Picture
-     * APNGとして登録されているピクチャの読み込みを追加します。
-     */
-    var _Sprite_Picture_loadBitmap = Sprite_Picture.prototype.loadBitmap;
-    Sprite_Picture.prototype.loadBitmap = function () {
-        _Sprite_Picture_loadBitmap.apply(this, arguments);
-        this.addApngChild(this._pictureName);
-    };
-
-    Sprite_Picture.prototype.loadApngSprite = function (name) {
-        return SceneManager.tryLoadApngPicture(name);
-    };
-
-    var _Sprite_Picture_updateOrigin = Sprite_Picture.prototype.updateOrigin;
-    Sprite_Picture.prototype.updateOrigin = function () {
-        _Sprite_Picture_updateOrigin.apply(this, arguments);
-        this.updateApngAnchor();
-    };
-
-    var _Sprite_Picture_updateOther = Sprite_Picture.prototype.updateOther;
-    Sprite_Picture.prototype.updateOther = function () {
-        _Sprite_Picture_updateOther.apply(this, arguments);
-        this.updateApngBlendMode();
-    };
-
-    var _Sprite_Picture_updateBitmap = Sprite_Picture.prototype.updateBitmap;
-    Sprite_Picture.prototype.updateBitmap = function () {
-        _Sprite_Picture_updateBitmap.apply(this, arguments);
-        var picture = this.picture();
-        if (!picture && this._apngSprite) {
-            this.destroyApngIfNeed();
-        }
-    };
-
-    /**
-     * Sprite_Enemy
-     * APNGとして登録されている敵キャラの読み込みを追加します。
-     */
-    var _Sprite_Enemy_loadBitmap = Sprite_Enemy.prototype.loadBitmap;
-    Sprite_Enemy.prototype.loadBitmap = function (name, hue) {
-        _Sprite_Enemy_loadBitmap.apply(this, arguments);
-        this.addApngChild(name);
-    };
-
-    Sprite_Enemy.prototype.loadApngSprite = function (name) {
-        if ($gameSystem.isSideView()) {
-            return SceneManager.tryLoadApngSideEnemy(name);
-        } else {
-            return SceneManager.tryLoadApngEnemy(name);
-        }
-    };
-
-    /**
-     * SpriteSceneApng
-     * シーンに追加表示するAPNGスプライトです。
-     */
-    class SpriteSceneApng extends Sprite {
-        constructor(item) {
-            super();
-            this.setup(item)
-        }
-
-        setup(item) {
-            this.addApngChild(item.FileName);
-            this.x = item.X;
-            this.y = item.Y;
-            if (item.Origin === 1) {
-                this.anchor.x = 0.5;
-                this.anchor.y = 0.5;
-            }
-            this._switch = item.Switch;
-            this._priority = item.Priority;
-        }
-
-        loadApngSprite(name) {
-            return SceneManager.tryLoadApngSystem(name.replace(/\..*/, ''));
-        }
-
-        update() {
-            super.update();
-            this.visible = this.isValid();
-        }
-
-        isValid() {
-            return !this._switch || $gameSwitches.value(this._switch);
-        }
-
-        getPriority() {
-            return this._priority;
-        }
+        var sprite = this._createPixiApngAndGif(name);
+        this._spriteCache[name] = sprite;
+        return sprite;
+      } else {
+        return this._createPixiApngAndGif(name);
+      }
     }
+
+    _createPixiApngAndGif(name) {
+      var pixiApng = new PixiApngAndGif(
+        this._fileHash[name],
+        ApngLoader._resource
+      );
+      var loopCount = this._options[name].LoopTimes || param.DefaultLoopTimes;
+      if (loopCount > 0) {
+        pixiApng.play(loopCount);
+      }
+      var sprite = pixiApng.sprite;
+      sprite.pixiApng = pixiApng;
+      sprite.pixiApngOption = this._options[name];
+      return sprite;
+    }
+
+    _isNeedCache(name) {
+      return this._cachePolicy[name] > 0;
+    }
+
+    isApng(name) {
+      return !!this._fileHash[name];
+    }
+
+    cacheStartup() {
+      Object.keys(this._cachePolicy).forEach(function (name) {
+        if (this._cachePolicy[name] === 2) {
+          this.createSprite(name);
+        }
+      }, this);
+    }
+
+    static startLoading() {
+      this._loading = true;
+    }
+
+    static onLoadResource(progress, resource) {
+      this._resource = resource;
+      Object.keys(this._resource).forEach(function (key) {
+        if (this._resource[key].extension === "rpgmvp") {
+          ApngLoader.decryptResource(key);
+        }
+      }, this);
+    }
+
+    static decryptResource(key) {
+      var resource = this._resource[key];
+      resource.data = Decrypter.decryptArrayBuffer(resource.data);
+      var newKey = ApngLoader.convertDecryptExt(key);
+      resource.name = newKey;
+      resource.url = newKey;
+      resource.extension = "png";
+      this._resource[newKey] = resource;
+      delete this._resource[key];
+    }
+
+    static isReady() {
+      return !!this._resource || !this._loading;
+    }
+
+    static convertDecryptExt(key) {
+      return key.replace(/\.rpgmvp$/, ".png");
+    }
+  }
+  ApngLoader._resource = null;
+
+  var _Scene_Boot_isReady = Scene_Boot.prototype.isReady;
+  Scene_Boot.prototype.isReady = function () {
+    var result = _Scene_Boot_isReady.apply(this, arguments);
+    if (result) {
+      SceneManager.setupApngLoaderIfNeed();
+    }
+    return result && ApngLoader.isReady();
+  };
+
+  var _Scene_Base_create = Scene_Base.prototype.create;
+  Scene_Base.prototype.create = function () {
+    _Scene_Base_create.apply(this, arguments);
+    this.createSceneApng();
+  };
+
+  Scene_Base.prototype.createSceneApng = function () {
+    this._apngList = this.findSceneApngList().map(function (item) {
+      return new SpriteSceneApng(item);
+    }, this);
+  };
+
+  var _Scene_Base_terminate = Scene_Base.prototype.terminate;
+  Scene_Base.prototype.terminate = function () {
+    _Scene_Base_terminate.apply(this, arguments);
+    this.destroySceneApng();
+    if (this._spriteset) {
+      this._spriteset.destroyApngPicture();
+    }
+  };
+
+  Scene_Base.prototype.destroySceneApng = function () {
+    this._apngList.forEach(function (sprite) {
+      sprite.destroyApngIfNeed();
+    });
+  };
+
+  var _Scene_Base_start = Scene_Base.prototype.start;
+  Scene_Base.prototype.start = function () {
+    _Scene_Base_start.apply(this, arguments);
+    this.setApngPriority();
+  };
+
+  Scene_Base.prototype.setApngPriority = function () {
+    var windowLayerIndex = this._windowLayer
+      ? this.getChildIndex(this._windowLayer)
+      : 0;
+    this._apngList.forEach(function (sprite) {
+      switch (sprite.getPriority()) {
+        case 0:
+          this.addChild(sprite);
+          break;
+        case 1:
+          this.addChildAt(sprite, windowLayerIndex);
+          windowLayerIndex++;
+          break;
+        default:
+          this.addChildAt(sprite, 0);
+      }
+    }, this);
+  };
+
+  Scene_Base.prototype.findSceneApngList = function () {
+    var currentSceneName = getClassName(this);
+    return (param.SceneApngList || []).filter(function (data) {
+      return data.SceneName === currentSceneName;
+    }, this);
+  };
+
+  Spriteset_Base.prototype.destroyApngPicture = function () {
+    this.destroyApngPictureContainer(this._pictureContainer);
+    // for PicturePriorityCustomize.js
+    this.destroyApngPictureContainer(this._pictureContainerLower);
+    this.destroyApngPictureContainer(this._pictureContainerMiddle);
+    this.destroyApngPictureContainer(this._pictureContainerUpper);
+  };
+
+  Spriteset_Base.prototype.destroyApngPictureContainer = function (container) {
+    if (!container) {
+      return;
+    }
+    container.children.forEach(function (sprite) {
+      if (sprite.destroyApngIfNeed) {
+        sprite.destroyApngIfNeed();
+      }
+    });
+  };
+
+  Spriteset_Battle.prototype.destroyApngPicture = function () {
+    Spriteset_Base.prototype.destroyApngPicture.call(this);
+    this._enemySprites.forEach(function (sprite) {
+      sprite.destroyApngIfNeed();
+    });
+  };
+
+  /**
+   * SceneManager
+   * APNGのローダを管理します。
+   */
+  SceneManager.setupApngLoaderIfNeed = function () {
+    if (this._apngLoaderPicture) {
+      return;
+    }
+    PIXI.loader.onComplete.add(ApngLoader.onLoadResource.bind(ApngLoader));
+    this._apngLoaderPicture = new ApngLoader("pictures", param.PictureList);
+    this._apngLoaderEnemy = new ApngLoader("enemies", param.EnemyList);
+    this._apngLoaderSideEnemy = new ApngLoader(
+      "sv_enemies",
+      param.SideEnemyList
+    );
+    this._apngLoaderSystem = new ApngLoader("system", param.SceneApngList);
+    PIXI.loader.load();
+  };
+
+  SceneManager.tryLoadApngPicture = function (name) {
+    return this._apngLoaderPicture.createSprite(name);
+  };
+
+  SceneManager.tryLoadApngEnemy = function (name) {
+    return this._apngLoaderEnemy.createSprite(name);
+  };
+
+  SceneManager.tryLoadApngSideEnemy = function (name) {
+    return this._apngLoaderSideEnemy.createSprite(name);
+  };
+
+  SceneManager.tryLoadApngSystem = function (name) {
+    return this._apngLoaderSystem.createSprite(name);
+  };
+
+  /**
+   * Sprite
+   * APNGの読み込み処理を追加します。
+   */
+  Sprite.prototype.addApngChild = function (name) {
+    this.destroyApngIfNeed();
+    this._apngSprite = this.loadApngSprite(name);
+    if (this._apngSprite) {
+      if (this.isApngCache()) {
+        this._apngSprite.pixiApng.jumpToFrame(0);
+        this._apngSprite.pixiApng.play();
+      }
+      this.addChild(this._apngSprite);
+      const original = ImageManager.loadPicture(name);
+      original.addLoadListener(
+        function () {
+          this.bitmap = new Bitmap(original.width, original.height);
+        }.bind(this)
+      );
+      this.updateApngAnchor();
+      this.updateApngBlendMode();
+    }
+    this._apngLoopCount = 1;
+    this._apngLoopFrame = 0;
+  };
+
+  Sprite.prototype.destroyApngIfNeed = function () {
+    if (this._apngSprite) {
+      if (!this.isApngCache()) {
+        this.destroyApng();
+      } else {
+        this.removeApng();
+      }
+    }
+  };
+
+  Sprite.prototype.destroyApng = function () {
+    var pixiApng = this._apngSprite.pixiApng;
+    if (pixiApng) {
+      pixiApng.textures.forEach(function (texture) {
+        texture.baseTexture.destroy();
+        texture.destroy();
+      });
+      pixiApng.stop();
+    }
+    this.removeApng();
+  };
+
+  Sprite.prototype.removeApng = function () {
+    this.removeChild(this._apngSprite);
+    this._apngSprite = null;
+  };
+
+  Sprite.prototype.isApngCache = function () {
+    return this._apngSprite.pixiApngOption.CachePolicy !== 0;
+  };
+
+  Sprite.prototype.loadApngSprite = function () {
+    return null;
+  };
+
+  Sprite.prototype.updateApngAnchor = function () {
+    if (this._apngSprite) {
+      this._apngSprite.anchor.x = this.anchor.x;
+      this._apngSprite.anchor.y = this.anchor.y;
+    }
+  };
+
+  Sprite.prototype.updateApngBlendMode = function () {
+    if (this._apngSprite) {
+      this._apngSprite.blendMode = this.blendMode;
+    }
+  };
+
+  var _Sprite_update = Sprite.prototype.update;
+  Sprite.prototype.update = function () {
+    _Sprite_update.apply(this, arguments);
+    if (this._apngSprite) {
+      if (param.FrameCount > 0) {
+        this.updateApngFrame();
+      }
+      this.updateApngSwitchStop();
+      this.updateApngFrameStop();
+    }
+  };
+
+  Sprite.prototype.updateApngFrame = function () {
+    var frameLength = this._apngSprite.pixiApng.getFramesLength();
+    var frame =
+      Math.floor(Graphics.frameCount / param.FrameCount) % frameLength;
+    this._apngSprite.pixiApng.jumpToFrame(frame);
+  };
+
+  Sprite.prototype.updateApngFrameStop = function () {
+    if (!param.StopLastFrame) {
+      return;
+    }
+    var frame = this._apngSprite.pixiApng.__status.frame;
+    if (frame < this._apngLoopFrame) {
+      this._apngLoopCount++;
+    }
+    this._apngLoopFrame = frame;
+    var loopLimit = this.getLoopTimes();
+    if (loopLimit <= 0) {
+      return;
+    }
+    var frameLength = this._apngSprite.pixiApng.getFramesLength();
+    if (loopLimit <= this._apngLoopCount && frameLength <= frame + 1) {
+      this._apngSprite.pixiApng.stop();
+    }
+  };
+
+  Sprite.prototype.updateApngSwitchStop = function () {
+    if (
+      $gameSwitches.value(this.getStopSwitch()) ||
+      $gameSwitches.value(param.AllStopSwitch)
+    ) {
+      this._apngSprite.pixiApng.stop();
+      this._apngSpritePause = true;
+    } else if (this._apngSpritePause) {
+      this._apngSprite.pixiApng.play();
+      this._apngSpritePause = false;
+    }
+  };
+
+  Sprite.prototype.getLoopTimes = function () {
+    return this._apngSprite.pixiApngOption.LoopTimes || param.DefaultLoopTimes;
+  };
+
+  Sprite.prototype.getStopSwitch = function () {
+    return this._apngSprite.pixiApngOption.StopSwitch;
+  };
+
+  /**
+   * Sprite_Picture
+   * APNGとして登録されているピクチャの読み込みを追加します。
+   */
+  var _Sprite_Picture_loadBitmap = Sprite_Picture.prototype.loadBitmap;
+  Sprite_Picture.prototype.loadBitmap = function () {
+    _Sprite_Picture_loadBitmap.apply(this, arguments);
+    this.addApngChild(this._pictureName);
+  };
+
+  Sprite_Picture.prototype.loadApngSprite = function (name) {
+    return SceneManager.tryLoadApngPicture(name);
+  };
+
+  var _Sprite_Picture_updateOrigin = Sprite_Picture.prototype.updateOrigin;
+  Sprite_Picture.prototype.updateOrigin = function () {
+    _Sprite_Picture_updateOrigin.apply(this, arguments);
+    this.updateApngAnchor();
+  };
+
+  var _Sprite_Picture_updateOther = Sprite_Picture.prototype.updateOther;
+  Sprite_Picture.prototype.updateOther = function () {
+    _Sprite_Picture_updateOther.apply(this, arguments);
+    this.updateApngBlendMode();
+  };
+
+  var _Sprite_Picture_updateBitmap = Sprite_Picture.prototype.updateBitmap;
+  Sprite_Picture.prototype.updateBitmap = function () {
+    _Sprite_Picture_updateBitmap.apply(this, arguments);
+    var picture = this.picture();
+    if (!picture && this._apngSprite) {
+      this.destroyApngIfNeed();
+    }
+  };
+
+  /**
+   * Sprite_Enemy
+   * APNGとして登録されている敵キャラの読み込みを追加します。
+   */
+  var _Sprite_Enemy_loadBitmap = Sprite_Enemy.prototype.loadBitmap;
+  Sprite_Enemy.prototype.loadBitmap = function (name, hue) {
+    _Sprite_Enemy_loadBitmap.apply(this, arguments);
+    this.addApngChild(name);
+  };
+
+  Sprite_Enemy.prototype.loadApngSprite = function (name) {
+    if ($gameSystem.isSideView()) {
+      return SceneManager.tryLoadApngSideEnemy(name);
+    } else {
+      return SceneManager.tryLoadApngEnemy(name);
+    }
+  };
+
+  /**
+   * SpriteSceneApng
+   * シーンに追加表示するAPNGスプライトです。
+   */
+  class SpriteSceneApng extends Sprite {
+    constructor(item) {
+      super();
+      this.setup(item);
+    }
+
+    setup(item) {
+      this.addApngChild(item.FileName);
+      this.x = item.X;
+      this.y = item.Y;
+      if (item.Origin === 1) {
+        this.anchor.x = 0.5;
+        this.anchor.y = 0.5;
+      }
+      this._switch = item.Switch;
+      this._priority = item.Priority;
+    }
+
+    loadApngSprite(name) {
+      return SceneManager.tryLoadApngSystem(name.replace(/\..*/, ""));
+    }
+
+    update() {
+      super.update();
+      this.visible = this.isValid();
+    }
+
+    isValid() {
+      return !this._switch || $gameSwitches.value(this._switch);
+    }
+
+    getPriority() {
+      return this._priority;
+    }
+  }
 })();

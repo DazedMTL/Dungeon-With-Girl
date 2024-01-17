@@ -79,98 +79,105 @@
  */
 
 (function () {
-    'use strict';
-    var metaTagPrefix = 'VCI';
+  "use strict";
+  var metaTagPrefix = "VCI";
 
-    var getArgNumber = function (arg, min, max) {
-        if (arguments.length < 2) min = -Infinity;
-        if (arguments.length < 3) max = Infinity;
-        return (parseInt(convertEscapeCharacters(arg), 10) || 0).clamp(min, max);
-    };
+  var getArgNumber = function (arg, min, max) {
+    if (arguments.length < 2) min = -Infinity;
+    if (arguments.length < 3) max = Infinity;
+    return (parseInt(convertEscapeCharacters(arg), 10) || 0).clamp(min, max);
+  };
 
-    var getArgEval = function (arg, min, max) {
-        if (arguments.length < 2) min = -Infinity;
-        if (arguments.length < 3) max = Infinity;
-        return (eval(convertEscapeCharacters(arg)) || 0).clamp(min, max);
-    };
+  var getArgEval = function (arg, min, max) {
+    if (arguments.length < 2) min = -Infinity;
+    if (arguments.length < 3) max = Infinity;
+    return (eval(convertEscapeCharacters(arg)) || 0).clamp(min, max);
+  };
 
-    var getMetaValue = function (object, name) {
-        var metaTagName = metaTagPrefix + (name ? name : '');
-        return object.meta.hasOwnProperty(metaTagName) ? object.meta[metaTagName] : undefined;
-    };
+  var getMetaValue = function (object, name) {
+    var metaTagName = metaTagPrefix + (name ? name : "");
+    return object.meta.hasOwnProperty(metaTagName)
+      ? object.meta[metaTagName]
+      : undefined;
+  };
 
-    var getMetaValues = function (object, names) {
-        if (!Array.isArray(names)) return getMetaValue(object, names);
-        for (var i = 0, n = names.length; i < n; i++) {
-            var value = getMetaValue(object, names[i]);
-            if (value !== undefined) return value;
-        }
-        return undefined;
-    };
+  var getMetaValues = function (object, names) {
+    if (!Array.isArray(names)) return getMetaValue(object, names);
+    for (var i = 0, n = names.length; i < n; i++) {
+      var value = getMetaValue(object, names[i]);
+      if (value !== undefined) return value;
+    }
+    return undefined;
+  };
 
-    var convertEscapeCharacters = function (text) {
-        if (text == null) text = '';
-        var windowLayer = SceneManager._scene._windowLayer;
-        return windowLayer ? windowLayer.children[0].convertEscapeCharacters(text) : text;
-    };
+  var convertEscapeCharacters = function (text) {
+    if (text == null) text = "";
+    var windowLayer = SceneManager._scene._windowLayer;
+    return windowLayer
+      ? windowLayer.children[0].convertEscapeCharacters(text)
+      : text;
+  };
 
-    //=============================================================================
-    // Game_Action
-    //  行動が成功した場合、変数の操作を実行します。
-    //=============================================================================
-    var _Game_Action_applyItemUserEffect = Game_Action.prototype.applyItemUserEffect;
-    Game_Action.prototype.applyItemUserEffect = function (target) {
-        _Game_Action_applyItemUserEffect.apply(this, arguments);
-        if (!this.isForNone()) {
-            this.applyVariableControl();
-        }
-    };
+  //=============================================================================
+  // Game_Action
+  //  行動が成功した場合、変数の操作を実行します。
+  //=============================================================================
+  var _Game_Action_applyItemUserEffect =
+    Game_Action.prototype.applyItemUserEffect;
+  Game_Action.prototype.applyItemUserEffect = function (target) {
+    _Game_Action_applyItemUserEffect.apply(this, arguments);
+    if (!this.isForNone()) {
+      this.applyVariableControl();
+    }
+  };
 
-    var _Game_Action_applyGlobal = Game_Action.prototype.applyGlobal;
-    Game_Action.prototype.applyGlobal = function (target) {
-        _Game_Action_applyGlobal.apply(this, arguments);
-        if (this.isForNone()) {
-            this.applyVariableControl();
-        }
-    };
+  var _Game_Action_applyGlobal = Game_Action.prototype.applyGlobal;
+  Game_Action.prototype.applyGlobal = function (target) {
+    _Game_Action_applyGlobal.apply(this, arguments);
+    if (this.isForNone()) {
+      this.applyVariableControl();
+    }
+  };
 
-    Game_Action.prototype.isForNone = function () {
-        return this.checkItemScope([0]);
-    };
+  Game_Action.prototype.isForNone = function () {
+    return this.checkItemScope([0]);
+  };
 
-    Game_Action.prototype.applyVariableControl = function () {
-        if (!this.isVariableControlSubject()) {
-            return;
-        }
-        var varNumberStr = getMetaValues(this.item(), ['VarNumber', '変数番号']);
-        if (varNumberStr) {
-            var varNumber = getArgNumber(varNumberStr, 0);
-            var setValue = getMetaValues(this.item(), ['SetValue', '代入値']);
-            if (setValue) {
-                $gameVariables.setValue(varNumber, getArgEval(setValue));
-                return;
-            }
-            var addValue = getMetaValues(this.item(), ['AddValue', '加算値']);
-            if (addValue) {
-                var originalValue = $gameVariables.value(varNumber);
-                $gameVariables.setValue(varNumber, originalValue + getArgEval(addValue));
-            }
-        }
-    };
+  Game_Action.prototype.applyVariableControl = function () {
+    if (!this.isVariableControlSubject()) {
+      return;
+    }
+    var varNumberStr = getMetaValues(this.item(), ["VarNumber", "変数番号"]);
+    if (varNumberStr) {
+      var varNumber = getArgNumber(varNumberStr, 0);
+      var setValue = getMetaValues(this.item(), ["SetValue", "代入値"]);
+      if (setValue) {
+        $gameVariables.setValue(varNumber, getArgEval(setValue));
+        return;
+      }
+      var addValue = getMetaValues(this.item(), ["AddValue", "加算値"]);
+      if (addValue) {
+        var originalValue = $gameVariables.value(varNumber);
+        $gameVariables.setValue(
+          varNumber,
+          originalValue + getArgEval(addValue)
+        );
+      }
+    }
+  };
 
-    Game_Action.prototype.isVariableControlSubject = function () {
-        var subject = getMetaValues(this.item(), ['Subject', '実行者']);
-        if (!subject || subject === true) {
-            return true;
-        }
-        subject = subject.toLowerCase();
-        if (subject === 'actor' && this._subjectEnemyIndex >= 0) {
-            return false;
-        }
-        if (subject === 'enemy' && this._subjectActorId > 0) {
-            return false;
-        }
-        return true;
-    };
+  Game_Action.prototype.isVariableControlSubject = function () {
+    var subject = getMetaValues(this.item(), ["Subject", "実行者"]);
+    if (!subject || subject === true) {
+      return true;
+    }
+    subject = subject.toLowerCase();
+    if (subject === "actor" && this._subjectEnemyIndex >= 0) {
+      return false;
+    }
+    if (subject === "enemy" && this._subjectActorId > 0) {
+      return false;
+    }
+    return true;
+  };
 })();
-

@@ -33,11 +33,14 @@
  */
 
 (() => {
-  'use strict';
+  "use strict";
 
-  const pluginName = document.currentScript.src.replace(/^.*\/(.*).js$/, function () {
-    return arguments[1];
-  });
+  const pluginName = document.currentScript.src.replace(
+    /^.*\/(.*).js$/,
+    function () {
+      return arguments[1];
+    }
+  );
 
   function parseArgs_erasePictures(args) {
     return {
@@ -46,14 +49,22 @@
     };
   }
 
-  const command_erasePictures = 'erasePictures';
+  const command_erasePictures = "erasePictures";
 
-  PluginManager.registerCommand(pluginName, command_erasePictures, function (args) {
-    const parsedArgs = parseArgs_erasePictures(args);
-    $gameScreen.erasePictures(parsedArgs.start, parsedArgs.end);
-  });
+  PluginManager.registerCommand(
+    pluginName,
+    command_erasePictures,
+    function (args) {
+      const parsedArgs = parseArgs_erasePictures(args);
+      $gameScreen.erasePictures(parsedArgs.start, parsedArgs.end);
+    }
+  );
 
   Game_Screen.prototype.erasePictures = function (start, end) {
-    this._pictures.fill(null, this.realPictureId(start), this.realPictureId(end) + 1);
+    this._pictures.fill(
+      null,
+      this.realPictureId(start),
+      this.realPictureId(end) + 1
+    );
   };
 })();

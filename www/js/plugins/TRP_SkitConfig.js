@@ -1,6 +1,6 @@
 //=============================================================================
 // TRP_SkitConfig.js
-//============================================================================= 
+//=============================================================================
 
 //=============================================================================
 /*:
@@ -11,7 +11,7 @@
  * このプラグインを最新版のファイルに更新する際は、
  * プロジェクトのバックアップを取った上でそのままファイルを上書きして下さい。
  * 対応する本体(TRP_Skit.js)バージョンはv1.06です。
- * 
+ *
  * 【更新履歴】
  * 1.05 2019/12/10 イージング種類追加。Y移動コマンド対応。
  * 1.04 2019/6/22  画像向き反転、アニメーション反転無効の設定を追加
@@ -19,11 +19,11 @@
  * 1.02 2018/11/29 アニメーション表示位置設定の追加
  * 1.01 2018/11/20 左右反転の有無、立ち絵の基本拡大率項目の追加。
  * 1.00 2018/11/17 初版
- * 
+ *
  * @param categoryBasic
  * @text 【必須設定】
  * @default ==============================
- * 
+ *
  * @param SkitActorSettings
  * @text 　立ち絵キャラクター設定
  * @desc 各行・空行をダブルクリックして立ち絵キャラの設定ができます。
@@ -37,7 +37,7 @@
  * @type number
  * @default 1
  * @parent categoryBasic
- * 
+ *
  * @param lastPictureId
  * @text 　使用ピクチャの終わり番号
  * @desc 「"終わり番号"-"開始番号"」の値が＜立ち絵の最大表示数＞となります。
@@ -51,7 +51,7 @@
  * @type boolean
  * @default true
  * @parent categoryBasic
- * 
+ *
  * @param categoryDisplayPosition
  * @text 【表示の一般設定】
  * @default ────────────────
@@ -120,8 +120,8 @@
  * @type number
  * @default 100
  * @parent categoryDisplayPosition
- * 
- * 
+ *
+ *
  * @param border
  * @text ↓↓↓詳細/上級設定↓↓↓
  * @default ================================
@@ -237,7 +237,7 @@
  * @type struct<FadeOut>
  * @default {"duration":"12","wait":"true","easeType":"3"}
  * @parent categoryDisappearCommands
- * 
+ *
  * @param slideOut
  * @text 　《スライドアウト》の設定
  * @desc 《スライドアウト》コマンドの設定
@@ -339,7 +339,7 @@
  * @param categoryEffectCommands
  * @text 【演出系コマンド】
  * @default ────────────────
- * 
+ *
  * @param animation
  * @text 　《アニメーション》の設定
  * @desc 《アニメーション》コマンドの設定
@@ -383,7 +383,7 @@
  * @parent categoryEffectCommands
  *
  */
-//============================================================================= 
+//=============================================================================
 
 /*~struct~SkitActor:
  * @param name
@@ -393,7 +393,7 @@
  * @param inputName
  * @text 入力キャラクター名
  * @desc メッセージやプラグインコマンドで入力するキャラクター名の略名。（省略で"キャラクター名"と同じ）
- * 
+ *
  * @param fileName
  * @text フォルダ名
  * @desc キャラ毎の画像を保存するフォルダ名(アルファベット推奨、他のキャラと重複不可)
@@ -424,7 +424,7 @@
  * @param name
  * @text 名称
  * @desc ポジションの指定で数字の代わりに置き換えられる名称
- * 
+ *
  * @param position
  * @text 位置
  * @desc 表示位置(0:左端,10:右端)
@@ -437,7 +437,7 @@
  * @param name
  * @text 略称
  * @desc 速度の指定で数字の代わりに置き換えられる名称
- * 
+ *
  * @param speed
  * @text スピード
  * @desc スピード10は1秒で画面端から画面端(ポジション差10)まで移動する速さ。
@@ -445,7 +445,6 @@
  * @decimals 1
  * @min 0.1
  */
-
 
 /*~struct~ControlCharacters:
  * @param expression
@@ -894,7 +893,6 @@
  * @default 3
  */
 
-
 /*~struct~YMove:
  * @param duration
  * @text 所要時間[デフォ値]
@@ -1327,7 +1325,7 @@
  * @default 3
  */
 /*~struct~UnFocus:
-* @param duration
+ * @param duration
  * @text 所要時間
  * @desc アンフォーカスにかかる所要フレーム。初期値は10
  * @number
@@ -1466,7 +1464,7 @@
  * @default false
  */
 /*~struct~Emphasize:
-* @param duration
+ * @param duration
  * @text 所要時間
  * @desc エフェクトにかかる所要フレーム。初期値は20
  * @number
@@ -1551,7 +1549,7 @@
  * @desc アニメーションIDを登録すると、デプロイメント時の未使用ファイルから除外されます。また、略称を設定できます。
  * @type struct<AnimationList>[]
  * @default []
- * 
+ *
  * @param focus
  * @text 自動フォーカス[デフォ値]
  * @desc 自動フォーカスのデフォルト値。初期値はtrue。(trueにするとアニメーション表示キャラを自動フォーカス）
@@ -1594,4 +1592,4 @@
  */
 
 var TRP_CORE = TRP_CORE || {};
-TRP_CORE.skitParameters = PluginManager.parameters('TRP_SkitConfig');
+TRP_CORE.skitParameters = PluginManager.parameters("TRP_SkitConfig");

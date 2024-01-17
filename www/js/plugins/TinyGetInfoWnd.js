@@ -16,24 +16,24 @@
  * @desc If the switch on, display window when change an item number by an
  *  event command
  * @default 104
- * 
+ *
  * @param Y position type
  * @desc Windows' position. 0:top 1:bottom
  * @default 0
- * 
+ *
  * @param Display Loss
  * @desc Whether display item loss (1:display 0:not display)
  * @default 1
- * 
+ *
  * @param Display at Battle
  * @desc Whether display not only map also at battle(1: yes 0:no)
  * @defalut 1
- * 
+ *
  * @param textGainItem
  * @desc title text display on the window when gain item(s).
  * %1 is replaced to the item's kind(weapon/armor/item/money).
  * @default You got %1
- * 
+ *
  * @param textLoseItem
  * @desc title text display on the window when lose item(s).
  * %1 is replaced to the item's kind(weapon/armor/item/money).
@@ -54,15 +54,15 @@
  * @require 1
  * @dir audio/se/
  * @type file
- * 
+ *
  * @param Item SE volume
  * @desc the volume of the SE that plays when you gain item(s).
  * @default 90
- * 
+ *
  * @param Item SE pitch
  * @desc the pitch of the SE that plays when you gain item(s).
  * @default 100
- * 
+ *
  * @param Weapon SE filename
  * @desc the filename of the SE that plays when you gain weapon(s).
  * note: It doesn't play when you lose weapon(s).
@@ -70,15 +70,15 @@
  * @require 1
  * @dir audio/se/
  * @type file
- * 
+ *
  * @param Weapon SE volume
  * @desc the volume of the SE that plays when you gain weapon(s).
  * @default 100
- * 
+ *
  * @param Weapon SE pitch
  * @desc the pitch of the SE that plays when you gain weapon(s).
  * @default 100
- * 
+ *
  * @param Armor SE filename
  * @desc the filename of the SE that plays when you gain armor(s).
  * note: It doesn't play when you lose armor(s).
@@ -86,15 +86,15 @@
  * @require 1
  * @dir audio/se/
  * @type file
- * 
+ *
  * @param Armor SE volume
  * @desc the volume of the SE that plays when you gain armor(s).
  * @default 100
- * 
+ *
  * @param Armor SE pitch
  * @desc the pitch of the SE that plays when you gain armor(s).
  * @default 100
- * 
+ *
  * @param Money SE filename
  * @desc the filename of the SE that plays when you gain money.
  * note: It doesn't play when you lose money.
@@ -102,11 +102,11 @@
  * @require 1
  * @dir audio/se/
  * @type file
- * 
+ *
  * @param Money SE volume
  * @desc the volume of the SE that plays when you gain money.
  * @default 100
- * 
+ *
  * @param Money SE pitch
  * @desc the pitch of the SE that plays when you gain money.
  * @default 100
@@ -130,7 +130,7 @@
  * TinyGetInfoWnd item V10 gain 3   # gain 3 items whose ID is variable #10.
  * TinyGetInfoWnd money 100         # gain 100G
  * TinyGetInfoWnd money -100        # lose 100G
- * 
+ *
  * note description:
  * <info:the_explanation> : the_explanation is displayed when gain or lose
  *  the item. If it isn't written down, the first line of the item's
@@ -152,24 +152,24 @@
  * @param Event Command Switch
  * @desc このスイッチがONの時、イベントコマンド「アイテム/武器/防具/所持金の増減」を行った時にウィンドウが表示されます
  * @default 104
- * 
+ *
  * @param Y position type
  * @desc 複数のウィンドウを並べる位置です。0:上部 1:下部
  * @default 0
- * 
+ *
  * @param Display Loss
  * @desc 消失時にウィンドウを表示するか (1:する 0:しない)
  * @default 1
- * 
+ *
  * @param Display at Battle
  * @desc 戦闘中にもウィンドウを表示するか(1:する 0:しない)
  * @defalut 1
- * 
+ *
  * @param textGainItem
  * @desc アイテムを入手した時に表示するタイトルです。
  * %1がアイテム種別(アイテム/武器/防具/お金)に置き換わります。
  * @default %1入手！
- * 
+ *
  * @param textLoseItem
  * @desc アイテムを消失した時に表示するタイトルです。
  * %1がアイテム種別(アイテム/武器/防具/お金)に置き換わります。
@@ -190,15 +190,15 @@
  * @require 1
  * @dir audio/se/
  * @type file
- * 
+ *
  * @param Item SE volume
  * @desc アイテムを入手した時に演奏されるSEのボリュームです。
  * @default 100
- * 
+ *
  * @param Item SE pitch
  * @desc アイテムを入手した時に演奏されるSEのピッチです。
  * @default 100
- * 
+ *
  * @param Weapon SE filename
  * @desc 武器を入手した時に演奏されるSEのファイル名です。
  * 注意：消失した時は演奏されません。
@@ -206,15 +206,15 @@
  * @require 1
  * @dir audio/se/
  * @type file
- * 
+ *
  * @param Weapon SE volume
  * @desc 武器を入手した時に演奏されるSEのボリュームです。
  * @default 100
- * 
+ *
  * @param Weapon SE pitch
  * @desc 武器を入手した時に演奏されるSEのピッチです。
  * @default 100
- * 
+ *
  * @param Armor SE filename
  * @desc 防具を入手した時に演奏されるSEのファイル名です。
  * 注意：消失した時は演奏されません。
@@ -222,15 +222,15 @@
  * @require 1
  * @dir audio/se/
  * @type file
- * 
+ *
  * @param Armor SE volume
  * @desc 防具を入手した時に演奏されるSEのボリュームです。
  * @default 100
- * 
+ *
  * @param Armor SE pitch
  * @desc 防具を入手した時に演奏されるSEのピッチです。
  * @default 100
- * 
+ *
  * @param Money SE filename
  * @desc お金を入手した時に演奏されるSEのファイル名です。
  * 注意：消失した時は演奏されません。
@@ -238,15 +238,15 @@
  * @require 1
  * @dir audio/se/
  * @type file
- * 
+ *
  * @param Money SE volume
  * @desc お金を入手した時に演奏されるSEのボリュームです。
  * @default 100
- * 
+ *
  * @param Money SE pitch
  * @desc お金を入手した時に演奏されるSEのピッチです。
  * @default 100
- * 
+ *
  * @help
  * プラグインコマンドの書式:
  * TinyGetInfoWnd arg0 arg1 arg2 arg3
@@ -268,7 +268,7 @@
  * TinyGetInfoWnd item V10 gain 3   # 変数10番の値のIDのアイテムを3個得る。
  * TinyGetInfoWnd money 100         # 100G入手
  * TinyGetInfoWnd money -100        # 100G失う
- * 
+ *
  * メモの書式：
  * <info:the_explanation> : the_explanation の文章が、アイテムの説明として
  *   入手/消失時に表示されます。省略した場合は、アイテムの説明の1行目が
@@ -288,27 +288,27 @@
   //
   // process parameters
   //
-  var parameters = PluginManager.parameters('TinyGetInfoWnd');
-  var dispSwitchID = Number(parameters['Event Command Switch'] || 22);
-  var yPosType = Number(parameters['Y position type'] || 1);
-  var isDisplayLoss = !!Number(parameters['Display Loss']);
-  var isDisplayBattle = !!Number(parameters['Display at Battle']);
-  var wordMoney = parameters['wordMoney'] || 'money';
-  var iconMoney = Number(parameters['iconMoney'] || 360);
-  var textGainItem = parameters['textGainItem'] || 'You got %1';
-  var textLoseItem = parameters['textLoseItem'] || 'You lost %1';
-  var seFilename = parameters['Item SE filename'] || 'Evasion1';
-  var seVolume = Number(parameters['Item SE volume'] || 100);
-  var sePitch = Number(parameters['Item SE pitch'] || 100);
-  var seWeaponFilename = parameters['Weapon SE filename'] || 'Equip1';
-  var seWeaponVolume = Number(parameters['Weapon SE volume'] || 100);
-  var seWeaponPitch = Number(parameters['Weapon SE pitch'] || 100);
-  var seArmorFilename = parameters['Armor SE filename'] || 'Evasion2';
-  var seArmorVolume = Number(parameters['Armor SE volume'] || 100);
-  var seArmorPitch = Number(parameters['Armor SE pitch'] || 100);
-  var seMoneyFilename = parameters['Money SE filename'] || 'Coin';
-  var seMoneyVolume = Number(parameters['Money SE volume'] || 100);
-  var seMoneyPitch = Number(parameters['Money SE pitch'] || 100);
+  var parameters = PluginManager.parameters("TinyGetInfoWnd");
+  var dispSwitchID = Number(parameters["Event Command Switch"] || 22);
+  var yPosType = Number(parameters["Y position type"] || 1);
+  var isDisplayLoss = !!Number(parameters["Display Loss"]);
+  var isDisplayBattle = !!Number(parameters["Display at Battle"]);
+  var wordMoney = parameters["wordMoney"] || "money";
+  var iconMoney = Number(parameters["iconMoney"] || 360);
+  var textGainItem = parameters["textGainItem"] || "You got %1";
+  var textLoseItem = parameters["textLoseItem"] || "You lost %1";
+  var seFilename = parameters["Item SE filename"] || "Evasion1";
+  var seVolume = Number(parameters["Item SE volume"] || 100);
+  var sePitch = Number(parameters["Item SE pitch"] || 100);
+  var seWeaponFilename = parameters["Weapon SE filename"] || "Equip1";
+  var seWeaponVolume = Number(parameters["Weapon SE volume"] || 100);
+  var seWeaponPitch = Number(parameters["Weapon SE pitch"] || 100);
+  var seArmorFilename = parameters["Armor SE filename"] || "Evasion2";
+  var seArmorVolume = Number(parameters["Armor SE volume"] || 100);
+  var seArmorPitch = Number(parameters["Armor SE pitch"] || 100);
+  var seMoneyFilename = parameters["Money SE filename"] || "Coin";
+  var seMoneyVolume = Number(parameters["Money SE volume"] || 100);
+  var seMoneyPitch = Number(parameters["Money SE pitch"] || 100);
 
   //
   // process plugin commands
@@ -317,10 +317,10 @@
     Game_Interpreter.prototype.pluginCommand;
   Game_Interpreter.prototype.pluginCommand = function (command, args) {
     _Game_Interpreter_pluginCommand.call(this, command, args);
-    if (command === 'TinyGetInfoWnd') {
+    if (command === "TinyGetInfoWnd") {
       // find args[1]
       var itemId = 0;
-      var reg = (/^V([0-9]+)/i).exec(args[1]);
+      var reg = /^V([0-9]+)/i.exec(args[1]);
       if (reg) {
         itemId = $gameVariables.value(Number(reg[1])) || 0;
       } else {
@@ -328,7 +328,7 @@
       }
       // find args[3]
       var itemNumber = 0;
-      reg = (/^V([0-9]+)/i).exec(args[3]);
+      reg = /^V([0-9]+)/i.exec(args[3]);
       if (reg) {
         itemNumber = $gameVariables.value(Number(reg[1])) || 1;
       } else {
@@ -341,16 +341,16 @@
       }
       // parse parameters
       switch (args[0]) {
-        case 'item':
+        case "item":
           if (!!$dataItems[itemId] && !!spriteSet) {
             switch (args[2]) {
-              case 'gain':
+              case "gain":
               case undefined:
                 // gain item process
                 var text = textGainItem.format(TextManager.item);
                 spriteSet.addGetInfoWindow(itemId, 0, text, itemNumber);
                 break;
-              case 'lose':
+              case "lose":
                 // lose item process
                 var text = textLoseItem.format(TextManager.item);
                 spriteSet.addGetInfoWindow(itemId, 0, text, -itemNumber);
@@ -358,16 +358,16 @@
             }
           }
           break;
-        case 'weapon':
+        case "weapon":
           if (!!$dataWeapons[itemId] && !!spriteSet) {
             switch (args[2]) {
-              case 'gain':
+              case "gain":
               case undefined:
                 // gain weapon process
                 var text = textGainItem.format(TextManager.weapon);
                 spriteSet.addGetInfoWindow(itemId, 1, text, itemNumber);
                 break;
-              case 'lose':
+              case "lose":
                 // lose weapon process
                 var text = textLoseItem.format(TextManager.weapon);
                 spriteSet.addGetInfoWindow(itemId, 1, text, -itemNumber);
@@ -375,16 +375,16 @@
             }
           }
           break;
-        case 'armor':
+        case "armor":
           if (!!$dataArmors[itemId] && !!spriteSet) {
             switch (args[2]) {
-              case 'gain':
+              case "gain":
               case undefined:
                 // gain armor process
                 var text = textGainItem.format(TextManager.armor);
                 spriteSet.addGetInfoWindow(itemId, 2, text, itemNumber);
                 break;
-              case 'lose':
+              case "lose":
                 // lose armor process
                 var text = textLoseItem.format(TextManager.armor);
                 spriteSet.addGetInfoWindow(itemId, 2, text, -itemNumber);
@@ -392,7 +392,7 @@
             }
           }
           break;
-        case 'money':
+        case "money":
           if (!!spriteSet) {
             var text;
             if (itemId >= 0) {
@@ -482,7 +482,7 @@
 
   // -------------------------------------------------------------------------
   // Window_GetInfo
-  // 
+  //
   // The tiny window to display item gain/lose situation on map.
 
   function Window_GetInfo() {
@@ -519,7 +519,7 @@
   };
 
   Window_GetInfo.prototype.determineItem = function (type, id) {
-    var data = '';
+    var data = "";
     switch (type) {
       case 0:
         data = $dataItems[id];
@@ -582,7 +582,7 @@
     if (yPosType === 0) {
       this.y = this.index * 60;
     } else {
-      this.y = 520 - (this.index * 60);
+      this.y = 520 - this.index * 60;
     }
   };
 
@@ -594,7 +594,7 @@
     // fill background
     this.contents.paintOpacity = 160;
     this.contents.fontSize = 28;
-    this.contents.fillRect(0, 21, 816, 36, '#000000');
+    this.contents.fillRect(0, 21, 816, 36, "#000000");
     // draw item name, number, description
     if (type >= 0 && type <= 2) {
       this.contents.paintOpacity = 255;
@@ -603,10 +603,10 @@
         this.contents.paintOpacity = 160;
       }
       this.drawItemName(data, 6, 21, 300);
-      this.drawText('\xd7', 306, 21, 24, 'center');
-      this.drawText(String(Math.abs(value)), 330, 21, 32, 'right');
+      this.drawText("\xd7", 306, 21, 24, "center");
+      this.drawText(String(Math.abs(value)), 330, 21, 32, "right");
       this.changeTextColor(this.normalColor());
-      this.drawText(this.description(data), 384, 21, 432, 'left');
+      this.drawText(this.description(data), 384, 21, 432, "left");
     } else if (type === 3) {
       this.contents.paintOpacity = 255;
       this.changeTextColor(this.normalColor());
@@ -615,19 +615,20 @@
       }
       this.drawIcon(iconMoney, 6, 21);
       var mainText = String(Math.abs(value)) + $dataSystem.currencyUnit;
-      this.drawText(mainText, 44, 21, 180, 'right');
+      this.drawText(mainText, 44, 21, 180, "right");
     }
     // draw guide string
     this.contents.paintOpacity = 160;
     this.contents.fontSize = 20;
-    this.contents.fillRect(0, 0, this.textWidth(text) + 6, 22, '#000000');
+    this.contents.fillRect(0, 0, this.textWidth(text) + 6, 22, "#000000");
     this.contents.paintOpacity = 255;
     this.changeTextColor(this.normalColor());
-    this.drawText(text, 6, -8, 510, 'left');
+    this.drawText(text, 6, -8, 510, "left");
   };
 
   Window_GetInfo.prototype.playSE = function (type, value) {
-    if (value <= 0) {   // play when gain, not play when lose.
+    if (value <= 0) {
+      // play when gain, not play when lose.
       return;
     }
     switch (type) {
@@ -640,8 +641,9 @@
       case 1: // weapon
         if (seWeaponFilename) {
           var audio = {
-            name: seWeaponFilename, volume: seWeaponVolume,
-            pitch: seWeaponPitch
+            name: seWeaponFilename,
+            volume: seWeaponVolume,
+            pitch: seWeaponPitch,
           };
           AudioManager.playSe(audio);
         }
@@ -649,8 +651,9 @@
       case 2: // armor
         if (seArmorFilename) {
           var audio = {
-            name: seArmorFilename, volume: seArmorVolume,
-            pitch: seArmorPitch
+            name: seArmorFilename,
+            volume: seArmorVolume,
+            pitch: seArmorPitch,
           };
           AudioManager.playSe(audio);
         }
@@ -658,8 +661,9 @@
       case 3: // money
         if (seMoneyFilename) {
           var audio = {
-            name: seMoneyFilename, volume: seMoneyVolume,
-            pitch: seMoneyPitch
+            name: seMoneyFilename,
+            volume: seMoneyVolume,
+            pitch: seMoneyPitch,
           };
           AudioManager.playSe(audio);
         }
@@ -692,15 +696,19 @@
   // *** note *** : To prevent multiple exection of operateValue,
   // not to alias but overwriting functions.
 
-
   // Change Gold
   Game_Interpreter.prototype.command125 = function () {
-    var value = this.operateValue(this._params[0], this._params[1],
-      this._params[2]);
-    if ($gameSwitches.value(dispSwitchID) &&
+    var value = this.operateValue(
+      this._params[0],
+      this._params[1],
+      this._params[2]
+    );
+    if (
+      $gameSwitches.value(dispSwitchID) &&
       (!$gameParty.inBattle() || isDisplayBattle) &&
-      value != 0) {
-      var text = '';
+      value != 0
+    ) {
+      var text = "";
       var spriteSet = SceneManager._scene._spriteset;
       if (value > 0) {
         text = textGainItem.format(wordMoney);
@@ -714,15 +722,19 @@
     return true;
   };
 
-
   // Change Items
   Game_Interpreter.prototype.command126 = function () {
-    var value = this.operateValue(this._params[1], this._params[2],
-      this._params[3]);
-    if ($gameSwitches.value(dispSwitchID) &&
+    var value = this.operateValue(
+      this._params[1],
+      this._params[2],
+      this._params[3]
+    );
+    if (
+      $gameSwitches.value(dispSwitchID) &&
       (!$gameParty.inBattle() || isDisplayBattle) &&
-      value != 0) {
-      var text = '';
+      value != 0
+    ) {
+      var text = "";
       var spriteSet = SceneManager._scene._spriteset;
       if (value > 0) {
         text = textGainItem.format(TextManager.item);
@@ -738,12 +750,17 @@
 
   // Change Weapons
   Game_Interpreter.prototype.command127 = function () {
-    var value = this.operateValue(this._params[1], this._params[2],
-      this._params[3]);
-    if ($gameSwitches.value(dispSwitchID) &&
+    var value = this.operateValue(
+      this._params[1],
+      this._params[2],
+      this._params[3]
+    );
+    if (
+      $gameSwitches.value(dispSwitchID) &&
       (!$gameParty.inBattle() || isDisplayBattle) &&
-      value != 0) {
-      var text = '';
+      value != 0
+    ) {
+      var text = "";
       var spriteSet = SceneManager._scene._spriteset;
       if (value > 0) {
         text = textGainItem.format(TextManager.weapon);
@@ -752,20 +769,28 @@
       }
       spriteSet.addGetInfoWindow(this._params[0], 1, text, value);
     } else {
-      $gameParty.gainItem($dataWeapons[this._params[0]], value,
-        this._params[4]);
+      $gameParty.gainItem(
+        $dataWeapons[this._params[0]],
+        value,
+        this._params[4]
+      );
     }
     return true;
   };
 
   // Change Armors
   Game_Interpreter.prototype.command128 = function () {
-    var value = this.operateValue(this._params[1], this._params[2],
-      this._params[3]);
-    if ($gameSwitches.value(dispSwitchID) &&
+    var value = this.operateValue(
+      this._params[1],
+      this._params[2],
+      this._params[3]
+    );
+    if (
+      $gameSwitches.value(dispSwitchID) &&
       (!$gameParty.inBattle() || isDisplayBattle) &&
-      value != 0) {
-      var text = '';
+      value != 0
+    ) {
+      var text = "";
       var spriteSet = SceneManager._scene._spriteset;
       if (value > 0) {
         text = textGainItem.format(TextManager.armor);
@@ -774,10 +799,8 @@
       }
       spriteSet.addGetInfoWindow(this._params[0], 2, text, value);
     } else {
-      $gameParty.gainItem($dataArmors[this._params[0]], value,
-        this._params[4]);
+      $gameParty.gainItem($dataArmors[this._params[0]], value, this._params[4]);
     }
     return true;
   };
-
 })();

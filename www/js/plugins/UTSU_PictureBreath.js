@@ -81,7 +81,8 @@
     });
   };
 
-  const _Game_Interpreter_pluginCommand = Game_Interpreter.prototype.pluginCommand;
+  const _Game_Interpreter_pluginCommand =
+    Game_Interpreter.prototype.pluginCommand;
   Game_Interpreter.prototype.pluginCommand = function (command, args) {
     _Game_Interpreter_pluginCommand.call(this, command, args);
     if (command === "UTSU_PictureBreathOn") {
@@ -94,8 +95,29 @@
   };
 
   const _Game_Screen_showPicture = Game_Screen.prototype.showPicture;
-  Game_Screen.prototype.showPicture = function (pictureId, name, origin, x, y, scaleX, scaleY, opacity, blendMode) {
-    _Game_Screen_showPicture.call(this, pictureId, name, origin, x, y, scaleX, scaleY, opacity, blendMode);
+  Game_Screen.prototype.showPicture = function (
+    pictureId,
+    name,
+    origin,
+    x,
+    y,
+    scaleX,
+    scaleY,
+    opacity,
+    blendMode
+  ) {
+    _Game_Screen_showPicture.call(
+      this,
+      pictureId,
+      name,
+      origin,
+      x,
+      y,
+      scaleX,
+      scaleY,
+      opacity,
+      blendMode
+    );
     const realPictureId = this.realPictureId(pictureId);
     if (breathBackup[realPictureId]) {
       const picture = this._pictures[realPictureId];
@@ -144,7 +166,9 @@
       return;
     }
     if (picture._breathActive) {
-      const freq = Math.sin((Math.PI * picture._breathCount) / (picture._breathPeriod / 2));
+      const freq = Math.sin(
+        (Math.PI * picture._breathCount) / (picture._breathPeriod / 2)
+      );
       this.scale.y -= freq * 0.015 + 0.015;
       this.y -= Math.ceil((this.height * (1.0 - this.scale.y)) / 2);
       this.scale.x += freq * 0.005 + 0.005;

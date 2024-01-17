@@ -41,9 +41,9 @@
  *   現在のバージョンではマウス、タッチ操作には対応していません。
  *
  *   プラグインコマンドはありません。
- * 
+ *
  *   このプラグインは RPGツクールMV Version 1.5.1 で動作確認をしています。
- * 
+ *
  *   このプラグインはMITライセンスのもとに配布しています、商用利用、
  *   改造、再配布など、自由にお使いいただけます。
  */
@@ -52,10 +52,9 @@ var Imported = Imported || {};
 Imported.TMOmitEquipCommand = true;
 
 (function () {
-
-  var parameters = PluginManager.parameters('TMOmitEquipCommand');
-  var useOptimize = JSON.parse(parameters['useOptimize']);
-  var useClear = JSON.parse(parameters['useClear']);
+  var parameters = PluginManager.parameters("TMOmitEquipCommand");
+  var useOptimize = JSON.parse(parameters["useOptimize"]);
+  var useClear = JSON.parse(parameters["useClear"]);
 
   //-----------------------------------------------------------------------------
   // Scene_Equip
@@ -68,7 +67,8 @@ Imported.TMOmitEquipCommand = true;
     this._slotWindow.select(0);
   };
 
-  var _Scene_Equip_createCommandWindow = Scene_Equip.prototype.createCommandWindow;
+  var _Scene_Equip_createCommandWindow =
+    Scene_Equip.prototype.createCommandWindow;
   Scene_Equip.prototype.createCommandWindow = function () {
     _Scene_Equip_createCommandWindow.call(this);
     this._commandWindow.hide();
@@ -83,10 +83,10 @@ Imported.TMOmitEquipCommand = true;
     this._slotWindow = new Window_EquipSlot(wx, wy, ww, wh);
     this._slotWindow.setHelpWindow(this._helpWindow);
     this._slotWindow.setStatusWindow(this._statusWindow);
-    this._slotWindow.setHandler('ok', this.onSlotOk.bind(this));
-    this._slotWindow.setHandler('cancel', this.popScene.bind(this));
-    this._slotWindow.setHandler('pagedown', this.nextActor.bind(this));
-    this._slotWindow.setHandler('pageup', this.previousActor.bind(this));
+    this._slotWindow.setHandler("ok", this.onSlotOk.bind(this));
+    this._slotWindow.setHandler("cancel", this.popScene.bind(this));
+    this._slotWindow.setHandler("pagedown", this.nextActor.bind(this));
+    this._slotWindow.setHandler("pageup", this.previousActor.bind(this));
     this.addWindow(this._slotWindow);
   };
 
@@ -117,12 +117,11 @@ Imported.TMOmitEquipCommand = true;
   Scene_Equip.prototype.update = function () {
     _Scene_Equip_update.call(this);
     if (this._slotWindow.active) {
-      if (Input.isTriggered('shift') && useOptimize) {
+      if (Input.isTriggered("shift") && useOptimize) {
         this.commandOptimize();
-      } else if (Input.isTriggered('control') && useClear) {
+      } else if (Input.isTriggered("control") && useClear) {
         this.commandClear();
       }
     }
   };
-
 })();

@@ -5,36 +5,36 @@
 /*:ja
  * @plugindesc ver1.00 能力値にステートに設定した定数を加算します。
  * @author まっつＵＰ, merusaia(著作表示はまっつＵＰさん)
- * 
+ *
  * @help
- * 
+ *
  * RPGで笑顔を・・・
- * 
+ *
  * このヘルプとパラメータの説明をよくお読みになってからお使いください。
- * 
+ *
  * パラメータとプラグインコマンドともにありません。
  * 定数は基本能力値の倍率やバフの倍率によって変わることはありません。
- * 
+ *
  * ステートのノートタグ
- * 
+ *
  * <BSparamId:value>
- * 
+ *
  * 例：atkを100上昇させる。
  * <BS2:100>
- * 
+ *
  * このプラグインを利用する場合は
  * readmeなどに「まっつＵＰ」の名を入れてください。
  * また、素材のみの販売はダメです。
  * 上記以外の規約等はございません。
  * もちろんツクールMVで使用する前提です。
  * 何か不具合ありましたら気軽にどうぞ。
- *  
+ *
  * 免責事項：
  * このプラグインを利用したことによるいかなる損害も制作者は一切の責任を負いません。
- * 
+ *
  * ↑　ここまで。まっつＵＰさん
  * ↓　以下、merusaiaが追記
- * 
+ *
  * まっつＵＰさんのプラグインをmerusaiaが改変しています。
  * ・Game_BattlerBase.prototype.param上書きを追加定義に変更
  * ・機能説明やデバッグ方法のコメント
@@ -80,11 +80,11 @@
  */
 
 (function () {
-
   //var parameters = PluginManager.parameters('BordSkin_edit');
 
-  Game_BattlerBase.prototype.paramPlus2 = function (paramId) { //新規
-    var str1 = 'BS' + paramId;
+  Game_BattlerBase.prototype.paramPlus2 = function (paramId) {
+    //新規
+    var str1 = "BS" + paramId;
     var amount = 0;
     this._states.forEach(function (stateId) {
       var val1 = Number($dataStates[stateId].meta[str1] || 0);
@@ -95,7 +95,7 @@
 
   var _Game_BattlerBase_param = Game_BattlerBase.prototype.param; // 追加定義に変更
   Game_BattlerBase.prototype.param = function (paramId) {
-    var baseValue = _Game_BattlerBase_param.apply(this, arguments);// まず、元メソッドの内容を呼び出し、返り値にその内容を格納
+    var baseValue = _Game_BattlerBase_param.apply(this, arguments); // まず、元メソッドの内容を呼び出し、返り値にその内容を格納
 
     // 以下、追加定義部分
     // 次に、絶対値を足したものを計算して、それに置き換える
@@ -113,5 +113,4 @@
 
     return value_addedPlus2;
   };
-
 })();
