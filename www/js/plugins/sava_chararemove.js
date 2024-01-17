@@ -13,4 +13,4 @@
       this.drawPlaytime(info, rect.x, y2, rect.width);
     }
   };
-}());
+})();

@@ -106,182 +106,181 @@
  * @url http://newrpg.seesaa.net/article/484313722.html
  *
  * @help イベントテストの機能を拡張します。
- * 
+ *
  * ツクールＭＶ～ＭＺにはイベントエディタ上で
  * 編集中のイベントのテストを行う機能があります。
  * （範囲選択＞右クリック＞テストで実行可能です。）
- * 
+ *
  * ただこの機能には大きな制約があって、
  * 今ひとつ使い勝手がよくないのが実情です。
- * 
+ *
  * マップデータを一切読み込まずに実行するため、
  * マップは愚か、イベントの画像なども表示されません。
  * そのため、メッセージのタイミングなど
  * ごく限られた要素をテストすることしかできません。
- * 
+ *
  * また、テストを行う際に、メンバーの加入や
  * スイッチなどの状態を調整したいことがあるかと思いますが、
  * それらを設定する仕組みがありません。
- * 
+ *
  * そして、マップデータを読み込まずに実行するため、
  * その点を考慮していないプラグインは軒並みエラーになります。
- * 
+ *
  * そこで以下のように改善することで、
  * マップやイベントの表示・動作を確認できるようにします。
- * 
+ *
  * ・適当なマップをテスト開始時に読み込むことでエラーを回避する。
  * 　※エラー回避用のダミーなので、本当に適当で構いません。
- * 
+ *
  * ・イベントテスト時のみ実行される初期設定を可能にして、
  * 　メンバーやスイッチの状態を調整可能に。
- * 
+ *
  * ・初期設定時に場所移動を指定し、マップ＆イベントデータを読み込む。
  * 　※通常、場所移動でマップを移動すると、
  * 　　以降のイベントへの命令は無視される仕様ですが、
  * 　　命令を受けつけるように改善します。
- * 
+ *
  * ------------------------------------------
  * ■使用方法
  * ------------------------------------------
  * テストしたいイベントをエディタで開き、
  * イベントテスト用の初期設定をしてください。
- * 
+ *
  * テスト判定用スイッチで条件分岐させれば、
  * イベントテスト実行時専用の処理を設定できます。
  * ※テスト判定用スイッチはプラグインパラメータで指定
- * 
+ *
  * 分岐内で場所移動を実行すれば、
  * マップデータが読み込まれ、各画像が表示されるようになります。
  * ※元から冒頭で場所移動を呼ぶイベントなら省略可
- * 
+ *
  * 他にも、メンバーの加入やスイッチなどの状態を
  * 必要に応じて変更してください。
- * 
+ *
  * また『このイベント』が対象になっているコマンドは
  * 初期状態では無視されてしまいます。
  * プラグインパラメータの『このイベントＩＤの変数』に
  * ＩＤを設定しておく必要があります。
  * ※必ず場所移動より前に設定してください。
- * 
+ *
  * あとはイベントエディタでコマンドを範囲選択し、
  * 右クリックでテスト（またはCtrl+R）を実行します。
  * 想定通りにイベントが実行されれば成功です。
- * 
+ *
  * ------------------------------------------
  * ■利用規約
  * ------------------------------------------
  * 特に制約はありません。
  * 改変、再配布自由、商用可、権利表示も任意です。
  * 作者は責任を負いませんが、不具合については可能な範囲で対応します。
- * 
+ *
  * @param DefaultMapId
  * @text 初期マップＩＤ
  * @type number
  * @default 1
  * @desc イベントテスト開始時の初期マップＩＤです。
  * 適当なマップを設定してください。
- * 
+ *
  * @param TestSwitch
  * @text テスト判定用スイッチ
  * @type switch
  * @desc イベントテスト時にオンになるスイッチです。
  * ※スクリプトのDataManager.isEventTest()と同じです。
- * 
+ *
  * @param ThisEventIdVariable
  * @text このイベントＩＤの変数
  * @type variable
  * @desc 『このイベント』のイベントＩＤを設定する変数です。
- * 
+ *
  * @param StartCommonEvent
  * @text 開始時コモンイベント
  * @type common_event
  * @desc イベントテスト開始時に呼び出されるコモンイベントです。
  */
 (function () {
-    "use strict";
+  "use strict";
 
-    function toBoolean(str, def) {
-        if (str === true || str === "true") {
-            return true;
-        } else if (str === false || str === "false") {
-            return false;
-        }
-        return def;
+  function toBoolean(str, def) {
+    if (str === true || str === "true") {
+      return true;
+    } else if (str === false || str === "false") {
+      return false;
     }
-    function toNumber(str, def) {
-        if (str == undefined || str == "") {
-            return def;
-        }
-        return isNaN(str) ? def : +(str || def);
+    return def;
+  }
+  function toNumber(str, def) {
+    if (str == undefined || str == "") {
+      return def;
+    }
+    return isNaN(str) ? def : +(str || def);
+  }
+
+  const PLUGIN_NAME = "NRP_EventTest";
+  const parameters = PluginManager.parameters(PLUGIN_NAME);
+  const pDefaultMapId = toNumber(parameters["DefaultMapId"], 1);
+  const pTestSwitch = toNumber(parameters["TestSwitch"]);
+  const pThisEventIdVariable = toNumber(parameters["ThisEventIdVariable"]);
+  const pStartCommonEvent = toNumber(parameters["StartCommonEvent"]);
+
+  /**
+   * ●イベントテストの設定
+   */
+  const _DataManager_setupEventTest = DataManager.setupEventTest;
+  DataManager.setupEventTest = function () {
+    _DataManager_setupEventTest.apply(this, arguments);
+
+    // 仮のマップＩＤを設定しておく。
+    if (pDefaultMapId) {
+      $gamePlayer._newMapId = pDefaultMapId;
     }
 
-    const PLUGIN_NAME = "NRP_EventTest";
-    const parameters = PluginManager.parameters(PLUGIN_NAME);
-    const pDefaultMapId = toNumber(parameters["DefaultMapId"], 1);
-    const pTestSwitch = toNumber(parameters["TestSwitch"]);
-    const pThisEventIdVariable = toNumber(parameters["ThisEventIdVariable"]);
-    const pStartCommonEvent = toNumber(parameters["StartCommonEvent"]);
+    // テスト用スイッチをオン
+    if (pTestSwitch) {
+      $gameSwitches.setValue(pTestSwitch, true);
+    }
+  };
 
-    /**
-     * ●イベントテストの設定
-     */
-    const _DataManager_setupEventTest = DataManager.setupEventTest;
-    DataManager.setupEventTest = function () {
-        _DataManager_setupEventTest.apply(this, arguments);
+  /**
+   * ●マップシーンの開始時
+   */
+  const _Scene_Map_start = Scene_Map.prototype.start;
+  Scene_Map.prototype.start = function () {
+    _Scene_Map_start.apply(this, arguments);
 
-        // 仮のマップＩＤを設定しておく。
-        if (pDefaultMapId) {
-            $gamePlayer._newMapId = pDefaultMapId;
+    // 場所移動時かつイベントテストの場合
+    if (this._transfer && DataManager.isEventTest()) {
+      // マップが有効な場合
+      if ($gameMap.mapId()) {
+        const interpreter = $gameMap._interpreter;
+
+        // 実行中イベントのマップＩＤが未設定の場合、
+        // またはデフォルト値の場合
+        // ※最初の場所移動とみなす
+        if (interpreter._mapId <= 0 || interpreter._mapId == pDefaultMapId) {
+          // マップＩＤを設定
+          interpreter._mapId = $gameMap.mapId();
+          // イベントＩＤを取得
+          if (pThisEventIdVariable) {
+            interpreter._eventId = $gameVariables.value(pThisEventIdVariable);
+          }
         }
+      }
+    }
+  };
 
-        // テスト用スイッチをオン
-        if (pTestSwitch) {
-            $gameSwitches.setValue(pTestSwitch, true);
-        }
-    };
+  /**
+   * ●イベントテストの設定
+   */
+  const _Game_Map_setupTestEvent = Game_Map.prototype.setupTestEvent;
+  Game_Map.prototype.setupTestEvent = function () {
+    const result = _Game_Map_setupTestEvent.apply(this, arguments);
+    // result = trueならイベントテスト開始時なので、
+    // コモンイベントを実行
+    if (result && pStartCommonEvent) {
+      const commonEvent = $dataCommonEvents[pStartCommonEvent];
+      this._interpreter.setupChild(commonEvent.list);
+    }
 
-    /**
-     * ●マップシーンの開始時
-     */
-    const _Scene_Map_start = Scene_Map.prototype.start;
-    Scene_Map.prototype.start = function () {
-        _Scene_Map_start.apply(this, arguments);
-
-        // 場所移動時かつイベントテストの場合
-        if (this._transfer && DataManager.isEventTest()) {
-            // マップが有効な場合
-            if ($gameMap.mapId()) {
-                const interpreter = $gameMap._interpreter;
-
-                // 実行中イベントのマップＩＤが未設定の場合、
-                // またはデフォルト値の場合
-                // ※最初の場所移動とみなす
-                if (interpreter._mapId <= 0 || interpreter._mapId == pDefaultMapId) {
-                    // マップＩＤを設定
-                    interpreter._mapId = $gameMap.mapId();
-                    // イベントＩＤを取得
-                    if (pThisEventIdVariable) {
-                        interpreter._eventId = $gameVariables.value(pThisEventIdVariable);
-                    }
-                }
-            }
-        }
-    };
-
-    /**
-     * ●イベントテストの設定
-     */
-    const _Game_Map_setupTestEvent = Game_Map.prototype.setupTestEvent;
-    Game_Map.prototype.setupTestEvent = function () {
-        const result = _Game_Map_setupTestEvent.apply(this, arguments);
-        // result = trueならイベントテスト開始時なので、
-        // コモンイベントを実行
-        if (result && pStartCommonEvent) {
-            const commonEvent = $dataCommonEvents[pStartCommonEvent];
-            this._interpreter.setupChild(commonEvent.list);
-        }
-
-        return result;
-    };
-
+    return result;
+  };
 })();

@@ -8,544 +8,544 @@ Imported.YEP_ItemCore = true;
 
 var Yanfly = Yanfly || {};
 Yanfly.Item = Yanfly.Item || {};
-Yanfly.Item.version = 1.30;
+Yanfly.Item.version = 1.3;
 
 //=============================================================================
 /*:
-* @plugindesc v1.30 Changes the way Items are handled for your game
-* and the Item Scene, too.
-* @author Yanfly Engine Plugins
-*
-* @param ---General---
-* @default
-*
-* @param Max Items
-* @parent ---General---
-* @type number
-* @min 0
-* @desc Maximum number of items. If this is set to 0, then there
-* will be no independent items.
-* @default 0
-*
-* @param Max Weapons
-* @parent ---General---
-* @type number
-* @min 0
-* @desc Maximum number of weapons. If this is set to 0, then there
-* will be no independent weapons.
-* @default 100
-*
-* @param Max Armors
-* @parent ---General---
-* @type number
-* @min 0
-* @desc Maximum number of armors. If this is set to 0, then there
-* will be no independent armors.
-* @default 100
-*
-* @param Starting ID
-* @parent ---General---
-* @type number
-* @min 1
-* @desc This will be the starting ID number for independent items
-* so that they don't interfere with default items.
-* @default 3000
-*
-* @param Random Variance
-* @parent ---General---
-* @type number
-* @desc Randomize the stats found for non shop items by this value
-* either positive or negative. Set as 0 for no random.
-* @default 0
-*
-* @param Negative Variance
-* @parent ---General---
-* @type boolean
-* @on Allow
-* @off Disallow
-* @desc If using random variance, allow random variance equipment
-* stats to go under 0? NO - false     YES - true
-* @default false
-*
-* @param Name Format
-* @parent ---General---
-* @desc How item names will be ordered and structured.
-* %1 - Prefix, %2 - Base Name, %3 - Suffix, %4 Boost
-* @default %1%2%3%4
-*
-* @param Name Spacing
-* @parent ---General---
-* @type boolean
-* @on YES
-* @off NO
-* @desc Place a space between name prefixes and suffixes?
-* NO - false     YES - true
-* @default true
-*
-* @param Boost Format
-* @parent ---General---
-* @desc This is the text format for a boosted independent item.
-* %1 - Boost Amount
-* @default (+%1)
-*
-* @param ---Item Scene---
-* @default
-*
-* @param Updated Scene Item
-* @parent ---Item Scene---
-* @type boolean
-* @on Updated (Recommended)
-* @off Normal
-* @desc Enabling this will change Scene Item's visual appearance.
-* NO - false     YES - true (recommended)
-* @default true
-*
-* @param List Equipped Items
-* @parent ---Item Scene---
-* @type boolean
-* @on YES
-* @off NO
-* @desc Show equipped independent items in the item lists?
-* NO - false     YES - true
-* @default true
-*
-* @param Show Icon
-* @parent ---Item Scene---
-* @type boolean
-* @on YES
-* @off NO
-* @desc Show the icon in the status window?
-* NO - false     YES - true
-* @default true
-*
-* @param Icon Size
-* @parent ---Item Scene---
-* @type number
-* @min 0
-* @desc This will be the width and height of the icon to be drawn.
-* This is normally 4x the default Icon Width and Icon Height.
-* @default 128
-*
-* @param Font Size
-* @parent ---Item Scene---
-* @type number
-* @min 1
-* @desc This changes the font size for description items.
-* Default: 28
-* @default 20
-*
-* @param Command Alignment
-* @parent ---Item Scene---
-* @type combo
-* @option left
-* @option center
-* @option right
-* @desc This is the text alignment for the command windows.
-* left     center     right
-* @default center
-*
-* @param Recovery Format
-* @parent ---Item Scene---
-* @desc This is the text format for HP/MP Recovery.
-* @default %1 Heal
-*
-* @param Add State
-* @parent ---Item Scene---
-* @desc This is the text for adding states.
-* @default +State
-*
-* @param Add Buff
-* @parent ---Item Scene---
-* @desc This is the text for adding buffs.
-* @default +Buff
-*
-* @param Remove State
-* @parent ---Item Scene---
-* @desc This is the text for remove states.
-* @default -State
-*
-* @param Remove Buff
-* @parent ---Item Scene---
-* @desc This is the text for remove buffs.
-* @default -Buff
-*
-* @param Maximum Icons
-* @parent ---Item Scene---
-* @type number
-* @min 0
-* @desc Maximum number of icons drawn for states and buffs.
-* @default 4
-*
-* @param Use Command
-* @parent ---Item Scene---
-* @desc Command text for using the selected item.
-* %1 - Item Icon and Name
-* @default Use %1
-*
-* @param Carry Format
-* @parent ---Item Scene---
-* @desc This is the visual text format for independent item ID.
-* %1 - Item Index     %2 - Maximum
-* @default %1/%2
-*
-* @param --Independent Items--
-* @default
-*
-* @param Midgame Note Parsing
-* @parent ---Independent Items---
-* @type boolean
-* @on YES
-* @off NO (Recommended)
-* @desc Allow midgame note parsing or do it at beginning?
-* NO - false     YES - true    Recommended: false
-* @default false
-*
-* @help
-* ============================================================================
-* Introduction
-* ============================================================================
-*
-* This plugin makes a couple of main changes to your game and the way items
-* are handled to allow a base core for future plugins.
-*
-* 1. Independent Items
-* If you choose to have maximum limit on your items, weapons, and/or armors,
-* those items will become independent and have their own individual stats and
-* whatnot. Independent items are capable of being upgraded, altered, modified,
-* etc. and retain those changed properties independent of other items of the
-* same type. Items without a maximum limit (aka 0), will continue working as
-* they normally did in RPG Maker MV.
-*
-* 2. New Scene_Item
-* The item scene has been revamped to look a little bit different. With the
-* new layout, the item list is no longer two columns, but one. Added are a few
-* more windows, such as the item status window (which displays basic item
-* information), an item information window (which shows information applied to
-* the item via upgrades, etc.), and an item action window, which appears when
-* you select an item and it will ask you if you wish to Use the item or any
-* action added via plugins (such as upgrading the item). If you wish to not
-* use this revamp, you can disable it from the parameters.
-*
-* 3. Random Variance
-* Newly acquired items that aren't from shop can be given randomized stats to
-* a small degree for items that are independent. Items can be above the stock
-* value or below the stock value by the variance value. If you wish for an
-* item to not have a variance value, you can use a notetag to set the variance
-* value to 0. If you wish for all of your items to not have a variance value,
-* you can set the parameter to 0.
-*
-* Note: During battle test, independent items are disabled.
-*
-* ============================================================================
-* Notetags
-* ============================================================================
-*
-* If you are using independent items, items that aren't gained through the
-* shop can have a random variance applied to its stats.
-*
-* Item, Weapon, Armor Notetag
-*   <Random Variance: x>
-*   If this item is acquired through non-shop means, it will have random
-*   stats offset by x amount in either a positive or negative value.
-*
-*   <Not Independent Item>
-*   Sets an item that is independent by default to become a nonindependent
-*   item, allowing it to stack and making it unable to be affected by
-*   independent item modifiers.
-*
-*   <Priority Name>
-*   This sets the item, weapon, or armor's priority name to its database
-*   entry so that name schemes cannot affect the item.
-*
-*   <Text Color: x>
-*   This sets the text color of this item, weapon, or armor to use text color
-*   x from the window skin.
-*
-* ============================================================================
-* Plugin Commands
-* ============================================================================
-*
-* If you wish to be able to add items to your player's inventory without the
-* random variance being applied to it, you can use the following plugin
-* commands to adjust the settings for that.
-*
-* Plugin Command:
-*   EnableVarianceStock  - Causes all items acquired from this point forward
-*                          to have its variance give stock (nonrandom) values.
-*   DisableVarianceStock - Causes all items acquired from this point forward
-*                          to have its variance give random values.
-*
-* A small note is that if you enabled the variance stock values, if the player
-* restarts the game by either going through the title screen or just turning
-* off the program and starting it back up, the random variance will be in
-* effect again. This plugin command is meant to exist as a short term disable.
-*
-* ============================================================================
-* Eventing Changes
-* ============================================================================
-*
-* A few changes have been made to eventing in order to adjust for independent
-* items. They are as follows:
-*
-* Event Page Conditions and Conditional Branches:
-*   Checking to see if an item exists in the party's inventory will differ if
-* the item can be independent. Instead, the condition can be fulfilled if
-* there is an item, even when upgraded, that has the selected item as the base
-* item. This means your Long Sword (+1) will fulfill the condition of having
-* the target Long Sword item in the event editor.
-*
-* Actor Has X Equip:
-*   Just like the previous condition, this condition will be fulfilled if the
-* actor has a weapon whose base item matches the event editor's target item.
-* The Long Sword (+1) will fulfill the condition of needing the actor to have
-* a Long Sword item equipped.
-*
-* Change Equipment:
-*   If the target equipment is independent, the game will first check to see
-* if the actor has an item equipped with the matching base item. If not, the
-* game will then check to see if the party has a matching base item in the
-* inventory first and use that. If not, then the game will create a new stock
-* version of the item and equip that to the actor.
-*
-* ============================================================================
-* Item Name System
-* ============================================================================
-*
-* For independent items, they have a unique name handling system. Independent
-* items consist of four parts:
-*
-*      Prefix     Base Name     Suffix     Boost Count
-*
-* The prefix, base name, suffix, and boost count are adjusted by plugins.
-* Depending on the effects applied, they can be altered or changed. Using the
-* name system, an item with a prefix of 'Fiery', base name of 'Sword', suffix
-* being 'of Might', and a boost count of 5 will end up looking like:
-*
-*      Fiery Sword of Might (+5)
-*
-* This item would appear that way only if its various name parts have been
-* altered some way or another. However, there is a fifth name convention, and
-* that is the priority name. If an item has a priority name, it will completely
-* overwrite the current name scheme with just the priority name itself. So even
-* if the item's name is 'Fiery Sword of Might (+5)', if the item's priority
-* name is 'Legendary Blade', then 'Legendary Blade' will take priority.
-*
-* ============================================================================
-* Lunatic Mode - On Independent Item Creation
-* ============================================================================
-*
-* For those with JavaScript experience, you can use the following Lunatic Mode
-* to run JavaScript code upon the creation of the item. This only applies to
-* newly made independent items.
-*
-* Item, Weapon, Armor
-*
-*   <On Creation Eval>
-*    item.price = baseItem.price;
-*    item.price += Math.floor(Random() * 100);
-*   </On Creation Eval>
-*   The 'item' variable refers to the independent item being made. 'baseItem'
-*   refers to the item's base item. Any alterations made to the 'item' will be
-*   applied to the independent item.
-*
-* ============================================================================
-* Lunatic Mode - Custom Info Window Display
-* ============================================================================
-*
-* If you want to display unique and custom stuff into your info window on the
-* side, you can use the following notetags:
-*
-*   <Info Text Top>
-*    text
-*    text
-*   </Info Text Top>
-*   Type in extra information you wish to type in for the item info window
-*   here, whether it is lore or other information. Text codes can be used.
-*   Information here is is displayed towards the top of the info window.
-*
-*   <Info Text Bottom>
-*    text
-*    text
-*   </Info Text Bottom>
-*   Type in extra information you wish to type in for the item info window
-*   here, whether it is lore or other information. Text codes can be used.
-*   Information here is is displayed towards the bottom of the info window.
-*
-*   <Info Eval>
-*    var variableId = 1;
-*    var value = 500;
-*    $gameVariables.setValue(variableId, value);
-*   </Info Eval>
-*   If you know JavaScript, you can use these notetags to run some code before
-*   displaying any new info. This way, if you plan on using text codes that
-*   display variable values, you can run a bit of code before displaying them
-*   to synch up what's shown in the item info window.
-*
-* ============================================================================
-* Independent Items and Midgame Note Parsing
-* ============================================================================
-*
-* The "Midgame Note Parsing" option in the plugin parameters is made for any
-* plugins that may only parse notetags midgame as opposed to at the loading of
-* the game. This is an option that you should enable AT YOUR OWN RISK.
-*
-* Why is it at your own risk? Because enabling this option means independent
-* items will keep their notedata, thus, increasing the file sizes of your save
-* files several times bigger, and it can cause lag midgame, too.
-*
-* ============================================================================
-* Changelog
-* ============================================================================
-*
-* Version 1.30:
-* - Bypass the isDevToolsOpen() error when bad code is inserted into a script
-* call or custom Lunatic Mode code segment due to updating to MV 1.6.1.
-*
-* Version 1.29:
-* - Updated for RPG Maker MV version 1.6.0:
-*   Removal of the destructive code in Scene_Item.update function.
-*
-* Version 1.28:
-* - Updated for RPG Maker MV version 1.5.0.
-*
-* Version 1.27:
-* - Compatibility update for future plugins.
-*
-* Version 1.26:
-* - Lunatic Mode fail safes added.
-*
-* Version 1.25:
-* - Optimization Update
-*
-* Version 1.24a:
-* - Fixed a typo within the code. Please update Item Core, Item Disassemble,
-* Attachable Augments, and More Currencies if you are using those plugins.
-* - Random variance is now disabled from fresh plugin installation by default.
-*
-* Version 1.23:
-* - Fixed an issue custom info text when using different font sizes.
-*
-* Version 1.22:
-* - Fixed a removal bug that caused weapon and armor ID's to clash.
-*
-* Version 1.21:
-* - Fixed an error with sorting algorithm when items have the same base ID.
-*
-* Version 1.20:
-* - Added <On Creation Eval> Lunatic Mode notetag. Read the help file for more
-* information about it.
-*
-* Version 1.19:
-* - Updated for RPG Maker MV version 1.1.0.
-*
-* Version 1.18a:
-* - Added 'Midgame Note Parsing' plugin parameter.
-* - Fixed a visual error with MP recovery displaying a 0 instead of ---.
-*
-* Version 1.17:
-* - Added <Text Color: x> notetag for items, weapons, and armors.
-*
-* Version 1.16:
-* - Fixed a bug that made mid-game actor initialization not display items
-* correctly in the item menu.
-*
-* Version 1.15:
-* - Fixed a bug with independent items getting values that crash the game.
-*
-* Version 1.14:
-* - Fixed an unintended function of the game not granting a piece of equipment
-* through events.
-*
-* Version 1.13:
-* - Fixed a bug that didn't unequip items properly.
-*
-* Version 1.12:
-* - Added 'Negative Variance' parameter.
-*
-* Version 1.11:
-* - Fixed a bug that caused random variance to not calculate correctly.
-* - Fixed a bug that didn't return the correct conditional branch results.
-* - Fixed the display in the shop window to show number of independent items
-* owned by the player rather than just 0.
-*
-* Version 1.10:
-* - Added Lunatic Mode - Custom Info Window Display.
-*
-* Version 1.09:
-* - Fixed a bug with evented item removal that didn't remove equipped items if
-* the 'Include Equipment' checkbox was checked.
-*
-* Version 1.08:
-* - Fixed a bug with the Control Variable event that would not gather the
-* right amount of independent items.
-*
-* Version 1.07:
-* - Fixed a bug with the Change Equipment event where armors wouldn't equip.
-*
-* Version 1.06:
-* - Fixed a bug and rewrote the initializing equipment process.
-*
-* Version 1.05:
-* - Compatibility update with ItemBook.
-*
-* Version 1.04:
-* - Added 'List Equipped Items' parameter to allow for equipment restricted
-* actors to be able to alt their equipment.
-*
-* Version 1.03:
-* - Fixed a bug where using events to remove independent items weren't working
-* properly and instead added more items.
-* - Fixed a bug where a Random Variance of 0 still gave random stats.
-*
-* Version 1.02:
-* - Fixed a bug where initializing equipment slots didn't work properly and/or
-* added incorrect equips from the wrong actors into the inventory.
-*
-* Version 1.01:
-* - Fixed bug where if you are using no independent pieces of equipment,
-* actors would fail to start with initial equipment.
-*
-* Version 1.00:
-* - Finished plugin!
-*/
+ * @plugindesc v1.30 Changes the way Items are handled for your game
+ * and the Item Scene, too.
+ * @author Yanfly Engine Plugins
+ *
+ * @param ---General---
+ * @default
+ *
+ * @param Max Items
+ * @parent ---General---
+ * @type number
+ * @min 0
+ * @desc Maximum number of items. If this is set to 0, then there
+ * will be no independent items.
+ * @default 0
+ *
+ * @param Max Weapons
+ * @parent ---General---
+ * @type number
+ * @min 0
+ * @desc Maximum number of weapons. If this is set to 0, then there
+ * will be no independent weapons.
+ * @default 100
+ *
+ * @param Max Armors
+ * @parent ---General---
+ * @type number
+ * @min 0
+ * @desc Maximum number of armors. If this is set to 0, then there
+ * will be no independent armors.
+ * @default 100
+ *
+ * @param Starting ID
+ * @parent ---General---
+ * @type number
+ * @min 1
+ * @desc This will be the starting ID number for independent items
+ * so that they don't interfere with default items.
+ * @default 3000
+ *
+ * @param Random Variance
+ * @parent ---General---
+ * @type number
+ * @desc Randomize the stats found for non shop items by this value
+ * either positive or negative. Set as 0 for no random.
+ * @default 0
+ *
+ * @param Negative Variance
+ * @parent ---General---
+ * @type boolean
+ * @on Allow
+ * @off Disallow
+ * @desc If using random variance, allow random variance equipment
+ * stats to go under 0? NO - false     YES - true
+ * @default false
+ *
+ * @param Name Format
+ * @parent ---General---
+ * @desc How item names will be ordered and structured.
+ * %1 - Prefix, %2 - Base Name, %3 - Suffix, %4 Boost
+ * @default %1%2%3%4
+ *
+ * @param Name Spacing
+ * @parent ---General---
+ * @type boolean
+ * @on YES
+ * @off NO
+ * @desc Place a space between name prefixes and suffixes?
+ * NO - false     YES - true
+ * @default true
+ *
+ * @param Boost Format
+ * @parent ---General---
+ * @desc This is the text format for a boosted independent item.
+ * %1 - Boost Amount
+ * @default (+%1)
+ *
+ * @param ---Item Scene---
+ * @default
+ *
+ * @param Updated Scene Item
+ * @parent ---Item Scene---
+ * @type boolean
+ * @on Updated (Recommended)
+ * @off Normal
+ * @desc Enabling this will change Scene Item's visual appearance.
+ * NO - false     YES - true (recommended)
+ * @default true
+ *
+ * @param List Equipped Items
+ * @parent ---Item Scene---
+ * @type boolean
+ * @on YES
+ * @off NO
+ * @desc Show equipped independent items in the item lists?
+ * NO - false     YES - true
+ * @default true
+ *
+ * @param Show Icon
+ * @parent ---Item Scene---
+ * @type boolean
+ * @on YES
+ * @off NO
+ * @desc Show the icon in the status window?
+ * NO - false     YES - true
+ * @default true
+ *
+ * @param Icon Size
+ * @parent ---Item Scene---
+ * @type number
+ * @min 0
+ * @desc This will be the width and height of the icon to be drawn.
+ * This is normally 4x the default Icon Width and Icon Height.
+ * @default 128
+ *
+ * @param Font Size
+ * @parent ---Item Scene---
+ * @type number
+ * @min 1
+ * @desc This changes the font size for description items.
+ * Default: 28
+ * @default 20
+ *
+ * @param Command Alignment
+ * @parent ---Item Scene---
+ * @type combo
+ * @option left
+ * @option center
+ * @option right
+ * @desc This is the text alignment for the command windows.
+ * left     center     right
+ * @default center
+ *
+ * @param Recovery Format
+ * @parent ---Item Scene---
+ * @desc This is the text format for HP/MP Recovery.
+ * @default %1 Heal
+ *
+ * @param Add State
+ * @parent ---Item Scene---
+ * @desc This is the text for adding states.
+ * @default +State
+ *
+ * @param Add Buff
+ * @parent ---Item Scene---
+ * @desc This is the text for adding buffs.
+ * @default +Buff
+ *
+ * @param Remove State
+ * @parent ---Item Scene---
+ * @desc This is the text for remove states.
+ * @default -State
+ *
+ * @param Remove Buff
+ * @parent ---Item Scene---
+ * @desc This is the text for remove buffs.
+ * @default -Buff
+ *
+ * @param Maximum Icons
+ * @parent ---Item Scene---
+ * @type number
+ * @min 0
+ * @desc Maximum number of icons drawn for states and buffs.
+ * @default 4
+ *
+ * @param Use Command
+ * @parent ---Item Scene---
+ * @desc Command text for using the selected item.
+ * %1 - Item Icon and Name
+ * @default Use %1
+ *
+ * @param Carry Format
+ * @parent ---Item Scene---
+ * @desc This is the visual text format for independent item ID.
+ * %1 - Item Index     %2 - Maximum
+ * @default %1/%2
+ *
+ * @param --Independent Items--
+ * @default
+ *
+ * @param Midgame Note Parsing
+ * @parent ---Independent Items---
+ * @type boolean
+ * @on YES
+ * @off NO (Recommended)
+ * @desc Allow midgame note parsing or do it at beginning?
+ * NO - false     YES - true    Recommended: false
+ * @default false
+ *
+ * @help
+ * ============================================================================
+ * Introduction
+ * ============================================================================
+ *
+ * This plugin makes a couple of main changes to your game and the way items
+ * are handled to allow a base core for future plugins.
+ *
+ * 1. Independent Items
+ * If you choose to have maximum limit on your items, weapons, and/or armors,
+ * those items will become independent and have their own individual stats and
+ * whatnot. Independent items are capable of being upgraded, altered, modified,
+ * etc. and retain those changed properties independent of other items of the
+ * same type. Items without a maximum limit (aka 0), will continue working as
+ * they normally did in RPG Maker MV.
+ *
+ * 2. New Scene_Item
+ * The item scene has been revamped to look a little bit different. With the
+ * new layout, the item list is no longer two columns, but one. Added are a few
+ * more windows, such as the item status window (which displays basic item
+ * information), an item information window (which shows information applied to
+ * the item via upgrades, etc.), and an item action window, which appears when
+ * you select an item and it will ask you if you wish to Use the item or any
+ * action added via plugins (such as upgrading the item). If you wish to not
+ * use this revamp, you can disable it from the parameters.
+ *
+ * 3. Random Variance
+ * Newly acquired items that aren't from shop can be given randomized stats to
+ * a small degree for items that are independent. Items can be above the stock
+ * value or below the stock value by the variance value. If you wish for an
+ * item to not have a variance value, you can use a notetag to set the variance
+ * value to 0. If you wish for all of your items to not have a variance value,
+ * you can set the parameter to 0.
+ *
+ * Note: During battle test, independent items are disabled.
+ *
+ * ============================================================================
+ * Notetags
+ * ============================================================================
+ *
+ * If you are using independent items, items that aren't gained through the
+ * shop can have a random variance applied to its stats.
+ *
+ * Item, Weapon, Armor Notetag
+ *   <Random Variance: x>
+ *   If this item is acquired through non-shop means, it will have random
+ *   stats offset by x amount in either a positive or negative value.
+ *
+ *   <Not Independent Item>
+ *   Sets an item that is independent by default to become a nonindependent
+ *   item, allowing it to stack and making it unable to be affected by
+ *   independent item modifiers.
+ *
+ *   <Priority Name>
+ *   This sets the item, weapon, or armor's priority name to its database
+ *   entry so that name schemes cannot affect the item.
+ *
+ *   <Text Color: x>
+ *   This sets the text color of this item, weapon, or armor to use text color
+ *   x from the window skin.
+ *
+ * ============================================================================
+ * Plugin Commands
+ * ============================================================================
+ *
+ * If you wish to be able to add items to your player's inventory without the
+ * random variance being applied to it, you can use the following plugin
+ * commands to adjust the settings for that.
+ *
+ * Plugin Command:
+ *   EnableVarianceStock  - Causes all items acquired from this point forward
+ *                          to have its variance give stock (nonrandom) values.
+ *   DisableVarianceStock - Causes all items acquired from this point forward
+ *                          to have its variance give random values.
+ *
+ * A small note is that if you enabled the variance stock values, if the player
+ * restarts the game by either going through the title screen or just turning
+ * off the program and starting it back up, the random variance will be in
+ * effect again. This plugin command is meant to exist as a short term disable.
+ *
+ * ============================================================================
+ * Eventing Changes
+ * ============================================================================
+ *
+ * A few changes have been made to eventing in order to adjust for independent
+ * items. They are as follows:
+ *
+ * Event Page Conditions and Conditional Branches:
+ *   Checking to see if an item exists in the party's inventory will differ if
+ * the item can be independent. Instead, the condition can be fulfilled if
+ * there is an item, even when upgraded, that has the selected item as the base
+ * item. This means your Long Sword (+1) will fulfill the condition of having
+ * the target Long Sword item in the event editor.
+ *
+ * Actor Has X Equip:
+ *   Just like the previous condition, this condition will be fulfilled if the
+ * actor has a weapon whose base item matches the event editor's target item.
+ * The Long Sword (+1) will fulfill the condition of needing the actor to have
+ * a Long Sword item equipped.
+ *
+ * Change Equipment:
+ *   If the target equipment is independent, the game will first check to see
+ * if the actor has an item equipped with the matching base item. If not, the
+ * game will then check to see if the party has a matching base item in the
+ * inventory first and use that. If not, then the game will create a new stock
+ * version of the item and equip that to the actor.
+ *
+ * ============================================================================
+ * Item Name System
+ * ============================================================================
+ *
+ * For independent items, they have a unique name handling system. Independent
+ * items consist of four parts:
+ *
+ *      Prefix     Base Name     Suffix     Boost Count
+ *
+ * The prefix, base name, suffix, and boost count are adjusted by plugins.
+ * Depending on the effects applied, they can be altered or changed. Using the
+ * name system, an item with a prefix of 'Fiery', base name of 'Sword', suffix
+ * being 'of Might', and a boost count of 5 will end up looking like:
+ *
+ *      Fiery Sword of Might (+5)
+ *
+ * This item would appear that way only if its various name parts have been
+ * altered some way or another. However, there is a fifth name convention, and
+ * that is the priority name. If an item has a priority name, it will completely
+ * overwrite the current name scheme with just the priority name itself. So even
+ * if the item's name is 'Fiery Sword of Might (+5)', if the item's priority
+ * name is 'Legendary Blade', then 'Legendary Blade' will take priority.
+ *
+ * ============================================================================
+ * Lunatic Mode - On Independent Item Creation
+ * ============================================================================
+ *
+ * For those with JavaScript experience, you can use the following Lunatic Mode
+ * to run JavaScript code upon the creation of the item. This only applies to
+ * newly made independent items.
+ *
+ * Item, Weapon, Armor
+ *
+ *   <On Creation Eval>
+ *    item.price = baseItem.price;
+ *    item.price += Math.floor(Random() * 100);
+ *   </On Creation Eval>
+ *   The 'item' variable refers to the independent item being made. 'baseItem'
+ *   refers to the item's base item. Any alterations made to the 'item' will be
+ *   applied to the independent item.
+ *
+ * ============================================================================
+ * Lunatic Mode - Custom Info Window Display
+ * ============================================================================
+ *
+ * If you want to display unique and custom stuff into your info window on the
+ * side, you can use the following notetags:
+ *
+ *   <Info Text Top>
+ *    text
+ *    text
+ *   </Info Text Top>
+ *   Type in extra information you wish to type in for the item info window
+ *   here, whether it is lore or other information. Text codes can be used.
+ *   Information here is is displayed towards the top of the info window.
+ *
+ *   <Info Text Bottom>
+ *    text
+ *    text
+ *   </Info Text Bottom>
+ *   Type in extra information you wish to type in for the item info window
+ *   here, whether it is lore or other information. Text codes can be used.
+ *   Information here is is displayed towards the bottom of the info window.
+ *
+ *   <Info Eval>
+ *    var variableId = 1;
+ *    var value = 500;
+ *    $gameVariables.setValue(variableId, value);
+ *   </Info Eval>
+ *   If you know JavaScript, you can use these notetags to run some code before
+ *   displaying any new info. This way, if you plan on using text codes that
+ *   display variable values, you can run a bit of code before displaying them
+ *   to synch up what's shown in the item info window.
+ *
+ * ============================================================================
+ * Independent Items and Midgame Note Parsing
+ * ============================================================================
+ *
+ * The "Midgame Note Parsing" option in the plugin parameters is made for any
+ * plugins that may only parse notetags midgame as opposed to at the loading of
+ * the game. This is an option that you should enable AT YOUR OWN RISK.
+ *
+ * Why is it at your own risk? Because enabling this option means independent
+ * items will keep their notedata, thus, increasing the file sizes of your save
+ * files several times bigger, and it can cause lag midgame, too.
+ *
+ * ============================================================================
+ * Changelog
+ * ============================================================================
+ *
+ * Version 1.30:
+ * - Bypass the isDevToolsOpen() error when bad code is inserted into a script
+ * call or custom Lunatic Mode code segment due to updating to MV 1.6.1.
+ *
+ * Version 1.29:
+ * - Updated for RPG Maker MV version 1.6.0:
+ *   Removal of the destructive code in Scene_Item.update function.
+ *
+ * Version 1.28:
+ * - Updated for RPG Maker MV version 1.5.0.
+ *
+ * Version 1.27:
+ * - Compatibility update for future plugins.
+ *
+ * Version 1.26:
+ * - Lunatic Mode fail safes added.
+ *
+ * Version 1.25:
+ * - Optimization Update
+ *
+ * Version 1.24a:
+ * - Fixed a typo within the code. Please update Item Core, Item Disassemble,
+ * Attachable Augments, and More Currencies if you are using those plugins.
+ * - Random variance is now disabled from fresh plugin installation by default.
+ *
+ * Version 1.23:
+ * - Fixed an issue custom info text when using different font sizes.
+ *
+ * Version 1.22:
+ * - Fixed a removal bug that caused weapon and armor ID's to clash.
+ *
+ * Version 1.21:
+ * - Fixed an error with sorting algorithm when items have the same base ID.
+ *
+ * Version 1.20:
+ * - Added <On Creation Eval> Lunatic Mode notetag. Read the help file for more
+ * information about it.
+ *
+ * Version 1.19:
+ * - Updated for RPG Maker MV version 1.1.0.
+ *
+ * Version 1.18a:
+ * - Added 'Midgame Note Parsing' plugin parameter.
+ * - Fixed a visual error with MP recovery displaying a 0 instead of ---.
+ *
+ * Version 1.17:
+ * - Added <Text Color: x> notetag for items, weapons, and armors.
+ *
+ * Version 1.16:
+ * - Fixed a bug that made mid-game actor initialization not display items
+ * correctly in the item menu.
+ *
+ * Version 1.15:
+ * - Fixed a bug with independent items getting values that crash the game.
+ *
+ * Version 1.14:
+ * - Fixed an unintended function of the game not granting a piece of equipment
+ * through events.
+ *
+ * Version 1.13:
+ * - Fixed a bug that didn't unequip items properly.
+ *
+ * Version 1.12:
+ * - Added 'Negative Variance' parameter.
+ *
+ * Version 1.11:
+ * - Fixed a bug that caused random variance to not calculate correctly.
+ * - Fixed a bug that didn't return the correct conditional branch results.
+ * - Fixed the display in the shop window to show number of independent items
+ * owned by the player rather than just 0.
+ *
+ * Version 1.10:
+ * - Added Lunatic Mode - Custom Info Window Display.
+ *
+ * Version 1.09:
+ * - Fixed a bug with evented item removal that didn't remove equipped items if
+ * the 'Include Equipment' checkbox was checked.
+ *
+ * Version 1.08:
+ * - Fixed a bug with the Control Variable event that would not gather the
+ * right amount of independent items.
+ *
+ * Version 1.07:
+ * - Fixed a bug with the Change Equipment event where armors wouldn't equip.
+ *
+ * Version 1.06:
+ * - Fixed a bug and rewrote the initializing equipment process.
+ *
+ * Version 1.05:
+ * - Compatibility update with ItemBook.
+ *
+ * Version 1.04:
+ * - Added 'List Equipped Items' parameter to allow for equipment restricted
+ * actors to be able to alt their equipment.
+ *
+ * Version 1.03:
+ * - Fixed a bug where using events to remove independent items weren't working
+ * properly and instead added more items.
+ * - Fixed a bug where a Random Variance of 0 still gave random stats.
+ *
+ * Version 1.02:
+ * - Fixed a bug where initializing equipment slots didn't work properly and/or
+ * added incorrect equips from the wrong actors into the inventory.
+ *
+ * Version 1.01:
+ * - Fixed bug where if you are using no independent pieces of equipment,
+ * actors would fail to start with initial equipment.
+ *
+ * Version 1.00:
+ * - Finished plugin!
+ */
 //=============================================================================
 
 //=============================================================================
 // Parameter Variables
 //=============================================================================
 
-Yanfly.Parameters = PluginManager.parameters('YEP_ItemCore');
+Yanfly.Parameters = PluginManager.parameters("YEP_ItemCore");
 Yanfly.Param = Yanfly.Param || {};
 
-Yanfly.Param.ItemMaxItems = Number(Yanfly.Parameters['Max Items']);
-Yanfly.Param.ItemMaxWeapons = Number(Yanfly.Parameters['Max Weapons']);
-Yanfly.Param.ItemMaxArmors = Number(Yanfly.Parameters['Max Armors']);
-Yanfly.Param.ItemStartingId = Number(Yanfly.Parameters['Starting ID']);
-Yanfly.Param.ItemRandomVariance = Number(Yanfly.Parameters['Random Variance']);
-Yanfly.Param.ItemNegVar = eval(String(Yanfly.Parameters['Negative Variance']));
-Yanfly.Param.ItemNameFmt = String(Yanfly.Parameters['Name Format']);
-Yanfly.Param.ItemNameSpacing = String(Yanfly.Parameters['Name Spacing']);
-Yanfly.Param.ItemBoostFmt = String(Yanfly.Parameters['Boost Format']);
+Yanfly.Param.ItemMaxItems = Number(Yanfly.Parameters["Max Items"]);
+Yanfly.Param.ItemMaxWeapons = Number(Yanfly.Parameters["Max Weapons"]);
+Yanfly.Param.ItemMaxArmors = Number(Yanfly.Parameters["Max Armors"]);
+Yanfly.Param.ItemStartingId = Number(Yanfly.Parameters["Starting ID"]);
+Yanfly.Param.ItemRandomVariance = Number(Yanfly.Parameters["Random Variance"]);
+Yanfly.Param.ItemNegVar = eval(String(Yanfly.Parameters["Negative Variance"]));
+Yanfly.Param.ItemNameFmt = String(Yanfly.Parameters["Name Format"]);
+Yanfly.Param.ItemNameSpacing = String(Yanfly.Parameters["Name Spacing"]);
+Yanfly.Param.ItemBoostFmt = String(Yanfly.Parameters["Boost Format"]);
 
-Yanfly.Param.ItemSceneItem = String(Yanfly.Parameters['Updated Scene Item']);
+Yanfly.Param.ItemSceneItem = String(Yanfly.Parameters["Updated Scene Item"]);
 Yanfly.Param.ItemSceneItem = eval(Yanfly.Param.ItemSceneItem);
-Yanfly.Param.ItemShEquipped = String(Yanfly.Parameters['List Equipped Items']);
+Yanfly.Param.ItemShEquipped = String(Yanfly.Parameters["List Equipped Items"]);
 Yanfly.Param.ItemShEquipped = eval(Yanfly.Param.ItemShEquipped);
-Yanfly.Param.ItemShowIcon = String(Yanfly.Parameters['Show Icon']);
+Yanfly.Param.ItemShowIcon = String(Yanfly.Parameters["Show Icon"]);
 Yanfly.Param.ItemShowIcon = eval(Yanfly.Param.ItemShowIcon);
-Yanfly.Param.ItemIconSize = Number(Yanfly.Parameters['Icon Size']);
-Yanfly.Param.ItemFontSize = Number(Yanfly.Parameters['Font Size']);
-Yanfly.Param.ItemCmdAlign = String(Yanfly.Parameters['Command Alignment']);
-Yanfly.Param.ItemRecoverFmt = String(Yanfly.Parameters['Recovery Format']);
-Yanfly.Param.ItemAddState = String(Yanfly.Parameters['Add State']);
-Yanfly.Param.ItemAddBuff = String(Yanfly.Parameters['Add Buff']);
-Yanfly.Param.ItemRemoveState = String(Yanfly.Parameters['Remove State']);
-Yanfly.Param.ItemRemoveBuff = String(Yanfly.Parameters['Remove Buff']);
-Yanfly.Param.ItemMaxIcons = Number(Yanfly.Parameters['Maximum Icons']);
-Yanfly.Param.ItemUseCmd = String(Yanfly.Parameters['Use Command']);
-Yanfly.Param.ItemCarryFmt = String(Yanfly.Parameters['Carry Format']);
+Yanfly.Param.ItemIconSize = Number(Yanfly.Parameters["Icon Size"]);
+Yanfly.Param.ItemFontSize = Number(Yanfly.Parameters["Font Size"]);
+Yanfly.Param.ItemCmdAlign = String(Yanfly.Parameters["Command Alignment"]);
+Yanfly.Param.ItemRecoverFmt = String(Yanfly.Parameters["Recovery Format"]);
+Yanfly.Param.ItemAddState = String(Yanfly.Parameters["Add State"]);
+Yanfly.Param.ItemAddBuff = String(Yanfly.Parameters["Add Buff"]);
+Yanfly.Param.ItemRemoveState = String(Yanfly.Parameters["Remove State"]);
+Yanfly.Param.ItemRemoveBuff = String(Yanfly.Parameters["Remove Buff"]);
+Yanfly.Param.ItemMaxIcons = Number(Yanfly.Parameters["Maximum Icons"]);
+Yanfly.Param.ItemUseCmd = String(Yanfly.Parameters["Use Command"]);
+Yanfly.Param.ItemCarryFmt = String(Yanfly.Parameters["Carry Format"]);
 
-Yanfly.Param.ItemNoteParse = String(Yanfly.Parameters['Midgame Note Parsing']);
+Yanfly.Param.ItemNoteParse = String(Yanfly.Parameters["Midgame Note Parsing"]);
 Yanfly.Param.ItemNoteParse = eval(Yanfly.Param.ItemNoteParse);
 
 //=============================================================================
@@ -578,11 +578,11 @@ DataManager.processItemCoreNotetags = function (group) {
     if (Imported.YEP_CoreEngine) obj.textColor = Yanfly.Param.ColorNormal;
     obj.nonIndependent = false;
     obj.setPriorityName = false;
-    obj.infoEval = '';
-    obj.infoTextTop = '';
-    obj.infoTextBottom = '';
-    obj.onCreationEval = '';
-    var evalMode = 'none';
+    obj.infoEval = "";
+    obj.infoTextTop = "";
+    obj.infoTextBottom = "";
+    obj.onCreationEval = "";
+    var evalMode = "none";
 
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
@@ -593,46 +593,45 @@ DataManager.processItemCoreNotetags = function (group) {
       } else if (line.match(note3)) {
         obj.setPriorityName = true;
       } else if (line.match(/<(?:INFO EVAL)>/i)) {
-        evalMode = 'info eval';
+        evalMode = "info eval";
       } else if (line.match(/<\/(?:INFO EVAL)>/i)) {
-        evalMode = 'none';
+        evalMode = "none";
       } else if (line.match(/<(?:INFO TEXT TOP)>/i)) {
-        evalMode = 'info text top';
+        evalMode = "info text top";
       } else if (line.match(/<\/(?:INFO TEXT TOP)>/i)) {
-        evalMode = 'none';
+        evalMode = "none";
       } else if (line.match(/<(?:INFO TEXT BOTTOM)>/i)) {
-        evalMode = 'info text bottom';
+        evalMode = "info text bottom";
       } else if (line.match(/<\/(?:INFO TEXT BOTTOM)>/i)) {
-        evalMode = 'none';
-      } else if (evalMode === 'info eval') {
-        obj.infoEval = obj.infoEval + line + '\n';
-      } else if (evalMode === 'info text top') {
-        if (obj.infoTextTop !== '') obj.infoTextTop += '\n';
+        evalMode = "none";
+      } else if (evalMode === "info eval") {
+        obj.infoEval = obj.infoEval + line + "\n";
+      } else if (evalMode === "info text top") {
+        if (obj.infoTextTop !== "") obj.infoTextTop += "\n";
         obj.infoTextTop = obj.infoTextTop + line;
-      } else if (evalMode === 'info text bottom') {
-        if (obj.infoTextBottom !== '') obj.infoTextBottom += '\n';
+      } else if (evalMode === "info text bottom") {
+        if (obj.infoTextBottom !== "") obj.infoTextBottom += "\n";
         obj.infoTextBottom = obj.infoTextBottom + line;
       } else if (line.match(/<(?:TEXT COLOR):[ ](\d+)>/i)) {
         obj.textColor = parseInt(RegExp.$1);
       } else if (line.match(/<(?:ON CREATE EVAL|ON CREATION EVAL)>/i)) {
-        evalMode = 'on create eval';
+        evalMode = "on create eval";
       } else if (line.match(/<\/(?:ON CREATE EVAL|ON CREATION EVAL)>/i)) {
-        evalMode = 'none';
-      } else if (evalMode === 'on create eval') {
-        obj.onCreationEval = obj.onCreationEval + line + '\n';
+        evalMode = "none";
+      } else if (evalMode === "on create eval") {
+        obj.onCreationEval = obj.onCreationEval + line + "\n";
       }
     }
   }
 };
 
 DataManager.setDatabaseLengths = function () {
-  this._baseItemsLength = $dataItems.length
-  this._baseWeaponsLength = $dataWeapons.length
-  this._baseArmorsLength = $dataArmors.length
+  this._baseItemsLength = $dataItems.length;
+  this._baseWeaponsLength = $dataWeapons.length;
+  this._baseArmorsLength = $dataArmors.length;
 };
 
-Yanfly.Item.DataManager_createGameObjects =
-  DataManager.createGameObjects;
+Yanfly.Item.DataManager_createGameObjects = DataManager.createGameObjects;
 DataManager.createGameObjects = function () {
   Yanfly.Item.DataManager_createGameObjects.call(this);
   this.createIndependentObjects();
@@ -665,7 +664,7 @@ DataManager.loadIndependentItems = function () {
 };
 
 DataManager.setIndependentLength = function (group) {
-  for (; ;) {
+  for (;;) {
     if (group.length > Yanfly.Param.ItemStartingId) break;
     group.push(null);
   }
@@ -690,8 +689,7 @@ DataManager.makeSaveContents = function () {
   return contents;
 };
 
-Yanfly.Item.DataManager_extractSaveContents =
-  DataManager.extractSaveContents;
+Yanfly.Item.DataManager_extractSaveContents = DataManager.extractSaveContents;
 DataManager.extractSaveContents = function (contents) {
   Yanfly.Item.DataManager_extractSaveContents.call(this, contents);
   this._independentItems = contents.items || [];
@@ -788,23 +786,23 @@ DataManager.getBaseItem = function (item) {
 //=============================================================================
 
 function ItemManager() {
-  throw new Error('This is a static class');
-};
+  throw new Error("This is a static class");
+}
 
 ItemManager.setNewIndependentItem = function (baseItem, newItem) {
   newItem.baseItemId = baseItem.id;
   newItem.baseItemName = baseItem.name;
   newItem.baseItemPrice = baseItem.price;
   newItem.baseItemIconIndex = baseItem.iconIndex;
-  newItem.namePrefix = '';
-  newItem.nameSuffix = '';
+  newItem.namePrefix = "";
+  newItem.nameSuffix = "";
   if (baseItem.setPriorityName) {
     newItem.priorityName = baseItem.name;
   } else {
-    newItem.priorityName = '';
+    newItem.priorityName = "";
   }
   newItem.boostCount = 0;
-  if (!Yanfly.Param.ItemNoteParse) newItem.note = '';
+  if (!Yanfly.Param.ItemNoteParse) newItem.note = "";
 };
 
 ItemManager.customizeNewIndependentItem = function (baseItem, newItem) {
@@ -871,14 +869,14 @@ ItemManager.setBaseName = function (item, value) {
 ItemManager.setNamePrefix = function (item, value) {
   item.namePrefix = value;
   if (eval(Yanfly.Param.ItemNameSpacing) && item.namePrefix.length > 0) {
-    item.namePrefix = item.namePrefix + ' ';
+    item.namePrefix = item.namePrefix + " ";
   }
 };
 
 ItemManager.setNameSuffix = function (item, value) {
   item.nameSuffix = value;
   if (eval(Yanfly.Param.ItemNameSpacing) && item.nameSuffix.length > 0) {
-    item.nameSuffix = ' ' + item.nameSuffix;
+    item.nameSuffix = " " + item.nameSuffix;
   }
 };
 
@@ -891,16 +889,16 @@ ItemManager.updateItemName = function (item) {
     item.name = item.priorityName;
     return;
   }
-  var prefix = item.namePrefix || '';
-  var baseName = item.baseItemName || '';
-  var suffix = item.nameSuffix || '';
+  var prefix = item.namePrefix || "";
+  var baseName = item.baseItemName || "";
+  var suffix = item.nameSuffix || "";
   var boostCount = item.boostCount || 0;
   var fmt = Yanfly.Param.ItemBoostFmt;
-  var boostText = fmt.format(Yanfly.Util.toGroup(boostCount))
+  var boostText = fmt.format(Yanfly.Util.toGroup(boostCount));
   if (boostText === fmt.format(0)) {
-    boostText = '';
+    boostText = "";
   } else if (eval(Yanfly.Param.ItemNameSpacing)) {
-    boostText = ' ' + boostText;
+    boostText = " " + boostText;
   }
   fmt = Yanfly.Param.ItemNameFmt;
   item.name = fmt.format(prefix, baseName, suffix, boostText);
@@ -915,7 +913,7 @@ ItemManager.increaseItemBoostCount = function (item, value) {
 
 ItemManager.onCreationEval = function (baseItem, newItem) {
   var item = newItem;
-  if (item.onCreationEval === '') return;
+  if (item.onCreationEval === "") return;
   var weapon = item;
   var armor = item;
   var baseWeapon = baseItem;
@@ -926,9 +924,9 @@ ItemManager.onCreationEval = function (baseItem, newItem) {
   try {
     eval(code);
   } catch (e) {
-    Yanfly.Util.displayError(e, code, 'ITEM CREATION CUSTOM CODE ERROR');
+    Yanfly.Util.displayError(e, code, "ITEM CREATION CUSTOM CODE ERROR");
   }
-  item.onCreationEval = '';
+  item.onCreationEval = "";
 };
 
 //=============================================================================
@@ -972,8 +970,10 @@ Game_Actor.prototype.convertInitEquips = function (equips) {
     var equipId = equips[i];
     if (equipId <= 0) continue;
     var equipType = $dataSystem.equipTypes[i + 1];
-    if (equipType === $dataSystem.equipTypes[1] ||
-      (i === 1 && this.isDualWield())) {
+    if (
+      equipType === $dataSystem.equipTypes[1] ||
+      (i === 1 && this.isDualWield())
+    ) {
       var equip = $dataWeapons[equipId];
     } else {
       var equip = $dataArmors[equipId];
@@ -994,7 +994,7 @@ Game_Actor.prototype.equipInitIndependentEquips = function (equips) {
     var slotType = slots[i];
     var equip = this.grabInitEquips(equips, slotType);
     if (DataManager.isIndependent(equip) && this.canEquip(equip)) {
-      var array = $gameParty.gainIndependentItem(equip, 1)
+      var array = $gameParty.gainIndependentItem(equip, 1);
       if (array instanceof Array) {
         newItem = array[0];
         this.changeEquip(i, newItem);
@@ -1036,14 +1036,14 @@ Game_Actor.prototype.hasArmor = function (armor) {
 
 Game_Actor.prototype.hasBaseItem = function (baseItem) {
   if (!DataManager.isIndependent(baseItem)) return false;
-  var type = (DataManager.isWeapon(baseItem)) ? 'weapon' : 'armor';
+  var type = DataManager.isWeapon(baseItem) ? "weapon" : "armor";
   for (var i = 0; i < this.equips().length; ++i) {
     var equip = this.equips()[i];
     if (!equip) continue;
     if (!equip.baseItemId) continue;
-    if (DataManager.isWeapon(equip) && type === 'weapon') {
+    if (DataManager.isWeapon(equip) && type === "weapon") {
       if (equip.baseItemId === baseItem.id) return true;
-    } else if (DataManager.isArmor(equip) && type === 'armor') {
+    } else if (DataManager.isArmor(equip) && type === "armor") {
       if (equip.baseItemId === baseItem.id) return true;
     }
   }
@@ -1075,7 +1075,7 @@ Game_Actor.prototype.changeEquipById = function (etypeId, itemId) {
       return;
     }
   }
-  Yanfly.Item.Game_Actor_changeEquipById.call(this, etypeId, itemId)
+  Yanfly.Item.Game_Actor_changeEquipById.call(this, etypeId, itemId);
 };
 
 Game_Actor.prototype.unequipItem = function (item) {
@@ -1121,7 +1121,11 @@ Game_Party.prototype.gainItem = function (item, amount, includeEquip) {
   }
 };
 
-Game_Party.prototype.gainIndependentItem = function (item, amount, includeEquip) {
+Game_Party.prototype.gainIndependentItem = function (
+  item,
+  amount,
+  includeEquip
+) {
   var arr = [];
   if (amount > 0) {
     for (var i = 0; i < amount; ++i) {
@@ -1179,7 +1183,6 @@ Game_Party.prototype.removeIndependentItem = function (item, includeEquip) {
   var container = this.itemContainer(item);
   container[item.id] = 0;
   if (container[item.id] <= 0) delete container[item.id];
-
 };
 
 Game_Party.prototype.removeBaseItem = function (item, includeEquip) {
@@ -1247,8 +1250,8 @@ Game_Party.prototype.armors = function () {
 };
 
 Game_Party.prototype.independentItemSort = function (a, b) {
-  var aa = (a.baseItemId) ? a.baseItemId : a.id;
-  var bb = (b.baseItemId) ? b.baseItemId : b.id;
+  var aa = a.baseItemId ? a.baseItemId : a.id;
+  var bb = b.baseItemId ? b.baseItemId : b.id;
   if (aa < bb) return -1;
   if (aa >= bb) return 1;
   return 0;
@@ -1298,7 +1301,7 @@ Game_Party.prototype.numIndependentItems = function (baseItem) {
 
 Game_Party.prototype.clearAllMatchingBaseItems = function (baseItem, equipped) {
   if (!Imported.YEP_ItemCore) return;
-  for (; ;) {
+  for (;;) {
     var item = this.getMatchingBaseItem(baseItem, equipped);
     if (item) {
       this.removeIndependentItem(item, equipped);
@@ -1316,9 +1319,9 @@ Game_Party.prototype.clearAllMatchingBaseItems = function (baseItem, equipped) {
 Yanfly.Item.Game_Interpreter_pluginCommand =
   Game_Interpreter.prototype.pluginCommand;
 Game_Interpreter.prototype.pluginCommand = function (command, args) {
-  Yanfly.Item.Game_Interpreter_pluginCommand.call(this, command, args)
-  if (command === 'EnableVarianceStock') $gameTemp.enableVarianceStock();
-  if (command === 'DisableVarianceStock') $gameTemp.disableVarianceStock();
+  Yanfly.Item.Game_Interpreter_pluginCommand.call(this, command, args);
+  if (command === "EnableVarianceStock") $gameTemp.enableVarianceStock();
+  if (command === "DisableVarianceStock") $gameTemp.disableVarianceStock();
 };
 
 Yanfly.Item.Game_Interpreter_gDO = Game_Interpreter.prototype.gameDataOperand;
@@ -1426,7 +1429,7 @@ Window_ItemList.prototype.drawItemCarryNumber = function (item, dx, dy, dw) {
   } else {
     this.changeTextColor(this.normalColor());
   }
-  this.drawText(text, dx, dy, dw, 'right');
+  this.drawText(text, dx, dy, dw, "right");
   this.resetFontSettings();
 };
 
@@ -1436,12 +1439,12 @@ Window_ItemList.prototype.drawEquippedActor = function (item, dx, dy, dw) {
     var actor = $gameParty.members()[a];
     if (!actor) continue;
     if (actor.equips().contains(item)) carrier = actor;
-  };
+  }
   if (Yanfly.Param.ItemQuantitySize) {
     this.contents.fontSize = Yanfly.Param.ItemQuantitySize;
   }
   var text = carrier.name();
-  this.drawText(text, dx, dy, dw, 'right');
+  this.drawText(text, dx, dy, dw, "right");
   this.resetFontSettings();
 };
 
@@ -1493,7 +1496,7 @@ Window_ShopStatus.prototype.drawIndependentPossession = function (x, y) {
   this.changeTextColor(this.systemColor());
   this.drawText(TextManager.possession, x, y, width - possessionWidth);
   this.resetTextColor();
-  this.drawText(value, x, y, width, 'right');
+  this.drawText(value, x, y, width, "right");
 };
 
 //=============================================================================
@@ -1529,19 +1532,16 @@ Scene_Shop.prototype.doSell = function (number) {
 //=============================================================================
 
 if (Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= "1.6.0") {
-
   Scene_Item.prototype.update = function () {
     Scene_ItemBase.prototype.update.call(this);
   };
-
-}; // Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= "1.6.0"
+} // Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= "1.6.0"
 
 //=============================================================================
 // Scene_Item Update
 //=============================================================================
 
 if (Yanfly.Param.ItemSceneItem) {
-
   //=============================================================================
   // Window_ItemCategory
   //=============================================================================
@@ -1560,7 +1560,8 @@ if (Yanfly.Param.ItemSceneItem) {
     return Yanfly.Item.Window_ItemCategory_numVisibleRows.call(this);
   };
 
-  Yanfly.Item.Window_ItemCategory_maxCols = Window_ItemCategory.prototype.maxCols;
+  Yanfly.Item.Window_ItemCategory_maxCols =
+    Window_ItemCategory.prototype.maxCols;
   Window_ItemCategory.prototype.maxCols = function () {
     if (SceneManager._scene instanceof Scene_Item) return 1;
     return Yanfly.Item.Window_ItemCategory_maxCols.call(this);
@@ -1684,7 +1685,7 @@ if (Yanfly.Param.ItemSceneItem) {
       } else {
         rect.x = 0;
       }
-      rect.y = i / 2 * this.lineHeight();
+      rect.y = (i / 2) * this.lineHeight();
     } else {
       if (Yanfly.Param.ItemShowIcon) {
         rect.x = Window_Base._faceWidth + rect.width;
@@ -1709,10 +1710,10 @@ if (Yanfly.Param.ItemSceneItem) {
 
   Window_ItemStatus.prototype.drawLargeIcon = function () {
     var iconIndex = this._item.iconIndex;
-    var bitmap = ImageManager.loadSystem('IconSet');
+    var bitmap = ImageManager.loadSystem("IconSet");
     var pw = Window_Base._iconWidth;
     var ph = Window_Base._iconHeight;
-    var sx = iconIndex % 16 * pw;
+    var sx = (iconIndex % 16) * pw;
     var sy = Math.floor(iconIndex / 16) * ph;
     var dw = Yanfly.Param.ItemIconSize;
     var dh = Yanfly.Param.ItemIconSize;
@@ -1738,9 +1739,9 @@ if (Yanfly.Param.ItemSceneItem) {
       this.drawText(TextManager.param(i), dx, rect.y, dw);
       this.changeTextColor(this.paramchangeTextColor(item.params[i]));
       var text = Yanfly.Util.toGroup(item.params[i]);
-      if (item.params[i] >= 0) text = '+' + text;
-      if (text === '+0') this.changePaintOpacity(false);
-      this.drawText(text, dx, rect.y, dw, 'right');
+      if (item.params[i] >= 0) text = "+" + text;
+      if (text === "+0") this.changePaintOpacity(false);
+      this.drawText(text, dx, rect.y, dw, "right");
       this.changePaintOpacity(true);
     }
   };
@@ -1773,48 +1774,48 @@ if (Yanfly.Param.ItemSceneItem) {
     if (i === 5) return Yanfly.Param.ItemRemoveState;
     if (i === 6) return Yanfly.Param.ItemAddBuff;
     if (i === 7) return Yanfly.Param.ItemRemoveBuff;
-    return '';
+    return "";
   };
 
   Window_ItemStatus.prototype.drawItemData = function (i, dx, dy, dw) {
     if (!this._item) return;
     var effect;
-    var value = '---';
-    var pre = '';
-    var text = '';
+    var value = "---";
+    var pre = "";
+    var text = "";
     var icons = [];
     if (i === 0) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
-      value = (effect) ? effect.value1 : '---';
-      if (value === 0) value = '---';
-      if (value !== '---' && value !== 0) value *= 100;
+      value = effect ? effect.value1 : "---";
+      if (value === 0) value = "---";
+      if (value !== "---" && value !== 0) value *= 100;
     }
     if (i === 1) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
-      value = (effect) ? effect.value2 : '---';
-      if (value === 0) value = '---';
+      value = effect ? effect.value2 : "---";
+      if (value === 0) value = "---";
     }
     if (i === 2) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
-      value = (effect) ? effect.value1 : '---';
-      if (value === 0) value = '---';
-      if (value !== '---' && value !== 0) value *= 100;
+      value = effect ? effect.value1 : "---";
+      if (value === 0) value = "---";
+      if (value !== "---" && value !== 0) value *= 100;
     }
     if (i === 3) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
-      value = (effect) ? effect.value2 : '---';
-      if (value === 0) value = '---';
+      value = effect ? effect.value2 : "---";
+      if (value === 0) value = "---";
     }
     if (i >= 4) {
       icons = this.getItemIcons(i, icons);
     }
     this.changeTextColor(this.normalColor());
-    if (value === '---') {
+    if (value === "---") {
       this.changePaintOpacity(false);
     } else if (i < 4) {
-      if (value > 0) pre = '+';
+      if (value > 0) pre = "+";
       value = Yanfly.Util.toGroup(parseInt(value));
-      if ([0, 2].contains(i)) text = '%';
+      if ([0, 2].contains(i)) text = "%";
     }
     if (icons.length > 0) {
       this.changePaintOpacity(true);
@@ -1827,7 +1828,7 @@ if (Yanfly.Param.ItemSceneItem) {
       }
     } else {
       text = pre + value + text;
-      this.drawText(text, dx, dy, dw, 'right');
+      this.drawText(text, dx, dy, dw, "right");
       this.changePaintOpacity(true);
     }
   };
@@ -1915,7 +1916,7 @@ if (Yanfly.Param.ItemSceneItem) {
     if (item.infoEval === undefined) {
       item.infoEval = DataManager.getBaseItem(item).infoEval;
     }
-    if (item.infoEval === '') return;
+    if (item.infoEval === "") return;
     var weapon = this._item;
     var armor = this._item;
     var s = $gameSwitches._data;
@@ -1924,7 +1925,7 @@ if (Yanfly.Param.ItemSceneItem) {
     try {
       eval(code);
     } catch (e) {
-      Yanfly.Util.displayError(e, code, 'ITEM WINDOW PRE INFO EVAL ERROR');
+      Yanfly.Util.displayError(e, code, "ITEM WINDOW PRE INFO EVAL ERROR");
     }
   };
 
@@ -1978,7 +1979,7 @@ if (Yanfly.Param.ItemSceneItem) {
     if (item.infoTextTop === undefined) {
       item.infoTextTop = DataManager.getBaseItem(item).infoTextTop;
     }
-    if (item.infoTextTop === '') return dy;
+    if (item.infoTextTop === "") return dy;
     var info = item.infoTextTop.split(/[\r\n]+/);
     for (var i = 0; i < info.length; ++i) {
       var line = info[i];
@@ -1994,7 +1995,7 @@ if (Yanfly.Param.ItemSceneItem) {
     if (item.infoTextBottom === undefined) {
       item.infoTextBottom = DataManager.getBaseItem(item).infoTextBottom;
     }
-    if (item.infoTextBottom === '') return dy;
+    if (item.infoTextBottom === "") return dy;
     var info = item.infoTextBottom.split(/[\r\n]+/);
     for (var i = 0; i < info.length; ++i) {
       var line = info[i];
@@ -2059,13 +2060,13 @@ if (Yanfly.Param.ItemSceneItem) {
   Window_ItemActionCommand.prototype.addUseCommand = function () {
     var enabled = this.isEnabled(this._item);
     var fmt = Yanfly.Param.ItemUseCmd;
-    text = '\\i[' + this._item.iconIndex + ']';
+    text = "\\i[" + this._item.iconIndex + "]";
     if (this._item.textColor !== undefined) {
-      text += '\\c[' + this._item.textColor + ']';
+      text += "\\c[" + this._item.textColor + "]";
     }
     text += this._item.name;
     text = fmt.format(text);
-    this.addCommand(text, 'use', enabled);
+    this.addCommand(text, "use", enabled);
   };
 
   Window_ItemActionCommand.prototype.isEnabled = function (item) {
@@ -2073,26 +2074,20 @@ if (Yanfly.Param.ItemSceneItem) {
     return $gameParty.canUse(item);
   };
 
-  Window_ItemActionCommand.prototype.addCustomCommandsA = function () {
-  };
+  Window_ItemActionCommand.prototype.addCustomCommandsA = function () {};
 
-  Window_ItemActionCommand.prototype.addCustomCommandsB = function () {
-  };
+  Window_ItemActionCommand.prototype.addCustomCommandsB = function () {};
 
-  Window_ItemActionCommand.prototype.addCustomCommandsC = function () {
-  };
+  Window_ItemActionCommand.prototype.addCustomCommandsC = function () {};
 
-  Window_ItemActionCommand.prototype.addCustomCommandsD = function () {
-  };
+  Window_ItemActionCommand.prototype.addCustomCommandsD = function () {};
 
-  Window_ItemActionCommand.prototype.addCustomCommandsE = function () {
-  };
+  Window_ItemActionCommand.prototype.addCustomCommandsE = function () {};
 
-  Window_ItemActionCommand.prototype.addCustomCommandsF = function () {
-  };
+  Window_ItemActionCommand.prototype.addCustomCommandsF = function () {};
 
   Window_ItemActionCommand.prototype.addCancelCommand = function () {
-    this.addCommand(TextManager.cancel, 'cancel');
+    this.addCommand(TextManager.cancel, "cancel");
   };
 
   Window_ItemActionCommand.prototype.drawItem = function (index) {
@@ -2107,13 +2102,14 @@ if (Yanfly.Param.ItemSceneItem) {
   // Scene_Item
   //=============================================================================
 
-  Yanfly.Item.Scene_Item_createItemWindow = Scene_Item.prototype.createItemWindow;
+  Yanfly.Item.Scene_Item_createItemWindow =
+    Scene_Item.prototype.createItemWindow;
   Scene_Item.prototype.createItemWindow = function () {
     Yanfly.Item.Scene_Item_createItemWindow.call(this);
     this.createStatusWindow();
     this.createInfoWindow();
     this.createActionWindow();
-    this._categoryWindow.setHandler('cancel', this.exitScene.bind(this));
+    this._categoryWindow.setHandler("cancel", this.exitScene.bind(this));
   };
 
   Scene_Item.prototype.createStatusWindow = function () {
@@ -2139,8 +2135,8 @@ if (Yanfly.Param.ItemSceneItem) {
   Scene_Item.prototype.createActionWindow = function () {
     var wy = this._itemWindow.y;
     this._itemActionWindow = new Window_ItemActionCommand(0, wy);
-    this._itemActionWindow.setHandler('use', this.onActionUse.bind(this));
-    this._itemActionWindow.setHandler('cancel', this.onActionCancel.bind(this));
+    this._itemActionWindow.setHandler("use", this.onActionUse.bind(this));
+    this._itemActionWindow.setHandler("cancel", this.onActionCancel.bind(this));
     this.addWindow(this._itemActionWindow);
   };
 
@@ -2191,8 +2187,7 @@ if (Yanfly.Param.ItemSceneItem) {
   //=============================================================================
   // Scene_Item Update
   //=============================================================================
-
-}; // End Scene_Item
+} // End Scene_Item
 
 //=============================================================================
 // Utilities
@@ -2203,17 +2198,17 @@ Yanfly.Util = Yanfly.Util || {};
 if (!Yanfly.Util.toGroup) {
   Yanfly.Util.toGroup = function (inVal) {
     return inVal;
-  }
-};
+  };
+}
 
 Yanfly.Util.displayError = function (e, code, message) {
   console.log(message);
-  console.log(code || 'NON-EXISTENT');
+  console.log(code || "NON-EXISTENT");
   console.error(e);
   if (Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= "1.6.0") return;
-  if (Utils.isNwjs() && Utils.isOptionValid('test')) {
-    if (!require('nw.gui').Window.get().isDevToolsOpen()) {
-      require('nw.gui').Window.get().showDevTools();
+  if (Utils.isNwjs() && Utils.isOptionValid("test")) {
+    if (!require("nw.gui").Window.get().isDevToolsOpen()) {
+      require("nw.gui").Window.get().showDevTools();
     }
   }
 };

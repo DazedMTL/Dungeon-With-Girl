@@ -276,227 +276,286 @@
  */
 
 (function () {
-    'use strict';
-    var pluginName = 'SubstituteExtend';
-    var metaTagPrefix = 'SE_';
+  "use strict";
+  var pluginName = "SubstituteExtend";
+  var metaTagPrefix = "SE_";
 
-    //=============================================================================
-    // ローカル関数
-    //  プラグインパラメータやプラグインコマンドパラメータの整形やチェックをします
-    //=============================================================================
-    var getParamString = function (paramNames) {
-        if (!Array.isArray(paramNames)) paramNames = [paramNames];
-        for (var i = 0; i < paramNames.length; i++) {
-            var name = PluginManager.parameters(pluginName)[paramNames[i]];
-            if (name) return name;
-        }
-        return '';
-    };
+  //=============================================================================
+  // ローカル関数
+  //  プラグインパラメータやプラグインコマンドパラメータの整形やチェックをします
+  //=============================================================================
+  var getParamString = function (paramNames) {
+    if (!Array.isArray(paramNames)) paramNames = [paramNames];
+    for (var i = 0; i < paramNames.length; i++) {
+      var name = PluginManager.parameters(pluginName)[paramNames[i]];
+      if (name) return name;
+    }
+    return "";
+  };
 
-    var getParamBoolean = function (paramNames) {
-        var value = getParamString(paramNames);
-        return value.toUpperCase() === 'ON' || value.toUpperCase() === 'TRUE';
-    };
+  var getParamBoolean = function (paramNames) {
+    var value = getParamString(paramNames);
+    return value.toUpperCase() === "ON" || value.toUpperCase() === "TRUE";
+  };
 
-    var getMetaValue = function (object, name) {
-        var metaTagName = metaTagPrefix + name;
-        return object.meta.hasOwnProperty(metaTagName) ? convertEscapeCharacters(object.meta[metaTagName]) : undefined;
-    };
+  var getMetaValue = function (object, name) {
+    var metaTagName = metaTagPrefix + name;
+    return object.meta.hasOwnProperty(metaTagName)
+      ? convertEscapeCharacters(object.meta[metaTagName])
+      : undefined;
+  };
 
-    var getMetaValues = function (object, names) {
-        for (var i = 0, n = names.length; i < n; i++) {
-            var value = getMetaValue(object, names[i]);
-            if (value !== undefined) return value;
-        }
-        return undefined;
-    };
+  var getMetaValues = function (object, names) {
+    for (var i = 0, n = names.length; i < n; i++) {
+      var value = getMetaValue(object, names[i]);
+      if (value !== undefined) return value;
+    }
+    return undefined;
+  };
 
-    var convertEscapeCharacters = function (text) {
-        if (text == null) {
-            text = '';
-        }
-        if (text === true) {
-            return text;
-        }
-        var windowLayer = SceneManager._scene._windowLayer;
-        return windowLayer ? windowLayer.children[0].convertEscapeCharacters(text) : text;
-    };
+  var convertEscapeCharacters = function (text) {
+    if (text == null) {
+      text = "";
+    }
+    if (text === true) {
+      return text;
+    }
+    var windowLayer = SceneManager._scene._windowLayer;
+    return windowLayer
+      ? windowLayer.children[0].convertEscapeCharacters(text)
+      : text;
+  };
 
-    var convertEscapeTags = function (text) {
-        if (text == null || text === true) text = '';
-        text = text.replace(/&gt;?/gi, '>');
-        text = text.replace(/&lt;?/gi, '<');
-        return text;
-    };
+  var convertEscapeTags = function (text) {
+    if (text == null || text === true) text = "";
+    text = text.replace(/&gt;?/gi, ">");
+    text = text.replace(/&lt;?/gi, "<");
+    return text;
+  };
 
-    //=============================================================================
-    // パラメータの取得と整形
-    //=============================================================================
-    var param = {};
-    param.condDying = getParamBoolean(['CondDying', '身代わり条件_瀕死']);
-    param.condNonCertainHit = getParamBoolean(['CondNonCertainHit', '身代わり条件_必中以外']);
-    param.substituteCounter = getParamBoolean(['SubstituteCounter', '身代わり反撃']);
-    param.invalidConfused = getParamBoolean(['InvalidConfused', '混乱時の身代わり無効']);
-    param.validRestriction = getParamBoolean(['ValidRestriction', '行動不能時の身代わり有効']);
+  //=============================================================================
+  // パラメータの取得と整形
+  //=============================================================================
+  var param = {};
+  param.condDying = getParamBoolean(["CondDying", "身代わり条件_瀕死"]);
+  param.condNonCertainHit = getParamBoolean([
+    "CondNonCertainHit",
+    "身代わり条件_必中以外",
+  ]);
+  param.substituteCounter = getParamBoolean([
+    "SubstituteCounter",
+    "身代わり反撃",
+  ]);
+  param.invalidConfused = getParamBoolean([
+    "InvalidConfused",
+    "混乱時の身代わり無効",
+  ]);
+  param.validRestriction = getParamBoolean([
+    "ValidRestriction",
+    "行動不能時の身代わり有効",
+  ]);
 
-    //=============================================================================
-    // Game_BattlerBase
-    //  身代わりを実行するかどうかの判定を拡張します。
-    //=============================================================================
-    var _Game_BattlerBase_isSubstitute = Game_BattlerBase.prototype.isSubstitute;
-    Game_BattlerBase.prototype.isSubstitute = function () {
-        if (param.validRestriction) {
-            this._suppressRestriction = true;
-        }
-        var result = _Game_BattlerBase_isSubstitute.apply(this, arguments) && this.isSubstituteExtend();
-        this._suppressRestriction = false;
-        return result;
-    };
+  //=============================================================================
+  // Game_BattlerBase
+  //  身代わりを実行するかどうかの判定を拡張します。
+  //=============================================================================
+  var _Game_BattlerBase_isSubstitute = Game_BattlerBase.prototype.isSubstitute;
+  Game_BattlerBase.prototype.isSubstitute = function () {
+    if (param.validRestriction) {
+      this._suppressRestriction = true;
+    }
+    var result =
+      _Game_BattlerBase_isSubstitute.apply(this, arguments) &&
+      this.isSubstituteExtend();
+    this._suppressRestriction = false;
+    return result;
+  };
 
-    var _Game_BattlerBase_restriction = Game_BattlerBase.prototype.restriction;
-    Game_BattlerBase.prototype.restriction = function () {
-        return this._suppressRestriction ? 0 : _Game_BattlerBase_restriction.apply(this, arguments);
-    };
+  var _Game_BattlerBase_restriction = Game_BattlerBase.prototype.restriction;
+  Game_BattlerBase.prototype.restriction = function () {
+    return this._suppressRestriction
+      ? 0
+      : _Game_BattlerBase_restriction.apply(this, arguments);
+  };
 
-    Game_BattlerBase.prototype.isSubstituteExtend = function () {
-        if (param.invalidConfused && this.isConfused()) {
-            return false;
-        }
-        return this.isValidSubstituteHpRate() &&
-            (param.condDying || this.isValidSubstituteTargetHpRate()) &&
-            this.isValidSubstituteSwitch() &&
-            this.isValidSubstituteRestriction() &&
-            this.isValidSubstituteFormula() &&
-            this.isValidSubstituteSkill();
-    };
+  Game_BattlerBase.prototype.isSubstituteExtend = function () {
+    if (param.invalidConfused && this.isConfused()) {
+      return false;
+    }
+    return (
+      this.isValidSubstituteHpRate() &&
+      (param.condDying || this.isValidSubstituteTargetHpRate()) &&
+      this.isValidSubstituteSwitch() &&
+      this.isValidSubstituteRestriction() &&
+      this.isValidSubstituteFormula() &&
+      this.isValidSubstituteSkill()
+    );
+  };
 
-    Game_BattlerBase.prototype.isValidSubstituteHpRate = function () {
-        var subjectHpRate = this.getSubstituteMetaInfo(['SubjectHPRate', '実行者HP率'], true);
-        if (subjectHpRate) {
-            return this.hpRate() >= subjectHpRate / 100;
-        }
-        return true;
-    };
+  Game_BattlerBase.prototype.isValidSubstituteHpRate = function () {
+    var subjectHpRate = this.getSubstituteMetaInfo(
+      ["SubjectHPRate", "実行者HP率"],
+      true
+    );
+    if (subjectHpRate) {
+      return this.hpRate() >= subjectHpRate / 100;
+    }
+    return true;
+  };
 
-    Game_BattlerBase.prototype.isValidSubstituteTargetHpRate = function () {
-        var targetHpRate = this.getSubstituteMetaInfo(['TargetHPRate', '対象者HP率'], true);
-        if (targetHpRate) {
-            return BattleManager.checkSubstituteTargetHpRate(targetHpRate);
-        }
-        return true;
-    };
+  Game_BattlerBase.prototype.isValidSubstituteTargetHpRate = function () {
+    var targetHpRate = this.getSubstituteMetaInfo(
+      ["TargetHPRate", "対象者HP率"],
+      true
+    );
+    if (targetHpRate) {
+      return BattleManager.checkSubstituteTargetHpRate(targetHpRate);
+    }
+    return true;
+  };
 
-    Game_BattlerBase.prototype.isValidSubstituteRestriction = function () {
-        var restrictionId = this.getSubstituteMetaInfo(['TargetRestriction', '身代わり対象限定'], true);
-        if (restrictionId) {
-            return BattleManager.checkSubstituteRestriction(restrictionId);
-        }
-        return true;
-    };
+  Game_BattlerBase.prototype.isValidSubstituteRestriction = function () {
+    var restrictionId = this.getSubstituteMetaInfo(
+      ["TargetRestriction", "身代わり対象限定"],
+      true
+    );
+    if (restrictionId) {
+      return BattleManager.checkSubstituteRestriction(restrictionId);
+    }
+    return true;
+  };
 
-    Game_BattlerBase.prototype.isValidSubstituteSwitch = function () {
-        var switchId = this.getSubstituteMetaInfo(['SubstituteSwitch', '身代わりスイッチ'], true);
-        if (switchId) {
-            return $gameSwitches.value(switchId);
-        }
-        return true;
-    };
+  Game_BattlerBase.prototype.isValidSubstituteSwitch = function () {
+    var switchId = this.getSubstituteMetaInfo(
+      ["SubstituteSwitch", "身代わりスイッチ"],
+      true
+    );
+    if (switchId) {
+      return $gameSwitches.value(switchId);
+    }
+    return true;
+  };
 
-    Game_BattlerBase.prototype.isValidSubstituteFormula = function () {
-        var formula = this.getSubstituteMetaInfo(['SubstituteFormula', '身代わり計算式'], false);
-        if (formula) {
-            var action = BattleManager.getSubstituteAction();
-            return eval(convertEscapeTags(formula));
-        }
-        return true;
-    };
+  Game_BattlerBase.prototype.isValidSubstituteFormula = function () {
+    var formula = this.getSubstituteMetaInfo(
+      ["SubstituteFormula", "身代わり計算式"],
+      false
+    );
+    if (formula) {
+      var action = BattleManager.getSubstituteAction();
+      return eval(convertEscapeTags(formula));
+    }
+    return true;
+  };
 
-    Game_BattlerBase.prototype.isValidSubstituteSkill = function () {
-        return !getMetaValues(BattleManager.getSubstituteAction().item(), ['SubstituteInvalid', '身代わり無効']);
-    };
+  Game_BattlerBase.prototype.isValidSubstituteSkill = function () {
+    return !getMetaValues(BattleManager.getSubstituteAction().item(), [
+      "SubstituteInvalid",
+      "身代わり無効",
+    ]);
+  };
 
-    Game_BattlerBase.prototype.isEqualSubstituteRestrictionId = function (restrictionId) {
-        var restrictionTargetId = this.getSubstituteMetaInfo(['SubstituteTarget', '身代わり対象者'], true);
-        return restrictionTargetId === restrictionId;
-    };
+  Game_BattlerBase.prototype.isEqualSubstituteRestrictionId = function (
+    restrictionId
+  ) {
+    var restrictionTargetId = this.getSubstituteMetaInfo(
+      ["SubstituteTarget", "身代わり対象者"],
+      true
+    );
+    return restrictionTargetId === restrictionId;
+  };
 
-    Game_BattlerBase.prototype.getSubstituteSkillId = function () {
-        return this.getSubstituteMetaInfo(['SubstituteSkillId', '身代わりスキルID'], true);
-    };
+  Game_BattlerBase.prototype.getSubstituteSkillId = function () {
+    return this.getSubstituteMetaInfo(
+      ["SubstituteSkillId", "身代わりスキルID"],
+      true
+    );
+  };
 
-    Game_BattlerBase.prototype.getSubstituteMetaInfo = function (tagNames, isNumber) {
-        var metaValue;
-        this.traitObjects().some(function (traitObject) {
-            metaValue = getMetaValues(traitObject, tagNames);
-            return !!metaValue;
-        });
-        return (metaValue && isNumber) ? parseInt(metaValue) : metaValue;
-    };
+  Game_BattlerBase.prototype.getSubstituteMetaInfo = function (
+    tagNames,
+    isNumber
+  ) {
+    var metaValue;
+    this.traitObjects().some(function (traitObject) {
+      metaValue = getMetaValues(traitObject, tagNames);
+      return !!metaValue;
+    });
+    return metaValue && isNumber ? parseInt(metaValue) : metaValue;
+  };
 
-    //=============================================================================
-    // BattleManager
-    //  身代わり対象者の情報を保持して必要に応じて評価します。
-    //=============================================================================
-    var _BattleManager_invokeAction = BattleManager.invokeAction;
-    BattleManager.invokeAction = function (subject, target) {
-        if (param.substituteCounter) {
-            var realTarget = this.applySubstitute(target);
-            _BattleManager_invokeAction.call(this, subject, realTarget);
-        } else {
-            _BattleManager_invokeAction.apply(this, arguments);
-        }
-    };
+  //=============================================================================
+  // BattleManager
+  //  身代わり対象者の情報を保持して必要に応じて評価します。
+  //=============================================================================
+  var _BattleManager_invokeAction = BattleManager.invokeAction;
+  BattleManager.invokeAction = function (subject, target) {
+    if (param.substituteCounter) {
+      var realTarget = this.applySubstitute(target);
+      _BattleManager_invokeAction.call(this, subject, realTarget);
+    } else {
+      _BattleManager_invokeAction.apply(this, arguments);
+    }
+  };
 
-    var _BattleManager_applySubstitute = BattleManager.applySubstitute;
-    BattleManager.applySubstitute = function (target) {
-        this._substituteTarget = target;
-        var substitute = _BattleManager_applySubstitute.apply(this, arguments);
-        this._substituteTarget = null;
-        if (substitute !== target) {
-            this.applySubstituteEffect(substitute);
-        }
-        return substitute;
-    };
+  var _BattleManager_applySubstitute = BattleManager.applySubstitute;
+  BattleManager.applySubstitute = function (target) {
+    this._substituteTarget = target;
+    var substitute = _BattleManager_applySubstitute.apply(this, arguments);
+    this._substituteTarget = null;
+    if (substitute !== target) {
+      this.applySubstituteEffect(substitute);
+    }
+    return substitute;
+  };
 
-    BattleManager.applySubstituteEffect = function (substitute) {
-        var skillId = substitute.getSubstituteSkillId();
-        if (!skillId) return;
-        var action = new Game_Action(substitute);
-        action.setSkill(skillId);
-        action.apply(substitute);
-    };
+  BattleManager.applySubstituteEffect = function (substitute) {
+    var skillId = substitute.getSubstituteSkillId();
+    if (!skillId) return;
+    var action = new Game_Action(substitute);
+    action.setSkill(skillId);
+    action.apply(substitute);
+  };
 
-    BattleManager.checkSubstituteTargetHpRate = function (hpRate) {
-        return this._substituteTarget ? this._substituteTarget.hpRate() <= hpRate / 100 : true;
-    };
+  BattleManager.checkSubstituteTargetHpRate = function (hpRate) {
+    return this._substituteTarget
+      ? this._substituteTarget.hpRate() <= hpRate / 100
+      : true;
+  };
 
-    BattleManager.checkSubstituteRestriction = function (restrictionId) {
-        return this._substituteTarget ? this._substituteTarget.isEqualSubstituteRestrictionId(restrictionId) : true;
-    };
+  BattleManager.checkSubstituteRestriction = function (restrictionId) {
+    return this._substituteTarget
+      ? this._substituteTarget.isEqualSubstituteRestrictionId(restrictionId)
+      : true;
+  };
 
-    BattleManager.getSubstituteAction = function () {
-        return this._action;
-    };
+  BattleManager.getSubstituteAction = function () {
+    return this._action;
+  };
 
-    var _BattleManager_checkSubstitute = BattleManager.checkSubstitute;
-    BattleManager.checkSubstitute = function (target) {
-        var resultSubstitute = _BattleManager_checkSubstitute.apply(this, arguments);
-        if (!resultSubstitute) {
-            return this.checkSubstituteDefault(target);
-        }
-        return resultSubstitute;
-    };
+  var _BattleManager_checkSubstitute = BattleManager.checkSubstitute;
+  BattleManager.checkSubstitute = function (target) {
+    var resultSubstitute = _BattleManager_checkSubstitute.apply(
+      this,
+      arguments
+    );
+    if (!resultSubstitute) {
+      return this.checkSubstituteDefault(target);
+    }
+    return resultSubstitute;
+  };
 
-    BattleManager.checkSubstituteDefault = function (target) {
-        return this.isValidSubstituteDying(target) && this.isValidSubstituteCertainHit();
-    };
+  BattleManager.checkSubstituteDefault = function (target) {
+    return (
+      this.isValidSubstituteDying(target) && this.isValidSubstituteCertainHit()
+    );
+  };
 
-    BattleManager.isValidSubstituteDying = function (target) {
-        return !param.condDying || target.isDying();
-    };
+  BattleManager.isValidSubstituteDying = function (target) {
+    return !param.condDying || target.isDying();
+  };
 
-    BattleManager.isValidSubstituteCertainHit = function () {
-        return !param.condNonCertainHit || !this._action.isCertainHit();
-    };
+  BattleManager.isValidSubstituteCertainHit = function () {
+    return !param.condNonCertainHit || !this._action.isCertainHit();
+  };
 })();
-

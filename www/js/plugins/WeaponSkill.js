@@ -8,7 +8,7 @@
  *
  * @help This plugin does not provide plugin commands.
  *
- * When <skill_id:3> is written in a weapon's note field, 
+ * When <skill_id:3> is written in a weapon's note field,
  * skill id # 3 is used for the weapon's attack.
  * If nothing is written, default id(=1) is used.
  *
@@ -22,7 +22,7 @@
  * - to create all-range weapons
  * - to create dual-attack or triple-attack weapons
  * - If healing skill is set when actor attacks, you can choose a friend to heal.
- * - It is possible to make a weapon that functions similar to a guard command. 
+ * - It is possible to make a weapon that functions similar to a guard command.
  */
 
 /*:ja
@@ -49,7 +49,6 @@
  */
 
 (function () {
-
   //
   // set skill id for attack.
   //
@@ -58,7 +57,7 @@
     if (this.hasNoWeapons()) {
       return normalId;
     }
-    var weapon = this.weapons()[0];  // at plural weapon, one's first skill.
+    var weapon = this.weapons()[0]; // at plural weapon, one's first skill.
     var id = weapon.meta.skill_id;
     return id ? Number(id) : normalId;
   };
@@ -78,6 +77,4 @@
     // special skill weapon
     this.onSelectAction();
   };
-
 })();
-

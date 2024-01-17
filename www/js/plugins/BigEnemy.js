@@ -53,75 +53,78 @@
  */
 
 (function () {
-    'use strict';
-    var metaTagPrefix = 'BE';
+  "use strict";
+  var metaTagPrefix = "BE";
 
-    var getMetaValue = function (object, name) {
-        var metaTagName = metaTagPrefix + (name ? name : '');
-        return object.meta.hasOwnProperty(metaTagName) ? object.meta[metaTagName] : undefined;
-    };
+  var getMetaValue = function (object, name) {
+    var metaTagName = metaTagPrefix + (name ? name : "");
+    return object.meta.hasOwnProperty(metaTagName)
+      ? object.meta[metaTagName]
+      : undefined;
+  };
 
-    var getMetaValues = function (object, names) {
-        if (!Array.isArray(names)) return getMetaValue(object, names);
-        for (var i = 0, n = names.length; i < n; i++) {
-            var value = getMetaValue(object, names[i]);
-            if (value !== undefined) return value;
+  var getMetaValues = function (object, names) {
+    if (!Array.isArray(names)) return getMetaValue(object, names);
+    for (var i = 0, n = names.length; i < n; i++) {
+      var value = getMetaValue(object, names[i]);
+      if (value !== undefined) return value;
+    }
+    return undefined;
+  };
+
+  //=============================================================================
+  // Game_Enemy
+  //  巨大モンスター判定を行います。
+  //=============================================================================
+  Game_Enemy.prototype.isBigEnemy = function () {
+    return getMetaValues(this.enemy(), ["有効", "Valid"]);
+  };
+
+  //=============================================================================
+  // Sprite_Enemy
+  //  必要に応じて敵キャラの位置を調整します。
+  //=============================================================================
+  var _Sprite_Enemy_updatePosition = Sprite_Enemy.prototype.updatePosition;
+  Sprite_Enemy.prototype.updatePosition = function () {
+    _Sprite_Enemy_updatePosition.apply(this, arguments);
+    if (this._enemy.isBigEnemy() && this.bitmap) {
+      this._originalY = this.y;
+      this.y = Graphics.boxHeight;
+    }
+  };
+
+  var _Sprite_Battler_setupDamagePopup =
+    Sprite_Enemy.prototype.setupDamagePopup;
+  Sprite_Enemy.prototype.setupDamagePopup = function () {
+    var requested = this._battler.isDamagePopupRequested();
+    if (_Sprite_Battler_setupDamagePopup) {
+      _Sprite_Battler_setupDamagePopup.apply(this, arguments);
+    } else {
+      Sprite_Battler.prototype.setupDamagePopup.apply(this, arguments);
+    }
+    if (requested && this._enemy.isBigEnemy()) this.adjustDamagePopup();
+  };
+
+  Sprite_Enemy.prototype.adjustDamagePopup = function () {
+    if (this._damages.length > 0) {
+      this._damages[this._damages.length - 1].y -= this.y - this._originalY;
+    }
+  };
+
+  var _Sprite_Animation_updatePosition =
+    Sprite_Animation.prototype.updatePosition;
+  Sprite_Animation.prototype.updatePosition = function () {
+    _Sprite_Animation_updatePosition.apply(this, arguments);
+    var position = this._animation.position;
+    if (position === 1 || position === 2) {
+      var originalY = this._target._originalY;
+      if (originalY) {
+        var shiftY = this._target.y - originalY;
+        if (position === 1) {
+          shiftY /= 2;
         }
-        return undefined;
-    };
-
-    //=============================================================================
-    // Game_Enemy
-    //  巨大モンスター判定を行います。
-    //=============================================================================
-    Game_Enemy.prototype.isBigEnemy = function () {
-        return getMetaValues(this.enemy(), ['有効', 'Valid']);
-    };
-
-    //=============================================================================
-    // Sprite_Enemy
-    //  必要に応じて敵キャラの位置を調整します。
-    //=============================================================================
-    var _Sprite_Enemy_updatePosition = Sprite_Enemy.prototype.updatePosition;
-    Sprite_Enemy.prototype.updatePosition = function () {
-        _Sprite_Enemy_updatePosition.apply(this, arguments);
-        if (this._enemy.isBigEnemy() && this.bitmap) {
-            this._originalY = this.y;
-            this.y = Graphics.boxHeight;
-        }
-    };
-
-    var _Sprite_Battler_setupDamagePopup = Sprite_Enemy.prototype.setupDamagePopup;
-    Sprite_Enemy.prototype.setupDamagePopup = function () {
-        var requested = this._battler.isDamagePopupRequested();
-        if (_Sprite_Battler_setupDamagePopup) {
-            _Sprite_Battler_setupDamagePopup.apply(this, arguments);
-        } else {
-            Sprite_Battler.prototype.setupDamagePopup.apply(this, arguments);
-        }
-        if (requested && this._enemy.isBigEnemy()) this.adjustDamagePopup();
-    };
-
-    Sprite_Enemy.prototype.adjustDamagePopup = function () {
-        if (this._damages.length > 0) {
-            this._damages[this._damages.length - 1].y -= (this.y - this._originalY);
-        }
-    };
-
-    var _Sprite_Animation_updatePosition = Sprite_Animation.prototype.updatePosition;
-    Sprite_Animation.prototype.updatePosition = function () {
-        _Sprite_Animation_updatePosition.apply(this, arguments);
-        var position = this._animation.position;
-        if (position === 1 || position === 2) {
-            var originalY = this._target._originalY;
-            if (originalY) {
-                var shiftY = this._target.y - originalY;
-                if (position === 1) {
-                    shiftY /= 2;
-                }
-                this.y -= shiftY;
-            }
-        }
-    };
+        this.y -= shiftY;
+      }
+    }
+  };
 })();
-

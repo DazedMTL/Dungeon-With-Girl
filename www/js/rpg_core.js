@@ -10,7 +10,7 @@
  * @class JsExtensions
  */
 function JsExtensions() {
-    throw new Error('This is not a class');
+  throw new Error("This is not a class");
 }
 
 /**
@@ -22,7 +22,7 @@ function JsExtensions() {
  * @return {Number} A number in the range (min, max)
  */
 Number.prototype.clamp = function (min, max) {
-    return Math.min(Math.max(this, min), max);
+  return Math.min(Math.max(this, min), max);
 };
 
 /**
@@ -33,7 +33,7 @@ Number.prototype.clamp = function (min, max) {
  * @return {Number} A modulo value
  */
 Number.prototype.mod = function (n) {
-    return ((this % n) + n) % n;
+  return ((this % n) + n) % n;
 };
 
 /**
@@ -44,10 +44,10 @@ Number.prototype.mod = function (n) {
  * @return {String} A formatted string
  */
 String.prototype.format = function () {
-    var args = arguments;
-    return this.replace(/%([0-9]+)/g, function (s, n) {
-        return args[Number(n) - 1];
-    });
+  var args = arguments;
+  return this.replace(/%([0-9]+)/g, function (s, n) {
+    return args[Number(n) - 1];
+  });
 };
 
 /**
@@ -58,11 +58,11 @@ String.prototype.format = function () {
  * @return {String} A string with leading zeros
  */
 String.prototype.padZero = function (length) {
-    var s = this;
-    while (s.length < length) {
-        s = '0' + s;
-    }
-    return s;
+  var s = this;
+  while (s.length < length) {
+    s = "0" + s;
+  }
+  return s;
 };
 
 /**
@@ -73,60 +73,60 @@ String.prototype.padZero = function (length) {
  * @return {String} A string with leading zeros
  */
 Number.prototype.padZero = function (length) {
-    return String(this).padZero(length);
+  return String(this).padZero(length);
 };
 
 Object.defineProperties(Array.prototype, {
-    /**
-     * Checks whether the two arrays are same.
-     *
-     * @method Array.prototype.equals
-     * @param {Array} array The array to compare to
-     * @return {Boolean} True if the two arrays are same
-     */
-    equals: {
-        enumerable: false,
-        value: function (array) {
-            if (!array || this.length !== array.length) {
-                return false;
-            }
-            for (var i = 0; i < this.length; i++) {
-                if (this[i] instanceof Array && array[i] instanceof Array) {
-                    if (!this[i].equals(array[i])) {
-                        return false;
-                    }
-                } else if (this[i] !== array[i]) {
-                    return false;
-                }
-            }
-            return true;
+  /**
+   * Checks whether the two arrays are same.
+   *
+   * @method Array.prototype.equals
+   * @param {Array} array The array to compare to
+   * @return {Boolean} True if the two arrays are same
+   */
+  equals: {
+    enumerable: false,
+    value: function (array) {
+      if (!array || this.length !== array.length) {
+        return false;
+      }
+      for (var i = 0; i < this.length; i++) {
+        if (this[i] instanceof Array && array[i] instanceof Array) {
+          if (!this[i].equals(array[i])) {
+            return false;
+          }
+        } else if (this[i] !== array[i]) {
+          return false;
         }
+      }
+      return true;
     },
-    /**
-     * Makes a shallow copy of the array.
-     *
-     * @method Array.prototype.clone
-     * @return {Array} A shallow copy of the array
-     */
-    clone: {
-        enumerable: false,
-        value: function () {
-            return this.slice(0);
-        }
+  },
+  /**
+   * Makes a shallow copy of the array.
+   *
+   * @method Array.prototype.clone
+   * @return {Array} A shallow copy of the array
+   */
+  clone: {
+    enumerable: false,
+    value: function () {
+      return this.slice(0);
     },
-    /**
-     * Checks whether the array contains a given element.
-     *
-     * @method Array.prototype.contains
-     * @param {Any} element The element to search for
-     * @return {Boolean} True if the array contains a given element
-     */
-    contains: {
-        enumerable: false,
-        value: function (element) {
-            return this.indexOf(element) >= 0;
-        }
-    }
+  },
+  /**
+   * Checks whether the array contains a given element.
+   *
+   * @method Array.prototype.contains
+   * @param {Any} element The element to search for
+   * @return {Boolean} True if the array contains a given element
+   */
+  contains: {
+    enumerable: false,
+    value: function (element) {
+      return this.indexOf(element) >= 0;
+    },
+  },
 });
 
 /**
@@ -137,7 +137,7 @@ Object.defineProperties(Array.prototype, {
  * @return {Boolean} True if the string contains a given string
  */
 String.prototype.contains = function (string) {
-    return this.indexOf(string) >= 0;
+  return this.indexOf(string) >= 0;
 };
 
 /**
@@ -149,7 +149,7 @@ String.prototype.contains = function (string) {
  * @return {Number} A random integer
  */
 Math.randomInt = function (max) {
-    return Math.floor(max * Math.random());
+  return Math.floor(max * Math.random());
 };
 
 //-----------------------------------------------------------------------------
@@ -159,7 +159,7 @@ Math.randomInt = function (max) {
  * @class Utils
  */
 function Utils() {
-    throw new Error('This is a static class');
+  throw new Error("This is a static class");
 }
 
 /**
@@ -170,7 +170,7 @@ function Utils() {
  * @type String
  * @final
  */
-Utils.RPGMAKER_NAME = 'MV';
+Utils.RPGMAKER_NAME = "MV";
 
 /**
  * The version of the RPG Maker.
@@ -191,9 +191,17 @@ Utils.RPGMAKER_VERSION = "1.6.1";
  * @return {Boolean} True if the option is in the query string
  */
 Utils.isOptionValid = function (name) {
-    if (location.search.slice(1).split('&').contains(name)) { return 1; };
-    if (typeof nw !== "undefined" && nw.App.argv.length > 0 && nw.App.argv[0].split('&').contains(name)) { return 1; };
-    return 0;
+  if (location.search.slice(1).split("&").contains(name)) {
+    return 1;
+  }
+  if (
+    typeof nw !== "undefined" &&
+    nw.App.argv.length > 0 &&
+    nw.App.argv[0].split("&").contains(name)
+  ) {
+    return 1;
+  }
+  return 0;
 };
 
 /**
@@ -204,7 +212,7 @@ Utils.isOptionValid = function (name) {
  * @return {Boolean} True if the platform is NW.js
  */
 Utils.isNwjs = function () {
-    return typeof require === 'function' && typeof process === 'object';
+  return typeof require === "function" && typeof process === "object";
 };
 
 /**
@@ -215,8 +223,8 @@ Utils.isNwjs = function () {
  * @return {Boolean} True if the platform is a mobile device
  */
 Utils.isMobileDevice = function () {
-    var r = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-    return !!navigator.userAgent.match(r);
+  var r = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  return !!navigator.userAgent.match(r);
 };
 
 /**
@@ -227,9 +235,12 @@ Utils.isMobileDevice = function () {
  * @return {Boolean} True if the browser is Mobile Safari
  */
 Utils.isMobileSafari = function () {
-    var agent = navigator.userAgent;
-    return !!(agent.match(/iPhone|iPad|iPod/) && agent.match(/AppleWebKit/) &&
-        !agent.match('CriOS'));
+  var agent = navigator.userAgent;
+  return !!(
+    agent.match(/iPhone|iPad|iPod/) &&
+    agent.match(/AppleWebKit/) &&
+    !agent.match("CriOS")
+  );
 };
 
 /**
@@ -240,8 +251,8 @@ Utils.isMobileSafari = function () {
  * @return {Boolean} True if the browser is Android Chrome
  */
 Utils.isAndroidChrome = function () {
-    var agent = navigator.userAgent;
-    return !!(agent.match(/Android/) && agent.match(/Chrome/));
+  var agent = navigator.userAgent;
+  return !!(agent.match(/Android/) && agent.match(/Chrome/));
 };
 
 /**
@@ -252,17 +263,17 @@ Utils.isAndroidChrome = function () {
  * @return {Boolean} True if the browser can read files in the game folder
  */
 Utils.canReadGameFiles = function () {
-    var scripts = document.getElementsByTagName('script');
-    var lastScript = scripts[scripts.length - 1];
-    var xhr = new XMLHttpRequest();
-    try {
-        xhr.open('GET', lastScript.src);
-        xhr.overrideMimeType('text/javascript');
-        xhr.send();
-        return true;
-    } catch (e) {
-        return false;
-    }
+  var scripts = document.getElementsByTagName("script");
+  var lastScript = scripts[scripts.length - 1];
+  var xhr = new XMLHttpRequest();
+  try {
+    xhr.open("GET", lastScript.src);
+    xhr.overrideMimeType("text/javascript");
+    xhr.send();
+    return true;
+  } catch (e) {
+    return false;
+  }
 };
 
 /**
@@ -276,39 +287,41 @@ Utils.canReadGameFiles = function () {
  * @return {String} CSS color string
  */
 Utils.rgbToCssColor = function (r, g, b) {
-    r = Math.round(r);
-    g = Math.round(g);
-    b = Math.round(b);
-    return 'rgb(' + r + ',' + g + ',' + b + ')';
+  r = Math.round(r);
+  g = Math.round(g);
+  b = Math.round(b);
+  return "rgb(" + r + "," + g + "," + b + ")";
 };
 
 Utils._id = 1;
 Utils.generateRuntimeId = function () {
-    return Utils._id++;
+  return Utils._id++;
 };
 
 Utils._supportPassiveEvent = null;
 /**
  * Test this browser support passive event feature
- * 
+ *
  * @static
  * @method isSupportPassiveEvent
  * @return {Boolean} this browser support passive event or not
  */
 Utils.isSupportPassiveEvent = function () {
-    if (typeof Utils._supportPassiveEvent === "boolean") {
-        return Utils._supportPassiveEvent;
-    }
-    // test support passive event
-    // https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md#feature-detection
-    var passive = false;
-    var options = Object.defineProperty({}, "passive", {
-        get: function () { passive = true; }
-    });
-    window.addEventListener("test", null, options);
-    Utils._supportPassiveEvent = passive;
-    return passive;
-}
+  if (typeof Utils._supportPassiveEvent === "boolean") {
+    return Utils._supportPassiveEvent;
+  }
+  // test support passive event
+  // https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md#feature-detection
+  var passive = false;
+  var options = Object.defineProperty({}, "passive", {
+    get: function () {
+      passive = true;
+    },
+  });
+  window.addEventListener("test", null, options);
+  Utils._supportPassiveEvent = passive;
+  return passive;
+};
 
 //-----------------------------------------------------------------------------
 /**
@@ -321,26 +334,26 @@ Utils.isSupportPassiveEvent = function () {
  * @param {string} item - Bitmap, HTML5Audio, WebAudio - whatever you want to store in the cache
  */
 function CacheEntry(cache, key, item) {
-    this.cache = cache;
-    this.key = key;
-    this.item = item;
-    this.cached = false;
-    this.touchTicks = 0;
-    this.touchSeconds = 0;
-    this.ttlTicks = 0;
-    this.ttlSeconds = 0;
-    this.freedByTTL = false;
+  this.cache = cache;
+  this.key = key;
+  this.item = item;
+  this.cached = false;
+  this.touchTicks = 0;
+  this.touchSeconds = 0;
+  this.ttlTicks = 0;
+  this.ttlSeconds = 0;
+  this.freedByTTL = false;
 }
 
 /**
  * frees the resource
  */
 CacheEntry.prototype.free = function (byTTL) {
-    this.freedByTTL = byTTL || false;
-    if (this.cached) {
-        this.cached = false;
-        delete this.cache._inner[this.key];
-    }
+  this.freedByTTL = byTTL || false;
+  if (this.cached) {
+    this.cached = false;
+    delete this.cache._inner[this.key];
+  }
 };
 
 /**
@@ -348,12 +361,12 @@ CacheEntry.prototype.free = function (byTTL) {
  * @returns {CacheEntry}
  */
 CacheEntry.prototype.allocate = function () {
-    if (!this.cached) {
-        this.cache._inner[this.key] = this;
-        this.cached = true;
-    }
-    this.touch();
-    return this;
+  if (!this.cached) {
+    this.cache._inner[this.key] = this;
+    this.cached = true;
+  }
+  this.touch();
+  return this;
 };
 
 /**
@@ -363,15 +376,19 @@ CacheEntry.prototype.allocate = function () {
  * @returns {CacheEntry}
  */
 CacheEntry.prototype.setTimeToLive = function (ticks, seconds) {
-    this.ttlTicks = ticks || 0;
-    this.ttlSeconds = seconds || 0;
-    return this;
+  this.ttlTicks = ticks || 0;
+  this.ttlSeconds = seconds || 0;
+  return this;
 };
 
 CacheEntry.prototype.isStillAlive = function () {
-    var cache = this.cache;
-    return ((this.ttlTicks == 0) || (this.touchTicks + this.ttlTicks < cache.updateTicks)) &&
-        ((this.ttlSeconds == 0) || (this.touchSeconds + this.ttlSeconds < cache.updateSeconds));
+  var cache = this.cache;
+  return (
+    (this.ttlTicks == 0 ||
+      this.touchTicks + this.ttlTicks < cache.updateTicks) &&
+    (this.ttlSeconds == 0 ||
+      this.touchSeconds + this.ttlSeconds < cache.updateSeconds)
+  );
 };
 
 /**
@@ -379,16 +396,16 @@ CacheEntry.prototype.isStillAlive = function () {
  * if resource was already freed by TTL, put it in cache again
  */
 CacheEntry.prototype.touch = function () {
-    var cache = this.cache;
-    if (this.cached) {
-        this.touchTicks = cache.updateTicks;
-        this.touchSeconds = cache.updateSeconds;
-    } else if (this.freedByTTL) {
-        this.freedByTTL = false;
-        if (!cache._inner[this.key]) {
-            cache._inner[this.key] = this;
-        }
+  var cache = this.cache;
+  if (this.cached) {
+    this.touchTicks = cache.updateTicks;
+    this.touchSeconds = cache.updateSeconds;
+  } else if (this.freedByTTL) {
+    this.freedByTTL = false;
+    if (!cache._inner[this.key]) {
+      cache._inner[this.key] = this;
     }
+  }
 };
 
 /**
@@ -397,35 +414,35 @@ CacheEntry.prototype.touch = function () {
  * @constructor
  */
 function CacheMap(manager) {
-    this.manager = manager;
-    this._inner = {};
-    this._lastRemovedEntries = {};
-    this.updateTicks = 0;
-    this.lastCheckTTL = 0;
-    this.delayCheckTTL = 100.0;
-    this.updateSeconds = Date.now();
+  this.manager = manager;
+  this._inner = {};
+  this._lastRemovedEntries = {};
+  this.updateTicks = 0;
+  this.lastCheckTTL = 0;
+  this.delayCheckTTL = 100.0;
+  this.updateSeconds = Date.now();
 }
 
 /**
  * checks ttl of all elements and removes dead ones
  */
 CacheMap.prototype.checkTTL = function () {
-    var cache = this._inner;
-    var temp = this._lastRemovedEntries;
-    if (!temp) {
-        temp = [];
-        this._lastRemovedEntries = temp;
+  var cache = this._inner;
+  var temp = this._lastRemovedEntries;
+  if (!temp) {
+    temp = [];
+    this._lastRemovedEntries = temp;
+  }
+  for (var key in cache) {
+    var entry = cache[key];
+    if (!entry.isStillAlive()) {
+      temp.push(entry);
     }
-    for (var key in cache) {
-        var entry = cache[key];
-        if (!entry.isStillAlive()) {
-            temp.push(entry);
-        }
-    }
-    for (var i = 0; i < temp.length; i++) {
-        temp[i].free(true);
-    }
-    temp.length = 0;
+  }
+  for (var i = 0; i < temp.length; i++) {
+    temp[i].free(true);
+  }
+  temp.length = 0;
 };
 
 /**
@@ -434,180 +451,189 @@ CacheMap.prototype.checkTTL = function () {
  * @returns {*|null}
  */
 CacheMap.prototype.getItem = function (key) {
-    var entry = this._inner[key];
-    if (entry) {
-        return entry.item;
-    }
-    return null;
+  var entry = this._inner[key];
+  if (entry) {
+    return entry.item;
+  }
+  return null;
 };
 
 CacheMap.prototype.clear = function () {
-    var keys = Object.keys(this._inner);
-    for (var i = 0; i < keys.length; i++) {
-        this._inner[keys[i]].free();
-    }
+  var keys = Object.keys(this._inner);
+  for (var i = 0; i < keys.length; i++) {
+    this._inner[keys[i]].free();
+  }
 };
 
 CacheMap.prototype.setItem = function (key, item) {
-    return new CacheEntry(this, key, item).allocate();
+  return new CacheEntry(this, key, item).allocate();
 };
 
 CacheMap.prototype.update = function (ticks, delta) {
-    this.updateTicks += ticks;
-    this.updateSeconds += delta;
-    if (this.updateSeconds >= this.delayCheckTTL + this.lastCheckTTL) {
-        this.lastCheckTTL = this.updateSeconds;
-        this.checkTTL();
-    }
+  this.updateTicks += ticks;
+  this.updateSeconds += delta;
+  if (this.updateSeconds >= this.delayCheckTTL + this.lastCheckTTL) {
+    this.lastCheckTTL = this.updateSeconds;
+    this.checkTTL();
+  }
 };
 
 function ImageCache() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 ImageCache.limit = 10 * 1000 * 1000;
 
 ImageCache.prototype.initialize = function () {
-    this._items = {};
+  this._items = {};
 };
 
 ImageCache.prototype.add = function (key, value) {
-    this._items[key] = {
-        bitmap: value,
-        touch: Date.now(),
-        key: key
-    };
+  this._items[key] = {
+    bitmap: value,
+    touch: Date.now(),
+    key: key,
+  };
 
-    this._truncateCache();
+  this._truncateCache();
 };
 
 ImageCache.prototype.get = function (key) {
-    if (this._items[key]) {
-        var item = this._items[key];
-        item.touch = Date.now();
-        return item.bitmap;
-    }
+  if (this._items[key]) {
+    var item = this._items[key];
+    item.touch = Date.now();
+    return item.bitmap;
+  }
 
-    return null;
+  return null;
 };
 
 ImageCache.prototype.reserve = function (key, value, reservationId) {
-    if (!this._items[key]) {
-        this._items[key] = {
-            bitmap: value,
-            touch: Date.now(),
-            key: key
-        };
-    }
+  if (!this._items[key]) {
+    this._items[key] = {
+      bitmap: value,
+      touch: Date.now(),
+      key: key,
+    };
+  }
 
-    this._items[key].reservationId = reservationId;
+  this._items[key].reservationId = reservationId;
 };
 
 ImageCache.prototype.releaseReservation = function (reservationId) {
-    var items = this._items;
+  var items = this._items;
 
-    Object.keys(items)
-        .map(function (key) { return items[key]; })
-        .forEach(function (item) {
-            if (item.reservationId === reservationId) {
-                delete item.reservationId;
-            }
-        });
+  Object.keys(items)
+    .map(function (key) {
+      return items[key];
+    })
+    .forEach(function (item) {
+      if (item.reservationId === reservationId) {
+        delete item.reservationId;
+      }
+    });
 };
 
 ImageCache.prototype._truncateCache = function () {
-    var items = this._items;
-    var sizeLeft = ImageCache.limit;
+  var items = this._items;
+  var sizeLeft = ImageCache.limit;
 
-    Object.keys(items).map(function (key) {
-        return items[key];
-    }).sort(function (a, b) {
-        return b.touch - a.touch;
-    }).forEach(function (item) {
+  Object.keys(items)
+    .map(function (key) {
+      return items[key];
+    })
+    .sort(function (a, b) {
+      return b.touch - a.touch;
+    })
+    .forEach(
+      function (item) {
         if (sizeLeft > 0 || this._mustBeHeld(item)) {
-            var bitmap = item.bitmap;
-            sizeLeft -= bitmap.width * bitmap.height;
+          var bitmap = item.bitmap;
+          sizeLeft -= bitmap.width * bitmap.height;
         } else {
-            delete items[item.key];
+          delete items[item.key];
         }
-    }.bind(this));
+      }.bind(this)
+    );
 };
 
 ImageCache.prototype._mustBeHeld = function (item) {
-    // request only is weak so It's purgeable
-    if (item.bitmap.isRequestOnly()) return false;
-    // reserved item must be held
-    if (item.reservationId) return true;
-    // not ready bitmap must be held (because of checking isReady())
-    if (!item.bitmap.isReady()) return true;
-    // then the item may purgeable
-    return false;
+  // request only is weak so It's purgeable
+  if (item.bitmap.isRequestOnly()) return false;
+  // reserved item must be held
+  if (item.reservationId) return true;
+  // not ready bitmap must be held (because of checking isReady())
+  if (!item.bitmap.isReady()) return true;
+  // then the item may purgeable
+  return false;
 };
 
 ImageCache.prototype.isReady = function () {
-    var items = this._items;
-    return !Object.keys(items).some(function (key) {
-        return !items[key].bitmap.isRequestOnly() && !items[key].bitmap.isReady();
-    });
+  var items = this._items;
+  return !Object.keys(items).some(function (key) {
+    return !items[key].bitmap.isRequestOnly() && !items[key].bitmap.isReady();
+  });
 };
 
 ImageCache.prototype.getErrorBitmap = function () {
-    var items = this._items;
-    var bitmap = null;
-    if (Object.keys(items).some(function (key) {
-        if (items[key].bitmap.isError()) {
-            bitmap = items[key].bitmap;
-            return true;
-        }
-        return false;
-    })) {
-        return bitmap;
-    }
+  var items = this._items;
+  var bitmap = null;
+  if (
+    Object.keys(items).some(function (key) {
+      if (items[key].bitmap.isError()) {
+        bitmap = items[key].bitmap;
+        return true;
+      }
+      return false;
+    })
+  ) {
+    return bitmap;
+  }
 
-    return null;
+  return null;
 };
 function RequestQueue() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 RequestQueue.prototype.initialize = function () {
-    this._queue = [];
+  this._queue = [];
 };
 
 RequestQueue.prototype.enqueue = function (key, value) {
-    this._queue.push({
-        key: key,
-        value: value,
-    });
+  this._queue.push({
+    key: key,
+    value: value,
+  });
 };
 
 RequestQueue.prototype.update = function () {
-    if (this._queue.length === 0) return;
+  if (this._queue.length === 0) return;
 
-    var top = this._queue[0];
-    if (top.value.isRequestReady()) {
-        this._queue.shift();
-        if (this._queue.length !== 0) {
-            this._queue[0].value.startRequest();
-        }
-    } else {
-        top.value.startRequest();
+  var top = this._queue[0];
+  if (top.value.isRequestReady()) {
+    this._queue.shift();
+    if (this._queue.length !== 0) {
+      this._queue[0].value.startRequest();
     }
+  } else {
+    top.value.startRequest();
+  }
 };
 
 RequestQueue.prototype.raisePriority = function (key) {
-    for (var n = 0; n < this._queue.length; n++) {
-        var item = this._queue[n];
-        if (item.key === key) {
-            this._queue.splice(n, 1);
-            this._queue.unshift(item);
-            break;
-        }
+  for (var n = 0; n < this._queue.length; n++) {
+    var item = this._queue[n];
+    if (item.key === key) {
+      this._queue.splice(n, 1);
+      this._queue.unshift(item);
+      break;
     }
+  }
 };
 
 RequestQueue.prototype.clear = function () {
-    this._queue.splice(0);
+  this._queue.splice(0);
 };
 //-----------------------------------------------------------------------------
 /**
@@ -619,14 +645,14 @@ RequestQueue.prototype.clear = function () {
  * @param {Number} y The y coordinate
  */
 function Point() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 Point.prototype = Object.create(PIXI.Point.prototype);
 Point.prototype.constructor = Point;
 
 Point.prototype.initialize = function (x, y) {
-    PIXI.Point.call(this, x, y);
+  PIXI.Point.call(this, x, y);
 };
 
 /**
@@ -655,14 +681,14 @@ Point.prototype.initialize = function (x, y) {
  * @param {Number} height The height of the rectangle
  */
 function Rectangle() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 Rectangle.prototype = Object.create(PIXI.Rectangle.prototype);
 Rectangle.prototype.constructor = Rectangle;
 
 Rectangle.prototype.initialize = function (x, y, width, height) {
-    PIXI.Rectangle.call(this, x, y, width, height);
+  PIXI.Rectangle.call(this, x, y, width, height);
 };
 
 /**
@@ -711,12 +737,11 @@ Rectangle.emptyRectangle = new Rectangle(0, 0, 0, 0);
  * @param {Number} height The height of the bitmap
  */
 function Bitmap() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 //for iOS. img consumes memory. so reuse it.
 Bitmap._reuseImages = [];
-
 
 /**
  * Bitmap states(Bitmap._loadingState):
@@ -750,149 +775,154 @@ Bitmap._reuseImages = [];
  *
  */
 
-
 Bitmap.prototype._createCanvas = function (width, height) {
-    this.__canvas = this.__canvas || document.createElement('canvas');
-    this.__context = this.__canvas.getContext('2d');
+  this.__canvas = this.__canvas || document.createElement("canvas");
+  this.__context = this.__canvas.getContext("2d");
 
-    this.__canvas.width = Math.max(width || 0, 1);
-    this.__canvas.height = Math.max(height || 0, 1);
+  this.__canvas.width = Math.max(width || 0, 1);
+  this.__canvas.height = Math.max(height || 0, 1);
 
-    if (this._image) {
-        var w = Math.max(this._image.width || 0, 1);
-        var h = Math.max(this._image.height || 0, 1);
-        this.__canvas.width = w;
-        this.__canvas.height = h;
-        this._createBaseTexture(this._canvas);
+  if (this._image) {
+    var w = Math.max(this._image.width || 0, 1);
+    var h = Math.max(this._image.height || 0, 1);
+    this.__canvas.width = w;
+    this.__canvas.height = h;
+    this._createBaseTexture(this._canvas);
 
-        this.__context.drawImage(this._image, 0, 0);
-    }
+    this.__context.drawImage(this._image, 0, 0);
+  }
 
-    this._setDirty();
+  this._setDirty();
 };
 
 Bitmap.prototype._createBaseTexture = function (source) {
-    this.__baseTexture = new PIXI.BaseTexture(source);
-    this.__baseTexture.mipmap = false;
-    this.__baseTexture.width = source.width;
-    this.__baseTexture.height = source.height;
+  this.__baseTexture = new PIXI.BaseTexture(source);
+  this.__baseTexture.mipmap = false;
+  this.__baseTexture.width = source.width;
+  this.__baseTexture.height = source.height;
 
-    if (this._smooth) {
-        this._baseTexture.scaleMode = PIXI.SCALE_MODES.LINEAR;
-    } else {
-        this._baseTexture.scaleMode = PIXI.SCALE_MODES.NEAREST;
-    }
+  if (this._smooth) {
+    this._baseTexture.scaleMode = PIXI.SCALE_MODES.LINEAR;
+  } else {
+    this._baseTexture.scaleMode = PIXI.SCALE_MODES.NEAREST;
+  }
 };
 
 Bitmap.prototype._clearImgInstance = function () {
-    this._image.src = "";
-    this._image.onload = null;
-    this._image.onerror = null;
-    this._errorListener = null;
-    this._loadListener = null;
+  this._image.src = "";
+  this._image.onload = null;
+  this._image.onerror = null;
+  this._errorListener = null;
+  this._loadListener = null;
 
-    Bitmap._reuseImages.push(this._image);
-    this._image = null;
+  Bitmap._reuseImages.push(this._image);
+  this._image = null;
 };
 
 //
 //We don't want to waste memory, so creating canvas is deferred.
 //
 Object.defineProperties(Bitmap.prototype, {
-    _canvas: {
-        get: function () {
-            if (!this.__canvas) this._createCanvas();
-            return this.__canvas;
-        }
+  _canvas: {
+    get: function () {
+      if (!this.__canvas) this._createCanvas();
+      return this.__canvas;
     },
-    _context: {
-        get: function () {
-            if (!this.__context) this._createCanvas();
-            return this.__context;
-        }
+  },
+  _context: {
+    get: function () {
+      if (!this.__context) this._createCanvas();
+      return this.__context;
     },
+  },
 
-    _baseTexture: {
-        get: function () {
-            if (!this.__baseTexture) this._createBaseTexture(this._image || this.__canvas);
-            return this.__baseTexture;
-        }
-    }
+  _baseTexture: {
+    get: function () {
+      if (!this.__baseTexture)
+        this._createBaseTexture(this._image || this.__canvas);
+      return this.__baseTexture;
+    },
+  },
 });
 
 Bitmap.prototype._renewCanvas = function () {
-    var newImage = this._image;
-    if (newImage && this.__canvas && (this.__canvas.width < newImage.width || this.__canvas.height < newImage.height)) {
-        this._createCanvas();
-    }
+  var newImage = this._image;
+  if (
+    newImage &&
+    this.__canvas &&
+    (this.__canvas.width < newImage.width ||
+      this.__canvas.height < newImage.height)
+  ) {
+    this._createCanvas();
+  }
 };
 
 Bitmap.prototype.initialize = function (width, height) {
-    if (!this._defer) {
-        this._createCanvas(width, height);
-    }
+  if (!this._defer) {
+    this._createCanvas(width, height);
+  }
 
-    this._image = null;
-    this._url = '';
-    this._paintOpacity = 255;
-    this._smooth = false;
-    this._loadListeners = [];
-    this._loadingState = 'none';
-    this._decodeAfterRequest = false;
+  this._image = null;
+  this._url = "";
+  this._paintOpacity = 255;
+  this._smooth = false;
+  this._loadListeners = [];
+  this._loadingState = "none";
+  this._decodeAfterRequest = false;
 
-    /**
-     * Cache entry, for images. In all cases _url is the same as cacheEntry.key
-     * @type CacheEntry
-     */
-    this.cacheEntry = null;
+  /**
+   * Cache entry, for images. In all cases _url is the same as cacheEntry.key
+   * @type CacheEntry
+   */
+  this.cacheEntry = null;
 
-    /**
-     * The face name of the font.
-     *
-     * @property fontFace
-     * @type String
-     */
-    this.fontFace = 'GameFont';
+  /**
+   * The face name of the font.
+   *
+   * @property fontFace
+   * @type String
+   */
+  this.fontFace = "GameFont";
 
-    /**
-     * The size of the font in pixels.
-     *
-     * @property fontSize
-     * @type Number
-     */
-    this.fontSize = 28;
+  /**
+   * The size of the font in pixels.
+   *
+   * @property fontSize
+   * @type Number
+   */
+  this.fontSize = 28;
 
-    /**
-     * Whether the font is italic.
-     *
-     * @property fontItalic
-     * @type Boolean
-     */
-    this.fontItalic = false;
+  /**
+   * Whether the font is italic.
+   *
+   * @property fontItalic
+   * @type Boolean
+   */
+  this.fontItalic = false;
 
-    /**
-     * The color of the text in CSS format.
-     *
-     * @property textColor
-     * @type String
-     */
-    this.textColor = '#ffffff';
+  /**
+   * The color of the text in CSS format.
+   *
+   * @property textColor
+   * @type String
+   */
+  this.textColor = "#ffffff";
 
-    /**
-     * The color of the outline of the text in CSS format.
-     *
-     * @property outlineColor
-     * @type String
-     */
-    this.outlineColor = 'rgba(0, 0, 0, 0.5)';
+  /**
+   * The color of the outline of the text in CSS format.
+   *
+   * @property outlineColor
+   * @type String
+   */
+  this.outlineColor = "rgba(0, 0, 0, 0.5)";
 
-    /**
-     * The width of the outline of the text.
-     *
-     * @property outlineWidth
-     * @type Number
-     */
-    this.outlineWidth = 4;
+  /**
+   * The width of the outline of the text.
+   *
+   * @property outlineWidth
+   * @type Number
+   */
+  this.outlineWidth = 4;
 };
 
 /**
@@ -904,14 +934,14 @@ Bitmap.prototype.initialize = function (width, height) {
  * @return Bitmap
  */
 Bitmap.load = function (url) {
-    var bitmap = Object.create(Bitmap.prototype);
-    bitmap._defer = true;
-    bitmap.initialize();
+  var bitmap = Object.create(Bitmap.prototype);
+  bitmap._defer = true;
+  bitmap.initialize();
 
-    bitmap._decodeAfterRequest = true;
-    bitmap._requestImage(url);
+  bitmap._decodeAfterRequest = true;
+  bitmap._requestImage(url);
 
-    return bitmap;
+  return bitmap;
 };
 
 /**
@@ -923,27 +953,26 @@ Bitmap.load = function (url) {
  * @return Bitmap
  */
 Bitmap.snap = function (stage) {
-    var width = Graphics.width;
-    var height = Graphics.height;
-    var bitmap = new Bitmap(width, height);
-    var context = bitmap._context;
-    var renderTexture = PIXI.RenderTexture.create(width, height);
-    if (stage) {
-        Graphics._renderer.render(stage, renderTexture);
-        stage.worldTransform.identity();
-        var canvas = null;
-        if (Graphics.isWebGL()) {
-            canvas = Graphics._renderer.extract.canvas(renderTexture);
-        } else {
-            canvas = renderTexture.baseTexture._canvasRenderTarget.canvas;
-        }
-        context.drawImage(canvas, 0, 0);
+  var width = Graphics.width;
+  var height = Graphics.height;
+  var bitmap = new Bitmap(width, height);
+  var context = bitmap._context;
+  var renderTexture = PIXI.RenderTexture.create(width, height);
+  if (stage) {
+    Graphics._renderer.render(stage, renderTexture);
+    stage.worldTransform.identity();
+    var canvas = null;
+    if (Graphics.isWebGL()) {
+      canvas = Graphics._renderer.extract.canvas(renderTexture);
     } else {
-
+      canvas = renderTexture.baseTexture._canvasRenderTarget.canvas;
     }
-    renderTexture.destroy({ destroyBase: true });
-    bitmap._setDirty();
-    return bitmap;
+    context.drawImage(canvas, 0, 0);
+  } else {
+  }
+  renderTexture.destroy({ destroyBase: true });
+  bitmap._setDirty();
+  return bitmap;
 };
 
 /**
@@ -953,7 +982,7 @@ Bitmap.snap = function (stage) {
  * @return {Boolean} True if the bitmap is ready to render
  */
 Bitmap.prototype.isReady = function () {
-    return this._loadingState === 'loaded' || this._loadingState === 'none';
+  return this._loadingState === "loaded" || this._loadingState === "none";
 };
 
 /**
@@ -963,7 +992,7 @@ Bitmap.prototype.isReady = function () {
  * @return {Boolean} True if a loading error has occurred
  */
 Bitmap.prototype.isError = function () {
-    return this._loadingState === 'error';
+  return this._loadingState === "error";
 };
 
 /**
@@ -971,9 +1000,9 @@ Bitmap.prototype.isError = function () {
  * @method touch
  */
 Bitmap.prototype.touch = function () {
-    if (this.cacheEntry) {
-        this.cacheEntry.touch();
-    }
+  if (this.cacheEntry) {
+    this.cacheEntry.touch();
+  }
 };
 
 /**
@@ -982,11 +1011,11 @@ Bitmap.prototype.touch = function () {
  * @property url
  * @type String
  */
-Object.defineProperty(Bitmap.prototype, 'url', {
-    get: function () {
-        return this._url;
-    },
-    configurable: true
+Object.defineProperty(Bitmap.prototype, "url", {
+  get: function () {
+    return this._url;
+  },
+  configurable: true,
 });
 
 /**
@@ -995,11 +1024,11 @@ Object.defineProperty(Bitmap.prototype, 'url', {
  * @property baseTexture
  * @type PIXI.BaseTexture
  */
-Object.defineProperty(Bitmap.prototype, 'baseTexture', {
-    get: function () {
-        return this._baseTexture;
-    },
-    configurable: true
+Object.defineProperty(Bitmap.prototype, "baseTexture", {
+  get: function () {
+    return this._baseTexture;
+  },
+  configurable: true,
 });
 
 /**
@@ -1008,11 +1037,11 @@ Object.defineProperty(Bitmap.prototype, 'baseTexture', {
  * @property canvas
  * @type HTMLCanvasElement
  */
-Object.defineProperty(Bitmap.prototype, 'canvas', {
-    get: function () {
-        return this._canvas;
-    },
-    configurable: true
+Object.defineProperty(Bitmap.prototype, "canvas", {
+  get: function () {
+    return this._canvas;
+  },
+  configurable: true,
 });
 
 /**
@@ -1021,11 +1050,11 @@ Object.defineProperty(Bitmap.prototype, 'canvas', {
  * @property context
  * @type CanvasRenderingContext2D
  */
-Object.defineProperty(Bitmap.prototype, 'context', {
-    get: function () {
-        return this._context;
-    },
-    configurable: true
+Object.defineProperty(Bitmap.prototype, "context", {
+  get: function () {
+    return this._context;
+  },
+  configurable: true,
 });
 
 /**
@@ -1034,15 +1063,15 @@ Object.defineProperty(Bitmap.prototype, 'context', {
  * @property width
  * @type Number
  */
-Object.defineProperty(Bitmap.prototype, 'width', {
-    get: function () {
-        if (this.isReady()) {
-            return this._image ? this._image.width : this._canvas.width;
-        }
+Object.defineProperty(Bitmap.prototype, "width", {
+  get: function () {
+    if (this.isReady()) {
+      return this._image ? this._image.width : this._canvas.width;
+    }
 
-        return 0;
-    },
-    configurable: true
+    return 0;
+  },
+  configurable: true,
 });
 
 /**
@@ -1051,15 +1080,15 @@ Object.defineProperty(Bitmap.prototype, 'width', {
  * @property height
  * @type Number
  */
-Object.defineProperty(Bitmap.prototype, 'height', {
-    get: function () {
-        if (this.isReady()) {
-            return this._image ? this._image.height : this._canvas.height;
-        }
+Object.defineProperty(Bitmap.prototype, "height", {
+  get: function () {
+    if (this.isReady()) {
+      return this._image ? this._image.height : this._canvas.height;
+    }
 
-        return 0;
-    },
-    configurable: true
+    return 0;
+  },
+  configurable: true,
 });
 
 /**
@@ -1068,11 +1097,11 @@ Object.defineProperty(Bitmap.prototype, 'height', {
  * @property rect
  * @type Rectangle
  */
-Object.defineProperty(Bitmap.prototype, 'rect', {
-    get: function () {
-        return new Rectangle(0, 0, this.width, this.height);
-    },
-    configurable: true
+Object.defineProperty(Bitmap.prototype, "rect", {
+  get: function () {
+    return new Rectangle(0, 0, this.width, this.height);
+  },
+  configurable: true,
 });
 
 /**
@@ -1081,23 +1110,23 @@ Object.defineProperty(Bitmap.prototype, 'rect', {
  * @property smooth
  * @type Boolean
  */
-Object.defineProperty(Bitmap.prototype, 'smooth', {
-    get: function () {
-        return this._smooth;
-    },
-    set: function (value) {
-        if (this._smooth !== value) {
-            this._smooth = value;
-            if (this.__baseTexture) {
-                if (this._smooth) {
-                    this._baseTexture.scaleMode = PIXI.SCALE_MODES.LINEAR;
-                } else {
-                    this._baseTexture.scaleMode = PIXI.SCALE_MODES.NEAREST;
-                }
-            }
+Object.defineProperty(Bitmap.prototype, "smooth", {
+  get: function () {
+    return this._smooth;
+  },
+  set: function (value) {
+    if (this._smooth !== value) {
+      this._smooth = value;
+      if (this.__baseTexture) {
+        if (this._smooth) {
+          this._baseTexture.scaleMode = PIXI.SCALE_MODES.LINEAR;
+        } else {
+          this._baseTexture.scaleMode = PIXI.SCALE_MODES.NEAREST;
         }
-    },
-    configurable: true
+      }
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -1106,17 +1135,17 @@ Object.defineProperty(Bitmap.prototype, 'smooth', {
  * @property paintOpacity
  * @type Number
  */
-Object.defineProperty(Bitmap.prototype, 'paintOpacity', {
-    get: function () {
-        return this._paintOpacity;
-    },
-    set: function (value) {
-        if (this._paintOpacity !== value) {
-            this._paintOpacity = value;
-            this._context.globalAlpha = this._paintOpacity / 255;
-        }
-    },
-    configurable: true
+Object.defineProperty(Bitmap.prototype, "paintOpacity", {
+  get: function () {
+    return this._paintOpacity;
+  },
+  set: function (value) {
+    if (this._paintOpacity !== value) {
+      this._paintOpacity = value;
+      this._context.globalAlpha = this._paintOpacity / 255;
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -1127,12 +1156,12 @@ Object.defineProperty(Bitmap.prototype, 'paintOpacity', {
  * @param {Number} height The new height of the bitmap
  */
 Bitmap.prototype.resize = function (width, height) {
-    width = Math.max(width || 0, 1);
-    height = Math.max(height || 0, 1);
-    this._canvas.width = width;
-    this._canvas.height = height;
-    this._baseTexture.width = width;
-    this._baseTexture.height = height;
+  width = Math.max(width || 0, 1);
+  height = Math.max(height || 0, 1);
+  this._canvas.width = width;
+  this._canvas.height = height;
+  this._baseTexture.width = width;
+  this._baseTexture.height = height;
 };
 
 /**
@@ -1150,14 +1179,22 @@ Bitmap.prototype.resize = function (width, height) {
  * @param {Number} [dh=sh] The height to draw the image in the destination
  */
 Bitmap.prototype.blt = function (source, sx, sy, sw, sh, dx, dy, dw, dh) {
-    dw = dw || sw;
-    dh = dh || sh;
-    if (sx >= 0 && sy >= 0 && sw > 0 && sh > 0 && dw > 0 && dh > 0 &&
-        sx + sw <= source.width && sy + sh <= source.height) {
-        this._context.globalCompositeOperation = 'source-over';
-        this._context.drawImage(source._canvas, sx, sy, sw, sh, dx, dy, dw, dh);
-        this._setDirty();
-    }
+  dw = dw || sw;
+  dh = dh || sh;
+  if (
+    sx >= 0 &&
+    sy >= 0 &&
+    sw > 0 &&
+    sh > 0 &&
+    dw > 0 &&
+    dh > 0 &&
+    sx + sw <= source.width &&
+    sy + sh <= source.height
+  ) {
+    this._context.globalCompositeOperation = "source-over";
+    this._context.drawImage(source._canvas, sx, sy, sw, sh, dx, dy, dw, dh);
+    this._setDirty();
+  }
 };
 
 /**
@@ -1175,14 +1212,22 @@ Bitmap.prototype.blt = function (source, sx, sy, sw, sh, dx, dy, dw, dh) {
  * @param {Number} [dh=sh] The height to draw the image in the destination
  */
 Bitmap.prototype.bltImage = function (source, sx, sy, sw, sh, dx, dy, dw, dh) {
-    dw = dw || sw;
-    dh = dh || sh;
-    if (sx >= 0 && sy >= 0 && sw > 0 && sh > 0 && dw > 0 && dh > 0 &&
-        sx + sw <= source.width && sy + sh <= source.height) {
-        this._context.globalCompositeOperation = 'source-over';
-        this._context.drawImage(source._image, sx, sy, sw, sh, dx, dy, dw, dh);
-        this._setDirty();
-    }
+  dw = dw || sw;
+  dh = dh || sh;
+  if (
+    sx >= 0 &&
+    sy >= 0 &&
+    sw > 0 &&
+    sh > 0 &&
+    dw > 0 &&
+    dh > 0 &&
+    sx + sw <= source.width &&
+    sy + sh <= source.height
+  ) {
+    this._context.globalCompositeOperation = "source-over";
+    this._context.drawImage(source._image, sx, sy, sw, sh, dx, dy, dw, dh);
+    this._setDirty();
+  }
 };
 
 /**
@@ -1194,12 +1239,12 @@ Bitmap.prototype.bltImage = function (source, sx, sy, sw, sh, dx, dy, dw, dh) {
  * @return {String} The pixel color (hex format)
  */
 Bitmap.prototype.getPixel = function (x, y) {
-    var data = this._context.getImageData(x, y, 1, 1).data;
-    var result = '#';
-    for (var i = 0; i < 3; i++) {
-        result += data[i].toString(16).padZero(2);
-    }
-    return result;
+  var data = this._context.getImageData(x, y, 1, 1).data;
+  var result = "#";
+  for (var i = 0; i < 3; i++) {
+    result += data[i].toString(16).padZero(2);
+  }
+  return result;
 };
 
 /**
@@ -1211,8 +1256,8 @@ Bitmap.prototype.getPixel = function (x, y) {
  * @return {String} The alpha value
  */
 Bitmap.prototype.getAlphaPixel = function (x, y) {
-    var data = this._context.getImageData(x, y, 1, 1).data;
-    return data[3];
+  var data = this._context.getImageData(x, y, 1, 1).data;
+  return data[3];
 };
 
 /**
@@ -1225,8 +1270,8 @@ Bitmap.prototype.getAlphaPixel = function (x, y) {
  * @param {Number} height The height of the rectangle to clear
  */
 Bitmap.prototype.clearRect = function (x, y, width, height) {
-    this._context.clearRect(x, y, width, height);
-    this._setDirty();
+  this._context.clearRect(x, y, width, height);
+  this._setDirty();
 };
 
 /**
@@ -1235,7 +1280,7 @@ Bitmap.prototype.clearRect = function (x, y, width, height) {
  * @method clear
  */
 Bitmap.prototype.clear = function () {
-    this.clearRect(0, 0, this.width, this.height);
+  this.clearRect(0, 0, this.width, this.height);
 };
 
 /**
@@ -1249,12 +1294,12 @@ Bitmap.prototype.clear = function () {
  * @param {String} color The color of the rectangle in CSS format
  */
 Bitmap.prototype.fillRect = function (x, y, width, height, color) {
-    var context = this._context;
-    context.save();
-    context.fillStyle = color;
-    context.fillRect(x, y, width, height);
-    context.restore();
-    this._setDirty();
+  var context = this._context;
+  context.save();
+  context.fillStyle = color;
+  context.fillRect(x, y, width, height);
+  context.restore();
+  this._setDirty();
 };
 
 /**
@@ -1264,7 +1309,7 @@ Bitmap.prototype.fillRect = function (x, y, width, height, color) {
  * @param {String} color The color of the rectangle in CSS format
  */
 Bitmap.prototype.fillAll = function (color) {
-    this.fillRect(0, 0, this.width, this.height, color);
+  this.fillRect(0, 0, this.width, this.height, color);
 };
 
 /**
@@ -1279,22 +1324,29 @@ Bitmap.prototype.fillAll = function (color) {
  * @param {String} color2 The gradient ending color
  * @param {Boolean} vertical Wether the gradient should be draw as vertical or not
  */
-Bitmap.prototype.gradientFillRect = function (x, y, width, height, color1,
-    color2, vertical) {
-    var context = this._context;
-    var grad;
-    if (vertical) {
-        grad = context.createLinearGradient(x, y, x, y + height);
-    } else {
-        grad = context.createLinearGradient(x, y, x + width, y);
-    }
-    grad.addColorStop(0, color1);
-    grad.addColorStop(1, color2);
-    context.save();
-    context.fillStyle = grad;
-    context.fillRect(x, y, width, height);
-    context.restore();
-    this._setDirty();
+Bitmap.prototype.gradientFillRect = function (
+  x,
+  y,
+  width,
+  height,
+  color1,
+  color2,
+  vertical
+) {
+  var context = this._context;
+  var grad;
+  if (vertical) {
+    grad = context.createLinearGradient(x, y, x, y + height);
+  } else {
+    grad = context.createLinearGradient(x, y, x + width, y);
+  }
+  grad.addColorStop(0, color1);
+  grad.addColorStop(1, color2);
+  context.save();
+  context.fillStyle = grad;
+  context.fillRect(x, y, width, height);
+  context.restore();
+  this._setDirty();
 };
 
 /**
@@ -1307,14 +1359,14 @@ Bitmap.prototype.gradientFillRect = function (x, y, width, height, color1,
  * @param {String} color The color of the circle in CSS format
  */
 Bitmap.prototype.drawCircle = function (x, y, radius, color) {
-    var context = this._context;
-    context.save();
-    context.fillStyle = color;
-    context.beginPath();
-    context.arc(x, y, radius, 0, Math.PI * 2, false);
-    context.fill();
-    context.restore();
-    this._setDirty();
+  var context = this._context;
+  context.save();
+  context.fillStyle = color;
+  context.beginPath();
+  context.arc(x, y, radius, 0, Math.PI * 2, false);
+  context.fill();
+  context.restore();
+  this._setDirty();
 };
 
 /**
@@ -1329,31 +1381,31 @@ Bitmap.prototype.drawCircle = function (x, y, radius, color) {
  * @param {String} align The alignment of the text
  */
 Bitmap.prototype.drawText = function (text, x, y, maxWidth, lineHeight, align) {
-    // Note: Firefox has a bug with textBaseline: Bug 737852
-    //       So we use 'alphabetic' here.
-    if (text !== undefined) {
-        var tx = x;
-        var ty = y + lineHeight - (lineHeight - this.fontSize * 0.7) / 2;
-        var context = this._context;
-        var alpha = context.globalAlpha;
-        maxWidth = maxWidth || 0xffffffff;
-        if (align === 'center') {
-            tx += maxWidth / 2;
-        }
-        if (align === 'right') {
-            tx += maxWidth;
-        }
-        context.save();
-        context.font = this._makeFontNameText();
-        context.textAlign = align;
-        context.textBaseline = 'alphabetic';
-        context.globalAlpha = 1;
-        this._drawTextOutline(text, tx, ty, maxWidth);
-        context.globalAlpha = alpha;
-        this._drawTextBody(text, tx, ty, maxWidth);
-        context.restore();
-        this._setDirty();
+  // Note: Firefox has a bug with textBaseline: Bug 737852
+  //       So we use 'alphabetic' here.
+  if (text !== undefined) {
+    var tx = x;
+    var ty = y + lineHeight - (lineHeight - this.fontSize * 0.7) / 2;
+    var context = this._context;
+    var alpha = context.globalAlpha;
+    maxWidth = maxWidth || 0xffffffff;
+    if (align === "center") {
+      tx += maxWidth / 2;
     }
+    if (align === "right") {
+      tx += maxWidth;
+    }
+    context.save();
+    context.font = this._makeFontNameText();
+    context.textAlign = align;
+    context.textBaseline = "alphabetic";
+    context.globalAlpha = 1;
+    this._drawTextOutline(text, tx, ty, maxWidth);
+    context.globalAlpha = alpha;
+    this._drawTextBody(text, tx, ty, maxWidth);
+    context.restore();
+    this._setDirty();
+  }
 };
 
 /**
@@ -1364,12 +1416,12 @@ Bitmap.prototype.drawText = function (text, x, y, maxWidth, lineHeight, align) {
  * @return {Number} The width of the text in pixels
  */
 Bitmap.prototype.measureTextWidth = function (text) {
-    var context = this._context;
-    context.save();
-    context.font = this._makeFontNameText();
-    var width = context.measureText(text).width;
-    context.restore();
-    return width;
+  var context = this._context;
+  context.save();
+  context.font = this._makeFontNameText();
+  var width = context.measureText(text).width;
+  context.restore();
+  return width;
 };
 
 /**
@@ -1381,18 +1433,18 @@ Bitmap.prototype.measureTextWidth = function (text) {
  * @param {Number} b The blue strength in the range (-255, 255)
  */
 Bitmap.prototype.adjustTone = function (r, g, b) {
-    if ((r || g || b) && this.width > 0 && this.height > 0) {
-        var context = this._context;
-        var imageData = context.getImageData(0, 0, this.width, this.height);
-        var pixels = imageData.data;
-        for (var i = 0; i < pixels.length; i += 4) {
-            pixels[i + 0] += r;
-            pixels[i + 1] += g;
-            pixels[i + 2] += b;
-        }
-        context.putImageData(imageData, 0, 0);
-        this._setDirty();
+  if ((r || g || b) && this.width > 0 && this.height > 0) {
+    var context = this._context;
+    var imageData = context.getImageData(0, 0, this.width, this.height);
+    var pixels = imageData.data;
+    for (var i = 0; i < pixels.length; i += 4) {
+      pixels[i + 0] += r;
+      pixels[i + 1] += g;
+      pixels[i + 2] += b;
     }
+    context.putImageData(imageData, 0, 0);
+    this._setDirty();
+  }
 };
 
 /**
@@ -1402,67 +1454,67 @@ Bitmap.prototype.adjustTone = function (r, g, b) {
  * @param {Number} offset The hue offset in 360 degrees
  */
 Bitmap.prototype.rotateHue = function (offset) {
-    function rgbToHsl(r, g, b) {
-        var cmin = Math.min(r, g, b);
-        var cmax = Math.max(r, g, b);
-        var h = 0;
-        var s = 0;
-        var l = (cmin + cmax) / 2;
-        var delta = cmax - cmin;
+  function rgbToHsl(r, g, b) {
+    var cmin = Math.min(r, g, b);
+    var cmax = Math.max(r, g, b);
+    var h = 0;
+    var s = 0;
+    var l = (cmin + cmax) / 2;
+    var delta = cmax - cmin;
 
-        if (delta > 0) {
-            if (r === cmax) {
-                h = 60 * (((g - b) / delta + 6) % 6);
-            } else if (g === cmax) {
-                h = 60 * ((b - r) / delta + 2);
-            } else {
-                h = 60 * ((r - g) / delta + 4);
-            }
-            s = delta / (255 - Math.abs(2 * l - 255));
-        }
-        return [h, s, l];
+    if (delta > 0) {
+      if (r === cmax) {
+        h = 60 * (((g - b) / delta + 6) % 6);
+      } else if (g === cmax) {
+        h = 60 * ((b - r) / delta + 2);
+      } else {
+        h = 60 * ((r - g) / delta + 4);
+      }
+      s = delta / (255 - Math.abs(2 * l - 255));
     }
+    return [h, s, l];
+  }
 
-    function hslToRgb(h, s, l) {
-        var c = (255 - Math.abs(2 * l - 255)) * s;
-        var x = c * (1 - Math.abs((h / 60) % 2 - 1));
-        var m = l - c / 2;
-        var cm = c + m;
-        var xm = x + m;
+  function hslToRgb(h, s, l) {
+    var c = (255 - Math.abs(2 * l - 255)) * s;
+    var x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+    var m = l - c / 2;
+    var cm = c + m;
+    var xm = x + m;
 
-        if (h < 60) {
-            return [cm, xm, m];
-        } else if (h < 120) {
-            return [xm, cm, m];
-        } else if (h < 180) {
-            return [m, cm, xm];
-        } else if (h < 240) {
-            return [m, xm, cm];
-        } else if (h < 300) {
-            return [xm, m, cm];
-        } else {
-            return [cm, m, xm];
-        }
+    if (h < 60) {
+      return [cm, xm, m];
+    } else if (h < 120) {
+      return [xm, cm, m];
+    } else if (h < 180) {
+      return [m, cm, xm];
+    } else if (h < 240) {
+      return [m, xm, cm];
+    } else if (h < 300) {
+      return [xm, m, cm];
+    } else {
+      return [cm, m, xm];
     }
+  }
 
-    if (offset && this.width > 0 && this.height > 0) {
-        offset = ((offset % 360) + 360) % 360;
-        var context = this._context;
-        var imageData = context.getImageData(0, 0, this.width, this.height);
-        var pixels = imageData.data;
-        for (var i = 0; i < pixels.length; i += 4) {
-            var hsl = rgbToHsl(pixels[i + 0], pixels[i + 1], pixels[i + 2]);
-            var h = (hsl[0] + offset) % 360;
-            var s = hsl[1];
-            var l = hsl[2];
-            var rgb = hslToRgb(h, s, l);
-            pixels[i + 0] = rgb[0];
-            pixels[i + 1] = rgb[1];
-            pixels[i + 2] = rgb[2];
-        }
-        context.putImageData(imageData, 0, 0);
-        this._setDirty();
+  if (offset && this.width > 0 && this.height > 0) {
+    offset = ((offset % 360) + 360) % 360;
+    var context = this._context;
+    var imageData = context.getImageData(0, 0, this.width, this.height);
+    var pixels = imageData.data;
+    for (var i = 0; i < pixels.length; i += 4) {
+      var hsl = rgbToHsl(pixels[i + 0], pixels[i + 1], pixels[i + 2]);
+      var h = (hsl[0] + offset) % 360;
+      var s = hsl[1];
+      var l = hsl[2];
+      var rgb = hslToRgb(h, s, l);
+      pixels[i + 0] = rgb[0];
+      pixels[i + 1] = rgb[1];
+      pixels[i + 2] = rgb[2];
     }
+    context.putImageData(imageData, 0, 0);
+    this._setDirty();
+  }
 };
 
 /**
@@ -1471,33 +1523,33 @@ Bitmap.prototype.rotateHue = function (offset) {
  * @method blur
  */
 Bitmap.prototype.blur = function () {
-    for (var i = 0; i < 2; i++) {
-        var w = this.width;
-        var h = this.height;
-        var canvas = this._canvas;
-        var context = this._context;
-        var tempCanvas = document.createElement('canvas');
-        var tempContext = tempCanvas.getContext('2d');
-        tempCanvas.width = w + 2;
-        tempCanvas.height = h + 2;
-        tempContext.drawImage(canvas, 0, 0, w, h, 1, 1, w, h);
-        tempContext.drawImage(canvas, 0, 0, w, 1, 1, 0, w, 1);
-        tempContext.drawImage(canvas, 0, 0, 1, h, 0, 1, 1, h);
-        tempContext.drawImage(canvas, 0, h - 1, w, 1, 1, h + 1, w, 1);
-        tempContext.drawImage(canvas, w - 1, 0, 1, h, w + 1, 1, 1, h);
-        context.save();
-        context.fillStyle = 'black';
-        context.fillRect(0, 0, w, h);
-        context.globalCompositeOperation = 'lighter';
-        context.globalAlpha = 1 / 9;
-        for (var y = 0; y < 3; y++) {
-            for (var x = 0; x < 3; x++) {
-                context.drawImage(tempCanvas, x, y, w, h, 0, 0, w, h);
-            }
-        }
-        context.restore();
+  for (var i = 0; i < 2; i++) {
+    var w = this.width;
+    var h = this.height;
+    var canvas = this._canvas;
+    var context = this._context;
+    var tempCanvas = document.createElement("canvas");
+    var tempContext = tempCanvas.getContext("2d");
+    tempCanvas.width = w + 2;
+    tempCanvas.height = h + 2;
+    tempContext.drawImage(canvas, 0, 0, w, h, 1, 1, w, h);
+    tempContext.drawImage(canvas, 0, 0, w, 1, 1, 0, w, 1);
+    tempContext.drawImage(canvas, 0, 0, 1, h, 0, 1, 1, h);
+    tempContext.drawImage(canvas, 0, h - 1, w, 1, 1, h + 1, w, 1);
+    tempContext.drawImage(canvas, w - 1, 0, 1, h, w + 1, 1, 1, h);
+    context.save();
+    context.fillStyle = "black";
+    context.fillRect(0, 0, w, h);
+    context.globalCompositeOperation = "lighter";
+    context.globalAlpha = 1 / 9;
+    for (var y = 0; y < 3; y++) {
+      for (var x = 0; x < 3; x++) {
+        context.drawImage(tempCanvas, x, y, w, h, 0, 0, w, h);
+      }
     }
-    this._setDirty();
+    context.restore();
+  }
+  this._setDirty();
 };
 
 /**
@@ -1507,11 +1559,11 @@ Bitmap.prototype.blur = function () {
  * @param {Function} listner The callback function
  */
 Bitmap.prototype.addLoadListener = function (listner) {
-    if (!this.isReady()) {
-        this._loadListeners.push(listner);
-    } else {
-        listner(this);
-    }
+  if (!this.isReady()) {
+    this._loadListeners.push(listner);
+  } else {
+    listner(this);
+  }
 };
 
 /**
@@ -1519,8 +1571,9 @@ Bitmap.prototype.addLoadListener = function (listner) {
  * @private
  */
 Bitmap.prototype._makeFontNameText = function () {
-    return (this.fontItalic ? 'Italic ' : '') +
-        this.fontSize + 'px ' + this.fontFace;
+  return (
+    (this.fontItalic ? "Italic " : "") + this.fontSize + "px " + this.fontFace
+  );
 };
 
 /**
@@ -1532,11 +1585,11 @@ Bitmap.prototype._makeFontNameText = function () {
  * @private
  */
 Bitmap.prototype._drawTextOutline = function (text, tx, ty, maxWidth) {
-    var context = this._context;
-    context.strokeStyle = this.outlineColor;
-    context.lineWidth = this.outlineWidth;
-    context.lineJoin = 'round';
-    context.strokeText(text, tx, ty, maxWidth);
+  var context = this._context;
+  context.strokeStyle = this.outlineColor;
+  context.lineWidth = this.outlineWidth;
+  context.lineJoin = "round";
+  context.strokeText(text, tx, ty, maxWidth);
 };
 
 /**
@@ -1548,9 +1601,9 @@ Bitmap.prototype._drawTextOutline = function (text, tx, ty, maxWidth) {
  * @private
  */
 Bitmap.prototype._drawTextBody = function (text, tx, ty, maxWidth) {
-    var context = this._context;
-    context.fillStyle = this.textColor;
-    context.fillText(text, tx, ty, maxWidth);
+  var context = this._context;
+  context.fillStyle = this.textColor;
+  context.fillText(text, tx, ty, maxWidth);
 };
 
 /**
@@ -1558,59 +1611,70 @@ Bitmap.prototype._drawTextBody = function (text, tx, ty, maxWidth) {
  * @private
  */
 Bitmap.prototype._onLoad = function () {
-    this._image.removeEventListener('load', this._loadListener);
-    this._image.removeEventListener('error', this._errorListener);
+  this._image.removeEventListener("load", this._loadListener);
+  this._image.removeEventListener("error", this._errorListener);
 
-    this._renewCanvas();
+  this._renewCanvas();
 
-    switch (this._loadingState) {
-        case 'requesting':
-            this._loadingState = 'requestCompleted';
-            if (this._decodeAfterRequest) {
-                this.decode();
-            } else {
-                this._loadingState = 'purged';
-                this._clearImgInstance();
-            }
-            break;
+  switch (this._loadingState) {
+    case "requesting":
+      this._loadingState = "requestCompleted";
+      if (this._decodeAfterRequest) {
+        this.decode();
+      } else {
+        this._loadingState = "purged";
+        this._clearImgInstance();
+      }
+      break;
 
-        case 'decrypting':
-            window.URL.revokeObjectURL(this._image.src);
-            this._loadingState = 'decryptCompleted';
-            if (this._decodeAfterRequest) {
-                this.decode();
-            } else {
-                this._loadingState = 'purged';
-                this._clearImgInstance();
-            }
-            break;
-    }
+    case "decrypting":
+      window.URL.revokeObjectURL(this._image.src);
+      this._loadingState = "decryptCompleted";
+      if (this._decodeAfterRequest) {
+        this.decode();
+      } else {
+        this._loadingState = "purged";
+        this._clearImgInstance();
+      }
+      break;
+  }
 };
 
 Bitmap.prototype.decode = function () {
-    switch (this._loadingState) {
-        case 'requestCompleted': case 'decryptCompleted':
-            this._loadingState = 'loaded';
+  switch (this._loadingState) {
+    case "requestCompleted":
+    case "decryptCompleted":
+      this._loadingState = "loaded";
 
-            if (!this.__canvas) this._createBaseTexture(this._image);
-            this._setDirty();
-            this._callLoadListeners();
-            break;
+      if (!this.__canvas) this._createBaseTexture(this._image);
+      this._setDirty();
+      this._callLoadListeners();
+      break;
 
-        case 'requesting': case 'decrypting':
-            this._decodeAfterRequest = true;
-            if (!this._loader) {
-                this._loader = ResourceHandler.createLoader(this._url, this._requestImage.bind(this, this._url), this._onError.bind(this));
-                this._image.removeEventListener('error', this._errorListener);
-                this._image.addEventListener('error', this._errorListener = this._loader);
-            }
-            break;
+    case "requesting":
+    case "decrypting":
+      this._decodeAfterRequest = true;
+      if (!this._loader) {
+        this._loader = ResourceHandler.createLoader(
+          this._url,
+          this._requestImage.bind(this, this._url),
+          this._onError.bind(this)
+        );
+        this._image.removeEventListener("error", this._errorListener);
+        this._image.addEventListener(
+          "error",
+          (this._errorListener = this._loader)
+        );
+      }
+      break;
 
-        case 'pending': case 'purged': case 'error':
-            this._decodeAfterRequest = true;
-            this._requestImage(this._url);
-            break;
-    }
+    case "pending":
+    case "purged":
+    case "error":
+      this._decodeAfterRequest = true;
+      this._requestImage(this._url);
+      break;
+  }
 };
 
 /**
@@ -1618,10 +1682,10 @@ Bitmap.prototype.decode = function () {
  * @private
  */
 Bitmap.prototype._callLoadListeners = function () {
-    while (this._loadListeners.length > 0) {
-        var listener = this._loadListeners.shift();
-        listener(this);
-    }
+  while (this._loadListeners.length > 0) {
+    var listener = this._loadListeners.shift();
+    listener(this);
+  }
 };
 
 /**
@@ -1629,9 +1693,9 @@ Bitmap.prototype._callLoadListeners = function () {
  * @private
  */
 Bitmap.prototype._onError = function () {
-    this._image.removeEventListener('load', this._loadListener);
-    this._image.removeEventListener('error', this._errorListener);
-    this._loadingState = 'error';
+  this._image.removeEventListener("load", this._loadListener);
+  this._image.removeEventListener("error", this._errorListener);
+  this._loadingState = "error";
 };
 
 /**
@@ -1639,7 +1703,7 @@ Bitmap.prototype._onError = function () {
  * @private
  */
 Bitmap.prototype._setDirty = function () {
-    this._dirty = true;
+  this._dirty = true;
 };
 
 /**
@@ -1647,64 +1711,77 @@ Bitmap.prototype._setDirty = function () {
  * @method checkDirty
  */
 Bitmap.prototype.checkDirty = function () {
-    if (this._dirty) {
-        this._baseTexture.update();
-        this._dirty = false;
-    }
+  if (this._dirty) {
+    this._baseTexture.update();
+    this._dirty = false;
+  }
 };
 
 Bitmap.request = function (url) {
-    var bitmap = Object.create(Bitmap.prototype);
-    bitmap._defer = true;
-    bitmap.initialize();
+  var bitmap = Object.create(Bitmap.prototype);
+  bitmap._defer = true;
+  bitmap.initialize();
 
-    bitmap._url = url;
-    bitmap._loadingState = 'pending';
+  bitmap._url = url;
+  bitmap._loadingState = "pending";
 
-    return bitmap;
+  return bitmap;
 };
 
 Bitmap.prototype._requestImage = function (url) {
-    if (Bitmap._reuseImages.length !== 0) {
-        this._image = Bitmap._reuseImages.pop();
-    } else {
-        this._image = new Image();
-    }
-
-    if (this._decodeAfterRequest && !this._loader) {
-        this._loader = ResourceHandler.createLoader(url, this._requestImage.bind(this, url), this._onError.bind(this));
-    }
-
+  if (Bitmap._reuseImages.length !== 0) {
+    this._image = Bitmap._reuseImages.pop();
+  } else {
     this._image = new Image();
-    this._url = url;
-    this._loadingState = 'requesting';
+  }
 
-    if (!Decrypter.checkImgIgnore(url) && Decrypter.hasEncryptedImages) {
-        this._loadingState = 'decrypting';
-        Decrypter.decryptImg(url, this);
-    } else {
-        this._image.src = url;
+  if (this._decodeAfterRequest && !this._loader) {
+    this._loader = ResourceHandler.createLoader(
+      url,
+      this._requestImage.bind(this, url),
+      this._onError.bind(this)
+    );
+  }
 
-        this._image.addEventListener('load', this._loadListener = Bitmap.prototype._onLoad.bind(this));
-        this._image.addEventListener('error', this._errorListener = this._loader || Bitmap.prototype._onError.bind(this));
-    }
+  this._image = new Image();
+  this._url = url;
+  this._loadingState = "requesting";
+
+  if (!Decrypter.checkImgIgnore(url) && Decrypter.hasEncryptedImages) {
+    this._loadingState = "decrypting";
+    Decrypter.decryptImg(url, this);
+  } else {
+    this._image.src = url;
+
+    this._image.addEventListener(
+      "load",
+      (this._loadListener = Bitmap.prototype._onLoad.bind(this))
+    );
+    this._image.addEventListener(
+      "error",
+      (this._errorListener =
+        this._loader || Bitmap.prototype._onError.bind(this))
+    );
+  }
 };
 
 Bitmap.prototype.isRequestOnly = function () {
-    return !(this._decodeAfterRequest || this.isReady());
+  return !(this._decodeAfterRequest || this.isReady());
 };
 
 Bitmap.prototype.isRequestReady = function () {
-    return this._loadingState !== 'pending' &&
-        this._loadingState !== 'requesting' &&
-        this._loadingState !== 'decrypting';
+  return (
+    this._loadingState !== "pending" &&
+    this._loadingState !== "requesting" &&
+    this._loadingState !== "decrypting"
+  );
 };
 
 Bitmap.prototype.startRequest = function () {
-    if (this._loadingState === 'pending') {
-        this._decodeAfterRequest = false;
-        this._requestImage(this._url);
-    }
+  if (this._loadingState === "pending") {
+    this._decodeAfterRequest = false;
+    this._requestImage(this._url);
+  }
 };
 
 //-----------------------------------------------------------------------------
@@ -1714,7 +1791,7 @@ Bitmap.prototype.startRequest = function () {
  * @class Graphics
  */
 function Graphics() {
-    throw new Error('This is a static class');
+  throw new Error("This is a static class");
 }
 
 Graphics._cssFontLoading = document.fonts && document.fonts.ready;
@@ -1732,60 +1809,61 @@ Graphics._videoVolume = 1;
  *                 'canvas', 'webgl', or 'auto'.
  */
 Graphics.initialize = function (width, height, type) {
-    this._width = width || 800;
-    this._height = height || 600;
-    this._rendererType = type || 'auto';
-    this._boxWidth = this._width;
-    this._boxHeight = this._height;
+  this._width = width || 800;
+  this._height = height || 600;
+  this._rendererType = type || "auto";
+  this._boxWidth = this._width;
+  this._boxHeight = this._height;
 
-    this._scale = 1;
-    this._realScale = 1;
+  this._scale = 1;
+  this._realScale = 1;
 
-    this._errorShowed = false;
-    this._errorPrinter = null;
-    this._canvas = null;
-    this._video = null;
-    this._videoUnlocked = false;
-    this._videoLoading = false;
-    this._upperCanvas = null;
-    this._renderer = null;
-    this._fpsMeter = null;
-    this._modeBox = null;
-    this._skipCount = 0;
-    this._maxSkip = 3;
-    this._rendered = false;
-    this._loadingImage = null;
-    this._loadingCount = 0;
-    this._fpsMeterToggled = false;
-    this._stretchEnabled = this._defaultStretchMode();
+  this._errorShowed = false;
+  this._errorPrinter = null;
+  this._canvas = null;
+  this._video = null;
+  this._videoUnlocked = false;
+  this._videoLoading = false;
+  this._upperCanvas = null;
+  this._renderer = null;
+  this._fpsMeter = null;
+  this._modeBox = null;
+  this._skipCount = 0;
+  this._maxSkip = 3;
+  this._rendered = false;
+  this._loadingImage = null;
+  this._loadingCount = 0;
+  this._fpsMeterToggled = false;
+  this._stretchEnabled = this._defaultStretchMode();
 
-    this._canUseDifferenceBlend = false;
-    this._canUseSaturationBlend = false;
-    this._hiddenCanvas = null;
+  this._canUseDifferenceBlend = false;
+  this._canUseSaturationBlend = false;
+  this._hiddenCanvas = null;
 
-    this._testCanvasBlendModes();
-    this._modifyExistingElements();
-    this._updateRealScale();
-    this._createAllElements();
-    this._disableTextSelection();
-    this._disableContextMenu();
-    this._setupEventHandlers();
-    this._setupCssFontLoading();
+  this._testCanvasBlendModes();
+  this._modifyExistingElements();
+  this._updateRealScale();
+  this._createAllElements();
+  this._disableTextSelection();
+  this._disableContextMenu();
+  this._setupEventHandlers();
+  this._setupCssFontLoading();
 };
 
-
 Graphics._setupCssFontLoading = function () {
-    if (Graphics._cssFontLoading) {
-        document.fonts.ready.then(function (fonts) {
-            Graphics._fontLoaded = fonts;
-        }).catch(function (error) {
-            SceneManager.onError(error);
-        });
-    }
+  if (Graphics._cssFontLoading) {
+    document.fonts.ready
+      .then(function (fonts) {
+        Graphics._fontLoaded = fonts;
+      })
+      .catch(function (error) {
+        SceneManager.onError(error);
+      });
+  }
 };
 
 Graphics.canUseCssFontLoading = function () {
-    return !!this._cssFontLoading;
+  return !!this._cssFontLoading;
 };
 
 /**
@@ -1844,9 +1922,9 @@ Graphics.BLEND_SCREEN = 3;
  * @method tickStart
  */
 Graphics.tickStart = function () {
-    if (this._fpsMeter) {
-        this._fpsMeter.tickStart();
-    }
+  if (this._fpsMeter) {
+    this._fpsMeter.tickStart();
+  }
 };
 
 /**
@@ -1856,9 +1934,9 @@ Graphics.tickStart = function () {
  * @method tickEnd
  */
 Graphics.tickEnd = function () {
-    if (this._fpsMeter && this._rendered) {
-        this._fpsMeter.tick();
-    }
+  if (this._fpsMeter && this._rendered) {
+    this._fpsMeter.tick();
+  }
 };
 
 /**
@@ -1869,23 +1947,23 @@ Graphics.tickEnd = function () {
  * @param {Stage} stage The stage object to be rendered
  */
 Graphics.render = function (stage) {
-    if (this._skipCount === 0) {
-        var startTime = Date.now();
-        if (stage) {
-            this._renderer.render(stage);
-            if (this._renderer.gl && this._renderer.gl.flush) {
-                this._renderer.gl.flush();
-            }
-        }
-        var endTime = Date.now();
-        var elapsed = endTime - startTime;
-        this._skipCount = Math.min(Math.floor(elapsed / 15), this._maxSkip);
-        this._rendered = true;
-    } else {
-        this._skipCount--;
-        this._rendered = false;
+  if (this._skipCount === 0) {
+    var startTime = Date.now();
+    if (stage) {
+      this._renderer.render(stage);
+      if (this._renderer.gl && this._renderer.gl.flush) {
+        this._renderer.gl.flush();
+      }
     }
-    this.frameCount++;
+    var endTime = Date.now();
+    var elapsed = endTime - startTime;
+    this._skipCount = Math.min(Math.floor(elapsed / 15), this._maxSkip);
+    this._rendered = true;
+  } else {
+    this._skipCount--;
+    this._rendered = false;
+  }
+  this.frameCount++;
 };
 
 /**
@@ -1896,7 +1974,7 @@ Graphics.render = function (stage) {
  * @return {Boolean} True if the renderer type is WebGL
  */
 Graphics.isWebGL = function () {
-    return this._renderer && this._renderer.type === PIXI.RENDERER_TYPE.WEBGL;
+  return this._renderer && this._renderer.type === PIXI.RENDERER_TYPE.WEBGL;
 };
 
 /**
@@ -1907,12 +1985,14 @@ Graphics.isWebGL = function () {
  * @return {Boolean} True if the current browser supports WebGL.
  */
 Graphics.hasWebGL = function () {
-    try {
-        var canvas = document.createElement('canvas');
-        return !!(canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
-    } catch (e) {
-        return false;
-    }
+  try {
+    var canvas = document.createElement("canvas");
+    return !!(
+      canvas.getContext("webgl") || canvas.getContext("experimental-webgl")
+    );
+  } catch (e) {
+    return false;
+  }
 };
 
 /**
@@ -1923,7 +2003,7 @@ Graphics.hasWebGL = function () {
  * @return {Boolean} True if the canvas blend mode 'difference' is supported
  */
 Graphics.canUseDifferenceBlend = function () {
-    return this._canUseDifferenceBlend;
+  return this._canUseDifferenceBlend;
 };
 
 /**
@@ -1934,7 +2014,7 @@ Graphics.canUseDifferenceBlend = function () {
  * @return {Boolean} True if the canvas blend mode 'saturation' is supported
  */
 Graphics.canUseSaturationBlend = function () {
-    return this._canUseSaturationBlend;
+  return this._canUseSaturationBlend;
 };
 
 /**
@@ -1944,8 +2024,8 @@ Graphics.canUseSaturationBlend = function () {
  * @method setLoadingImage
  */
 Graphics.setLoadingImage = function (src) {
-    this._loadingImage = new Image();
-    this._loadingImage.src = src;
+  this._loadingImage = new Image();
+  this._loadingImage.src = src;
 };
 
 /**
@@ -1955,7 +2035,7 @@ Graphics.setLoadingImage = function (src) {
  * @method startLoading
  */
 Graphics.startLoading = function () {
-    this._loadingCount = 0;
+  this._loadingCount = 0;
 };
 
 /**
@@ -1965,9 +2045,9 @@ Graphics.startLoading = function () {
  * @method updateLoading
  */
 Graphics.updateLoading = function () {
-    this._loadingCount++;
-    this._paintUpperCanvas();
-    this._upperCanvas.style.opacity = 1;
+  this._loadingCount++;
+  this._paintUpperCanvas();
+  this._upperCanvas.style.opacity = 1;
 };
 
 /**
@@ -1977,8 +2057,8 @@ Graphics.updateLoading = function () {
  * @method endLoading
  */
 Graphics.endLoading = function () {
-    this._clearUpperCanvas();
-    this._upperCanvas.style.opacity = 0;
+  this._clearUpperCanvas();
+  this._upperCanvas.style.opacity = 0;
 };
 
 /**
@@ -1989,20 +2069,23 @@ Graphics.endLoading = function () {
  * @param {String} url The url of the resource failed to load
  */
 Graphics.printLoadingError = function (url) {
-    if (this._errorPrinter && !this._errorShowed) {
-        this._errorPrinter.innerHTML = this._makeErrorHtml('Loading Error', 'Failed to load: ' + url);
-        var button = document.createElement('button');
-        button.innerHTML = 'Retry';
-        button.style.fontSize = '24px';
-        button.style.color = '#ffffff';
-        button.style.backgroundColor = '#000000';
-        button.onmousedown = button.ontouchstart = function (event) {
-            ResourceHandler.retry();
-            event.stopPropagation();
-        };
-        this._errorPrinter.appendChild(button);
-        this._loadingCount = -Infinity;
-    }
+  if (this._errorPrinter && !this._errorShowed) {
+    this._errorPrinter.innerHTML = this._makeErrorHtml(
+      "Loading Error",
+      "Failed to load: " + url
+    );
+    var button = document.createElement("button");
+    button.innerHTML = "Retry";
+    button.style.fontSize = "24px";
+    button.style.color = "#ffffff";
+    button.style.backgroundColor = "#000000";
+    button.onmousedown = button.ontouchstart = function (event) {
+      ResourceHandler.retry();
+      event.stopPropagation();
+    };
+    this._errorPrinter.appendChild(button);
+    this._loadingCount = -Infinity;
+  }
 };
 
 /**
@@ -2012,10 +2095,10 @@ Graphics.printLoadingError = function (url) {
  * @method eraseLoadingError
  */
 Graphics.eraseLoadingError = function () {
-    if (this._errorPrinter && !this._errorShowed) {
-        this._errorPrinter.innerHTML = '';
-        this.startLoading();
-    }
+  if (this._errorPrinter && !this._errorShowed) {
+    this._errorPrinter.innerHTML = "";
+    this.startLoading();
+  }
 };
 
 /**
@@ -2027,12 +2110,12 @@ Graphics.eraseLoadingError = function () {
  * @param {String} message The message of the error
  */
 Graphics.printError = function (name, message) {
-    this._errorShowed = true;
-    if (this._errorPrinter) {
-        this._errorPrinter.innerHTML = this._makeErrorHtml(name, message);
-    }
-    this._applyCanvasFilter();
-    this._clearUpperCanvas();
+  this._errorShowed = true;
+  if (this._errorPrinter) {
+    this._errorPrinter.innerHTML = this._makeErrorHtml(name, message);
+  }
+  this._applyCanvasFilter();
+  this._clearUpperCanvas();
 };
 
 /**
@@ -2042,10 +2125,10 @@ Graphics.printError = function (name, message) {
  * @method showFps
  */
 Graphics.showFps = function () {
-    if (this._fpsMeter) {
-        this._fpsMeter.show();
-        this._modeBox.style.opacity = 1;
-    }
+  if (this._fpsMeter) {
+    this._fpsMeter.show();
+    this._modeBox.style.opacity = 1;
+  }
 };
 
 /**
@@ -2055,10 +2138,10 @@ Graphics.showFps = function () {
  * @method hideFps
  */
 Graphics.hideFps = function () {
-    if (this._fpsMeter) {
-        this._fpsMeter.hide();
-        this._modeBox.style.opacity = 0;
-    }
+  if (this._fpsMeter) {
+    this._fpsMeter.hide();
+    this._modeBox.style.opacity = 0;
+  }
 };
 
 /**
@@ -2070,13 +2153,14 @@ Graphics.hideFps = function () {
  * @param {String} url The url of the font file
  */
 Graphics.loadFont = function (name, url) {
-    var style = document.createElement('style');
-    var head = document.getElementsByTagName('head');
-    var rule = '@font-face { font-family: "' + name + '"; src: url("' + url + '"); }';
-    style.type = 'text/css';
-    head.item(0).appendChild(style);
-    style.sheet.insertRule(rule, 0);
-    this._createFontLoader(name);
+  var style = document.createElement("style");
+  var head = document.getElementsByTagName("head");
+  var rule =
+    '@font-face { font-family: "' + name + '"; src: url("' + url + '"); }';
+  style.type = "text/css";
+  head.item(0).appendChild(style);
+  style.sheet.insertRule(rule, 0);
+  this._createFontLoader(name);
 };
 
 /**
@@ -2088,25 +2172,25 @@ Graphics.loadFont = function (name, url) {
  * @return {Boolean} True if the font file is loaded
  */
 Graphics.isFontLoaded = function (name) {
-    if (Graphics._cssFontLoading) {
-        if (Graphics._fontLoaded) {
-            return Graphics._fontLoaded.check('10px "' + name + '"');
-        }
-
-        return false;
-    } else {
-        if (!this._hiddenCanvas) {
-            this._hiddenCanvas = document.createElement('canvas');
-        }
-        var context = this._hiddenCanvas.getContext('2d');
-        var text = 'abcdefghijklmnopqrstuvwxyz';
-        var width1, width2;
-        context.font = '40px ' + name + ', sans-serif';
-        width1 = context.measureText(text).width;
-        context.font = '40px sans-serif';
-        width2 = context.measureText(text).width;
-        return width1 !== width2;
+  if (Graphics._cssFontLoading) {
+    if (Graphics._fontLoaded) {
+      return Graphics._fontLoaded.check('10px "' + name + '"');
     }
+
+    return false;
+  } else {
+    if (!this._hiddenCanvas) {
+      this._hiddenCanvas = document.createElement("canvas");
+    }
+    var context = this._hiddenCanvas.getContext("2d");
+    var text = "abcdefghijklmnopqrstuvwxyz";
+    var width1, width2;
+    context.font = "40px " + name + ", sans-serif";
+    width1 = context.measureText(text).width;
+    context.font = "40px sans-serif";
+    width2 = context.measureText(text).width;
+    return width1 !== width2;
+  }
 };
 
 /**
@@ -2117,8 +2201,12 @@ Graphics.isFontLoaded = function (name) {
  * @param {String} src
  */
 Graphics.playVideo = function (src) {
-    this._videoLoader = ResourceHandler.createLoader(null, this._playVideo.bind(this, src), this._onVideoError.bind(this));
-    this._playVideo(src);
+  this._videoLoader = ResourceHandler.createLoader(
+    null,
+    this._playVideo.bind(this, src),
+    this._onVideoError.bind(this)
+  );
+  this._playVideo(src);
 };
 
 /**
@@ -2128,12 +2216,12 @@ Graphics.playVideo = function (src) {
  * @private
  */
 Graphics._playVideo = function (src) {
-    this._video.src = src;
-    this._video.onloadeddata = this._onVideoLoad.bind(this);
-    this._video.onerror = this._videoLoader;
-    this._video.onended = this._onVideoEnd.bind(this);
-    this._video.load();
-    this._videoLoading = true;
+  this._video.src = src;
+  this._video.onloadeddata = this._onVideoLoad.bind(this);
+  this._video.onerror = this._videoLoader;
+  this._video.onended = this._onVideoEnd.bind(this);
+  this._video.load();
+  this._videoLoading = true;
 };
 
 /**
@@ -2144,7 +2232,7 @@ Graphics._playVideo = function (src) {
  * @return {Boolean} True if the video is playing
  */
 Graphics.isVideoPlaying = function () {
-    return this._videoLoading || this._isVideoVisible();
+  return this._videoLoading || this._isVideoVisible();
 };
 
 /**
@@ -2156,7 +2244,7 @@ Graphics.isVideoPlaying = function () {
  * @return {Boolean} True if the browser can play the specified video type
  */
 Graphics.canPlayVideoType = function (type) {
-    return this._video && this._video.canPlayType(type);
+  return this._video && this._video.canPlayType(type);
 };
 
 /**
@@ -2167,10 +2255,10 @@ Graphics.canPlayVideoType = function (type) {
  * @param {Number} value
  */
 Graphics.setVideoVolume = function (value) {
-    this._videoVolume = value;
-    if (this._video) {
-        this._video.volume = this._videoVolume;
-    }
+  this._videoVolume = value;
+  if (this._video) {
+    this._video.volume = this._videoVolume;
+  }
 };
 
 /**
@@ -2183,12 +2271,12 @@ Graphics.setVideoVolume = function (value) {
  * @return {Number} The x coordinate on the canvas area
  */
 Graphics.pageToCanvasX = function (x) {
-    if (this._canvas) {
-        var left = this._canvas.offsetLeft;
-        return Math.round((x - left) / this._realScale);
-    } else {
-        return 0;
-    }
+  if (this._canvas) {
+    var left = this._canvas.offsetLeft;
+    return Math.round((x - left) / this._realScale);
+  } else {
+    return 0;
+  }
 };
 
 /**
@@ -2201,12 +2289,12 @@ Graphics.pageToCanvasX = function (x) {
  * @return {Number} The y coordinate on the canvas area
  */
 Graphics.pageToCanvasY = function (y) {
-    if (this._canvas) {
-        var top = this._canvas.offsetTop;
-        return Math.round((y - top) / this._realScale);
-    } else {
-        return 0;
-    }
+  if (this._canvas) {
+    var top = this._canvas.offsetTop;
+    return Math.round((y - top) / this._realScale);
+  } else {
+    return 0;
+  }
 };
 
 /**
@@ -2219,18 +2307,17 @@ Graphics.pageToCanvasY = function (y) {
  * @return {Boolean} True if the specified point is inside the game canvas area
  */
 Graphics.isInsideCanvas = function (x, y) {
-    return (x >= 0 && x < this._width && y >= 0 && y < this._height);
+  return x >= 0 && x < this._width && y >= 0 && y < this._height;
 };
 
 /**
  * Calls pixi.js garbage collector
  */
 Graphics.callGC = function () {
-    if (Graphics.isWebGL()) {
-        Graphics._renderer.textureGC.run();
-    }
+  if (Graphics.isWebGL()) {
+    Graphics._renderer.textureGC.run();
+  }
 };
-
 
 /**
  * The width of the game screen.
@@ -2239,17 +2326,17 @@ Graphics.callGC = function () {
  * @property width
  * @type Number
  */
-Object.defineProperty(Graphics, 'width', {
-    get: function () {
-        return this._width;
-    },
-    set: function (value) {
-        if (this._width !== value) {
-            this._width = value;
-            this._updateAllElements();
-        }
-    },
-    configurable: true
+Object.defineProperty(Graphics, "width", {
+  get: function () {
+    return this._width;
+  },
+  set: function (value) {
+    if (this._width !== value) {
+      this._width = value;
+      this._updateAllElements();
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -2259,17 +2346,17 @@ Object.defineProperty(Graphics, 'width', {
  * @property height
  * @type Number
  */
-Object.defineProperty(Graphics, 'height', {
-    get: function () {
-        return this._height;
-    },
-    set: function (value) {
-        if (this._height !== value) {
-            this._height = value;
-            this._updateAllElements();
-        }
-    },
-    configurable: true
+Object.defineProperty(Graphics, "height", {
+  get: function () {
+    return this._height;
+  },
+  set: function (value) {
+    if (this._height !== value) {
+      this._height = value;
+      this._updateAllElements();
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -2279,14 +2366,14 @@ Object.defineProperty(Graphics, 'height', {
  * @property boxWidth
  * @type Number
  */
-Object.defineProperty(Graphics, 'boxWidth', {
-    get: function () {
-        return this._boxWidth;
-    },
-    set: function (value) {
-        this._boxWidth = value;
-    },
-    configurable: true
+Object.defineProperty(Graphics, "boxWidth", {
+  get: function () {
+    return this._boxWidth;
+  },
+  set: function (value) {
+    this._boxWidth = value;
+  },
+  configurable: true,
 });
 
 /**
@@ -2296,14 +2383,14 @@ Object.defineProperty(Graphics, 'boxWidth', {
  * @property boxHeight
  * @type Number
  */
-Object.defineProperty(Graphics, 'boxHeight', {
-    get: function () {
-        return this._boxHeight;
-    },
-    set: function (value) {
-        this._boxHeight = value;
-    },
-    configurable: true
+Object.defineProperty(Graphics, "boxHeight", {
+  get: function () {
+    return this._boxHeight;
+  },
+  set: function (value) {
+    this._boxHeight = value;
+  },
+  configurable: true,
 });
 
 /**
@@ -2313,17 +2400,17 @@ Object.defineProperty(Graphics, 'boxHeight', {
  * @property scale
  * @type Number
  */
-Object.defineProperty(Graphics, 'scale', {
-    get: function () {
-        return this._scale;
-    },
-    set: function (value) {
-        if (this._scale !== value) {
-            this._scale = value;
-            this._updateAllElements();
-        }
-    },
-    configurable: true
+Object.defineProperty(Graphics, "scale", {
+  get: function () {
+    return this._scale;
+  },
+  set: function (value) {
+    if (this._scale !== value) {
+      this._scale = value;
+      this._updateAllElements();
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -2332,14 +2419,14 @@ Object.defineProperty(Graphics, 'scale', {
  * @private
  */
 Graphics._createAllElements = function () {
-    this._createErrorPrinter();
-    this._createCanvas();
-    this._createVideo();
-    this._createUpperCanvas();
-    this._createRenderer();
-    this._createFPSMeter();
-    this._createModeBox();
-    this._createGameFontLoader();
+  this._createErrorPrinter();
+  this._createCanvas();
+  this._createVideo();
+  this._createUpperCanvas();
+  this._createRenderer();
+  this._createFPSMeter();
+  this._createModeBox();
+  this._createGameFontLoader();
 };
 
 /**
@@ -2348,13 +2435,13 @@ Graphics._createAllElements = function () {
  * @private
  */
 Graphics._updateAllElements = function () {
-    this._updateRealScale();
-    this._updateErrorPrinter();
-    this._updateCanvas();
-    this._updateVideo();
-    this._updateUpperCanvas();
-    this._updateRenderer();
-    this._paintUpperCanvas();
+  this._updateRealScale();
+  this._updateErrorPrinter();
+  this._updateCanvas();
+  this._updateVideo();
+  this._updateUpperCanvas();
+  this._updateRenderer();
+  this._paintUpperCanvas();
 };
 
 /**
@@ -2363,15 +2450,15 @@ Graphics._updateAllElements = function () {
  * @private
  */
 Graphics._updateRealScale = function () {
-    if (this._stretchEnabled) {
-        var h = window.innerWidth / this._width;
-        var v = window.innerHeight / this._height;
-        if (h >= 1 && h - 0.01 <= 1) h = 1;
-        if (v >= 1 && v - 0.01 <= 1) v = 1;
-        this._realScale = Math.min(h, v);
-    } else {
-        this._realScale = this._scale;
-    }
+  if (this._stretchEnabled) {
+    var h = window.innerWidth / this._width;
+    var v = window.innerHeight / this._height;
+    if (h >= 1 && h - 0.01 <= 1) h = 1;
+    if (v >= 1 && v - 0.01 <= 1) v = 1;
+    this._realScale = Math.min(h, v);
+  } else {
+    this._realScale = this._scale;
+  }
 };
 
 /**
@@ -2383,8 +2470,14 @@ Graphics._updateRealScale = function () {
  * @private
  */
 Graphics._makeErrorHtml = function (name, message) {
-    return ('<font color="yellow"><b>' + name + '</b></font><br>' +
-        '<font color="white">' + message + '</font><br>');
+  return (
+    '<font color="yellow"><b>' +
+    name +
+    "</b></font><br>" +
+    '<font color="white">' +
+    message +
+    "</font><br>"
+  );
 };
 
 /**
@@ -2393,7 +2486,7 @@ Graphics._makeErrorHtml = function (name, message) {
  * @private
  */
 Graphics._defaultStretchMode = function () {
-    return Utils.isNwjs() || Utils.isMobileDevice();
+  return Utils.isNwjs() || Utils.isMobileDevice();
 };
 
 /**
@@ -2402,27 +2495,27 @@ Graphics._defaultStretchMode = function () {
  * @private
  */
 Graphics._testCanvasBlendModes = function () {
-    var canvas, context, imageData1, imageData2;
-    canvas = document.createElement('canvas');
-    canvas.width = 1;
-    canvas.height = 1;
-    context = canvas.getContext('2d');
-    context.globalCompositeOperation = 'source-over';
-    context.fillStyle = 'white';
-    context.fillRect(0, 0, 1, 1);
-    context.globalCompositeOperation = 'difference';
-    context.fillStyle = 'white';
-    context.fillRect(0, 0, 1, 1);
-    imageData1 = context.getImageData(0, 0, 1, 1);
-    context.globalCompositeOperation = 'source-over';
-    context.fillStyle = 'black';
-    context.fillRect(0, 0, 1, 1);
-    context.globalCompositeOperation = 'saturation';
-    context.fillStyle = 'white';
-    context.fillRect(0, 0, 1, 1);
-    imageData2 = context.getImageData(0, 0, 1, 1);
-    this._canUseDifferenceBlend = imageData1.data[0] === 0;
-    this._canUseSaturationBlend = imageData2.data[0] === 0;
+  var canvas, context, imageData1, imageData2;
+  canvas = document.createElement("canvas");
+  canvas.width = 1;
+  canvas.height = 1;
+  context = canvas.getContext("2d");
+  context.globalCompositeOperation = "source-over";
+  context.fillStyle = "white";
+  context.fillRect(0, 0, 1, 1);
+  context.globalCompositeOperation = "difference";
+  context.fillStyle = "white";
+  context.fillRect(0, 0, 1, 1);
+  imageData1 = context.getImageData(0, 0, 1, 1);
+  context.globalCompositeOperation = "source-over";
+  context.fillStyle = "black";
+  context.fillRect(0, 0, 1, 1);
+  context.globalCompositeOperation = "saturation";
+  context.fillStyle = "white";
+  context.fillRect(0, 0, 1, 1);
+  imageData2 = context.getImageData(0, 0, 1, 1);
+  this._canUseDifferenceBlend = imageData1.data[0] === 0;
+  this._canUseSaturationBlend = imageData2.data[0] === 0;
 };
 
 /**
@@ -2431,12 +2524,12 @@ Graphics._testCanvasBlendModes = function () {
  * @private
  */
 Graphics._modifyExistingElements = function () {
-    var elements = document.getElementsByTagName('*');
-    for (var i = 0; i < elements.length; i++) {
-        if (elements[i].style.zIndex > 0) {
-            elements[i].style.zIndex = 0;
-        }
+  var elements = document.getElementsByTagName("*");
+  for (var i = 0; i < elements.length; i++) {
+    if (elements[i].style.zIndex > 0) {
+      elements[i].style.zIndex = 0;
     }
+  }
 };
 
 /**
@@ -2445,10 +2538,10 @@ Graphics._modifyExistingElements = function () {
  * @private
  */
 Graphics._createErrorPrinter = function () {
-    this._errorPrinter = document.createElement('p');
-    this._errorPrinter.id = 'ErrorPrinter';
-    this._updateErrorPrinter();
-    document.body.appendChild(this._errorPrinter);
+  this._errorPrinter = document.createElement("p");
+  this._errorPrinter.id = "ErrorPrinter";
+  this._updateErrorPrinter();
+  document.body.appendChild(this._errorPrinter);
 };
 
 /**
@@ -2457,13 +2550,13 @@ Graphics._createErrorPrinter = function () {
  * @private
  */
 Graphics._updateErrorPrinter = function () {
-    this._errorPrinter.width = this._width * 0.9;
-    this._errorPrinter.height = 40;
-    this._errorPrinter.style.textAlign = 'center';
-    this._errorPrinter.style.textShadow = '1px 1px 3px #000';
-    this._errorPrinter.style.fontSize = '20px';
-    this._errorPrinter.style.zIndex = 99;
-    this._centerElement(this._errorPrinter);
+  this._errorPrinter.width = this._width * 0.9;
+  this._errorPrinter.height = 40;
+  this._errorPrinter.style.textAlign = "center";
+  this._errorPrinter.style.textShadow = "1px 1px 3px #000";
+  this._errorPrinter.style.fontSize = "20px";
+  this._errorPrinter.style.zIndex = 99;
+  this._centerElement(this._errorPrinter);
 };
 
 /**
@@ -2472,10 +2565,10 @@ Graphics._updateErrorPrinter = function () {
  * @private
  */
 Graphics._createCanvas = function () {
-    this._canvas = document.createElement('canvas');
-    this._canvas.id = 'GameCanvas';
-    this._updateCanvas();
-    document.body.appendChild(this._canvas);
+  this._canvas = document.createElement("canvas");
+  this._canvas.id = "GameCanvas";
+  this._updateCanvas();
+  document.body.appendChild(this._canvas);
 };
 
 /**
@@ -2484,10 +2577,10 @@ Graphics._createCanvas = function () {
  * @private
  */
 Graphics._updateCanvas = function () {
-    this._canvas.width = this._width;
-    this._canvas.height = this._height;
-    this._canvas.style.zIndex = 1;
-    this._centerElement(this._canvas);
+  this._canvas.width = this._width;
+  this._canvas.height = this._height;
+  this._canvas.style.zIndex = 1;
+  this._centerElement(this._canvas);
 };
 
 /**
@@ -2496,14 +2589,14 @@ Graphics._updateCanvas = function () {
  * @private
  */
 Graphics._createVideo = function () {
-    this._video = document.createElement('video');
-    this._video.id = 'GameVideo';
-    this._video.style.opacity = 0;
-    this._video.setAttribute('playsinline', '');
-    this._video.volume = this._videoVolume;
-    this._updateVideo();
-    makeVideoPlayableInline(this._video);
-    document.body.appendChild(this._video);
+  this._video = document.createElement("video");
+  this._video.id = "GameVideo";
+  this._video.style.opacity = 0;
+  this._video.setAttribute("playsinline", "");
+  this._video.volume = this._videoVolume;
+  this._updateVideo();
+  makeVideoPlayableInline(this._video);
+  document.body.appendChild(this._video);
 };
 
 /**
@@ -2512,10 +2605,10 @@ Graphics._createVideo = function () {
  * @private
  */
 Graphics._updateVideo = function () {
-    this._video.width = this._width;
-    this._video.height = this._height;
-    this._video.style.zIndex = 2;
-    this._centerElement(this._video);
+  this._video.width = this._width;
+  this._video.height = this._height;
+  this._video.style.zIndex = 2;
+  this._centerElement(this._video);
 };
 
 /**
@@ -2524,10 +2617,10 @@ Graphics._updateVideo = function () {
  * @private
  */
 Graphics._createUpperCanvas = function () {
-    this._upperCanvas = document.createElement('canvas');
-    this._upperCanvas.id = 'UpperCanvas';
-    this._updateUpperCanvas();
-    document.body.appendChild(this._upperCanvas);
+  this._upperCanvas = document.createElement("canvas");
+  this._upperCanvas.id = "UpperCanvas";
+  this._updateUpperCanvas();
+  document.body.appendChild(this._upperCanvas);
 };
 
 /**
@@ -2536,10 +2629,10 @@ Graphics._createUpperCanvas = function () {
  * @private
  */
 Graphics._updateUpperCanvas = function () {
-    this._upperCanvas.width = this._width;
-    this._upperCanvas.height = this._height;
-    this._upperCanvas.style.zIndex = 3;
-    this._centerElement(this._upperCanvas);
+  this._upperCanvas.width = this._width;
+  this._upperCanvas.height = this._height;
+  this._upperCanvas.style.zIndex = 3;
+  this._centerElement(this._upperCanvas);
 };
 
 /**
@@ -2548,8 +2641,8 @@ Graphics._updateUpperCanvas = function () {
  * @private
  */
 Graphics._clearUpperCanvas = function () {
-    var context = this._upperCanvas.getContext('2d');
-    context.clearRect(0, 0, this._width, this._height);
+  var context = this._upperCanvas.getContext("2d");
+  context.clearRect(0, 0, this._width, this._height);
 };
 
 /**
@@ -2558,17 +2651,17 @@ Graphics._clearUpperCanvas = function () {
  * @private
  */
 Graphics._paintUpperCanvas = function () {
-    this._clearUpperCanvas();
-    if (this._loadingImage && this._loadingCount >= 20) {
-        var context = this._upperCanvas.getContext('2d');
-        var dx = (this._width - this._loadingImage.width) / 2;
-        var dy = (this._height - this._loadingImage.height) / 2;
-        var alpha = ((this._loadingCount - 20) / 30).clamp(0, 1);
-        context.save();
-        context.globalAlpha = alpha;
-        context.drawImage(this._loadingImage, dx, dy);
-        context.restore();
-    }
+  this._clearUpperCanvas();
+  if (this._loadingImage && this._loadingCount >= 20) {
+    var context = this._upperCanvas.getContext("2d");
+    var dx = (this._width - this._loadingImage.width) / 2;
+    var dy = (this._height - this._loadingImage.height) / 2;
+    var alpha = ((this._loadingCount - 20) / 30).clamp(0, 1);
+    context.save();
+    context.globalAlpha = alpha;
+    context.drawImage(this._loadingImage, dx, dy);
+    context.restore();
+  }
 };
 
 /**
@@ -2577,29 +2670,28 @@ Graphics._paintUpperCanvas = function () {
  * @private
  */
 Graphics._createRenderer = function () {
-    PIXI.dontSayHello = true;
-    var width = this._width;
-    var height = this._height;
-    var options = { view: this._canvas };
-    try {
-        switch (this._rendererType) {
-            case 'canvas':
-                this._renderer = new PIXI.CanvasRenderer(width, height, options);
-                break;
-            case 'webgl':
-                this._renderer = new PIXI.WebGLRenderer(width, height, options);
-                break;
-            default:
-                this._renderer = PIXI.autoDetectRenderer(width, height, options);
-                break;
-        }
-
-        if (this._renderer && this._renderer.textureGC)
-            this._renderer.textureGC.maxIdle = 1;
-
-    } catch (e) {
-        this._renderer = null;
+  PIXI.dontSayHello = true;
+  var width = this._width;
+  var height = this._height;
+  var options = { view: this._canvas };
+  try {
+    switch (this._rendererType) {
+      case "canvas":
+        this._renderer = new PIXI.CanvasRenderer(width, height, options);
+        break;
+      case "webgl":
+        this._renderer = new PIXI.WebGLRenderer(width, height, options);
+        break;
+      default:
+        this._renderer = PIXI.autoDetectRenderer(width, height, options);
+        break;
     }
+
+    if (this._renderer && this._renderer.textureGC)
+      this._renderer.textureGC.maxIdle = 1;
+  } catch (e) {
+    this._renderer = null;
+  }
 };
 
 /**
@@ -2608,9 +2700,9 @@ Graphics._createRenderer = function () {
  * @private
  */
 Graphics._updateRenderer = function () {
-    if (this._renderer) {
-        this._renderer.resize(this._width, this._height);
-    }
+  if (this._renderer) {
+    this._renderer.resize(this._width, this._height);
+  }
 };
 
 /**
@@ -2619,9 +2711,9 @@ Graphics._updateRenderer = function () {
  * @private
  */
 Graphics._createFPSMeter = function () {
-    var options = { graph: 1, decimals: 0, theme: 'transparent', toggleOn: null };
-    this._fpsMeter = new FPSMeter(options);
-    this._fpsMeter.hide();
+  var options = { graph: 1, decimals: 0, theme: "transparent", toggleOn: null };
+  this._fpsMeter = new FPSMeter(options);
+  this._fpsMeter.hide();
 };
 
 /**
@@ -2630,34 +2722,34 @@ Graphics._createFPSMeter = function () {
  * @private
  */
 Graphics._createModeBox = function () {
-    var box = document.createElement('div');
-    box.id = 'modeTextBack';
-    box.style.position = 'absolute';
-    box.style.left = '5px';
-    box.style.top = '5px';
-    box.style.width = '119px';
-    box.style.height = '58px';
-    box.style.background = 'rgba(0,0,0,0.2)';
-    box.style.zIndex = 9;
-    box.style.opacity = 0;
+  var box = document.createElement("div");
+  box.id = "modeTextBack";
+  box.style.position = "absolute";
+  box.style.left = "5px";
+  box.style.top = "5px";
+  box.style.width = "119px";
+  box.style.height = "58px";
+  box.style.background = "rgba(0,0,0,0.2)";
+  box.style.zIndex = 9;
+  box.style.opacity = 0;
 
-    var text = document.createElement('div');
-    text.id = 'modeText';
-    text.style.position = 'absolute';
-    text.style.left = '0px';
-    text.style.top = '41px';
-    text.style.width = '119px';
-    text.style.fontSize = '12px';
-    text.style.fontFamily = 'monospace';
-    text.style.color = 'white';
-    text.style.textAlign = 'center';
-    text.style.textShadow = '1px 1px 0 rgba(0,0,0,0.5)';
-    text.innerHTML = this.isWebGL() ? 'WebGL mode' : 'Canvas mode';
+  var text = document.createElement("div");
+  text.id = "modeText";
+  text.style.position = "absolute";
+  text.style.left = "0px";
+  text.style.top = "41px";
+  text.style.width = "119px";
+  text.style.fontSize = "12px";
+  text.style.fontFamily = "monospace";
+  text.style.color = "white";
+  text.style.textAlign = "center";
+  text.style.textShadow = "1px 1px 0 rgba(0,0,0,0.5)";
+  text.innerHTML = this.isWebGL() ? "WebGL mode" : "Canvas mode";
 
-    document.body.appendChild(box);
-    box.appendChild(text);
+  document.body.appendChild(box);
+  box.appendChild(text);
 
-    this._modeBox = box;
+  this._modeBox = box;
 };
 
 /**
@@ -2666,7 +2758,7 @@ Graphics._createModeBox = function () {
  * @private
  */
 Graphics._createGameFontLoader = function () {
-    this._createFontLoader('GameFont');
+  this._createFontLoader("GameFont");
 };
 
 /**
@@ -2676,19 +2768,19 @@ Graphics._createGameFontLoader = function () {
  * @private
  */
 Graphics._createFontLoader = function (name) {
-    var div = document.createElement('div');
-    var text = document.createTextNode('.');
-    div.style.fontFamily = name;
-    div.style.fontSize = '0px';
-    div.style.color = 'transparent';
-    div.style.position = 'absolute';
-    div.style.margin = 'auto';
-    div.style.top = '0px';
-    div.style.left = '0px';
-    div.style.width = '1px';
-    div.style.height = '1px';
-    div.appendChild(text);
-    document.body.appendChild(div);
+  var div = document.createElement("div");
+  var text = document.createTextNode(".");
+  div.style.fontFamily = name;
+  div.style.fontSize = "0px";
+  div.style.color = "transparent";
+  div.style.position = "absolute";
+  div.style.margin = "auto";
+  div.style.top = "0px";
+  div.style.left = "0px";
+  div.style.width = "1px";
+  div.style.height = "1px";
+  div.appendChild(text);
+  document.body.appendChild(div);
 };
 
 /**
@@ -2698,16 +2790,16 @@ Graphics._createFontLoader = function (name) {
  * @private
  */
 Graphics._centerElement = function (element) {
-    var width = element.width * this._realScale;
-    var height = element.height * this._realScale;
-    element.style.position = 'absolute';
-    element.style.margin = 'auto';
-    element.style.top = 0;
-    element.style.left = 0;
-    element.style.right = 0;
-    element.style.bottom = 0;
-    element.style.width = width + 'px';
-    element.style.height = height + 'px';
+  var width = element.width * this._realScale;
+  var height = element.height * this._realScale;
+  element.style.position = "absolute";
+  element.style.margin = "auto";
+  element.style.top = 0;
+  element.style.left = 0;
+  element.style.right = 0;
+  element.style.bottom = 0;
+  element.style.width = width + "px";
+  element.style.height = height + "px";
 };
 
 /**
@@ -2716,11 +2808,11 @@ Graphics._centerElement = function (element) {
  * @private
  */
 Graphics._disableTextSelection = function () {
-    var body = document.body;
-    body.style.userSelect = 'none';
-    body.style.webkitUserSelect = 'none';
-    body.style.msUserSelect = 'none';
-    body.style.mozUserSelect = 'none';
+  var body = document.body;
+  body.style.userSelect = "none";
+  body.style.webkitUserSelect = "none";
+  body.style.msUserSelect = "none";
+  body.style.mozUserSelect = "none";
 };
 
 /**
@@ -2729,11 +2821,13 @@ Graphics._disableTextSelection = function () {
  * @private
  */
 Graphics._disableContextMenu = function () {
-    var elements = document.body.getElementsByTagName('*');
-    var oncontextmenu = function () { return false; };
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].oncontextmenu = oncontextmenu;
-    }
+  var elements = document.body.getElementsByTagName("*");
+  var oncontextmenu = function () {
+    return false;
+  };
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].oncontextmenu = oncontextmenu;
+  }
 };
 
 /**
@@ -2742,11 +2836,11 @@ Graphics._disableContextMenu = function () {
  * @private
  */
 Graphics._applyCanvasFilter = function () {
-    if (this._canvas) {
-        this._canvas.style.opacity = 0.5;
-        this._canvas.style.filter = 'blur(8px)';
-        this._canvas.style.webkitFilter = 'blur(8px)';
-    }
+  if (this._canvas) {
+    this._canvas.style.opacity = 0.5;
+    this._canvas.style.filter = "blur(8px)";
+    this._canvas.style.webkitFilter = "blur(8px)";
+  }
 };
 
 /**
@@ -2755,9 +2849,9 @@ Graphics._applyCanvasFilter = function () {
  * @private
  */
 Graphics._onVideoLoad = function () {
-    this._video.play();
-    this._updateVisibility(true);
-    this._videoLoading = false;
+  this._video.play();
+  this._updateVisibility(true);
+  this._videoLoading = false;
 };
 
 /**
@@ -2766,8 +2860,8 @@ Graphics._onVideoLoad = function () {
  * @private
  */
 Graphics._onVideoError = function () {
-    this._updateVisibility(false);
-    this._videoLoading = false;
+  this._updateVisibility(false);
+  this._videoLoading = false;
 };
 
 /**
@@ -2776,7 +2870,7 @@ Graphics._onVideoError = function () {
  * @private
  */
 Graphics._onVideoEnd = function () {
-    this._updateVisibility(false);
+  this._updateVisibility(false);
 };
 
 /**
@@ -2786,8 +2880,8 @@ Graphics._onVideoEnd = function () {
  * @private
  */
 Graphics._updateVisibility = function (videoVisible) {
-    this._video.style.opacity = videoVisible ? 1 : 0;
-    this._canvas.style.opacity = videoVisible ? 0 : 1;
+  this._video.style.opacity = videoVisible ? 1 : 0;
+  this._canvas.style.opacity = videoVisible ? 0 : 1;
 };
 
 /**
@@ -2797,7 +2891,7 @@ Graphics._updateVisibility = function (videoVisible) {
  * @private
  */
 Graphics._isVideoVisible = function () {
-    return this._video.style.opacity > 0;
+  return this._video.style.opacity > 0;
 };
 
 /**
@@ -2806,11 +2900,11 @@ Graphics._isVideoVisible = function () {
  * @private
  */
 Graphics._setupEventHandlers = function () {
-    window.addEventListener('resize', this._onWindowResize.bind(this));
-    document.addEventListener('keydown', this._onKeyDown.bind(this));
-    document.addEventListener('keydown', this._onTouchEnd.bind(this));
-    document.addEventListener('mousedown', this._onTouchEnd.bind(this));
-    document.addEventListener('touchend', this._onTouchEnd.bind(this));
+  window.addEventListener("resize", this._onWindowResize.bind(this));
+  document.addEventListener("keydown", this._onKeyDown.bind(this));
+  document.addEventListener("keydown", this._onTouchEnd.bind(this));
+  document.addEventListener("mousedown", this._onTouchEnd.bind(this));
+  document.addEventListener("touchend", this._onTouchEnd.bind(this));
 };
 
 /**
@@ -2819,7 +2913,7 @@ Graphics._setupEventHandlers = function () {
  * @private
  */
 Graphics._onWindowResize = function () {
-    this._updateAllElements();
+  this._updateAllElements();
 };
 
 /**
@@ -2829,22 +2923,22 @@ Graphics._onWindowResize = function () {
  * @private
  */
 Graphics._onKeyDown = function (event) {
-    if (!event.ctrlKey && !event.altKey) {
-        switch (event.keyCode) {
-            case 113:   // F2
-                event.preventDefault();
-                this._switchFPSMeter();
-                break;
-            case 114:   // F3
-                event.preventDefault();
-                this._switchStretchMode();
-                break;
-            case 115:   // F4
-                event.preventDefault();
-                this._switchFullScreen();
-                break;
-        }
+  if (!event.ctrlKey && !event.altKey) {
+    switch (event.keyCode) {
+      case 113: // F2
+        event.preventDefault();
+        this._switchFPSMeter();
+        break;
+      case 114: // F3
+        event.preventDefault();
+        this._switchStretchMode();
+        break;
+      case 115: // F4
+        event.preventDefault();
+        this._switchFullScreen();
+        break;
     }
+  }
 };
 
 /**
@@ -2854,13 +2948,13 @@ Graphics._onKeyDown = function (event) {
  * @private
  */
 Graphics._onTouchEnd = function (event) {
-    if (!this._videoUnlocked) {
-        this._video.play();
-        this._videoUnlocked = true;
-    }
-    if (this._isVideoVisible() && this._video.paused) {
-        this._video.play();
-    }
+  if (!this._videoUnlocked) {
+    this._video.play();
+    this._videoUnlocked = true;
+  }
+  if (this._isVideoVisible() && this._video.paused) {
+    this._video.play();
+  }
 };
 
 /**
@@ -2869,16 +2963,16 @@ Graphics._onTouchEnd = function (event) {
  * @private
  */
 Graphics._switchFPSMeter = function () {
-    if (this._fpsMeter.isPaused) {
-        this.showFps();
-        this._fpsMeter.showFps();
-        this._fpsMeterToggled = false;
-    } else if (!this._fpsMeterToggled) {
-        this._fpsMeter.showDuration();
-        this._fpsMeterToggled = true;
-    } else {
-        this.hideFps();
-    }
+  if (this._fpsMeter.isPaused) {
+    this.showFps();
+    this._fpsMeter.showFps();
+    this._fpsMeterToggled = false;
+  } else if (!this._fpsMeterToggled) {
+    this._fpsMeter.showDuration();
+    this._fpsMeterToggled = true;
+  } else {
+    this.hideFps();
+  }
 };
 
 /**
@@ -2888,8 +2982,8 @@ Graphics._switchFPSMeter = function () {
  * @private
  */
 Graphics._switchStretchMode = function () {
-    this._stretchEnabled = !this._stretchEnabled;
-    this._updateAllElements();
+  this._stretchEnabled = !this._stretchEnabled;
+  this._updateAllElements();
 };
 
 /**
@@ -2898,11 +2992,11 @@ Graphics._switchStretchMode = function () {
  * @private
  */
 Graphics._switchFullScreen = function () {
-    if (this._isFullScreen()) {
-        this._requestFullScreen();
-    } else {
-        this._cancelFullScreen();
-    }
+  if (this._isFullScreen()) {
+    this._requestFullScreen();
+  } else {
+    this._cancelFullScreen();
+  }
 };
 
 /**
@@ -2912,9 +3006,12 @@ Graphics._switchFullScreen = function () {
  * @private
  */
 Graphics._isFullScreen = function () {
-    return ((document.fullScreenElement && document.fullScreenElement !== null) ||
-        (!document.mozFullScreen && !document.webkitFullscreenElement &&
-            !document.msFullscreenElement));
+  return (
+    (document.fullScreenElement && document.fullScreenElement !== null) ||
+    (!document.mozFullScreen &&
+      !document.webkitFullscreenElement &&
+      !document.msFullscreenElement)
+  );
 };
 
 /**
@@ -2923,16 +3020,16 @@ Graphics._isFullScreen = function () {
  * @private
  */
 Graphics._requestFullScreen = function () {
-    var element = document.body;
-    if (element.requestFullScreen) {
-        element.requestFullScreen();
-    } else if (element.mozRequestFullScreen) {
-        element.mozRequestFullScreen();
-    } else if (element.webkitRequestFullScreen) {
-        element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
-    } else if (element.msRequestFullscreen) {
-        element.msRequestFullscreen();
-    }
+  var element = document.body;
+  if (element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+  } else if (element.msRequestFullscreen) {
+    element.msRequestFullscreen();
+  }
 };
 
 /**
@@ -2941,15 +3038,15 @@ Graphics._requestFullScreen = function () {
  * @private
  */
 Graphics._cancelFullScreen = function () {
-    if (document.cancelFullScreen) {
-        document.cancelFullScreen();
-    } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-    } else if (document.webkitCancelFullScreen) {
-        document.webkitCancelFullScreen();
-    } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-    }
+  if (document.cancelFullScreen) {
+    document.cancelFullScreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitCancelFullScreen) {
+    document.webkitCancelFullScreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
 };
 
 //-----------------------------------------------------------------------------
@@ -2959,7 +3056,7 @@ Graphics._cancelFullScreen = function () {
  * @class Input
  */
 function Input() {
-    throw new Error('This is a static class');
+  throw new Error("This is a static class");
 }
 
 /**
@@ -2969,9 +3066,9 @@ function Input() {
  * @method initialize
  */
 Input.initialize = function () {
-    this.clear();
-    this._wrapNwjsAlert();
-    this._setupEventHandlers();
+  this.clear();
+  this._wrapNwjsAlert();
+  this._setupEventHandlers();
 };
 
 /**
@@ -3000,30 +3097,30 @@ Input.keyRepeatInterval = 6;
  * @type Object
  */
 Input.keyMapper = {
-    9: 'tab',       // tab
-    13: 'ok',       // enter
-    16: 'shift',    // shift
-    17: 'control',  // control
-    18: 'control',  // alt
-    27: 'escape',   // escape
-    32: 'ok',       // space
-    33: 'pageup',   // pageup
-    34: 'pagedown', // pagedown
-    37: 'left',     // left arrow
-    38: 'up',       // up arrow
-    39: 'right',    // right arrow
-    40: 'down',     // down arrow
-    45: 'escape',   // insert
-    81: 'pageup',   // Q
-    87: 'pagedown', // W
-    88: 'escape',   // X
-    90: 'ok',       // Z
-    96: 'escape',   // numpad 0
-    98: 'down',     // numpad 2
-    100: 'left',    // numpad 4
-    102: 'right',   // numpad 6
-    104: 'up',      // numpad 8
-    120: 'debug'    // F9
+  9: "tab", // tab
+  13: "ok", // enter
+  16: "shift", // shift
+  17: "control", // control
+  18: "control", // alt
+  27: "escape", // escape
+  32: "ok", // space
+  33: "pageup", // pageup
+  34: "pagedown", // pagedown
+  37: "left", // left arrow
+  38: "up", // up arrow
+  39: "right", // right arrow
+  40: "down", // down arrow
+  45: "escape", // insert
+  81: "pageup", // Q
+  87: "pagedown", // W
+  88: "escape", // X
+  90: "ok", // Z
+  96: "escape", // numpad 0
+  98: "down", // numpad 2
+  100: "left", // numpad 4
+  102: "right", // numpad 6
+  104: "up", // numpad 8
+  120: "debug", // F9
 };
 
 /**
@@ -3034,16 +3131,16 @@ Input.keyMapper = {
  * @type Object
  */
 Input.gamepadMapper = {
-    0: 'ok',        // A
-    1: 'cancel',    // B
-    2: 'shift',     // X
-    3: 'menu',      // Y
-    4: 'pageup',    // LB
-    5: 'pagedown',  // RB
-    12: 'up',       // D-pad up
-    13: 'down',     // D-pad down
-    14: 'left',     // D-pad left
-    15: 'right',    // D-pad right
+  0: "ok", // A
+  1: "cancel", // B
+  2: "shift", // X
+  3: "menu", // Y
+  4: "pageup", // LB
+  5: "pagedown", // RB
+  12: "up", // D-pad up
+  13: "down", // D-pad down
+  14: "left", // D-pad left
+  15: "right", // D-pad right
 };
 
 /**
@@ -3053,15 +3150,15 @@ Input.gamepadMapper = {
  * @method clear
  */
 Input.clear = function () {
-    this._currentState = {};
-    this._previousState = {};
-    this._gamepadStates = [];
-    this._latestButton = null;
-    this._pressedTime = 0;
-    this._dir4 = 0;
-    this._dir8 = 0;
-    this._preferredAxis = '';
-    this._date = 0;
+  this._currentState = {};
+  this._previousState = {};
+  this._gamepadStates = [];
+  this._latestButton = null;
+  this._pressedTime = 0;
+  this._dir4 = 0;
+  this._dir8 = 0;
+  this._preferredAxis = "";
+  this._date = 0;
 };
 
 /**
@@ -3071,21 +3168,21 @@ Input.clear = function () {
  * @method update
  */
 Input.update = function () {
-    this._pollGamepads();
-    if (this._currentState[this._latestButton]) {
-        this._pressedTime++;
-    } else {
-        this._latestButton = null;
+  this._pollGamepads();
+  if (this._currentState[this._latestButton]) {
+    this._pressedTime++;
+  } else {
+    this._latestButton = null;
+  }
+  for (var name in this._currentState) {
+    if (this._currentState[name] && !this._previousState[name]) {
+      this._latestButton = name;
+      this._pressedTime = 0;
+      this._date = Date.now();
     }
-    for (var name in this._currentState) {
-        if (this._currentState[name] && !this._previousState[name]) {
-            this._latestButton = name;
-            this._pressedTime = 0;
-            this._date = Date.now();
-        }
-        this._previousState[name] = this._currentState[name];
-    }
-    this._updateDirection();
+    this._previousState[name] = this._currentState[name];
+  }
+  this._updateDirection();
 };
 
 /**
@@ -3097,11 +3194,11 @@ Input.update = function () {
  * @return {Boolean} True if the key is pressed
  */
 Input.isPressed = function (keyName) {
-    if (this._isEscapeCompatible(keyName) && this.isPressed('escape')) {
-        return true;
-    } else {
-        return !!this._currentState[keyName];
-    }
+  if (this._isEscapeCompatible(keyName) && this.isPressed("escape")) {
+    return true;
+  } else {
+    return !!this._currentState[keyName];
+  }
 };
 
 /**
@@ -3113,11 +3210,11 @@ Input.isPressed = function (keyName) {
  * @return {Boolean} True if the key is triggered
  */
 Input.isTriggered = function (keyName) {
-    if (this._isEscapeCompatible(keyName) && this.isTriggered('escape')) {
-        return true;
-    } else {
-        return this._latestButton === keyName && this._pressedTime === 0;
-    }
+  if (this._isEscapeCompatible(keyName) && this.isTriggered("escape")) {
+    return true;
+  } else {
+    return this._latestButton === keyName && this._pressedTime === 0;
+  }
 };
 
 /**
@@ -3129,14 +3226,16 @@ Input.isTriggered = function (keyName) {
  * @return {Boolean} True if the key is repeated
  */
 Input.isRepeated = function (keyName) {
-    if (this._isEscapeCompatible(keyName) && this.isRepeated('escape')) {
-        return true;
-    } else {
-        return (this._latestButton === keyName &&
-            (this._pressedTime === 0 ||
-                (this._pressedTime >= this.keyRepeatWait &&
-                    this._pressedTime % this.keyRepeatInterval === 0)));
-    }
+  if (this._isEscapeCompatible(keyName) && this.isRepeated("escape")) {
+    return true;
+  } else {
+    return (
+      this._latestButton === keyName &&
+      (this._pressedTime === 0 ||
+        (this._pressedTime >= this.keyRepeatWait &&
+          this._pressedTime % this.keyRepeatInterval === 0))
+    );
+  }
 };
 
 /**
@@ -3148,12 +3247,13 @@ Input.isRepeated = function (keyName) {
  * @return {Boolean} True if the key is long-pressed
  */
 Input.isLongPressed = function (keyName) {
-    if (this._isEscapeCompatible(keyName) && this.isLongPressed('escape')) {
-        return true;
-    } else {
-        return (this._latestButton === keyName &&
-            this._pressedTime >= this.keyRepeatWait);
-    }
+  if (this._isEscapeCompatible(keyName) && this.isLongPressed("escape")) {
+    return true;
+  } else {
+    return (
+      this._latestButton === keyName && this._pressedTime >= this.keyRepeatWait
+    );
+  }
 };
 
 /**
@@ -3163,11 +3263,11 @@ Input.isLongPressed = function (keyName) {
  * @property dir4
  * @type Number
  */
-Object.defineProperty(Input, 'dir4', {
-    get: function () {
-        return this._dir4;
-    },
-    configurable: true
+Object.defineProperty(Input, "dir4", {
+  get: function () {
+    return this._dir4;
+  },
+  configurable: true,
 });
 
 /**
@@ -3177,11 +3277,11 @@ Object.defineProperty(Input, 'dir4', {
  * @property dir8
  * @type Number
  */
-Object.defineProperty(Input, 'dir8', {
-    get: function () {
-        return this._dir8;
-    },
-    configurable: true
+Object.defineProperty(Input, "dir8", {
+  get: function () {
+    return this._dir8;
+  },
+  configurable: true,
 });
 
 /**
@@ -3191,11 +3291,11 @@ Object.defineProperty(Input, 'dir8', {
  * @property date
  * @type Number
  */
-Object.defineProperty(Input, 'date', {
-    get: function () {
-        return this._date;
-    },
-    configurable: true
+Object.defineProperty(Input, "date", {
+  get: function () {
+    return this._date;
+  },
+  configurable: true,
 });
 
 /**
@@ -3204,16 +3304,16 @@ Object.defineProperty(Input, 'date', {
  * @private
  */
 Input._wrapNwjsAlert = function () {
-    if (Utils.isNwjs()) {
-        var _alert = window.alert;
-        window.alert = function () {
-            var gui = require('nw.gui');
-            var win = gui.Window.get();
-            _alert.apply(this, arguments);
-            win.focus();
-            Input.clear();
-        };
-    }
+  if (Utils.isNwjs()) {
+    var _alert = window.alert;
+    window.alert = function () {
+      var gui = require("nw.gui");
+      var win = gui.Window.get();
+      _alert.apply(this, arguments);
+      win.focus();
+      Input.clear();
+    };
+  }
 };
 
 /**
@@ -3222,9 +3322,9 @@ Input._wrapNwjsAlert = function () {
  * @private
  */
 Input._setupEventHandlers = function () {
-    document.addEventListener('keydown', this._onKeyDown.bind(this));
-    document.addEventListener('keyup', this._onKeyUp.bind(this));
-    window.addEventListener('blur', this._onLostFocus.bind(this));
+  document.addEventListener("keydown", this._onKeyDown.bind(this));
+  document.addEventListener("keyup", this._onKeyUp.bind(this));
+  window.addEventListener("blur", this._onLostFocus.bind(this));
 };
 
 /**
@@ -3234,18 +3334,19 @@ Input._setupEventHandlers = function () {
  * @private
  */
 Input._onKeyDown = function (event) {
-    if (this._shouldPreventDefault(event.keyCode)) {
-        event.preventDefault();
-    }
-    if (event.keyCode === 144) {    // Numlock
-        this.clear();
-    }
-    var buttonName = this.keyMapper[event.keyCode];
-    if (ResourceHandler.exists() && buttonName === 'ok') {
-        ResourceHandler.retry();
-    } else if (buttonName) {
-        this._currentState[buttonName] = true;
-    }
+  if (this._shouldPreventDefault(event.keyCode)) {
+    event.preventDefault();
+  }
+  if (event.keyCode === 144) {
+    // Numlock
+    this.clear();
+  }
+  var buttonName = this.keyMapper[event.keyCode];
+  if (ResourceHandler.exists() && buttonName === "ok") {
+    ResourceHandler.retry();
+  } else if (buttonName) {
+    this._currentState[buttonName] = true;
+  }
 };
 
 /**
@@ -3255,17 +3356,17 @@ Input._onKeyDown = function (event) {
  * @private
  */
 Input._shouldPreventDefault = function (keyCode) {
-    switch (keyCode) {
-        case 8:     // backspace
-        case 33:    // pageup
-        case 34:    // pagedown
-        case 37:    // left arrow
-        case 38:    // up arrow
-        case 39:    // right arrow
-        case 40:    // down arrow
-            return true;
-    }
-    return false;
+  switch (keyCode) {
+    case 8: // backspace
+    case 33: // pageup
+    case 34: // pagedown
+    case 37: // left arrow
+    case 38: // up arrow
+    case 39: // right arrow
+    case 40: // down arrow
+      return true;
+  }
+  return false;
 };
 
 /**
@@ -3275,13 +3376,14 @@ Input._shouldPreventDefault = function (keyCode) {
  * @private
  */
 Input._onKeyUp = function (event) {
-    var buttonName = this.keyMapper[event.keyCode];
-    if (buttonName) {
-        this._currentState[buttonName] = false;
-    }
-    if (event.keyCode === 0) {  // For QtWebEngine on OS X
-        this.clear();
-    }
+  var buttonName = this.keyMapper[event.keyCode];
+  if (buttonName) {
+    this._currentState[buttonName] = false;
+  }
+  if (event.keyCode === 0) {
+    // For QtWebEngine on OS X
+    this.clear();
+  }
 };
 
 /**
@@ -3290,7 +3392,7 @@ Input._onKeyUp = function (event) {
  * @private
  */
 Input._onLostFocus = function () {
-    this.clear();
+  this.clear();
 };
 
 /**
@@ -3299,17 +3401,17 @@ Input._onLostFocus = function () {
  * @private
  */
 Input._pollGamepads = function () {
-    if (navigator.getGamepads) {
-        var gamepads = navigator.getGamepads();
-        if (gamepads) {
-            for (var i = 0; i < gamepads.length; i++) {
-                var gamepad = gamepads[i];
-                if (gamepad && gamepad.connected) {
-                    this._updateGamepadState(gamepad);
-                }
-            }
+  if (navigator.getGamepads) {
+    var gamepads = navigator.getGamepads();
+    if (gamepads) {
+      for (var i = 0; i < gamepads.length; i++) {
+        var gamepad = gamepads[i];
+        if (gamepad && gamepad.connected) {
+          this._updateGamepadState(gamepad);
         }
+      }
     }
+  }
 };
 
 /**
@@ -3320,37 +3422,37 @@ Input._pollGamepads = function () {
  * @private
  */
 Input._updateGamepadState = function (gamepad) {
-    var lastState = this._gamepadStates[gamepad.index] || [];
-    var newState = [];
-    var buttons = gamepad.buttons;
-    var axes = gamepad.axes;
-    var threshold = 0.5;
-    newState[12] = false;
-    newState[13] = false;
-    newState[14] = false;
-    newState[15] = false;
-    for (var i = 0; i < buttons.length; i++) {
-        newState[i] = buttons[i].pressed;
+  var lastState = this._gamepadStates[gamepad.index] || [];
+  var newState = [];
+  var buttons = gamepad.buttons;
+  var axes = gamepad.axes;
+  var threshold = 0.5;
+  newState[12] = false;
+  newState[13] = false;
+  newState[14] = false;
+  newState[15] = false;
+  for (var i = 0; i < buttons.length; i++) {
+    newState[i] = buttons[i].pressed;
+  }
+  if (axes[1] < -threshold) {
+    newState[12] = true; // up
+  } else if (axes[1] > threshold) {
+    newState[13] = true; // down
+  }
+  if (axes[0] < -threshold) {
+    newState[14] = true; // left
+  } else if (axes[0] > threshold) {
+    newState[15] = true; // right
+  }
+  for (var j = 0; j < newState.length; j++) {
+    if (newState[j] !== lastState[j]) {
+      var buttonName = this.gamepadMapper[j];
+      if (buttonName) {
+        this._currentState[buttonName] = newState[j];
+      }
     }
-    if (axes[1] < -threshold) {
-        newState[12] = true;    // up
-    } else if (axes[1] > threshold) {
-        newState[13] = true;    // down
-    }
-    if (axes[0] < -threshold) {
-        newState[14] = true;    // left
-    } else if (axes[0] > threshold) {
-        newState[15] = true;    // right
-    }
-    for (var j = 0; j < newState.length; j++) {
-        if (newState[j] !== lastState[j]) {
-            var buttonName = this.gamepadMapper[j];
-            if (buttonName) {
-                this._currentState[buttonName] = newState[j];
-            }
-        }
-    }
-    this._gamepadStates[gamepad.index] = newState;
+  }
+  this._gamepadStates[gamepad.index] = newState;
 };
 
 /**
@@ -3359,24 +3461,24 @@ Input._updateGamepadState = function (gamepad) {
  * @private
  */
 Input._updateDirection = function () {
-    var x = this._signX();
-    var y = this._signY();
+  var x = this._signX();
+  var y = this._signY();
 
-    this._dir8 = this._makeNumpadDirection(x, y);
+  this._dir8 = this._makeNumpadDirection(x, y);
 
-    if (x !== 0 && y !== 0) {
-        if (this._preferredAxis === 'x') {
-            y = 0;
-        } else {
-            x = 0;
-        }
-    } else if (x !== 0) {
-        this._preferredAxis = 'y';
-    } else if (y !== 0) {
-        this._preferredAxis = 'x';
+  if (x !== 0 && y !== 0) {
+    if (this._preferredAxis === "x") {
+      y = 0;
+    } else {
+      x = 0;
     }
+  } else if (x !== 0) {
+    this._preferredAxis = "y";
+  } else if (y !== 0) {
+    this._preferredAxis = "x";
+  }
 
-    this._dir4 = this._makeNumpadDirection(x, y);
+  this._dir4 = this._makeNumpadDirection(x, y);
 };
 
 /**
@@ -3385,15 +3487,15 @@ Input._updateDirection = function () {
  * @private
  */
 Input._signX = function () {
-    var x = 0;
+  var x = 0;
 
-    if (this.isPressed('left')) {
-        x--;
-    }
-    if (this.isPressed('right')) {
-        x++;
-    }
-    return x;
+  if (this.isPressed("left")) {
+    x--;
+  }
+  if (this.isPressed("right")) {
+    x++;
+  }
+  return x;
 };
 
 /**
@@ -3402,15 +3504,15 @@ Input._signX = function () {
  * @private
  */
 Input._signY = function () {
-    var y = 0;
+  var y = 0;
 
-    if (this.isPressed('up')) {
-        y--;
-    }
-    if (this.isPressed('down')) {
-        y++;
-    }
-    return y;
+  if (this.isPressed("up")) {
+    y--;
+  }
+  if (this.isPressed("down")) {
+    y++;
+  }
+  return y;
 };
 
 /**
@@ -3422,10 +3524,10 @@ Input._signY = function () {
  * @private
  */
 Input._makeNumpadDirection = function (x, y) {
-    if (x !== 0 || y !== 0) {
-        return 5 - y * 3 + x;
-    }
-    return 0;
+  if (x !== 0 || y !== 0) {
+    return 5 - y * 3 + x;
+  }
+  return 0;
 };
 
 /**
@@ -3436,7 +3538,7 @@ Input._makeNumpadDirection = function (x, y) {
  * @private
  */
 Input._isEscapeCompatible = function (keyName) {
-    return keyName === 'cancel' || keyName === 'menu';
+  return keyName === "cancel" || keyName === "menu";
 };
 
 //-----------------------------------------------------------------------------
@@ -3446,7 +3548,7 @@ Input._isEscapeCompatible = function (keyName) {
  * @class TouchInput
  */
 function TouchInput() {
-    throw new Error('This is a static class');
+  throw new Error("This is a static class");
 }
 
 /**
@@ -3456,8 +3558,8 @@ function TouchInput() {
  * @method initialize
  */
 TouchInput.initialize = function () {
-    this.clear();
-    this._setupEventHandlers();
+  this.clear();
+  this._setupEventHandlers();
 };
 
 /**
@@ -3485,25 +3587,25 @@ TouchInput.keyRepeatInterval = 6;
  * @method clear
  */
 TouchInput.clear = function () {
-    this._mousePressed = false;
-    this._screenPressed = false;
-    this._pressedTime = 0;
-    this._events = {};
-    this._events.triggered = false;
-    this._events.cancelled = false;
-    this._events.moved = false;
-    this._events.released = false;
-    this._events.wheelX = 0;
-    this._events.wheelY = 0;
-    this._triggered = false;
-    this._cancelled = false;
-    this._moved = false;
-    this._released = false;
-    this._wheelX = 0;
-    this._wheelY = 0;
-    this._x = 0;
-    this._y = 0;
-    this._date = 0;
+  this._mousePressed = false;
+  this._screenPressed = false;
+  this._pressedTime = 0;
+  this._events = {};
+  this._events.triggered = false;
+  this._events.cancelled = false;
+  this._events.moved = false;
+  this._events.released = false;
+  this._events.wheelX = 0;
+  this._events.wheelY = 0;
+  this._triggered = false;
+  this._cancelled = false;
+  this._moved = false;
+  this._released = false;
+  this._wheelX = 0;
+  this._wheelY = 0;
+  this._x = 0;
+  this._y = 0;
+  this._date = 0;
 };
 
 /**
@@ -3513,21 +3615,21 @@ TouchInput.clear = function () {
  * @method update
  */
 TouchInput.update = function () {
-    this._triggered = this._events.triggered;
-    this._cancelled = this._events.cancelled;
-    this._moved = this._events.moved;
-    this._released = this._events.released;
-    this._wheelX = this._events.wheelX;
-    this._wheelY = this._events.wheelY;
-    this._events.triggered = false;
-    this._events.cancelled = false;
-    this._events.moved = false;
-    this._events.released = false;
-    this._events.wheelX = 0;
-    this._events.wheelY = 0;
-    if (this.isPressed()) {
-        this._pressedTime++;
-    }
+  this._triggered = this._events.triggered;
+  this._cancelled = this._events.cancelled;
+  this._moved = this._events.moved;
+  this._released = this._events.released;
+  this._wheelX = this._events.wheelX;
+  this._wheelY = this._events.wheelY;
+  this._events.triggered = false;
+  this._events.cancelled = false;
+  this._events.moved = false;
+  this._events.released = false;
+  this._events.wheelX = 0;
+  this._events.wheelY = 0;
+  if (this.isPressed()) {
+    this._pressedTime++;
+  }
 };
 
 /**
@@ -3538,7 +3640,7 @@ TouchInput.update = function () {
  * @return {Boolean} True if the mouse button or touchscreen is pressed
  */
 TouchInput.isPressed = function () {
-    return this._mousePressed || this._screenPressed;
+  return this._mousePressed || this._screenPressed;
 };
 
 /**
@@ -3549,7 +3651,7 @@ TouchInput.isPressed = function () {
  * @return {Boolean} True if the mouse button or touchscreen is triggered
  */
 TouchInput.isTriggered = function () {
-    return this._triggered;
+  return this._triggered;
 };
 
 /**
@@ -3561,10 +3663,12 @@ TouchInput.isTriggered = function () {
  * @return {Boolean} True if the mouse button or touchscreen is repeated
  */
 TouchInput.isRepeated = function () {
-    return (this.isPressed() &&
-        (this._triggered ||
-            (this._pressedTime >= this.keyRepeatWait &&
-                this._pressedTime % this.keyRepeatInterval === 0)));
+  return (
+    this.isPressed() &&
+    (this._triggered ||
+      (this._pressedTime >= this.keyRepeatWait &&
+        this._pressedTime % this.keyRepeatInterval === 0))
+  );
 };
 
 /**
@@ -3575,7 +3679,7 @@ TouchInput.isRepeated = function () {
  * @return {Boolean} True if the left mouse button or touchscreen is long-pressed
  */
 TouchInput.isLongPressed = function () {
-    return this.isPressed() && this._pressedTime >= this.keyRepeatWait;
+  return this.isPressed() && this._pressedTime >= this.keyRepeatWait;
 };
 
 /**
@@ -3586,7 +3690,7 @@ TouchInput.isLongPressed = function () {
  * @return {Boolean} True if the right mouse button is just pressed
  */
 TouchInput.isCancelled = function () {
-    return this._cancelled;
+  return this._cancelled;
 };
 
 /**
@@ -3597,7 +3701,7 @@ TouchInput.isCancelled = function () {
  * @return {Boolean} True if the mouse or a finger on the touchscreen is moved
  */
 TouchInput.isMoved = function () {
-    return this._moved;
+  return this._moved;
 };
 
 /**
@@ -3608,7 +3712,7 @@ TouchInput.isMoved = function () {
  * @return {Boolean} True if the mouse button or touchscreen is released
  */
 TouchInput.isReleased = function () {
-    return this._released;
+  return this._released;
 };
 
 /**
@@ -3618,11 +3722,11 @@ TouchInput.isReleased = function () {
  * @property wheelX
  * @type Number
  */
-Object.defineProperty(TouchInput, 'wheelX', {
-    get: function () {
-        return this._wheelX;
-    },
-    configurable: true
+Object.defineProperty(TouchInput, "wheelX", {
+  get: function () {
+    return this._wheelX;
+  },
+  configurable: true,
 });
 
 /**
@@ -3632,11 +3736,11 @@ Object.defineProperty(TouchInput, 'wheelX', {
  * @property wheelY
  * @type Number
  */
-Object.defineProperty(TouchInput, 'wheelY', {
-    get: function () {
-        return this._wheelY;
-    },
-    configurable: true
+Object.defineProperty(TouchInput, "wheelY", {
+  get: function () {
+    return this._wheelY;
+  },
+  configurable: true,
 });
 
 /**
@@ -3646,11 +3750,11 @@ Object.defineProperty(TouchInput, 'wheelY', {
  * @property x
  * @type Number
  */
-Object.defineProperty(TouchInput, 'x', {
-    get: function () {
-        return this._x;
-    },
-    configurable: true
+Object.defineProperty(TouchInput, "x", {
+  get: function () {
+    return this._x;
+  },
+  configurable: true,
 });
 
 /**
@@ -3660,11 +3764,11 @@ Object.defineProperty(TouchInput, 'x', {
  * @property y
  * @type Number
  */
-Object.defineProperty(TouchInput, 'y', {
-    get: function () {
-        return this._y;
-    },
-    configurable: true
+Object.defineProperty(TouchInput, "y", {
+  get: function () {
+    return this._y;
+  },
+  configurable: true,
 });
 
 /**
@@ -3674,11 +3778,11 @@ Object.defineProperty(TouchInput, 'y', {
  * @property date
  * @type Number
  */
-Object.defineProperty(TouchInput, 'date', {
-    get: function () {
-        return this._date;
-    },
-    configurable: true
+Object.defineProperty(TouchInput, "date", {
+  get: function () {
+    return this._date;
+  },
+  configurable: true,
 });
 
 /**
@@ -3687,16 +3791,24 @@ Object.defineProperty(TouchInput, 'date', {
  * @private
  */
 TouchInput._setupEventHandlers = function () {
-    var isSupportPassive = Utils.isSupportPassiveEvent();
-    document.addEventListener('mousedown', this._onMouseDown.bind(this));
-    document.addEventListener('mousemove', this._onMouseMove.bind(this));
-    document.addEventListener('mouseup', this._onMouseUp.bind(this));
-    document.addEventListener('wheel', this._onWheel.bind(this));
-    document.addEventListener('touchstart', this._onTouchStart.bind(this), isSupportPassive ? { passive: false } : false);
-    document.addEventListener('touchmove', this._onTouchMove.bind(this), isSupportPassive ? { passive: false } : false);
-    document.addEventListener('touchend', this._onTouchEnd.bind(this));
-    document.addEventListener('touchcancel', this._onTouchCancel.bind(this));
-    document.addEventListener('pointerdown', this._onPointerDown.bind(this));
+  var isSupportPassive = Utils.isSupportPassiveEvent();
+  document.addEventListener("mousedown", this._onMouseDown.bind(this));
+  document.addEventListener("mousemove", this._onMouseMove.bind(this));
+  document.addEventListener("mouseup", this._onMouseUp.bind(this));
+  document.addEventListener("wheel", this._onWheel.bind(this));
+  document.addEventListener(
+    "touchstart",
+    this._onTouchStart.bind(this),
+    isSupportPassive ? { passive: false } : false
+  );
+  document.addEventListener(
+    "touchmove",
+    this._onTouchMove.bind(this),
+    isSupportPassive ? { passive: false } : false
+  );
+  document.addEventListener("touchend", this._onTouchEnd.bind(this));
+  document.addEventListener("touchcancel", this._onTouchCancel.bind(this));
+  document.addEventListener("pointerdown", this._onPointerDown.bind(this));
 };
 
 /**
@@ -3706,13 +3818,13 @@ TouchInput._setupEventHandlers = function () {
  * @private
  */
 TouchInput._onMouseDown = function (event) {
-    if (event.button === 0) {
-        this._onLeftButtonDown(event);
-    } else if (event.button === 1) {
-        this._onMiddleButtonDown(event);
-    } else if (event.button === 2) {
-        this._onRightButtonDown(event);
-    }
+  if (event.button === 0) {
+    this._onLeftButtonDown(event);
+  } else if (event.button === 1) {
+    this._onMiddleButtonDown(event);
+  } else if (event.button === 2) {
+    this._onRightButtonDown(event);
+  }
 };
 
 /**
@@ -3722,13 +3834,13 @@ TouchInput._onMouseDown = function (event) {
  * @private
  */
 TouchInput._onLeftButtonDown = function (event) {
-    var x = Graphics.pageToCanvasX(event.pageX);
-    var y = Graphics.pageToCanvasY(event.pageY);
-    if (Graphics.isInsideCanvas(x, y)) {
-        this._mousePressed = true;
-        this._pressedTime = 0;
-        this._onTrigger(x, y);
-    }
+  var x = Graphics.pageToCanvasX(event.pageX);
+  var y = Graphics.pageToCanvasY(event.pageY);
+  if (Graphics.isInsideCanvas(x, y)) {
+    this._mousePressed = true;
+    this._pressedTime = 0;
+    this._onTrigger(x, y);
+  }
 };
 
 /**
@@ -3737,8 +3849,7 @@ TouchInput._onLeftButtonDown = function (event) {
  * @param {MouseEvent} event
  * @private
  */
-TouchInput._onMiddleButtonDown = function (event) {
-};
+TouchInput._onMiddleButtonDown = function (event) {};
 
 /**
  * @static
@@ -3747,11 +3858,11 @@ TouchInput._onMiddleButtonDown = function (event) {
  * @private
  */
 TouchInput._onRightButtonDown = function (event) {
-    var x = Graphics.pageToCanvasX(event.pageX);
-    var y = Graphics.pageToCanvasY(event.pageY);
-    if (Graphics.isInsideCanvas(x, y)) {
-        this._onCancel(x, y);
-    }
+  var x = Graphics.pageToCanvasX(event.pageX);
+  var y = Graphics.pageToCanvasY(event.pageY);
+  if (Graphics.isInsideCanvas(x, y)) {
+    this._onCancel(x, y);
+  }
 };
 
 /**
@@ -3761,11 +3872,11 @@ TouchInput._onRightButtonDown = function (event) {
  * @private
  */
 TouchInput._onMouseMove = function (event) {
-    if (this._mousePressed) {
-        var x = Graphics.pageToCanvasX(event.pageX);
-        var y = Graphics.pageToCanvasY(event.pageY);
-        this._onMove(x, y);
-    }
+  if (this._mousePressed) {
+    var x = Graphics.pageToCanvasX(event.pageX);
+    var y = Graphics.pageToCanvasY(event.pageY);
+    this._onMove(x, y);
+  }
 };
 
 /**
@@ -3775,12 +3886,12 @@ TouchInput._onMouseMove = function (event) {
  * @private
  */
 TouchInput._onMouseUp = function (event) {
-    if (event.button === 0) {
-        var x = Graphics.pageToCanvasX(event.pageX);
-        var y = Graphics.pageToCanvasY(event.pageY);
-        this._mousePressed = false;
-        this._onRelease(x, y);
-    }
+  if (event.button === 0) {
+    var x = Graphics.pageToCanvasX(event.pageX);
+    var y = Graphics.pageToCanvasY(event.pageY);
+    this._mousePressed = false;
+    this._onRelease(x, y);
+  }
 };
 
 /**
@@ -3790,9 +3901,9 @@ TouchInput._onMouseUp = function (event) {
  * @private
  */
 TouchInput._onWheel = function (event) {
-    this._events.wheelX += event.deltaX;
-    this._events.wheelY += event.deltaY;
-    event.preventDefault();
+  this._events.wheelX += event.deltaX;
+  this._events.wheelY += event.deltaY;
+  event.preventDefault();
 };
 
 /**
@@ -3802,24 +3913,24 @@ TouchInput._onWheel = function (event) {
  * @private
  */
 TouchInput._onTouchStart = function (event) {
-    for (var i = 0; i < event.changedTouches.length; i++) {
-        var touch = event.changedTouches[i];
-        var x = Graphics.pageToCanvasX(touch.pageX);
-        var y = Graphics.pageToCanvasY(touch.pageY);
-        if (Graphics.isInsideCanvas(x, y)) {
-            this._screenPressed = true;
-            this._pressedTime = 0;
-            if (event.touches.length >= 2) {
-                this._onCancel(x, y);
-            } else {
-                this._onTrigger(x, y);
-            }
-            event.preventDefault();
-        }
+  for (var i = 0; i < event.changedTouches.length; i++) {
+    var touch = event.changedTouches[i];
+    var x = Graphics.pageToCanvasX(touch.pageX);
+    var y = Graphics.pageToCanvasY(touch.pageY);
+    if (Graphics.isInsideCanvas(x, y)) {
+      this._screenPressed = true;
+      this._pressedTime = 0;
+      if (event.touches.length >= 2) {
+        this._onCancel(x, y);
+      } else {
+        this._onTrigger(x, y);
+      }
+      event.preventDefault();
     }
-    if (window.cordova || window.navigator.standalone) {
-        event.preventDefault();
-    }
+  }
+  if (window.cordova || window.navigator.standalone) {
+    event.preventDefault();
+  }
 };
 
 /**
@@ -3829,12 +3940,12 @@ TouchInput._onTouchStart = function (event) {
  * @private
  */
 TouchInput._onTouchMove = function (event) {
-    for (var i = 0; i < event.changedTouches.length; i++) {
-        var touch = event.changedTouches[i];
-        var x = Graphics.pageToCanvasX(touch.pageX);
-        var y = Graphics.pageToCanvasY(touch.pageY);
-        this._onMove(x, y);
-    }
+  for (var i = 0; i < event.changedTouches.length; i++) {
+    var touch = event.changedTouches[i];
+    var x = Graphics.pageToCanvasX(touch.pageX);
+    var y = Graphics.pageToCanvasY(touch.pageY);
+    this._onMove(x, y);
+  }
 };
 
 /**
@@ -3844,13 +3955,13 @@ TouchInput._onTouchMove = function (event) {
  * @private
  */
 TouchInput._onTouchEnd = function (event) {
-    for (var i = 0; i < event.changedTouches.length; i++) {
-        var touch = event.changedTouches[i];
-        var x = Graphics.pageToCanvasX(touch.pageX);
-        var y = Graphics.pageToCanvasY(touch.pageY);
-        this._screenPressed = false;
-        this._onRelease(x, y);
-    }
+  for (var i = 0; i < event.changedTouches.length; i++) {
+    var touch = event.changedTouches[i];
+    var x = Graphics.pageToCanvasX(touch.pageX);
+    var y = Graphics.pageToCanvasY(touch.pageY);
+    this._screenPressed = false;
+    this._onRelease(x, y);
+  }
 };
 
 /**
@@ -3860,7 +3971,7 @@ TouchInput._onTouchEnd = function (event) {
  * @private
  */
 TouchInput._onTouchCancel = function (event) {
-    this._screenPressed = false;
+  this._screenPressed = false;
 };
 
 /**
@@ -3870,15 +3981,15 @@ TouchInput._onTouchCancel = function (event) {
  * @private
  */
 TouchInput._onPointerDown = function (event) {
-    if (event.pointerType === 'touch' && !event.isPrimary) {
-        var x = Graphics.pageToCanvasX(event.pageX);
-        var y = Graphics.pageToCanvasY(event.pageY);
-        if (Graphics.isInsideCanvas(x, y)) {
-            // For Microsoft Edge
-            this._onCancel(x, y);
-            event.preventDefault();
-        }
+  if (event.pointerType === "touch" && !event.isPrimary) {
+    var x = Graphics.pageToCanvasX(event.pageX);
+    var y = Graphics.pageToCanvasY(event.pageY);
+    if (Graphics.isInsideCanvas(x, y)) {
+      // For Microsoft Edge
+      this._onCancel(x, y);
+      event.preventDefault();
     }
+  }
 };
 
 /**
@@ -3889,10 +4000,10 @@ TouchInput._onPointerDown = function (event) {
  * @private
  */
 TouchInput._onTrigger = function (x, y) {
-    this._events.triggered = true;
-    this._x = x;
-    this._y = y;
-    this._date = Date.now();
+  this._events.triggered = true;
+  this._x = x;
+  this._y = y;
+  this._date = Date.now();
 };
 
 /**
@@ -3903,9 +4014,9 @@ TouchInput._onTrigger = function (x, y) {
  * @private
  */
 TouchInput._onCancel = function (x, y) {
-    this._events.cancelled = true;
-    this._x = x;
-    this._y = y;
+  this._events.cancelled = true;
+  this._x = x;
+  this._y = y;
 };
 
 /**
@@ -3916,9 +4027,9 @@ TouchInput._onCancel = function (x, y) {
  * @private
  */
 TouchInput._onMove = function (x, y) {
-    this._events.moved = true;
-    this._x = x;
-    this._y = y;
+  this._events.moved = true;
+  this._x = x;
+  this._y = y;
 };
 
 /**
@@ -3929,9 +4040,9 @@ TouchInput._onMove = function (x, y) {
  * @private
  */
 TouchInput._onRelease = function (x, y) {
-    this._events.released = true;
-    this._x = x;
-    this._y = y;
+  this._events.released = true;
+  this._x = x;
+  this._y = y;
 };
 
 //-----------------------------------------------------------------------------
@@ -3943,7 +4054,7 @@ TouchInput._onRelease = function (x, y) {
  * @param {Bitmap} bitmap The image for the sprite
  */
 function Sprite() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 Sprite.prototype = Object.create(PIXI.Sprite.prototype);
@@ -3952,30 +4063,30 @@ Sprite.prototype.constructor = Sprite;
 Sprite.voidFilter = new PIXI.filters.VoidFilter();
 
 Sprite.prototype.initialize = function (bitmap) {
-    var texture = new PIXI.Texture(new PIXI.BaseTexture());
+  var texture = new PIXI.Texture(new PIXI.BaseTexture());
 
-    PIXI.Sprite.call(this, texture);
+  PIXI.Sprite.call(this, texture);
 
-    this._bitmap = null;
-    this._frame = new Rectangle();
-    this._realFrame = new Rectangle();
-    this._blendColor = [0, 0, 0, 0];
-    this._colorTone = [0, 0, 0, 0];
-    this._canvas = null;
-    this._context = null;
-    this._tintTexture = null;
+  this._bitmap = null;
+  this._frame = new Rectangle();
+  this._realFrame = new Rectangle();
+  this._blendColor = [0, 0, 0, 0];
+  this._colorTone = [0, 0, 0, 0];
+  this._canvas = null;
+  this._context = null;
+  this._tintTexture = null;
 
-    /**
-     * use heavy renderer that will reduce border artifacts and apply advanced blendModes
-     * @type {boolean}
-     * @private
-     */
-    this._isPicture = false;
+  /**
+   * use heavy renderer that will reduce border artifacts and apply advanced blendModes
+   * @type {boolean}
+   * @private
+   */
+  this._isPicture = false;
 
-    this.spriteId = Sprite._counter++;
-    this.opaque = false;
+  this.spriteId = Sprite._counter++;
+  this.opaque = false;
 
-    this.bitmap = bitmap;
+  this.bitmap = bitmap;
 };
 
 // Number of the created objects.
@@ -3987,24 +4098,24 @@ Sprite._counter = 0;
  * @property bitmap
  * @type Bitmap
  */
-Object.defineProperty(Sprite.prototype, 'bitmap', {
-    get: function () {
-        return this._bitmap;
-    },
-    set: function (value) {
-        if (this._bitmap !== value) {
-            this._bitmap = value;
+Object.defineProperty(Sprite.prototype, "bitmap", {
+  get: function () {
+    return this._bitmap;
+  },
+  set: function (value) {
+    if (this._bitmap !== value) {
+      this._bitmap = value;
 
-            if (value) {
-                this._refreshFrame = true;
-                value.addLoadListener(this._onBitmapLoad.bind(this));
-            } else {
-                this._refreshFrame = false;
-                this.texture.frame = Rectangle.emptyRectangle;
-            }
-        }
-    },
-    configurable: true
+      if (value) {
+        this._refreshFrame = true;
+        value.addLoadListener(this._onBitmapLoad.bind(this));
+      } else {
+        this._refreshFrame = false;
+        this.texture.frame = Rectangle.emptyRectangle;
+      }
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -4013,15 +4124,15 @@ Object.defineProperty(Sprite.prototype, 'bitmap', {
  * @property width
  * @type Number
  */
-Object.defineProperty(Sprite.prototype, 'width', {
-    get: function () {
-        return this._frame.width;
-    },
-    set: function (value) {
-        this._frame.width = value;
-        this._refresh();
-    },
-    configurable: true
+Object.defineProperty(Sprite.prototype, "width", {
+  get: function () {
+    return this._frame.width;
+  },
+  set: function (value) {
+    this._frame.width = value;
+    this._refresh();
+  },
+  configurable: true,
 });
 
 /**
@@ -4030,15 +4141,15 @@ Object.defineProperty(Sprite.prototype, 'width', {
  * @property height
  * @type Number
  */
-Object.defineProperty(Sprite.prototype, 'height', {
-    get: function () {
-        return this._frame.height;
-    },
-    set: function (value) {
-        this._frame.height = value;
-        this._refresh();
-    },
-    configurable: true
+Object.defineProperty(Sprite.prototype, "height", {
+  get: function () {
+    return this._frame.height;
+  },
+  set: function (value) {
+    this._frame.height = value;
+    this._refresh();
+  },
+  configurable: true,
 });
 
 /**
@@ -4047,14 +4158,14 @@ Object.defineProperty(Sprite.prototype, 'height', {
  * @property opacity
  * @type Number
  */
-Object.defineProperty(Sprite.prototype, 'opacity', {
-    get: function () {
-        return this.alpha * 255;
-    },
-    set: function (value) {
-        this.alpha = value.clamp(0, 255) / 255;
-    },
-    configurable: true
+Object.defineProperty(Sprite.prototype, "opacity", {
+  get: function () {
+    return this.alpha * 255;
+  },
+  set: function (value) {
+    this.alpha = value.clamp(0, 255) / 255;
+  },
+  configurable: true,
 });
 
 /**
@@ -4063,11 +4174,11 @@ Object.defineProperty(Sprite.prototype, 'opacity', {
  * @method update
  */
 Sprite.prototype.update = function () {
-    this.children.forEach(function (child) {
-        if (child.update) {
-            child.update();
-        }
-    });
+  this.children.forEach(function (child) {
+    if (child.update) {
+      child.update();
+    }
+  });
 };
 
 /**
@@ -4078,8 +4189,8 @@ Sprite.prototype.update = function () {
  * @param {Number} y The y coordinate of the sprite
  */
 Sprite.prototype.move = function (x, y) {
-    this.x = x;
-    this.y = y;
+  this.x = x;
+  this.y = y;
 };
 
 /**
@@ -4092,16 +4203,20 @@ Sprite.prototype.move = function (x, y) {
  * @param {Number} height The height of the frame
  */
 Sprite.prototype.setFrame = function (x, y, width, height) {
-    this._refreshFrame = false;
-    var frame = this._frame;
-    if (x !== frame.x || y !== frame.y ||
-        width !== frame.width || height !== frame.height) {
-        frame.x = x;
-        frame.y = y;
-        frame.width = width;
-        frame.height = height;
-        this._refresh();
-    }
+  this._refreshFrame = false;
+  var frame = this._frame;
+  if (
+    x !== frame.x ||
+    y !== frame.y ||
+    width !== frame.width ||
+    height !== frame.height
+  ) {
+    frame.x = x;
+    frame.y = y;
+    frame.width = width;
+    frame.height = height;
+    this._refresh();
+  }
 };
 
 /**
@@ -4111,7 +4226,7 @@ Sprite.prototype.setFrame = function (x, y, width, height) {
  * @return {Array} The blend color [r, g, b, a]
  */
 Sprite.prototype.getBlendColor = function () {
-    return this._blendColor.clone();
+  return this._blendColor.clone();
 };
 
 /**
@@ -4121,13 +4236,13 @@ Sprite.prototype.getBlendColor = function () {
  * @param {Array} color The blend color [r, g, b, a]
  */
 Sprite.prototype.setBlendColor = function (color) {
-    if (!(color instanceof Array)) {
-        throw new Error('Argument must be an array');
-    }
-    if (!this._blendColor.equals(color)) {
-        this._blendColor = color.clone();
-        this._refresh();
-    }
+  if (!(color instanceof Array)) {
+    throw new Error("Argument must be an array");
+  }
+  if (!this._blendColor.equals(color)) {
+    this._blendColor = color.clone();
+    this._refresh();
+  }
 };
 
 /**
@@ -4137,7 +4252,7 @@ Sprite.prototype.setBlendColor = function (color) {
  * @return {Array} The color tone [r, g, b, gray]
  */
 Sprite.prototype.getColorTone = function () {
-    return this._colorTone.clone();
+  return this._colorTone.clone();
 };
 
 /**
@@ -4147,13 +4262,13 @@ Sprite.prototype.getColorTone = function () {
  * @param {Array} tone The color tone [r, g, b, gray]
  */
 Sprite.prototype.setColorTone = function (tone) {
-    if (!(tone instanceof Array)) {
-        throw new Error('Argument must be an array');
-    }
-    if (!this._colorTone.equals(tone)) {
-        this._colorTone = tone.clone();
-        this._refresh();
-    }
+  if (!(tone instanceof Array)) {
+    throw new Error("Argument must be an array");
+  }
+  if (!this._colorTone.equals(tone)) {
+    this._colorTone = tone.clone();
+    this._refresh();
+  }
 };
 
 /**
@@ -4161,15 +4276,15 @@ Sprite.prototype.setColorTone = function (tone) {
  * @private
  */
 Sprite.prototype._onBitmapLoad = function (bitmapLoaded) {
-    if (bitmapLoaded === this._bitmap) {
-        if (this._refreshFrame && this._bitmap) {
-            this._refreshFrame = false;
-            this._frame.width = this._bitmap.width;
-            this._frame.height = this._bitmap.height;
-        }
+  if (bitmapLoaded === this._bitmap) {
+    if (this._refreshFrame && this._bitmap) {
+      this._refreshFrame = false;
+      this._frame.width = this._bitmap.width;
+      this._frame.height = this._bitmap.height;
     }
+  }
 
-    this._refresh();
+  this._refresh();
 };
 
 /**
@@ -4177,45 +4292,51 @@ Sprite.prototype._onBitmapLoad = function (bitmapLoaded) {
  * @private
  */
 Sprite.prototype._refresh = function () {
-    var frameX = Math.floor(this._frame.x);
-    var frameY = Math.floor(this._frame.y);
-    var frameW = Math.floor(this._frame.width);
-    var frameH = Math.floor(this._frame.height);
-    var bitmapW = this._bitmap ? this._bitmap.width : 0;
-    var bitmapH = this._bitmap ? this._bitmap.height : 0;
-    var realX = frameX.clamp(0, bitmapW);
-    var realY = frameY.clamp(0, bitmapH);
-    var realW = (frameW - realX + frameX).clamp(0, bitmapW - realX);
-    var realH = (frameH - realY + frameY).clamp(0, bitmapH - realY);
+  var frameX = Math.floor(this._frame.x);
+  var frameY = Math.floor(this._frame.y);
+  var frameW = Math.floor(this._frame.width);
+  var frameH = Math.floor(this._frame.height);
+  var bitmapW = this._bitmap ? this._bitmap.width : 0;
+  var bitmapH = this._bitmap ? this._bitmap.height : 0;
+  var realX = frameX.clamp(0, bitmapW);
+  var realY = frameY.clamp(0, bitmapH);
+  var realW = (frameW - realX + frameX).clamp(0, bitmapW - realX);
+  var realH = (frameH - realY + frameY).clamp(0, bitmapH - realY);
 
-    this._realFrame.x = realX;
-    this._realFrame.y = realY;
-    this._realFrame.width = realW;
-    this._realFrame.height = realH;
-    this.pivot.x = frameX - realX;
-    this.pivot.y = frameY - realY;
+  this._realFrame.x = realX;
+  this._realFrame.y = realY;
+  this._realFrame.width = realW;
+  this._realFrame.height = realH;
+  this.pivot.x = frameX - realX;
+  this.pivot.y = frameY - realY;
 
-    if (realW > 0 && realH > 0) {
-        if (this._needsTint()) {
-            this._createTinter(realW, realH);
-            this._executeTint(realX, realY, realW, realH);
-            this._tintTexture.update();
-            this.texture.baseTexture = this._tintTexture;
-            this.texture.frame = new Rectangle(0, 0, realW, realH);
-        } else {
-            if (this._bitmap) {
-                this.texture.baseTexture = this._bitmap.baseTexture;
-            }
-            this.texture.frame = this._realFrame;
-        }
-    } else if (this._bitmap) {
-        this.texture.frame = Rectangle.emptyRectangle;
+  if (realW > 0 && realH > 0) {
+    if (this._needsTint()) {
+      this._createTinter(realW, realH);
+      this._executeTint(realX, realY, realW, realH);
+      this._tintTexture.update();
+      this.texture.baseTexture = this._tintTexture;
+      this.texture.frame = new Rectangle(0, 0, realW, realH);
     } else {
-        this.texture.baseTexture.width = Math.max(this.texture.baseTexture.width, this._frame.x + this._frame.width);
-        this.texture.baseTexture.height = Math.max(this.texture.baseTexture.height, this._frame.y + this._frame.height);
-        this.texture.frame = this._frame;
+      if (this._bitmap) {
+        this.texture.baseTexture = this._bitmap.baseTexture;
+      }
+      this.texture.frame = this._realFrame;
     }
-    this.texture._updateID++;
+  } else if (this._bitmap) {
+    this.texture.frame = Rectangle.emptyRectangle;
+  } else {
+    this.texture.baseTexture.width = Math.max(
+      this.texture.baseTexture.width,
+      this._frame.x + this._frame.width
+    );
+    this.texture.baseTexture.height = Math.max(
+      this.texture.baseTexture.height,
+      this._frame.y + this._frame.height
+    );
+    this.texture.frame = this._frame;
+  }
+  this.texture._updateID++;
 };
 
 /**
@@ -4228,8 +4349,13 @@ Sprite.prototype._refresh = function () {
  * @private
  */
 Sprite.prototype._isInBitmapRect = function (x, y, w, h) {
-    return (this._bitmap && x + w > 0 && y + h > 0 &&
-        x < this._bitmap.width && y < this._bitmap.height);
+  return (
+    this._bitmap &&
+    x + w > 0 &&
+    y + h > 0 &&
+    x < this._bitmap.width &&
+    y < this._bitmap.height
+  );
 };
 
 /**
@@ -4238,8 +4364,8 @@ Sprite.prototype._isInBitmapRect = function (x, y, w, h) {
  * @private
  */
 Sprite.prototype._needsTint = function () {
-    var tone = this._colorTone;
-    return tone[0] || tone[1] || tone[2] || tone[3] || this._blendColor[3] > 0;
+  var tone = this._colorTone;
+  return tone[0] || tone[1] || tone[2] || tone[3] || this._blendColor[3] > 0;
 };
 
 /**
@@ -4249,21 +4375,21 @@ Sprite.prototype._needsTint = function () {
  * @private
  */
 Sprite.prototype._createTinter = function (w, h) {
-    if (!this._canvas) {
-        this._canvas = document.createElement('canvas');
-        this._context = this._canvas.getContext('2d');
-    }
+  if (!this._canvas) {
+    this._canvas = document.createElement("canvas");
+    this._context = this._canvas.getContext("2d");
+  }
 
-    this._canvas.width = w;
-    this._canvas.height = h;
+  this._canvas.width = w;
+  this._canvas.height = h;
 
-    if (!this._tintTexture) {
-        this._tintTexture = new PIXI.BaseTexture(this._canvas);
-    }
+  if (!this._tintTexture) {
+    this._tintTexture = new PIXI.BaseTexture(this._canvas);
+  }
 
-    this._tintTexture.width = w;
-    this._tintTexture.height = h;
-    this._tintTexture.scaleMode = this._bitmap.baseTexture.scaleMode;
+  this._tintTexture.width = w;
+  this._tintTexture.height = h;
+  this._tintTexture.scaleMode = this._bitmap.baseTexture.scaleMode;
 };
 
 /**
@@ -4275,56 +4401,56 @@ Sprite.prototype._createTinter = function (w, h) {
  * @private
  */
 Sprite.prototype._executeTint = function (x, y, w, h) {
-    var context = this._context;
-    var tone = this._colorTone;
-    var color = this._blendColor;
+  var context = this._context;
+  var tone = this._colorTone;
+  var color = this._blendColor;
 
-    context.globalCompositeOperation = 'copy';
-    context.drawImage(this._bitmap.canvas, x, y, w, h, 0, 0, w, h);
+  context.globalCompositeOperation = "copy";
+  context.drawImage(this._bitmap.canvas, x, y, w, h, 0, 0, w, h);
 
-    if (Graphics.canUseSaturationBlend()) {
-        var gray = Math.max(0, tone[3]);
-        context.globalCompositeOperation = 'saturation';
-        context.fillStyle = 'rgba(255,255,255,' + gray / 255 + ')';
-        context.fillRect(0, 0, w, h);
-    }
+  if (Graphics.canUseSaturationBlend()) {
+    var gray = Math.max(0, tone[3]);
+    context.globalCompositeOperation = "saturation";
+    context.fillStyle = "rgba(255,255,255," + gray / 255 + ")";
+    context.fillRect(0, 0, w, h);
+  }
 
-    var r1 = Math.max(0, tone[0]);
-    var g1 = Math.max(0, tone[1]);
-    var b1 = Math.max(0, tone[2]);
-    context.globalCompositeOperation = 'lighter';
-    context.fillStyle = Utils.rgbToCssColor(r1, g1, b1);
+  var r1 = Math.max(0, tone[0]);
+  var g1 = Math.max(0, tone[1]);
+  var b1 = Math.max(0, tone[2]);
+  context.globalCompositeOperation = "lighter";
+  context.fillStyle = Utils.rgbToCssColor(r1, g1, b1);
+  context.fillRect(0, 0, w, h);
+
+  if (Graphics.canUseDifferenceBlend()) {
+    context.globalCompositeOperation = "difference";
+    context.fillStyle = "white";
     context.fillRect(0, 0, w, h);
 
-    if (Graphics.canUseDifferenceBlend()) {
-        context.globalCompositeOperation = 'difference';
-        context.fillStyle = 'white';
-        context.fillRect(0, 0, w, h);
-
-        var r2 = Math.max(0, -tone[0]);
-        var g2 = Math.max(0, -tone[1]);
-        var b2 = Math.max(0, -tone[2]);
-        context.globalCompositeOperation = 'lighter';
-        context.fillStyle = Utils.rgbToCssColor(r2, g2, b2);
-        context.fillRect(0, 0, w, h);
-
-        context.globalCompositeOperation = 'difference';
-        context.fillStyle = 'white';
-        context.fillRect(0, 0, w, h);
-    }
-
-    var r3 = Math.max(0, color[0]);
-    var g3 = Math.max(0, color[1]);
-    var b3 = Math.max(0, color[2]);
-    var a3 = Math.max(0, color[3]);
-    context.globalCompositeOperation = 'source-atop';
-    context.fillStyle = Utils.rgbToCssColor(r3, g3, b3);
-    context.globalAlpha = a3 / 255;
+    var r2 = Math.max(0, -tone[0]);
+    var g2 = Math.max(0, -tone[1]);
+    var b2 = Math.max(0, -tone[2]);
+    context.globalCompositeOperation = "lighter";
+    context.fillStyle = Utils.rgbToCssColor(r2, g2, b2);
     context.fillRect(0, 0, w, h);
 
-    context.globalCompositeOperation = 'destination-in';
-    context.globalAlpha = 1;
-    context.drawImage(this._bitmap.canvas, x, y, w, h, 0, 0, w, h);
+    context.globalCompositeOperation = "difference";
+    context.fillStyle = "white";
+    context.fillRect(0, 0, w, h);
+  }
+
+  var r3 = Math.max(0, color[0]);
+  var g3 = Math.max(0, color[1]);
+  var b3 = Math.max(0, color[2]);
+  var a3 = Math.max(0, color[3]);
+  context.globalCompositeOperation = "source-atop";
+  context.fillStyle = Utils.rgbToCssColor(r3, g3, b3);
+  context.globalAlpha = a3 / 255;
+  context.fillRect(0, 0, w, h);
+
+  context.globalCompositeOperation = "destination-in";
+  context.globalAlpha = 1;
+  context.drawImage(this._bitmap.canvas, x, y, w, h, 0, 0, w, h);
 };
 
 Sprite.prototype._renderCanvas_PIXI = PIXI.Sprite.prototype._renderCanvas;
@@ -4336,16 +4462,16 @@ Sprite.prototype._renderWebGL_PIXI = PIXI.Sprite.prototype._renderWebGL;
  * @private
  */
 Sprite.prototype._renderCanvas = function (renderer) {
-    if (this.bitmap) {
-        this.bitmap.touch();
-    }
-    if (this.bitmap && !this.bitmap.isReady()) {
-        return;
-    }
+  if (this.bitmap) {
+    this.bitmap.touch();
+  }
+  if (this.bitmap && !this.bitmap.isReady()) {
+    return;
+  }
 
-    if (this.texture.frame.width > 0 && this.texture.frame.height > 0) {
-        this._renderCanvas_PIXI(renderer);
-    }
+  if (this.texture.frame.width > 0 && this.texture.frame.height > 0) {
+    this._renderCanvas_PIXI(renderer);
+  }
 };
 
 /**
@@ -4354,23 +4480,28 @@ Sprite.prototype._renderCanvas = function (renderer) {
  * @private
  */
 Sprite.prototype._speedUpCustomBlendModes = function (renderer) {
-    var picture = renderer.plugins.picture;
-    var blend = this.blendMode;
-    if (renderer.renderingToScreen && renderer._activeRenderTarget.root) {
-        if (picture.drawModes[blend]) {
-            var stage = renderer._lastObjectRendered;
-            var f = stage._filters;
-            if (!f || !f[0]) {
-                setTimeout(function () {
-                    var f = stage._filters;
-                    if (!f || !f[0]) {
-                        stage.filters = [Sprite.voidFilter];
-                        stage.filterArea = new PIXI.Rectangle(0, 0, Graphics.width, Graphics.height);
-                    }
-                }, 0);
-            }
-        }
+  var picture = renderer.plugins.picture;
+  var blend = this.blendMode;
+  if (renderer.renderingToScreen && renderer._activeRenderTarget.root) {
+    if (picture.drawModes[blend]) {
+      var stage = renderer._lastObjectRendered;
+      var f = stage._filters;
+      if (!f || !f[0]) {
+        setTimeout(function () {
+          var f = stage._filters;
+          if (!f || !f[0]) {
+            stage.filters = [Sprite.voidFilter];
+            stage.filterArea = new PIXI.Rectangle(
+              0,
+              0,
+              Graphics.width,
+              Graphics.height
+            );
+          }
+        }, 0);
+      }
     }
+  }
 };
 
 /**
@@ -4379,32 +4510,32 @@ Sprite.prototype._speedUpCustomBlendModes = function (renderer) {
  * @private
  */
 Sprite.prototype._renderWebGL = function (renderer) {
-    if (this.bitmap) {
-        this.bitmap.touch();
+  if (this.bitmap) {
+    this.bitmap.touch();
+  }
+  if (this.bitmap && !this.bitmap.isReady()) {
+    return;
+  }
+  if (this.texture.frame.width > 0 && this.texture.frame.height > 0) {
+    if (this._bitmap) {
+      this._bitmap.checkDirty();
     }
-    if (this.bitmap && !this.bitmap.isReady()) {
-        return;
-    }
-    if (this.texture.frame.width > 0 && this.texture.frame.height > 0) {
-        if (this._bitmap) {
-            this._bitmap.checkDirty();
-        }
 
-        //copy of pixi-v4 internal code
-        this.calculateVertices();
+    //copy of pixi-v4 internal code
+    this.calculateVertices();
 
-        if (this.pluginName === 'sprite' && this._isPicture) {
-            // use heavy renderer, which reduces artifacts and applies corrent blendMode,
-            // but does not use multitexture optimization
-            this._speedUpCustomBlendModes(renderer);
-            renderer.setObjectRenderer(renderer.plugins.picture);
-            renderer.plugins.picture.render(this);
-        } else {
-            // use pixi super-speed renderer
-            renderer.setObjectRenderer(renderer.plugins[this.pluginName]);
-            renderer.plugins[this.pluginName].render(this);
-        }
+    if (this.pluginName === "sprite" && this._isPicture) {
+      // use heavy renderer, which reduces artifacts and applies corrent blendMode,
+      // but does not use multitexture optimization
+      this._speedUpCustomBlendModes(renderer);
+      renderer.setObjectRenderer(renderer.plugins.picture);
+      renderer.plugins.picture.render(this);
+    } else {
+      // use pixi super-speed renderer
+      renderer.setObjectRenderer(renderer.plugins[this.pluginName]);
+      renderer.plugins[this.pluginName].render(this);
     }
+  }
 };
 
 // The important members from Pixi.js
@@ -4520,77 +4651,77 @@ Sprite.prototype._renderWebGL = function (renderer) {
  * @constructor
  */
 function Tilemap() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 Tilemap.prototype = Object.create(PIXI.Container.prototype);
 Tilemap.prototype.constructor = Tilemap;
 
 Tilemap.prototype.initialize = function () {
-    PIXI.Container.call(this);
+  PIXI.Container.call(this);
 
-    this._margin = 20;
-    this._width = Graphics.width + this._margin * 2;
-    this._height = Graphics.height + this._margin * 2;
-    this._tileWidth = 48;
-    this._tileHeight = 48;
-    this._mapWidth = 0;
-    this._mapHeight = 0;
-    this._mapData = null;
-    this._layerWidth = 0;
-    this._layerHeight = 0;
-    this._lastTiles = [];
+  this._margin = 20;
+  this._width = Graphics.width + this._margin * 2;
+  this._height = Graphics.height + this._margin * 2;
+  this._tileWidth = 48;
+  this._tileHeight = 48;
+  this._mapWidth = 0;
+  this._mapHeight = 0;
+  this._mapData = null;
+  this._layerWidth = 0;
+  this._layerHeight = 0;
+  this._lastTiles = [];
 
-    /**
-     * The bitmaps used as a tileset.
-     *
-     * @property bitmaps
-     * @type Array
-     */
-    this.bitmaps = [];
+  /**
+   * The bitmaps used as a tileset.
+   *
+   * @property bitmaps
+   * @type Array
+   */
+  this.bitmaps = [];
 
-    /**
-     * The origin point of the tilemap for scrolling.
-     *
-     * @property origin
-     * @type Point
-     */
-    this.origin = new Point();
+  /**
+   * The origin point of the tilemap for scrolling.
+   *
+   * @property origin
+   * @type Point
+   */
+  this.origin = new Point();
 
-    /**
-     * The tileset flags.
-     *
-     * @property flags
-     * @type Array
-     */
-    this.flags = [];
+  /**
+   * The tileset flags.
+   *
+   * @property flags
+   * @type Array
+   */
+  this.flags = [];
 
-    /**
-     * The animation count for autotiles.
-     *
-     * @property animationCount
-     * @type Number
-     */
-    this.animationCount = 0;
+  /**
+   * The animation count for autotiles.
+   *
+   * @property animationCount
+   * @type Number
+   */
+  this.animationCount = 0;
 
-    /**
-     * Whether the tilemap loops horizontal.
-     *
-     * @property horizontalWrap
-     * @type Boolean
-     */
-    this.horizontalWrap = false;
+  /**
+   * Whether the tilemap loops horizontal.
+   *
+   * @property horizontalWrap
+   * @type Boolean
+   */
+  this.horizontalWrap = false;
 
-    /**
-     * Whether the tilemap loops vertical.
-     *
-     * @property verticalWrap
-     * @type Boolean
-     */
-    this.verticalWrap = false;
+  /**
+   * Whether the tilemap loops vertical.
+   *
+   * @property verticalWrap
+   * @type Boolean
+   */
+  this.verticalWrap = false;
 
-    this._createLayers();
-    this.refresh();
+  this._createLayers();
+  this.refresh();
 };
 
 /**
@@ -4599,16 +4730,16 @@ Tilemap.prototype.initialize = function () {
  * @property width
  * @type Number
  */
-Object.defineProperty(Tilemap.prototype, 'width', {
-    get: function () {
-        return this._width;
-    },
-    set: function (value) {
-        if (this._width !== value) {
-            this._width = value;
-            this._createLayers();
-        }
+Object.defineProperty(Tilemap.prototype, "width", {
+  get: function () {
+    return this._width;
+  },
+  set: function (value) {
+    if (this._width !== value) {
+      this._width = value;
+      this._createLayers();
     }
+  },
 });
 
 /**
@@ -4617,16 +4748,16 @@ Object.defineProperty(Tilemap.prototype, 'width', {
  * @property height
  * @type Number
  */
-Object.defineProperty(Tilemap.prototype, 'height', {
-    get: function () {
-        return this._height;
-    },
-    set: function (value) {
-        if (this._height !== value) {
-            this._height = value;
-            this._createLayers();
-        }
+Object.defineProperty(Tilemap.prototype, "height", {
+  get: function () {
+    return this._height;
+  },
+  set: function (value) {
+    if (this._height !== value) {
+      this._height = value;
+      this._createLayers();
     }
+  },
 });
 
 /**
@@ -4635,16 +4766,16 @@ Object.defineProperty(Tilemap.prototype, 'height', {
  * @property tileWidth
  * @type Number
  */
-Object.defineProperty(Tilemap.prototype, 'tileWidth', {
-    get: function () {
-        return this._tileWidth;
-    },
-    set: function (value) {
-        if (this._tileWidth !== value) {
-            this._tileWidth = value;
-            this._createLayers();
-        }
+Object.defineProperty(Tilemap.prototype, "tileWidth", {
+  get: function () {
+    return this._tileWidth;
+  },
+  set: function (value) {
+    if (this._tileWidth !== value) {
+      this._tileWidth = value;
+      this._createLayers();
     }
+  },
 });
 
 /**
@@ -4653,16 +4784,16 @@ Object.defineProperty(Tilemap.prototype, 'tileWidth', {
  * @property tileHeight
  * @type Number
  */
-Object.defineProperty(Tilemap.prototype, 'tileHeight', {
-    get: function () {
-        return this._tileHeight;
-    },
-    set: function (value) {
-        if (this._tileHeight !== value) {
-            this._tileHeight = value;
-            this._createLayers();
-        }
+Object.defineProperty(Tilemap.prototype, "tileHeight", {
+  get: function () {
+    return this._tileHeight;
+  },
+  set: function (value) {
+    if (this._tileHeight !== value) {
+      this._tileHeight = value;
+      this._createLayers();
     }
+  },
 });
 
 /**
@@ -4674,9 +4805,9 @@ Object.defineProperty(Tilemap.prototype, 'tileHeight', {
  * @param {Array} data The one dimensional array for the map data
  */
 Tilemap.prototype.setData = function (width, height, data) {
-    this._mapWidth = width;
-    this._mapHeight = height;
-    this._mapData = data;
+  this._mapWidth = width;
+  this._mapHeight = height;
+  this._mapData = data;
 };
 
 /**
@@ -4687,12 +4818,12 @@ Tilemap.prototype.setData = function (width, height, data) {
  * @return {Boolean} True if the tilemap is ready
  */
 Tilemap.prototype.isReady = function () {
-    for (var i = 0; i < this.bitmaps.length; i++) {
-        if (this.bitmaps[i] && !this.bitmaps[i].isReady()) {
-            return false;
-        }
+  for (var i = 0; i < this.bitmaps.length; i++) {
+    if (this.bitmaps[i] && !this.bitmaps[i].isReady()) {
+      return false;
     }
-    return true;
+  }
+  return true;
 };
 
 /**
@@ -4701,18 +4832,18 @@ Tilemap.prototype.isReady = function () {
  * @method update
  */
 Tilemap.prototype.update = function () {
-    this.animationCount++;
-    this.animationFrame = Math.floor(this.animationCount / 30);
-    this.children.forEach(function (child) {
-        if (child.update) {
-            child.update();
-        }
-    });
-    for (var i = 0; i < this.bitmaps.length; i++) {
-        if (this.bitmaps[i]) {
-            this.bitmaps[i].touch();
-        }
+  this.animationCount++;
+  this.animationFrame = Math.floor(this.animationCount / 30);
+  this.children.forEach(function (child) {
+    if (child.update) {
+      child.update();
     }
+  });
+  for (var i = 0; i < this.bitmaps.length; i++) {
+    if (this.bitmaps[i]) {
+      this.bitmaps[i].touch();
+    }
+  }
 };
 
 /**
@@ -4721,7 +4852,7 @@ Tilemap.prototype.update = function () {
  * @method refresh
  */
 Tilemap.prototype.refresh = function () {
-    this._lastTiles.length = 0;
+  this._lastTiles.length = 0;
 };
 
 /**
@@ -4729,31 +4860,33 @@ Tilemap.prototype.refresh = function () {
  *
  * @method refresh
  */
-Tilemap.prototype.refreshTileset = function () {
-
-};
+Tilemap.prototype.refreshTileset = function () {};
 
 /**
  * @method updateTransform
  * @private
  */
 Tilemap.prototype.updateTransform = function () {
-    var ox = Math.floor(this.origin.x);
-    var oy = Math.floor(this.origin.y);
-    var startX = Math.floor((ox - this._margin) / this._tileWidth);
-    var startY = Math.floor((oy - this._margin) / this._tileHeight);
-    this._updateLayerPositions(startX, startY);
-    if (this._needsRepaint || this._lastAnimationFrame !== this.animationFrame ||
-        this._lastStartX !== startX || this._lastStartY !== startY) {
-        this._frameUpdated = this._lastAnimationFrame !== this.animationFrame;
-        this._lastAnimationFrame = this.animationFrame;
-        this._lastStartX = startX;
-        this._lastStartY = startY;
-        this._paintAllTiles(startX, startY);
-        this._needsRepaint = false;
-    }
-    this._sortChildren();
-    PIXI.Container.prototype.updateTransform.call(this);
+  var ox = Math.floor(this.origin.x);
+  var oy = Math.floor(this.origin.y);
+  var startX = Math.floor((ox - this._margin) / this._tileWidth);
+  var startY = Math.floor((oy - this._margin) / this._tileHeight);
+  this._updateLayerPositions(startX, startY);
+  if (
+    this._needsRepaint ||
+    this._lastAnimationFrame !== this.animationFrame ||
+    this._lastStartX !== startX ||
+    this._lastStartY !== startY
+  ) {
+    this._frameUpdated = this._lastAnimationFrame !== this.animationFrame;
+    this._lastAnimationFrame = this.animationFrame;
+    this._lastStartX = startX;
+    this._lastStartY = startY;
+    this._paintAllTiles(startX, startY);
+    this._needsRepaint = false;
+  }
+  this._sortChildren();
+  PIXI.Container.prototype.updateTransform.call(this);
 };
 
 /**
@@ -4761,47 +4894,47 @@ Tilemap.prototype.updateTransform = function () {
  * @private
  */
 Tilemap.prototype._createLayers = function () {
-    var width = this._width;
-    var height = this._height;
-    var margin = this._margin;
-    var tileCols = Math.ceil(width / this._tileWidth) + 1;
-    var tileRows = Math.ceil(height / this._tileHeight) + 1;
-    var layerWidth = tileCols * this._tileWidth;
-    var layerHeight = tileRows * this._tileHeight;
-    this._lowerBitmap = new Bitmap(layerWidth, layerHeight);
-    this._upperBitmap = new Bitmap(layerWidth, layerHeight);
-    this._layerWidth = layerWidth;
-    this._layerHeight = layerHeight;
+  var width = this._width;
+  var height = this._height;
+  var margin = this._margin;
+  var tileCols = Math.ceil(width / this._tileWidth) + 1;
+  var tileRows = Math.ceil(height / this._tileHeight) + 1;
+  var layerWidth = tileCols * this._tileWidth;
+  var layerHeight = tileRows * this._tileHeight;
+  this._lowerBitmap = new Bitmap(layerWidth, layerHeight);
+  this._upperBitmap = new Bitmap(layerWidth, layerHeight);
+  this._layerWidth = layerWidth;
+  this._layerHeight = layerHeight;
 
-    /*
-     * Z coordinate:
-     *
-     * 0 : Lower tiles
-     * 1 : Lower characters
-     * 3 : Normal characters
-     * 4 : Upper tiles
-     * 5 : Upper characters
-     * 6 : Airship shadow
-     * 7 : Balloon
-     * 8 : Animation
-     * 9 : Destination
-     */
+  /*
+   * Z coordinate:
+   *
+   * 0 : Lower tiles
+   * 1 : Lower characters
+   * 3 : Normal characters
+   * 4 : Upper tiles
+   * 5 : Upper characters
+   * 6 : Airship shadow
+   * 7 : Balloon
+   * 8 : Animation
+   * 9 : Destination
+   */
 
-    this._lowerLayer = new Sprite();
-    this._lowerLayer.move(-margin, -margin, width, height);
-    this._lowerLayer.z = 0;
+  this._lowerLayer = new Sprite();
+  this._lowerLayer.move(-margin, -margin, width, height);
+  this._lowerLayer.z = 0;
 
-    this._upperLayer = new Sprite();
-    this._upperLayer.move(-margin, -margin, width, height);
-    this._upperLayer.z = 4;
+  this._upperLayer = new Sprite();
+  this._upperLayer.move(-margin, -margin, width, height);
+  this._upperLayer.z = 4;
 
-    for (var i = 0; i < 4; i++) {
-        this._lowerLayer.addChild(new Sprite(this._lowerBitmap));
-        this._upperLayer.addChild(new Sprite(this._upperBitmap));
-    }
+  for (var i = 0; i < 4; i++) {
+    this._lowerLayer.addChild(new Sprite(this._lowerBitmap));
+    this._upperLayer.addChild(new Sprite(this._upperBitmap));
+  }
 
-    this.addChild(this._lowerLayer);
-    this.addChild(this._upperLayer);
+  this.addChild(this._lowerLayer);
+  this.addChild(this._upperLayer);
 };
 
 /**
@@ -4811,32 +4944,32 @@ Tilemap.prototype._createLayers = function () {
  * @private
  */
 Tilemap.prototype._updateLayerPositions = function (startX, startY) {
-    var m = this._margin;
-    var ox = Math.floor(this.origin.x);
-    var oy = Math.floor(this.origin.y);
-    var x2 = (ox - m).mod(this._layerWidth);
-    var y2 = (oy - m).mod(this._layerHeight);
-    var w1 = this._layerWidth - x2;
-    var h1 = this._layerHeight - y2;
-    var w2 = this._width - w1;
-    var h2 = this._height - h1;
+  var m = this._margin;
+  var ox = Math.floor(this.origin.x);
+  var oy = Math.floor(this.origin.y);
+  var x2 = (ox - m).mod(this._layerWidth);
+  var y2 = (oy - m).mod(this._layerHeight);
+  var w1 = this._layerWidth - x2;
+  var h1 = this._layerHeight - y2;
+  var w2 = this._width - w1;
+  var h2 = this._height - h1;
 
-    for (var i = 0; i < 2; i++) {
-        var children;
-        if (i === 0) {
-            children = this._lowerLayer.children;
-        } else {
-            children = this._upperLayer.children;
-        }
-        children[0].move(0, 0, w1, h1);
-        children[0].setFrame(x2, y2, w1, h1);
-        children[1].move(w1, 0, w2, h1);
-        children[1].setFrame(0, y2, w2, h1);
-        children[2].move(0, h1, w1, h2);
-        children[2].setFrame(x2, 0, w1, h2);
-        children[3].move(w1, h1, w2, h2);
-        children[3].setFrame(0, 0, w2, h2);
+  for (var i = 0; i < 2; i++) {
+    var children;
+    if (i === 0) {
+      children = this._lowerLayer.children;
+    } else {
+      children = this._upperLayer.children;
     }
+    children[0].move(0, 0, w1, h1);
+    children[0].setFrame(x2, y2, w1, h1);
+    children[1].move(w1, 0, w2, h1);
+    children[1].setFrame(0, y2, w2, h1);
+    children[2].move(0, h1, w1, h2);
+    children[2].setFrame(x2, 0, w1, h2);
+    children[3].move(w1, h1, w2, h2);
+    children[3].setFrame(0, 0, w2, h2);
+  }
 };
 
 /**
@@ -4846,13 +4979,13 @@ Tilemap.prototype._updateLayerPositions = function (startX, startY) {
  * @private
  */
 Tilemap.prototype._paintAllTiles = function (startX, startY) {
-    var tileCols = Math.ceil(this._width / this._tileWidth) + 1;
-    var tileRows = Math.ceil(this._height / this._tileHeight) + 1;
-    for (var y = 0; y < tileRows; y++) {
-        for (var x = 0; x < tileCols; x++) {
-            this._paintTiles(startX, startY, x, y);
-        }
+  var tileCols = Math.ceil(this._width / this._tileWidth) + 1;
+  var tileRows = Math.ceil(this._height / this._tileHeight) + 1;
+  for (var y = 0; y < tileRows; y++) {
+    for (var x = 0; x < tileCols; x++) {
+      this._paintTiles(startX, startY, x, y);
     }
+  }
 };
 
 /**
@@ -4864,82 +4997,84 @@ Tilemap.prototype._paintAllTiles = function (startX, startY) {
  * @private
  */
 Tilemap.prototype._paintTiles = function (startX, startY, x, y) {
-    var tableEdgeVirtualId = 10000;
-    var mx = startX + x;
-    var my = startY + y;
-    var dx = (mx * this._tileWidth).mod(this._layerWidth);
-    var dy = (my * this._tileHeight).mod(this._layerHeight);
-    var lx = dx / this._tileWidth;
-    var ly = dy / this._tileHeight;
-    var tileId0 = this._readMapData(mx, my, 0);
-    var tileId1 = this._readMapData(mx, my, 1);
-    var tileId2 = this._readMapData(mx, my, 2);
-    var tileId3 = this._readMapData(mx, my, 3);
-    var shadowBits = this._readMapData(mx, my, 4);
-    var upperTileId1 = this._readMapData(mx, my - 1, 1);
-    var lowerTiles = [];
-    var upperTiles = [];
+  var tableEdgeVirtualId = 10000;
+  var mx = startX + x;
+  var my = startY + y;
+  var dx = (mx * this._tileWidth).mod(this._layerWidth);
+  var dy = (my * this._tileHeight).mod(this._layerHeight);
+  var lx = dx / this._tileWidth;
+  var ly = dy / this._tileHeight;
+  var tileId0 = this._readMapData(mx, my, 0);
+  var tileId1 = this._readMapData(mx, my, 1);
+  var tileId2 = this._readMapData(mx, my, 2);
+  var tileId3 = this._readMapData(mx, my, 3);
+  var shadowBits = this._readMapData(mx, my, 4);
+  var upperTileId1 = this._readMapData(mx, my - 1, 1);
+  var lowerTiles = [];
+  var upperTiles = [];
 
-    if (this._isHigherTile(tileId0)) {
-        upperTiles.push(tileId0);
+  if (this._isHigherTile(tileId0)) {
+    upperTiles.push(tileId0);
+  } else {
+    lowerTiles.push(tileId0);
+  }
+  if (this._isHigherTile(tileId1)) {
+    upperTiles.push(tileId1);
+  } else {
+    lowerTiles.push(tileId1);
+  }
+
+  lowerTiles.push(-shadowBits);
+
+  if (this._isTableTile(upperTileId1) && !this._isTableTile(tileId1)) {
+    if (!Tilemap.isShadowingTile(tileId0)) {
+      lowerTiles.push(tableEdgeVirtualId + upperTileId1);
+    }
+  }
+
+  if (this._isOverpassPosition(mx, my)) {
+    upperTiles.push(tileId2);
+    upperTiles.push(tileId3);
+  } else {
+    if (this._isHigherTile(tileId2)) {
+      upperTiles.push(tileId2);
     } else {
-        lowerTiles.push(tileId0);
+      lowerTiles.push(tileId2);
     }
-    if (this._isHigherTile(tileId1)) {
-        upperTiles.push(tileId1);
+    if (this._isHigherTile(tileId3)) {
+      upperTiles.push(tileId3);
     } else {
-        lowerTiles.push(tileId1);
+      lowerTiles.push(tileId3);
     }
+  }
 
-    lowerTiles.push(-shadowBits);
-
-    if (this._isTableTile(upperTileId1) && !this._isTableTile(tileId1)) {
-        if (!Tilemap.isShadowingTile(tileId0)) {
-            lowerTiles.push(tableEdgeVirtualId + upperTileId1);
-        }
+  var lastLowerTiles = this._readLastTiles(0, lx, ly);
+  if (
+    !lowerTiles.equals(lastLowerTiles) ||
+    (Tilemap.isTileA1(tileId0) && this._frameUpdated)
+  ) {
+    this._lowerBitmap.clearRect(dx, dy, this._tileWidth, this._tileHeight);
+    for (var i = 0; i < lowerTiles.length; i++) {
+      var lowerTileId = lowerTiles[i];
+      if (lowerTileId < 0) {
+        this._drawShadow(this._lowerBitmap, shadowBits, dx, dy);
+      } else if (lowerTileId >= tableEdgeVirtualId) {
+        this._drawTableEdge(this._lowerBitmap, upperTileId1, dx, dy);
+      } else {
+        this._drawTile(this._lowerBitmap, lowerTileId, dx, dy);
+      }
     }
+    this._writeLastTiles(0, lx, ly, lowerTiles);
+  }
 
-    if (this._isOverpassPosition(mx, my)) {
-        upperTiles.push(tileId2);
-        upperTiles.push(tileId3);
-    } else {
-        if (this._isHigherTile(tileId2)) {
-            upperTiles.push(tileId2);
-        } else {
-            lowerTiles.push(tileId2);
-        }
-        if (this._isHigherTile(tileId3)) {
-            upperTiles.push(tileId3);
-        } else {
-            lowerTiles.push(tileId3);
-        }
+  var lastUpperTiles = this._readLastTiles(1, lx, ly);
+  if (!upperTiles.equals(lastUpperTiles)) {
+    this._upperBitmap.clearRect(dx, dy, this._tileWidth, this._tileHeight);
+    for (var j = 0; j < upperTiles.length; j++) {
+      this._drawTile(this._upperBitmap, upperTiles[j], dx, dy);
     }
-
-    var lastLowerTiles = this._readLastTiles(0, lx, ly);
-    if (!lowerTiles.equals(lastLowerTiles) ||
-        (Tilemap.isTileA1(tileId0) && this._frameUpdated)) {
-        this._lowerBitmap.clearRect(dx, dy, this._tileWidth, this._tileHeight);
-        for (var i = 0; i < lowerTiles.length; i++) {
-            var lowerTileId = lowerTiles[i];
-            if (lowerTileId < 0) {
-                this._drawShadow(this._lowerBitmap, shadowBits, dx, dy);
-            } else if (lowerTileId >= tableEdgeVirtualId) {
-                this._drawTableEdge(this._lowerBitmap, upperTileId1, dx, dy);
-            } else {
-                this._drawTile(this._lowerBitmap, lowerTileId, dx, dy);
-            }
-        }
-        this._writeLastTiles(0, lx, ly, lowerTiles);
-    }
-
-    var lastUpperTiles = this._readLastTiles(1, lx, ly);
-    if (!upperTiles.equals(lastUpperTiles)) {
-        this._upperBitmap.clearRect(dx, dy, this._tileWidth, this._tileHeight);
-        for (var j = 0; j < upperTiles.length; j++) {
-            this._drawTile(this._upperBitmap, upperTiles[j], dx, dy);
-        }
-        this._writeLastTiles(1, lx, ly, upperTiles);
-    }
+    this._writeLastTiles(1, lx, ly, upperTiles);
+  }
 };
 
 /**
@@ -4950,17 +5085,17 @@ Tilemap.prototype._paintTiles = function (startX, startY, x, y) {
  * @private
  */
 Tilemap.prototype._readLastTiles = function (i, x, y) {
-    var array1 = this._lastTiles[i];
-    if (array1) {
-        var array2 = array1[y];
-        if (array2) {
-            var tiles = array2[x];
-            if (tiles) {
-                return tiles;
-            }
-        }
+  var array1 = this._lastTiles[i];
+  if (array1) {
+    var array2 = array1[y];
+    if (array2) {
+      var tiles = array2[x];
+      if (tiles) {
+        return tiles;
+      }
     }
-    return [];
+  }
+  return [];
 };
 
 /**
@@ -4972,15 +5107,15 @@ Tilemap.prototype._readLastTiles = function (i, x, y) {
  * @private
  */
 Tilemap.prototype._writeLastTiles = function (i, x, y, tiles) {
-    var array1 = this._lastTiles[i];
-    if (!array1) {
-        array1 = this._lastTiles[i] = [];
-    }
-    var array2 = array1[y];
-    if (!array2) {
-        array2 = array1[y] = [];
-    }
-    array2[x] = tiles;
+  var array1 = this._lastTiles[i];
+  if (!array1) {
+    array1 = this._lastTiles[i] = [];
+  }
+  var array2 = array1[y];
+  if (!array2) {
+    array2 = array1[y] = [];
+  }
+  array2[x] = tiles;
 };
 
 /**
@@ -4992,13 +5127,13 @@ Tilemap.prototype._writeLastTiles = function (i, x, y, tiles) {
  * @private
  */
 Tilemap.prototype._drawTile = function (bitmap, tileId, dx, dy) {
-    if (Tilemap.isVisibleTile(tileId)) {
-        if (Tilemap.isAutotile(tileId)) {
-            this._drawAutotile(bitmap, tileId, dx, dy);
-        } else {
-            this._drawNormalTile(bitmap, tileId, dx, dy);
-        }
+  if (Tilemap.isVisibleTile(tileId)) {
+    if (Tilemap.isAutotile(tileId)) {
+      this._drawAutotile(bitmap, tileId, dx, dy);
+    } else {
+      this._drawNormalTile(bitmap, tileId, dx, dy);
     }
+  }
 };
 
 /**
@@ -5010,23 +5145,23 @@ Tilemap.prototype._drawTile = function (bitmap, tileId, dx, dy) {
  * @private
  */
 Tilemap.prototype._drawNormalTile = function (bitmap, tileId, dx, dy) {
-    var setNumber = 0;
+  var setNumber = 0;
 
-    if (Tilemap.isTileA5(tileId)) {
-        setNumber = 4;
-    } else {
-        setNumber = 5 + Math.floor(tileId / 256);
-    }
+  if (Tilemap.isTileA5(tileId)) {
+    setNumber = 4;
+  } else {
+    setNumber = 5 + Math.floor(tileId / 256);
+  }
 
-    var w = this._tileWidth;
-    var h = this._tileHeight;
-    var sx = (Math.floor(tileId / 128) % 2 * 8 + tileId % 8) * w;
-    var sy = (Math.floor(tileId % 256 / 8) % 16) * h;
+  var w = this._tileWidth;
+  var h = this._tileHeight;
+  var sx = ((Math.floor(tileId / 128) % 2) * 8 + (tileId % 8)) * w;
+  var sy = (Math.floor((tileId % 256) / 8) % 16) * h;
 
-    var source = this.bitmaps[setNumber];
-    if (source) {
-        bitmap.bltImage(source, sx, sy, w, h, dx, dy, w, h);
-    }
+  var source = this.bitmaps[setNumber];
+  if (source) {
+    bitmap.bltImage(source, sx, sy, w, h, dx, dy, w, h);
+  }
 };
 
 /**
@@ -5038,91 +5173,90 @@ Tilemap.prototype._drawNormalTile = function (bitmap, tileId, dx, dy) {
  * @private
  */
 Tilemap.prototype._drawAutotile = function (bitmap, tileId, dx, dy) {
-    var autotileTable = Tilemap.FLOOR_AUTOTILE_TABLE;
-    var kind = Tilemap.getAutotileKind(tileId);
-    var shape = Tilemap.getAutotileShape(tileId);
-    var tx = kind % 8;
-    var ty = Math.floor(kind / 8);
-    var bx = 0;
-    var by = 0;
-    var setNumber = 0;
-    var isTable = false;
+  var autotileTable = Tilemap.FLOOR_AUTOTILE_TABLE;
+  var kind = Tilemap.getAutotileKind(tileId);
+  var shape = Tilemap.getAutotileShape(tileId);
+  var tx = kind % 8;
+  var ty = Math.floor(kind / 8);
+  var bx = 0;
+  var by = 0;
+  var setNumber = 0;
+  var isTable = false;
 
-    if (Tilemap.isTileA1(tileId)) {
-        var waterSurfaceIndex = [0, 1, 2, 1][this.animationFrame % 4];
-        setNumber = 0;
-        if (kind === 0) {
-            bx = waterSurfaceIndex * 2;
-            by = 0;
-        } else if (kind === 1) {
-            bx = waterSurfaceIndex * 2;
-            by = 3;
-        } else if (kind === 2) {
-            bx = 6;
-            by = 0;
-        } else if (kind === 3) {
-            bx = 6;
-            by = 3;
-        } else {
-            bx = Math.floor(tx / 4) * 8;
-            by = ty * 6 + Math.floor(tx / 2) % 2 * 3;
-            if (kind % 2 === 0) {
-                bx += waterSurfaceIndex * 2;
-            }
-            else {
-                bx += 6;
-                autotileTable = Tilemap.WATERFALL_AUTOTILE_TABLE;
-                by += this.animationFrame % 3;
-            }
-        }
-    } else if (Tilemap.isTileA2(tileId)) {
-        setNumber = 1;
-        bx = tx * 2;
-        by = (ty - 2) * 3;
-        isTable = this._isTableTile(tileId);
-    } else if (Tilemap.isTileA3(tileId)) {
-        setNumber = 2;
-        bx = tx * 2;
-        by = (ty - 6) * 2;
-        autotileTable = Tilemap.WALL_AUTOTILE_TABLE;
-    } else if (Tilemap.isTileA4(tileId)) {
-        setNumber = 3;
-        bx = tx * 2;
-        by = Math.floor((ty - 10) * 2.5 + (ty % 2 === 1 ? 0.5 : 0));
-        if (ty % 2 === 1) {
-            autotileTable = Tilemap.WALL_AUTOTILE_TABLE;
-        }
+  if (Tilemap.isTileA1(tileId)) {
+    var waterSurfaceIndex = [0, 1, 2, 1][this.animationFrame % 4];
+    setNumber = 0;
+    if (kind === 0) {
+      bx = waterSurfaceIndex * 2;
+      by = 0;
+    } else if (kind === 1) {
+      bx = waterSurfaceIndex * 2;
+      by = 3;
+    } else if (kind === 2) {
+      bx = 6;
+      by = 0;
+    } else if (kind === 3) {
+      bx = 6;
+      by = 3;
+    } else {
+      bx = Math.floor(tx / 4) * 8;
+      by = ty * 6 + (Math.floor(tx / 2) % 2) * 3;
+      if (kind % 2 === 0) {
+        bx += waterSurfaceIndex * 2;
+      } else {
+        bx += 6;
+        autotileTable = Tilemap.WATERFALL_AUTOTILE_TABLE;
+        by += this.animationFrame % 3;
+      }
     }
-
-    var table = autotileTable[shape];
-    var source = this.bitmaps[setNumber];
-
-    if (table && source) {
-        var w1 = this._tileWidth / 2;
-        var h1 = this._tileHeight / 2;
-        for (var i = 0; i < 4; i++) {
-            var qsx = table[i][0];
-            var qsy = table[i][1];
-            var sx1 = (bx * 2 + qsx) * w1;
-            var sy1 = (by * 2 + qsy) * h1;
-            var dx1 = dx + (i % 2) * w1;
-            var dy1 = dy + Math.floor(i / 2) * h1;
-            if (isTable && (qsy === 1 || qsy === 5)) {
-                var qsx2 = qsx;
-                var qsy2 = 3;
-                if (qsy === 1) {
-                    qsx2 = [0, 3, 2, 1][qsx];
-                }
-                var sx2 = (bx * 2 + qsx2) * w1;
-                var sy2 = (by * 2 + qsy2) * h1;
-                bitmap.bltImage(source, sx2, sy2, w1, h1, dx1, dy1, w1, h1);
-                dy1 += h1 / 2;
-                bitmap.bltImage(source, sx1, sy1, w1, h1 / 2, dx1, dy1, w1, h1 / 2);
-            } else {
-                bitmap.bltImage(source, sx1, sy1, w1, h1, dx1, dy1, w1, h1);
-            }
-        }
+  } else if (Tilemap.isTileA2(tileId)) {
+    setNumber = 1;
+    bx = tx * 2;
+    by = (ty - 2) * 3;
+    isTable = this._isTableTile(tileId);
+  } else if (Tilemap.isTileA3(tileId)) {
+    setNumber = 2;
+    bx = tx * 2;
+    by = (ty - 6) * 2;
+    autotileTable = Tilemap.WALL_AUTOTILE_TABLE;
+  } else if (Tilemap.isTileA4(tileId)) {
+    setNumber = 3;
+    bx = tx * 2;
+    by = Math.floor((ty - 10) * 2.5 + (ty % 2 === 1 ? 0.5 : 0));
+    if (ty % 2 === 1) {
+      autotileTable = Tilemap.WALL_AUTOTILE_TABLE;
     }
+  }
+
+  var table = autotileTable[shape];
+  var source = this.bitmaps[setNumber];
+
+  if (table && source) {
+    var w1 = this._tileWidth / 2;
+    var h1 = this._tileHeight / 2;
+    for (var i = 0; i < 4; i++) {
+      var qsx = table[i][0];
+      var qsy = table[i][1];
+      var sx1 = (bx * 2 + qsx) * w1;
+      var sy1 = (by * 2 + qsy) * h1;
+      var dx1 = dx + (i % 2) * w1;
+      var dy1 = dy + Math.floor(i / 2) * h1;
+      if (isTable && (qsy === 1 || qsy === 5)) {
+        var qsx2 = qsx;
+        var qsy2 = 3;
+        if (qsy === 1) {
+          qsx2 = [0, 3, 2, 1][qsx];
+        }
+        var sx2 = (bx * 2 + qsx2) * w1;
+        var sy2 = (by * 2 + qsy2) * h1;
+        bitmap.bltImage(source, sx2, sy2, w1, h1, dx1, dy1, w1, h1);
+        dy1 += h1 / 2;
+        bitmap.bltImage(source, sx1, sy1, w1, h1 / 2, dx1, dy1, w1, h1 / 2);
+      } else {
+        bitmap.bltImage(source, sx1, sy1, w1, h1, dx1, dy1, w1, h1);
+      }
+    }
+  }
 };
 
 /**
@@ -5134,32 +5268,32 @@ Tilemap.prototype._drawAutotile = function (bitmap, tileId, dx, dy) {
  * @private
  */
 Tilemap.prototype._drawTableEdge = function (bitmap, tileId, dx, dy) {
-    if (Tilemap.isTileA2(tileId)) {
-        var autotileTable = Tilemap.FLOOR_AUTOTILE_TABLE;
-        var kind = Tilemap.getAutotileKind(tileId);
-        var shape = Tilemap.getAutotileShape(tileId);
-        var tx = kind % 8;
-        var ty = Math.floor(kind / 8);
-        var setNumber = 1;
-        var bx = tx * 2;
-        var by = (ty - 2) * 3;
-        var table = autotileTable[shape];
+  if (Tilemap.isTileA2(tileId)) {
+    var autotileTable = Tilemap.FLOOR_AUTOTILE_TABLE;
+    var kind = Tilemap.getAutotileKind(tileId);
+    var shape = Tilemap.getAutotileShape(tileId);
+    var tx = kind % 8;
+    var ty = Math.floor(kind / 8);
+    var setNumber = 1;
+    var bx = tx * 2;
+    var by = (ty - 2) * 3;
+    var table = autotileTable[shape];
 
-        if (table) {
-            var source = this.bitmaps[setNumber];
-            var w1 = this._tileWidth / 2;
-            var h1 = this._tileHeight / 2;
-            for (var i = 0; i < 2; i++) {
-                var qsx = table[2 + i][0];
-                var qsy = table[2 + i][1];
-                var sx1 = (bx * 2 + qsx) * w1;
-                var sy1 = (by * 2 + qsy) * h1 + h1 / 2;
-                var dx1 = dx + (i % 2) * w1;
-                var dy1 = dy + Math.floor(i / 2) * h1;
-                bitmap.bltImage(source, sx1, sy1, w1, h1 / 2, dx1, dy1, w1, h1 / 2);
-            }
-        }
+    if (table) {
+      var source = this.bitmaps[setNumber];
+      var w1 = this._tileWidth / 2;
+      var h1 = this._tileHeight / 2;
+      for (var i = 0; i < 2; i++) {
+        var qsx = table[2 + i][0];
+        var qsy = table[2 + i][1];
+        var sx1 = (bx * 2 + qsx) * w1;
+        var sy1 = (by * 2 + qsy) * h1 + h1 / 2;
+        var dx1 = dx + (i % 2) * w1;
+        var dy1 = dy + Math.floor(i / 2) * h1;
+        bitmap.bltImage(source, sx1, sy1, w1, h1 / 2, dx1, dy1, w1, h1 / 2);
+      }
     }
+  }
 };
 
 /**
@@ -5171,18 +5305,18 @@ Tilemap.prototype._drawTableEdge = function (bitmap, tileId, dx, dy) {
  * @private
  */
 Tilemap.prototype._drawShadow = function (bitmap, shadowBits, dx, dy) {
-    if (shadowBits & 0x0f) {
-        var w1 = this._tileWidth / 2;
-        var h1 = this._tileHeight / 2;
-        var color = 'rgba(0,0,0,0.5)';
-        for (var i = 0; i < 4; i++) {
-            if (shadowBits & (1 << i)) {
-                var dx1 = dx + (i % 2) * w1;
-                var dy1 = dy + Math.floor(i / 2) * h1;
-                bitmap.fillRect(dx1, dy1, w1, h1, color);
-            }
-        }
+  if (shadowBits & 0x0f) {
+    var w1 = this._tileWidth / 2;
+    var h1 = this._tileHeight / 2;
+    var color = "rgba(0,0,0,0.5)";
+    for (var i = 0; i < 4; i++) {
+      if (shadowBits & (1 << i)) {
+        var dx1 = dx + (i % 2) * w1;
+        var dy1 = dy + Math.floor(i / 2) * h1;
+        bitmap.fillRect(dx1, dy1, w1, h1, color);
+      }
     }
+  }
 };
 
 /**
@@ -5194,23 +5328,23 @@ Tilemap.prototype._drawShadow = function (bitmap, shadowBits, dx, dy) {
  * @private
  */
 Tilemap.prototype._readMapData = function (x, y, z) {
-    if (this._mapData) {
-        var width = this._mapWidth;
-        var height = this._mapHeight;
-        if (this.horizontalWrap) {
-            x = x.mod(width);
-        }
-        if (this.verticalWrap) {
-            y = y.mod(height);
-        }
-        if (x >= 0 && x < width && y >= 0 && y < height) {
-            return this._mapData[(z * height + y) * width + x] || 0;
-        } else {
-            return 0;
-        }
-    } else {
-        return 0;
+  if (this._mapData) {
+    var width = this._mapWidth;
+    var height = this._mapHeight;
+    if (this.horizontalWrap) {
+      x = x.mod(width);
     }
+    if (this.verticalWrap) {
+      y = y.mod(height);
+    }
+    if (x >= 0 && x < width && y >= 0 && y < height) {
+      return this._mapData[(z * height + y) * width + x] || 0;
+    } else {
+      return 0;
+    }
+  } else {
+    return 0;
+  }
 };
 
 /**
@@ -5220,7 +5354,7 @@ Tilemap.prototype._readMapData = function (x, y, z) {
  * @private
  */
 Tilemap.prototype._isHigherTile = function (tileId) {
-    return this.flags[tileId] & 0x10;
+  return this.flags[tileId] & 0x10;
 };
 
 /**
@@ -5230,7 +5364,7 @@ Tilemap.prototype._isHigherTile = function (tileId) {
  * @private
  */
 Tilemap.prototype._isTableTile = function (tileId) {
-    return Tilemap.isTileA2(tileId) && (this.flags[tileId] & 0x80);
+  return Tilemap.isTileA2(tileId) && this.flags[tileId] & 0x80;
 };
 
 /**
@@ -5241,7 +5375,7 @@ Tilemap.prototype._isTableTile = function (tileId) {
  * @private
  */
 Tilemap.prototype._isOverpassPosition = function (mx, my) {
-    return false;
+  return false;
 };
 
 /**
@@ -5249,7 +5383,7 @@ Tilemap.prototype._isOverpassPosition = function (mx, my) {
  * @private
  */
 Tilemap.prototype._sortChildren = function () {
-    this.children.sort(this._compareChildOrder.bind(this));
+  this.children.sort(this._compareChildOrder.bind(this));
 };
 
 /**
@@ -5259,13 +5393,13 @@ Tilemap.prototype._sortChildren = function () {
  * @private
  */
 Tilemap.prototype._compareChildOrder = function (a, b) {
-    if (a.z !== b.z) {
-        return a.z - b.z;
-    } else if (a.y !== b.y) {
-        return a.y - b.y;
-    } else {
-        return a.spriteId - b.spriteId;
-    }
+  if (a.z !== b.z) {
+    return a.z - b.z;
+  } else if (a.y !== b.y) {
+    return a.y - b.y;
+  } else {
+    return a.spriteId - b.spriteId;
+  }
 };
 
 // Tile type checkers
@@ -5282,150 +5416,531 @@ Tilemap.TILE_ID_A4 = 5888;
 Tilemap.TILE_ID_MAX = 8192;
 
 Tilemap.isVisibleTile = function (tileId) {
-    return tileId > 0 && tileId < this.TILE_ID_MAX;
+  return tileId > 0 && tileId < this.TILE_ID_MAX;
 };
 
 Tilemap.isAutotile = function (tileId) {
-    return tileId >= this.TILE_ID_A1;
+  return tileId >= this.TILE_ID_A1;
 };
 
 Tilemap.getAutotileKind = function (tileId) {
-    return Math.floor((tileId - this.TILE_ID_A1) / 48);
+  return Math.floor((tileId - this.TILE_ID_A1) / 48);
 };
 
 Tilemap.getAutotileShape = function (tileId) {
-    return (tileId - this.TILE_ID_A1) % 48;
+  return (tileId - this.TILE_ID_A1) % 48;
 };
 
 Tilemap.makeAutotileId = function (kind, shape) {
-    return this.TILE_ID_A1 + kind * 48 + shape;
+  return this.TILE_ID_A1 + kind * 48 + shape;
 };
 
 Tilemap.isSameKindTile = function (tileID1, tileID2) {
-    if (this.isAutotile(tileID1) && this.isAutotile(tileID2)) {
-        return this.getAutotileKind(tileID1) === this.getAutotileKind(tileID2);
-    } else {
-        return tileID1 === tileID2;
-    }
+  if (this.isAutotile(tileID1) && this.isAutotile(tileID2)) {
+    return this.getAutotileKind(tileID1) === this.getAutotileKind(tileID2);
+  } else {
+    return tileID1 === tileID2;
+  }
 };
 
 Tilemap.isTileA1 = function (tileId) {
-    return tileId >= this.TILE_ID_A1 && tileId < this.TILE_ID_A2;
+  return tileId >= this.TILE_ID_A1 && tileId < this.TILE_ID_A2;
 };
 
 Tilemap.isTileA2 = function (tileId) {
-    return tileId >= this.TILE_ID_A2 && tileId < this.TILE_ID_A3;
+  return tileId >= this.TILE_ID_A2 && tileId < this.TILE_ID_A3;
 };
 
 Tilemap.isTileA3 = function (tileId) {
-    return tileId >= this.TILE_ID_A3 && tileId < this.TILE_ID_A4;
+  return tileId >= this.TILE_ID_A3 && tileId < this.TILE_ID_A4;
 };
 
 Tilemap.isTileA4 = function (tileId) {
-    return tileId >= this.TILE_ID_A4 && tileId < this.TILE_ID_MAX;
+  return tileId >= this.TILE_ID_A4 && tileId < this.TILE_ID_MAX;
 };
 
 Tilemap.isTileA5 = function (tileId) {
-    return tileId >= this.TILE_ID_A5 && tileId < this.TILE_ID_A1;
+  return tileId >= this.TILE_ID_A5 && tileId < this.TILE_ID_A1;
 };
 
 Tilemap.isWaterTile = function (tileId) {
-    if (this.isTileA1(tileId)) {
-        return !(tileId >= this.TILE_ID_A1 + 96 && tileId < this.TILE_ID_A1 + 192);
-    } else {
-        return false;
-    }
+  if (this.isTileA1(tileId)) {
+    return !(tileId >= this.TILE_ID_A1 + 96 && tileId < this.TILE_ID_A1 + 192);
+  } else {
+    return false;
+  }
 };
 
 Tilemap.isWaterfallTile = function (tileId) {
-    if (tileId >= this.TILE_ID_A1 + 192 && tileId < this.TILE_ID_A2) {
-        return this.getAutotileKind(tileId) % 2 === 1;
-    } else {
-        return false;
-    }
+  if (tileId >= this.TILE_ID_A1 + 192 && tileId < this.TILE_ID_A2) {
+    return this.getAutotileKind(tileId) % 2 === 1;
+  } else {
+    return false;
+  }
 };
 
 Tilemap.isGroundTile = function (tileId) {
-    return this.isTileA1(tileId) || this.isTileA2(tileId) || this.isTileA5(tileId);
+  return (
+    this.isTileA1(tileId) || this.isTileA2(tileId) || this.isTileA5(tileId)
+  );
 };
 
 Tilemap.isShadowingTile = function (tileId) {
-    return this.isTileA3(tileId) || this.isTileA4(tileId);
+  return this.isTileA3(tileId) || this.isTileA4(tileId);
 };
 
 Tilemap.isRoofTile = function (tileId) {
-    return this.isTileA3(tileId) && this.getAutotileKind(tileId) % 16 < 8;
+  return this.isTileA3(tileId) && this.getAutotileKind(tileId) % 16 < 8;
 };
 
 Tilemap.isWallTopTile = function (tileId) {
-    return this.isTileA4(tileId) && this.getAutotileKind(tileId) % 16 < 8;
+  return this.isTileA4(tileId) && this.getAutotileKind(tileId) % 16 < 8;
 };
 
 Tilemap.isWallSideTile = function (tileId) {
-    return (this.isTileA3(tileId) || this.isTileA4(tileId)) &&
-        this.getAutotileKind(tileId) % 16 >= 8;
+  return (
+    (this.isTileA3(tileId) || this.isTileA4(tileId)) &&
+    this.getAutotileKind(tileId) % 16 >= 8
+  );
 };
 
 Tilemap.isWallTile = function (tileId) {
-    return this.isWallTopTile(tileId) || this.isWallSideTile(tileId);
+  return this.isWallTopTile(tileId) || this.isWallSideTile(tileId);
 };
 
 Tilemap.isFloorTypeAutotile = function (tileId) {
-    return (this.isTileA1(tileId) && !this.isWaterfallTile(tileId)) ||
-        this.isTileA2(tileId) || this.isWallTopTile(tileId);
+  return (
+    (this.isTileA1(tileId) && !this.isWaterfallTile(tileId)) ||
+    this.isTileA2(tileId) ||
+    this.isWallTopTile(tileId)
+  );
 };
 
 Tilemap.isWallTypeAutotile = function (tileId) {
-    return this.isRoofTile(tileId) || this.isWallSideTile(tileId);
+  return this.isRoofTile(tileId) || this.isWallSideTile(tileId);
 };
 
 Tilemap.isWaterfallTypeAutotile = function (tileId) {
-    return this.isWaterfallTile(tileId);
+  return this.isWaterfallTile(tileId);
 };
 
 // Autotile shape number to coordinates of tileset images
 
 Tilemap.FLOOR_AUTOTILE_TABLE = [
-    [[2, 4], [1, 4], [2, 3], [1, 3]], [[2, 0], [1, 4], [2, 3], [1, 3]],
-    [[2, 4], [3, 0], [2, 3], [1, 3]], [[2, 0], [3, 0], [2, 3], [1, 3]],
-    [[2, 4], [1, 4], [2, 3], [3, 1]], [[2, 0], [1, 4], [2, 3], [3, 1]],
-    [[2, 4], [3, 0], [2, 3], [3, 1]], [[2, 0], [3, 0], [2, 3], [3, 1]],
-    [[2, 4], [1, 4], [2, 1], [1, 3]], [[2, 0], [1, 4], [2, 1], [1, 3]],
-    [[2, 4], [3, 0], [2, 1], [1, 3]], [[2, 0], [3, 0], [2, 1], [1, 3]],
-    [[2, 4], [1, 4], [2, 1], [3, 1]], [[2, 0], [1, 4], [2, 1], [3, 1]],
-    [[2, 4], [3, 0], [2, 1], [3, 1]], [[2, 0], [3, 0], [2, 1], [3, 1]],
-    [[0, 4], [1, 4], [0, 3], [1, 3]], [[0, 4], [3, 0], [0, 3], [1, 3]],
-    [[0, 4], [1, 4], [0, 3], [3, 1]], [[0, 4], [3, 0], [0, 3], [3, 1]],
-    [[2, 2], [1, 2], [2, 3], [1, 3]], [[2, 2], [1, 2], [2, 3], [3, 1]],
-    [[2, 2], [1, 2], [2, 1], [1, 3]], [[2, 2], [1, 2], [2, 1], [3, 1]],
-    [[2, 4], [3, 4], [2, 3], [3, 3]], [[2, 4], [3, 4], [2, 1], [3, 3]],
-    [[2, 0], [3, 4], [2, 3], [3, 3]], [[2, 0], [3, 4], [2, 1], [3, 3]],
-    [[2, 4], [1, 4], [2, 5], [1, 5]], [[2, 0], [1, 4], [2, 5], [1, 5]],
-    [[2, 4], [3, 0], [2, 5], [1, 5]], [[2, 0], [3, 0], [2, 5], [1, 5]],
-    [[0, 4], [3, 4], [0, 3], [3, 3]], [[2, 2], [1, 2], [2, 5], [1, 5]],
-    [[0, 2], [1, 2], [0, 3], [1, 3]], [[0, 2], [1, 2], [0, 3], [3, 1]],
-    [[2, 2], [3, 2], [2, 3], [3, 3]], [[2, 2], [3, 2], [2, 1], [3, 3]],
-    [[2, 4], [3, 4], [2, 5], [3, 5]], [[2, 0], [3, 4], [2, 5], [3, 5]],
-    [[0, 4], [1, 4], [0, 5], [1, 5]], [[0, 4], [3, 0], [0, 5], [1, 5]],
-    [[0, 2], [3, 2], [0, 3], [3, 3]], [[0, 2], [1, 2], [0, 5], [1, 5]],
-    [[0, 4], [3, 4], [0, 5], [3, 5]], [[2, 2], [3, 2], [2, 5], [3, 5]],
-    [[0, 2], [3, 2], [0, 5], [3, 5]], [[0, 0], [1, 0], [0, 1], [1, 1]]
+  [
+    [2, 4],
+    [1, 4],
+    [2, 3],
+    [1, 3],
+  ],
+  [
+    [2, 0],
+    [1, 4],
+    [2, 3],
+    [1, 3],
+  ],
+  [
+    [2, 4],
+    [3, 0],
+    [2, 3],
+    [1, 3],
+  ],
+  [
+    [2, 0],
+    [3, 0],
+    [2, 3],
+    [1, 3],
+  ],
+  [
+    [2, 4],
+    [1, 4],
+    [2, 3],
+    [3, 1],
+  ],
+  [
+    [2, 0],
+    [1, 4],
+    [2, 3],
+    [3, 1],
+  ],
+  [
+    [2, 4],
+    [3, 0],
+    [2, 3],
+    [3, 1],
+  ],
+  [
+    [2, 0],
+    [3, 0],
+    [2, 3],
+    [3, 1],
+  ],
+  [
+    [2, 4],
+    [1, 4],
+    [2, 1],
+    [1, 3],
+  ],
+  [
+    [2, 0],
+    [1, 4],
+    [2, 1],
+    [1, 3],
+  ],
+  [
+    [2, 4],
+    [3, 0],
+    [2, 1],
+    [1, 3],
+  ],
+  [
+    [2, 0],
+    [3, 0],
+    [2, 1],
+    [1, 3],
+  ],
+  [
+    [2, 4],
+    [1, 4],
+    [2, 1],
+    [3, 1],
+  ],
+  [
+    [2, 0],
+    [1, 4],
+    [2, 1],
+    [3, 1],
+  ],
+  [
+    [2, 4],
+    [3, 0],
+    [2, 1],
+    [3, 1],
+  ],
+  [
+    [2, 0],
+    [3, 0],
+    [2, 1],
+    [3, 1],
+  ],
+  [
+    [0, 4],
+    [1, 4],
+    [0, 3],
+    [1, 3],
+  ],
+  [
+    [0, 4],
+    [3, 0],
+    [0, 3],
+    [1, 3],
+  ],
+  [
+    [0, 4],
+    [1, 4],
+    [0, 3],
+    [3, 1],
+  ],
+  [
+    [0, 4],
+    [3, 0],
+    [0, 3],
+    [3, 1],
+  ],
+  [
+    [2, 2],
+    [1, 2],
+    [2, 3],
+    [1, 3],
+  ],
+  [
+    [2, 2],
+    [1, 2],
+    [2, 3],
+    [3, 1],
+  ],
+  [
+    [2, 2],
+    [1, 2],
+    [2, 1],
+    [1, 3],
+  ],
+  [
+    [2, 2],
+    [1, 2],
+    [2, 1],
+    [3, 1],
+  ],
+  [
+    [2, 4],
+    [3, 4],
+    [2, 3],
+    [3, 3],
+  ],
+  [
+    [2, 4],
+    [3, 4],
+    [2, 1],
+    [3, 3],
+  ],
+  [
+    [2, 0],
+    [3, 4],
+    [2, 3],
+    [3, 3],
+  ],
+  [
+    [2, 0],
+    [3, 4],
+    [2, 1],
+    [3, 3],
+  ],
+  [
+    [2, 4],
+    [1, 4],
+    [2, 5],
+    [1, 5],
+  ],
+  [
+    [2, 0],
+    [1, 4],
+    [2, 5],
+    [1, 5],
+  ],
+  [
+    [2, 4],
+    [3, 0],
+    [2, 5],
+    [1, 5],
+  ],
+  [
+    [2, 0],
+    [3, 0],
+    [2, 5],
+    [1, 5],
+  ],
+  [
+    [0, 4],
+    [3, 4],
+    [0, 3],
+    [3, 3],
+  ],
+  [
+    [2, 2],
+    [1, 2],
+    [2, 5],
+    [1, 5],
+  ],
+  [
+    [0, 2],
+    [1, 2],
+    [0, 3],
+    [1, 3],
+  ],
+  [
+    [0, 2],
+    [1, 2],
+    [0, 3],
+    [3, 1],
+  ],
+  [
+    [2, 2],
+    [3, 2],
+    [2, 3],
+    [3, 3],
+  ],
+  [
+    [2, 2],
+    [3, 2],
+    [2, 1],
+    [3, 3],
+  ],
+  [
+    [2, 4],
+    [3, 4],
+    [2, 5],
+    [3, 5],
+  ],
+  [
+    [2, 0],
+    [3, 4],
+    [2, 5],
+    [3, 5],
+  ],
+  [
+    [0, 4],
+    [1, 4],
+    [0, 5],
+    [1, 5],
+  ],
+  [
+    [0, 4],
+    [3, 0],
+    [0, 5],
+    [1, 5],
+  ],
+  [
+    [0, 2],
+    [3, 2],
+    [0, 3],
+    [3, 3],
+  ],
+  [
+    [0, 2],
+    [1, 2],
+    [0, 5],
+    [1, 5],
+  ],
+  [
+    [0, 4],
+    [3, 4],
+    [0, 5],
+    [3, 5],
+  ],
+  [
+    [2, 2],
+    [3, 2],
+    [2, 5],
+    [3, 5],
+  ],
+  [
+    [0, 2],
+    [3, 2],
+    [0, 5],
+    [3, 5],
+  ],
+  [
+    [0, 0],
+    [1, 0],
+    [0, 1],
+    [1, 1],
+  ],
 ];
 
 Tilemap.WALL_AUTOTILE_TABLE = [
-    [[2, 2], [1, 2], [2, 1], [1, 1]], [[0, 2], [1, 2], [0, 1], [1, 1]],
-    [[2, 0], [1, 0], [2, 1], [1, 1]], [[0, 0], [1, 0], [0, 1], [1, 1]],
-    [[2, 2], [3, 2], [2, 1], [3, 1]], [[0, 2], [3, 2], [0, 1], [3, 1]],
-    [[2, 0], [3, 0], [2, 1], [3, 1]], [[0, 0], [3, 0], [0, 1], [3, 1]],
-    [[2, 2], [1, 2], [2, 3], [1, 3]], [[0, 2], [1, 2], [0, 3], [1, 3]],
-    [[2, 0], [1, 0], [2, 3], [1, 3]], [[0, 0], [1, 0], [0, 3], [1, 3]],
-    [[2, 2], [3, 2], [2, 3], [3, 3]], [[0, 2], [3, 2], [0, 3], [3, 3]],
-    [[2, 0], [3, 0], [2, 3], [3, 3]], [[0, 0], [3, 0], [0, 3], [3, 3]]
+  [
+    [2, 2],
+    [1, 2],
+    [2, 1],
+    [1, 1],
+  ],
+  [
+    [0, 2],
+    [1, 2],
+    [0, 1],
+    [1, 1],
+  ],
+  [
+    [2, 0],
+    [1, 0],
+    [2, 1],
+    [1, 1],
+  ],
+  [
+    [0, 0],
+    [1, 0],
+    [0, 1],
+    [1, 1],
+  ],
+  [
+    [2, 2],
+    [3, 2],
+    [2, 1],
+    [3, 1],
+  ],
+  [
+    [0, 2],
+    [3, 2],
+    [0, 1],
+    [3, 1],
+  ],
+  [
+    [2, 0],
+    [3, 0],
+    [2, 1],
+    [3, 1],
+  ],
+  [
+    [0, 0],
+    [3, 0],
+    [0, 1],
+    [3, 1],
+  ],
+  [
+    [2, 2],
+    [1, 2],
+    [2, 3],
+    [1, 3],
+  ],
+  [
+    [0, 2],
+    [1, 2],
+    [0, 3],
+    [1, 3],
+  ],
+  [
+    [2, 0],
+    [1, 0],
+    [2, 3],
+    [1, 3],
+  ],
+  [
+    [0, 0],
+    [1, 0],
+    [0, 3],
+    [1, 3],
+  ],
+  [
+    [2, 2],
+    [3, 2],
+    [2, 3],
+    [3, 3],
+  ],
+  [
+    [0, 2],
+    [3, 2],
+    [0, 3],
+    [3, 3],
+  ],
+  [
+    [2, 0],
+    [3, 0],
+    [2, 3],
+    [3, 3],
+  ],
+  [
+    [0, 0],
+    [3, 0],
+    [0, 3],
+    [3, 3],
+  ],
 ];
 
 Tilemap.WATERFALL_AUTOTILE_TABLE = [
-    [[2, 0], [1, 0], [2, 1], [1, 1]], [[0, 0], [1, 0], [0, 1], [1, 1]],
-    [[2, 0], [3, 0], [2, 1], [3, 1]], [[0, 0], [3, 0], [0, 1], [3, 1]]
+  [
+    [2, 0],
+    [1, 0],
+    [2, 1],
+    [1, 1],
+  ],
+  [
+    [0, 0],
+    [1, 0],
+    [0, 1],
+    [1, 1],
+  ],
+  [
+    [2, 0],
+    [3, 0],
+    [2, 1],
+    [3, 1],
+  ],
+  [
+    [0, 0],
+    [3, 0],
+    [0, 1],
+    [3, 1],
+  ],
 ];
 
 // The important members from Pixi.js
@@ -5485,8 +6000,8 @@ Tilemap.WATERFALL_AUTOTILE_TABLE = [
  * @constructor
  */
 function ShaderTilemap() {
-    Tilemap.apply(this, arguments);
-    this.roundPixels = true;
+  Tilemap.apply(this, arguments);
+  this.roundPixels = true;
 }
 
 ShaderTilemap.prototype = Object.create(Tilemap.prototype);
@@ -5505,11 +6020,12 @@ PIXI.tilemap.TileRenderer.DO_CLEAR = true;
  * @private
  */
 ShaderTilemap.prototype._hackRenderer = function (renderer) {
-    var af = this.animationFrame % 4;
-    if (af == 3) af = 1;
-    renderer.plugins.tilemap.tileAnim[0] = af * this._tileWidth;
-    renderer.plugins.tilemap.tileAnim[1] = (this.animationFrame % 3) * this._tileHeight;
-    return renderer;
+  var af = this.animationFrame % 4;
+  if (af == 3) af = 1;
+  renderer.plugins.tilemap.tileAnim[0] = af * this._tileWidth;
+  renderer.plugins.tilemap.tileAnim[1] =
+    (this.animationFrame % 3) * this._tileHeight;
+  return renderer;
 };
 
 /**
@@ -5519,10 +6035,9 @@ ShaderTilemap.prototype._hackRenderer = function (renderer) {
  * @param {Object} pixi renderer
  */
 ShaderTilemap.prototype.renderCanvas = function (renderer) {
-    this._hackRenderer(renderer);
-    PIXI.Container.prototype.renderCanvas.call(this, renderer);
+  this._hackRenderer(renderer);
+  PIXI.Container.prototype.renderCanvas.call(this, renderer);
 };
-
 
 /**
  * PIXI render method
@@ -5531,8 +6046,8 @@ ShaderTilemap.prototype.renderCanvas = function (renderer) {
  * @param {Object} pixi renderer
  */
 ShaderTilemap.prototype.renderWebGL = function (renderer) {
-    this._hackRenderer(renderer);
-    PIXI.Container.prototype.renderWebGL.call(this, renderer);
+  this._hackRenderer(renderer);
+  PIXI.Container.prototype.renderWebGL.call(this, renderer);
 };
 
 /**
@@ -5541,11 +6056,11 @@ ShaderTilemap.prototype.renderWebGL = function (renderer) {
  * @method refresh
  */
 ShaderTilemap.prototype.refresh = function () {
-    if (this._lastBitmapLength !== this.bitmaps.length) {
-        this._lastBitmapLength = this.bitmaps.length;
-        this.refreshTileset();
-    };
-    this._needsRepaint = true;
+  if (this._lastBitmapLength !== this.bitmaps.length) {
+    this._lastBitmapLength = this.bitmaps.length;
+    this.refreshTileset();
+  }
+  this._needsRepaint = true;
 };
 
 /**
@@ -5554,9 +6069,11 @@ ShaderTilemap.prototype.refresh = function () {
  * @method updateBitmaps
  */
 ShaderTilemap.prototype.refreshTileset = function () {
-    var bitmaps = this.bitmaps.map(function (x) { return x._baseTexture ? new PIXI.Texture(x._baseTexture) : x; });
-    this.lowerLayer.setBitmaps(bitmaps);
-    this.upperLayer.setBitmaps(bitmaps);
+  var bitmaps = this.bitmaps.map(function (x) {
+    return x._baseTexture ? new PIXI.Texture(x._baseTexture) : x;
+  });
+  this.lowerLayer.setBitmaps(bitmaps);
+  this.upperLayer.setBitmaps(bitmaps);
 };
 
 /**
@@ -5564,25 +6081,28 @@ ShaderTilemap.prototype.refreshTileset = function () {
  * @private
  */
 ShaderTilemap.prototype.updateTransform = function () {
-    if (this.roundPixels) {
-        var ox = Math.floor(this.origin.x);
-        var oy = Math.floor(this.origin.y);
-    } else {
-        ox = this.origin.x;
-        oy = this.origin.y;
-    }
-    var startX = Math.floor((ox - this._margin) / this._tileWidth);
-    var startY = Math.floor((oy - this._margin) / this._tileHeight);
-    this._updateLayerPositions(startX, startY);
-    if (this._needsRepaint ||
-        this._lastStartX !== startX || this._lastStartY !== startY) {
-        this._lastStartX = startX;
-        this._lastStartY = startY;
-        this._paintAllTiles(startX, startY);
-        this._needsRepaint = false;
-    }
-    this._sortChildren();
-    PIXI.Container.prototype.updateTransform.call(this);
+  if (this.roundPixels) {
+    var ox = Math.floor(this.origin.x);
+    var oy = Math.floor(this.origin.y);
+  } else {
+    ox = this.origin.x;
+    oy = this.origin.y;
+  }
+  var startX = Math.floor((ox - this._margin) / this._tileWidth);
+  var startY = Math.floor((oy - this._margin) / this._tileHeight);
+  this._updateLayerPositions(startX, startY);
+  if (
+    this._needsRepaint ||
+    this._lastStartX !== startX ||
+    this._lastStartY !== startY
+  ) {
+    this._lastStartX = startX;
+    this._lastStartY = startY;
+    this._paintAllTiles(startX, startY);
+    this._needsRepaint = false;
+  }
+  this._sortChildren();
+  PIXI.Container.prototype.updateTransform.call(this);
 };
 
 /**
@@ -5590,27 +6110,41 @@ ShaderTilemap.prototype.updateTransform = function () {
  * @private
  */
 ShaderTilemap.prototype._createLayers = function () {
-    var width = this._width;
-    var height = this._height;
-    var margin = this._margin;
-    var tileCols = Math.ceil(width / this._tileWidth) + 1;
-    var tileRows = Math.ceil(height / this._tileHeight) + 1;
-    var layerWidth = this._layerWidth = tileCols * this._tileWidth;
-    var layerHeight = this._layerHeight = tileRows * this._tileHeight;
-    this._needsRepaint = true;
+  var width = this._width;
+  var height = this._height;
+  var margin = this._margin;
+  var tileCols = Math.ceil(width / this._tileWidth) + 1;
+  var tileRows = Math.ceil(height / this._tileHeight) + 1;
+  var layerWidth = (this._layerWidth = tileCols * this._tileWidth);
+  var layerHeight = (this._layerHeight = tileRows * this._tileHeight);
+  this._needsRepaint = true;
 
-    if (!this.lowerZLayer) {
-        //@hackerham: create layers only in initialization. Doesn't depend on width/height
-        this.addChild(this.lowerZLayer = new PIXI.tilemap.ZLayer(this, 0));
-        this.addChild(this.upperZLayer = new PIXI.tilemap.ZLayer(this, 4));
+  if (!this.lowerZLayer) {
+    //@hackerham: create layers only in initialization. Doesn't depend on width/height
+    this.addChild((this.lowerZLayer = new PIXI.tilemap.ZLayer(this, 0)));
+    this.addChild((this.upperZLayer = new PIXI.tilemap.ZLayer(this, 4)));
 
-        var parameters = PluginManager.parameters('ShaderTilemap');
-        var useSquareShader = Number(parameters.hasOwnProperty('squareShader') ? parameters['squareShader'] : 0);
+    var parameters = PluginManager.parameters("ShaderTilemap");
+    var useSquareShader = Number(
+      parameters.hasOwnProperty("squareShader") ? parameters["squareShader"] : 0
+    );
 
-        this.lowerZLayer.addChild(this.lowerLayer = new PIXI.tilemap.CompositeRectTileLayer(0, [], useSquareShader));
-        this.lowerLayer.shadowColor = new Float32Array([0.0, 0.0, 0.0, 0.5]);
-        this.upperZLayer.addChild(this.upperLayer = new PIXI.tilemap.CompositeRectTileLayer(4, [], useSquareShader));
-    }
+    this.lowerZLayer.addChild(
+      (this.lowerLayer = new PIXI.tilemap.CompositeRectTileLayer(
+        0,
+        [],
+        useSquareShader
+      ))
+    );
+    this.lowerLayer.shadowColor = new Float32Array([0.0, 0.0, 0.0, 0.5]);
+    this.upperZLayer.addChild(
+      (this.upperLayer = new PIXI.tilemap.CompositeRectTileLayer(
+        4,
+        [],
+        useSquareShader
+      ))
+    );
+  }
 };
 
 /**
@@ -5620,17 +6154,17 @@ ShaderTilemap.prototype._createLayers = function () {
  * @private
  */
 ShaderTilemap.prototype._updateLayerPositions = function (startX, startY) {
-    if (this.roundPixels) {
-        var ox = Math.floor(this.origin.x);
-        var oy = Math.floor(this.origin.y);
-    } else {
-        ox = this.origin.x;
-        oy = this.origin.y;
-    }
-    this.lowerZLayer.position.x = startX * this._tileWidth - ox;
-    this.lowerZLayer.position.y = startY * this._tileHeight - oy;
-    this.upperZLayer.position.x = startX * this._tileWidth - ox;
-    this.upperZLayer.position.y = startY * this._tileHeight - oy;
+  if (this.roundPixels) {
+    var ox = Math.floor(this.origin.x);
+    var oy = Math.floor(this.origin.y);
+  } else {
+    ox = this.origin.x;
+    oy = this.origin.y;
+  }
+  this.lowerZLayer.position.x = startX * this._tileWidth - ox;
+  this.lowerZLayer.position.y = startY * this._tileHeight - oy;
+  this.upperZLayer.position.x = startX * this._tileWidth - ox;
+  this.upperZLayer.position.y = startY * this._tileHeight - oy;
 };
 
 /**
@@ -5640,15 +6174,15 @@ ShaderTilemap.prototype._updateLayerPositions = function (startX, startY) {
  * @private
  */
 ShaderTilemap.prototype._paintAllTiles = function (startX, startY) {
-    this.lowerZLayer.clear();
-    this.upperZLayer.clear();
-    var tileCols = Math.ceil(this._width / this._tileWidth) + 1;
-    var tileRows = Math.ceil(this._height / this._tileHeight) + 1;
-    for (var y = 0; y < tileRows; y++) {
-        for (var x = 0; x < tileCols; x++) {
-            this._paintTiles(startX, startY, x, y);
-        }
+  this.lowerZLayer.clear();
+  this.upperZLayer.clear();
+  var tileCols = Math.ceil(this._width / this._tileWidth) + 1;
+  var tileRows = Math.ceil(this._height / this._tileHeight) + 1;
+  for (var y = 0; y < tileRows; y++) {
+    for (var x = 0; x < tileCols; x++) {
+      this._paintTiles(startX, startY, x, y);
     }
+  }
 };
 
 /**
@@ -5660,51 +6194,52 @@ ShaderTilemap.prototype._paintAllTiles = function (startX, startY) {
  * @private
  */
 ShaderTilemap.prototype._paintTiles = function (startX, startY, x, y) {
-    var mx = startX + x;
-    var my = startY + y;
-    var dx = x * this._tileWidth, dy = y * this._tileHeight;
-    var tileId0 = this._readMapData(mx, my, 0);
-    var tileId1 = this._readMapData(mx, my, 1);
-    var tileId2 = this._readMapData(mx, my, 2);
-    var tileId3 = this._readMapData(mx, my, 3);
-    var shadowBits = this._readMapData(mx, my, 4);
-    var upperTileId1 = this._readMapData(mx, my - 1, 1);
-    var lowerLayer = this.lowerLayer.children[0];
-    var upperLayer = this.upperLayer.children[0];
+  var mx = startX + x;
+  var my = startY + y;
+  var dx = x * this._tileWidth,
+    dy = y * this._tileHeight;
+  var tileId0 = this._readMapData(mx, my, 0);
+  var tileId1 = this._readMapData(mx, my, 1);
+  var tileId2 = this._readMapData(mx, my, 2);
+  var tileId3 = this._readMapData(mx, my, 3);
+  var shadowBits = this._readMapData(mx, my, 4);
+  var upperTileId1 = this._readMapData(mx, my - 1, 1);
+  var lowerLayer = this.lowerLayer.children[0];
+  var upperLayer = this.upperLayer.children[0];
 
-    if (this._isHigherTile(tileId0)) {
-        this._drawTile(upperLayer, tileId0, dx, dy);
-    } else {
-        this._drawTile(lowerLayer, tileId0, dx, dy);
-    }
-    if (this._isHigherTile(tileId1)) {
-        this._drawTile(upperLayer, tileId1, dx, dy);
-    } else {
-        this._drawTile(lowerLayer, tileId1, dx, dy);
-    }
+  if (this._isHigherTile(tileId0)) {
+    this._drawTile(upperLayer, tileId0, dx, dy);
+  } else {
+    this._drawTile(lowerLayer, tileId0, dx, dy);
+  }
+  if (this._isHigherTile(tileId1)) {
+    this._drawTile(upperLayer, tileId1, dx, dy);
+  } else {
+    this._drawTile(lowerLayer, tileId1, dx, dy);
+  }
 
-    this._drawShadow(lowerLayer, shadowBits, dx, dy);
-    if (this._isTableTile(upperTileId1) && !this._isTableTile(tileId1)) {
-        if (!Tilemap.isShadowingTile(tileId0)) {
-            this._drawTableEdge(lowerLayer, upperTileId1, dx, dy);
-        }
+  this._drawShadow(lowerLayer, shadowBits, dx, dy);
+  if (this._isTableTile(upperTileId1) && !this._isTableTile(tileId1)) {
+    if (!Tilemap.isShadowingTile(tileId0)) {
+      this._drawTableEdge(lowerLayer, upperTileId1, dx, dy);
     }
+  }
 
-    if (this._isOverpassPosition(mx, my)) {
-        this._drawTile(upperLayer, tileId2, dx, dy);
-        this._drawTile(upperLayer, tileId3, dx, dy);
+  if (this._isOverpassPosition(mx, my)) {
+    this._drawTile(upperLayer, tileId2, dx, dy);
+    this._drawTile(upperLayer, tileId3, dx, dy);
+  } else {
+    if (this._isHigherTile(tileId2)) {
+      this._drawTile(upperLayer, tileId2, dx, dy);
     } else {
-        if (this._isHigherTile(tileId2)) {
-            this._drawTile(upperLayer, tileId2, dx, dy);
-        } else {
-            this._drawTile(lowerLayer, tileId2, dx, dy);
-        }
-        if (this._isHigherTile(tileId3)) {
-            this._drawTile(upperLayer, tileId3, dx, dy);
-        } else {
-            this._drawTile(lowerLayer, tileId3, dx, dy);
-        }
+      this._drawTile(lowerLayer, tileId2, dx, dy);
     }
+    if (this._isHigherTile(tileId3)) {
+      this._drawTile(upperLayer, tileId3, dx, dy);
+    } else {
+      this._drawTile(lowerLayer, tileId3, dx, dy);
+    }
+  }
 };
 
 /**
@@ -5716,13 +6251,13 @@ ShaderTilemap.prototype._paintTiles = function (startX, startY, x, y) {
  * @private
  */
 ShaderTilemap.prototype._drawTile = function (layer, tileId, dx, dy) {
-    if (Tilemap.isVisibleTile(tileId)) {
-        if (Tilemap.isAutotile(tileId)) {
-            this._drawAutotile(layer, tileId, dx, dy);
-        } else {
-            this._drawNormalTile(layer, tileId, dx, dy);
-        }
+  if (Tilemap.isVisibleTile(tileId)) {
+    if (Tilemap.isAutotile(tileId)) {
+      this._drawAutotile(layer, tileId, dx, dy);
+    } else {
+      this._drawNormalTile(layer, tileId, dx, dy);
     }
+  }
 };
 
 /**
@@ -5734,20 +6269,20 @@ ShaderTilemap.prototype._drawTile = function (layer, tileId, dx, dy) {
  * @private
  */
 ShaderTilemap.prototype._drawNormalTile = function (layer, tileId, dx, dy) {
-    var setNumber = 0;
+  var setNumber = 0;
 
-    if (Tilemap.isTileA5(tileId)) {
-        setNumber = 4;
-    } else {
-        setNumber = 5 + Math.floor(tileId / 256);
-    }
+  if (Tilemap.isTileA5(tileId)) {
+    setNumber = 4;
+  } else {
+    setNumber = 5 + Math.floor(tileId / 256);
+  }
 
-    var w = this._tileWidth;
-    var h = this._tileHeight;
-    var sx = (Math.floor(tileId / 128) % 2 * 8 + tileId % 8) * w;
-    var sy = (Math.floor(tileId % 256 / 8) % 16) * h;
+  var w = this._tileWidth;
+  var h = this._tileHeight;
+  var sx = ((Math.floor(tileId / 128) % 2) * 8 + (tileId % 8)) * w;
+  var sy = (Math.floor((tileId % 256) / 8) % 16) * h;
 
-    layer.addRect(setNumber, sx, sy, dx, dy, w, h);
+  layer.addRect(setNumber, sx, sy, dx, dy, w, h);
 };
 
 /**
@@ -5759,87 +6294,97 @@ ShaderTilemap.prototype._drawNormalTile = function (layer, tileId, dx, dy) {
  * @private
  */
 ShaderTilemap.prototype._drawAutotile = function (layer, tileId, dx, dy) {
-    var autotileTable = Tilemap.FLOOR_AUTOTILE_TABLE;
-    var kind = Tilemap.getAutotileKind(tileId);
-    var shape = Tilemap.getAutotileShape(tileId);
-    var tx = kind % 8;
-    var ty = Math.floor(kind / 8);
-    var bx = 0;
-    var by = 0;
-    var setNumber = 0;
-    var isTable = false;
-    var animX = 0, animY = 0;
+  var autotileTable = Tilemap.FLOOR_AUTOTILE_TABLE;
+  var kind = Tilemap.getAutotileKind(tileId);
+  var shape = Tilemap.getAutotileShape(tileId);
+  var tx = kind % 8;
+  var ty = Math.floor(kind / 8);
+  var bx = 0;
+  var by = 0;
+  var setNumber = 0;
+  var isTable = false;
+  var animX = 0,
+    animY = 0;
 
-    if (Tilemap.isTileA1(tileId)) {
-        setNumber = 0;
-        if (kind === 0) {
-            animX = 2;
-            by = 0;
-        } else if (kind === 1) {
-            animX = 2;
-            by = 3;
-        } else if (kind === 2) {
-            bx = 6;
-            by = 0;
-        } else if (kind === 3) {
-            bx = 6;
-            by = 3;
-        } else {
-            bx = Math.floor(tx / 4) * 8;
-            by = ty * 6 + Math.floor(tx / 2) % 2 * 3;
-            if (kind % 2 === 0) {
-                animX = 2;
-            }
-            else {
-                bx += 6;
-                autotileTable = Tilemap.WATERFALL_AUTOTILE_TABLE;
-                animY = 1;
-            }
-        }
-    } else if (Tilemap.isTileA2(tileId)) {
-        setNumber = 1;
-        bx = tx * 2;
-        by = (ty - 2) * 3;
-        isTable = this._isTableTile(tileId);
-    } else if (Tilemap.isTileA3(tileId)) {
-        setNumber = 2;
-        bx = tx * 2;
-        by = (ty - 6) * 2;
-        autotileTable = Tilemap.WALL_AUTOTILE_TABLE;
-    } else if (Tilemap.isTileA4(tileId)) {
-        setNumber = 3;
-        bx = tx * 2;
-        by = Math.floor((ty - 10) * 2.5 + (ty % 2 === 1 ? 0.5 : 0));
-        if (ty % 2 === 1) {
-            autotileTable = Tilemap.WALL_AUTOTILE_TABLE;
-        }
+  if (Tilemap.isTileA1(tileId)) {
+    setNumber = 0;
+    if (kind === 0) {
+      animX = 2;
+      by = 0;
+    } else if (kind === 1) {
+      animX = 2;
+      by = 3;
+    } else if (kind === 2) {
+      bx = 6;
+      by = 0;
+    } else if (kind === 3) {
+      bx = 6;
+      by = 3;
+    } else {
+      bx = Math.floor(tx / 4) * 8;
+      by = ty * 6 + (Math.floor(tx / 2) % 2) * 3;
+      if (kind % 2 === 0) {
+        animX = 2;
+      } else {
+        bx += 6;
+        autotileTable = Tilemap.WATERFALL_AUTOTILE_TABLE;
+        animY = 1;
+      }
     }
+  } else if (Tilemap.isTileA2(tileId)) {
+    setNumber = 1;
+    bx = tx * 2;
+    by = (ty - 2) * 3;
+    isTable = this._isTableTile(tileId);
+  } else if (Tilemap.isTileA3(tileId)) {
+    setNumber = 2;
+    bx = tx * 2;
+    by = (ty - 6) * 2;
+    autotileTable = Tilemap.WALL_AUTOTILE_TABLE;
+  } else if (Tilemap.isTileA4(tileId)) {
+    setNumber = 3;
+    bx = tx * 2;
+    by = Math.floor((ty - 10) * 2.5 + (ty % 2 === 1 ? 0.5 : 0));
+    if (ty % 2 === 1) {
+      autotileTable = Tilemap.WALL_AUTOTILE_TABLE;
+    }
+  }
 
-    var table = autotileTable[shape];
-    var w1 = this._tileWidth / 2;
-    var h1 = this._tileHeight / 2;
-    for (var i = 0; i < 4; i++) {
-        var qsx = table[i][0];
-        var qsy = table[i][1];
-        var sx1 = (bx * 2 + qsx) * w1;
-        var sy1 = (by * 2 + qsy) * h1;
-        var dx1 = dx + (i % 2) * w1;
-        var dy1 = dy + Math.floor(i / 2) * h1;
-        if (isTable && (qsy === 1 || qsy === 5)) {
-            var qsx2 = qsx;
-            var qsy2 = 3;
-            if (qsy === 1) {
-                //qsx2 = [0, 3, 2, 1][qsx];
-                qsx2 = (4 - qsx) % 4;
-            }
-            var sx2 = (bx * 2 + qsx2) * w1;
-            var sy2 = (by * 2 + qsy2) * h1;
-            layer.addRect(setNumber, sx2, sy2, dx1, dy1, w1, h1, animX, animY);
-            layer.addRect(setNumber, sx1, sy1, dx1, dy1 + h1 / 2, w1, h1 / 2, animX, animY);
-        } else {
-            layer.addRect(setNumber, sx1, sy1, dx1, dy1, w1, h1, animX, animY);
-        }
+  var table = autotileTable[shape];
+  var w1 = this._tileWidth / 2;
+  var h1 = this._tileHeight / 2;
+  for (var i = 0; i < 4; i++) {
+    var qsx = table[i][0];
+    var qsy = table[i][1];
+    var sx1 = (bx * 2 + qsx) * w1;
+    var sy1 = (by * 2 + qsy) * h1;
+    var dx1 = dx + (i % 2) * w1;
+    var dy1 = dy + Math.floor(i / 2) * h1;
+    if (isTable && (qsy === 1 || qsy === 5)) {
+      var qsx2 = qsx;
+      var qsy2 = 3;
+      if (qsy === 1) {
+        //qsx2 = [0, 3, 2, 1][qsx];
+        qsx2 = (4 - qsx) % 4;
+      }
+      var sx2 = (bx * 2 + qsx2) * w1;
+      var sy2 = (by * 2 + qsy2) * h1;
+      layer.addRect(setNumber, sx2, sy2, dx1, dy1, w1, h1, animX, animY);
+      layer.addRect(
+        setNumber,
+        sx1,
+        sy1,
+        dx1,
+        dy1 + h1 / 2,
+        w1,
+        h1 / 2,
+        animX,
+        animY
+      );
+    } else {
+      layer.addRect(setNumber, sx1, sy1, dx1, dy1, w1, h1, animX, animY);
     }
+  }
 };
 
 /**
@@ -5851,28 +6396,28 @@ ShaderTilemap.prototype._drawAutotile = function (layer, tileId, dx, dy) {
  * @private
  */
 ShaderTilemap.prototype._drawTableEdge = function (layer, tileId, dx, dy) {
-    if (Tilemap.isTileA2(tileId)) {
-        var autotileTable = Tilemap.FLOOR_AUTOTILE_TABLE;
-        var kind = Tilemap.getAutotileKind(tileId);
-        var shape = Tilemap.getAutotileShape(tileId);
-        var tx = kind % 8;
-        var ty = Math.floor(kind / 8);
-        var setNumber = 1;
-        var bx = tx * 2;
-        var by = (ty - 2) * 3;
-        var table = autotileTable[shape];
-        var w1 = this._tileWidth / 2;
-        var h1 = this._tileHeight / 2;
-        for (var i = 0; i < 2; i++) {
-            var qsx = table[2 + i][0];
-            var qsy = table[2 + i][1];
-            var sx1 = (bx * 2 + qsx) * w1;
-            var sy1 = (by * 2 + qsy) * h1 + h1 / 2;
-            var dx1 = dx + (i % 2) * w1;
-            var dy1 = dy + Math.floor(i / 2) * h1;
-            layer.addRect(setNumber, sx1, sy1, dx1, dy1, w1, h1 / 2);
-        }
+  if (Tilemap.isTileA2(tileId)) {
+    var autotileTable = Tilemap.FLOOR_AUTOTILE_TABLE;
+    var kind = Tilemap.getAutotileKind(tileId);
+    var shape = Tilemap.getAutotileShape(tileId);
+    var tx = kind % 8;
+    var ty = Math.floor(kind / 8);
+    var setNumber = 1;
+    var bx = tx * 2;
+    var by = (ty - 2) * 3;
+    var table = autotileTable[shape];
+    var w1 = this._tileWidth / 2;
+    var h1 = this._tileHeight / 2;
+    for (var i = 0; i < 2; i++) {
+      var qsx = table[2 + i][0];
+      var qsy = table[2 + i][1];
+      var sx1 = (bx * 2 + qsx) * w1;
+      var sy1 = (by * 2 + qsy) * h1 + h1 / 2;
+      var dx1 = dx + (i % 2) * w1;
+      var dy1 = dy + Math.floor(i / 2) * h1;
+      layer.addRect(setNumber, sx1, sy1, dx1, dy1, w1, h1 / 2);
     }
+  }
 };
 
 /**
@@ -5883,17 +6428,17 @@ ShaderTilemap.prototype._drawTableEdge = function (layer, tileId, dx, dy) {
  * @private
  */
 ShaderTilemap.prototype._drawShadow = function (layer, shadowBits, dx, dy) {
-    if (shadowBits & 0x0f) {
-        var w1 = this._tileWidth / 2;
-        var h1 = this._tileHeight / 2;
-        for (var i = 0; i < 4; i++) {
-            if (shadowBits & (1 << i)) {
-                var dx1 = dx + (i % 2) * w1;
-                var dy1 = dy + Math.floor(i / 2) * h1;
-                layer.addRect(-1, 0, 0, dx1, dy1, w1, h1);
-            }
-        }
+  if (shadowBits & 0x0f) {
+    var w1 = this._tileWidth / 2;
+    var h1 = this._tileHeight / 2;
+    for (var i = 0; i < 4; i++) {
+      if (shadowBits & (1 << i)) {
+        var dx1 = dx + (i % 2) * w1;
+        var dy1 = dy + Math.floor(i / 2) * h1;
+        layer.addRect(-1, 0, 0, dx1, dy1, w1, h1);
+      }
     }
+  }
 };
 //-----------------------------------------------------------------------------
 /**
@@ -5904,35 +6449,39 @@ ShaderTilemap.prototype._drawShadow = function (layer, shadowBits, dx, dy) {
  * @param {Bitmap} bitmap The image for the tiling sprite
  */
 function TilingSprite() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
-TilingSprite.prototype = Object.create(PIXI.extras.PictureTilingSprite.prototype);
+TilingSprite.prototype = Object.create(
+  PIXI.extras.PictureTilingSprite.prototype
+);
 TilingSprite.prototype.constructor = TilingSprite;
 
 TilingSprite.prototype.initialize = function (bitmap) {
-    var texture = new PIXI.Texture(new PIXI.BaseTexture());
+  var texture = new PIXI.Texture(new PIXI.BaseTexture());
 
-    PIXI.extras.PictureTilingSprite.call(this, texture);
+  PIXI.extras.PictureTilingSprite.call(this, texture);
 
-    this._bitmap = null;
-    this._width = 0;
-    this._height = 0;
-    this._frame = new Rectangle();
-    this.spriteId = Sprite._counter++;
-    /**
-     * The origin point of the tiling sprite for scrolling.
-     *
-     * @property origin
-     * @type Point
-     */
-    this.origin = new Point();
+  this._bitmap = null;
+  this._width = 0;
+  this._height = 0;
+  this._frame = new Rectangle();
+  this.spriteId = Sprite._counter++;
+  /**
+   * The origin point of the tiling sprite for scrolling.
+   *
+   * @property origin
+   * @type Point
+   */
+  this.origin = new Point();
 
-    this.bitmap = bitmap;
+  this.bitmap = bitmap;
 };
 
-TilingSprite.prototype._renderCanvas_PIXI = PIXI.extras.PictureTilingSprite.prototype._renderCanvas;
-TilingSprite.prototype._renderWebGL_PIXI = PIXI.extras.PictureTilingSprite.prototype._renderWebGL;
+TilingSprite.prototype._renderCanvas_PIXI =
+  PIXI.extras.PictureTilingSprite.prototype._renderCanvas;
+TilingSprite.prototype._renderWebGL_PIXI =
+  PIXI.extras.PictureTilingSprite.prototype._renderWebGL;
 
 /**
  * @method _renderCanvas
@@ -5940,12 +6489,12 @@ TilingSprite.prototype._renderWebGL_PIXI = PIXI.extras.PictureTilingSprite.proto
  * @private
  */
 TilingSprite.prototype._renderCanvas = function (renderer) {
-    if (this._bitmap) {
-        this._bitmap.touch();
-    }
-    if (this.texture.frame.width > 0 && this.texture.frame.height > 0) {
-        this._renderCanvas_PIXI(renderer);
-    }
+  if (this._bitmap) {
+    this._bitmap.touch();
+  }
+  if (this.texture.frame.width > 0 && this.texture.frame.height > 0) {
+    this._renderCanvas_PIXI(renderer);
+  }
 };
 
 /**
@@ -5954,15 +6503,15 @@ TilingSprite.prototype._renderCanvas = function (renderer) {
  * @private
  */
 TilingSprite.prototype._renderWebGL = function (renderer) {
+  if (this._bitmap) {
+    this._bitmap.touch();
+  }
+  if (this.texture.frame.width > 0 && this.texture.frame.height > 0) {
     if (this._bitmap) {
-        this._bitmap.touch();
+      this._bitmap.checkDirty();
     }
-    if (this.texture.frame.width > 0 && this.texture.frame.height > 0) {
-        if (this._bitmap) {
-            this._bitmap.checkDirty();
-        }
-        this._renderWebGL_PIXI(renderer);
-    }
+    this._renderWebGL_PIXI(renderer);
+  }
 };
 
 /**
@@ -5971,21 +6520,21 @@ TilingSprite.prototype._renderWebGL = function (renderer) {
  * @property bitmap
  * @type Bitmap
  */
-Object.defineProperty(TilingSprite.prototype, 'bitmap', {
-    get: function () {
-        return this._bitmap;
-    },
-    set: function (value) {
-        if (this._bitmap !== value) {
-            this._bitmap = value;
-            if (this._bitmap) {
-                this._bitmap.addLoadListener(this._onBitmapLoad.bind(this));
-            } else {
-                this.texture.frame = Rectangle.emptyRectangle;
-            }
-        }
-    },
-    configurable: true
+Object.defineProperty(TilingSprite.prototype, "bitmap", {
+  get: function () {
+    return this._bitmap;
+  },
+  set: function (value) {
+    if (this._bitmap !== value) {
+      this._bitmap = value;
+      if (this._bitmap) {
+        this._bitmap.addLoadListener(this._onBitmapLoad.bind(this));
+      } else {
+        this.texture.frame = Rectangle.emptyRectangle;
+      }
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -5994,14 +6543,14 @@ Object.defineProperty(TilingSprite.prototype, 'bitmap', {
  * @property opacity
  * @type Number
  */
-Object.defineProperty(TilingSprite.prototype, 'opacity', {
-    get: function () {
-        return this.alpha * 255;
-    },
-    set: function (value) {
-        this.alpha = value.clamp(0, 255) / 255;
-    },
-    configurable: true
+Object.defineProperty(TilingSprite.prototype, "opacity", {
+  get: function () {
+    return this.alpha * 255;
+  },
+  set: function (value) {
+    this.alpha = value.clamp(0, 255) / 255;
+  },
+  configurable: true,
 });
 
 /**
@@ -6010,11 +6559,11 @@ Object.defineProperty(TilingSprite.prototype, 'opacity', {
  * @method update
  */
 TilingSprite.prototype.update = function () {
-    this.children.forEach(function (child) {
-        if (child.update) {
-            child.update();
-        }
-    });
+  this.children.forEach(function (child) {
+    if (child.update) {
+      child.update();
+    }
+  });
 };
 
 /**
@@ -6027,10 +6576,10 @@ TilingSprite.prototype.update = function () {
  * @param {Number} height The height of the tiling sprite
  */
 TilingSprite.prototype.move = function (x, y, width, height) {
-    this.x = x || 0;
-    this.y = y || 0;
-    this._width = width || 0;
-    this._height = height || 0;
+  this.x = x || 0;
+  this.y = y || 0;
+  this._width = width || 0;
+  this._height = height || 0;
 };
 
 /**
@@ -6043,11 +6592,11 @@ TilingSprite.prototype.move = function (x, y, width, height) {
  * @param {Number} height The height of the frame
  */
 TilingSprite.prototype.setFrame = function (x, y, width, height) {
-    this._frame.x = x;
-    this._frame.y = y;
-    this._frame.width = width;
-    this._frame.height = height;
-    this._refresh();
+  this._frame.x = x;
+  this._frame.y = y;
+  this._frame.width = width;
+  this._frame.height = height;
+  this._refresh();
 };
 
 /**
@@ -6055,20 +6604,21 @@ TilingSprite.prototype.setFrame = function (x, y, width, height) {
  * @private
  */
 TilingSprite.prototype.updateTransform = function () {
-    this.tilePosition.x = Math.round(-this.origin.x);
-    this.tilePosition.y = Math.round(-this.origin.y);
-    this.updateTransformTS();
+  this.tilePosition.x = Math.round(-this.origin.x);
+  this.tilePosition.y = Math.round(-this.origin.y);
+  this.updateTransformTS();
 };
 
-TilingSprite.prototype.updateTransformTS = PIXI.extras.TilingSprite.prototype.updateTransform;
+TilingSprite.prototype.updateTransformTS =
+  PIXI.extras.TilingSprite.prototype.updateTransform;
 
 /**
  * @method _onBitmapLoad
  * @private
  */
 TilingSprite.prototype._onBitmapLoad = function () {
-    this.texture.baseTexture = this._bitmap.baseTexture;
-    this._refresh();
+  this.texture.baseTexture = this._bitmap.baseTexture;
+  this._refresh();
 };
 
 /**
@@ -6076,18 +6626,18 @@ TilingSprite.prototype._onBitmapLoad = function () {
  * @private
  */
 TilingSprite.prototype._refresh = function () {
-    var frame = this._frame.clone();
-    if (frame.width === 0 && frame.height === 0 && this._bitmap) {
-        frame.width = this._bitmap.width;
-        frame.height = this._bitmap.height;
-    }
-    this.texture.frame = frame;
-    this.texture._updateID++;
-    this.tilingTexture = null;
+  var frame = this._frame.clone();
+  if (frame.width === 0 && frame.height === 0 && this._bitmap) {
+    frame.width = this._bitmap.width;
+    frame.height = this._bitmap.height;
+  }
+  this.texture.frame = frame;
+  this.texture._updateID++;
+  this.tilingTexture = null;
 };
 
-
-TilingSprite.prototype._speedUpCustomBlendModes = Sprite.prototype._speedUpCustomBlendModes;
+TilingSprite.prototype._speedUpCustomBlendModes =
+  Sprite.prototype._speedUpCustomBlendModes;
 
 /**
  * @method _renderWebGL
@@ -6095,14 +6645,14 @@ TilingSprite.prototype._speedUpCustomBlendModes = Sprite.prototype._speedUpCusto
  * @private
  */
 TilingSprite.prototype._renderWebGL = function (renderer) {
-    if (this._bitmap) {
-        this._bitmap.touch();
-        this._bitmap.checkDirty();
-    }
+  if (this._bitmap) {
+    this._bitmap.touch();
+    this._bitmap.checkDirty();
+  }
 
-    this._speedUpCustomBlendModes(renderer);
+  this._speedUpCustomBlendModes(renderer);
 
-    this._renderWebGL_PIXI(renderer);
+  this._renderWebGL_PIXI(renderer);
 };
 
 // The important members from Pixi.js
@@ -6136,24 +6686,24 @@ TilingSprite.prototype._renderWebGL = function (renderer) {
  * @constructor
  */
 function ScreenSprite() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 ScreenSprite.prototype = Object.create(PIXI.Container.prototype);
 ScreenSprite.prototype.constructor = ScreenSprite;
 
 ScreenSprite.prototype.initialize = function () {
-    PIXI.Container.call(this);
+  PIXI.Container.call(this);
 
-    this._graphics = new PIXI.Graphics();
-    this.addChild(this._graphics);
-    this.opacity = 0;
+  this._graphics = new PIXI.Graphics();
+  this.addChild(this._graphics);
+  this.opacity = 0;
 
-    this._red = -1;
-    this._green = -1;
-    this._blue = -1;
-    this._colorText = '';
-    this.setBlack();
+  this._red = -1;
+  this._green = -1;
+  this._blue = -1;
+  this._colorText = "";
+  this.setBlack();
 };
 
 /**
@@ -6162,45 +6712,47 @@ ScreenSprite.prototype.initialize = function () {
  * @property opacity
  * @type Number
  */
-Object.defineProperty(ScreenSprite.prototype, 'opacity', {
-    get: function () {
-        return this.alpha * 255;
-    },
-    set: function (value) {
-        this.alpha = value.clamp(0, 255) / 255;
-    },
-    configurable: true
+Object.defineProperty(ScreenSprite.prototype, "opacity", {
+  get: function () {
+    return this.alpha * 255;
+  },
+  set: function (value) {
+    this.alpha = value.clamp(0, 255) / 255;
+  },
+  configurable: true,
 });
 
 ScreenSprite.YEPWarned = false;
 ScreenSprite.warnYep = function () {
-    if (!ScreenSprite.YEPWarned) {
-        console.log("Deprecation warning. Please update YEP_CoreEngine. ScreenSprite is not a sprite, it has graphics inside.");
-        ScreenSprite.YEPWarned = true;
-    }
+  if (!ScreenSprite.YEPWarned) {
+    console.log(
+      "Deprecation warning. Please update YEP_CoreEngine. ScreenSprite is not a sprite, it has graphics inside."
+    );
+    ScreenSprite.YEPWarned = true;
+  }
 };
 
-Object.defineProperty(ScreenSprite.prototype, 'anchor', {
-    get: function () {
-        ScreenSprite.warnYep();
-        this.scale.x = 1;
-        this.scale.y = 1;
-        return { x: 0, y: 0 };
-    },
-    set: function (value) {
-        this.alpha = value.clamp(0, 255) / 255;
-    },
-    configurable: true
+Object.defineProperty(ScreenSprite.prototype, "anchor", {
+  get: function () {
+    ScreenSprite.warnYep();
+    this.scale.x = 1;
+    this.scale.y = 1;
+    return { x: 0, y: 0 };
+  },
+  set: function (value) {
+    this.alpha = value.clamp(0, 255) / 255;
+  },
+  configurable: true,
 });
 
-Object.defineProperty(ScreenSprite.prototype, 'blendMode', {
-    get: function () {
-        return this._graphics.blendMode;
-    },
-    set: function (value) {
-        this._graphics.blendMode = value;
-    },
-    configurable: true
+Object.defineProperty(ScreenSprite.prototype, "blendMode", {
+  get: function () {
+    return this._graphics.blendMode;
+  },
+  set: function (value) {
+    this._graphics.blendMode = value;
+  },
+  configurable: true,
 });
 
 /**
@@ -6209,7 +6761,7 @@ Object.defineProperty(ScreenSprite.prototype, 'blendMode', {
  * @method setBlack
  */
 ScreenSprite.prototype.setBlack = function () {
-    this.setColor(0, 0, 0);
+  this.setColor(0, 0, 0);
 };
 
 /**
@@ -6218,7 +6770,7 @@ ScreenSprite.prototype.setBlack = function () {
  * @method setWhite
  */
 ScreenSprite.prototype.setWhite = function () {
-    this.setColor(255, 255, 255);
+  this.setColor(255, 255, 255);
 };
 
 /**
@@ -6230,22 +6782,27 @@ ScreenSprite.prototype.setWhite = function () {
  * @param {Number} b The blue value in the range (0, 255)
  */
 ScreenSprite.prototype.setColor = function (r, g, b) {
-    if (this._red !== r || this._green !== g || this._blue !== b) {
-        r = Math.round(r || 0).clamp(0, 255);
-        g = Math.round(g || 0).clamp(0, 255);
-        b = Math.round(b || 0).clamp(0, 255);
-        this._red = r;
-        this._green = g;
-        this._blue = b;
-        this._colorText = Utils.rgbToCssColor(r, g, b);
+  if (this._red !== r || this._green !== g || this._blue !== b) {
+    r = Math.round(r || 0).clamp(0, 255);
+    g = Math.round(g || 0).clamp(0, 255);
+    b = Math.round(b || 0).clamp(0, 255);
+    this._red = r;
+    this._green = g;
+    this._blue = b;
+    this._colorText = Utils.rgbToCssColor(r, g, b);
 
-        var graphics = this._graphics;
-        graphics.clear();
-        var intColor = (r << 16) | (g << 8) | b;
-        graphics.beginFill(intColor, 1);
-        //whole screen with zoom. BWAHAHAHAHA
-        graphics.drawRect(-Graphics.width * 5, -Graphics.height * 5, Graphics.width * 10, Graphics.height * 10);
-    }
+    var graphics = this._graphics;
+    graphics.clear();
+    var intColor = (r << 16) | (g << 8) | b;
+    graphics.beginFill(intColor, 1);
+    //whole screen with zoom. BWAHAHAHAHA
+    graphics.drawRect(
+      -Graphics.width * 5,
+      -Graphics.height * 5,
+      Graphics.width * 10,
+      Graphics.height * 10
+    );
+  }
 };
 
 //-----------------------------------------------------------------------------
@@ -6256,76 +6813,76 @@ ScreenSprite.prototype.setColor = function (r, g, b) {
  * @constructor
  */
 function Window() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 Window.prototype = Object.create(PIXI.Container.prototype);
 Window.prototype.constructor = Window;
 
 Window.prototype.initialize = function () {
-    PIXI.Container.call(this);
+  PIXI.Container.call(this);
 
-    this._isWindow = true;
-    this._windowskin = null;
-    this._width = 0;
-    this._height = 0;
-    this._cursorRect = new Rectangle();
-    this._openness = 255;
-    this._animationCount = 0;
+  this._isWindow = true;
+  this._windowskin = null;
+  this._width = 0;
+  this._height = 0;
+  this._cursorRect = new Rectangle();
+  this._openness = 255;
+  this._animationCount = 0;
 
-    this._padding = 18;
-    this._margin = 4;
-    this._colorTone = [0, 0, 0];
+  this._padding = 18;
+  this._margin = 4;
+  this._colorTone = [0, 0, 0];
 
-    this._windowSpriteContainer = null;
-    this._windowBackSprite = null;
-    this._windowCursorSprite = null;
-    this._windowFrameSprite = null;
-    this._windowContentsSprite = null;
-    this._windowArrowSprites = [];
-    this._windowPauseSignSprite = null;
+  this._windowSpriteContainer = null;
+  this._windowBackSprite = null;
+  this._windowCursorSprite = null;
+  this._windowFrameSprite = null;
+  this._windowContentsSprite = null;
+  this._windowArrowSprites = [];
+  this._windowPauseSignSprite = null;
 
-    this._createAllParts();
+  this._createAllParts();
 
-    /**
-     * The origin point of the window for scrolling.
-     *
-     * @property origin
-     * @type Point
-     */
-    this.origin = new Point();
+  /**
+   * The origin point of the window for scrolling.
+   *
+   * @property origin
+   * @type Point
+   */
+  this.origin = new Point();
 
-    /**
-     * The active state for the window.
-     *
-     * @property active
-     * @type Boolean
-     */
-    this.active = true;
+  /**
+   * The active state for the window.
+   *
+   * @property active
+   * @type Boolean
+   */
+  this.active = true;
 
-    /**
-     * The visibility of the down scroll arrow.
-     *
-     * @property downArrowVisible
-     * @type Boolean
-     */
-    this.downArrowVisible = false;
+  /**
+   * The visibility of the down scroll arrow.
+   *
+   * @property downArrowVisible
+   * @type Boolean
+   */
+  this.downArrowVisible = false;
 
-    /**
-     * The visibility of the up scroll arrow.
-     *
-     * @property upArrowVisible
-     * @type Boolean
-     */
-    this.upArrowVisible = false;
+  /**
+   * The visibility of the up scroll arrow.
+   *
+   * @property upArrowVisible
+   * @type Boolean
+   */
+  this.upArrowVisible = false;
 
-    /**
-     * The visibility of the pause sign.
-     *
-     * @property pause
-     * @type Boolean
-     */
-    this.pause = false;
+  /**
+   * The visibility of the pause sign.
+   *
+   * @property pause
+   * @type Boolean
+   */
+  this.pause = false;
 };
 
 /**
@@ -6334,17 +6891,17 @@ Window.prototype.initialize = function () {
  * @property windowskin
  * @type Bitmap
  */
-Object.defineProperty(Window.prototype, 'windowskin', {
-    get: function () {
-        return this._windowskin;
-    },
-    set: function (value) {
-        if (this._windowskin !== value) {
-            this._windowskin = value;
-            this._windowskin.addLoadListener(this._onWindowskinLoad.bind(this));
-        }
-    },
-    configurable: true
+Object.defineProperty(Window.prototype, "windowskin", {
+  get: function () {
+    return this._windowskin;
+  },
+  set: function (value) {
+    if (this._windowskin !== value) {
+      this._windowskin = value;
+      this._windowskin.addLoadListener(this._onWindowskinLoad.bind(this));
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -6353,14 +6910,14 @@ Object.defineProperty(Window.prototype, 'windowskin', {
  * @property contents
  * @type Bitmap
  */
-Object.defineProperty(Window.prototype, 'contents', {
-    get: function () {
-        return this._windowContentsSprite.bitmap;
-    },
-    set: function (value) {
-        this._windowContentsSprite.bitmap = value;
-    },
-    configurable: true
+Object.defineProperty(Window.prototype, "contents", {
+  get: function () {
+    return this._windowContentsSprite.bitmap;
+  },
+  set: function (value) {
+    this._windowContentsSprite.bitmap = value;
+  },
+  configurable: true,
 });
 
 /**
@@ -6369,15 +6926,15 @@ Object.defineProperty(Window.prototype, 'contents', {
  * @property width
  * @type Number
  */
-Object.defineProperty(Window.prototype, 'width', {
-    get: function () {
-        return this._width;
-    },
-    set: function (value) {
-        this._width = value;
-        this._refreshAllParts();
-    },
-    configurable: true
+Object.defineProperty(Window.prototype, "width", {
+  get: function () {
+    return this._width;
+  },
+  set: function (value) {
+    this._width = value;
+    this._refreshAllParts();
+  },
+  configurable: true,
 });
 
 /**
@@ -6386,15 +6943,15 @@ Object.defineProperty(Window.prototype, 'width', {
  * @property height
  * @type Number
  */
-Object.defineProperty(Window.prototype, 'height', {
-    get: function () {
-        return this._height;
-    },
-    set: function (value) {
-        this._height = value;
-        this._refreshAllParts();
-    },
-    configurable: true
+Object.defineProperty(Window.prototype, "height", {
+  get: function () {
+    return this._height;
+  },
+  set: function (value) {
+    this._height = value;
+    this._refreshAllParts();
+  },
+  configurable: true,
 });
 
 /**
@@ -6403,15 +6960,15 @@ Object.defineProperty(Window.prototype, 'height', {
  * @property padding
  * @type Number
  */
-Object.defineProperty(Window.prototype, 'padding', {
-    get: function () {
-        return this._padding;
-    },
-    set: function (value) {
-        this._padding = value;
-        this._refreshAllParts();
-    },
-    configurable: true
+Object.defineProperty(Window.prototype, "padding", {
+  get: function () {
+    return this._padding;
+  },
+  set: function (value) {
+    this._padding = value;
+    this._refreshAllParts();
+  },
+  configurable: true,
 });
 
 /**
@@ -6420,15 +6977,15 @@ Object.defineProperty(Window.prototype, 'padding', {
  * @property margin
  * @type Number
  */
-Object.defineProperty(Window.prototype, 'margin', {
-    get: function () {
-        return this._margin;
-    },
-    set: function (value) {
-        this._margin = value;
-        this._refreshAllParts();
-    },
-    configurable: true
+Object.defineProperty(Window.prototype, "margin", {
+  get: function () {
+    return this._margin;
+  },
+  set: function (value) {
+    this._margin = value;
+    this._refreshAllParts();
+  },
+  configurable: true,
 });
 
 /**
@@ -6437,14 +6994,14 @@ Object.defineProperty(Window.prototype, 'margin', {
  * @property opacity
  * @type Number
  */
-Object.defineProperty(Window.prototype, 'opacity', {
-    get: function () {
-        return this._windowSpriteContainer.alpha * 255;
-    },
-    set: function (value) {
-        this._windowSpriteContainer.alpha = value.clamp(0, 255) / 255;
-    },
-    configurable: true
+Object.defineProperty(Window.prototype, "opacity", {
+  get: function () {
+    return this._windowSpriteContainer.alpha * 255;
+  },
+  set: function (value) {
+    this._windowSpriteContainer.alpha = value.clamp(0, 255) / 255;
+  },
+  configurable: true,
 });
 
 /**
@@ -6453,14 +7010,14 @@ Object.defineProperty(Window.prototype, 'opacity', {
  * @property backOpacity
  * @type Number
  */
-Object.defineProperty(Window.prototype, 'backOpacity', {
-    get: function () {
-        return this._windowBackSprite.alpha * 255;
-    },
-    set: function (value) {
-        this._windowBackSprite.alpha = value.clamp(0, 255) / 255;
-    },
-    configurable: true
+Object.defineProperty(Window.prototype, "backOpacity", {
+  get: function () {
+    return this._windowBackSprite.alpha * 255;
+  },
+  set: function (value) {
+    this._windowBackSprite.alpha = value.clamp(0, 255) / 255;
+  },
+  configurable: true,
 });
 
 /**
@@ -6469,14 +7026,14 @@ Object.defineProperty(Window.prototype, 'backOpacity', {
  * @property contentsOpacity
  * @type Number
  */
-Object.defineProperty(Window.prototype, 'contentsOpacity', {
-    get: function () {
-        return this._windowContentsSprite.alpha * 255;
-    },
-    set: function (value) {
-        this._windowContentsSprite.alpha = value.clamp(0, 255) / 255;
-    },
-    configurable: true
+Object.defineProperty(Window.prototype, "contentsOpacity", {
+  get: function () {
+    return this._windowContentsSprite.alpha * 255;
+  },
+  set: function (value) {
+    this._windowContentsSprite.alpha = value.clamp(0, 255) / 255;
+  },
+  configurable: true,
 });
 
 /**
@@ -6485,18 +7042,19 @@ Object.defineProperty(Window.prototype, 'contentsOpacity', {
  * @property openness
  * @type Number
  */
-Object.defineProperty(Window.prototype, 'openness', {
-    get: function () {
-        return this._openness;
-    },
-    set: function (value) {
-        if (this._openness !== value) {
-            this._openness = value.clamp(0, 255);
-            this._windowSpriteContainer.scale.y = this._openness / 255;
-            this._windowSpriteContainer.y = this.height / 2 * (1 - this._openness / 255);
-        }
-    },
-    configurable: true
+Object.defineProperty(Window.prototype, "openness", {
+  get: function () {
+    return this._openness;
+  },
+  set: function (value) {
+    if (this._openness !== value) {
+      this._openness = value.clamp(0, 255);
+      this._windowSpriteContainer.scale.y = this._openness / 255;
+      this._windowSpriteContainer.y =
+        (this.height / 2) * (1 - this._openness / 255);
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -6505,14 +7063,14 @@ Object.defineProperty(Window.prototype, 'openness', {
  * @method update
  */
 Window.prototype.update = function () {
-    if (this.active) {
-        this._animationCount++;
+  if (this.active) {
+    this._animationCount++;
+  }
+  this.children.forEach(function (child) {
+    if (child.update) {
+      child.update();
     }
-    this.children.forEach(function (child) {
-        if (child.update) {
-            child.update();
-        }
-    });
+  });
 };
 
 /**
@@ -6525,13 +7083,13 @@ Window.prototype.update = function () {
  * @param {Number} height The height of the window
  */
 Window.prototype.move = function (x, y, width, height) {
-    this.x = x || 0;
-    this.y = y || 0;
-    if (this._width !== width || this._height !== height) {
-        this._width = width || 0;
-        this._height = height || 0;
-        this._refreshAllParts();
-    }
+  this.x = x || 0;
+  this.y = y || 0;
+  if (this._width !== width || this._height !== height) {
+    this._width = width || 0;
+    this._height = height || 0;
+    this._refreshAllParts();
+  }
 };
 
 /**
@@ -6540,7 +7098,7 @@ Window.prototype.move = function (x, y, width, height) {
  * @method isOpen
  */
 Window.prototype.isOpen = function () {
-    return this._openness >= 255;
+  return this._openness >= 255;
 };
 
 /**
@@ -6549,7 +7107,7 @@ Window.prototype.isOpen = function () {
  * @method isClosed
  */
 Window.prototype.isClosed = function () {
-    return this._openness <= 0;
+  return this._openness <= 0;
 };
 
 /**
@@ -6562,18 +7120,23 @@ Window.prototype.isClosed = function () {
  * @param {Number} height The height of the cursor
  */
 Window.prototype.setCursorRect = function (x, y, width, height) {
-    var cx = Math.floor(x || 0);
-    var cy = Math.floor(y || 0);
-    var cw = Math.floor(width || 0);
-    var ch = Math.floor(height || 0);
-    var rect = this._cursorRect;
-    if (rect.x !== cx || rect.y !== cy || rect.width !== cw || rect.height !== ch) {
-        this._cursorRect.x = cx;
-        this._cursorRect.y = cy;
-        this._cursorRect.width = cw;
-        this._cursorRect.height = ch;
-        this._refreshCursor();
-    }
+  var cx = Math.floor(x || 0);
+  var cy = Math.floor(y || 0);
+  var cw = Math.floor(width || 0);
+  var ch = Math.floor(height || 0);
+  var rect = this._cursorRect;
+  if (
+    rect.x !== cx ||
+    rect.y !== cy ||
+    rect.width !== cw ||
+    rect.height !== ch
+  ) {
+    this._cursorRect.x = cx;
+    this._cursorRect.y = cy;
+    this._cursorRect.width = cw;
+    this._cursorRect.height = ch;
+    this._refreshCursor();
+  }
 };
 
 /**
@@ -6585,11 +7148,11 @@ Window.prototype.setCursorRect = function (x, y, width, height) {
  * @param {Number} b The blue value in the range (-255, 255)
  */
 Window.prototype.setTone = function (r, g, b) {
-    var tone = this._colorTone;
-    if (r !== tone[0] || g !== tone[1] || b !== tone[2]) {
-        this._colorTone = [r, g, b];
-        this._refreshBack();
-    }
+  var tone = this._colorTone;
+  if (r !== tone[0] || g !== tone[1] || b !== tone[2]) {
+    this._colorTone = [r, g, b];
+    this._refreshBack();
+  }
 };
 
 /**
@@ -6600,8 +7163,8 @@ Window.prototype.setTone = function (r, g, b) {
  * @return {Object} The child that was added
  */
 Window.prototype.addChildToBack = function (child) {
-    var containerIndex = this.children.indexOf(this._windowSpriteContainer);
-    return this.addChildAt(child, containerIndex + 1);
+  var containerIndex = this.children.indexOf(this._windowSpriteContainer);
+  return this.addChildAt(child, containerIndex + 1);
 };
 
 /**
@@ -6609,11 +7172,11 @@ Window.prototype.addChildToBack = function (child) {
  * @private
  */
 Window.prototype.updateTransform = function () {
-    this._updateCursor();
-    this._updateArrows();
-    this._updatePauseSign();
-    this._updateContents();
-    PIXI.Container.prototype.updateTransform.call(this);
+  this._updateCursor();
+  this._updateArrows();
+  this._updatePauseSign();
+  this._updateContents();
+  PIXI.Container.prototype.updateTransform.call(this);
 };
 
 /**
@@ -6621,24 +7184,24 @@ Window.prototype.updateTransform = function () {
  * @private
  */
 Window.prototype._createAllParts = function () {
-    this._windowSpriteContainer = new PIXI.Container();
-    this._windowBackSprite = new Sprite();
-    this._windowCursorSprite = new Sprite();
-    this._windowFrameSprite = new Sprite();
-    this._windowContentsSprite = new Sprite();
-    this._downArrowSprite = new Sprite();
-    this._upArrowSprite = new Sprite();
-    this._windowPauseSignSprite = new Sprite();
-    this._windowBackSprite.bitmap = new Bitmap(1, 1);
-    this._windowBackSprite.alpha = 192 / 255;
-    this.addChild(this._windowSpriteContainer);
-    this._windowSpriteContainer.addChild(this._windowBackSprite);
-    this._windowSpriteContainer.addChild(this._windowFrameSprite);
-    this.addChild(this._windowCursorSprite);
-    this.addChild(this._windowContentsSprite);
-    this.addChild(this._downArrowSprite);
-    this.addChild(this._upArrowSprite);
-    this.addChild(this._windowPauseSignSprite);
+  this._windowSpriteContainer = new PIXI.Container();
+  this._windowBackSprite = new Sprite();
+  this._windowCursorSprite = new Sprite();
+  this._windowFrameSprite = new Sprite();
+  this._windowContentsSprite = new Sprite();
+  this._downArrowSprite = new Sprite();
+  this._upArrowSprite = new Sprite();
+  this._windowPauseSignSprite = new Sprite();
+  this._windowBackSprite.bitmap = new Bitmap(1, 1);
+  this._windowBackSprite.alpha = 192 / 255;
+  this.addChild(this._windowSpriteContainer);
+  this._windowSpriteContainer.addChild(this._windowBackSprite);
+  this._windowSpriteContainer.addChild(this._windowFrameSprite);
+  this.addChild(this._windowCursorSprite);
+  this.addChild(this._windowContentsSprite);
+  this.addChild(this._downArrowSprite);
+  this.addChild(this._upArrowSprite);
+  this.addChild(this._windowPauseSignSprite);
 };
 
 /**
@@ -6646,7 +7209,7 @@ Window.prototype._createAllParts = function () {
  * @private
  */
 Window.prototype._onWindowskinLoad = function () {
-    this._refreshAllParts();
+  this._refreshAllParts();
 };
 
 /**
@@ -6654,12 +7217,12 @@ Window.prototype._onWindowskinLoad = function () {
  * @private
  */
 Window.prototype._refreshAllParts = function () {
-    this._refreshBack();
-    this._refreshFrame();
-    this._refreshCursor();
-    this._refreshContents();
-    this._refreshArrows();
-    this._refreshPauseSign();
+  this._refreshBack();
+  this._refreshFrame();
+  this._refreshCursor();
+  this._refreshContents();
+  this._refreshArrows();
+  this._refreshPauseSign();
 };
 
 /**
@@ -6667,26 +7230,26 @@ Window.prototype._refreshAllParts = function () {
  * @private
  */
 Window.prototype._refreshBack = function () {
-    var m = this._margin;
-    var w = this._width - m * 2;
-    var h = this._height - m * 2;
-    var bitmap = new Bitmap(w, h);
+  var m = this._margin;
+  var w = this._width - m * 2;
+  var h = this._height - m * 2;
+  var bitmap = new Bitmap(w, h);
 
-    this._windowBackSprite.bitmap = bitmap;
-    this._windowBackSprite.setFrame(0, 0, w, h);
-    this._windowBackSprite.move(m, m);
+  this._windowBackSprite.bitmap = bitmap;
+  this._windowBackSprite.setFrame(0, 0, w, h);
+  this._windowBackSprite.move(m, m);
 
-    if (w > 0 && h > 0 && this._windowskin) {
-        var p = 96;
-        bitmap.blt(this._windowskin, 0, 0, p, p, 0, 0, w, h);
-        for (var y = 0; y < h; y += p) {
-            for (var x = 0; x < w; x += p) {
-                bitmap.blt(this._windowskin, 0, p, p, p, x, y, p, p);
-            }
-        }
-        var tone = this._colorTone;
-        bitmap.adjustTone(tone[0], tone[1], tone[2]);
+  if (w > 0 && h > 0 && this._windowskin) {
+    var p = 96;
+    bitmap.blt(this._windowskin, 0, 0, p, p, 0, 0, w, h);
+    for (var y = 0; y < h; y += p) {
+      for (var x = 0; x < w; x += p) {
+        bitmap.blt(this._windowskin, 0, p, p, p, x, y, p, p);
+      }
     }
+    var tone = this._colorTone;
+    bitmap.adjustTone(tone[0], tone[1], tone[2]);
+  }
 };
 
 /**
@@ -6694,27 +7257,27 @@ Window.prototype._refreshBack = function () {
  * @private
  */
 Window.prototype._refreshFrame = function () {
-    var w = this._width;
-    var h = this._height;
-    var m = 24;
-    var bitmap = new Bitmap(w, h);
+  var w = this._width;
+  var h = this._height;
+  var m = 24;
+  var bitmap = new Bitmap(w, h);
 
-    this._windowFrameSprite.bitmap = bitmap;
-    this._windowFrameSprite.setFrame(0, 0, w, h);
+  this._windowFrameSprite.bitmap = bitmap;
+  this._windowFrameSprite.setFrame(0, 0, w, h);
 
-    if (w > 0 && h > 0 && this._windowskin) {
-        var skin = this._windowskin;
-        var p = 96;
-        var q = 96;
-        bitmap.blt(skin, p + m, 0 + 0, p - m * 2, m, m, 0, w - m * 2, m);
-        bitmap.blt(skin, p + m, 0 + q - m, p - m * 2, m, m, h - m, w - m * 2, m);
-        bitmap.blt(skin, p + 0, 0 + m, m, p - m * 2, 0, m, m, h - m * 2);
-        bitmap.blt(skin, p + q - m, 0 + m, m, p - m * 2, w - m, m, m, h - m * 2);
-        bitmap.blt(skin, p + 0, 0 + 0, m, m, 0, 0, m, m);
-        bitmap.blt(skin, p + q - m, 0 + 0, m, m, w - m, 0, m, m);
-        bitmap.blt(skin, p + 0, 0 + q - m, m, m, 0, h - m, m, m);
-        bitmap.blt(skin, p + q - m, 0 + q - m, m, m, w - m, h - m, m, m);
-    }
+  if (w > 0 && h > 0 && this._windowskin) {
+    var skin = this._windowskin;
+    var p = 96;
+    var q = 96;
+    bitmap.blt(skin, p + m, 0 + 0, p - m * 2, m, m, 0, w - m * 2, m);
+    bitmap.blt(skin, p + m, 0 + q - m, p - m * 2, m, m, h - m, w - m * 2, m);
+    bitmap.blt(skin, p + 0, 0 + m, m, p - m * 2, 0, m, m, h - m * 2);
+    bitmap.blt(skin, p + q - m, 0 + m, m, p - m * 2, w - m, m, m, h - m * 2);
+    bitmap.blt(skin, p + 0, 0 + 0, m, m, 0, 0, m, m);
+    bitmap.blt(skin, p + q - m, 0 + 0, m, m, w - m, 0, m, m);
+    bitmap.blt(skin, p + 0, 0 + q - m, m, m, 0, h - m, m, m);
+    bitmap.blt(skin, p + q - m, 0 + q - m, m, m, w - m, h - m, m, m);
+  }
 };
 
 /**
@@ -6722,38 +7285,68 @@ Window.prototype._refreshFrame = function () {
  * @private
  */
 Window.prototype._refreshCursor = function () {
-    var pad = this._padding;
-    var x = this._cursorRect.x + pad - this.origin.x;
-    var y = this._cursorRect.y + pad - this.origin.y;
-    var w = this._cursorRect.width;
-    var h = this._cursorRect.height;
-    var m = 4;
-    var x2 = Math.max(x, pad);
-    var y2 = Math.max(y, pad);
-    var ox = x - x2;
-    var oy = y - y2;
-    var w2 = Math.min(w, this._width - pad - x2);
-    var h2 = Math.min(h, this._height - pad - y2);
-    var bitmap = new Bitmap(w2, h2);
+  var pad = this._padding;
+  var x = this._cursorRect.x + pad - this.origin.x;
+  var y = this._cursorRect.y + pad - this.origin.y;
+  var w = this._cursorRect.width;
+  var h = this._cursorRect.height;
+  var m = 4;
+  var x2 = Math.max(x, pad);
+  var y2 = Math.max(y, pad);
+  var ox = x - x2;
+  var oy = y - y2;
+  var w2 = Math.min(w, this._width - pad - x2);
+  var h2 = Math.min(h, this._height - pad - y2);
+  var bitmap = new Bitmap(w2, h2);
 
-    this._windowCursorSprite.bitmap = bitmap;
-    this._windowCursorSprite.setFrame(0, 0, w2, h2);
-    this._windowCursorSprite.move(x2, y2);
+  this._windowCursorSprite.bitmap = bitmap;
+  this._windowCursorSprite.setFrame(0, 0, w2, h2);
+  this._windowCursorSprite.move(x2, y2);
 
-    if (w > 0 && h > 0 && this._windowskin) {
-        var skin = this._windowskin;
-        var p = 96;
-        var q = 48;
-        bitmap.blt(skin, p + m, p + m, q - m * 2, q - m * 2, ox + m, oy + m, w - m * 2, h - m * 2);
-        bitmap.blt(skin, p + m, p + 0, q - m * 2, m, ox + m, oy + 0, w - m * 2, m);
-        bitmap.blt(skin, p + m, p + q - m, q - m * 2, m, ox + m, oy + h - m, w - m * 2, m);
-        bitmap.blt(skin, p + 0, p + m, m, q - m * 2, ox + 0, oy + m, m, h - m * 2);
-        bitmap.blt(skin, p + q - m, p + m, m, q - m * 2, ox + w - m, oy + m, m, h - m * 2);
-        bitmap.blt(skin, p + 0, p + 0, m, m, ox + 0, oy + 0, m, m);
-        bitmap.blt(skin, p + q - m, p + 0, m, m, ox + w - m, oy + 0, m, m);
-        bitmap.blt(skin, p + 0, p + q - m, m, m, ox + 0, oy + h - m, m, m);
-        bitmap.blt(skin, p + q - m, p + q - m, m, m, ox + w - m, oy + h - m, m, m);
-    }
+  if (w > 0 && h > 0 && this._windowskin) {
+    var skin = this._windowskin;
+    var p = 96;
+    var q = 48;
+    bitmap.blt(
+      skin,
+      p + m,
+      p + m,
+      q - m * 2,
+      q - m * 2,
+      ox + m,
+      oy + m,
+      w - m * 2,
+      h - m * 2
+    );
+    bitmap.blt(skin, p + m, p + 0, q - m * 2, m, ox + m, oy + 0, w - m * 2, m);
+    bitmap.blt(
+      skin,
+      p + m,
+      p + q - m,
+      q - m * 2,
+      m,
+      ox + m,
+      oy + h - m,
+      w - m * 2,
+      m
+    );
+    bitmap.blt(skin, p + 0, p + m, m, q - m * 2, ox + 0, oy + m, m, h - m * 2);
+    bitmap.blt(
+      skin,
+      p + q - m,
+      p + m,
+      m,
+      q - m * 2,
+      ox + w - m,
+      oy + m,
+      m,
+      h - m * 2
+    );
+    bitmap.blt(skin, p + 0, p + 0, m, m, ox + 0, oy + 0, m, m);
+    bitmap.blt(skin, p + q - m, p + 0, m, m, ox + w - m, oy + 0, m, m);
+    bitmap.blt(skin, p + 0, p + q - m, m, m, ox + 0, oy + h - m, m, m);
+    bitmap.blt(skin, p + q - m, p + q - m, m, m, ox + w - m, oy + h - m, m, m);
+  }
 };
 
 /**
@@ -6761,7 +7354,7 @@ Window.prototype._refreshCursor = function () {
  * @private
  */
 Window.prototype._refreshContents = function () {
-    this._windowContentsSprite.move(this.padding, this.padding);
+  this._windowContentsSprite.move(this.padding, this.padding);
 };
 
 /**
@@ -6769,22 +7362,22 @@ Window.prototype._refreshContents = function () {
  * @private
  */
 Window.prototype._refreshArrows = function () {
-    var w = this._width;
-    var h = this._height;
-    var p = 24;
-    var q = p / 2;
-    var sx = 96 + p;
-    var sy = 0 + p;
-    this._downArrowSprite.bitmap = this._windowskin;
-    this._downArrowSprite.anchor.x = 0.5;
-    this._downArrowSprite.anchor.y = 0.5;
-    this._downArrowSprite.setFrame(sx + q, sy + q + p, p, q);
-    this._downArrowSprite.move(w / 2, h - q);
-    this._upArrowSprite.bitmap = this._windowskin;
-    this._upArrowSprite.anchor.x = 0.5;
-    this._upArrowSprite.anchor.y = 0.5;
-    this._upArrowSprite.setFrame(sx + q, sy, p, q);
-    this._upArrowSprite.move(w / 2, q);
+  var w = this._width;
+  var h = this._height;
+  var p = 24;
+  var q = p / 2;
+  var sx = 96 + p;
+  var sy = 0 + p;
+  this._downArrowSprite.bitmap = this._windowskin;
+  this._downArrowSprite.anchor.x = 0.5;
+  this._downArrowSprite.anchor.y = 0.5;
+  this._downArrowSprite.setFrame(sx + q, sy + q + p, p, q);
+  this._downArrowSprite.move(w / 2, h - q);
+  this._upArrowSprite.bitmap = this._windowskin;
+  this._upArrowSprite.anchor.x = 0.5;
+  this._upArrowSprite.anchor.y = 0.5;
+  this._upArrowSprite.setFrame(sx + q, sy, p, q);
+  this._upArrowSprite.move(w / 2, q);
 };
 
 /**
@@ -6792,15 +7385,15 @@ Window.prototype._refreshArrows = function () {
  * @private
  */
 Window.prototype._refreshPauseSign = function () {
-    var sx = 144;
-    var sy = 96;
-    var p = 24;
-    this._windowPauseSignSprite.bitmap = this._windowskin;
-    this._windowPauseSignSprite.anchor.x = 0.5;
-    this._windowPauseSignSprite.anchor.y = 1;
-    this._windowPauseSignSprite.move(this._width / 2, this._height);
-    this._windowPauseSignSprite.setFrame(sx, sy, p, p);
-    this._windowPauseSignSprite.alpha = 0;
+  var sx = 144;
+  var sy = 96;
+  var p = 24;
+  this._windowPauseSignSprite.bitmap = this._windowskin;
+  this._windowPauseSignSprite.anchor.x = 0.5;
+  this._windowPauseSignSprite.anchor.y = 1;
+  this._windowPauseSignSprite.move(this._width / 2, this._height);
+  this._windowPauseSignSprite.setFrame(sx, sy, p, p);
+  this._windowPauseSignSprite.alpha = 0;
 };
 
 /**
@@ -6808,17 +7401,17 @@ Window.prototype._refreshPauseSign = function () {
  * @private
  */
 Window.prototype._updateCursor = function () {
-    var blinkCount = this._animationCount % 40;
-    var cursorOpacity = this.contentsOpacity;
-    if (this.active) {
-        if (blinkCount < 20) {
-            cursorOpacity -= blinkCount * 8;
-        } else {
-            cursorOpacity -= (40 - blinkCount) * 8;
-        }
+  var blinkCount = this._animationCount % 40;
+  var cursorOpacity = this.contentsOpacity;
+  if (this.active) {
+    if (blinkCount < 20) {
+      cursorOpacity -= blinkCount * 8;
+    } else {
+      cursorOpacity -= (40 - blinkCount) * 8;
     }
-    this._windowCursorSprite.alpha = cursorOpacity / 255;
-    this._windowCursorSprite.visible = this.isOpen();
+  }
+  this._windowCursorSprite.alpha = cursorOpacity / 255;
+  this._windowCursorSprite.visible = this.isOpen();
 };
 
 /**
@@ -6826,14 +7419,14 @@ Window.prototype._updateCursor = function () {
  * @private
  */
 Window.prototype._updateContents = function () {
-    var w = this._width - this._padding * 2;
-    var h = this._height - this._padding * 2;
-    if (w > 0 && h > 0) {
-        this._windowContentsSprite.setFrame(this.origin.x, this.origin.y, w, h);
-        this._windowContentsSprite.visible = this.isOpen();
-    } else {
-        this._windowContentsSprite.visible = false;
-    }
+  var w = this._width - this._padding * 2;
+  var h = this._height - this._padding * 2;
+  if (w > 0 && h > 0) {
+    this._windowContentsSprite.setFrame(this.origin.x, this.origin.y, w, h);
+    this._windowContentsSprite.visible = this.isOpen();
+  } else {
+    this._windowContentsSprite.visible = false;
+  }
 };
 
 /**
@@ -6841,8 +7434,8 @@ Window.prototype._updateContents = function () {
  * @private
  */
 Window.prototype._updateArrows = function () {
-    this._downArrowSprite.visible = this.isOpen() && this.downArrowVisible;
-    this._upArrowSprite.visible = this.isOpen() && this.upArrowVisible;
+  this._downArrowSprite.visible = this.isOpen() && this.downArrowVisible;
+  this._upArrowSprite.visible = this.isOpen() && this.upArrowVisible;
 };
 
 /**
@@ -6850,19 +7443,19 @@ Window.prototype._updateArrows = function () {
  * @private
  */
 Window.prototype._updatePauseSign = function () {
-    var sprite = this._windowPauseSignSprite;
-    var x = Math.floor(this._animationCount / 16) % 2;
-    var y = Math.floor(this._animationCount / 16 / 2) % 2;
-    var sx = 144;
-    var sy = 96;
-    var p = 24;
-    if (!this.pause) {
-        sprite.alpha = 0;
-    } else if (sprite.alpha < 1) {
-        sprite.alpha = Math.min(sprite.alpha + 0.1, 1);
-    }
-    sprite.setFrame(sx + x * p, sy + y * p, p, p);
-    sprite.visible = this.isOpen();
+  var sprite = this._windowPauseSignSprite;
+  var x = Math.floor(this._animationCount / 16) % 2;
+  var y = Math.floor(this._animationCount / 16 / 2) % 2;
+  var sx = 144;
+  var sy = 96;
+  var p = 24;
+  if (!this.pause) {
+    sprite.alpha = 0;
+  } else if (sprite.alpha < 1) {
+    sprite.alpha = Math.min(sprite.alpha + 0.1, 1);
+  }
+  sprite.setFrame(sx + x * p, sy + y * p, p, p);
+  sprite.visible = this.isOpen();
 };
 
 // The important members from Pixi.js
@@ -6943,36 +7536,36 @@ Window.prototype._updatePauseSign = function () {
  * @constructor
  */
 function WindowLayer() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 WindowLayer.prototype = Object.create(PIXI.Container.prototype);
 WindowLayer.prototype.constructor = WindowLayer;
 
 WindowLayer.prototype.initialize = function () {
-    PIXI.Container.call(this);
-    this._width = 0;
-    this._height = 0;
-    this._tempCanvas = null;
-    this._translationMatrix = [1, 0, 0, 0, 1, 0, 0, 0, 1];
+  PIXI.Container.call(this);
+  this._width = 0;
+  this._height = 0;
+  this._tempCanvas = null;
+  this._translationMatrix = [1, 0, 0, 0, 1, 0, 0, 0, 1];
 
-    this._windowMask = new PIXI.Graphics();
-    this._windowMask.beginFill(0xffffff, 1);
-    this._windowMask.drawRect(0, 0, 0, 0);
-    this._windowMask.endFill();
-    this._windowRect = this._windowMask.graphicsData[0].shape;
+  this._windowMask = new PIXI.Graphics();
+  this._windowMask.beginFill(0xffffff, 1);
+  this._windowMask.drawRect(0, 0, 0, 0);
+  this._windowMask.endFill();
+  this._windowRect = this._windowMask.graphicsData[0].shape;
 
-    this._renderSprite = null;
-    this.filterArea = new PIXI.Rectangle();
-    this.filters = [WindowLayer.voidFilter];
+  this._renderSprite = null;
+  this.filterArea = new PIXI.Rectangle();
+  this.filters = [WindowLayer.voidFilter];
 
-    //temporary fix for memory leak bug
-    this.on('removed', this.onRemoveAsAChild);
+  //temporary fix for memory leak bug
+  this.on("removed", this.onRemoveAsAChild);
 };
 
 WindowLayer.prototype.onRemoveAsAChild = function () {
-    this.removeChildren();
-}
+  this.removeChildren();
+};
 
 WindowLayer.voidFilter = new PIXI.filters.VoidFilter();
 
@@ -6982,14 +7575,14 @@ WindowLayer.voidFilter = new PIXI.filters.VoidFilter();
  * @property width
  * @type Number
  */
-Object.defineProperty(WindowLayer.prototype, 'width', {
-    get: function () {
-        return this._width;
-    },
-    set: function (value) {
-        this._width = value;
-    },
-    configurable: true
+Object.defineProperty(WindowLayer.prototype, "width", {
+  get: function () {
+    return this._width;
+  },
+  set: function (value) {
+    this._width = value;
+  },
+  configurable: true,
 });
 
 /**
@@ -6998,14 +7591,14 @@ Object.defineProperty(WindowLayer.prototype, 'width', {
  * @property height
  * @type Number
  */
-Object.defineProperty(WindowLayer.prototype, 'height', {
-    get: function () {
-        return this._height;
-    },
-    set: function (value) {
-        this._height = value;
-    },
-    configurable: true
+Object.defineProperty(WindowLayer.prototype, "height", {
+  get: function () {
+    return this._height;
+  },
+  set: function (value) {
+    this._height = value;
+  },
+  configurable: true,
 });
 
 /**
@@ -7018,10 +7611,10 @@ Object.defineProperty(WindowLayer.prototype, 'height', {
  * @param {Number} height The height of the window layer
  */
 WindowLayer.prototype.move = function (x, y, width, height) {
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
+  this.x = x;
+  this.y = y;
+  this.width = width;
+  this.height = height;
 };
 
 /**
@@ -7030,11 +7623,11 @@ WindowLayer.prototype.move = function (x, y, width, height) {
  * @method update
  */
 WindowLayer.prototype.update = function () {
-    this.children.forEach(function (child) {
-        if (child.update) {
-            child.update();
-        }
-    });
+  this.children.forEach(function (child) {
+    if (child.update) {
+      child.update();
+    }
+  });
 };
 
 /**
@@ -7043,52 +7636,52 @@ WindowLayer.prototype.update = function () {
  * @private
  */
 WindowLayer.prototype.renderCanvas = function (renderer) {
-    if (!this.visible || !this.renderable) {
-        return;
+  if (!this.visible || !this.renderable) {
+    return;
+  }
+
+  if (!this._tempCanvas) {
+    this._tempCanvas = document.createElement("canvas");
+  }
+
+  this._tempCanvas.width = Graphics.width;
+  this._tempCanvas.height = Graphics.height;
+
+  var realCanvasContext = renderer.context;
+  var context = this._tempCanvas.getContext("2d");
+
+  context.save();
+  context.clearRect(0, 0, Graphics.width, Graphics.height);
+  context.beginPath();
+  context.rect(this.x, this.y, this.width, this.height);
+  context.closePath();
+  context.clip();
+
+  renderer.context = context;
+
+  for (var i = 0; i < this.children.length; i++) {
+    var child = this.children[i];
+    if (child._isWindow && child.visible && child.openness > 0) {
+      this._canvasClearWindowRect(renderer, child);
+      context.save();
+      child.renderCanvas(renderer);
+      context.restore();
     }
+  }
 
-    if (!this._tempCanvas) {
-        this._tempCanvas = document.createElement('canvas');
+  context.restore();
+
+  renderer.context = realCanvasContext;
+  renderer.context.setTransform(1, 0, 0, 1, 0, 0);
+  renderer.context.globalCompositeOperation = "source-over";
+  renderer.context.globalAlpha = 1;
+  renderer.context.drawImage(this._tempCanvas, 0, 0);
+
+  for (var j = 0; j < this.children.length; j++) {
+    if (!this.children[j]._isWindow) {
+      this.children[j].renderCanvas(renderer);
     }
-
-    this._tempCanvas.width = Graphics.width;
-    this._tempCanvas.height = Graphics.height;
-
-    var realCanvasContext = renderer.context;
-    var context = this._tempCanvas.getContext('2d');
-
-    context.save();
-    context.clearRect(0, 0, Graphics.width, Graphics.height);
-    context.beginPath();
-    context.rect(this.x, this.y, this.width, this.height);
-    context.closePath();
-    context.clip();
-
-    renderer.context = context;
-
-    for (var i = 0; i < this.children.length; i++) {
-        var child = this.children[i];
-        if (child._isWindow && child.visible && child.openness > 0) {
-            this._canvasClearWindowRect(renderer, child);
-            context.save();
-            child.renderCanvas(renderer);
-            context.restore();
-        }
-    }
-
-    context.restore();
-
-    renderer.context = realCanvasContext;
-    renderer.context.setTransform(1, 0, 0, 1, 0, 0);
-    renderer.context.globalCompositeOperation = 'source-over';
-    renderer.context.globalAlpha = 1;
-    renderer.context.drawImage(this._tempCanvas, 0, 0);
-
-    for (var j = 0; j < this.children.length; j++) {
-        if (!this.children[j]._isWindow) {
-            this.children[j].renderCanvas(renderer);
-        }
-    }
+  }
 };
 
 /**
@@ -7097,12 +7690,16 @@ WindowLayer.prototype.renderCanvas = function (renderer) {
  * @param {Window} window
  * @private
  */
-WindowLayer.prototype._canvasClearWindowRect = function (renderSession, window) {
-    var rx = this.x + window.x;
-    var ry = this.y + window.y + window.height / 2 * (1 - window._openness / 255);
-    var rw = window.width;
-    var rh = window.height * window._openness / 255;
-    renderSession.context.clearRect(rx, ry, rw, rh);
+WindowLayer.prototype._canvasClearWindowRect = function (
+  renderSession,
+  window
+) {
+  var rx = this.x + window.x;
+  var ry =
+    this.y + window.y + (window.height / 2) * (1 - window._openness / 255);
+  var rw = window.width;
+  var rh = (window.height * window._openness) / 255;
+  renderSession.context.clearRect(rx, ry, rw, rh);
 };
 
 /**
@@ -7111,47 +7708,47 @@ WindowLayer.prototype._canvasClearWindowRect = function (renderSession, window) 
  * @private
  */
 WindowLayer.prototype.renderWebGL = function (renderer) {
-    if (!this.visible || !this.renderable) {
-        return;
+  if (!this.visible || !this.renderable) {
+    return;
+  }
+
+  if (this.children.length == 0) {
+    return;
+  }
+
+  renderer.flush();
+  this.filterArea.copy(this);
+  renderer.filterManager.pushFilter(this, this.filters);
+  renderer.currentRenderer.start();
+
+  var shift = new PIXI.Point();
+  var rt = renderer._activeRenderTarget;
+  var projectionMatrix = rt.projectionMatrix;
+  shift.x = Math.round(((projectionMatrix.tx + 1) / 2) * rt.sourceFrame.width);
+  shift.y = Math.round(((projectionMatrix.ty + 1) / 2) * rt.sourceFrame.height);
+
+  for (var i = 0; i < this.children.length; i++) {
+    var child = this.children[i];
+    if (child._isWindow && child.visible && child.openness > 0) {
+      this._maskWindow(child, shift);
+      renderer.maskManager.pushScissorMask(this, this._windowMask);
+      renderer.clear();
+      renderer.maskManager.popScissorMask();
+      renderer.currentRenderer.start();
+      child.renderWebGL(renderer);
+      renderer.currentRenderer.flush();
     }
+  }
 
-    if (this.children.length == 0) {
-        return;
+  renderer.flush();
+  renderer.filterManager.popFilter();
+  renderer.maskManager.popScissorMask();
+
+  for (var j = 0; j < this.children.length; j++) {
+    if (!this.children[j]._isWindow) {
+      this.children[j].renderWebGL(renderer);
     }
-
-    renderer.flush();
-    this.filterArea.copy(this);
-    renderer.filterManager.pushFilter(this, this.filters);
-    renderer.currentRenderer.start();
-
-    var shift = new PIXI.Point();
-    var rt = renderer._activeRenderTarget;
-    var projectionMatrix = rt.projectionMatrix;
-    shift.x = Math.round((projectionMatrix.tx + 1) / 2 * rt.sourceFrame.width);
-    shift.y = Math.round((projectionMatrix.ty + 1) / 2 * rt.sourceFrame.height);
-
-    for (var i = 0; i < this.children.length; i++) {
-        var child = this.children[i];
-        if (child._isWindow && child.visible && child.openness > 0) {
-            this._maskWindow(child, shift);
-            renderer.maskManager.pushScissorMask(this, this._windowMask);
-            renderer.clear();
-            renderer.maskManager.popScissorMask();
-            renderer.currentRenderer.start();
-            child.renderWebGL(renderer);
-            renderer.currentRenderer.flush();
-        }
-    }
-
-    renderer.flush();
-    renderer.filterManager.popFilter();
-    renderer.maskManager.popScissorMask();
-
-    for (var j = 0; j < this.children.length; j++) {
-        if (!this.children[j]._isWindow) {
-            this.children[j].renderWebGL(renderer);
-        }
-    }
+  }
 };
 
 /**
@@ -7160,13 +7757,17 @@ WindowLayer.prototype.renderWebGL = function (renderer) {
  * @private
  */
 WindowLayer.prototype._maskWindow = function (window, shift) {
-    this._windowMask._currentBounds = null;
-    this._windowMask.boundsDirty = true;
-    var rect = this._windowRect;
-    rect.x = this.x + shift.x + window.x;
-    rect.y = this.x + shift.y + window.y + window.height / 2 * (1 - window._openness / 255);
-    rect.width = window.width;
-    rect.height = window.height * window._openness / 255;
+  this._windowMask._currentBounds = null;
+  this._windowMask.boundsDirty = true;
+  var rect = this._windowRect;
+  rect.x = this.x + shift.x + window.x;
+  rect.y =
+    this.x +
+    shift.y +
+    window.y +
+    (window.height / 2) * (1 - window._openness / 255);
+  rect.width = window.width;
+  rect.height = (window.height * window._openness) / 255;
 };
 
 // The important members from Pixi.js
@@ -7240,45 +7841,45 @@ WindowLayer.prototype._maskWindow = function (window, shift) {
  * @constructor
  */
 function Weather() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 Weather.prototype = Object.create(PIXI.Container.prototype);
 Weather.prototype.constructor = Weather;
 
 Weather.prototype.initialize = function () {
-    PIXI.Container.call(this);
+  PIXI.Container.call(this);
 
-    this._width = Graphics.width;
-    this._height = Graphics.height;
-    this._sprites = [];
+  this._width = Graphics.width;
+  this._height = Graphics.height;
+  this._sprites = [];
 
-    this._createBitmaps();
-    this._createDimmer();
+  this._createBitmaps();
+  this._createDimmer();
 
-    /**
-     * The type of the weather in ['none', 'rain', 'storm', 'snow'].
-     *
-     * @property type
-     * @type String
-     */
-    this.type = 'none';
+  /**
+   * The type of the weather in ['none', 'rain', 'storm', 'snow'].
+   *
+   * @property type
+   * @type String
+   */
+  this.type = "none";
 
-    /**
-     * The power of the weather in the range (0, 9).
-     *
-     * @property power
-     * @type Number
-     */
-    this.power = 0;
+  /**
+   * The power of the weather in the range (0, 9).
+   *
+   * @property power
+   * @type Number
+   */
+  this.power = 0;
 
-    /**
-     * The origin point of the weather for scrolling.
-     *
-     * @property origin
-     * @type Point
-     */
-    this.origin = new Point();
+  /**
+   * The origin point of the weather for scrolling.
+   *
+   * @property origin
+   * @type Point
+   */
+  this.origin = new Point();
 };
 
 /**
@@ -7287,8 +7888,8 @@ Weather.prototype.initialize = function () {
  * @method update
  */
 Weather.prototype.update = function () {
-    this._updateDimmer();
-    this._updateAllSprites();
+  this._updateDimmer();
+  this._updateAllSprites();
 };
 
 /**
@@ -7296,12 +7897,12 @@ Weather.prototype.update = function () {
  * @private
  */
 Weather.prototype._createBitmaps = function () {
-    this._rainBitmap = new Bitmap(1, 60);
-    this._rainBitmap.fillAll('white');
-    this._stormBitmap = new Bitmap(2, 100);
-    this._stormBitmap.fillAll('white');
-    this._snowBitmap = new Bitmap(9, 9);
-    this._snowBitmap.drawCircle(4, 4, 4, 'white');
+  this._rainBitmap = new Bitmap(1, 60);
+  this._rainBitmap.fillAll("white");
+  this._stormBitmap = new Bitmap(2, 100);
+  this._stormBitmap.fillAll("white");
+  this._snowBitmap = new Bitmap(9, 9);
+  this._snowBitmap.drawCircle(4, 4, 4, "white");
 };
 
 /**
@@ -7309,9 +7910,9 @@ Weather.prototype._createBitmaps = function () {
  * @private
  */
 Weather.prototype._createDimmer = function () {
-    this._dimmerSprite = new ScreenSprite();
-    this._dimmerSprite.setColor(80, 80, 80);
-    this.addChild(this._dimmerSprite);
+  this._dimmerSprite = new ScreenSprite();
+  this._dimmerSprite.setColor(80, 80, 80);
+  this.addChild(this._dimmerSprite);
 };
 
 /**
@@ -7319,7 +7920,7 @@ Weather.prototype._createDimmer = function () {
  * @private
  */
 Weather.prototype._updateDimmer = function () {
-    this._dimmerSprite.opacity = Math.floor(this.power * 6);
+  this._dimmerSprite.opacity = Math.floor(this.power * 6);
 };
 
 /**
@@ -7327,18 +7928,18 @@ Weather.prototype._updateDimmer = function () {
  * @private
  */
 Weather.prototype._updateAllSprites = function () {
-    var maxSprites = Math.floor(this.power * 10);
-    while (this._sprites.length < maxSprites) {
-        this._addSprite();
-    }
-    while (this._sprites.length > maxSprites) {
-        this._removeSprite();
-    }
-    this._sprites.forEach(function (sprite) {
-        this._updateSprite(sprite);
-        sprite.x = sprite.ax - this.origin.x;
-        sprite.y = sprite.ay - this.origin.y;
-    }, this);
+  var maxSprites = Math.floor(this.power * 10);
+  while (this._sprites.length < maxSprites) {
+    this._addSprite();
+  }
+  while (this._sprites.length > maxSprites) {
+    this._removeSprite();
+  }
+  this._sprites.forEach(function (sprite) {
+    this._updateSprite(sprite);
+    sprite.x = sprite.ax - this.origin.x;
+    sprite.y = sprite.ay - this.origin.y;
+  }, this);
 };
 
 /**
@@ -7346,10 +7947,10 @@ Weather.prototype._updateAllSprites = function () {
  * @private
  */
 Weather.prototype._addSprite = function () {
-    var sprite = new Sprite(this.viewport);
-    sprite.opacity = 0;
-    this._sprites.push(sprite);
-    this.addChild(sprite);
+  var sprite = new Sprite(this.viewport);
+  sprite.opacity = 0;
+  this._sprites.push(sprite);
+  this.addChild(sprite);
 };
 
 /**
@@ -7357,7 +7958,7 @@ Weather.prototype._addSprite = function () {
  * @private
  */
 Weather.prototype._removeSprite = function () {
-    this.removeChild(this._sprites.pop());
+  this.removeChild(this._sprites.pop());
 };
 
 /**
@@ -7366,20 +7967,20 @@ Weather.prototype._removeSprite = function () {
  * @private
  */
 Weather.prototype._updateSprite = function (sprite) {
-    switch (this.type) {
-        case 'rain':
-            this._updateRainSprite(sprite);
-            break;
-        case 'storm':
-            this._updateStormSprite(sprite);
-            break;
-        case 'snow':
-            this._updateSnowSprite(sprite);
-            break;
-    }
-    if (sprite.opacity < 40) {
-        this._rebornSprite(sprite);
-    }
+  switch (this.type) {
+    case "rain":
+      this._updateRainSprite(sprite);
+      break;
+    case "storm":
+      this._updateStormSprite(sprite);
+      break;
+    case "snow":
+      this._updateSnowSprite(sprite);
+      break;
+  }
+  if (sprite.opacity < 40) {
+    this._rebornSprite(sprite);
+  }
 };
 
 /**
@@ -7388,11 +7989,11 @@ Weather.prototype._updateSprite = function (sprite) {
  * @private
  */
 Weather.prototype._updateRainSprite = function (sprite) {
-    sprite.bitmap = this._rainBitmap;
-    sprite.rotation = Math.PI / 16;
-    sprite.ax -= 6 * Math.sin(sprite.rotation);
-    sprite.ay += 6 * Math.cos(sprite.rotation);
-    sprite.opacity -= 6;
+  sprite.bitmap = this._rainBitmap;
+  sprite.rotation = Math.PI / 16;
+  sprite.ax -= 6 * Math.sin(sprite.rotation);
+  sprite.ay += 6 * Math.cos(sprite.rotation);
+  sprite.opacity -= 6;
 };
 
 /**
@@ -7401,11 +8002,11 @@ Weather.prototype._updateRainSprite = function (sprite) {
  * @private
  */
 Weather.prototype._updateStormSprite = function (sprite) {
-    sprite.bitmap = this._stormBitmap;
-    sprite.rotation = Math.PI / 8;
-    sprite.ax -= 8 * Math.sin(sprite.rotation);
-    sprite.ay += 8 * Math.cos(sprite.rotation);
-    sprite.opacity -= 8;
+  sprite.bitmap = this._stormBitmap;
+  sprite.rotation = Math.PI / 8;
+  sprite.ax -= 8 * Math.sin(sprite.rotation);
+  sprite.ay += 8 * Math.cos(sprite.rotation);
+  sprite.opacity -= 8;
 };
 
 /**
@@ -7414,11 +8015,11 @@ Weather.prototype._updateStormSprite = function (sprite) {
  * @private
  */
 Weather.prototype._updateSnowSprite = function (sprite) {
-    sprite.bitmap = this._snowBitmap;
-    sprite.rotation = Math.PI / 16;
-    sprite.ax -= 3 * Math.sin(sprite.rotation);
-    sprite.ay += 3 * Math.cos(sprite.rotation);
-    sprite.opacity -= 3;
+  sprite.bitmap = this._snowBitmap;
+  sprite.rotation = Math.PI / 16;
+  sprite.ax -= 3 * Math.sin(sprite.rotation);
+  sprite.ay += 3 * Math.cos(sprite.rotation);
+  sprite.opacity -= 3;
 };
 
 /**
@@ -7427,9 +8028,9 @@ Weather.prototype._updateSnowSprite = function (sprite) {
  * @private
  */
 Weather.prototype._rebornSprite = function (sprite) {
-    sprite.ax = Math.randomInt(Graphics.width + 100) - 100 + this.origin.x;
-    sprite.ay = Math.randomInt(Graphics.height + 200) - 200 + this.origin.y;
-    sprite.opacity = 160 + Math.randomInt(60);
+  sprite.ax = Math.randomInt(Graphics.width + 100) - 100 + this.origin.x;
+  sprite.ay = Math.randomInt(Graphics.height + 200) - 200 + this.origin.y;
+  sprite.opacity = 160 + Math.randomInt(60);
 };
 
 //-----------------------------------------------------------------------------
@@ -7441,7 +8042,7 @@ Weather.prototype._rebornSprite = function (sprite) {
  * @constructor
  */
 function ToneFilter() {
-    PIXI.filters.ColorMatrixFilter.call(this);
+  PIXI.filters.ColorMatrixFilter.call(this);
 }
 
 ToneFilter.prototype = Object.create(PIXI.filters.ColorMatrixFilter.prototype);
@@ -7454,7 +8055,7 @@ ToneFilter.prototype.constructor = ToneFilter;
  * @param {Number} value The hue value in the range (-360, 360)
  */
 ToneFilter.prototype.adjustHue = function (value) {
-    this.hue(value, true);
+  this.hue(value, true);
 };
 
 /**
@@ -7464,8 +8065,8 @@ ToneFilter.prototype.adjustHue = function (value) {
  * @param {Number} value The saturation value in the range (-255, 255)
  */
 ToneFilter.prototype.adjustSaturation = function (value) {
-    value = (value || 0).clamp(-255, 255) / 255;
-    this.saturate(value, true);
+  value = (value || 0).clamp(-255, 255) / 255;
+  this.saturate(value, true);
 };
 
 /**
@@ -7477,20 +8078,15 @@ ToneFilter.prototype.adjustSaturation = function (value) {
  * @param {Number} b The blue strength in the range (-255, 255)
  */
 ToneFilter.prototype.adjustTone = function (r, g, b) {
-    r = (r || 0).clamp(-255, 255) / 255;
-    g = (g || 0).clamp(-255, 255) / 255;
-    b = (b || 0).clamp(-255, 255) / 255;
+  r = (r || 0).clamp(-255, 255) / 255;
+  g = (g || 0).clamp(-255, 255) / 255;
+  b = (b || 0).clamp(-255, 255) / 255;
 
-    if (r !== 0 || g !== 0 || b !== 0) {
-        var matrix = [
-            1, 0, 0, r, 0,
-            0, 1, 0, g, 0,
-            0, 0, 1, b, 0,
-            0, 0, 0, 1, 0
-        ];
+  if (r !== 0 || g !== 0 || b !== 0) {
+    var matrix = [1, 0, 0, r, 0, 0, 1, 0, g, 0, 0, 0, 1, b, 0, 0, 0, 0, 1, 0];
 
-        this._loadMatrix(matrix, true);
-    }
+    this._loadMatrix(matrix, true);
+  }
 };
 
 //-----------------------------------------------------------------------------
@@ -7501,15 +8097,15 @@ ToneFilter.prototype.adjustTone = function (r, g, b) {
  * @constructor
  */
 function ToneSprite() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 ToneSprite.prototype = Object.create(PIXI.Container.prototype);
 ToneSprite.prototype.constructor = ToneSprite;
 
 ToneSprite.prototype.initialize = function () {
-    PIXI.Container.call(this);
-    this.clear();
+  PIXI.Container.call(this);
+  this.clear();
 };
 
 /**
@@ -7518,10 +8114,10 @@ ToneSprite.prototype.initialize = function () {
  * @method reset
  */
 ToneSprite.prototype.clear = function () {
-    this._red = 0;
-    this._green = 0;
-    this._blue = 0;
-    this._gray = 0;
+  this._red = 0;
+  this._green = 0;
+  this._blue = 0;
+  this._gray = 0;
 };
 
 /**
@@ -7534,10 +8130,10 @@ ToneSprite.prototype.clear = function () {
  * @param {Number} gray The grayscale level in the range (0, 255)
  */
 ToneSprite.prototype.setTone = function (r, g, b, gray) {
-    this._red = Math.round(r || 0).clamp(-255, 255);
-    this._green = Math.round(g || 0).clamp(-255, 255);
-    this._blue = Math.round(b || 0).clamp(-255, 255);
-    this._gray = Math.round(gray || 0).clamp(0, 255);
+  this._red = Math.round(r || 0).clamp(-255, 255);
+  this._green = Math.round(g || 0).clamp(-255, 255);
+  this._blue = Math.round(b || 0).clamp(-255, 255);
+  this._gray = Math.round(gray || 0).clamp(0, 255);
 };
 
 /**
@@ -7546,47 +8142,47 @@ ToneSprite.prototype.setTone = function (r, g, b, gray) {
  * @private
  */
 ToneSprite.prototype._renderCanvas = function (renderer) {
-    if (this.visible) {
-        var context = renderer.context;
-        var t = this.worldTransform;
-        var r = renderer.resolution;
-        var width = Graphics.width;
-        var height = Graphics.height;
-        context.save();
-        context.setTransform(t.a, t.b, t.c, t.d, t.tx * r, t.ty * r);
-        if (Graphics.canUseSaturationBlend() && this._gray > 0) {
-            context.globalCompositeOperation = 'saturation';
-            context.globalAlpha = this._gray / 255;
-            context.fillStyle = '#ffffff';
-            context.fillRect(0, 0, width, height);
-        }
-        context.globalAlpha = 1;
-        var r1 = Math.max(0, this._red);
-        var g1 = Math.max(0, this._green);
-        var b1 = Math.max(0, this._blue);
-        if (r1 || g1 || b1) {
-            context.globalCompositeOperation = 'lighter';
-            context.fillStyle = Utils.rgbToCssColor(r1, g1, b1);
-            context.fillRect(0, 0, width, height);
-        }
-        if (Graphics.canUseDifferenceBlend()) {
-            var r2 = Math.max(0, -this._red);
-            var g2 = Math.max(0, -this._green);
-            var b2 = Math.max(0, -this._blue);
-            if (r2 || g2 || b2) {
-                context.globalCompositeOperation = 'difference';
-                context.fillStyle = '#ffffff';
-                context.fillRect(0, 0, width, height);
-                context.globalCompositeOperation = 'lighter';
-                context.fillStyle = Utils.rgbToCssColor(r2, g2, b2);
-                context.fillRect(0, 0, width, height);
-                context.globalCompositeOperation = 'difference';
-                context.fillStyle = '#ffffff';
-                context.fillRect(0, 0, width, height);
-            }
-        }
-        context.restore();
+  if (this.visible) {
+    var context = renderer.context;
+    var t = this.worldTransform;
+    var r = renderer.resolution;
+    var width = Graphics.width;
+    var height = Graphics.height;
+    context.save();
+    context.setTransform(t.a, t.b, t.c, t.d, t.tx * r, t.ty * r);
+    if (Graphics.canUseSaturationBlend() && this._gray > 0) {
+      context.globalCompositeOperation = "saturation";
+      context.globalAlpha = this._gray / 255;
+      context.fillStyle = "#ffffff";
+      context.fillRect(0, 0, width, height);
     }
+    context.globalAlpha = 1;
+    var r1 = Math.max(0, this._red);
+    var g1 = Math.max(0, this._green);
+    var b1 = Math.max(0, this._blue);
+    if (r1 || g1 || b1) {
+      context.globalCompositeOperation = "lighter";
+      context.fillStyle = Utils.rgbToCssColor(r1, g1, b1);
+      context.fillRect(0, 0, width, height);
+    }
+    if (Graphics.canUseDifferenceBlend()) {
+      var r2 = Math.max(0, -this._red);
+      var g2 = Math.max(0, -this._green);
+      var b2 = Math.max(0, -this._blue);
+      if (r2 || g2 || b2) {
+        context.globalCompositeOperation = "difference";
+        context.fillStyle = "#ffffff";
+        context.fillRect(0, 0, width, height);
+        context.globalCompositeOperation = "lighter";
+        context.fillStyle = Utils.rgbToCssColor(r2, g2, b2);
+        context.fillRect(0, 0, width, height);
+        context.globalCompositeOperation = "difference";
+        context.fillStyle = "#ffffff";
+        context.fillRect(0, 0, width, height);
+      }
+    }
+    context.restore();
+  }
 };
 
 /**
@@ -7595,7 +8191,7 @@ ToneSprite.prototype._renderCanvas = function (renderer) {
  * @private
  */
 ToneSprite.prototype._renderWebGL = function (renderer) {
-    // Not supported
+  // Not supported
 };
 
 //-----------------------------------------------------------------------------
@@ -7606,17 +8202,17 @@ ToneSprite.prototype._renderWebGL = function (renderer) {
  * @constructor
  */
 function Stage() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 Stage.prototype = Object.create(PIXI.Container.prototype);
 Stage.prototype.constructor = Stage;
 
 Stage.prototype.initialize = function () {
-    PIXI.Container.call(this);
+  PIXI.Container.call(this);
 
-    // The interactive flag causes a memory leak.
-    this.interactive = false;
+  // The interactive flag causes a memory leak.
+  this.interactive = false;
 };
 
 /**
@@ -7668,26 +8264,30 @@ Stage.prototype.initialize = function () {
  * @param {String} url The url of the audio file
  */
 function WebAudio() {
-    this.initialize.apply(this, arguments);
+  this.initialize.apply(this, arguments);
 }
 
 WebAudio._standAlone = (function (top) {
-    return !top.ResourceHandler;
+  return !top.ResourceHandler;
 })(this);
 
 WebAudio.prototype.initialize = function (url) {
-    if (!WebAudio._initialized) {
-        WebAudio.initialize();
-    }
-    this.clear();
+  if (!WebAudio._initialized) {
+    WebAudio.initialize();
+  }
+  this.clear();
 
-    if (!WebAudio._standAlone) {
-        this._loader = ResourceHandler.createLoader(url, this._load.bind(this, url), function () {
-            this._hasError = true;
-        }.bind(this));
-    }
-    this._load(url);
-    this._url = url;
+  if (!WebAudio._standAlone) {
+    this._loader = ResourceHandler.createLoader(
+      url,
+      this._load.bind(this, url),
+      function () {
+        this._hasError = true;
+      }.bind(this)
+    );
+  }
+  this._load(url);
+  this._url = url;
 };
 
 WebAudio._masterVolume = 1;
@@ -7705,16 +8305,16 @@ WebAudio._unlocked = false;
  * @return {Boolean} True if the audio system is available
  */
 WebAudio.initialize = function (noAudio) {
-    if (!this._initialized) {
-        if (!noAudio) {
-            this._createContext();
-            this._detectCodecs();
-            this._createMasterGainNode();
-            this._setupEventHandlers();
-        }
-        this._initialized = true;
+  if (!this._initialized) {
+    if (!noAudio) {
+      this._createContext();
+      this._detectCodecs();
+      this._createMasterGainNode();
+      this._setupEventHandlers();
     }
-    return !!this._context;
+    this._initialized = true;
+  }
+  return !!this._context;
 };
 
 /**
@@ -7725,10 +8325,10 @@ WebAudio.initialize = function (noAudio) {
  * @return {Boolean} True if the browser can play ogg files
  */
 WebAudio.canPlayOgg = function () {
-    if (!this._initialized) {
-        this.initialize();
-    }
-    return !!this._canPlayOgg;
+  if (!this._initialized) {
+    this.initialize();
+  }
+  return !!this._canPlayOgg;
 };
 
 /**
@@ -7739,10 +8339,10 @@ WebAudio.canPlayOgg = function () {
  * @return {Boolean} True if the browser can play m4a files
  */
 WebAudio.canPlayM4a = function () {
-    if (!this._initialized) {
-        this.initialize();
-    }
-    return !!this._canPlayM4a;
+  if (!this._initialized) {
+    this.initialize();
+  }
+  return !!this._canPlayM4a;
 };
 
 /**
@@ -7753,10 +8353,13 @@ WebAudio.canPlayM4a = function () {
  * @param {Number} value Master volume (min: 0, max: 1)
  */
 WebAudio.setMasterVolume = function (value) {
-    this._masterVolume = value;
-    if (this._masterGainNode) {
-        this._masterGainNode.gain.setValueAtTime(this._masterVolume, this._context.currentTime);
-    }
+  this._masterVolume = value;
+  if (this._masterGainNode) {
+    this._masterGainNode.gain.setValueAtTime(
+      this._masterVolume,
+      this._context.currentTime
+    );
+  }
 };
 
 /**
@@ -7765,15 +8368,15 @@ WebAudio.setMasterVolume = function (value) {
  * @private
  */
 WebAudio._createContext = function () {
-    try {
-        if (typeof AudioContext !== 'undefined') {
-            this._context = new AudioContext();
-        } else if (typeof webkitAudioContext !== 'undefined') {
-            this._context = new webkitAudioContext();
-        }
-    } catch (e) {
-        this._context = null;
+  try {
+    if (typeof AudioContext !== "undefined") {
+      this._context = new AudioContext();
+    } else if (typeof webkitAudioContext !== "undefined") {
+      this._context = new webkitAudioContext();
     }
+  } catch (e) {
+    this._context = null;
+  }
 };
 
 /**
@@ -7782,11 +8385,11 @@ WebAudio._createContext = function () {
  * @private
  */
 WebAudio._detectCodecs = function () {
-    var audio = document.createElement('audio');
-    if (audio.canPlayType) {
-        this._canPlayOgg = audio.canPlayType('audio/ogg');
-        this._canPlayM4a = audio.canPlayType('audio/mp4');
-    }
+  var audio = document.createElement("audio");
+  if (audio.canPlayType) {
+    this._canPlayOgg = audio.canPlayType("audio/ogg");
+    this._canPlayM4a = audio.canPlayType("audio/mp4");
+  }
 };
 
 /**
@@ -7795,12 +8398,15 @@ WebAudio._detectCodecs = function () {
  * @private
  */
 WebAudio._createMasterGainNode = function () {
-    var context = WebAudio._context;
-    if (context) {
-        this._masterGainNode = context.createGain();
-        this._masterGainNode.gain.setValueAtTime(this._masterVolume, context.currentTime);
-        this._masterGainNode.connect(context.destination);
-    }
+  var context = WebAudio._context;
+  if (context) {
+    this._masterGainNode = context.createGain();
+    this._masterGainNode.gain.setValueAtTime(
+      this._masterVolume,
+      context.currentTime
+    );
+    this._masterGainNode.connect(context.destination);
+  }
 };
 
 /**
@@ -7809,21 +8415,28 @@ WebAudio._createMasterGainNode = function () {
  * @private
  */
 WebAudio._setupEventHandlers = function () {
-    var resumeHandler = function () {
-        var context = WebAudio._context;
-        if (context && context.state === "suspended" && typeof context.resume === "function") {
-            context.resume().then(function () {
-                WebAudio._onTouchStart();
-            })
-        } else {
-            WebAudio._onTouchStart();
-        }
-    };
-    document.addEventListener("keydown", resumeHandler);
-    document.addEventListener("mousedown", resumeHandler);
-    document.addEventListener("touchend", resumeHandler);
-    document.addEventListener('touchstart', this._onTouchStart.bind(this));
-    document.addEventListener('visibilitychange', this._onVisibilityChange.bind(this));
+  var resumeHandler = function () {
+    var context = WebAudio._context;
+    if (
+      context &&
+      context.state === "suspended" &&
+      typeof context.resume === "function"
+    ) {
+      context.resume().then(function () {
+        WebAudio._onTouchStart();
+      });
+    } else {
+      WebAudio._onTouchStart();
+    }
+  };
+  document.addEventListener("keydown", resumeHandler);
+  document.addEventListener("mousedown", resumeHandler);
+  document.addEventListener("touchend", resumeHandler);
+  document.addEventListener("touchstart", this._onTouchStart.bind(this));
+  document.addEventListener(
+    "visibilitychange",
+    this._onVisibilityChange.bind(this)
+  );
 };
 
 /**
@@ -7832,13 +8445,13 @@ WebAudio._setupEventHandlers = function () {
  * @private
  */
 WebAudio._onTouchStart = function () {
-    var context = WebAudio._context;
-    if (context && !this._unlocked) {
-        // Unlock Web Audio on iOS
-        var node = context.createBufferSource();
-        node.start(0);
-        this._unlocked = true;
-    }
+  var context = WebAudio._context;
+  if (context && !this._unlocked) {
+    // Unlock Web Audio on iOS
+    var node = context.createBufferSource();
+    node.start(0);
+    this._unlocked = true;
+  }
 };
 
 /**
@@ -7847,11 +8460,11 @@ WebAudio._onTouchStart = function () {
  * @private
  */
 WebAudio._onVisibilityChange = function () {
-    if (document.visibilityState === 'hidden') {
-        this._onHide();
-    } else {
-        this._onShow();
-    }
+  if (document.visibilityState === "hidden") {
+    this._onHide();
+  } else {
+    this._onShow();
+  }
 };
 
 /**
@@ -7860,9 +8473,9 @@ WebAudio._onVisibilityChange = function () {
  * @private
  */
 WebAudio._onHide = function () {
-    if (this._shouldMuteOnHide()) {
-        this._fadeOut(1);
-    }
+  if (this._shouldMuteOnHide()) {
+    this._fadeOut(1);
+  }
 };
 
 /**
@@ -7871,9 +8484,9 @@ WebAudio._onHide = function () {
  * @private
  */
 WebAudio._onShow = function () {
-    if (this._shouldMuteOnHide()) {
-        this._fadeIn(0.5);
-    }
+  if (this._shouldMuteOnHide()) {
+    this._fadeIn(0.5);
+  }
 };
 
 /**
@@ -7882,7 +8495,7 @@ WebAudio._onShow = function () {
  * @private
  */
 WebAudio._shouldMuteOnHide = function () {
-    return Utils.isMobileDevice();
+  return Utils.isMobileDevice();
 };
 
 /**
@@ -7892,12 +8505,12 @@ WebAudio._shouldMuteOnHide = function () {
  * @private
  */
 WebAudio._fadeIn = function (duration) {
-    if (this._masterGainNode) {
-        var gain = this._masterGainNode.gain;
-        var currentTime = WebAudio._context.currentTime;
-        gain.setValueAtTime(0, currentTime);
-        gain.linearRampToValueAtTime(this._masterVolume, currentTime + duration);
-    }
+  if (this._masterGainNode) {
+    var gain = this._masterGainNode.gain;
+    var currentTime = WebAudio._context.currentTime;
+    gain.setValueAtTime(0, currentTime);
+    gain.linearRampToValueAtTime(this._masterVolume, currentTime + duration);
+  }
 };
 
 /**
@@ -7907,12 +8520,12 @@ WebAudio._fadeIn = function (duration) {
  * @private
  */
 WebAudio._fadeOut = function (duration) {
-    if (this._masterGainNode) {
-        var gain = this._masterGainNode.gain;
-        var currentTime = WebAudio._context.currentTime;
-        gain.setValueAtTime(this._masterVolume, currentTime);
-        gain.linearRampToValueAtTime(0, currentTime + duration);
-    }
+  if (this._masterGainNode) {
+    var gain = this._masterGainNode.gain;
+    var currentTime = WebAudio._context.currentTime;
+    gain.setValueAtTime(this._masterVolume, currentTime);
+    gain.linearRampToValueAtTime(0, currentTime + duration);
+  }
 };
 
 /**
@@ -7921,24 +8534,24 @@ WebAudio._fadeOut = function (duration) {
  * @method clear
  */
 WebAudio.prototype.clear = function () {
-    this.stop();
-    this._buffer = null;
-    this._sourceNode = null;
-    this._gainNode = null;
-    this._pannerNode = null;
-    this._totalTime = 0;
-    this._sampleRate = 0;
-    this._loopStart = 0;
-    this._loopLength = 0;
-    this._startTime = 0;
-    this._volume = 1;
-    this._pitch = 1;
-    this._pan = 0;
-    this._endTimer = null;
-    this._loadListeners = [];
-    this._stopListeners = [];
-    this._hasError = false;
-    this._autoPlay = false;
+  this.stop();
+  this._buffer = null;
+  this._sourceNode = null;
+  this._gainNode = null;
+  this._pannerNode = null;
+  this._totalTime = 0;
+  this._sampleRate = 0;
+  this._loopStart = 0;
+  this._loopLength = 0;
+  this._startTime = 0;
+  this._volume = 1;
+  this._pitch = 1;
+  this._pan = 0;
+  this._endTimer = null;
+  this._loadListeners = [];
+  this._stopListeners = [];
+  this._hasError = false;
+  this._autoPlay = false;
 };
 
 /**
@@ -7947,11 +8560,11 @@ WebAudio.prototype.clear = function () {
  * @property url
  * @type String
  */
-Object.defineProperty(WebAudio.prototype, 'url', {
-    get: function () {
-        return this._url;
-    },
-    configurable: true
+Object.defineProperty(WebAudio.prototype, "url", {
+  get: function () {
+    return this._url;
+  },
+  configurable: true,
 });
 
 /**
@@ -7960,17 +8573,20 @@ Object.defineProperty(WebAudio.prototype, 'url', {
  * @property volume
  * @type Number
  */
-Object.defineProperty(WebAudio.prototype, 'volume', {
-    get: function () {
-        return this._volume;
-    },
-    set: function (value) {
-        this._volume = value;
-        if (this._gainNode) {
-            this._gainNode.gain.setValueAtTime(this._volume, WebAudio._context.currentTime);
-        }
-    },
-    configurable: true
+Object.defineProperty(WebAudio.prototype, "volume", {
+  get: function () {
+    return this._volume;
+  },
+  set: function (value) {
+    this._volume = value;
+    if (this._gainNode) {
+      this._gainNode.gain.setValueAtTime(
+        this._volume,
+        WebAudio._context.currentTime
+      );
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -7979,19 +8595,19 @@ Object.defineProperty(WebAudio.prototype, 'volume', {
  * @property pitch
  * @type Number
  */
-Object.defineProperty(WebAudio.prototype, 'pitch', {
-    get: function () {
-        return this._pitch;
-    },
-    set: function (value) {
-        if (this._pitch !== value) {
-            this._pitch = value;
-            if (this.isPlaying()) {
-                this.play(this._sourceNode.loop, 0);
-            }
-        }
-    },
-    configurable: true
+Object.defineProperty(WebAudio.prototype, "pitch", {
+  get: function () {
+    return this._pitch;
+  },
+  set: function (value) {
+    if (this._pitch !== value) {
+      this._pitch = value;
+      if (this.isPlaying()) {
+        this.play(this._sourceNode.loop, 0);
+      }
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -8000,15 +8616,15 @@ Object.defineProperty(WebAudio.prototype, 'pitch', {
  * @property pan
  * @type Number
  */
-Object.defineProperty(WebAudio.prototype, 'pan', {
-    get: function () {
-        return this._pan;
-    },
-    set: function (value) {
-        this._pan = value;
-        this._updatePanner();
-    },
-    configurable: true
+Object.defineProperty(WebAudio.prototype, "pan", {
+  get: function () {
+    return this._pan;
+  },
+  set: function (value) {
+    this._pan = value;
+    this._updatePanner();
+  },
+  configurable: true,
 });
 
 /**
@@ -8018,7 +8634,7 @@ Object.defineProperty(WebAudio.prototype, 'pan', {
  * @return {Boolean} True if the audio data is ready to play
  */
 WebAudio.prototype.isReady = function () {
-    return !!this._buffer;
+  return !!this._buffer;
 };
 
 /**
@@ -8028,7 +8644,7 @@ WebAudio.prototype.isReady = function () {
  * @return {Boolean} True if a loading error has occurred
  */
 WebAudio.prototype.isError = function () {
-    return this._hasError;
+  return this._hasError;
 };
 
 /**
@@ -8038,7 +8654,7 @@ WebAudio.prototype.isError = function () {
  * @return {Boolean} True if the audio is playing
  */
 WebAudio.prototype.isPlaying = function () {
-    return !!this._sourceNode;
+  return !!this._sourceNode;
 };
 
 /**
@@ -8049,17 +8665,19 @@ WebAudio.prototype.isPlaying = function () {
  * @param {Number} offset The start position to play in seconds
  */
 WebAudio.prototype.play = function (loop, offset) {
-    if (this.isReady()) {
-        offset = offset || 0;
-        this._startPlaying(loop, offset);
-    } else if (WebAudio._context) {
-        this._autoPlay = true;
-        this.addLoadListener(function () {
-            if (this._autoPlay) {
-                this.play(loop, offset);
-            }
-        }.bind(this));
-    }
+  if (this.isReady()) {
+    offset = offset || 0;
+    this._startPlaying(loop, offset);
+  } else if (WebAudio._context) {
+    this._autoPlay = true;
+    this.addLoadListener(
+      function () {
+        if (this._autoPlay) {
+          this.play(loop, offset);
+        }
+      }.bind(this)
+    );
+  }
 };
 
 /**
@@ -8068,15 +8686,15 @@ WebAudio.prototype.play = function (loop, offset) {
  * @method stop
  */
 WebAudio.prototype.stop = function () {
-    this._autoPlay = false;
-    this._removeEndTimer();
-    this._removeNodes();
-    if (this._stopListeners) {
-        while (this._stopListeners.length > 0) {
-            var listner = this._stopListeners.shift();
-            listner();
-        }
+  this._autoPlay = false;
+  this._removeEndTimer();
+  this._removeNodes();
+  if (this._stopListeners) {
+    while (this._stopListeners.length > 0) {
+      var listner = this._stopListeners.shift();
+      listner();
     }
+  }
 };
 
 /**
@@ -8086,18 +8704,20 @@ WebAudio.prototype.stop = function () {
  * @param {Number} duration Fade-in time in seconds
  */
 WebAudio.prototype.fadeIn = function (duration) {
-    if (this.isReady()) {
-        if (this._gainNode) {
-            var gain = this._gainNode.gain;
-            var currentTime = WebAudio._context.currentTime;
-            gain.setValueAtTime(0, currentTime);
-            gain.linearRampToValueAtTime(this._volume, currentTime + duration);
-        }
-    } else if (this._autoPlay) {
-        this.addLoadListener(function () {
-            this.fadeIn(duration);
-        }.bind(this));
+  if (this.isReady()) {
+    if (this._gainNode) {
+      var gain = this._gainNode.gain;
+      var currentTime = WebAudio._context.currentTime;
+      gain.setValueAtTime(0, currentTime);
+      gain.linearRampToValueAtTime(this._volume, currentTime + duration);
     }
+  } else if (this._autoPlay) {
+    this.addLoadListener(
+      function () {
+        this.fadeIn(duration);
+      }.bind(this)
+    );
+  }
 };
 
 /**
@@ -8107,13 +8727,13 @@ WebAudio.prototype.fadeIn = function (duration) {
  * @param {Number} duration Fade-out time in seconds
  */
 WebAudio.prototype.fadeOut = function (duration) {
-    if (this._gainNode) {
-        var gain = this._gainNode.gain;
-        var currentTime = WebAudio._context.currentTime;
-        gain.setValueAtTime(this._volume, currentTime);
-        gain.linearRampToValueAtTime(0, currentTime + duration);
-    }
-    this._autoPlay = false;
+  if (this._gainNode) {
+    var gain = this._gainNode.gain;
+    var currentTime = WebAudio._context.currentTime;
+    gain.setValueAtTime(this._volume, currentTime);
+    gain.linearRampToValueAtTime(0, currentTime + duration);
+  }
+  this._autoPlay = false;
 };
 
 /**
@@ -8122,17 +8742,17 @@ WebAudio.prototype.fadeOut = function (duration) {
  * @method seek
  */
 WebAudio.prototype.seek = function () {
-    if (WebAudio._context) {
-        var pos = (WebAudio._context.currentTime - this._startTime) * this._pitch;
-        if (this._loopLength > 0) {
-            while (pos >= this._loopStart + this._loopLength) {
-                pos -= this._loopLength;
-            }
-        }
-        return pos;
-    } else {
-        return 0;
+  if (WebAudio._context) {
+    var pos = (WebAudio._context.currentTime - this._startTime) * this._pitch;
+    if (this._loopLength > 0) {
+      while (pos >= this._loopStart + this._loopLength) {
+        pos -= this._loopLength;
+      }
     }
+    return pos;
+  } else {
+    return 0;
+  }
 };
 
 /**
@@ -8142,7 +8762,7 @@ WebAudio.prototype.seek = function () {
  * @param {Function} listner The callback function
  */
 WebAudio.prototype.addLoadListener = function (listner) {
-    this._loadListeners.push(listner);
+  this._loadListeners.push(listner);
 };
 
 /**
@@ -8152,7 +8772,7 @@ WebAudio.prototype.addLoadListener = function (listner) {
  * @param {Function} listner The callback function
  */
 WebAudio.prototype.addStopListener = function (listner) {
-    this._stopListeners.push(listner);
+  this._stopListeners.push(listner);
 };
 
 /**
@@ -8161,19 +8781,23 @@ WebAudio.prototype.addStopListener = function (listner) {
  * @private
  */
 WebAudio.prototype._load = function (url) {
-    if (WebAudio._context) {
-        var xhr = new XMLHttpRequest();
-        if (Decrypter.hasEncryptedAudio) url = Decrypter.extToEncryptExt(url);
-        xhr.open('GET', url);
-        xhr.responseType = 'arraybuffer';
-        xhr.onload = function () {
-            if (xhr.status < 400) {
-                this._onXhrLoad(xhr);
-            }
-        }.bind(this);
-        xhr.onerror = this._loader || function () { this._hasError = true; }.bind(this);
-        xhr.send();
-    }
+  if (WebAudio._context) {
+    var xhr = new XMLHttpRequest();
+    if (Decrypter.hasEncryptedAudio) url = Decrypter.extToEncryptExt(url);
+    xhr.open("GET", url);
+    xhr.responseType = "arraybuffer";
+    xhr.onload = function () {
+      if (xhr.status < 400) {
+        this._onXhrLoad(xhr);
+      }
+    }.bind(this);
+    xhr.onerror =
+      this._loader ||
+      function () {
+        this._hasError = true;
+      }.bind(this);
+    xhr.send();
+  }
 };
 
 /**
@@ -8182,21 +8806,24 @@ WebAudio.prototype._load = function (url) {
  * @private
  */
 WebAudio.prototype._onXhrLoad = function (xhr) {
-    var array = xhr.response;
-    if (Decrypter.hasEncryptedAudio) array = Decrypter.decryptArrayBuffer(array);
-    this._readLoopComments(new Uint8Array(array));
-    WebAudio._context.decodeAudioData(array, function (buffer) {
-        this._buffer = buffer;
-        this._totalTime = buffer.duration;
-        if (this._loopLength > 0 && this._sampleRate > 0) {
-            this._loopStart /= this._sampleRate;
-            this._loopLength /= this._sampleRate;
-        } else {
-            this._loopStart = 0;
-            this._loopLength = this._totalTime;
-        }
-        this._onLoad();
-    }.bind(this));
+  var array = xhr.response;
+  if (Decrypter.hasEncryptedAudio) array = Decrypter.decryptArrayBuffer(array);
+  this._readLoopComments(new Uint8Array(array));
+  WebAudio._context.decodeAudioData(
+    array,
+    function (buffer) {
+      this._buffer = buffer;
+      this._totalTime = buffer.duration;
+      if (this._loopLength > 0 && this._sampleRate > 0) {
+        this._loopStart /= this._sampleRate;
+        this._loopLength /= this._sampleRate;
+      } else {
+        this._loopStart = 0;
+        this._loopLength = this._totalTime;
+      }
+      this._onLoad();
+    }.bind(this)
+  );
 };
 
 /**
@@ -8206,19 +8833,19 @@ WebAudio.prototype._onXhrLoad = function (xhr) {
  * @private
  */
 WebAudio.prototype._startPlaying = function (loop, offset) {
-    if (this._loopLength > 0) {
-        while (offset >= this._loopStart + this._loopLength) {
-            offset -= this._loopLength;
-        }
+  if (this._loopLength > 0) {
+    while (offset >= this._loopStart + this._loopLength) {
+      offset -= this._loopLength;
     }
-    this._removeEndTimer();
-    this._removeNodes();
-    this._createNodes();
-    this._connectNodes();
-    this._sourceNode.loop = loop;
-    this._sourceNode.start(0, offset);
-    this._startTime = WebAudio._context.currentTime - offset / this._pitch;
-    this._createEndTimer();
+  }
+  this._removeEndTimer();
+  this._removeNodes();
+  this._createNodes();
+  this._connectNodes();
+  this._sourceNode.loop = loop;
+  this._sourceNode.start(0, offset);
+  this._startTime = WebAudio._context.currentTime - offset / this._pitch;
+  this._createEndTimer();
 };
 
 /**
@@ -8226,17 +8853,20 @@ WebAudio.prototype._startPlaying = function (loop, offset) {
  * @private
  */
 WebAudio.prototype._createNodes = function () {
-    var context = WebAudio._context;
-    this._sourceNode = context.createBufferSource();
-    this._sourceNode.buffer = this._buffer;
-    this._sourceNode.loopStart = this._loopStart;
-    this._sourceNode.loopEnd = this._loopStart + this._loopLength;
-    this._sourceNode.playbackRate.setValueAtTime(this._pitch, context.currentTime);
-    this._gainNode = context.createGain();
-    this._gainNode.gain.setValueAtTime(this._volume, context.currentTime);
-    this._pannerNode = context.createPanner();
-    this._pannerNode.panningModel = 'equalpower';
-    this._updatePanner();
+  var context = WebAudio._context;
+  this._sourceNode = context.createBufferSource();
+  this._sourceNode.buffer = this._buffer;
+  this._sourceNode.loopStart = this._loopStart;
+  this._sourceNode.loopEnd = this._loopStart + this._loopLength;
+  this._sourceNode.playbackRate.setValueAtTime(
+    this._pitch,
+    context.currentTime
+  );
+  this._gainNode = context.createGain();
+  this._gainNode.gain.setValueAtTime(this._volume, context.currentTime);
+  this._pannerNode = context.createPanner();
+  this._pannerNode.panningModel = "equalpower";
+  this._updatePanner();
 };
 
 /**
@@ -8244,9 +8874,9 @@ WebAudio.prototype._createNodes = function () {
  * @private
  */
 WebAudio.prototype._connectNodes = function () {
-    this._sourceNode.connect(this._gainNode);
-    this._gainNode.connect(this._pannerNode);
-    this._pannerNode.connect(WebAudio._masterGainNode);
+  this._sourceNode.connect(this._gainNode);
+  this._gainNode.connect(this._pannerNode);
+  this._pannerNode.connect(WebAudio._masterGainNode);
 };
 
 /**
@@ -8254,12 +8884,12 @@ WebAudio.prototype._connectNodes = function () {
  * @private
  */
 WebAudio.prototype._removeNodes = function () {
-    if (this._sourceNode) {
-        this._sourceNode.stop(0);
-        this._sourceNode = null;
-        this._gainNode = null;
-        this._pannerNode = null;
-    }
+  if (this._sourceNode) {
+    this._sourceNode.stop(0);
+    this._sourceNode = null;
+    this._gainNode = null;
+    this._pannerNode = null;
+  }
 };
 
 /**
@@ -8267,13 +8897,16 @@ WebAudio.prototype._removeNodes = function () {
  * @private
  */
 WebAudio.prototype._createEndTimer = function () {
-    if (this._sourceNode && !this._sourceNode.loop) {
-        var endTime = this._startTime + this._totalTime / this._pitch;
-        var delay = endTime - WebAudio._context.currentTime;
-        this._endTimer = setTimeout(function () {
-            this.stop();
-        }.bind(this), delay * 1000);
-    }
+  if (this._sourceNode && !this._sourceNode.loop) {
+    var endTime = this._startTime + this._totalTime / this._pitch;
+    var delay = endTime - WebAudio._context.currentTime;
+    this._endTimer = setTimeout(
+      function () {
+        this.stop();
+      }.bind(this),
+      delay * 1000
+    );
+  }
 };
 
 /**
@@ -8281,10 +8914,10 @@ WebAudio.prototype._createEndTimer = function () {
  * @private
  */
 WebAudio.prototype._removeEndTimer = function () {
-    if (this._endTimer) {
-        clearTimeout(this._endTimer);
-        this._endTimer = null;
-    }
+  if (this._endTimer) {
+    clearTimeout(this._endTimer);
+    this._endTimer = null;
+  }
 };
 
 /**
@@ -8292,11 +8925,11 @@ WebAudio.prototype._removeEndTimer = function () {
  * @private
  */
 WebAudio.prototype._updatePanner = function () {
-    if (this._pannerNode) {
-        var x = this._pan;
-        var z = 1 - Math.abs(x);
-        this._pannerNode.setPosition(x, 0, z);
-    }
+  if (this._pannerNode) {
+    var x = this._pan;
+    var z = 1 - Math.abs(x);
+    this._pannerNode.setPosition(x, 0, z);
+  }
 };
 
 /**
@@ -8304,10 +8937,10 @@ WebAudio.prototype._updatePanner = function () {
  * @private
  */
 WebAudio.prototype._onLoad = function () {
-    while (this._loadListeners.length > 0) {
-        var listner = this._loadListeners.shift();
-        listner();
-    }
+  while (this._loadListeners.length > 0) {
+    var listner = this._loadListeners.shift();
+    listner();
+  }
 };
 
 /**
@@ -8316,8 +8949,8 @@ WebAudio.prototype._onLoad = function () {
  * @private
  */
 WebAudio.prototype._readLoopComments = function (array) {
-    this._readOgg(array);
-    this._readMp4(array);
+  this._readOgg(array);
+  this._readMp4(array);
 };
 
 /**
@@ -8326,35 +8959,35 @@ WebAudio.prototype._readLoopComments = function (array) {
  * @private
  */
 WebAudio.prototype._readOgg = function (array) {
-    var index = 0;
-    while (index < array.length) {
-        if (this._readFourCharacters(array, index) === 'OggS') {
-            index += 26;
-            var vorbisHeaderFound = false;
-            var numSegments = array[index++];
-            var segments = [];
-            for (var i = 0; i < numSegments; i++) {
-                segments.push(array[index++]);
-            }
-            for (i = 0; i < numSegments; i++) {
-                if (this._readFourCharacters(array, index + 1) === 'vorb') {
-                    var headerType = array[index];
-                    if (headerType === 1) {
-                        this._sampleRate = this._readLittleEndian(array, index + 12);
-                    } else if (headerType === 3) {
-                        this._readMetaData(array, index, segments[i]);
-                    }
-                    vorbisHeaderFound = true;
-                }
-                index += segments[i];
-            }
-            if (!vorbisHeaderFound) {
-                break;
-            }
-        } else {
-            break;
+  var index = 0;
+  while (index < array.length) {
+    if (this._readFourCharacters(array, index) === "OggS") {
+      index += 26;
+      var vorbisHeaderFound = false;
+      var numSegments = array[index++];
+      var segments = [];
+      for (var i = 0; i < numSegments; i++) {
+        segments.push(array[index++]);
+      }
+      for (i = 0; i < numSegments; i++) {
+        if (this._readFourCharacters(array, index + 1) === "vorb") {
+          var headerType = array[index];
+          if (headerType === 1) {
+            this._sampleRate = this._readLittleEndian(array, index + 12);
+          } else if (headerType === 3) {
+            this._readMetaData(array, index, segments[i]);
+          }
+          vorbisHeaderFound = true;
         }
+        index += segments[i];
+      }
+      if (!vorbisHeaderFound) {
+        break;
+      }
+    } else {
+      break;
     }
+  }
 };
 
 /**
@@ -8363,27 +8996,27 @@ WebAudio.prototype._readOgg = function (array) {
  * @private
  */
 WebAudio.prototype._readMp4 = function (array) {
-    if (this._readFourCharacters(array, 4) === 'ftyp') {
-        var index = 0;
-        while (index < array.length) {
-            var size = this._readBigEndian(array, index);
-            var name = this._readFourCharacters(array, index + 4);
-            if (name === 'moov') {
-                index += 8;
-            } else {
-                if (name === 'mvhd') {
-                    this._sampleRate = this._readBigEndian(array, index + 20);
-                }
-                if (name === 'udta' || name === 'meta') {
-                    this._readMetaData(array, index, size);
-                }
-                index += size;
-                if (size <= 1) {
-                    break;
-                }
-            }
+  if (this._readFourCharacters(array, 4) === "ftyp") {
+    var index = 0;
+    while (index < array.length) {
+      var size = this._readBigEndian(array, index);
+      var name = this._readFourCharacters(array, index + 4);
+      if (name === "moov") {
+        index += 8;
+      } else {
+        if (name === "mvhd") {
+          this._sampleRate = this._readBigEndian(array, index + 20);
         }
+        if (name === "udta" || name === "meta") {
+          this._readMetaData(array, index, size);
+        }
+        index += size;
+        if (size <= 1) {
+          break;
+        }
+      }
     }
+  }
 };
 
 /**
@@ -8394,32 +9027,32 @@ WebAudio.prototype._readMp4 = function (array) {
  * @private
  */
 WebAudio.prototype._readMetaData = function (array, index, size) {
-    for (var i = index; i < index + size - 10; i++) {
-        if (this._readFourCharacters(array, i) === 'LOOP') {
-            var text = '';
-            while (array[i] > 0) {
-                text += String.fromCharCode(array[i++]);
-            }
-            if (text.match(/LOOPSTART=([0-9]+)/)) {
-                this._loopStart = parseInt(RegExp.$1);
-            }
-            if (text.match(/LOOPLENGTH=([0-9]+)/)) {
-                this._loopLength = parseInt(RegExp.$1);
-            }
-            if (text == 'LOOPSTART' || text == 'LOOPLENGTH') {
-                var text2 = '';
-                i += 16;
-                while (array[i] > 0) {
-                    text2 += String.fromCharCode(array[i++]);
-                }
-                if (text == 'LOOPSTART') {
-                    this._loopStart = parseInt(text2);
-                } else {
-                    this._loopLength = parseInt(text2);
-                }
-            }
+  for (var i = index; i < index + size - 10; i++) {
+    if (this._readFourCharacters(array, i) === "LOOP") {
+      var text = "";
+      while (array[i] > 0) {
+        text += String.fromCharCode(array[i++]);
+      }
+      if (text.match(/LOOPSTART=([0-9]+)/)) {
+        this._loopStart = parseInt(RegExp.$1);
+      }
+      if (text.match(/LOOPLENGTH=([0-9]+)/)) {
+        this._loopLength = parseInt(RegExp.$1);
+      }
+      if (text == "LOOPSTART" || text == "LOOPLENGTH") {
+        var text2 = "";
+        i += 16;
+        while (array[i] > 0) {
+          text2 += String.fromCharCode(array[i++]);
         }
+        if (text == "LOOPSTART") {
+          this._loopStart = parseInt(text2);
+        } else {
+          this._loopLength = parseInt(text2);
+        }
+      }
     }
+  }
 };
 
 /**
@@ -8429,8 +9062,12 @@ WebAudio.prototype._readMetaData = function (array, index, size) {
  * @private
  */
 WebAudio.prototype._readLittleEndian = function (array, index) {
-    return (array[index + 3] * 0x1000000 + array[index + 2] * 0x10000 +
-        array[index + 1] * 0x100 + array[index + 0]);
+  return (
+    array[index + 3] * 0x1000000 +
+    array[index + 2] * 0x10000 +
+    array[index + 1] * 0x100 +
+    array[index + 0]
+  );
 };
 
 /**
@@ -8440,8 +9077,12 @@ WebAudio.prototype._readLittleEndian = function (array, index) {
  * @private
  */
 WebAudio.prototype._readBigEndian = function (array, index) {
-    return (array[index + 0] * 0x1000000 + array[index + 1] * 0x10000 +
-        array[index + 2] * 0x100 + array[index + 3]);
+  return (
+    array[index + 0] * 0x1000000 +
+    array[index + 1] * 0x10000 +
+    array[index + 2] * 0x100 +
+    array[index + 3]
+  );
 };
 
 /**
@@ -8451,11 +9092,11 @@ WebAudio.prototype._readBigEndian = function (array, index) {
  * @private
  */
 WebAudio.prototype._readFourCharacters = function (array, index) {
-    var string = '';
-    for (var i = 0; i < 4; i++) {
-        string += String.fromCharCode(array[index + i]);
-    }
-    return string;
+  var string = "";
+  for (var i = 0; i < 4; i++) {
+    string += String.fromCharCode(array[index + i]);
+  }
+  return string;
 };
 
 //-----------------------------------------------------------------------------
@@ -8466,7 +9107,7 @@ WebAudio.prototype._readFourCharacters = function (array, index) {
  * @constructor
  */
 function Html5Audio() {
-    throw new Error('This is a static class');
+  throw new Error("This is a static class");
 }
 
 Html5Audio._initialized = false;
@@ -8486,15 +9127,15 @@ Html5Audio._staticSePath = null;
  * @param {String} url The url of the audio file
  */
 Html5Audio.setup = function (url) {
-    if (!this._initialized) {
-        this.initialize();
-    }
-    this.clear();
+  if (!this._initialized) {
+    this.initialize();
+  }
+  this.clear();
 
-    if (Decrypter.hasEncryptedAudio && this._audioElement.src) {
-        window.URL.revokeObjectURL(this._audioElement.src);
-    }
-    this._url = url;
+  if (Decrypter.hasEncryptedAudio && this._audioElement.src) {
+    window.URL.revokeObjectURL(this._audioElement.src);
+  }
+  this._url = url;
 };
 
 /**
@@ -8505,18 +9146,18 @@ Html5Audio.setup = function (url) {
  * @return {Boolean} True if the audio system is available
  */
 Html5Audio.initialize = function () {
-    if (!this._initialized) {
-        if (!this._audioElement) {
-            try {
-                this._audioElement = new Audio();
-            } catch (e) {
-                this._audioElement = null;
-            }
-        }
-        if (!!this._audioElement) this._setupEventHandlers();
-        this._initialized = true;
+  if (!this._initialized) {
+    if (!this._audioElement) {
+      try {
+        this._audioElement = new Audio();
+      } catch (e) {
+        this._audioElement = null;
+      }
     }
-    return !!this._audioElement;
+    if (!!this._audioElement) this._setupEventHandlers();
+    this._initialized = true;
+  }
+  return !!this._audioElement;
 };
 
 /**
@@ -8525,11 +9166,17 @@ Html5Audio.initialize = function () {
  * @private
  */
 Html5Audio._setupEventHandlers = function () {
-    document.addEventListener('touchstart', this._onTouchStart.bind(this));
-    document.addEventListener('visibilitychange', this._onVisibilityChange.bind(this));
-    this._audioElement.addEventListener("loadeddata", this._onLoadedData.bind(this));
-    this._audioElement.addEventListener("error", this._onError.bind(this));
-    this._audioElement.addEventListener("ended", this._onEnded.bind(this));
+  document.addEventListener("touchstart", this._onTouchStart.bind(this));
+  document.addEventListener(
+    "visibilitychange",
+    this._onVisibilityChange.bind(this)
+  );
+  this._audioElement.addEventListener(
+    "loadeddata",
+    this._onLoadedData.bind(this)
+  );
+  this._audioElement.addEventListener("error", this._onError.bind(this));
+  this._audioElement.addEventListener("ended", this._onEnded.bind(this));
 };
 
 /**
@@ -8538,20 +9185,20 @@ Html5Audio._setupEventHandlers = function () {
  * @private
  */
 Html5Audio._onTouchStart = function () {
-    if (this._audioElement && !this._unlocked) {
-        if (this._isLoading) {
-            this._load(this._url);
-            this._unlocked = true;
-        } else {
-            if (this._staticSePath) {
-                this._audioElement.src = this._staticSePath;
-                this._audioElement.volume = 0;
-                this._audioElement.loop = false;
-                this._audioElement.play();
-                this._unlocked = true;
-            }
-        }
+  if (this._audioElement && !this._unlocked) {
+    if (this._isLoading) {
+      this._load(this._url);
+      this._unlocked = true;
+    } else {
+      if (this._staticSePath) {
+        this._audioElement.src = this._staticSePath;
+        this._audioElement.volume = 0;
+        this._audioElement.loop = false;
+        this._audioElement.play();
+        this._unlocked = true;
+      }
     }
+  }
 };
 
 /**
@@ -8560,11 +9207,11 @@ Html5Audio._onTouchStart = function () {
  * @private
  */
 Html5Audio._onVisibilityChange = function () {
-    if (document.visibilityState === 'hidden') {
-        this._onHide();
-    } else {
-        this._onShow();
-    }
+  if (document.visibilityState === "hidden") {
+    this._onHide();
+  } else {
+    this._onShow();
+  }
 };
 
 /**
@@ -8573,8 +9220,8 @@ Html5Audio._onVisibilityChange = function () {
  * @private
  */
 Html5Audio._onLoadedData = function () {
-    this._buffered = true;
-    if (this._unlocked) this._onLoad();
+  this._buffered = true;
+  if (this._unlocked) this._onLoad();
 };
 
 /**
@@ -8583,7 +9230,7 @@ Html5Audio._onLoadedData = function () {
  * @private
  */
 Html5Audio._onError = function () {
-    this._hasError = true;
+  this._hasError = true;
 };
 
 /**
@@ -8592,9 +9239,9 @@ Html5Audio._onError = function () {
  * @private
  */
 Html5Audio._onEnded = function () {
-    if (!this._audioElement.loop) {
-        this.stop();
-    }
+  if (!this._audioElement.loop) {
+    this.stop();
+  }
 };
 
 /**
@@ -8603,8 +9250,8 @@ Html5Audio._onEnded = function () {
  * @private
  */
 Html5Audio._onHide = function () {
-    this._audioElement.volume = 0;
-    this._tweenGain = 0;
+  this._audioElement.volume = 0;
+  this._tweenGain = 0;
 };
 
 /**
@@ -8613,7 +9260,7 @@ Html5Audio._onHide = function () {
  * @private
  */
 Html5Audio._onShow = function () {
-    this.fadeIn(0.5);
+  this.fadeIn(0.5);
 };
 
 /**
@@ -8623,13 +9270,13 @@ Html5Audio._onShow = function () {
  * @method clear
  */
 Html5Audio.clear = function () {
-    this.stop();
-    this._volume = 1;
-    this._loadListeners = [];
-    this._hasError = false;
-    this._autoPlay = false;
-    this._isLoading = false;
-    this._buffered = false;
+  this.stop();
+  this._volume = 1;
+  this._loadListeners = [];
+  this._hasError = false;
+  this._autoPlay = false;
+  this._isLoading = false;
+  this._buffered = false;
 };
 
 /**
@@ -8639,11 +9286,11 @@ Html5Audio.clear = function () {
  * @param {String} url
  */
 Html5Audio.setStaticSe = function (url) {
-    if (!this._initialized) {
-        this.initialize();
-        this.clear();
-    }
-    this._staticSePath = url;
+  if (!this._initialized) {
+    this.initialize();
+    this.clear();
+  }
+  this._staticSePath = url;
 };
 
 /**
@@ -8652,11 +9299,11 @@ Html5Audio.setStaticSe = function (url) {
  * @property url
  * @type String
  */
-Object.defineProperty(Html5Audio, 'url', {
-    get: function () {
-        return Html5Audio._url;
-    },
-    configurable: true
+Object.defineProperty(Html5Audio, "url", {
+  get: function () {
+    return Html5Audio._url;
+  },
+  configurable: true,
 });
 
 /**
@@ -8665,17 +9312,17 @@ Object.defineProperty(Html5Audio, 'url', {
  * @property volume
  * @type Number
  */
-Object.defineProperty(Html5Audio, 'volume', {
-    get: function () {
-        return Html5Audio._volume;
-    }.bind(this),
-    set: function (value) {
-        Html5Audio._volume = value;
-        if (Html5Audio._audioElement) {
-            Html5Audio._audioElement.volume = this._volume;
-        }
-    },
-    configurable: true
+Object.defineProperty(Html5Audio, "volume", {
+  get: function () {
+    return Html5Audio._volume;
+  }.bind(this),
+  set: function (value) {
+    Html5Audio._volume = value;
+    if (Html5Audio._audioElement) {
+      Html5Audio._audioElement.volume = this._volume;
+    }
+  },
+  configurable: true,
 });
 
 /**
@@ -8686,7 +9333,7 @@ Object.defineProperty(Html5Audio, 'volume', {
  * @return {Boolean} True if the audio data is ready to play
  */
 Html5Audio.isReady = function () {
-    return this._buffered;
+  return this._buffered;
 };
 
 /**
@@ -8697,7 +9344,7 @@ Html5Audio.isReady = function () {
  * @return {Boolean} True if a loading error has occurred
  */
 Html5Audio.isError = function () {
-    return this._hasError;
+  return this._hasError;
 };
 
 /**
@@ -8708,7 +9355,7 @@ Html5Audio.isError = function () {
  * @return {Boolean} True if the audio is playing
  */
 Html5Audio.isPlaying = function () {
-    return !this._audioElement.paused;
+  return !this._audioElement.paused;
 };
 
 /**
@@ -8720,22 +9367,24 @@ Html5Audio.isPlaying = function () {
  * @param {Number} offset The start position to play in seconds
  */
 Html5Audio.play = function (loop, offset) {
-    if (this.isReady()) {
-        offset = offset || 0;
-        this._startPlaying(loop, offset);
-    } else if (Html5Audio._audioElement) {
-        this._autoPlay = true;
-        this.addLoadListener(function () {
-            if (this._autoPlay) {
-                this.play(loop, offset);
-                if (this._gainTweenInterval) {
-                    clearInterval(this._gainTweenInterval);
-                    this._gainTweenInterval = null;
-                }
-            }
-        }.bind(this));
-        if (!this._isLoading) this._load(this._url);
-    }
+  if (this.isReady()) {
+    offset = offset || 0;
+    this._startPlaying(loop, offset);
+  } else if (Html5Audio._audioElement) {
+    this._autoPlay = true;
+    this.addLoadListener(
+      function () {
+        if (this._autoPlay) {
+          this.play(loop, offset);
+          if (this._gainTweenInterval) {
+            clearInterval(this._gainTweenInterval);
+            this._gainTweenInterval = null;
+          }
+        }
+      }.bind(this)
+    );
+    if (!this._isLoading) this._load(this._url);
+  }
 };
 
 /**
@@ -8745,13 +9394,13 @@ Html5Audio.play = function (loop, offset) {
  * @method stop
  */
 Html5Audio.stop = function () {
-    if (this._audioElement) this._audioElement.pause();
-    this._autoPlay = false;
-    if (this._tweenInterval) {
-        clearInterval(this._tweenInterval);
-        this._tweenInterval = null;
-        this._audioElement.volume = 0;
-    }
+  if (this._audioElement) this._audioElement.pause();
+  this._autoPlay = false;
+  if (this._tweenInterval) {
+    clearInterval(this._tweenInterval);
+    this._tweenInterval = null;
+    this._audioElement.volume = 0;
+  }
 };
 
 /**
@@ -8762,17 +9411,19 @@ Html5Audio.stop = function () {
  * @param {Number} duration Fade-in time in seconds
  */
 Html5Audio.fadeIn = function (duration) {
-    if (this.isReady()) {
-        if (this._audioElement) {
-            this._tweenTargetGain = this._volume;
-            this._tweenGain = 0;
-            this._startGainTween(duration);
-        }
-    } else if (this._autoPlay) {
-        this.addLoadListener(function () {
-            this.fadeIn(duration);
-        }.bind(this));
+  if (this.isReady()) {
+    if (this._audioElement) {
+      this._tweenTargetGain = this._volume;
+      this._tweenGain = 0;
+      this._startGainTween(duration);
     }
+  } else if (this._autoPlay) {
+    this.addLoadListener(
+      function () {
+        this.fadeIn(duration);
+      }.bind(this)
+    );
+  }
 };
 
 /**
@@ -8783,11 +9434,11 @@ Html5Audio.fadeIn = function (duration) {
  * @param {Number} duration Fade-out time in seconds
  */
 Html5Audio.fadeOut = function (duration) {
-    if (this._audioElement) {
-        this._tweenTargetGain = 0;
-        this._tweenGain = this._volume;
-        this._startGainTween(duration);
-    }
+  if (this._audioElement) {
+    this._tweenTargetGain = 0;
+    this._tweenGain = this._volume;
+    this._startGainTween(duration);
+  }
 };
 
 /**
@@ -8797,11 +9448,11 @@ Html5Audio.fadeOut = function (duration) {
  * @method seek
  */
 Html5Audio.seek = function () {
-    if (this._audioElement) {
-        return this._audioElement.currentTime;
-    } else {
-        return 0;
-    }
+  if (this._audioElement) {
+    return this._audioElement.currentTime;
+  } else {
+    return 0;
+  }
 };
 
 /**
@@ -8812,7 +9463,7 @@ Html5Audio.seek = function () {
  * @param {Function} listner The callback function
  */
 Html5Audio.addLoadListener = function (listner) {
-    this._loadListeners.push(listner);
+  this._loadListeners.push(listner);
 };
 
 /**
@@ -8822,11 +9473,11 @@ Html5Audio.addLoadListener = function (listner) {
  * @private
  */
 Html5Audio._load = function (url) {
-    if (this._audioElement) {
-        this._isLoading = true;
-        this._audioElement.src = url;
-        this._audioElement.load();
-    }
+  if (this._audioElement) {
+    this._isLoading = true;
+    this._audioElement.src = url;
+    this._audioElement.load();
+  }
 };
 
 /**
@@ -8837,16 +9488,16 @@ Html5Audio._load = function (url) {
  * @private
  */
 Html5Audio._startPlaying = function (loop, offset) {
-    this._audioElement.loop = loop;
-    if (this._gainTweenInterval) {
-        clearInterval(this._gainTweenInterval);
-        this._gainTweenInterval = null;
-    }
-    if (this._audioElement) {
-        this._audioElement.volume = this._volume;
-        this._audioElement.currentTime = offset;
-        this._audioElement.play();
-    }
+  this._audioElement.loop = loop;
+  if (this._gainTweenInterval) {
+    clearInterval(this._gainTweenInterval);
+    this._gainTweenInterval = null;
+  }
+  if (this._audioElement) {
+    this._audioElement.volume = this._volume;
+    this._audioElement.currentTime = offset;
+    this._audioElement.play();
+  }
 };
 
 /**
@@ -8855,11 +9506,11 @@ Html5Audio._startPlaying = function (loop, offset) {
  * @private
  */
 Html5Audio._onLoad = function () {
-    this._isLoading = false;
-    while (this._loadListeners.length > 0) {
-        var listener = this._loadListeners.shift();
-        listener();
-    }
+  this._isLoading = false;
+  while (this._loadListeners.length > 0) {
+    var listener = this._loadListeners.shift();
+    listener();
+  }
 };
 
 /**
@@ -8869,15 +9520,16 @@ Html5Audio._onLoad = function () {
  * @private
  */
 Html5Audio._startGainTween = function (duration) {
-    this._audioElement.volume = this._tweenGain;
-    if (this._gainTweenInterval) {
-        clearInterval(this._gainTweenInterval);
-        this._gainTweenInterval = null;
-    }
-    this._tweenGainStep = (this._tweenTargetGain - this._tweenGain) / (60 * duration);
-    this._gainTweenInterval = setInterval(function () {
-        Html5Audio._applyTweenValue(Html5Audio._tweenTargetGain);
-    }, 1000 / 60);
+  this._audioElement.volume = this._tweenGain;
+  if (this._gainTweenInterval) {
+    clearInterval(this._gainTweenInterval);
+    this._gainTweenInterval = null;
+  }
+  this._tweenGainStep =
+    (this._tweenTargetGain - this._tweenGain) / (60 * duration);
+  this._gainTweenInterval = setInterval(function () {
+    Html5Audio._applyTweenValue(Html5Audio._tweenTargetGain);
+  }, 1000 / 60);
 };
 
 /**
@@ -8887,21 +9539,20 @@ Html5Audio._startGainTween = function (duration) {
  * @private
  */
 Html5Audio._applyTweenValue = function (volume) {
-    Html5Audio._tweenGain += Html5Audio._tweenGainStep;
-    if (Html5Audio._tweenGain < 0 && Html5Audio._tweenGainStep < 0) {
-        Html5Audio._tweenGain = 0;
-    }
-    else if (Html5Audio._tweenGain > volume && Html5Audio._tweenGainStep > 0) {
-        Html5Audio._tweenGain = volume;
-    }
+  Html5Audio._tweenGain += Html5Audio._tweenGainStep;
+  if (Html5Audio._tweenGain < 0 && Html5Audio._tweenGainStep < 0) {
+    Html5Audio._tweenGain = 0;
+  } else if (Html5Audio._tweenGain > volume && Html5Audio._tweenGainStep > 0) {
+    Html5Audio._tweenGain = volume;
+  }
 
-    if (Math.abs(Html5Audio._tweenTargetGain - Html5Audio._tweenGain) < 0.01) {
-        Html5Audio._tweenGain = Html5Audio._tweenTargetGain;
-        clearInterval(Html5Audio._gainTweenInterval);
-        Html5Audio._gainTweenInterval = null;
-    }
+  if (Math.abs(Html5Audio._tweenTargetGain - Html5Audio._tweenGain) < 0.01) {
+    Html5Audio._tweenGain = Html5Audio._tweenTargetGain;
+    clearInterval(Html5Audio._gainTweenInterval);
+    Html5Audio._gainTweenInterval = null;
+  }
 
-    Html5Audio._audioElement.volume = Html5Audio._tweenGain;
+  Html5Audio._audioElement.volume = Html5Audio._tweenGain;
 };
 
 //-----------------------------------------------------------------------------
@@ -8911,7 +9562,7 @@ Html5Audio._applyTweenValue = function (volume) {
  * @class JsonEx
  */
 function JsonEx() {
-    throw new Error('This is a static class');
+  throw new Error("This is a static class");
 }
 
 /**
@@ -8926,7 +9577,7 @@ JsonEx.maxDepth = 100;
 
 JsonEx._id = 1;
 JsonEx._generateId = function () {
-    return JsonEx._id++;
+  return JsonEx._id++;
 };
 
 /**
@@ -8938,23 +9589,23 @@ JsonEx._generateId = function () {
  * @return {String} The JSON string
  */
 JsonEx.stringify = function (object) {
-    var circular = [];
-    JsonEx._id = 1;
-    var json = JSON.stringify(this._encode(object, circular, 0));
-    this._cleanMetadata(object);
-    this._restoreCircularReference(circular);
+  var circular = [];
+  JsonEx._id = 1;
+  var json = JSON.stringify(this._encode(object, circular, 0));
+  this._cleanMetadata(object);
+  this._restoreCircularReference(circular);
 
-    return json;
+  return json;
 };
 
 JsonEx._restoreCircularReference = function (circulars) {
-    circulars.forEach(function (circular) {
-        var key = circular[0];
-        var value = circular[1];
-        var content = circular[2];
+  circulars.forEach(function (circular) {
+    var key = circular[0];
+    var value = circular[1];
+    var content = circular[2];
 
-        value[key] = content;
-    });
+    value[key] = content;
+  });
 };
 
 /**
@@ -8966,41 +9617,40 @@ JsonEx._restoreCircularReference = function (circulars) {
  * @return {Object} The reconstructed object
  */
 JsonEx.parse = function (json) {
-    var circular = [];
-    var registry = {};
-    var contents = this._decode(JSON.parse(json), circular, registry);
-    this._cleanMetadata(contents);
-    this._linkCircularReference(contents, circular, registry);
+  var circular = [];
+  var registry = {};
+  var contents = this._decode(JSON.parse(json), circular, registry);
+  this._cleanMetadata(contents);
+  this._linkCircularReference(contents, circular, registry);
 
-    return contents;
+  return contents;
 };
 
 JsonEx._linkCircularReference = function (contents, circulars, registry) {
-    circulars.forEach(function (circular) {
-        var key = circular[0];
-        var value = circular[1];
-        var id = circular[2];
+  circulars.forEach(function (circular) {
+    var key = circular[0];
+    var value = circular[1];
+    var id = circular[2];
 
-        value[key] = registry[id];
-    });
+    value[key] = registry[id];
+  });
 };
 
 JsonEx._cleanMetadata = function (object) {
-    if (!object) return;
+  if (!object) return;
 
-    delete object['@'];
-    delete object['@c'];
+  delete object["@"];
+  delete object["@c"];
 
-    if (typeof object === 'object') {
-        Object.keys(object).forEach(function (key) {
-            var value = object[key];
-            if (typeof value === 'object') {
-                JsonEx._cleanMetadata(value);
-            }
-        });
-    }
+  if (typeof object === "object") {
+    Object.keys(object).forEach(function (key) {
+      var value = object[key];
+      if (typeof value === "object") {
+        JsonEx._cleanMetadata(value);
+      }
+    });
+  }
 };
-
 
 /**
  * Makes a deep copy of the specified object.
@@ -9011,7 +9661,7 @@ JsonEx._cleanMetadata = function (object) {
  * @return {Object} The copied object
  */
 JsonEx.makeDeepCopy = function (object) {
-    return this.parse(this.stringify(object));
+  return this.parse(this.stringify(object));
 };
 
 /**
@@ -9024,45 +9674,45 @@ JsonEx.makeDeepCopy = function (object) {
  * @private
  */
 JsonEx._encode = function (value, circular, depth) {
-    depth = depth || 0;
-    if (++depth >= this.maxDepth) {
-        throw new Error('Object too deep');
+  depth = depth || 0;
+  if (++depth >= this.maxDepth) {
+    throw new Error("Object too deep");
+  }
+  var type = Object.prototype.toString.call(value);
+  if (type === "[object Object]" || type === "[object Array]") {
+    value["@c"] = JsonEx._generateId();
+
+    var constructorName = this._getConstructorName(value);
+    if (constructorName !== "Object" && constructorName !== "Array") {
+      value["@"] = constructorName;
     }
-    var type = Object.prototype.toString.call(value);
-    if (type === '[object Object]' || type === '[object Array]') {
-        value['@c'] = JsonEx._generateId();
+    for (var key in value) {
+      if (value.hasOwnProperty(key) && !key.match(/^@./)) {
+        if (value[key] && typeof value[key] === "object") {
+          if (value[key]["@c"]) {
+            circular.push([key, value, value[key]]);
+            value[key] = { "@r": value[key]["@c"] };
+          } else {
+            value[key] = this._encode(value[key], circular, depth + 1);
 
-        var constructorName = this._getConstructorName(value);
-        if (constructorName !== 'Object' && constructorName !== 'Array') {
-            value['@'] = constructorName;
-        }
-        for (var key in value) {
-            if (value.hasOwnProperty(key) && !key.match(/^@./)) {
-                if (value[key] && typeof value[key] === 'object') {
-                    if (value[key]['@c']) {
-                        circular.push([key, value, value[key]]);
-                        value[key] = { '@r': value[key]['@c'] };
-                    } else {
-                        value[key] = this._encode(value[key], circular, depth + 1);
+            if (value[key] instanceof Array) {
+              //wrap array
+              circular.push([key, value, value[key]]);
 
-                        if (value[key] instanceof Array) {
-                            //wrap array
-                            circular.push([key, value, value[key]]);
-
-                            value[key] = {
-                                '@c': value[key]['@c'],
-                                '@a': value[key]
-                            };
-                        }
-                    }
-                } else {
-                    value[key] = this._encode(value[key], circular, depth + 1);
-                }
+              value[key] = {
+                "@c": value[key]["@c"],
+                "@a": value[key],
+              };
             }
+          }
+        } else {
+          value[key] = this._encode(value[key], circular, depth + 1);
         }
+      }
     }
-    depth--;
-    return value;
+  }
+  depth--;
+  return value;
 };
 
 /**
@@ -9075,33 +9725,33 @@ JsonEx._encode = function (value, circular, depth) {
  * @private
  */
 JsonEx._decode = function (value, circular, registry) {
-    var type = Object.prototype.toString.call(value);
-    if (type === '[object Object]' || type === '[object Array]') {
-        registry[value['@c']] = value;
+  var type = Object.prototype.toString.call(value);
+  if (type === "[object Object]" || type === "[object Array]") {
+    registry[value["@c"]] = value;
 
-        if (value['@']) {
-            var constructor = window[value['@']];
-            if (constructor) {
-                value = this._resetPrototype(value, constructor.prototype);
-            }
-        }
-        for (var key in value) {
-            if (value.hasOwnProperty(key)) {
-                if (value[key] && value[key]['@a']) {
-                    //object is array wrapper
-                    var body = value[key]['@a'];
-                    body['@c'] = value[key]['@c'];
-                    value[key] = body;
-                }
-                if (value[key] && value[key]['@r']) {
-                    //object is reference
-                    circular.push([key, value, value[key]['@r']])
-                }
-                value[key] = this._decode(value[key], circular, registry);
-            }
-        }
+    if (value["@"]) {
+      var constructor = window[value["@"]];
+      if (constructor) {
+        value = this._resetPrototype(value, constructor.prototype);
+      }
     }
-    return value;
+    for (var key in value) {
+      if (value.hasOwnProperty(key)) {
+        if (value[key] && value[key]["@a"]) {
+          //object is array wrapper
+          var body = value[key]["@a"];
+          body["@c"] = value[key]["@c"];
+          value[key] = body;
+        }
+        if (value[key] && value[key]["@r"]) {
+          //object is reference
+          circular.push([key, value, value[key]["@r"]]);
+        }
+        value[key] = this._decode(value[key], circular, registry);
+      }
+    }
+  }
+  return value;
 };
 
 /**
@@ -9112,12 +9762,12 @@ JsonEx._decode = function (value, circular, registry) {
  * @private
  */
 JsonEx._getConstructorName = function (value) {
-    var name = value.constructor.name;
-    if (name === undefined) {
-        var func = /^\s*function\s*([A-Za-z0-9_$]*)/;
-        name = func.exec(value.constructor)[1];
-    }
-    return name;
+  var name = value.constructor.name;
+  if (name === undefined) {
+    var func = /^\s*function\s*([A-Za-z0-9_$]*)/;
+    name = func.exec(value.constructor)[1];
+  }
+  return name;
 };
 
 /**
@@ -9129,25 +9779,24 @@ JsonEx._getConstructorName = function (value) {
  * @private
  */
 JsonEx._resetPrototype = function (value, prototype) {
-    if (Object.setPrototypeOf !== undefined) {
-        Object.setPrototypeOf(value, prototype);
-    } else if ('__proto__' in value) {
-        value.__proto__ = prototype;
-    } else {
-        var newValue = Object.create(prototype);
-        for (var key in value) {
-            if (value.hasOwnProperty(key)) {
-                newValue[key] = value[key];
-            }
-        }
-        value = newValue;
+  if (Object.setPrototypeOf !== undefined) {
+    Object.setPrototypeOf(value, prototype);
+  } else if ("__proto__" in value) {
+    value.__proto__ = prototype;
+  } else {
+    var newValue = Object.create(prototype);
+    for (var key in value) {
+      if (value.hasOwnProperty(key)) {
+        newValue[key] = value[key];
+      }
     }
-    return value;
+    value = newValue;
+  }
+  return value;
 };
 
-
 function Decrypter() {
-    throw new Error('This is a static class');
+  throw new Error("This is a static class");
 }
 
 Decrypter.hasEncryptedImages = false;
@@ -9156,114 +9805,121 @@ Decrypter._requestImgFile = [];
 Decrypter._headerlength = 16;
 Decrypter._xhrOk = 400;
 Decrypter._encryptionKey = "";
-Decrypter._ignoreList = [
-    "img/system/Window.png"
-];
+Decrypter._ignoreList = ["img/system/Window.png"];
 Decrypter.SIGNATURE = "5250474d56000000";
 Decrypter.VER = "000301";
 Decrypter.REMAIN = "0000000000";
 
 Decrypter.checkImgIgnore = function (url) {
-    for (var cnt = 0; cnt < this._ignoreList.length; cnt++) {
-        if (url === this._ignoreList[cnt]) return true;
-    }
-    return false;
+  for (var cnt = 0; cnt < this._ignoreList.length; cnt++) {
+    if (url === this._ignoreList[cnt]) return true;
+  }
+  return false;
 };
 
 Decrypter.decryptImg = function (url, bitmap) {
-    url = this.extToEncryptExt(url);
+  url = this.extToEncryptExt(url);
 
-    var requestFile = new XMLHttpRequest();
-    requestFile.open("GET", url);
-    requestFile.responseType = "arraybuffer";
-    requestFile.send();
+  var requestFile = new XMLHttpRequest();
+  requestFile.open("GET", url);
+  requestFile.responseType = "arraybuffer";
+  requestFile.send();
 
-    requestFile.onload = function () {
-        if (this.status < Decrypter._xhrOk) {
-            var arrayBuffer = Decrypter.decryptArrayBuffer(requestFile.response);
-            bitmap._image.src = Decrypter.createBlobUrl(arrayBuffer);
-            bitmap._image.addEventListener('load', bitmap._loadListener = Bitmap.prototype._onLoad.bind(bitmap));
-            bitmap._image.addEventListener('error', bitmap._errorListener = bitmap._loader || Bitmap.prototype._onError.bind(bitmap));
-        }
-    };
+  requestFile.onload = function () {
+    if (this.status < Decrypter._xhrOk) {
+      var arrayBuffer = Decrypter.decryptArrayBuffer(requestFile.response);
+      bitmap._image.src = Decrypter.createBlobUrl(arrayBuffer);
+      bitmap._image.addEventListener(
+        "load",
+        (bitmap._loadListener = Bitmap.prototype._onLoad.bind(bitmap))
+      );
+      bitmap._image.addEventListener(
+        "error",
+        (bitmap._errorListener =
+          bitmap._loader || Bitmap.prototype._onError.bind(bitmap))
+      );
+    }
+  };
 
-    requestFile.onerror = function () {
-        if (bitmap._loader) {
-            bitmap._loader();
-        } else {
-            bitmap._onError();
-        }
-    };
+  requestFile.onerror = function () {
+    if (bitmap._loader) {
+      bitmap._loader();
+    } else {
+      bitmap._onError();
+    }
+  };
 };
 
 Decrypter.decryptHTML5Audio = function (url, bgm, pos) {
-    var requestFile = new XMLHttpRequest();
-    requestFile.open("GET", url);
-    requestFile.responseType = "arraybuffer";
-    requestFile.send();
+  var requestFile = new XMLHttpRequest();
+  requestFile.open("GET", url);
+  requestFile.responseType = "arraybuffer";
+  requestFile.send();
 
-    requestFile.onload = function () {
-        if (this.status < Decrypter._xhrOk) {
-            var arrayBuffer = Decrypter.decryptArrayBuffer(requestFile.response);
-            var url = Decrypter.createBlobUrl(arrayBuffer);
-            AudioManager.createDecryptBuffer(url, bgm, pos);
-        }
-    };
+  requestFile.onload = function () {
+    if (this.status < Decrypter._xhrOk) {
+      var arrayBuffer = Decrypter.decryptArrayBuffer(requestFile.response);
+      var url = Decrypter.createBlobUrl(arrayBuffer);
+      AudioManager.createDecryptBuffer(url, bgm, pos);
+    }
+  };
 };
 
 Decrypter.cutArrayHeader = function (arrayBuffer, length) {
-    return arrayBuffer.slice(length);
+  return arrayBuffer.slice(length);
 };
 
 Decrypter.decryptArrayBuffer = function (arrayBuffer) {
-    if (!arrayBuffer) return null;
-    var header = new Uint8Array(arrayBuffer, 0, this._headerlength);
+  if (!arrayBuffer) return null;
+  var header = new Uint8Array(arrayBuffer, 0, this._headerlength);
 
-    var i;
-    var ref = this.SIGNATURE + this.VER + this.REMAIN;
-    var refBytes = new Uint8Array(16);
+  var i;
+  var ref = this.SIGNATURE + this.VER + this.REMAIN;
+  var refBytes = new Uint8Array(16);
+  for (i = 0; i < this._headerlength; i++) {
+    refBytes[i] = parseInt("0x" + ref.substr(i * 2, 2), 16);
+  }
+  for (i = 0; i < this._headerlength; i++) {
+    if (header[i] !== refBytes[i]) {
+      throw new Error("Header is wrong");
+    }
+  }
+
+  arrayBuffer = this.cutArrayHeader(arrayBuffer, Decrypter._headerlength);
+  var view = new DataView(arrayBuffer);
+  this.readEncryptionkey();
+  if (arrayBuffer) {
+    var byteArray = new Uint8Array(arrayBuffer);
     for (i = 0; i < this._headerlength; i++) {
-        refBytes[i] = parseInt("0x" + ref.substr(i * 2, 2), 16);
+      byteArray[i] = byteArray[i] ^ parseInt(Decrypter._encryptionKey[i], 16);
+      view.setUint8(i, byteArray[i]);
     }
-    for (i = 0; i < this._headerlength; i++) {
-        if (header[i] !== refBytes[i]) {
-            throw new Error("Header is wrong");
-        }
-    }
+  }
 
-    arrayBuffer = this.cutArrayHeader(arrayBuffer, Decrypter._headerlength);
-    var view = new DataView(arrayBuffer);
-    this.readEncryptionkey();
-    if (arrayBuffer) {
-        var byteArray = new Uint8Array(arrayBuffer);
-        for (i = 0; i < this._headerlength; i++) {
-            byteArray[i] = byteArray[i] ^ parseInt(Decrypter._encryptionKey[i], 16);
-            view.setUint8(i, byteArray[i]);
-        }
-    }
-
-    return arrayBuffer;
+  return arrayBuffer;
 };
 
 Decrypter.createBlobUrl = function (arrayBuffer) {
-    var blob = new Blob([arrayBuffer]);
-    return window.URL.createObjectURL(blob);
+  var blob = new Blob([arrayBuffer]);
+  return window.URL.createObjectURL(blob);
 };
 
 Decrypter.extToEncryptExt = function (url) {
-    var ext = url.split('.').pop();
-    var encryptedExt = ext;
+  var ext = url.split(".").pop();
+  var encryptedExt = ext;
 
-    if (ext === "ogg") encryptedExt = ".rpgmvo";
-    else if (ext === "m4a") encryptedExt = ".rpgmvm";
-    else if (ext === "png") encryptedExt = ".rpgmvp";
-    else encryptedExt = ext;
+  if (ext === "ogg") encryptedExt = ".rpgmvo";
+  else if (ext === "m4a") encryptedExt = ".rpgmvm";
+  else if (ext === "png") encryptedExt = ".rpgmvp";
+  else encryptedExt = ext;
 
-    return url.slice(0, url.lastIndexOf(ext) - 1) + encryptedExt;
+  return url.slice(0, url.lastIndexOf(ext) - 1) + encryptedExt;
 };
 
 Decrypter.readEncryptionkey = function () {
-    this._encryptionKey = $dataSystem.encryptionKey.split(/(.{2})/).filter(Boolean);
+  this._encryptionKey = $dataSystem.encryptionKey
+    .split(/(.{2})/)
+    .filter(Boolean);
 };
 
 //-----------------------------------------------------------------------------
@@ -9273,49 +9929,54 @@ Decrypter.readEncryptionkey = function () {
  * @class ResourceHandler
  */
 function ResourceHandler() {
-    throw new Error('This is a static class');
+  throw new Error("This is a static class");
 }
 
 ResourceHandler._reloaders = [];
 ResourceHandler._defaultRetryInterval = [500, 1000, 3000];
 
-ResourceHandler.createLoader = function (url, retryMethod, resignMethod, retryInterval) {
-    retryInterval = retryInterval || this._defaultRetryInterval;
-    var reloaders = this._reloaders;
-    var retryCount = 0;
-    return function () {
-        if (retryCount < retryInterval.length) {
-            setTimeout(retryMethod, retryInterval[retryCount]);
-            retryCount++;
-        } else {
-            if (resignMethod) {
-                resignMethod();
-            }
-            if (url) {
-                if (reloaders.length === 0) {
-                    Graphics.printLoadingError(url);
-                    SceneManager.stop();
-                }
-                reloaders.push(function () {
-                    retryCount = 0;
-                    retryMethod();
-                });
-            }
+ResourceHandler.createLoader = function (
+  url,
+  retryMethod,
+  resignMethod,
+  retryInterval
+) {
+  retryInterval = retryInterval || this._defaultRetryInterval;
+  var reloaders = this._reloaders;
+  var retryCount = 0;
+  return function () {
+    if (retryCount < retryInterval.length) {
+      setTimeout(retryMethod, retryInterval[retryCount]);
+      retryCount++;
+    } else {
+      if (resignMethod) {
+        resignMethod();
+      }
+      if (url) {
+        if (reloaders.length === 0) {
+          Graphics.printLoadingError(url);
+          SceneManager.stop();
         }
-    };
+        reloaders.push(function () {
+          retryCount = 0;
+          retryMethod();
+        });
+      }
+    }
+  };
 };
 
 ResourceHandler.exists = function () {
-    return this._reloaders.length > 0;
+  return this._reloaders.length > 0;
 };
 
 ResourceHandler.retry = function () {
-    if (this._reloaders.length > 0) {
-        Graphics.eraseLoadingError();
-        SceneManager.resume();
-        this._reloaders.forEach(function (reloader) {
-            reloader();
-        });
-        this._reloaders.length = 0;
-    }
+  if (this._reloaders.length > 0) {
+    Graphics.eraseLoadingError();
+    SceneManager.resume();
+    this._reloaders.forEach(function (reloader) {
+      reloader();
+    });
+    this._reloaders.length = 0;
+  }
 };

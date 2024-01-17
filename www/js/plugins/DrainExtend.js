@@ -107,191 +107,196 @@
  */
 
 (function () {
-    'use strict';
-    var pluginName = 'DrainExtend';
-    var metaTagPrefix = 'DE_';
+  "use strict";
+  var pluginName = "DrainExtend";
+  var metaTagPrefix = "DE_";
 
-    //=============================================================================
-    // ローカル関数
-    //  プラグインパラメータやプラグインコマンドパラメータの整形やチェックをします
-    //=============================================================================
-    var getParamString = function (paramNames) {
-        if (!Array.isArray(paramNames)) paramNames = [paramNames];
-        for (var i = 0; i < paramNames.length; i++) {
-            var name = PluginManager.parameters(pluginName)[paramNames[i]];
-            if (name) return name;
-        }
-        return '';
-    };
+  //=============================================================================
+  // ローカル関数
+  //  プラグインパラメータやプラグインコマンドパラメータの整形やチェックをします
+  //=============================================================================
+  var getParamString = function (paramNames) {
+    if (!Array.isArray(paramNames)) paramNames = [paramNames];
+    for (var i = 0; i < paramNames.length; i++) {
+      var name = PluginManager.parameters(pluginName)[paramNames[i]];
+      if (name) return name;
+    }
+    return "";
+  };
 
-    var getParamBoolean = function (paramNames) {
-        var value = getParamString(paramNames).toUpperCase();
-        return value === 'ON' || value === 'TRUE';
-    };
+  var getParamBoolean = function (paramNames) {
+    var value = getParamString(paramNames).toUpperCase();
+    return value === "ON" || value === "TRUE";
+  };
 
-    var getMetaValue = function (object, name) {
-        var metaTagName = metaTagPrefix + (name ? name : '');
-        return object.meta.hasOwnProperty(metaTagName) ? object.meta[metaTagName] : undefined;
-    };
+  var getMetaValue = function (object, name) {
+    var metaTagName = metaTagPrefix + (name ? name : "");
+    return object.meta.hasOwnProperty(metaTagName)
+      ? object.meta[metaTagName]
+      : undefined;
+  };
 
-    var getMetaValues = function (object, names) {
-        if (!Array.isArray(names)) return getMetaValue(object, names);
-        for (var i = 0, n = names.length; i < n; i++) {
-            var value = getMetaValue(object, names[i]);
-            if (value !== undefined) return value;
-        }
-        return undefined;
-    };
+  var getMetaValues = function (object, names) {
+    if (!Array.isArray(names)) return getMetaValue(object, names);
+    for (var i = 0, n = names.length; i < n; i++) {
+      var value = getMetaValue(object, names[i]);
+      if (value !== undefined) return value;
+    }
+    return undefined;
+  };
 
-    var convertEscapeCharacters = function (text) {
-        if (text == null) text = '';
-        var windowLayer = SceneManager._scene._windowLayer;
-        return windowLayer ? windowLayer.children[0].convertEscapeCharacters(text) : text;
-    };
+  var convertEscapeCharacters = function (text) {
+    if (text == null) text = "";
+    var windowLayer = SceneManager._scene._windowLayer;
+    return windowLayer
+      ? windowLayer.children[0].convertEscapeCharacters(text)
+      : text;
+  };
 
-    //=============================================================================
-    // パラメータの取得と整形
-    //=============================================================================
-    var param = {};
-    param.recoverSe = getParamBoolean(['RecoverSe', '回復効果音']);
+  //=============================================================================
+  // パラメータの取得と整形
+  //=============================================================================
+  var param = {};
+  param.recoverSe = getParamBoolean(["RecoverSe", "回復効果音"]);
 
-    //=============================================================================
-    // Game_BattlerBase
-    //  吸収の有効率を設定します。
-    //=============================================================================
-    Game_BattlerBase.prototype.getDrainEffectiveRate = function (subject) {
-        var rate = null;
-        var a = subject;
-        var b = this;
-        this.traitObjects().forEach(function (traitObj) {
-            var meta = getMetaValues(traitObj, ['EffectiveRate', '有効率']);
-            if (meta) {
-                rate = Math.max(rate || 0, eval(convertEscapeCharacters(meta)) / 100);
-            }
-        });
-        return rate !== null ? rate : 1.0;
-    };
+  //=============================================================================
+  // Game_BattlerBase
+  //  吸収の有効率を設定します。
+  //=============================================================================
+  Game_BattlerBase.prototype.getDrainEffectiveRate = function (subject) {
+    var rate = null;
+    var a = subject;
+    var b = this;
+    this.traitObjects().forEach(function (traitObj) {
+      var meta = getMetaValues(traitObj, ["EffectiveRate", "有効率"]);
+      if (meta) {
+        rate = Math.max(rate || 0, eval(convertEscapeCharacters(meta)) / 100);
+      }
+    });
+    return rate !== null ? rate : 1.0;
+  };
 
-    //=============================================================================
-    // Game_Action
-    //  吸収の仕様を拡張します。
-    //=============================================================================
-    var _Game_Action_isDrain = Game_Action.prototype.isDrain;
-    Game_Action.prototype.isDrain = function () {
-        if (this._temporaryDisableDrain) {
-            this._temporaryDisableDrain = false;
-            return false;
-        }
-        return _Game_Action_isDrain.apply(this, arguments);
-    };
+  //=============================================================================
+  // Game_Action
+  //  吸収の仕様を拡張します。
+  //=============================================================================
+  var _Game_Action_isDrain = Game_Action.prototype.isDrain;
+  Game_Action.prototype.isDrain = function () {
+    if (this._temporaryDisableDrain) {
+      this._temporaryDisableDrain = false;
+      return false;
+    }
+    return _Game_Action_isDrain.apply(this, arguments);
+  };
 
-    Game_Action.prototype.getDrainExtendMeta = function (paramNames) {
-        return getMetaValues(this.item(), paramNames);
-    };
+  Game_Action.prototype.getDrainExtendMeta = function (paramNames) {
+    return getMetaValues(this.item(), paramNames);
+  };
 
-    Game_Action.prototype.getHpDrainRate = function (original) {
-        var rate = this.getDrainRate(['PercentageHP', 'HP吸収率']);
-        return rate !== undefined ? rate / 100 : (original ? 1 : undefined);
-    };
+  Game_Action.prototype.getHpDrainRate = function (original) {
+    var rate = this.getDrainRate(["PercentageHP", "HP吸収率"]);
+    return rate !== undefined ? rate / 100 : original ? 1 : undefined;
+  };
 
-    Game_Action.prototype.getMpDrainRate = function (original) {
-        var rate = this.getDrainRate(['PercentageMP', 'MP吸収率']);
-        return rate !== undefined ? rate / 100 : (original ? 1 : undefined);
-    };
+  Game_Action.prototype.getMpDrainRate = function (original) {
+    var rate = this.getDrainRate(["PercentageMP", "MP吸収率"]);
+    return rate !== undefined ? rate / 100 : original ? 1 : undefined;
+  };
 
-    Game_Action.prototype.getTpDrainRate = function () {
-        var rate = this.getDrainRate(['PercentageTP', 'TP吸収率']);
-        return rate !== undefined ? rate / 100 : undefined;
-    };
+  Game_Action.prototype.getTpDrainRate = function () {
+    var rate = this.getDrainRate(["PercentageTP", "TP吸収率"]);
+    return rate !== undefined ? rate / 100 : undefined;
+  };
 
-    Game_Action.prototype.getDrainRate = function (metaParams) {
-        var rate = convertEscapeCharacters(this.getDrainExtendMeta(metaParams));
-        var a = this.subject();
-        var b = this._drainTarget;
-        return rate ? eval(rate) : undefined;
-    };
+  Game_Action.prototype.getDrainRate = function (metaParams) {
+    var rate = convertEscapeCharacters(this.getDrainExtendMeta(metaParams));
+    var a = this.subject();
+    var b = this._drainTarget;
+    return rate ? eval(rate) : undefined;
+  };
 
-    Game_Action.prototype.isDrainMessageAttack = function () {
-        return !!this.getDrainExtendMeta(['AttackMessage', '攻撃メッセージ']);
-    };
+  Game_Action.prototype.isDrainMessageAttack = function () {
+    return !!this.getDrainExtendMeta(["AttackMessage", "攻撃メッセージ"]);
+  };
 
-    Game_Action.prototype.isDrainLimitOver = function () {
-        return !!this.getDrainExtendMeta(['LimitOver', '上限突破']);
-    };
+  Game_Action.prototype.isDrainLimitOver = function () {
+    return !!this.getDrainExtendMeta(["LimitOver", "上限突破"]);
+  };
 
-    var _Game_Action_apply = Game_Action.prototype.apply;
-    Game_Action.prototype.apply = function (target) {
-        if (this.isDrainMessageAttack()) {
-            this._temporaryDisableDrain = true;
-        }
-        this._drainTarget = target;
-        return _Game_Action_apply.apply(this, arguments);
-    };
+  var _Game_Action_apply = Game_Action.prototype.apply;
+  Game_Action.prototype.apply = function (target) {
+    if (this.isDrainMessageAttack()) {
+      this._temporaryDisableDrain = true;
+    }
+    this._drainTarget = target;
+    return _Game_Action_apply.apply(this, arguments);
+  };
 
-    var _Game_Action_executeHpDamage = Game_Action.prototype.executeHpDamage;
-    Game_Action.prototype.executeHpDamage = function (target, value) {
-        if (this.isDrainLimitOver()) this._temporaryDisableDrain = true;
-        _Game_Action_executeHpDamage.apply(this, arguments);
-    };
+  var _Game_Action_executeHpDamage = Game_Action.prototype.executeHpDamage;
+  Game_Action.prototype.executeHpDamage = function (target, value) {
+    if (this.isDrainLimitOver()) this._temporaryDisableDrain = true;
+    _Game_Action_executeHpDamage.apply(this, arguments);
+  };
 
-    var _Game_Action_gainDrainedHp = Game_Action.prototype.gainDrainedHp;
-    Game_Action.prototype.gainDrainedHp = function (value) {
-        this.gainDrainedParam(value, 'hp');
-    };
+  var _Game_Action_gainDrainedHp = Game_Action.prototype.gainDrainedHp;
+  Game_Action.prototype.gainDrainedHp = function (value) {
+    this.gainDrainedParam(value, "hp");
+  };
 
-    var _Game_Action_gainDrainedMp = Game_Action.prototype.gainDrainedMp;
-    Game_Action.prototype.gainDrainedMp = function (value) {
-        this.gainDrainedParam(value, 'mp');
-    };
+  var _Game_Action_gainDrainedMp = Game_Action.prototype.gainDrainedMp;
+  Game_Action.prototype.gainDrainedMp = function (value) {
+    this.gainDrainedParam(value, "mp");
+  };
 
-    Game_Action.prototype.gainDrainedParam = function (value, originalType) {
-        var effectiveRate = this._drainTarget.getDrainEffectiveRate(this.subject());
-        var hpRate = this.getHpDrainRate(originalType === 'hp');
-        if (hpRate !== undefined) {
-            var hpValue = Math.floor(value * hpRate * effectiveRate);
-            if (hpValue !== 0) {
-                _Game_Action_gainDrainedHp.call(this, hpValue);
-            }
-        }
-        var mpRate = this.getMpDrainRate(originalType === 'mp');
-        if (mpRate !== undefined) {
-            var mpValue = Math.floor(value * mpRate * effectiveRate);
-            if (mpValue !== 0) {
-                _Game_Action_gainDrainedMp.call(this, mpValue);
-            }
-        }
-        var tpRate = this.getTpDrainRate();
-        if (tpRate !== undefined) {
-            var tpValue = Math.floor(value * tpRate * effectiveRate);
-            if (tpValue !== 0) {
-                this.gainDrainedTp(tpValue);
-            }
-        }
-    };
+  Game_Action.prototype.gainDrainedParam = function (value, originalType) {
+    var effectiveRate = this._drainTarget.getDrainEffectiveRate(this.subject());
+    var hpRate = this.getHpDrainRate(originalType === "hp");
+    if (hpRate !== undefined) {
+      var hpValue = Math.floor(value * hpRate * effectiveRate);
+      if (hpValue !== 0) {
+        _Game_Action_gainDrainedHp.call(this, hpValue);
+      }
+    }
+    var mpRate = this.getMpDrainRate(originalType === "mp");
+    if (mpRate !== undefined) {
+      var mpValue = Math.floor(value * mpRate * effectiveRate);
+      if (mpValue !== 0) {
+        _Game_Action_gainDrainedMp.call(this, mpValue);
+      }
+    }
+    var tpRate = this.getTpDrainRate();
+    if (tpRate !== undefined) {
+      var tpValue = Math.floor(value * tpRate * effectiveRate);
+      if (tpValue !== 0) {
+        this.gainDrainedTp(tpValue);
+      }
+    }
+  };
 
-    Game_Action.prototype.gainDrainedTp = function (value) {
-        if (this.isDrain()) {
-            var gainTarget = this.subject();
-            if (this._reflectionTarget !== undefined) {
-                gainTarget = this._reflectionTarget;
-            }
-            gainTarget.gainTp(value);
-        }
-    };
+  Game_Action.prototype.gainDrainedTp = function (value) {
+    if (this.isDrain()) {
+      var gainTarget = this.subject();
+      if (this._reflectionTarget !== undefined) {
+        gainTarget = this._reflectionTarget;
+      }
+      gainTarget.gainTp(value);
+    }
+  };
 
-    //=============================================================================
-    // Window_BattleLog
-    //  吸収時に回復効果音を演奏します。
-    //=============================================================================
-    var _Window_BattleLog_displayDamage = Window_BattleLog.prototype.displayDamage;
-    Window_BattleLog.prototype.displayDamage = function (target) {
-        _Window_BattleLog_displayDamage.apply(this, arguments);
-        if (this.isNeedDrainRecoverSe(target.result())) {
-            this.push('performRecovery', target);
-        }
-    };
+  //=============================================================================
+  // Window_BattleLog
+  //  吸収時に回復効果音を演奏します。
+  //=============================================================================
+  var _Window_BattleLog_displayDamage =
+    Window_BattleLog.prototype.displayDamage;
+  Window_BattleLog.prototype.displayDamage = function (target) {
+    _Window_BattleLog_displayDamage.apply(this, arguments);
+    if (this.isNeedDrainRecoverSe(target.result())) {
+      this.push("performRecovery", target);
+    }
+  };
 
-    Window_BattleLog.prototype.isNeedDrainRecoverSe = function (result) {
-        return param.recoverSe && !result.missed && !result.evaded && result.drain;
-    };
+  Window_BattleLog.prototype.isNeedDrainRecoverSe = function (result) {
+    return param.recoverSe && !result.missed && !result.evaded && result.drain;
+  };
 })();

@@ -43,7 +43,7 @@
  * and rights indication are also optional.
  * The author is not responsible,
  * but we will respond to defects as far as possible.
- * 
+ *
  * @param forceValid
  * @type boolean
  * @default true
@@ -87,7 +87,7 @@
  * 特に制約はありません。
  * 改変、再配布自由、商用可、権利表示も任意です。
  * 作者は責任を負いませんが、不具合については可能な範囲で対応します。
- * 
+ *
  * @param forceValid
  * @text 強制行動時のスキル使用判定
  * @type boolean
@@ -97,367 +97,379 @@
  */
 
 (function () {
-    "use strict";
+  "use strict";
 
-    function toBoolean(val, def) {
-        // 空白なら初期値を返す
-        if (val == "") {
-            return def;
+  function toBoolean(val, def) {
+    // 空白なら初期値を返す
+    if (val == "") {
+      return def;
 
-            // 既にboolean型なら、そのまま返す
-        } else if (typeof val === "boolean") {
-            return val;
-        }
-        // 文字列ならboolean型に変換して返す
-        return val.toLowerCase() == "true";
+      // 既にboolean型なら、そのまま返す
+    } else if (typeof val === "boolean") {
+      return val;
+    }
+    // 文字列ならboolean型に変換して返す
+    return val.toLowerCase() == "true";
+  }
+
+  var parameters = PluginManager.parameters("NRP_BattleEventEX");
+
+  var paramForceValid = toBoolean(parameters["forceValid"], true);
+
+  var plSuperForce = undefined;
+  var plForceSubject = undefined;
+  var plForceTarget = undefined;
+  var plForceTargetLimit = undefined;
+
+  var _Game_Interpreter_pluginCommand =
+    Game_Interpreter.prototype.pluginCommand;
+  Game_Interpreter.prototype.pluginCommand = function (command, args) {
+    _Game_Interpreter_pluginCommand.call(this, command, args);
+    // 小文字化してから判定
+    var lowerCommand = command.toLowerCase();
+
+    // 行動強制フラグ
+    if (lowerCommand === "nrp.forceaction") {
+      plSuperForce = eval(args[0]);
+
+      // 行動主体の上書き
+    } else if (lowerCommand === "nrp.forcesubject") {
+      // 引数が空白で区切られていた時のため連結しておく。
+      plForceSubject = eval(args.join(" "));
+
+      // 対象の上書き
+    } else if (lowerCommand === "nrp.forcetarget") {
+      plForceTarget = eval(args.join(" "));
+
+      // 限定対象の上書き
+    } else if (lowerCommand === "nrp.forcetargetlimit") {
+      plForceTargetLimit = eval(args.join(" "));
+      // undefinedの場合は空集合にしておく（対象なし、行動不能と判断）
+      // undefinedのままでは初期状態と判別できないため。
+      if (plForceTargetLimit == undefined) {
+        plForceTargetLimit = [];
+      }
+    }
+  };
+
+  /**
+   * ●変数初期化
+   */
+  var _BattleManager_initMembers = BattleManager.initMembers;
+  BattleManager.initMembers = function () {
+    _BattleManager_initMembers.apply(this);
+
+    // 強制行動実行フラグ
+    // true,falseと区別するため、あえてundefinedで初期化
+    plSuperForce = undefined;
+    // 強制行動行動主体
+    plForceSubject = undefined;
+    // 強制行動ターゲット
+    plForceTarget = undefined;
+    plForceTargetLimit = undefined;
+  };
+
+  /**
+   * ●コマンド入力開始
+   */
+  var _BattleManager_startInput = BattleManager.startInput;
+  BattleManager.startInput = function () {
+    // 強制行動実行フラグ初期化
+    plSuperForce = undefined;
+
+    // 元処理実行
+    _BattleManager_startInput.apply(this);
+  };
+
+  /**
+   * ●行動開始
+   */
+  var _BattleManager_startAction = BattleManager.startAction;
+  BattleManager.startAction = function () {
+    var subject = this._subject;
+    var action = subject.currentAction();
+
+    // 行動が取得できなかったり、敵味方が全滅していれば終了
+    // ※戦闘行動の強制などで味方の全滅後に敵が行動した場合など
+    // （これがないと落ちる）
+    if (!action.item() || $gameParty.isAllDead() || $gameTroop.isAllDead()) {
+      this._phase = "action";
+      return;
     }
 
-    var parameters = PluginManager.parameters("NRP_BattleEventEX");
+    // 強制状態でなければ、有効判定を行う。
+    if (!this.isForceEX()) {
+      // かつ、戦闘行動の強制状態ならば、混乱処理を行う。
+      // ※戦闘行動の強制では、この処理を飛ばしているため。
+      if (this.isForcedTurn() && subject.isConfused()) {
+        action.setConfusion();
+      }
+      // 実行不能なら終了
+      if (!action.isForceValid()) {
+        this._phase = "action";
+        return;
+      }
+    }
 
-    var paramForceValid = toBoolean(parameters["forceValid"], true);
+    // 元処理実行
+    _BattleManager_startAction.apply(this);
+  };
 
-    var plSuperForce = undefined;
-    var plForceSubject = undefined;
-    var plForceTarget = undefined;
-    var plForceTargetLimit = undefined;
-
-    var _Game_Interpreter_pluginCommand = Game_Interpreter.prototype.pluginCommand;
-    Game_Interpreter.prototype.pluginCommand = function (command, args) {
-        _Game_Interpreter_pluginCommand.call(this, command, args);
-        // 小文字化してから判定
-        var lowerCommand = command.toLowerCase();
-
-        // 行動強制フラグ
-        if (lowerCommand === "nrp.forceaction") {
-            plSuperForce = eval(args[0]);
-
-            // 行動主体の上書き
-        } else if (lowerCommand === "nrp.forcesubject") {
-            // 引数が空白で区切られていた時のため連結しておく。
-            plForceSubject = eval(args.join(" "));
-
-            // 対象の上書き
-        } else if (lowerCommand === "nrp.forcetarget") {
-            plForceTarget = eval(args.join(" "));
-
-            // 限定対象の上書き
-        } else if (lowerCommand === "nrp.forcetargetlimit") {
-            plForceTargetLimit = eval(args.join(" "));
-            // undefinedの場合は空集合にしておく（対象なし、行動不能と判断）
-            // undefinedのままでは初期状態と判別できないため。
-            if (plForceTargetLimit == undefined) {
-                plForceTargetLimit = [];
-            }
-        }
-    };
-
-    /**
-     * ●変数初期化
-     */
-    var _BattleManager_initMembers = BattleManager.initMembers;
-    BattleManager.initMembers = function () {
-        _BattleManager_initMembers.apply(this);
-
-        // 強制行動実行フラグ
-        // true,falseと区別するため、あえてundefinedで初期化
-        plSuperForce = undefined;
-        // 強制行動行動主体
-        plForceSubject = undefined;
-        // 強制行動ターゲット
-        plForceTarget = undefined;
-        plForceTargetLimit = undefined;
-    };
-
-    /**
-     * ●コマンド入力開始
-     */
-    var _BattleManager_startInput = BattleManager.startInput;
-    BattleManager.startInput = function () {
-        // 強制行動実行フラグ初期化
-        plSuperForce = undefined;
-
-        // 元処理実行
-        _BattleManager_startInput.apply(this);
-    };
-
-    /**
-     * ●行動開始
-     */
-    var _BattleManager_startAction = BattleManager.startAction;
-    BattleManager.startAction = function () {
-        var subject = this._subject;
-        var action = subject.currentAction();
-
-        // 行動が取得できなかったり、敵味方が全滅していれば終了
-        // ※戦闘行動の強制などで味方の全滅後に敵が行動した場合など
-        // （これがないと落ちる）
-        if (!action.item() || $gameParty.isAllDead() || $gameTroop.isAllDead()) {
-            this._phase = "action";
-            return;
-        }
-
-        // 強制状態でなければ、有効判定を行う。
-        if (!this.isForceEX()) {
-            // かつ、戦闘行動の強制状態ならば、混乱処理を行う。
-            // ※戦闘行動の強制では、この処理を飛ばしているため。
-            if (this.isForcedTurn() && subject.isConfused()) {
-                action.setConfusion();
-            }
-            // 実行不能なら終了
-            if (!action.isForceValid()) {
-                this._phase = "action";
-                return;
-            }
-        }
-
-        // 元処理実行
-        _BattleManager_startAction.apply(this);
-    };
-
-    /**
-     * 超強制フラグを考慮した強制状態の判定
-     * 元々のisForcedTurnなどの値を極力変えず、この関数で判定する。
-     */
-    BattleManager.isForceEX = function () {
-        // 戦闘行動の強制の場合
-        if (this.isForcedTurn()) {
-            // 超強制フラグがtrueならば
-            if (plSuperForce == true) {
-                return true;
-
-                // 超強制フラグがfalseならば
-            } else if (plSuperForce == false) {
-                return false;
-
-                // 超強制フラグがundefinedのままなら、
-            } else if (plSuperForce == undefined) {
-                // パラメータの設定に従って判定を行う
-                if (paramForceValid) {
-                    return false;
-                }
-            }
-        }
-    };
-
-    /**
-     * ●【独自関数】戦闘行動の強制専用の有効判定
-     * ※元のisValid()と異なり、強制時でも使用判定を行う。
-     */
-    Game_Action.prototype.isForceValid = function () {
-        return this.subject().canUse(this.item());
-    };
-
-    /**
-     * ●ターゲットの決定
-     */
-    var _Game_Action_makeTargets = Game_Action.prototype.makeTargets;
-    Game_Action.prototype.makeTargets = function () {
-        // 強制状態でなければ、混乱処理を行う。
-        if (!BattleManager.isForceEX() && this.subject().isConfused()) {
-            return this.repeatTargets([this.confusionTarget()]);
-        }
-
-        return _Game_Action_makeTargets.apply(this);
-    };
-
-    /**
-     * ●次の行動主体を取得
-     */
-    var _BattleManager_getNextSubject = BattleManager.getNextSubject;
-    BattleManager.getNextSubject = function () {
-        // プラグインコマンドから設定した値をクリア（次の行動主体へ引き継がない）
-        plSuperForce = undefined;
-        plForceSubject = undefined;
-        plForceTarget = undefined;
-        plForceTargetLimit = undefined;
-
-        return _BattleManager_getNextSubject.apply(this);
-    };
-
-    /**
-     * ●アクション開始メッセージ＆演出
-     */
-    var _Window_BattleLog_startAction = Window_BattleLog.prototype.startAction;
-    Window_BattleLog.prototype.startAction = function (subject, action, targets) {
-        var item = action.item();
-        // スキルメモ欄に<NoStartAction>が設定されているなら開始演出を省略
-        if (item.meta.NoStartAction) {
-            // アニメーションとウェイトだけを残す
-            this.push('showAnimation', subject, targets.clone(), item.animationId);
-            var numMethods = this._methods.length;
-            if (this._methods.length === numMethods) {
-                this.push('wait');
-            }
-            return;
-        }
-
-        // 元処理実行
-        _Window_BattleLog_startAction.apply(this, arguments);
-    };
-
-    /**
-     * ●戦闘行動の強制
-     */
-    var _Game_Interpreter_command339 = Game_Interpreter.prototype.command339;
-    Game_Interpreter.prototype.command339 = function () {
-        // プラグインコマンドで行動主体や対象の上書きが指定されていた場合
-        if (plForceSubject || plForceTarget || plForceTargetLimit) {
-            var isActor = this._params[0];      // 敵なら0, 味方なら1
-            var subjectIndex = this._params[1]; // 行動主体のインデックス
-            var targetIndex = this._params[3];  // 対象のインデックス
-
-            // 行動主体の上書き
-            if (plForceSubject) {
-                isActor = plForceSubject.isActor() ? 1 : 0;
-                subjectIndex = plForceSubject.index();
-            }
-            // 強制対象の上書き（ただし、対象が配列なら確定できないため上書きしない）
-            if (plForceTarget && !Array.isArray(plForceTarget)) {
-                targetIndex = plForceTarget.index();
-
-                // 強制限定対象の上書き（ただし、対象が配列なら確定できないため上書きしない）
-            } else if (plForceTargetLimit && !Array.isArray(plForceTargetLimit)) {
-                targetIndex = plForceTargetLimit.index();
-            }
-
-            this.iterateBattler(isActor, subjectIndex, function (battler) {
-                if (!battler.isDeathStateAffected()) {
-                    battler.forceAction(this._params[2], targetIndex);
-                    BattleManager.forceAction(battler);
-                    this.setWaitMode('action');
-                }
-            }.bind(this));
-            return true;
-        }
-
-        // 元処理実行
-        return _Game_Interpreter_command339.apply(this);
-    };
-
-    /**
-     * ●【独自定義】戦闘行動の強制（引数使用）
-     */
-    Game_Interpreter.prototype.forceAction = function (subject, skillId, targetId) {
-        var subjectIsActor = subject.isActor() ? 1 : 0;
-
-        this.iterateBattler(subjectIsActor, subject.index(), function (battler) {
-            if (!battler.isDeathStateAffected()) {
-                battler.forceAction(skillId, targetId);
-                BattleManager.forceAction(battler);
-                this.setWaitMode('action');
-            }
-        }.bind(this));
+  /**
+   * 超強制フラグを考慮した強制状態の判定
+   * 元々のisForcedTurnなどの値を極力変えず、この関数で判定する。
+   */
+  BattleManager.isForceEX = function () {
+    // 戦闘行動の強制の場合
+    if (this.isForcedTurn()) {
+      // 超強制フラグがtrueならば
+      if (plSuperForce == true) {
         return true;
-    };
 
-    /**
-     * ●【独自定義】対象リストが指定されている場合の狙われ率合計を取得する。
+        // 超強制フラグがfalseならば
+      } else if (plSuperForce == false) {
+        return false;
+
+        // 超強制フラグがundefinedのままなら、
+      } else if (plSuperForce == undefined) {
+        // パラメータの設定に従って判定を行う
+        if (paramForceValid) {
+          return false;
+        }
+      }
+    }
+  };
+
+  /**
+   * ●【独自関数】戦闘行動の強制専用の有効判定
+   * ※元のisValid()と異なり、強制時でも使用判定を行う。
+   */
+  Game_Action.prototype.isForceValid = function () {
+    return this.subject().canUse(this.item());
+  };
+
+  /**
+   * ●ターゲットの決定
+   */
+  var _Game_Action_makeTargets = Game_Action.prototype.makeTargets;
+  Game_Action.prototype.makeTargets = function () {
+    // 強制状態でなければ、混乱処理を行う。
+    if (!BattleManager.isForceEX() && this.subject().isConfused()) {
+      return this.repeatTargets([this.confusionTarget()]);
+    }
+
+    return _Game_Action_makeTargets.apply(this);
+  };
+
+  /**
+   * ●次の行動主体を取得
+   */
+  var _BattleManager_getNextSubject = BattleManager.getNextSubject;
+  BattleManager.getNextSubject = function () {
+    // プラグインコマンドから設定した値をクリア（次の行動主体へ引き継がない）
+    plSuperForce = undefined;
+    plForceSubject = undefined;
+    plForceTarget = undefined;
+    plForceTargetLimit = undefined;
+
+    return _BattleManager_getNextSubject.apply(this);
+  };
+
+  /**
+   * ●アクション開始メッセージ＆演出
+   */
+  var _Window_BattleLog_startAction = Window_BattleLog.prototype.startAction;
+  Window_BattleLog.prototype.startAction = function (subject, action, targets) {
+    var item = action.item();
+    // スキルメモ欄に<NoStartAction>が設定されているなら開始演出を省略
+    if (item.meta.NoStartAction) {
+      // アニメーションとウェイトだけを残す
+      this.push("showAnimation", subject, targets.clone(), item.animationId);
+      var numMethods = this._methods.length;
+      if (this._methods.length === numMethods) {
+        this.push("wait");
+      }
+      return;
+    }
+
+    // 元処理実行
+    _Window_BattleLog_startAction.apply(this, arguments);
+  };
+
+  /**
+   * ●戦闘行動の強制
+   */
+  var _Game_Interpreter_command339 = Game_Interpreter.prototype.command339;
+  Game_Interpreter.prototype.command339 = function () {
+    // プラグインコマンドで行動主体や対象の上書きが指定されていた場合
+    if (plForceSubject || plForceTarget || plForceTargetLimit) {
+      var isActor = this._params[0]; // 敵なら0, 味方なら1
+      var subjectIndex = this._params[1]; // 行動主体のインデックス
+      var targetIndex = this._params[3]; // 対象のインデックス
+
+      // 行動主体の上書き
+      if (plForceSubject) {
+        isActor = plForceSubject.isActor() ? 1 : 0;
+        subjectIndex = plForceSubject.index();
+      }
+      // 強制対象の上書き（ただし、対象が配列なら確定できないため上書きしない）
+      if (plForceTarget && !Array.isArray(plForceTarget)) {
+        targetIndex = plForceTarget.index();
+
+        // 強制限定対象の上書き（ただし、対象が配列なら確定できないため上書きしない）
+      } else if (plForceTargetLimit && !Array.isArray(plForceTargetLimit)) {
+        targetIndex = plForceTargetLimit.index();
+      }
+
+      this.iterateBattler(
+        isActor,
+        subjectIndex,
+        function (battler) {
+          if (!battler.isDeathStateAffected()) {
+            battler.forceAction(this._params[2], targetIndex);
+            BattleManager.forceAction(battler);
+            this.setWaitMode("action");
+          }
+        }.bind(this)
+      );
+      return true;
+    }
+
+    // 元処理実行
+    return _Game_Interpreter_command339.apply(this);
+  };
+
+  /**
+   * ●【独自定義】戦闘行動の強制（引数使用）
+   */
+  Game_Interpreter.prototype.forceAction = function (
+    subject,
+    skillId,
+    targetId
+  ) {
+    var subjectIsActor = subject.isActor() ? 1 : 0;
+
+    this.iterateBattler(
+      subjectIsActor,
+      subject.index(),
+      function (battler) {
+        if (!battler.isDeathStateAffected()) {
+          battler.forceAction(skillId, targetId);
+          BattleManager.forceAction(battler);
+          this.setWaitMode("action");
+        }
+      }.bind(this)
+    );
+    return true;
+  };
+
+  /**
+   * ●【独自定義】対象リストが指定されている場合の狙われ率合計を取得する。
+   */
+  Game_Unit.prototype.forceTgrSum = function () {
+    if (Array.isArray(plForceTarget)) {
+      return plForceTarget.reduce(function (r, member) {
+        return r + member.tgr;
+      }, 0);
+    } else if (plForceTargetLimit) {
+      return plForceTargetLimit.reduce(function (r, member) {
+        return r + member.tgr;
+      }, 0);
+    }
+
+    // 取得できなければ普通に返す
+    return this.tgrSum();
+  };
+
+  /**
+   * ●狙われ率を考慮して、ランダムにターゲットを取得する。
+   */
+  var _Game_Unit_randomTarget = Game_Unit.prototype.randomTarget;
+  Game_Unit.prototype.randomTarget = function () {
+    /*
+     * 強制対象リストの指定があれば、そちらで判定を行う。
      */
-    Game_Unit.prototype.forceTgrSum = function () {
-        if (Array.isArray(plForceTarget)) {
-            return plForceTarget.reduce(function (r, member) {
-                return r + member.tgr;
-            }, 0);
-        } else if (plForceTargetLimit) {
-            return plForceTargetLimit.reduce(function (r, member) {
-                return r + member.tgr;
-            }, 0);
+    if (Array.isArray(plForceTarget) || Array.isArray(plForceTargetLimit)) {
+      var tgrRand = Math.random() * this.forceTgrSum();
+      var target = null;
+
+      // 強制対象限定リストが指定されている場合
+      // こちらの場合、該当がなければ対象を返さない。（行動も不発させる）
+      if (Array.isArray(plForceTargetLimit)) {
+        plForceTargetLimit.forEach(function (member) {
+          tgrRand -= member.tgr;
+          if (tgrRand <= 0 && !target) {
+            target = member;
+          }
+        });
+        return target;
+
+        // 強制対象リストが指定されている場合
+      } else if (Array.isArray(plForceTarget)) {
+        plForceTarget.forEach(function (member) {
+          tgrRand -= member.tgr;
+          if (tgrRand <= 0 && !target) {
+            target = member;
+          }
+        });
+        // 対象が取得できた場合だけreturnする。
+        // 取得できなければ通常のターゲット処理に移る。
+        if (target) {
+          return target;
         }
+      }
+    }
 
-        // 取得できなければ普通に返す
-        return this.tgrSum();
-    };
+    // 元処理実行
+    return _Game_Unit_randomTarget.apply(this);
+  };
 
-    /**
-     * ●狙われ率を考慮して、ランダムにターゲットを取得する。
-     */
-    var _Game_Unit_randomTarget = Game_Unit.prototype.randomTarget;
-    Game_Unit.prototype.randomTarget = function () {
-        /*
-         * 強制対象リストの指定があれば、そちらで判定を行う。
-         */
-        if (Array.isArray(plForceTarget) || Array.isArray(plForceTargetLimit)) {
-            var tgrRand = Math.random() * this.forceTgrSum();
-            var target = null;
+  /**
+   * ●ターゲット不能時に補正を行う
+   */
+  var _Game_Unit_smoothTarget = Game_Unit.prototype.smoothTarget;
+  Game_Unit.prototype.smoothTarget = function (index) {
+    if (index < 0) {
+      index = 0;
+    }
 
-            // 強制対象限定リストが指定されている場合
-            // こちらの場合、該当がなければ対象を返さない。（行動も不発させる）
-            if (Array.isArray(plForceTargetLimit)) {
-                plForceTargetLimit.forEach(function (member) {
-                    tgrRand -= member.tgr;
-                    if (tgrRand <= 0 && !target) {
-                        target = member;
-                    }
-                });
-                return target;
+    var member = this.members()[index];
+    // 対象者が健在ならそのまま返す
+    if (member && member.isAlive()) {
+      return member;
+    }
 
-                // 強制対象リストが指定されている場合
-            } else if (Array.isArray(plForceTarget)) {
-                plForceTarget.forEach(function (member) {
-                    tgrRand -= member.tgr;
-                    if (tgrRand <= 0 && !target) {
-                        target = member;
-                    }
-                });
-                // 対象が取得できた場合だけreturnする。
-                // 取得できなければ通常のターゲット処理に移る。
-                if (target) {
-                    return target;
-                }
-            }
+    // 強制限定対象が指定されている場合
+    // 配列とそうでない場合の二通りを想定
+    if (plForceTargetLimit) {
+      // 配列ならば
+      if (Array.isArray(plForceTargetLimit)) {
+        // 強制限定対象リストの中から健在な者を対象に変える
+        member = plForceTargetLimit.find(function (m) {
+          return m.isAlive();
+        });
+
+        if (member) {
+          return member;
         }
+      }
+      // 限定された中から対象を取得できなかったので諦める。
+      return undefined;
 
-        // 元処理実行
-        return _Game_Unit_randomTarget.apply(this);
-    };
+      // 強制対象リストが指定されている場合
+    } else if (Array.isArray(plForceTarget)) {
+      // 強制対象リストの中から健在な者を対象に変える
+      member = plForceTarget.find(function (m) {
+        return m.isAlive();
+      });
 
-    /**
-     * ●ターゲット不能時に補正を行う
-     */
-    var _Game_Unit_smoothTarget = Game_Unit.prototype.smoothTarget;
-    Game_Unit.prototype.smoothTarget = function (index) {
-        if (index < 0) {
-            index = 0;
-        }
+      if (member) {
+        return member;
+      }
+      // それも無理なら元処理実行。
+    }
 
-        var member = this.members()[index];
-        // 対象者が健在ならそのまま返す
-        if (member && member.isAlive()) {
-            return member;
-        }
-
-        // 強制限定対象が指定されている場合
-        // 配列とそうでない場合の二通りを想定
-        if (plForceTargetLimit) {
-            // 配列ならば
-            if (Array.isArray(plForceTargetLimit)) {
-                // 強制限定対象リストの中から健在な者を対象に変える
-                member = plForceTargetLimit.find(function (m) {
-                    return m.isAlive();
-                });
-
-                if (member) {
-                    return member;
-                }
-            }
-            // 限定された中から対象を取得できなかったので諦める。
-            return undefined;
-
-            // 強制対象リストが指定されている場合
-        } else if (Array.isArray(plForceTarget)) {
-            // 強制対象リストの中から健在な者を対象に変える
-            member = plForceTarget.find(function (m) {
-                return m.isAlive();
-            });
-
-            if (member) {
-                return member;
-            }
-            // それも無理なら元処理実行。
-        }
-
-        // 元処理実行
-        return _Game_Unit_smoothTarget.apply(this, arguments);
-    };
-
+    // 元処理実行
+    return _Game_Unit_smoothTarget.apply(this, arguments);
+  };
 })();

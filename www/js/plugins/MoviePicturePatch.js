@@ -11,7 +11,7 @@
  * MoviePicture.js よりも下に読み込んでください。
  */
 (() => {
-  'use strict';
+  "use strict";
 
   const _clearVideo = Sprite_Picture.prototype.clearVideo;
   Sprite_Picture.prototype.clearVideo = function () {

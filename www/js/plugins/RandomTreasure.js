@@ -7,8 +7,8 @@
 /*:
  * @plugindesc ランダム宝箱プラグイン
  * @author kido
- * 
- * 
+ *
+ *
  * @help
  *   ランダムにアイテムを入手できる宝箱を実装するプラグインです。
  *   使い方は下記webページを参照
@@ -17,32 +17,32 @@
  * @param アイテム名格納変数
  * @desc 取得したアイテムの名前を入れる変数
  * @default -1
- * 
+ *
  * @param アイテムアイコン番号格納変数
  * @desc 取得したアイテムのアイコン番号を入れる変数
  * @default -1
- * 
+ *
  * @param アイテムのくじの本数格納変数
  * @desc 取得したアイテムのくじの本数を入れる変数(レア度に応じた演出などに使う)
  * @default -1
  */
 
 (function () {
+  var parameters = PluginManager.parameters("RandomTreasure");
+  var NAME_VAR = Number(parameters["アイテム名格納変数"] || -1);
+  var ICON_VAR = Number(parameters["アイテムアイコン番号格納変数"] || -1);
+  var RATE_VAR = Number(parameters["アイテムのくじの本数格納変数"] || -1);
 
-  var parameters = PluginManager.parameters('RandomTreasure');
-  var NAME_VAR = Number(parameters['アイテム名格納変数'] || -1);
-  var ICON_VAR = Number(parameters['アイテムアイコン番号格納変数'] || -1);
-  var RATE_VAR = Number(parameters['アイテムのくじの本数格納変数'] || -1);
-
-  var _Game_Interpreter_pluginCommand = Game_Interpreter.prototype.pluginCommand;
+  var _Game_Interpreter_pluginCommand =
+    Game_Interpreter.prototype.pluginCommand;
   Game_Interpreter.prototype.pluginCommand = function (command, args) {
     _Game_Interpreter_pluginCommand.call(this, command, args);
-    if (command === 'RandomTreasure') {
+    if (command === "RandomTreasure") {
       switch (args[0]) {
-        case 'reset':
+        case "reset":
           $gameTemp.randomTreasureReset = true;
           break;
-        case 'get':
+        case "get":
           getRandom.call(this);
           break;
       }
@@ -117,7 +117,7 @@
         data.push({
           type: goods[0],
           id: goods[1],
-          rate: goods[2] === 0 ? item.price : goods[3]
+          rate: goods[2] === 0 ? item.price : goods[3],
         });
       }, this);
       $gameSystem.randomTreasures = data;
@@ -125,5 +125,4 @@
     }
     return _command302.call(this);
   };
-
 })();

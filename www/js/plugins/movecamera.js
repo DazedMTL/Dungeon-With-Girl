@@ -1,5 +1,5 @@
 (() => {
-  'use strict';
+  "use strict";
 
   function Spriteset_MoveContainerMixIn(spriteset) {
     const _updatePosition = spriteset.updatePosition;
