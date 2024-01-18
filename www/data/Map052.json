@@ -3281,8 +3281,8 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "替えのパンツを探す",
-                                    "部屋を出る"
+                                    "Look for a change of panties",
+                                    "Leave the room"
                                 ],
                                 1,
                                 0,
@@ -3341,14 +3341,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "おーい、\\n[1]ー！まだ出てこれないのー？"
+                                "Monica: \"Hey, \\N[1]! Can't you come out yet?\""
                             ]
                         },
                         {
@@ -3365,7 +3358,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "宿の外でモニカが大きな声でこちらを呼んでいる。"
+                                "Outside the inn, Monica is calling out loudly for me."
                             ]
                         },
                         {
@@ -3380,7 +3373,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "そろそろ行かないと"
+                                    "We should get going soon"
                                 ],
                                 0,
                                 0,

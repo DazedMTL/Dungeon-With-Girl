@@ -2296,7 +2296,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\#■プレイヤー登録のシナリオをスキップしますか？"
+                                "■Would you like to skip the player registration scenario?"
                             ]
                         },
                         {
@@ -2311,8 +2311,8 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "いいえ"
+                                    "Yes",
+                                    "No"
                                 ],
                                 0,
                                 0,
@@ -2787,7 +2787,7 @@
                             "parameters": [
                                 [
                                     "I am confident in my strengths",
-                                    "If it's about speed, I won't lose",
+                                    "If it's about speed, i won't lose",
                                     "I have been diligent in my studies",
                                     "If luck is considered a strength, then maybe that"
                                 ],
@@ -4371,28 +4371,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\#■治療キットを手に入れた。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "■眠り玉を手に入れた。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "■ビリビリ玉を手に入れた。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "■3000Gを手に入れた。"
+                                "■Obtained Healing Kit. Obtained Sleep Ball. Obtained Shock\nBall. Obtained 3000G."
                             ]
                         },
                         {

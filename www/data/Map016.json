@@ -2958,7 +2958,7 @@
                             "code": 401,
                             "indent": 3,
                             "parameters": [
-                                "However, there doesn't seem to be any particular change. What could\nthis possibly be? For now, I decided to take the orb \\n[1] back with\nme."
+                                "However, there doesn't seem to be any particular change. What could\nthis possibly be? For now, I decided to take the orb \\N[1] back with\nme."
                             ]
                         },
                         {
@@ -3726,9 +3726,9 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "susumu|88|335",
+                                    "Susumu|88|335",
                                     "S_menu|270|335",
-                                    "matinimodoru|456|335"
+                                    "Matinimodoru|456|335"
                                 ],
                                 1,
                                 0,

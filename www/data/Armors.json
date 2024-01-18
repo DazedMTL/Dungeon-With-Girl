@@ -116,7 +116,7 @@
     {
         "id": 5,
         "atypeId": 6,
-        "description": "A sturdy iron shield. While it is sturdy, it is heavy to hold with one hand and\nbecomes vulnerable to attacks. [Weight 8W]",
+        "description": "A sturdy iron shield. While it is sturdy, it is heavy to hold with one\nhand and becomes vulnerable to attacks. [Weight 8W]",
         "etypeId": 2,
         "traits": [
             {
@@ -202,7 +202,7 @@
     {
         "id": 8,
         "atypeId": 5,
-        "description": "A small circular shield made of metal. It has low defense power, but specializes\nin deflecting the opponent's attacks. [Weight 4W]",
+        "description": "A small circular shield made of metal. It has low defense power, but\nspecializes in deflecting the opponent's attacks. [Weight 4W]",
         "etypeId": 2,
         "traits": [
             {
@@ -234,7 +234,7 @@
     {
         "id": 9,
         "atypeId": 5,
-        "description": "A shield made of silver. It has been purified with holy water and has resistance\nagainst attacks from undead monsters. [Weight 6W]",
+        "description": "A shield made of silver. It has been purified with holy water and has\nresistance against attacks from undead monsters. [Weight 6W]",
         "etypeId": 2,
         "traits": [
             {
@@ -271,7 +271,7 @@
     {
         "id": 10,
         "atypeId": 3,
-        "description": "A helmet made of silver. It has been purified with holy water and has resistance\nto attacks from undead monsters. [Weight 5W]",
+        "description": "A helmet made of silver. It has been purified with holy water and has\nresistance to attacks from undead monsters. [Weight 5W]",
         "etypeId": 3,
         "traits": [
             {
@@ -303,7 +303,7 @@
     {
         "id": 11,
         "atypeId": 3,
-        "description": "Armor made of silver. It has been purified with holy water and has resistance to\nattacks from undead monsters. [Weight 8W]",
+        "description": "Armor made of silver. It has been purified with holy water and has\nresistance to attacks from undead monsters. [Weight 8W]",
         "etypeId": 4,
         "traits": [
             {
@@ -335,7 +335,7 @@
     {
         "id": 12,
         "atypeId": 6,
-        "description": "A shield worn by seasoned warriors. Each scar engraved on it tells a story.\n[Weight 8W]",
+        "description": "A shield worn by seasoned warriors. Each scar engraved on it tells a\nstory. [Weight 8W]",
         "etypeId": 2,
         "traits": [
             {
@@ -367,7 +367,7 @@
     {
         "id": 13,
         "atypeId": 1,
-        "description": "A helmet worn by seasoned warriors.\nEach scar engraved on it tells a story. [Weight 8W]",
+        "description": "A helmet worn by seasoned warriors. Each scar engraved on it tells a\nstory. [Weight 8W]",
         "etypeId": 3,
         "traits": [
             {
@@ -394,7 +394,7 @@
     {
         "id": 14,
         "atypeId": 1,
-        "description": "Armor worn by seasoned warriors. Each scar engraved on it tells a story. [Weight\n10W]",
+        "description": "Armor worn by seasoned warriors. Each scar engraved on it tells a\nstory. [Weight 10W]",
         "etypeId": 4,
         "traits": [
             {
@@ -475,7 +475,7 @@
     {
         "id": 17,
         "atypeId": 1,
-        "description": "A shield that is wrapped in a mysterious power of wind. Evasion rate and magic\nreflection rate increase. [Weight 3W]",
+        "description": "A shield that is wrapped in a mysterious power of wind. Evasion rate\nand magic reflection rate increase. [Weight 3W]",
         "etypeId": 2,
         "traits": [
             {
@@ -512,7 +512,7 @@
     {
         "id": 18,
         "atypeId": 1,
-        "description": "A helmet that is wrapped in a mysterious power of wind. Evasion rate and magic\nreflection rate increase. [Weight 1W]",
+        "description": "A helmet that is wrapped in a mysterious power of wind. Evasion rate\nand magic reflection rate increase. [Weight 1W]",
         "etypeId": 3,
         "traits": [
             {
@@ -544,7 +544,7 @@
     {
         "id": 19,
         "atypeId": 1,
-        "description": "Armor that is wrapped in a mysterious power of wind.\nEvasion rate and magic reflection rate are increased. [Weight 5W]",
+        "description": "Armor that is wrapped in a mysterious power of wind. Evasion rate and\nmagic reflection rate are increased. [Weight 5W]",
         "etypeId": 4,
         "traits": [
             {
@@ -576,7 +576,7 @@
     {
         "id": 20,
         "atypeId": 1,
-        "description": "A hat that can make a statement just by wearing it.\nIt strangely irritates others, so equipping it increases the chances\nof being targeted. [Weight 3W]",
+        "description": "A hat that can make a statement just by wearing it. It strangely\nirritates others, so equipping it increases the chances of being\ntargeted. [Weight 3W]",
         "etypeId": 3,
         "traits": [
             {
@@ -603,7 +603,7 @@
     {
         "id": 21,
         "atypeId": 6,
-        "description": "A large shield shaped like a rose.\nIt has the ability to damage the opponent who attacks. [Weight 8W]",
+        "description": "A large shield shaped like a rose. It has the ability to damage the\nopponent who attacks. [Weight 8W]",
         "etypeId": 2,
         "traits": [
             {
@@ -635,7 +635,7 @@
     {
         "id": 22,
         "atypeId": 6,
-        "description": "Stripping off the armor of the Guardian and using it as a shield.\nSignificantly increases defense and resistance to status ailments. [Weight 30W]",
+        "description": "Stripping off the armor of the Guardian and using it as a shield.\nSignificantly increases defense and resistance to status ailments.\n[Weight 30W]",
         "etypeId": 2,
         "traits": [
             {
@@ -727,7 +727,7 @@
     {
         "id": 23,
         "atypeId": 1,
-        "description": "One of the brave warriors who stood up to overthrow the tyrannical\nking was a dancer who received the king's favor.\nEvasion rate and critical hit rate increase. [Weight 1W]",
+        "description": "One of the brave warriors who stood up to overthrow the tyrannical\nking was a dancer who received the king's favor. Evasion rate and\ncritical hit rate increase. [Weight 1W]",
         "etypeId": 5,
         "traits": [
             {
@@ -759,7 +759,7 @@
     {
         "id": 24,
         "atypeId": 1,
-        "description": "One of the brave warriors who stood up to overthrow the tyrannical\nking was a dancer who received favor from the king.\nEvasion rate and critical hit rate increase. [Weight 3W]",
+        "description": "One of the brave warriors who stood up to overthrow the tyrannical\nking was a dancer who received favor from the king. Evasion rate and\ncritical hit rate increase. [Weight 3W]",
         "etypeId": 4,
         "traits": [
             {
@@ -791,7 +791,7 @@
     {
         "id": 25,
         "atypeId": 1,
-        "description": "A large shield made by processing the tough dragon scales.\nEquipping it grants high resistance to all elemental attacks.\n[Weight 10W]",
+        "description": "A large shield made by processing the tough dragon scales. Equipping\nit grants high resistance to all elemental attacks. [Weight 10W]",
         "etypeId": 2,
         "traits": [
             {
@@ -868,7 +868,7 @@
     {
         "id": 26,
         "atypeId": 1,
-        "description": "The woman who once captivated the entire country remained noble\neven after becoming a prisoner. [Weight 5W]",
+        "description": "The woman who once captivated the entire country remained noble even\nafter becoming a prisoner. [Weight 5W]",
         "etypeId": 6,
         "traits": [
             {
@@ -895,7 +895,7 @@
     {
         "id": 27,
         "atypeId": 1,
-        "description": "The woman who once captivated the entire country remained\nnoble even after becoming a prisoner. [Weight 5W]",
+        "description": "The woman who once captivated the entire country remained noble even\nafter becoming a prisoner. [Weight 5W]",
         "etypeId": 7,
         "traits": [
             {
@@ -1084,7 +1084,7 @@
     {
         "id": 34,
         "atypeId": 1,
-        "description": "A ring that causes the world to revolve around oneself and brings good\nluck, like when treasure chests always appear after battle [Weight: 1W]",
+        "description": "A ring that causes the world to revolve around oneself and brings good\nluck, like when treasure chests always appear after battle [Weight:\n1W]",
         "etypeId": 6,
         "traits": [],
         "iconIndex": 159,
@@ -1105,7 +1105,7 @@
     {
         "id": 35,
         "atypeId": 1,
-        "description": "A ring named after a legendary warrior.\nEquipping it greatly increases counterattack rate. [Weight 1W]",
+        "description": "A ring named after a legendary warrior. Equipping it greatly increases\ncounterattack rate. [Weight 1W]",
         "etypeId": 6,
         "traits": [
             {
@@ -1132,7 +1132,7 @@
     {
         "id": 36,
         "atypeId": 1,
-        "description": "The shoes that a devout believer wore during their pilgrimage.\nWhen going down the dungeon, occasionally restores 1AP. [Weight: 1W]",
+        "description": "The shoes that a devout believer wore during their pilgrimage. When\ngoing down the dungeon, occasionally restores 1AP. [Weight: 1W]",
         "etypeId": 7,
         "traits": [
             {
@@ -4380,7 +4380,7 @@
     {
         "id": 148,
         "atypeId": 5,
-        "description": "If a novice adventurer has this, there's no doubt\nit's provided by the guild. [Weight 5W]",
+        "description": "If a novice adventurer has this, there's no doubt it's provided by the\nguild. [Weight 5W]",
         "etypeId": 2,
         "traits": [
             {
@@ -4407,7 +4407,7 @@
     {
         "id": 149,
         "atypeId": 1,
-        "description": "If a novice adventurer has this, there's no doubt\nit's provided by the guild. [Weight 3W]",
+        "description": "If a novice adventurer has this, there's no doubt it's provided by the\nguild. [Weight 3W]",
         "etypeId": 3,
         "traits": [
             {
@@ -4434,7 +4434,7 @@
     {
         "id": 150,
         "atypeId": 1,
-        "description": "If a beginner adventurer has this, there's no doubt\nit's provided by the guild. [Weight 8W]",
+        "description": "If a beginner adventurer has this, there's no doubt it's provided by\nthe guild. [Weight 8W]",
         "etypeId": 4,
         "traits": [
             {

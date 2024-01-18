@@ -4255,7 +4255,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "The white icon represents the remaining number of ejaculations \\n[1].\nThis number decreases by 1 for each ejaculation, and when it reaches\n0, the ecchi part will end forcibly."
+                                "The white icon represents the remaining number of ejaculations \\N[1].\nThis number decreases by 1 for each ejaculation, and when it reaches\n0, the ecchi part will end forcibly."
                             ]
                         },
                         {
@@ -5081,10 +5081,10 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "手こき",
-                                    "en(s[406])乳首なめ手こき",
-                                    "en(s[407])フェラ",
-                                    "en(s[408])パイズリ"
+                                    "Handjob",
+                                    "en(s[406])Nipple licking handjob",
+                                    "en(s[407])Blowjob",
+                                    "en(s[408])Titjob"
                                 ],
                                 -1,
                                 0,
@@ -5370,9 +5370,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "en(s[409])ケツなめ",
-                                    "en(s[410])授乳手こき",
-                                    "もどる"
+                                    "en(s[409])Lick my ass",
+                                    "en(s[410])Breastfeeding handjob",
+                                    "Go back"
                                 ],
                                 -1,
                                 -1,
@@ -5618,14 +5618,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "い、挿れたいのっ？！"
+                                "【Monica】D-Do you want to put it in?!"
                             ]
                         },
                         {
@@ -5642,21 +5635,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "ま、まぁそうなるよね…"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "でもそのぉ…も、もうちょっと段階を踏んでからというか…！"
+                                "【Monica】W-Well, that makes sense... But, um... Maybe we\nshould take it step by step first...!"
                             ]
                         },
                         {
@@ -5689,21 +5668,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "あ、ごめっ…！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "その、嫌とかじゃないんだよ？"
+                                "【Monica】Ah, sorry...! It's not that I don't want to, okay?"
                             ]
                         },
                         {
@@ -5753,12 +5718,12 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "en(s[416])正常位",
-                                    "en(s[411])種付けプレス",
-                                    "en(s[412])後背位",
-                                    "en(s[413])騎乗位",
-                                    "en(s[414])背面騎乗位",
-                                    "en(s[415])アナル"
+                                    "en(s[416])Missionary position",
+                                    "en(s[411])Impregnation press",
+                                    "en(s[412])Doggy style",
+                                    "en(s[413])Cowgirl position",
+                                    "en(s[414])Reverse cowgirl position",
+                                    "en(s[415])Anal"
                                 ],
                                 -1,
                                 0,
@@ -9879,7 +9844,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "The white icon represents the remaining ejaculation count \\n[1]. This\nnumber decreases by 1 for each ejaculation, and when it reaches 0, the\necchi part will end forcibly."
+                                "The white icon represents the remaining ejaculation count \\N[1]. This\nnumber decreases by 1 for each ejaculation, and when it reaches 0, the\necchi part will end forcibly."
                             ]
                         },
                         {
@@ -10665,10 +10630,10 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "手こき",
-                                    "乳首なめ手こき",
-                                    "フェラ",
-                                    "パイズリ"
+                                    "Handjob",
+                                    "Nipple licking handjob",
+                                    "Blowjob",
+                                    "Titjob"
                                 ],
                                 -1,
                                 0,
@@ -11148,9 +11113,9 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Missionary Position",
-                                    "Mating Press",
-                                    "Doggy Style",
+                                    "Missionary position",
+                                    "Mating press",
+                                    "Doggy style",
                                     "Cowgirl position",
                                     "Reverse cowgirl position",
                                     "Anal"

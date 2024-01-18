@@ -2840,7 +2840,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "…はぁはぁ、限界だ…"
+                                "...hah hah, I'm at my limit..."
                             ]
                         },
                         {
@@ -2947,21 +2947,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【モニカ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "も、もうだめ～。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "休ませてぇ…"
+                                "Monica: No, I can't anymore~ Let me rest..."
                             ]
                         },
                         {
@@ -2995,11 +2981,11 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "擦ってもらう",
-                                    "en(v[171]>=1)声をかける",
-                                    "en(s[378])射精する",
-                                    "やめる",
-                                    "もどる"
+                                    "Rub it for me",
+                                    "en(v[171]>=1)Call out to her",
+                                    "en(s[378])I'm going to cum",
+                                    "Stop",
+                                    "Go back"
                                 ],
                                 -1,
                                 0,

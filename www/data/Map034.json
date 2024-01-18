@@ -2407,12 +2407,12 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "hosi1toubatu|61|225",
-                                    "hosi3toubatu|216|225",
-                                    "hosi1atumeru|369|225",
-                                    "hosi1atumeru|61|375",
-                                    "torikesu|216|375",
-                                    "iraimodoru|369|375"
+                                    "Hosi1toubatu|61|225",
+                                    "Hosi3toubatu|216|225",
+                                    "Hosi1atumeru|369|225",
+                                    "Hosi1atumeru|61|375",
+                                    "Torikesu|216|375",
+                                    "Iraimodoru|369|375"
                                 ],
                                 5,
                                 0,
@@ -2644,7 +2644,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -2916,7 +2916,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -3188,7 +3188,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -3460,7 +3460,7 @@
                             "indent": 3,
                             "parameters": [
                                 [
-                                    "…You need to complete the previous request first"
+                                    "…you need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -3922,12 +3922,12 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "hosi2toubatu|61|225",
-                                    "hosi3toubatu|216|225",
-                                    "hosi2sagasu|369|225",
-                                    "hosi2atumeru|61|375",
-                                    "torikesu|216|375",
-                                    "iraimodoru|369|375"
+                                    "Hosi2toubatu|61|225",
+                                    "Hosi3toubatu|216|225",
+                                    "Hosi2sagasu|369|225",
+                                    "Hosi2atumeru|61|375",
+                                    "Torikesu|216|375",
+                                    "Iraimodoru|369|375"
                                 ],
                                 5,
                                 0,
@@ -4159,7 +4159,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -4431,7 +4431,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -4703,7 +4703,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -4975,7 +4975,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -5491,12 +5491,12 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "hosi2toubatu|61|225",
-                                    "hosi3toubatu|216|225",
-                                    "hosi3sagasu|369|225",
-                                    "hosi3sagasu|61|375",
-                                    "torikesu|216|375",
-                                    "iraimodoru|369|375"
+                                    "Hosi2toubatu|61|225",
+                                    "Hosi3toubatu|216|225",
+                                    "Hosi3sagasu|369|225",
+                                    "Hosi3sagasu|61|375",
+                                    "Torikesu|216|375",
+                                    "Iraimodoru|369|375"
                                 ],
                                 5,
                                 0,
@@ -5728,7 +5728,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -6000,7 +6000,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -6272,7 +6272,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,
@@ -6544,7 +6544,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "…I need to complete the previous request first"
+                                    "…i need to complete the previous request first"
                                 ],
                                 0,
                                 0,

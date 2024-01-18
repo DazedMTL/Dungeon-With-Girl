@@ -2364,21 +2364,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "\\#■\\n[1]がケガレに侵されるイベント後まで"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "　スキップしますか？"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "　※2日目の昼になります。"
+                                "■Would you like to skip to the event after \\N[1] is afflicted\nby the Kegare?※It will become noon on the second day."
                             ]
                         },
                         {
@@ -2386,8 +2372,8 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "はい",
-                                    "いいえ"
+                                    "Yes",
+                                    "No"
                                 ],
                                 -1,
                                 0,
@@ -5037,21 +5023,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "そういえばさっきお客さんが気になることを言ってたな。"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "出かける前に話を聞いてみたらどうだ？"
+                                "Innkeeper: \"Come to think of it, a customer mentioned\nsomething interesting earlier. Why don't you have a chat\nbefore heading out?\""
                             ]
                         },
                         {
@@ -5094,14 +5066,7 @@
                             "code": 401,
                             "indent": 0,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 0,
-                            "parameters": [
-                                "よう、どうするね？"
+                                "Innkeeper: \"Hey, what will you do?\""
                             ]
                         },
                         {
@@ -5116,10 +5081,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "自室へ",
-                                    "if(s[289])モニカの部屋へ",
-                                    "客に話を聞く",
-                                    "宿屋を去る"
+                                    "To my room",
+                                    "if(s[289])To monica's room",
+                                    "Ask the guest",
+                                    "Leave the inn"
                                 ],
                                 3,
                                 0,
@@ -5200,7 +5165,7 @@
                             "indent": 2,
                             "parameters": [
                                 [
-                                    "（そろそろモニカのところへ行かないと…。）"
+                                    "(i should head over to monica's place soon)"
                                 ],
                                 0,
                                 0,
@@ -5371,21 +5336,7 @@
                             "code": 401,
                             "indent": 2,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "気持ちはわかるが、まずは情報収集！"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 2,
-                            "parameters": [
-                                "基本だぞ。"
+                                "Innkeeper: \"I understand how you feel, but first things\nfirst – gather information! It's fundamental.\""
                             ]
                         },
                         {
@@ -5419,14 +5370,7 @@
                             "code": 401,
                             "indent": 1,
                             "parameters": [
-                                "【宿屋のおやじ】"
-                            ]
-                        },
-                        {
-                            "code": 401,
-                            "indent": 1,
-                            "parameters": [
-                                "ほい、がんばってな！"
+                                "Innkeeper: \"Alright, good luck!\""
                             ]
                         },
                         {

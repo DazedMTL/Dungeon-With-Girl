@@ -12,7 +12,7 @@
     {
         "id": 2,
         "expanded": false,
-        "name": "イベントテスト部屋",
+        "name": "Event Test Room",
         "order": 28,
         "parentId": 0,
         "scrollX": 819,
@@ -21,7 +21,7 @@
     {
         "id": 3,
         "expanded": true,
-        "name": "ＩＮＮ",
+        "name": "INN",
         "order": 4,
         "parentId": 0,
         "scrollX": 819,
@@ -39,7 +39,7 @@
     {
         "id": 5,
         "expanded": true,
-        "name": "ダンジョン01F~05F",
+        "name": "Dungeon 01F~05F",
         "order": 18,
         "parentId": 0,
         "scrollX": 819,
@@ -57,7 +57,7 @@
     {
         "id": 7,
         "expanded": true,
-        "name": "訓練場",
+        "name": "Training Grounds",
         "order": 25,
         "parentId": 0,
         "scrollX": 819,
@@ -66,7 +66,7 @@
     {
         "id": 8,
         "expanded": true,
-        "name": "オープニング",
+        "name": "Opening",
         "order": 22,
         "parentId": 0,
         "scrollX": 832,
@@ -84,7 +84,7 @@
     {
         "id": 10,
         "expanded": true,
-        "name": "メインマップ",
+        "name": "Main Map",
         "order": 23,
         "parentId": 0,
         "scrollX": 819,
@@ -93,7 +93,7 @@
     {
         "id": 11,
         "expanded": false,
-        "name": "メインマップ夜",
+        "name": "Main Map Night",
         "order": 24,
         "parentId": 10,
         "scrollX": 819,
@@ -120,7 +120,7 @@
     {
         "id": 14,
         "expanded": false,
-        "name": "エンディング(ノーマル)",
+        "name": "Ending (Normal)",
         "order": 26,
         "parentId": 0,
         "scrollX": 819,
@@ -138,7 +138,7 @@
     {
         "id": 16,
         "expanded": true,
-        "name": "黄金の間",
+        "name": "The Golden Chamber",
         "order": 49,
         "parentId": 0,
         "scrollX": 819,
@@ -156,7 +156,7 @@
     {
         "id": 18,
         "expanded": true,
-        "name": "メインエッチ",
+        "name": "Main H-scene",
         "order": 29,
         "parentId": 0,
         "scrollX": 819,
@@ -165,7 +165,7 @@
     {
         "id": 19,
         "expanded": false,
-        "name": "裏道",
+        "name": "Back alley",
         "order": 50,
         "parentId": 0,
         "scrollX": 819,
@@ -174,7 +174,7 @@
     {
         "id": 20,
         "expanded": false,
-        "name": "正常位",
+        "name": "Missionary position",
         "order": 31,
         "parentId": 24,
         "scrollX": 539.5,
@@ -183,7 +183,7 @@
     {
         "id": 21,
         "expanded": false,
-        "name": "後背位",
+        "name": "Doggy style",
         "order": 32,
         "parentId": 24,
         "scrollX": 516.5,
@@ -192,7 +192,7 @@
     {
         "id": 22,
         "expanded": false,
-        "name": "騎乗位",
+        "name": "Cowgirl position",
         "order": 33,
         "parentId": 24,
         "scrollX": 567,
@@ -201,7 +201,7 @@
     {
         "id": 23,
         "expanded": false,
-        "name": "挿入アナル",
+        "name": "Insertion Anal",
         "order": 34,
         "parentId": 24,
         "scrollX": 516.5,
@@ -210,7 +210,7 @@
     {
         "id": 24,
         "expanded": true,
-        "name": "挿入",
+        "name": "Insertion",
         "order": 30,
         "parentId": 18,
         "scrollX": 819,
@@ -219,7 +219,7 @@
     {
         "id": 25,
         "expanded": true,
-        "name": "奉仕",
+        "name": "Service",
         "order": 37,
         "parentId": 18,
         "scrollX": 819,
@@ -228,7 +228,7 @@
     {
         "id": 26,
         "expanded": false,
-        "name": "フェラ",
+        "name": "Blowjob",
         "order": 38,
         "parentId": 25,
         "scrollX": 832,
@@ -237,7 +237,7 @@
     {
         "id": 27,
         "expanded": false,
-        "name": "テコキ",
+        "name": "Handjob",
         "order": 39,
         "parentId": 25,
         "scrollX": 819,
@@ -246,7 +246,7 @@
     {
         "id": 28,
         "expanded": false,
-        "name": "けつなめ",
+        "name": "Rimjob",
         "order": 42,
         "parentId": 25,
         "scrollX": 819,
@@ -255,7 +255,7 @@
     {
         "id": 29,
         "expanded": false,
-        "name": "さわる",
+        "name": "Touch",
         "order": 44,
         "parentId": 18,
         "scrollX": 819,
@@ -264,7 +264,7 @@
     {
         "id": 30,
         "expanded": false,
-        "name": "おまんこ",
+        "name": "pussy",
         "order": 45,
         "parentId": 29,
         "scrollX": 542.5,
@@ -273,7 +273,7 @@
     {
         "id": 31,
         "expanded": false,
-        "name": "アナル",
+        "name": "anal",
         "order": 46,
         "parentId": 29,
         "scrollX": 819,
@@ -282,7 +282,7 @@
     {
         "id": 32,
         "expanded": false,
-        "name": "おっぱい",
+        "name": "boobs",
         "order": 47,
         "parentId": 29,
         "scrollX": 832,
@@ -291,7 +291,7 @@
     {
         "id": 33,
         "expanded": false,
-        "name": "キス",
+        "name": "Kiss",
         "order": 48,
         "parentId": 18,
         "scrollX": 819,
@@ -309,7 +309,7 @@
     {
         "id": 35,
         "expanded": true,
-        "name": "ダンジョン16F~25F",
+        "name": "Dungeon 16F~25F",
         "order": 20,
         "parentId": 5,
         "scrollX": 832,
@@ -372,7 +372,7 @@
     {
         "id": 42,
         "expanded": true,
-        "name": "ダンジョン06F~15F",
+        "name": "Dungeon 06F~15F",
         "order": 19,
         "parentId": 5,
         "scrollX": 832,
@@ -381,7 +381,7 @@
     {
         "id": 43,
         "expanded": false,
-        "name": "ダンジョン26F~30F",
+        "name": "Dungeon 26F~30F",
         "order": 21,
         "parentId": 5,
         "scrollX": 819,
@@ -399,7 +399,7 @@
     {
         "id": 45,
         "expanded": false,
-        "name": "パイズリ",
+        "name": "Titjob",
         "order": 40,
         "parentId": 25,
         "scrollX": 832,
@@ -408,7 +408,7 @@
     {
         "id": 46,
         "expanded": false,
-        "name": "背面騎乗位",
+        "name": "Reverse cowgirl position",
         "order": 35,
         "parentId": 24,
         "scrollX": 539.5,
@@ -417,7 +417,7 @@
     {
         "id": 47,
         "expanded": false,
-        "name": "授乳手コキ",
+        "name": "Breastfeeding Handjob",
         "order": 41,
         "parentId": 25,
         "scrollX": 832,
@@ -426,7 +426,7 @@
     {
         "id": 48,
         "expanded": false,
-        "name": "種付けプレス",
+        "name": "Breeding Press",
         "order": 36,
         "parentId": 24,
         "scrollX": 539.5,
@@ -435,7 +435,7 @@
     {
         "id": 49,
         "expanded": false,
-        "name": "経由部屋",
+        "name": "Through Room",
         "order": 51,
         "parentId": 0,
         "scrollX": 819,
@@ -444,7 +444,7 @@
     {
         "id": 50,
         "expanded": true,
-        "name": "回想部屋",
+        "name": "Memory Room",
         "order": 52,
         "parentId": 0,
         "scrollX": 819,
@@ -453,7 +453,7 @@
     {
         "id": 51,
         "expanded": false,
-        "name": "回想部屋夜",
+        "name": "Recollection Room at Night",
         "order": 53,
         "parentId": 50,
         "scrollX": 819,
@@ -462,7 +462,7 @@
     {
         "id": 52,
         "expanded": false,
-        "name": "モニカの部屋",
+        "name": "Monica's Room",
         "order": 17,
         "parentId": 3,
         "scrollX": 819,
@@ -471,7 +471,7 @@
     {
         "id": 53,
         "expanded": false,
-        "name": "乳首舐めながら手こき",
+        "name": "Licking nipples while giving a handjob",
         "order": 43,
         "parentId": 25,
         "scrollX": 819,

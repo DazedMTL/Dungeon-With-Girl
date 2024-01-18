@@ -102,7 +102,7 @@
     {
         "id": 4,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nOccasionally causes the opponent to faint. [Weight 10W]",
+        "description": "Weapon that attacks with the weight of an iron lump attached to the\ntip. Occasionally causes the opponent to faint. [Weight 10W]",
         "etypeId": 1,
         "traits": [
             {
@@ -140,7 +140,7 @@
     {
         "id": 5,
         "animationId": 6,
-        "description": "Lightweight weapon that is easy to handle even for women. Rarely causes the\nopponent to bleed. [Weight 3W]",
+        "description": "Lightweight weapon that is easy to handle even for women. Rarely\ncauses the opponent to bleed. [Weight 3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -221,7 +221,7 @@
     {
         "id": 7,
         "animationId": 6,
-        "description": "A sword believed to have been used by ancient warriors. Depending on its\ncondition, it may be sharper than weapons made in recent years. [Weight 8W]",
+        "description": "A sword believed to have been used by ancient warriors. Depending on\nits condition, it may be sharper than weapons made in recent years.\n[Weight 8W]",
         "etypeId": 1,
         "traits": [
             {
@@ -254,7 +254,7 @@
     {
         "id": 8,
         "animationId": 6,
-        "description": "It has more of an aspect of being an art piece rather than a weapon. Luck\nincreases. [Weight 5W]",
+        "description": "It has more of an aspect of being an art piece rather than a weapon.\nLuck increases. [Weight 5W]",
         "etypeId": 1,
         "traits": [
             {
@@ -287,7 +287,7 @@
     {
         "id": 9,
         "animationId": 8,
-        "description": "A sword with a legend that the god who controls fire used to wield. It sets the\nopponent on fire when attacking. [Weight 15W]",
+        "description": "A sword with a legend that the god who controls fire used to wield. It\nsets the opponent on fire when attacking. [Weight 15W]",
         "etypeId": 1,
         "traits": [
             {
@@ -335,7 +335,7 @@
     {
         "id": 10,
         "animationId": 7,
-        "description": "A sword that unleashes immense attacking power through the power of a curse. In\nexchange for its attacking power, it loses the ability to emit light and move\nfreely. [Weight 25W]",
+        "description": "A sword that unleashes immense attacking power through the power of a\ncurse. In exchange for its attacking power, it loses the ability to\nemit light and move freely. [Weight 25W]",
         "etypeId": 1,
         "traits": [
             {
@@ -378,7 +378,7 @@
     {
         "id": 11,
         "animationId": 6,
-        "description": "A short sword that brings various negative effects to the opponent. [Weight 3W]",
+        "description": "A short sword that brings various negative effects to the opponent.\n[Weight 3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -461,7 +461,7 @@
     {
         "id": 12,
         "animationId": 6,
-        "description": "A sword made of a very rare metal. Even great people who left their names in\nhistory used to love it. [Weight 8W]",
+        "description": "A sword made of a very rare metal. Even great people who left their\nnames in history used to love it. [Weight 8W]",
         "etypeId": 1,
         "traits": [
             {
@@ -494,7 +494,7 @@
     {
         "id": 13,
         "animationId": 1,
-        "description": "A deadly weapon with spikes added to the tip for extra lethality. It can cause\nboth unconsciousness and damage from bleeding. [Weight 15W]",
+        "description": "A deadly weapon with spikes added to the tip for extra lethality. It\ncan cause both unconsciousness and damage from bleeding. [Weight 15W]",
         "etypeId": 1,
         "traits": [
             {
@@ -537,7 +537,7 @@
     {
         "id": 14,
         "animationId": 6,
-        "description": "A sharp and polished dagger that combines lightness and strength. Rarely causes\nthe opponent to bleed. [Weight 3W]",
+        "description": "A sharp and polished dagger that combines lightness and strength.\nRarely causes the opponent to bleed. [Weight 3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -623,7 +623,7 @@
     {
         "id": 16,
         "animationId": 11,
-        "description": "A bone-made club stained red with blood. It boasts high power, but is cursed\nwith the ability to decrease health every turn. [Weight 15W]",
+        "description": "A bone-made club stained red with blood. It boasts high power, but is\ncursed with the ability to decrease health every turn. [Weight 15W]",
         "etypeId": 1,
         "traits": [
             {
@@ -671,7 +671,7 @@
     {
         "id": 17,
         "animationId": 6,
-        "description": "A weapon widely used from beginners to veterans. Supplied by the guild. [Weight\n5W]",
+        "description": "A weapon widely used from beginners to veterans. Supplied by the\nguild. [Weight 5W]",
         "etypeId": 1,
         "traits": [
             {
@@ -704,7 +704,7 @@
     {
         "id": 18,
         "animationId": 6,
-        "description": "A weapon that can deal significant damage to undead enemies. [Weight 8W]",
+        "description": "A weapon that can deal significant damage to undead enemies. [Weight\n8W]",
         "etypeId": 1,
         "traits": [
             {
@@ -742,7 +742,7 @@
     {
         "id": 19,
         "animationId": 6,
-        "description": "A sword with a mysterious pattern engraved on the blade. The pattern faintly\nemits light and makes a crackling sound. [Weight 10W]",
+        "description": "A sword with a mysterious pattern engraved on the blade. The pattern\nfaintly emits light and makes a crackling sound. [Weight 10W]",
         "etypeId": 1,
         "traits": [
             {
@@ -775,7 +775,7 @@
     {
         "id": 20,
         "animationId": 0,
-        "description": "Infantry carry a large dagger for auxiliary use. Unusually, the dagger also\nprovides a slight increase in defense. [Weight 3W]",
+        "description": "Infantry carry a large dagger for auxiliary use. Unusually, the dagger\nalso provides a slight increase in defense. [Weight 3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -823,7 +823,7 @@
     {
         "id": 21,
         "animationId": 10,
-        "description": "The legendary sword said to have been carried by an ancient king. A single\nstrike released from the blue shining blade delivers judgment to multiple\nopponents. [Weight 8W]",
+        "description": "The legendary sword said to have been carried by an ancient king. A\nsingle strike released from the blue shining blade delivers judgment\nto multiple opponents. [Weight 8W]",
         "etypeId": 1,
         "traits": [
             {
@@ -866,7 +866,7 @@
     {
         "id": 22,
         "animationId": 1,
-        "description": "A weapon that combines offense and defense. Although its attack power is low,\nits counterattack rate is high, making it truly effective in battles against\nmultiple opponents. [Weight 3W]",
+        "description": "A weapon that combines offense and defense. Although its attack power\nis low, its counterattack rate is high, making it truly effective in\nbattles against multiple opponents. [Weight 3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -919,7 +919,7 @@
     {
         "id": 23,
         "animationId": 97,
-        "description": "A weapon made from the head of a Guardian. Although it has lost its power\nsource, its eyes continue to faintly glow. [Weight: 15W]",
+        "description": "A weapon made from the head of a Guardian. Although it has lost its\npower source, its eyes continue to faintly glow. [Weight: 15W]",
         "etypeId": 1,
         "traits": [
             {
@@ -962,7 +962,7 @@
     {
         "id": 24,
         "animationId": 12,
-        "description": "One of the brave warriors who stood up to overthrow the tyrannical king was a\ndancer who received favor from the king. Evasion rate and critical hit rate\nincrease. [Weight 3W]",
+        "description": "One of the brave warriors who stood up to overthrow the tyrannical\nking was a dancer who received favor from the king. Evasion rate and\ncritical hit rate increase. [Weight 3W]",
         "etypeId": 1,
         "traits": [
             {
@@ -1015,7 +1015,7 @@
     {
         "id": 25,
         "animationId": 2,
-        "description": "The fallen enemy's armor becomes distorted and unusable, hence earning this\nnickname. It reduces the opponent's physical resistance. [Weight 15W]",
+        "description": "The fallen enemy's armor becomes distorted and unusable, hence earning\nthis nickname. It reduces the opponent's physical resistance. [Weight\n15W]",
         "etypeId": 1,
         "traits": [
             {
@@ -1058,7 +1058,7 @@
     {
         "id": 26,
         "animationId": 7,
-        "description": "The great sword that the orc had. It can mow down multiple opponents at once,\nbut it is thick and very heavy, so it can only be wielded with both hands.\n[Weight 30W]",
+        "description": "The great sword that the orc had. It can mow down multiple opponents\nat once, but it is thick and very heavy, so it can only be wielded\nwith both hands. [Weight 30W]",
         "etypeId": 1,
         "traits": [
             {
@@ -2620,7 +2620,7 @@
     {
         "id": 75,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\MD].",
+        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons\nwith durability value [\\D] / [\\MD].",
         "etypeId": 1,
         "traits": [
             {
@@ -2653,7 +2653,7 @@
     {
         "id": 76,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\MD]",
+        "description": "Weapon that attacks with the weight of an iron lump attached to the\ntip. Durability [\\D] / [\\MD]",
         "etypeId": 1,
         "traits": [
             {
@@ -2691,7 +2691,7 @@
     {
         "id": 77,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability\n[\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -2762,7 +2762,7 @@
     {
         "id": 79,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons\nwith durability value [\\D] / [\\WD].",
         "etypeId": 1,
         "traits": [
             {
@@ -2795,7 +2795,7 @@
     {
         "id": 80,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "Weapon that attacks with the weight of an iron lump attached to the\ntip. Durability [\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -2833,7 +2833,7 @@
     {
         "id": 81,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability\n[\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -2904,7 +2904,7 @@
     {
         "id": 83,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons\nwith durability value [\\D] / [\\WD].",
         "etypeId": 1,
         "traits": [
             {
@@ -2937,7 +2937,7 @@
     {
         "id": 84,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "Weapon that attacks with the weight of an iron lump attached to the\ntip. Durability [\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -2975,7 +2975,7 @@
     {
         "id": 85,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability\n[\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -3046,7 +3046,7 @@
     {
         "id": 87,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons\nwith durability value [\\D] / [\\WD].",
         "etypeId": 1,
         "traits": [
             {
@@ -3079,7 +3079,7 @@
     {
         "id": 88,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "Weapon that attacks with the weight of an iron lump attached to the\ntip. Durability [\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -3117,7 +3117,7 @@
     {
         "id": 89,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability\n[\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -3188,7 +3188,7 @@
     {
         "id": 91,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons\nwith durability value [\\D] / [\\WD].",
         "etypeId": 1,
         "traits": [
             {
@@ -3221,7 +3221,7 @@
     {
         "id": 92,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "Weapon that attacks with the weight of an iron lump attached to the\ntip. Durability [\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -3259,7 +3259,7 @@
     {
         "id": 93,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability\n[\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -3330,7 +3330,7 @@
     {
         "id": 95,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons\nwith durability value [\\D] / [\\WD].",
         "etypeId": 1,
         "traits": [
             {
@@ -3363,7 +3363,7 @@
     {
         "id": 96,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "Weapon that attacks with the weight of an iron lump attached to the\ntip. Durability [\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -3401,7 +3401,7 @@
     {
         "id": 97,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability\n[\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -3472,7 +3472,7 @@
     {
         "id": 99,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons\nwith durability value [\\D] / [\\WD].",
         "etypeId": 1,
         "traits": [
             {
@@ -3505,7 +3505,7 @@
     {
         "id": 100,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "Weapon that attacks with the weight of an iron lump attached to the\ntip. Durability [\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -3543,7 +3543,7 @@
     {
         "id": 101,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability\n[\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -3614,7 +3614,7 @@
     {
         "id": 103,
         "animationId": 6,
-        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons with\ndurability value [\\D] / [\\WD].",
+        "description": "Skilled adventurers and soldiers of the kingdom prefer to use weapons\nwith durability value [\\D] / [\\WD].",
         "etypeId": 1,
         "traits": [
             {
@@ -3647,7 +3647,7 @@
     {
         "id": 104,
         "animationId": 1,
-        "description": "Weapon that attacks with the weight of an iron lump attached to the tip.\nDurability [\\D] / [\\WD]",
+        "description": "Weapon that attacks with the weight of an iron lump attached to the\ntip. Durability [\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {
@@ -3685,7 +3685,7 @@
     {
         "id": 105,
         "animationId": 6,
-        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability [\\D] /\n[\\WD]",
+        "description": "Lightweight and easy-to-handle weapon, suitable for women. Durability\n[\\D] / [\\WD]",
         "etypeId": 1,
         "traits": [
             {

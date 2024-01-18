@@ -1133,11 +1133,11 @@
         "basic": [
             "Level",
             "Lv",
-            "ＨＰ",
             "HP",
-            "ＭＰ",
+            "HP",
             "MP",
-            "ＴＰ",
+            "MP",
+            "TP",
             "TP",
             "Experience Points",
             "EXP"
@@ -1201,7 +1201,7 @@
             "criticalToActor": "A painful blow!!",
             "criticalToEnemy": "An excellent hit!!",
             "debuffAdd": "%1's %2 went down!",
-            "defeat": "%1 was defeated.",
+            "defeat": "%1 was defeated",
             "emerge": "%1 emerged!",
             "enemyDamage": "%1 took %2 damage!",
             "enemyDrain": "%1 was drained of %2 %3!",

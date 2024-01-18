@@ -11,7 +11,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Essential for adventures.\nRestores 30% of the HP for allies and oneself. [Weight 10W]",
+        "description": "Essential for adventures. Restores 30% of the HP for allies and\noneself. [Weight 10W]",
         "effects": [
             {
                 "code": 11,
@@ -168,7 +168,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Open the gate to escape from the dungeon. Single use.\nIt's difficult to go back without one. [Weight: 10W]",
+        "description": "Open the gate to escape from the dungeon. Single use. It's difficult\nto go back without one. [Weight: 10W]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 71,
@@ -402,7 +402,7 @@
             "type": 1,
             "variance": 20
         },
-        "description": "Tradeable item. When used during battle,\nit can also deal damage to all enemies. [Weight 8W]",
+        "description": "Tradeable item. When used during battle, it can also deal damage to\nall enemies. [Weight 8W]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 210,
@@ -428,7 +428,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Moss found inside the dungeon. Using it will\nslightly restore your health. [Weight 5W]",
+        "description": "Moss found inside the dungeon. Using it will slightly restore your\nhealth. [Weight 5W]",
         "effects": [
             {
                 "code": 11,
@@ -461,7 +461,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "When used during battle, it has a high chance\nof putting the opponent to sleep. [Weight 5W]",
+        "description": "When used during battle, it has a high chance of putting the opponent\nto sleep. [Weight 5W]",
         "effects": [
             {
                 "code": 21,
@@ -494,7 +494,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "It can paralyze the opponent with a high probability when used during battle.\n[Weight 5W]",
+        "description": "It can paralyze the opponent with a high probability when used during\nbattle. [Weight 5W]",
         "effects": [
             {
                 "code": 21,
@@ -527,7 +527,7 @@
             "type": 1,
             "variance": 0
         },
-        "description": "When you ring this during battle, the members of\nthe guild will come running to help. [Weight 5W]",
+        "description": "When you ring this during battle, the members of the guild will come\nrunning to help. [Weight 5W]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 203,
@@ -553,7 +553,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "An item created by mixing various things.\nFlashes with intense light, blinding the opponent. [Weight 5W]",
+        "description": "An item created by mixing various things. Flashes with intense light,\nblinding the opponent. [Weight 5W]",
         "effects": [
             {
                 "code": 21,
@@ -586,7 +586,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A check of very very mysterious origin.\nIncreases the amount of money you possess after use.",
+        "description": "A check of very very mysterious origin. Increases the amount of money\nyou possess after use.",
         "effects": [
             {
                 "code": 44,
@@ -652,7 +652,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "It's reassuring to hold onto it so you don't drop your item.\n[Weight 10W]",
+        "description": "It's reassuring to hold onto it so you don't drop your item. [Weight\n10W]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 216,
@@ -711,7 +711,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Grass that can be found inside dungeons. When used in battle, it can put one\nenemy to sleep. [Weight 5W]",
+        "description": "Grass that can be found inside dungeons. When used in battle, it can\nput one enemy to sleep. [Weight 5W]",
         "effects": [
             {
                 "code": 21,
@@ -744,7 +744,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Grass that can be found inside dungeons.\nWhen used during battle, it can paralyze one enemy.\n[Weight 5W]",
+        "description": "Grass that can be found inside dungeons. When used during battle, it\ncan paralyze one enemy. [Weight 5W]",
         "effects": [
             {
                 "code": 21,
@@ -777,7 +777,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Grass that can be found inside dungeons. When used during battle, it can inflict\nthe poison status on one enemy. [Weight 5W]",
+        "description": "Grass that can be found inside dungeons. When used during battle, it\ncan inflict the poison status on one enemy. [Weight 5W]",
         "effects": [
             {
                 "code": 21,
@@ -810,7 +810,7 @@
             "type": 3,
             "variance": 20
         },
-        "description": "Grass that can be found inside the dungeon. Using it restores 2 action points.\n[Weight 5W]",
+        "description": "Grass that can be found inside the dungeon. Using it restores 2 action\npoints. [Weight 5W]",
         "effects": [
             {
                 "code": 44,
@@ -843,7 +843,7 @@
             "type": 3,
             "variance": 0
         },
-        "description": "Fizz! Fizz! A carbonated beverage loved all over the world. Drinking it restores\nenergy and stamina. [Weight 5W]",
+        "description": "Fizz! Fizz! A carbonated beverage loved all over the world. Drinking\nit restores energy and stamina. [Weight 5W]",
         "effects": [
             {
                 "code": 44,
@@ -876,7 +876,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A medicine that neutralizes poison circulating in the bodies of allies and\noneself. [Weight: 5W]",
+        "description": "A medicine that neutralizes poison circulating in the bodies of allies\nand oneself. [Weight: 5W]",
         "effects": [
             {
                 "code": 22,
@@ -935,7 +935,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A mysterious fruit that fills you with overflowing power just by eating it.\nIncreases the maximum value of action points by 1. [Weight: 3W]",
+        "description": "A mysterious fruit that fills you with overflowing power just by\neating it. Increases the maximum value of action points by 1. [Weight:\n3W]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 262,
@@ -961,7 +961,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Fresh breast milk. Drinking it restores 1 action point and fully restores\nstamina. With overflowing maternal instinct, your stats also increase. [Weight:\n2W]",
+        "description": "Fresh breast milk. Drinking it restores 1 action point and fully\nrestores stamina. With overflowing maternal instinct, your stats also\nincrease. [Weight: 2W]",
         "effects": [
             {
                 "code": 11,
@@ -1036,7 +1036,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Ancient Wisdom. An item that temporarily develops the mammary glands and\nsecretes breast milk. When Monica is asleep...? [Weight 10W]",
+        "description": "Ancient Wisdom. An item that temporarily develops the mammary glands\nand secretes breast milk. When Monica is asleep...? [Weight 10W]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 84,
@@ -1062,7 +1062,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "An item that stops intruders.\nIt's poorly made and easily breakable. [Weight: 3W]",
+        "description": "An item that stops intruders. It's poorly made and easily breakable.\n[Weight: 3W]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 195,
@@ -1088,7 +1088,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "An item that protects your precious money.\nWhen you have it, your money will not be stolen. [Weight 60W]",
+        "description": "An item that protects your precious money. When you have it, your\nmoney will not be stolen. [Weight 60W]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 210,
@@ -1355,7 +1355,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A bundle of flowers that have been preserved in a beautiful state using\nmysterious technology. It is favored as a gift for women. Likability +5 [Weight 5W].",
+        "description": "A bundle of flowers that have been preserved in a beautiful state\nusing mysterious technology. It is favored as a gift for women.\nLikability +5 [Weight 5W].",
         "effects": [
             {
                 "code": 44,
@@ -1388,7 +1388,7 @@
             "type": 4,
             "variance": 0
         },
-        "description": "A crystal imbued with a small amount of magical power. When used, it restores 2\nMP. [Weight: 2W]",
+        "description": "A crystal imbued with a small amount of magical power. When used, it\nrestores 2 MP. [Weight: 2W]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 176,
@@ -1414,7 +1414,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A large and sturdy bag. Allows you to carry more luggage. The carrying capacity\nis increased by +300K. The effect does not stack.",
+        "description": "A large and sturdy bag. Allows you to carry more luggage. The carrying\ncapacity is increased by +300K. The effect does not stack.",
         "effects": [],
         "hitType": 0,
         "iconIndex": 209,
@@ -1440,7 +1440,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A powerful horn that emits an inspiring sound to boost the morale of the entire\nparty. It does not disappear even after use. [Weight: 5W]",
+        "description": "A powerful horn that emits an inspiring sound to boost the morale of\nthe entire party. It does not disappear even after use. [Weight: 5W]",
         "effects": [
             {
                 "code": 21,
@@ -1473,7 +1473,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A mysterious doll that takes attacks in place of the user. It allows the user to\navoid attacks during the turn it is used. [Weight: 3W]",
+        "description": "A mysterious doll that takes attacks in place of the user. It allows\nthe user to avoid attacks during the turn it is used. [Weight: 3W]",
         "effects": [
             {
                 "code": 21,
@@ -1506,7 +1506,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A medicine that slightly reverses the body's time. Monica's overall status\ndecreases, but it resets the semen volume to 0. [Weight: 5W]",
+        "description": "A medicine that slightly reverses the body's time. Monica's overall\nstatus decreases, but it resets the semen volume to 0. [Weight: 5W]",
         "effects": [
             {
                 "code": 44,
@@ -1539,7 +1539,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "When selecting \"vagina\" during erotic activities in your own room, the option to\nadd a \"vibrator\" will be available. [Requires a vagina development value of 20\nor higher]",
+        "description": "When selecting vagina during erotic activities in your own room, the\noption to add a vibrator will be available. [Requires a vagina\ndevelopment value of 20 or higher]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 84,
@@ -1565,7 +1565,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "When selecting \"Anal\" during a sexual encounter in your own room while having\nit, [Toy A] will be added. [Requires Anal Development Value of 20 or higher]",
+        "description": "When selecting Anal during a sexual encounter in your own room while\nhaving it, [Toy A] will be added. [Requires Anal Development Value of\n20 or higher]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 84,
@@ -1591,7 +1591,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "When selecting \"vagina\" during erotic activities in your own room, the option of\n\"【tentacles】\" will be added. [Requires vagina development value of 30 or higher]",
+        "description": "When selecting vagina during erotic activities in your own room, the\noption of 【tentacles】 will be added. [Requires vagina development\nvalue of 30 or higher]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 84,
@@ -1617,7 +1617,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A mysterious bookmark that allows you to save by using it. \n[Weight 0W]",
+        "description": "A mysterious bookmark that allows you to save by using it.  [Weight\n0W]",
         "effects": [
             {
                 "code": 44,
@@ -1650,12 +1650,12 @@
             "type": 0,
             "variance": 20
         },
-        "description": "綺麗なショーツ。ほんのり石鹸の香りがする。\n[重さ0W]",
+        "description": "Beautiful panties. They have a faint scent of soap. [Weight 0W]",
         "effects": [],
         "hitType": 0,
         "iconIndex": 210,
         "itypeId": 1,
-        "name": "替えのショーツ",
+        "name": "Spare panties",
         "note": "<weight:0>",
         "occasion": 3,
         "price": 0,
@@ -1676,7 +1676,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "モニカのおしっこで汚れてしまったショーツ。少しにおう。\n戦闘中に使うと稀に相手に混乱させる。[重さ0W]",
+        "description": "Monica's panties, soiled with her pee. They smell a bit. Can sometimes\nconfuse the enemy when used in battle. [Weight 0W]",
         "effects": [
             {
                 "code": 21,
@@ -1688,7 +1688,7 @@
         "hitType": 0,
         "iconIndex": 210,
         "itypeId": 1,
-        "name": "汚れたショーツ",
+        "name": "Dirty panties",
         "note": "<weight:0>",
         "occasion": 1,
         "price": 0,
@@ -3101,7 +3101,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Heal\" which allows you to treat injured allies. [CP1]",
+        "description": "You can learn the skill Heal which allows you to treat injured\nallies. [CP1]",
         "effects": [
             {
                 "code": 43,
@@ -3134,7 +3134,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Flare\" which inflicts fire damage on the opponent when\nused. [CP1]",
+        "description": "You can learn the skill Flare which inflicts fire damage on the\nopponent when used. [CP1]",
         "effects": [
             {
                 "code": 43,
@@ -3167,7 +3167,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Spark\" which deals lightning damage to all enemies when\nused. [CP2]",
+        "description": "You can learn the skill Spark which deals lightning damage to all\nenemies when used. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3179,7 +3179,7 @@
         "hitType": 0,
         "iconIndex": 89,
         "itypeId": 1,
-        "name": "Mastery of \"Spark",
+        "name": "Mastery of Spark",
         "note": "<weight:0>",
         "occasion": 2,
         "price": 3000,
@@ -3200,7 +3200,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the technique of \"Lightning Slash\" which allows you to strike at\nan incredible speed that is almost invisible to the eye. [CP1]",
+        "description": "You can learn the technique of Lightning Slash which allows you to\nstrike at an incredible speed that is almost invisible to the eye.\n[CP1]",
         "effects": [
             {
                 "code": 43,
@@ -3212,7 +3212,7 @@
         "hitType": 0,
         "iconIndex": 89,
         "itypeId": 1,
-        "name": "Mastery of \"Lightning Slash",
+        "name": "Mastery of Lightning Slash",
         "note": "<weight:0>",
         "occasion": 2,
         "price": 3000,
@@ -3233,7 +3233,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Cure Poison\" which can be used to treat poisoned\nallies. [CP1]",
+        "description": "You can learn the skill Cure Poison which can be used to treat\npoisoned allies. [CP1]",
         "effects": [
             {
                 "code": 43,
@@ -3266,7 +3266,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill [Regeneration], which promotes cell activation and\nenhances regenerative power, by using it. [CP1]",
+        "description": "You can learn the skill [Regeneration], which promotes cell activation\nand enhances regenerative power, by using it. [CP1]",
         "effects": [
             {
                 "code": 43,
@@ -3299,7 +3299,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Leopard Step\" which temporarily increases evasion rate\nand critical hit rate when used. [CP1]",
+        "description": "You can learn the skill Leopard Step which temporarily increases\nevasion rate and critical hit rate when used. [CP1]",
         "effects": [
             {
                 "code": 43,
@@ -3332,7 +3332,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Protect\" which protects your allies when used. [CP1]",
+        "description": "You can learn the skill Protect which protects your allies when\nused. [CP1]",
         "effects": [
             {
                 "code": 43,
@@ -3365,7 +3365,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Sleep Mist\" which creates a mist that induces\ndrowsiness in the opponent when used. [CP2]",
+        "description": "You can learn the skill Sleep Mist which creates a mist that induces\ndrowsiness in the opponent when used. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3398,7 +3398,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Reflect Armor\" which grants allies a suit of armor that\nreflects the opponent's offensive magic attacks. [CP2]",
+        "description": "You can learn the skill Reflect Armor which grants allies a suit of\narmor that reflects the opponent's offensive magic attacks. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3431,7 +3431,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Enchant Blue\" which adds a water attribute to the\nequipped weapon when used. [CP2]",
+        "description": "You can learn the skill Enchant Blue which adds a water attribute to\nthe equipped weapon when used. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3464,7 +3464,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Enchant Red\" which adds fire attribute to the equipped\nweapon when used. [CP2]",
+        "description": "You can learn the skill Enchant Red which adds fire attribute to the\nequipped weapon when used. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3497,7 +3497,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Enchant Parble\" which adds the thunder attribute to the\nequipped weapon when used. [CP2]",
+        "description": "You can learn the skill Enchant Parble which adds the thunder\nattribute to the equipped weapon when used. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3530,7 +3530,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the miraculous sword technique [Sacred Sword], which deals damage\nto the opponent while healing your own wounds. [CP3]",
+        "description": "You can learn the miraculous sword technique [Sacred Sword], which\ndeals damage to the opponent while healing your own wounds. [CP3]",
         "effects": [
             {
                 "code": 43,
@@ -3563,7 +3563,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Oil Shock\" which spreads oil over a wide area and\ncovers the opponent in oil. [CP1]",
+        "description": "You can learn the skill Oil Shock which spreads oil over a wide area\nand covers the opponent in oil. [CP1]",
         "effects": [
             {
                 "code": 43,
@@ -3575,7 +3575,7 @@
         "hitType": 0,
         "iconIndex": 89,
         "itypeId": 1,
-        "name": "Understanding the \"Oil Shock",
+        "name": "Understanding the Oil Shock",
         "note": "<weight:0>",
         "occasion": 2,
         "price": 3000,
@@ -3596,7 +3596,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Fire Breath\" which turns the surroundings into a sea of\nfire when used. [CP3]",
+        "description": "You can learn the skill Fire Breath which turns the surroundings\ninto a sea of fire when used. [CP3]",
         "effects": [
             {
                 "code": 43,
@@ -3608,7 +3608,7 @@
         "hitType": 0,
         "iconIndex": 87,
         "itypeId": 1,
-        "name": "Mastery of \"Fire Breath",
+        "name": "Mastery of Fire Breath",
         "note": "<weight:0>",
         "occasion": 2,
         "price": 10000,
@@ -3629,7 +3629,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Bizarre Dance\" that confuses the opponent when used.\n[CP2]",
+        "description": "You can learn the skill Bizarre Dance that confuses the opponent\nwhen used. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3662,7 +3662,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "By using it, you can learn the skill \"Mysterious Eyes\" that stares at the\nopponent with mysteriously glowing eyes and confuses them. [CP2]",
+        "description": "By using it, you can learn the skill Mysterious Eyes that stares at\nthe opponent with mysteriously glowing eyes and confuses them. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3674,7 +3674,7 @@
         "hitType": 0,
         "iconIndex": 88,
         "itypeId": 1,
-        "name": "Proficiency in \"Enigmatic Eyes",
+        "name": "Proficiency in Enigmatic Eyes",
         "note": "<weight:0>",
         "occasion": 2,
         "price": 5000,
@@ -3695,7 +3695,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Water Surface Kick\" which allows you to lower your hips\nand rotate while kicking the opponent's legs at ground level. [CP2]",
+        "description": "You can learn the skill Water Surface Kick which allows you to lower\nyour hips and rotate while kicking the opponent's legs at ground\nlevel. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3728,7 +3728,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "By using this skill, you can learn to tap your ally's shoulder to remove\nconfusion, charm, paralysis, and sleep status. [CP1]",
+        "description": "By using this skill, you can learn to tap your ally's shoulder to\nremove confusion, charm, paralysis, and sleep status. [CP1]",
         "effects": [
             {
                 "code": 43,
@@ -3761,7 +3761,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Fissure\" which shakes the ground and deals damage to\nall enemies. [CP2]",
+        "description": "You can learn the skill Fissure which shakes the ground and deals\ndamage to all enemies. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3794,7 +3794,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Kazekiri no Jutsu\" which allows you to evade one attack\nmade during the turn you use it. [CP1]",
+        "description": "You can learn the skill Kazekiri no Jutsu which allows you to evade\none attack made during the turn you use it. [CP1]",
         "effects": [
             {
                 "code": 43,
@@ -3806,7 +3806,7 @@
         "hitType": 0,
         "iconIndex": 87,
         "itypeId": 1,
-        "name": "Mastery of the \"Art of the Empty Cicada",
+        "name": "Mastery of the Art of the Empty Cicada",
         "note": "<weight:0>",
         "occasion": 2,
         "price": 10000,
@@ -3827,7 +3827,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Torrential Spear,\" which unleashes a barrage of spears\nclad in water that swallows and crushes everything like a raging muddy stream.\n[CP2]",
+        "description": "You can learn the skill Torrential Spear, which unleashes a barrage\nof spears clad in water that swallows and crushes everything like a\nraging muddy stream. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3839,7 +3839,7 @@
         "hitType": 0,
         "iconIndex": 88,
         "itypeId": 1,
-        "name": "Learn the \"Raging Torrent Spear",
+        "name": "Learn the Raging Torrent Spear",
         "note": "<weight:0>",
         "occasion": 2,
         "price": 5000,
@@ -3860,7 +3860,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Systema\" which optimizes your own movements and allows\nyou to take appropriate stances according to the battle situation. [CP2]",
+        "description": "You can learn the skill Systema which optimizes your own movements\nand allows you to take appropriate stances according to the battle\nsituation. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3893,7 +3893,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Healing Song\" which slightly recovers the HP and TP of\nall allies with a mysterious song when used. [CP2]",
+        "description": "You can learn the skill Healing Song which slightly recovers the HP\nand TP of all allies with a mysterious song when used. [CP2]",
         "effects": [
             {
                 "code": 43,
@@ -3926,7 +3926,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "By using it, you can scatter gas and poison all enemies. You can learn the skill\n\"Poison Breath\" [CP1].",
+        "description": "By using it, you can scatter gas and poison all enemies. You can learn\nthe skill Poison Breath [CP1].",
         "effects": [
             {
                 "code": 43,
@@ -3959,7 +3959,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "You can learn the skill \"Dazzling Light\" which can be used to blind all enemies.\n[CP1]",
+        "description": "You can learn the skill Dazzling Light which can be used to blind\nall enemies. [CP1]",
         "effects": [
             {
                 "code": 43,
@@ -4342,8 +4342,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想1",
-        "note": "<SG説明:ギルドに向かう道中で…>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_korobu_hiru>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 1",
+        "note": "<SG説明:On the way to the guild...>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_korobu_hiru>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4375,8 +4375,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想2",
-        "note": "<SG説明:通された部屋で…>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_deai_01>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 2",
+        "note": "<SG説明:In the room we were led to...>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_deai_01>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4408,8 +4408,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想3",
-        "note": "<SG説明:ケガレに侵されて…>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou3_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 3",
+        "note": "<SG説明:Corrupted by impurity...>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou3_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4441,8 +4441,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想4",
-        "note": "<SG説明:石につまづいて…>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou4_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 4",
+        "note": "<SG説明:Tripped on a stone...>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou4_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4474,8 +4474,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想5",
-        "note": "<SG説明:子どもに見える冒険者が…>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou5_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 5",
+        "note": "<SG説明:The adventurer who looks like a child...>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou5_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4507,8 +4507,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想6",
-        "note": "<SG説明:子どもに見える冒険者と>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou6_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 6",
+        "note": "<SG説明:Adventurer Who Looks Like a Child>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou6_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4540,8 +4540,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想7",
-        "note": "<SG説明:助ける方法は知っている…>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou7_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 7",
+        "note": "<SG説明:I know how to help...>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou7_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4573,8 +4573,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想8",
-        "note": "<SG説明:助けたお礼にモブ冒険者(通常)と>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou8_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 8",
+        "note": "<SG説明:As a thank you for helping, with a Mob Adventurer (Normal)>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou8_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4606,8 +4606,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想9",
-        "note": "<SG説明:主体性の弱そうな冒険者と>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou9_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 9",
+        "note": "<SG説明:Adventurer with a Weak Sense of Agency>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou9_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4639,8 +4639,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想10",
-        "note": "<SG説明:古代の戦士ちゃんと>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou10_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 10",
+        "note": "<SG説明:Ancient Warrior-chan>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou10_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4672,8 +4672,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想11",
-        "note": "<SG説明:岩陰でおしっこ>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:DH_osikko_02>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 11",
+        "note": "<SG説明:Peeing in the Shadows>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:DH_osikko_02>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4705,8 +4705,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想12",
-        "note": "<SG説明:エロ僧侶 弱みにつけこんで…>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou12_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 12",
+        "note": "<SG説明:Erotic Monk: Exploiting Weaknesses...>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou12_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4738,8 +4738,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想13",
-        "note": "<SG説明:スライムに捕まったモニカ…>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou13_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 13",
+        "note": "<SG説明:Monica caught by a slime...>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou13_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4771,8 +4771,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想14",
-        "note": "<SG説明:触手に捕まったモニカ…>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou14_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 14",
+        "note": "<SG説明:Monica caught by tentacles...>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou14_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4804,8 +4804,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想15",
-        "note": "<SG説明:亡者の手に捕まったモニカ…>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou15_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 15",
+        "note": "<SG説明:Monica... caught in the hands of the undead...>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou15_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4837,8 +4837,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想16",
-        "note": "<SG説明:催淫ガスで発情状態>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_saiin>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 16",
+        "note": "<SG説明:Aroused State from Aphrodisiac Gas>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_saiin>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4870,8 +4870,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想17",
-        "note": "<SG説明:トラップ回避好感度アップからのえっち>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EV_koukando_kiss2>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 17",
+        "note": "<SG説明:Trap Evasion & Affection Boost Followed by Sex>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EV_koukando_kiss2>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4903,8 +4903,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想18",
-        "note": "<SG説明:休憩中に搾乳>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou18_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 18",
+        "note": "<SG説明:Milking During Rest>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou18_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4936,8 +4936,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想19",
-        "note": "<SG説明:休憩中にもエッチ>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_fera_love03>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 19",
+        "note": "<SG説明:Naughty Break>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_fera_love03>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -4969,8 +4969,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想20",
-        "note": "<SG説明:壁尻イベント>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_ketsusiri08>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 20",
+        "note": "<SG説明:Wall Ass Event>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_ketsusiri08>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5002,8 +5002,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想21",
-        "note": "<SG説明:幸せの化粧箱を手に入れた>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EV_keshoubako-Event>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 21",
+        "note": "<SG説明:Obtained the Box of Happiness Makeup>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EV_keshoubako-Event>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5035,8 +5035,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想22",
-        "note": "<SG説明:宿屋のおやじ 夜這い1>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou22_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 22",
+        "note": "<SG説明:Innkeeper's Night Crawling 1>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou22_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5068,8 +5068,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想23",
-        "note": "<SG説明:宿屋のおやじ 夜這い2>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou23_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 23",
+        "note": "<SG説明:Innkeeper's Night Crawling 2>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou23_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5101,8 +5101,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想24",
-        "note": "<SG説明:妊娠発覚>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:jisitu_yoru_noui>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 24",
+        "note": "<SG説明:Pregnancy Discovery>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:jisitu_yoru_noui>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5134,8 +5134,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想25",
-        "note": "<SG説明:モニカのオナニー>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_monica_ona1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 25",
+        "note": "<SG説明:Monica's Masturbation>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EVH_monica_ona1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5167,8 +5167,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想26",
-        "note": "<SG説明:子どもの頃の思い出>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:monica_kaisou>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 26",
+        "note": "<SG説明:Childhood Memories>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:monica_kaisou>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5200,8 +5200,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想27",
-        "note": "<SG説明:ギルドへの支払い1回目失敗>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou27_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 27",
+        "note": "<SG説明:First Payment to the Guild Failed>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou27_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5233,8 +5233,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想28",
-        "note": "<SG説明:ギルドへの支払い2回目失敗>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou28_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 28",
+        "note": "<SG説明:Second Payment to the Guild Failed>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou28_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5266,8 +5266,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想29",
-        "note": "<SG説明:ギルド支払い嘆願>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou29_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 29",
+        "note": "<SG説明:Guild Payment Petition>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou29_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5299,8 +5299,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想30",
-        "note": "<SG説明:おでかけ>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:deto>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 30",
+        "note": "<SG説明:Going Out>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:deto>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5332,8 +5332,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想31",
-        "note": "<SG説明:ダンジョン内の温泉で>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EV_onsen_asiyu>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 31",
+        "note": "<SG説明:In the hot springs of the dungeon>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:EV_onsen_asiyu>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5365,8 +5365,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想32",
-        "note": "<SG説明:夜の自室エッチ ドリンク使用無制限>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:mhcg_taiki_1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 32",
+        "note": "<SG説明:Unlimited Use of Drinks during Bedroom Sex at Night>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:mhcg_taiki_1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5398,8 +5398,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想33",
-        "note": "<SG説明:BE1 人さらい>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou32_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 33",
+        "note": "<SG説明:Kidnapper>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou32_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5431,8 +5431,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想34",
-        "note": "<SG説明:BE2 オーク>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou33_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 34",
+        "note": "<SG説明:Orc>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou33_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5464,8 +5464,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想35",
-        "note": "<SG説明:BE3 触手の主>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou34_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 35",
+        "note": "<SG説明:Tentacle Master>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou34_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5497,8 +5497,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想36",
-        "note": "<SG説明:BE4 宿屋のおやじ>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou35_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 36",
+        "note": "<SG説明:BE4 Innkeeper>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou35_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5530,8 +5530,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想37",
-        "note": "<SG説明:BE5 ギルドのおっさん>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou36_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 37",
+        "note": "<SG説明:BE5 Guild's Old Man>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou36_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5563,8 +5563,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想38",
-        "note": "<SG説明:BE6 モニカ故郷にかえる>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:mainmap_noUI>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 38",
+        "note": "<SG説明:Monica Returns to Her Hometown>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:mainmap_noUI>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5596,8 +5596,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想39",
-        "note": "<SG説明:BE7 目的未達>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:mainmap_noUI>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 39",
+        "note": "<SG説明:BE7 Objective Unachieved>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:mainmap_noUI>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5629,8 +5629,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想40",
-        "note": "<SG説明:BE8 魅せられたモノたち>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou39_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 40",
+        "note": "<SG説明:Enchanted Beings>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:kaisou39_samune>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5662,8 +5662,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想41",
-        "note": "<SG説明:ノーマルエンド>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:end1_normal>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 41",
+        "note": "<SG説明:Normal End>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:end1_normal>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5695,8 +5695,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想42",
-        "note": "<SG説明:トゥルーエンド>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:end2_good_asa_sex>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 42",
+        "note": "<SG説明:True End>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:end2_good_asa_sex>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -5728,8 +5728,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "回想43",
-        "note": "<SG説明:ハッピー？エンド>\n<SGカテゴリ:シーン回想>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:end3_happy_1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
+        "name": "Recollection 43",
+        "note": "<SG説明:Happy? End>\n<SGカテゴリ:Scene Recollection>\n<SGピクチャ位置:text>\n<SGピクチャY:100>\n<SGピクチャ:end3_happy_1>\n<SGピクチャ拡大率:0.6>\n<RandomLoseException>\n<weight:0>\n\n",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6508,8 +6508,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "花柄レースの派手なショーツ（ピンク）",
-        "note": "<SG説明:■花柄レースの派手なショーツ（ピンク）\n上品なサテン生地に繊細なレースを施したショーツ。\nお尻は透けて魅せるデザインで、特別な日にぴったりな1着。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_lace00>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Flashy Floral Lace Panties (Pink)",
+        "note": "<SG説明:Fancy Floral Lace Panties (Pink) - Elegant satin fabric with delicate\nlace detailing. The design features a sheer butt, perfect for special\noccasions.>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_lace00>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6534,8 +6534,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "花柄レースの派手なショーツ（青）",
-        "note": "<SG説明:■花柄レースの派手なショーツ（青）\n上品なサテン生地に繊細なレースを施したショーツ。\nお尻は透けて魅せるデザインで、特別な日にぴったりな1着。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_lace01>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Flashy Floral Lace Panties (Blue)",
+        "note": "<SG説明:Fancy Floral Lace Panties (Blue) - Elegant satin fabric with delicate\nlace detailing. The design features a sheer butt, making it the\nperfect piece for a special day.>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_lace01>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6560,8 +6560,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "花柄レースの派手なショーツ（黒）",
-        "note": "<SG説明:■花柄レースの派手なショーツ（黒）\n華やかなフラワーレースが魅惑的なショーツ。\nフロントのリボンが甘さをプラス。かわいさとセクシーを両立！\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_lace02>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Flashy Floral Lace Panties (Black)",
+        "note": "<SG説明:Fancy Floral Lace Panties (Black) - Alluring panties with vibrant\nflower lace. The ribbon on the front adds a touch of sweetness. A\nperfect balance of cute and sexy!>\n<SGカテゴリ:Panties Catalog>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_lace02>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6586,8 +6586,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "花柄レースの派手なショーツ（赤）",
-        "note": "<SG説明:■花柄レースの派手なショーツ（赤）\n華やかなフラワーレースが魅惑的なショーツ。\nフロントのリボンが甘さをプラス。かわいさとセクシーを両立！\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_lace03>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Flashy Floral Lace Panties (Red)",
+        "note": "<SG説明:■ Flashy Floral Lace Panties (Red) Charming panties adorned with\nvibrant flower lace. The ribbon on the front adds a touch of\nsweetness. A perfect balance of cute and sexy!>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_lace03>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6612,8 +6612,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "レース付きドット柄ショーツ（白）",
-        "note": "<SG説明:■レース付きドット柄ショーツ（白）\nサテンにレース、ドット柄を施したガーリー盛り合わせショーツ。\n肌触りも良く、着ると気分の上がる1着！\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal00>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Lace-trimmed Polka Dot Panties (White)",
+        "note": "<SG説明:Lace-trimmed Polka Dot Panties (White) - Girly assorted panties with\nsatin, lace, and polka dot patterns. They feel good on the skin and\nare sure to lift your spirits when worn!>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal00>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6638,8 +6638,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "レース付きドット柄ショーツ（ピンク）",
-        "note": "<SG説明:■レース付きドット柄ショーツ（ピンク）\nサテンにレース、ドット柄を施したガーリー盛り合わせショーツ。\n肌触りも良く、着ると気分の上がる1着！\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal01>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Lace-trimmed Polka Dot Panties (Pink)",
+        "note": "<SG説明:Lace-trimmed Polka Dot Panties (Pink) - Girly assorted panties with\nsatin, lace, and polka dots. They feel good on the skin and are sure\nto lift your spirits when worn!>\n<SGカテゴリ:Panties Catalog>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal01>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6664,8 +6664,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "レース付きストライプショーツ（紫）",
-        "note": "<SG説明:■レース付きストライプショーツ（紫）\nストライプとレースの組み合わせが可愛いショーツ。\nフェミニンをデイリーに魅せていけ！\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal02>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Lace-Trimmed Striped Panties (Purple)",
+        "note": "<SG説明:Striped Panties with Lace (Purple) - Panties with a cute combination\nof stripes and lace. Show off your femininity every day!>\n<SGカテゴリ:Panties Catalog>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal02>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6690,8 +6690,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "レース付きストライプショーツ（ピンク）",
-        "note": "<SG説明:■レース付きストライプショーツ（ピンク）\nストライプとレースの組み合わせが可愛いショーツ。\nフェミニンをデイリーに魅せていけ！\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal03>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Lace-Trimmed Striped Panties (Pink)",
+        "note": "<SG説明:Striped Panties with Lace (Pink) - Cute panties with a combination of\nstripes and lace. Show off your femininity every day!>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal03>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6716,8 +6716,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "ストライプショーツ（青）",
-        "note": "<SG説明:■ストライプショーツ（青）\nストライプにレースを施したシンプルなショーツ。\n落ち着いたカラーで着心地も爽やか！\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal04>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Striped Panties (Blue)",
+        "note": "<SG説明:Striped Panties (Blue) - Simple panties adorned with lace stripes. The\ncalm color makes them comfortable and refreshing to wear!>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal04>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6742,8 +6742,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "ストライプショーツ（緑）",
-        "note": "<SG説明:■ストライプショーツ（緑）\nストライプにさりげなくレースを施したシンプルなショーツ。\n落ち着いたカラーで着心地も爽やか！\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal05>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Striped Panties (Green)",
+        "note": "<SG説明:Striped Panties (Green) - Simple panties with subtle lace on the\nstripes. The calm color makes them comfortable and refreshing to wear!>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal05>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6768,8 +6768,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "レース付き無地ショーツ（黒）",
-        "note": "<SG説明:■レース付き無地ショーツ（黒）\n光沢のあるサテン生地に上品なレースを施したショーツ。\nシンプルながらも高級感を演出！\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal06>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Plain Black Panties with Lace",
+        "note": "<SG説明:Plain Black Panties with Lace - Panties made from glossy satin fabric\nwith elegant lace. Simple yet luxurious!>\n<SGカテゴリ:Panties Catalog>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal06>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6794,8 +6794,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "レース付き無地ショーツ（ピンク）",
-        "note": "<SG説明:■レース付き無地ショーツ（ピンク）\n光沢のあるサテン生地に上品なレースを施したショーツ。\nシンプルながらも高級感を演出！\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal07>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Plain Panties with Lace (Pink)",
+        "note": "<SG説明:Plain Lace-Trimmed Panties (Pink) - Panties made from glossy satin\nfabric with elegant lace detailing. Simple yet exuding a sense of\nluxury!>\n<SGカテゴリ:Panties Catalog>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal07>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6820,8 +6820,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "コットンの無地ショーツ（ピンク）",
-        "note": "<SG説明:■コットンの無地ショーツ（ピンク）\nシンプルなデザインのショーツ。\n肌触りが良く、やさしくフィットする素材ではきやすい。\nそのため履いてる時間がもっとも長く、クロッチ部分が少し黒ずんでいる…。>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal08>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Plain Cotton Panties (Pink)",
+        "note": "<SG説明:Plain Cotton Panties (Pink) Simple designed panties that are\ncomfortable to the touch and fit gently. They are easy to wear, which\nis why they are worn for long periods, causing the crotch area to be\nslightly discolored...>\n<SGカテゴリ:Panties Catalog>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal08>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6846,8 +6846,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "コットンの無地ショーツ（青）",
-        "note": "<SG説明:■コットンの無地ショーツ（青）\nシンプルなデザインのショーツ。\n肌触りが良く、やさしくフィットする素材ではきやすい。\nそのため履いてる時間がもっとも長く、クロッチ部分が少し黒ずんでいる…。>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal09>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Plain Cotton Panties (Blue)",
+        "note": "<SG説明:Plain Cotton Panties (Blue) - Simple designed panties. They're\ncomfortable to wear, with a material that fits gently and feels good\non the skin. Because of this, they're worn for long periods, and the\ncrotch area has become slightly discolored...>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal09>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6872,8 +6872,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "コットンの無地ショーツ（グレー）",
-        "note": "<SG説明:■コットンの無地ショーツ（グレー）\nシンプルなデザインのショーツ。\n肌触りが良く、やさしくフィットする素材ではきやすい。\nそのため履いてる時間がもっとも長く、クロッチ部分が少し黒ずんでいる…。>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal10>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Plain Cotton Panties (Gray)",
+        "note": "<SG説明:Plain Cotton Panties (Gray) - Simple designed panties. They're\ncomfortable to wear, with a material that fits gently and feels good\non the skin. Because of this, they're worn for long periods, and the\ncrotch area is slightly discolored...>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal10>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6898,8 +6898,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "コットンの無地ショーツ（ベージュ）",
-        "note": "<SG説明:■コットンの無地ショーツ（ベージュ）\nシンプルなデザインのショーツ。\n肌触りが良く、やさしくフィットする素材ではきやすい。\nそのため履いてる時間がもっとも長く、クロッチ部分が少し黒ずんでいる…。>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal11>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Plain Cotton Panties (Beige)",
+        "note": "<SG説明:Plain Cotton Panties (Beige) - Simple designed panties. They're\ncomfortable to wear and made from a soft material that fits gently. As\na result, they're worn for long periods, and the crotch area is\nslightly discolored...>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal11>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6924,8 +6924,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "サテンのドット柄ショーツ（ピンク）",
-        "note": "<SG説明:■サテンのドット柄ショーツ（ピンク）\n色のコントラストが映えるデザインのショーツ。\nドットとフロントリボンで羽ばたく女の子を応援！\nおしゃれで万能なアイテム！>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal12>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Satin Polka Dot Panties (Pink)",
+        "note": "<SG説明:Satin Polka Dot Panties (Pink) - A pair of panties with a color\ncontrast that stands out. The polka dots and front ribbon cheer on the\nfluttering girl! A stylish and versatile item!>\n<SGカテゴリ:Panties Catalog>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal12>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6950,8 +6950,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "サテンのドット柄ショーツ（紫）",
-        "note": "<SG説明:■サテンのドット柄ショーツ（紫）\n色のコントラストが映えるデザインのショーツ。\nドットとフロントリボンで羽ばたく女の子を応援！\nおしゃれで万能なアイテム！>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal13>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Satin Polka Dot Panties (Purple)",
+        "note": "<SG説明:Satin Polka Dot Panties (Purple) - A pair of panties with a color\ncontrast that stands out. The dots and front ribbon cheer on the\nfluttering girl! A stylish and versatile item!>\n<SGカテゴリ:Panties Catalog>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal13>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -6976,8 +6976,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "レースをあしらったショーツ（白）",
-        "note": "<SG説明:■レースをあしらったショーツ（白）\nふんわりと花柄レースが施された女の子らしいショーツ。\nカラーバリエーションも多く、可愛くて履きやすい。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal14>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Lace-trimmed panties (white)",
+        "note": "<SG説明:Lace-Trimmed Panties (White) - Girlish panties adorned with soft\nfloral lace. Available in a variety of colors, they're cute and\ncomfortable to wear.>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal14>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -7002,8 +7002,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "レースをあしらったショーツ（緑）",
-        "note": "<SG説明:■レースをあしらったショーツ（緑）\nふんわりと花柄レースが施された女の子らしいショーツ。\nカラーバリエーションも多く、可愛くて履きやすい。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal16>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Lace-trimmed panties (green)",
+        "note": "<SG説明:Lace-Trimmed Panties (Green) - Girlish panties adorned with soft\nfloral lace. Available in various colors, they're cute and comfortable\nto wear.>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal16>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -7028,8 +7028,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "レースをあしらったショーツ（赤）",
-        "note": "<SG説明:■レースをあしらったショーツ（赤）\nふんわりと花柄レースが施された女の子らしいショーツ。\nカラーバリエーションも多く、可愛くて履きやすい。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal17>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Lace-trimmed panties (red)",
+        "note": "<SG説明:Lace-Trimmed Panties (Red) - Girlish panties adorned with soft floral\nlace. Available in a variety of colors, they're cute and comfortable\nto wear.>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal17>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -7054,8 +7054,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "スケスケセクシーランジェリー",
-        "note": "<SG説明:■スケスケセクシーランジェリー\nモニカが\\n[1]のためにこっそり買っていたセクシーなランジェリー。\nしかし、これを\\n[1]に見せることでひかれてしまわないか\n不安にも思っている…。>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_sexy00>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Sheer Sexy Lingerie",
+        "note": "<SG説明:See-Through Sexy Lingerie - Monica secretly bought sexy lingerie for\n\\N[1]. However, she's also anxious that showing it to \\N[1] might turn\nhim off...>\n<SGカテゴリ:Panties Catalog>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_sexy00>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -7080,8 +7080,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "花柄レースの紐ショーツ（ピンク）",
-        "note": "<SG説明:■花柄レースの紐ショーツ（ピンク）\n大人っぽいコードデザインのショーツ。\n控えめなレースとフロントのビジューがアクセントのエレガントランジェリー。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_string00>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Floral Lace String Panties (Pink)",
+        "note": "<SG説明:Floral Lace String Panties (Pink) - Sophisticated cord design panties.\nElegant lingerie accented with modest lace and a jewel on the front.>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_string00>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -7106,8 +7106,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "レースをあしらったドット柄紐ショーツ（青）",
-        "note": "<SG説明:■レースをあしらったドット柄紐ショーツ（青）\nサイドがリボンデザインになっているガーリーな紐ショーツ。\n光沢感のあるサテンとドットが大人可愛いくみ合わせ。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_string01>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Lace-trimmed Polka Dot String Panties (Blue)",
+        "note": "<SG説明:Polka Dot String Panties with Lace (Blue) - Girly string panties with\na ribbon design on the sides. The combination of glossy satin and dots\ncreates a maturely cute look.>\n<SGカテゴリ:Panties Catalog>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_string01>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -7132,8 +7132,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "花柄レースの紐ショーツ（黒）",
-        "note": "<SG説明:■花柄レースの紐ショーツ（黒）\n大人っぽいコードデザインのショーツ。\n控えめなレースとフロントのビジューがアクセントのエレガントランジェリー。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_string02>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Floral Lace String Panties (Black)",
+        "note": "<SG説明:Floral Lace String Panties (Black) - Elegant lingerie featuring a\nmature cord design. The modest lace and front bijou accentuate its\nelegance.>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_string02>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -7158,8 +7158,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "紐ショーツ（青）",
-        "note": "<SG説明:■紐ショーツ（青）\nサイドがリボンデザインになっているガーリーな紐ショーツ。\n明るいブルーとシンプルな花の刺繍が清楚な1着。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_string03>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "String Panties (Blue)",
+        "note": "<SG説明:Ribbon Panties (Blue) - Girly ribbon-designed side-tie panties. A neat\npiece with bright blue color and simple floral embroidery.>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_string03>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -7184,8 +7184,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "紐ショーツ(ピンク)",
-        "note": "<SG説明:■紐ショーツ(ピンク)\n可愛らしいフラワーレースが魅惑的なショーツ。\nその反面、布面積は小さく、かわいさとセクシーさのコラボを実現。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_string04>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "String panties (pink)",
+        "note": "<SG説明:Ribbon Panties (Pink) - Charming panties with an alluring flower lace\ndesign. On the flip side, the fabric area is small, achieving a\ncollaboration of cuteness and sexiness.>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_string04>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,
@@ -7210,8 +7210,8 @@
         "hitType": 0,
         "iconIndex": 0,
         "itypeId": 3,
-        "name": "汚れたショーツ",
-        "note": "<SG説明:■汚れたショーツ\nモニカの失禁で汚れてしまったショーツ。\nむわっと、ほんのり臭う…。\n　>\n<SGカテゴリ:パンツ図鑑>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal15>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
+        "name": "Dirty panties",
+        "note": "<SG説明:Dirty Panties - Monica's panties soiled by her incontinence. They emit\na faint, musty smell...>\n<SGカテゴリ:Panties Catalogue>\n<SGピクチャ位置:text>\n<SGピクチャY:80>\n<SGピクチャ:pants_collection_normal15>\n<SGピクチャ拡大率:1>\n<RandomLoseException>\n<weight:0>",
         "occasion": 0,
         "price": 0,
         "repeats": 1,

@@ -280,7 +280,7 @@
             "type": 3,
             "variance": 20
         },
-        "description": "Ability to heal injured comrades.\nEssential skill for exploring safely.",
+        "description": "Ability to heal injured comrades. Essential skill for exploring\nsafely.",
         "effects": [],
         "hitType": 0,
         "iconIndex": 72,
@@ -310,7 +310,7 @@
             "type": 1,
             "variance": 20
         },
-        "description": "Inflicts fire damage on the opponent.\nOccasionally causes Burn or Burning to the opponent.",
+        "description": "Inflicts fire damage on the opponent. Occasionally causes Burn or\nBurning to the opponent.",
         "effects": [
             {
                 "code": 21,
@@ -353,7 +353,7 @@
             "type": 1,
             "variance": 50
         },
-        "description": "Deals thunder damage to all enemies. Occasionally paralyzes the opponent",
+        "description": "Deals thunder damage to all enemies. Occasionally paralyzes the\nopponent",
         "effects": [
             {
                 "code": 21,
@@ -390,7 +390,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Stand in front of allies and take on attacks. If used by \\N[1], favorability\nwill increase by +1",
+        "description": "Stand in front of allies and take on attacks. If used by \\N[1],\nfavorability will increase by +1",
         "effects": [
             {
                 "code": 21,
@@ -507,7 +507,7 @@
             "type": 1,
             "variance": 20
         },
-        "description": "At the same time as attacking the opponent with all one's might, it also lowers\nthe opponent's physical resistance",
+        "description": "At the same time as attacking the opponent with all one's might, it\nalso lowers the opponent's physical resistance",
         "effects": [
             {
                 "code": 21,
@@ -544,7 +544,7 @@
             "type": 1,
             "variance": 20
         },
-        "description": "A skill that attacks with incredible speed that is almost too fast for the eye\nto see. Occasionally causes the opponent to be stunned",
+        "description": "A skill that attacks with incredible speed that is almost too fast for\nthe eye to see. Occasionally causes the opponent to be stunned",
         "effects": [
             {
                 "code": 21,
@@ -922,7 +922,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Skill to eliminate toxins circulating throughout the body.\nEssential skill for exploring safely.",
+        "description": "Skill to eliminate toxins circulating throughout the body. Essential\nskill for exploring safely.",
         "effects": [],
         "hitType": 0,
         "iconIndex": 72,
@@ -952,7 +952,7 @@
             "type": 1,
             "variance": 50
         },
-        "description": "Deals thunder damage to all enemies. Occasionally paralyzes the opponent",
+        "description": "Deals thunder damage to all enemies. Occasionally paralyzes the\nopponent",
         "effects": [
             {
                 "code": 21,
@@ -1032,7 +1032,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A skill that allows you to move like a leopard with special walking techniques.\nWhen used, it significantly increases evasion rate and critical hit rate for a\nshort period of time",
+        "description": "A skill that allows you to move like a leopard with special walking\ntechniques. When used, it significantly increases evasion rate and\ncritical hit rate for a short period of time",
         "effects": [
             {
                 "code": 21,
@@ -1186,7 +1186,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A skill that allows you to equip your allies with a suit of armor made of light\nthat reflects the opponent's offensive magic",
+        "description": "A skill that allows you to equip your allies with a suit of armor made\nof light that reflects the opponent's offensive magic",
         "effects": [
             {
                 "code": 21,
@@ -1371,7 +1371,7 @@
             "type": 5,
             "variance": 20
         },
-        "description": "A miraculous sword technique that inflicts damage\non the opponent while healing one's own wounds",
+        "description": "A miraculous sword technique that inflicts damage on the opponent\nwhile healing one's own wounds",
         "effects": [],
         "hitType": 2,
         "iconIndex": 70,
@@ -1401,7 +1401,7 @@
             "type": 3,
             "variance": 20
         },
-        "description": "Ability to heal injured comrades.\nEssential skill for exploring safely.",
+        "description": "Ability to heal injured comrades. Essential skill for exploring\nsafely.",
         "effects": [],
         "hitType": 0,
         "iconIndex": 72,
@@ -1431,7 +1431,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Skill that spreads oil over a wide area and covers the opponent in an oily state",
+        "description": "Skill that spreads oil over a wide area and covers the opponent in an\noily state",
         "effects": [
             {
                 "code": 21,
@@ -1468,7 +1468,7 @@
             "type": 1,
             "variance": 20
         },
-        "description": "A devastating area attack that turns the surroundings into a sea of fire",
+        "description": "A devastating area attack that turns the surroundings into a sea of\nfire",
         "effects": [
             {
                 "code": 21,
@@ -1603,7 +1603,7 @@
             "type": 1,
             "variance": 20
         },
-        "description": "A devastating area attack that turns the surroundings into a sea of fire",
+        "description": "A devastating area attack that turns the surroundings into a sea of\nfire",
         "effects": [
             {
                 "code": 21,
@@ -1713,7 +1713,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Skill that stares at the opponent with mysteriously glowing eyes and causes\nconfusion",
+        "description": "Skill that stares at the opponent with mysteriously glowing eyes and\ncauses confusion",
         "effects": [
             {
                 "code": 21,
@@ -1750,7 +1750,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Skill that stares at the opponent with mysteriously glowing eyes and causes\nconfusion",
+        "description": "Skill that stares at the opponent with mysteriously glowing eyes and\ncauses confusion",
         "effects": [
             {
                 "code": 21,
@@ -1904,7 +1904,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Staring at the opponent with mysteriously shining eyes, a captivating skill",
+        "description": "Staring at the opponent with mysteriously shining eyes, a captivating\nskill",
         "effects": [
             {
                 "code": 21,
@@ -1941,7 +1941,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Staring at the opponent with mysteriously shining eyes, a captivating skill",
+        "description": "Staring at the opponent with mysteriously shining eyes, a captivating\nskill",
         "effects": [
             {
                 "code": 21,
@@ -1978,7 +1978,7 @@
             "type": 1,
             "variance": 20
         },
-        "description": "Inflicts fire damage on the opponent.\nOccasionally causes Burn or Burning to the opponent.",
+        "description": "Inflicts fire damage on the opponent. Occasionally causes Burn or\nBurning to the opponent.",
         "effects": [
             {
                 "code": 21,
@@ -2021,7 +2021,7 @@
             "type": 1,
             "variance": 20
         },
-        "description": "A sweeping attack where you drop your hips and rotate close to the ground to\nkick away the opponent's legs",
+        "description": "A sweeping attack where you drop your hips and rotate close to the\nground to kick away the opponent's legs",
         "effects": [
             {
                 "code": 21,
@@ -2095,7 +2095,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A skill that removes confusion, charm, paralysis, and sleep status by tapping\nthe shoulder of an ally",
+        "description": "A skill that removes confusion, charm, paralysis, and sleep status by\ntapping the shoulder of an ally",
         "effects": [
             {
                 "code": 22,
@@ -2150,7 +2150,7 @@
             "type": 1,
             "variance": 20
         },
-        "description": "A skill that causes the ground to crack, dealing damage to all enemies. It may\nalso cause the opponent to fall",
+        "description": "A skill that causes the ground to crack, dealing damage to all\nenemies. It may also cause the opponent to fall",
         "effects": [
             {
                 "code": 21,
@@ -2402,7 +2402,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "Combat techniques of the assassins from a island nation in the Far East. Allows\nthe user to evade one attack made during the turn it is used",
+        "description": "Combat techniques of the assassins from a island nation in the Far\nEast. Allows the user to evade one attack made during the turn it is\nused",
         "effects": [
             {
                 "code": 21,
@@ -2580,7 +2580,7 @@
             "type": 1,
             "variance": 20
         },
-        "description": "A barrage of spears clad in water that engulfs and crushes everything, like a\nraging muddy stream",
+        "description": "A barrage of spears clad in water that engulfs and crushes everything,\nlike a raging muddy stream",
         "effects": [
             {
                 "code": 21,
@@ -2691,7 +2691,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A skill that optimizes body movements and adopts a stance according to the\nbattle situation. Increases attack power, defense power, counterattack rate, and\ncritical hit rate",
+        "description": "A skill that optimizes body movements and adopts a stance according to\nthe battle situation. Increases attack power, defense power,\ncounterattack rate, and critical hit rate",
         "effects": [
             {
                 "code": 21,
@@ -2765,7 +2765,7 @@
             "type": 3,
             "variance": 20
         },
-        "description": "A mysterious song that heals the body.\nIt slightly restores the HP and TP of all allies.",
+        "description": "A mysterious song that heals the body. It slightly restores the HP and\nTP of all allies.",
         "effects": [
             {
                 "code": 13,
@@ -2839,7 +2839,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A skill that scatters poisonous gas, causing the entire opponent to be poisoned",
+        "description": "A skill that scatters poisonous gas, causing the entire opponent to be\npoisoned",
         "effects": [
             {
                 "code": 21,
@@ -2913,7 +2913,7 @@
             "type": 0,
             "variance": 20
         },
-        "description": "A skill that emits a strong light and lowers the opponent's accuracy, causing\nthem to be in a state of darkness",
+        "description": "A skill that emits a strong light and lowers the opponent's accuracy,\ncausing them to be in a state of darkness",
         "effects": [
             {
                 "code": 21,

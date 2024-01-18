@@ -2656,7 +2656,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "Um, I think it's to the guild..."
+                                    "Um, i think it's to the guild"
                                 ],
                                 0,
                                 0,
@@ -2822,10 +2822,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "S_INN|61|225",
+                                    "S_inn|61|225",
                                     "S_guild|216|225",
                                     "S_shop|369|225",
-                                    "S_Training|61|375",
+                                    "S_training|61|375",
                                     "S_dungeon|216|375",
                                     "S_menu|369|375"
                                 ],
@@ -3936,10 +3936,10 @@
                             "indent": 0,
                             "parameters": [
                                 [
-                                    "S_INN|61|225",
+                                    "S_inn|61|225",
                                     "S_guild|216|225",
                                     "S_shop|369|225",
-                                    "S_Training|61|375",
+                                    "S_training|61|375",
                                     "S_dungeon|216|375",
                                     "S_menu|369|375"
                                 ],
@@ -5293,7 +5293,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "S_Training|40|375|",
+                                    "S_training|40|375|",
                                     "S_dungeon|195|375|",
                                     "S_menu|348|375|",
                                     "S_skillset|502|375|"
@@ -5893,7 +5893,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "S_INN|40|225",
+                                    "S_inn|40|225",
                                     "S_guild|195|225",
                                     "S_shop|348|225",
                                     "S_odekake|502|225"
@@ -6315,7 +6315,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "S_Training|40|375|",
+                                    "S_training|40|375|",
                                     "S_dungeon|195|375|",
                                     "S_menu|348|375|",
                                     "S_skillset|502|375|"
@@ -6915,7 +6915,7 @@
                             "indent": 1,
                             "parameters": [
                                 [
-                                    "S_INN|40|225",
+                                    "S_inn|40|225",
                                     "S_guild|195|225",
                                     "S_shop|348|225"
                                 ],
