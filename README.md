@@ -1,9 +1,3 @@
-# Apply Patch
-1. Click Code
-2. Click Download ZIP
-3. Extract to game folder and Replace All.
-4. Extract img.7z to update the images.
-
 # How To Contribute
 TLDR 3 steps.
 
